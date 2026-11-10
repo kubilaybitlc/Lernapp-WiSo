@@ -12,6 +12,21 @@ Ablauf wie bei den IHK-Bögen: 30 Aufgaben, 60 Minuten, 100 Punkte, Lösungskäs
   ```
   danach `http://localhost:8080` öffnen.
 
+## Auf dem Handy (iOS und Android)
+
+Die App ist eine installierbare Web-App (PWA): Icon auf dem Startbildschirm, Vollbild, funktioniert nach dem ersten Öffnen auch offline.
+Dafür muss sie über **HTTPS** erreichbar sein, z. B. über GitHub Pages:
+
+1. Repository auf GitHub pushen. Bei einem kostenlosen GitHub-Konto muss es dafür öffentlich sein.
+2. Auf GitHub unter **Settings → Pages** als Quelle „Deploy from a branch“ mit `main` und `/ (root)` wählen.
+3. Nach ein bis zwei Minuten läuft die App unter `https://<benutzername>.github.io/<repository>/`.
+4. Den Link öffnen und installieren:
+   - iPhone/iPad: in Safari auf **Teilen → Zum Home-Bildschirm** tippen.
+   - Android: in Chrome auf **App installieren** tippen.
+
+Neue Versionen lädt die App beim nächsten Start mit Internet automatisch.
+Neue Aufgabensätze zusätzlich in die Liste `DATEIEN` in `sw.js` eintragen, damit sie sicher offline verfügbar sind.
+
 ## Funktionen
 
 - **Prüfungssimulation:** Deckblatt mit Bearbeitungshinweisen, Timer (Abgabe automatisch nach 60 Min.), Lösungsbogen-Übersicht, angefangene Prüfungen lassen sich fortsetzen.
@@ -27,6 +42,8 @@ Ablauf wie bei den IHK-Bögen: 30 Aufgaben, 60 Minuten, 100 Punkte, Lösungskäs
 | `js/bewertung.js` | Bewertung nach IHK-Schema, Notenschlüssel |
 | `js/app.js` | Oberfläche (Start, Deckblatt, Prüfung, Auswertung, Üben) |
 | `js/bilder.js` | Eigene Sicherheitszeichen als SVG für Bildaufgaben |
+| `manifest.webmanifest`, `sw.js`, `icons/` | Installation als App und Offline-Cache |
+| `werkzeuge/` | lokaler Testserver, Icon-Erzeugung |
 | `daten/themen.js` | Themenbereiche |
 | `daten/satz-*.js` | Aufgabensätze |
 | `docs/themenkatalog.md` | Auswertung der bisherigen IHK-Bögen (Themen, Aufgabentypen, Formulierungen) |
@@ -35,6 +52,7 @@ Ablauf wie bei den IHK-Bögen: 30 Aufgaben, 60 Minuten, 100 Punkte, Lösungskäs
 
 1. `daten/satz-01.js` kopieren, z. B. nach `daten/satz-02.js`, und `id`/`titel` ändern.
 2. In `index.html` eine Zeile `<script src="daten/satz-02.js"></script>` ergänzen.
+3. In `sw.js` den Pfad `daten/satz-02.js` in die Liste `DATEIEN` aufnehmen.
 
 Aufgabentypen (`typ`):
 

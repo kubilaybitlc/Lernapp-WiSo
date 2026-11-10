@@ -34,6 +34,7 @@
   const app = document.getElementById('app');
   let zustand = { ansicht: 'start' };
   let timerId = null;
+  let installAufforderung = null; // Android/Chrome: vom Browser angebotene Installation
 
   // ---------- Hilfsfunktionen ----------
 
@@ -75,6 +76,10 @@
   function zeige(html) {
     app.innerHTML = html;
     window.scrollTo(0, 0);
+  }
+
+  function istInstalliert() {
+    return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
   }
 
   // ---------- Bausteine eines Aufgabenbogens ----------
@@ -219,6 +224,15 @@
         </table></div>
       </section>` : '';
 
+    const installHtml = istInstalliert() ? '' : `
+      <section class="karte">
+        <h2>Als App installieren</h2>
+        <p id="install-knopf"${installAufforderung ? '' : ' hidden'}><button class="btn primaer" data-aktion="installieren">App installieren</button></p>
+        <p class="klein"><strong>iPhone/iPad:</strong> In Safari auf „Teilen“ und dann „Zum Home-Bildschirm“ tippen.<br>
+          <strong>Android:</strong> Im Chrome-Menü (⋮) „App installieren“ oder „Zum Startbildschirm hinzufügen“ wählen.</p>
+        <p class="klein">Danach startet der WiSo-Trainer wie eine App und funktioniert auch ohne Internet.</p>
+      </section>`;
+
     zeige(`
       <header class="kopf"><h1>WiSo-Trainer</h1><p>Abschlussprüfung Teil 2 · IT-Berufe · Wirtschafts- und Sozialkunde</p></header>
       <main class="start">
@@ -243,6 +257,7 @@
           <ul class="themen">${themenHtml}</ul>
         </section>
         ${ergebnisseHtml}
+        ${installHtml}
       </main>`);
   }
 
@@ -684,10 +699,37 @@
       case 'falsche-wiederholen':
         starteUebung(zustand.falsche, zustand.titel);
         break;
+      case 'installieren':
+        if (installAufforderung) {
+          installAufforderung.prompt();
+          installAufforderung.userChoice.finally(() => {
+            installAufforderung = null;
+            if (zustand.ansicht === 'start') ansichtStart();
+          });
+        }
+        break;
       default:
         break;
     }
   });
+
+  // ---------- Installation als App ----------
+
+  window.addEventListener('beforeinstallprompt', e => {
+    e.preventDefault();
+    installAufforderung = e;
+    const knopf = document.getElementById('install-knopf');
+    if (knopf) knopf.hidden = false;
+  });
+
+  window.addEventListener('appinstalled', () => {
+    installAufforderung = null;
+  });
+
+  // Offline-Cache nur über http(s); beim Öffnen per Doppelklick (file://) läuft die App ohne
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    navigator.serviceWorker.register('sw.js').catch(() => { /* App läuft auch ohne Offline-Cache */ });
+  }
 
   ansichtStart();
 })();
