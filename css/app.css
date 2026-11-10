@@ -1,0 +1,292 @@
+/* WiSo-Trainer – Optik angelehnt an die gedruckten Prüfungsbögen: weißes Papier, schlichte Schrift, Kennziffern in Kästchen */
+
+:root {
+  --papier: #ffffff;
+  --hintergrund: #e9ebee;
+  --text: #1d1d1f;
+  --text-leise: #5b6068;
+  --linie: #d4d7dc;
+  --rahmen: #3a3a3a;
+  --akzent: #1f4e8c;
+  --akzent-hell: #e6eef8;
+  --ok: #1e7b3a;
+  --ok-hell: #e3f3e7;
+  --teil: #9a6400;
+  --teil-hell: #fdf1d8;
+  --nok: #b3261e;
+  --nok-hell: #fbe4e2;
+  --radius: 6px;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--hintergrund);
+  color: var(--text);
+  font-family: "Segoe UI", "Frutiger", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+h1, h2, h3, h4 { line-height: 1.2; }
+p { margin: 0 0 .6em; }
+.klein { font-size: .85rem; color: var(--text-leise); }
+.mono { font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/* ---------- Knöpfe und Eingaben ---------- */
+
+.btn {
+  font: inherit;
+  font-size: .95rem;
+  padding: .5em 1em;
+  border: 1px solid var(--linie);
+  border-radius: var(--radius);
+  background: var(--papier);
+  color: var(--text);
+  cursor: pointer;
+}
+.btn:hover { border-color: var(--akzent); }
+.btn.primaer { background: var(--akzent); border-color: var(--akzent); color: #fff; }
+.btn.primaer:hover { background: #173d70; }
+.btn.gross { font-size: 1.05rem; padding: .7em 1.6em; }
+.btn.klein-btn { padding: .25em .7em; font-size: .85rem; }
+.btn:focus-visible, .thema:focus-visible, .kasten:focus-visible, .eingabe:focus-visible {
+  outline: 3px solid #7fa7dc;
+  outline-offset: 1px;
+}
+
+.eingabe {
+  font: inherit;
+  width: 100%;
+  max-width: 320px;
+  padding: .5em .7em;
+  border: 1px solid var(--linie);
+  border-radius: var(--radius);
+}
+
+.aktionen { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; margin-top: 1rem; }
+.aktionen.mitte { justify-content: center; margin: 2rem 0 1rem; }
+.knoepfe { display: flex; gap: .5rem; flex-wrap: wrap; }
+
+/* ---------- Startseite und Karten ---------- */
+
+.kopf { background: var(--akzent); color: #fff; padding: 1.4rem 1rem; text-align: center; }
+.kopf h1 { margin: 0 0 .2rem; font-size: 1.7rem; font-weight: 600; }
+.kopf p { margin: 0; opacity: .9; }
+
+.start { max-width: 860px; margin: 0 auto; padding: 1.2rem 1rem 3rem; }
+
+.karte {
+  background: var(--papier);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+}
+.karte h2 { margin: 0 0 .6rem; font-size: 1.15rem; }
+
+.banner {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;
+  background: var(--teil-hell); border: 1px solid #e6c98a; border-radius: var(--radius);
+  padding: .8rem 1rem; margin-bottom: 1rem;
+}
+
+.liste { list-style: none; margin: .4rem 0 0; padding: 0; }
+.liste li {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;
+  padding: .7rem 0; border-top: 1px solid var(--linie);
+}
+.liste li > div:first-child { display: flex; flex-direction: column; }
+
+.themen { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: .5rem; }
+.thema {
+  width: 100%; display: flex; justify-content: space-between; align-items: center; gap: .5rem;
+  font: inherit; font-size: .92rem; text-align: left;
+  padding: .55em .8em; border: 1px solid var(--linie); border-radius: var(--radius);
+  background: var(--papier); color: var(--text); cursor: pointer;
+}
+.thema:hover { border-color: var(--akzent); background: var(--akzent-hell); }
+.thema .anzahl { font-size: .8rem; color: var(--text-leise); background: var(--hintergrund); border-radius: 99px; padding: .05em .6em; }
+
+.tabelle-rahmen { overflow-x: auto; }
+table.ergebnisse, table.auswertung { width: 100%; border-collapse: collapse; font-size: .92rem; }
+table.ergebnisse th, table.ergebnisse td, table.auswertung th, table.auswertung td {
+  text-align: left; padding: .45em .5em; border-bottom: 1px solid var(--linie); vertical-align: top;
+}
+table.auswertung tr.ok td:first-child { box-shadow: inset 4px 0 var(--ok); }
+table.auswertung tr.teil td:first-child { box-shadow: inset 4px 0 var(--teil); }
+table.auswertung tr.nok td:first-child { box-shadow: inset 4px 0 var(--nok); }
+table.auswertung tr.nok { background: var(--nok-hell); }
+table.auswertung tr.teil { background: var(--teil-hell); }
+
+.ergebnis-kopf { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1rem; text-align: center; }
+.kennzahl { display: flex; flex-direction: column; }
+.kennzahl .wert { font-size: 2rem; font-weight: 600; color: var(--akzent); font-variant-numeric: tabular-nums; }
+
+.themen-auswertung { list-style: none; margin: 0; padding: 0; }
+.themen-auswertung li { display: grid; grid-template-columns: minmax(0, 1fr) 140px 3.5em; gap: .8rem; align-items: center; padding: .3rem 0; font-size: .92rem; }
+.balken { height: 10px; background: var(--hintergrund); border-radius: 99px; overflow: hidden; }
+.balken span { display: block; height: 100%; background: var(--akzent); }
+.prozent { text-align: right; font-variant-numeric: tabular-nums; }
+
+.uebersicht { list-style: none; margin: 0; padding: 0; }
+.uebersicht li { display: flex; justify-content: space-between; gap: 1rem; padding: .4rem .6rem; border-left: 4px solid var(--linie); margin-bottom: .3rem; }
+.uebersicht li.ok { border-color: var(--ok); }
+.uebersicht li.teil { border-color: var(--teil); background: var(--teil-hell); }
+.uebersicht li.nok { border-color: var(--nok); background: var(--nok-hell); }
+
+/* ---------- Papier (Aufgabenheft, Deckblatt) ---------- */
+
+.papier {
+  background: var(--papier);
+  max-width: 900px;
+  margin: 1rem auto;
+  padding: 2rem 2.2rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .12);
+}
+
+/* Deckblatt */
+.deckblatt { margin-top: 2rem; }
+.deck-kopf { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; }
+.deck-kopf h1 { font-size: 2.3rem; font-weight: 300; margin: .2rem 0; }
+.deck-kopf .termin { font-size: 1.1rem; color: var(--text-leise); margin: 0; }
+.deck-kopf .beruf { font-size: 1.3rem; margin: 0; }
+.marke { background: #222; color: #fff; font-weight: 700; font-size: 1.6rem; padding: .6rem 1rem; border-radius: 0 0 0 28px; }
+.deck-mitte { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 2rem; margin-top: 2rem; }
+.bereich { display: flex; align-items: center; gap: .8rem; font-size: 1.15rem; }
+.grosse-zahl { font-size: 5rem; font-weight: 700; line-height: 1; }
+.teil { margin-top: 1.5rem; font-size: 1.1rem; }
+.eckdaten { list-style: none; padding: 0; margin: 0; font-size: 1.1rem; }
+.eckdaten span { display: inline-block; min-width: 2.2em; text-align: right; margin-right: .3em; }
+.deck-rechts h2 { font-weight: 400; font-size: 1.3rem; margin-top: 0; }
+.deck-rechts ol { padding-left: 1.2rem; font-size: .92rem; }
+.deck-rechts li { margin-bottom: .5rem; }
+
+/* Situationen und Infokästen */
+.situation, .kasten-info {
+  border: 1px solid var(--rahmen);
+  padding: .7rem .9rem;
+  margin: 1.4rem 0 1rem;
+}
+.situation h4, .kasten-info h4 { margin: 0 0 .4rem; font-size: 1rem; }
+.situation p:last-child, .kasten-info p:last-child { margin-bottom: 0; }
+.kasten-info { margin: .8rem 0; font-size: .92rem; }
+.kasten-liste { margin: .3rem 0 0; padding-left: 1.4rem; }
+
+table.daten { border-collapse: collapse; margin-top: .6rem; font-size: .92rem; }
+table.daten th, table.daten td { border: 1px solid var(--rahmen); padding: .3em .7em; }
+table.daten th { text-align: left; }
+table.daten td:not(:first-child) { text-align: center; }
+
+/* Aufgaben */
+.aufgabe { padding: 1rem 0 1.2rem; border-bottom: 1px solid var(--linie); scroll-margin-top: 4.5rem; }
+.aufgabe h3 { margin: 0 0 .5rem; font-size: 1.1rem; }
+.aufgabe .frage { margin-top: .6rem; }
+.aufgabe .anweisung { border-top: 1px solid var(--linie); border-bottom: 1px solid var(--linie); padding: .5rem 0; margin: .6rem 0; }
+.aufgabe .einleitung { margin-bottom: .2rem; }
+.untertitel { text-decoration: underline; margin: .6rem 0 .3rem; }
+
+.optionen, .items { list-style: none; margin: 0 0 .4rem; padding: 0; }
+.optionen li, .items li { display: flex; gap: .55rem; align-items: flex-start; padding: .12rem 0; }
+.ziffer {
+  flex: none;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.35em; height: 1.35em; margin-top: .1em;
+  border: 1px solid var(--rahmen);
+  font-size: .85em; line-height: 1;
+}
+.items li { border-bottom: 1px solid var(--linie); padding: .45rem 0; }
+.buchstabe { flex: none; min-width: 1.4em; }
+
+.optionen.bilder { display: flex; flex-wrap: wrap; gap: 1rem 1.6rem; }
+.optionen.bilder li { flex-direction: row; align-items: flex-start; }
+.bild svg { width: 84px; height: 84px; display: block; }
+
+/* Lösungskästchen */
+.loesungsfeld {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .7rem;
+  margin-top: .8rem; padding: .6rem .8rem;
+  background: #f4f6f9; border-radius: var(--radius);
+}
+.loesungsfeld .hinweis { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--text-leise); margin-right: .3rem; }
+.feld { display: inline-flex; align-items: center; gap: .25rem; }
+.feld span { font-size: .9rem; }
+.kasten {
+  width: 2.3em; height: 2.3em;
+  font: inherit; font-size: 1.15rem; font-weight: 600; text-align: center;
+  border: 2px solid var(--rahmen); border-radius: 2px;
+  background: #fff; color: var(--text);
+}
+.kasten.breit { width: 9em; text-align: right; padding: 0 .5em; }
+.kasten.richtig { border-color: var(--ok); background: var(--ok-hell); }
+.kasten.falsch { border-color: var(--nok); background: var(--nok-hell); }
+.einheit { font-weight: 600; }
+
+.rueckmeldung { margin-top: .8rem; padding: .7rem .9rem; border-left: 5px solid; border-radius: var(--radius); font-size: .95rem; }
+.rueckmeldung.ok { border-color: var(--ok); background: var(--ok-hell); }
+.rueckmeldung.teil { border-color: var(--teil); background: var(--teil-hell); }
+.rueckmeldung.nok { border-color: var(--nok); background: var(--nok-hell); }
+.rueckmeldung .loesung { font-weight: 600; font-variant-numeric: tabular-nums; }
+.rueckmeldung p:last-child { margin-bottom: 0; }
+
+/* ---------- Prüfungsansicht ---------- */
+
+.pruef-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  grid-template-areas: "kopf kopf" "heft bogen";
+  gap: 0 1rem;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.pruef-layout.ohne-bogen { grid-template-columns: minmax(0, 1fr); grid-template-areas: "kopf" "heft"; max-width: 940px; }
+.pruef-kopf {
+  grid-area: kopf;
+  position: sticky; top: 0; z-index: 5;
+  display: flex; align-items: center; gap: .8rem;
+  background: var(--hintergrund); padding: .6rem 0;
+  border-bottom: 1px solid var(--linie);
+}
+.pruef-kopf .titel { flex: 1; font-weight: 600; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.timer { font-size: 1.3rem; font-weight: 600; font-variant-numeric: tabular-nums; padding: .1em .5em; border-radius: var(--radius); background: var(--papier); }
+.timer.knapp { color: #fff; background: var(--nok); }
+.aufgabenheft, .einzel { grid-area: heft; width: 100%; }
+.einzel { max-width: none; }
+
+.fortschritt { width: 140px; height: 8px; background: var(--papier); border-radius: 99px; overflow: hidden; }
+.fortschritt span { display: block; height: 100%; background: var(--akzent); }
+
+.ausgang-klein { font-size: .92rem; margin-bottom: .5rem; color: var(--text-leise); }
+.ausgang-klein summary { cursor: pointer; }
+.ausgang-klein p { margin-top: .4rem; }
+
+.loesungsbogen {
+  grid-area: bogen;
+  position: sticky; top: 4.2rem; align-self: start;
+  margin-top: 1rem; padding: 1rem;
+  background: var(--papier); box-shadow: 0 1px 4px rgba(0, 0, 0, .12);
+}
+.loesungsbogen h2 { font-size: 1rem; margin: 0 0 .7rem; }
+.bogen { list-style: none; margin: 0 0 .6rem; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: .35rem; }
+.bogen button {
+  width: 100%; aspect-ratio: 1; font: inherit; font-size: .85rem;
+  border: 1px solid var(--rahmen); background: #fff; cursor: pointer; border-radius: 2px;
+}
+.bogen button.teil { background: linear-gradient(135deg, var(--akzent-hell) 50%, #fff 50%); }
+.bogen button.voll { background: var(--akzent); color: #fff; border-color: var(--akzent); }
+
+/* ---------- Schmale Bildschirme ---------- */
+
+@media (max-width: 860px) {
+  .pruef-layout { grid-template-columns: minmax(0, 1fr); grid-template-areas: "kopf" "heft" "bogen"; padding: 0; }
+  .pruef-kopf { padding: .5rem 1rem; }
+  .papier { padding: 1.2rem 1rem; margin: .5rem 0; }
+  .loesungsbogen { position: static; margin: 0 0 2rem; }
+  .bogen { grid-template-columns: repeat(10, 1fr); }
+  .deck-mitte { grid-template-columns: 1fr; }
+  .themen-auswertung li { grid-template-columns: minmax(0, 1fr) 80px 3em; }
+  .fortschritt { display: none; }
+}
