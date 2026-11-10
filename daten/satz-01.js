@@ -254,10 +254,10 @@
         'Die JAV kann ohne Beteiligung des Betriebsrats Betriebsvereinbarungen mit der Geschäftsleitung abschließen.',
         'In die JAV können nur Auszubildende gewählt werden, die das 18. Lebensjahr vollendet haben.',
         'Die JAV ersetzt für die Auszubildenden den Betriebsrat.',
-        'Eine JAV kann gewählt werden, weil ein Betriebsrat besteht und mindestens fünf Auszubildende unter 25 Jahren beschäftigt sind.'
+        'Eine JAV kann gewählt werden, weil ein Betriebsrat besteht und mindestens fünf Auszubildende beschäftigt sind.'
       ],
       loesung: 5,
-      erklaerung: '§ 60 BetrVG: Eine JAV wird gewählt, wenn in der Regel mindestens fünf Arbeitnehmer unter 18 Jahren oder Auszubildende unter 25 Jahren beschäftigt sind. Sie arbeitet über den Betriebsrat. Die Amtszeit beträgt zwei Jahre (§ 64 BetrVG), wählbar sind Arbeitnehmer unter 25 Jahren.'
+      erklaerung: '§ 60 Abs. 1 BetrVG: Eine JAV wird gewählt, wenn in der Regel mindestens fünf Arbeitnehmer unter 18 Jahren oder zu ihrer Berufsausbildung Beschäftigte im Betrieb sind; für Auszubildende gilt seit 2021 keine Altersgrenze mehr. Sie arbeitet über den Betriebsrat. Die Amtszeit beträgt zwei Jahre (§ 64 BetrVG). Wählbar sind Arbeitnehmer unter 25 Jahren und alle Auszubildenden (§ 61 Abs. 2 BetrVG).'
     },
     {
       nr: 15, thema: 'mitbestimmung', typ: 'zahl',
