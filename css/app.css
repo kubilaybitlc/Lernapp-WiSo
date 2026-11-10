@@ -249,6 +249,26 @@ table.daten td:not(:first-child) { text-align: center; }
 
 .optionen.bilder { display: flex; flex-wrap: wrap; gap: 1rem 1.6rem; }
 .optionen.bilder li { flex-direction: row; align-items: flex-start; }
+
+/* Anklickbare Antworten bei Einfach- und Mehrfachauswahl */
+.optionen.auswahl li { padding: 0; }
+.optionen.auswahl.bilder { gap: .5rem .8rem; }
+.option {
+  display: flex; gap: .55rem; align-items: flex-start;
+  width: 100%; margin: .1rem 0; padding: .35rem .5rem;
+  font: inherit; color: inherit; text-align: left;
+  background: none; border: 1px solid transparent; border-radius: var(--radius);
+}
+.optionen.bilder .option { width: auto; }
+button.option { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+button.option:hover { background: var(--akzent-hell); }
+button.option:focus-visible { outline: 3px solid #7fa7dc; outline-offset: 1px; }
+.option.gewaehlt { background: var(--akzent-hell); border-color: var(--akzent); }
+.option.gewaehlt .ziffer { background: var(--akzent); border-color: var(--akzent); color: #fff; font-weight: 600; }
+.option.loesung { background: var(--ok-hell); border-color: var(--ok); }
+.option.loesung .ziffer { background: var(--ok); border-color: var(--ok); color: #fff; font-weight: 600; }
+.option.daneben { background: var(--nok-hell); border-color: var(--nok); }
+.option.daneben .ziffer { background: var(--nok); border-color: var(--nok); color: #fff; font-weight: 600; }
 .bild svg { width: 84px; height: 84px; display: block; }
 
 /* Lösungskästchen */

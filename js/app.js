@@ -230,15 +230,34 @@
     return `<div class="kasten-info"><h4>${esc(k.titel)}</h4>${absaetze(k.absaetze)}${liste}</div>`;
   }
 
-  function renderOptionen(liste, titel) {
+  function istAuswahl(a) {
+    return a.typ === 'einfach' || a.typ === 'mehrfach';
+  }
+
+  // Bei Auswahlaufgaben lässt sich jede Antwort anklicken; die Ziffer landet im Lösungskästchen.
+  // Nach dem Prüfen werden richtige Antworten grün und falsch gewählte rot markiert.
+  function renderOptionen(a, antwort, ergebnis) {
+    const liste = a.optionen;
     if (!liste || !liste.length) return '';
     const mitBild = liste.some(o => typeof o === 'object' && o.bild);
+    const auswahl = istAuswahl(a);
+    const gewaehlt = (antwort || []).filter(Boolean).map(String);
+    const richtige = auswahl ? [].concat(a.loesung).map(String) : [];
     const eintraege = liste.map((o, i) => {
+      const ziffer = String(i + 1);
       const text = typeof o === 'string' ? o : (o.text || '');
       const bild = typeof o === 'object' && o.bild ? `<span class="bild">${BILDER[o.bild] || ''}</span>` : '';
-      return `<li><span class="ziffer">${i + 1}</span>${bild}${text ? `<span>${fmt(text)}</span>` : ''}</li>`;
+      const inhalt = `<span class="ziffer">${ziffer}</span>${bild}${text ? `<span>${fmt(text)}</span>` : ''}`;
+      if (!auswahl) return `<li>${inhalt}</li>`;
+      const an = gewaehlt.includes(ziffer);
+      if (ergebnis) {
+        const markierung = richtige.includes(ziffer) ? ' loesung' : an ? ' daneben' : '';
+        return `<li class="option${an ? ' gewaehlt' : ''}${markierung}">${inhalt}</li>`;
+      }
+      return `<li><button type="button" class="option${an ? ' gewaehlt' : ''}" data-aktion="option" data-nr="${a.nr}" data-ziffer="${ziffer}" aria-pressed="${an}">${inhalt}</button></li>`;
     }).join('');
-    return `${titel ? `<p class="untertitel">${esc(titel)}</p>` : ''}<ol class="optionen${mitBild ? ' bilder' : ''}">${eintraege}</ol>`;
+    const klassen = `optionen${mitBild ? ' bilder' : ''}${auswahl ? ' auswahl' : ''}`;
+    return `${a.optionenTitel ? `<p class="untertitel">${esc(a.optionenTitel)}</p>` : ''}<ol class="${klassen}">${eintraege}</ol>`;
   }
 
   function renderItems(a) {
@@ -287,7 +306,7 @@
         ${a.frage ? `<p class="frage">${fmt(a.frage)}</p>` : ''}
         ${a.anweisung ? `<p class="anweisung">${fmt(a.anweisung)}</p>` : ''}
         ${a.einleitung ? `<p class="einleitung">${fmt(a.einleitung)}</p>` : ''}
-        ${renderOptionen(a.optionen, a.optionenTitel)}
+        ${renderOptionen(a, o.antwort, o.ergebnis)}
         ${renderItems(a)}
         ${renderKaestchen(a, o.antwort, o.ergebnis)}
         ${o.ergebnis ? renderRueckmeldung(a, o.ergebnis) : ''}
@@ -522,7 +541,7 @@
             <h2>Bearbeitungshinweise</h2>
             <ol>
               <li>Die Aufgaben können in beliebiger Reihenfolge gelöst werden. Bei Aufgaben mit gemeinsamer Situation hältst du dich am besten an die vorgegebene Reihenfolge.</li>
-              <li>Trage in die Lösungskästchen die <strong>Kennziffern der richtigen Antworten</strong> ein, bei offenen Aufgaben das <strong>Ergebnis</strong>.</li>
+              <li>Trage in die Lösungskästchen die <strong>Kennziffern der richtigen Antworten</strong> ein, bei offenen Aufgaben das <strong>Ergebnis</strong>. Bei Auswahlaufgaben kannst du auch direkt auf die Antwort tippen; die Ziffer wird dann eingetragen.</li>
               <li>Die <strong>Anzahl der Kästchen</strong> zeigt, wie viele Ziffern verlangt sind. Bei Zuordnungs- und Reihenfolgeaufgaben gehört in jedes Kästchen genau eine Ziffer.</li>
               <li>Beträge gibst du mit zwei Nachkommastellen an (z. B. 1.250,00), Datumsangaben im Format TT.MM.JJJJ.</li>
               <li>Erlaubtes Hilfsmittel ist ein nicht programmierbarer Taschenrechner. Rechnest du mit einem gerundeten Ergebnis weiter, dann nur mit diesem.</li>
@@ -814,6 +833,39 @@
 
   // ---------- Eingabe in die Lösungskästchen ----------
 
+  function markiereOptionen(a) {
+    const werte = (zustand.antworten[a.nr] || []).map(String);
+    app.querySelectorAll(`button.option[data-nr="${a.nr}"]`).forEach(k => {
+      const an = werte.includes(k.dataset.ziffer);
+      k.classList.toggle('gewaehlt', an);
+      k.setAttribute('aria-pressed', String(an));
+    });
+  }
+
+  // Einfachauswahl: Klick setzt die Ziffer, erneuter Klick löscht sie.
+  // Mehrfachauswahl: Klick schaltet um; sind alle Kästchen voll, fällt die zuerst gewählte Antwort heraus.
+  function waehleOption(nr, ziffer) {
+    const a = aufgabeById(zustand.satz, nr);
+    if (!a || !istAuswahl(a) || (zustand.ansicht === 'uebung' && zustand.geprueft)) return;
+    const n = B.kaestchenAnzahl(a);
+    let gewaehlt = (zustand.antworten[nr] || []).filter(Boolean).map(String);
+    if (gewaehlt.includes(ziffer)) {
+      gewaehlt = gewaehlt.filter(z => z !== ziffer);
+    } else if (a.typ === 'einfach') {
+      gewaehlt = [ziffer];
+    } else {
+      if (gewaehlt.length >= n) gewaehlt.shift();
+      gewaehlt.push(ziffer);
+    }
+    zustand.antworten[nr] = Array.from({ length: n }, (_, i) => gewaehlt[i] || '');
+    app.querySelectorAll(`input.kasten[data-nr="${nr}"]`).forEach((f, i) => { f.value = zustand.antworten[nr][i]; });
+    markiereOptionen(a);
+    if (zustand.modus === 'pruefung') {
+      sichereLaufend();
+      aktualisiereBogen();
+    }
+  }
+
   function kaestchenDerAufgabe(el) {
     return Array.from(app.querySelectorAll(`input.kasten[data-nr="${el.dataset.nr}"]:not([readonly])`));
   }
@@ -843,6 +895,7 @@
 
     const werte = zustand.antworten[nr] || (zustand.antworten[nr] = []);
     werte[i] = el.value;
+    if (istAuswahl(a)) markiereOptionen(a);
     if (zustand.modus === 'pruefung') {
       sichereLaufend();
       aktualisiereBogen();
@@ -859,7 +912,8 @@
         e.preventDefault();
       }
     }
-    if (e.key === 'Enter' && zustand.ansicht === 'uebung' && !(el.tagName === 'BUTTON')) {
+    // Enter prüft auch dann, wenn gerade eine angeklickte Antwort den Fokus hat (Auswählen per Tastatur mit Leertaste)
+    if (e.key === 'Enter' && zustand.ansicht === 'uebung' && (el.tagName !== 'BUTTON' || el.classList.contains('option'))) {
       e.preventDefault();
       if (zustand.geprueft) naechsteUebung();
       else pruefeUebung();
@@ -950,6 +1004,9 @@
       }
       case 'thema':
         starteUebung(aufgabenZumThema(d.thema), THEMEN[d.thema] || d.thema);
+        break;
+      case 'option':
+        waehleOption(Number(d.nr), d.ziffer);
         break;
       case 'pruefen':
         pruefeUebung();
