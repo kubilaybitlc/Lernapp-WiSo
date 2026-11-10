@@ -28,5 +28,32 @@ window.WISO_BILDER = {
     '<rect x="4" y="4" width="92" height="92" fill="#c8102e"/>' +
     '<rect x="36" y="36" width="24" height="48" rx="9" fill="#fff"/>' +
     '<rect x="43" y="25" width="10" height="13" fill="#fff"/>' +
-    '<path d="M53 29 H68 L74 44" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>'
+    '<path d="M53 29 H68 L74 44" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>',
+
+  // Organigramme für Aufgaben zu Leitungssystemen (schwarze Kästen, rein schematisch)
+  'org-einlinien':
+    '<svg viewBox="0 0 120 100" role="img" aria-label="Organigramm: eine Spitze, darunter drei gleichrangige Stellen in strenger Rangordnung">' +
+    '<g fill="#fff" stroke="#1d1d1f" stroke-width="2.5"><rect x="45" y="8" width="30" height="16"/>' +
+    '<rect x="6" y="70" width="30" height="16"/><rect x="45" y="70" width="30" height="16"/><rect x="84" y="70" width="30" height="16"/></g>' +
+    '<path d="M60 24 V52 M21 52 H99 M21 52 V70 M60 52 V70 M99 52 V70" fill="none" stroke="#1d1d1f" stroke-width="2"/></svg>',
+
+  'org-stab':
+    '<svg viewBox="0 0 120 100" role="img" aria-label="Organigramm mit einer Stabsstelle seitlich an der Linie">' +
+    '<g fill="#fff" stroke="#1d1d1f" stroke-width="2.5"><rect x="45" y="8" width="30" height="16"/><rect x="84" y="30" width="30" height="12"/>' +
+    '<rect x="6" y="70" width="30" height="16"/><rect x="45" y="70" width="30" height="16"/><rect x="84" y="70" width="30" height="16"/></g>' +
+    '<path d="M60 24 V52 M60 36 H84 M21 52 H99 M21 52 V70 M60 52 V70 M99 52 V70" fill="none" stroke="#1d1d1f" stroke-width="2"/></svg>',
+
+  'org-mehrlinien':
+    '<svg viewBox="0 0 120 100" role="img" aria-label="Organigramm: zwei übergeordnete Stellen, jede mit beiden unteren Stellen verbunden">' +
+    '<g fill="#fff" stroke="#1d1d1f" stroke-width="2.5"><rect x="18" y="8" width="32" height="16"/><rect x="70" y="8" width="32" height="16"/>' +
+    '<rect x="18" y="70" width="32" height="16"/><rect x="70" y="70" width="32" height="16"/></g>' +
+    '<path d="M34 24 V70 M86 24 V70 M34 24 L86 70 M86 24 L34 70" fill="none" stroke="#1d1d1f" stroke-width="2"/></svg>',
+
+  'org-matrix':
+    '<svg viewBox="0 0 120 100" role="img" aria-label="Matrixorganisation: Raster aus Zeilen und Spalten">' +
+    '<g stroke="#1d1d1f" stroke-width="2">' +
+    '<g fill="#e6eef8"><rect x="36" y="6" width="24" height="14"/><rect x="66" y="6" width="24" height="14"/><rect x="96" y="6" width="22" height="14"/>' +
+    '<rect x="4" y="34" width="24" height="16"/><rect x="4" y="60" width="24" height="16"/></g>' +
+    '<g fill="#fff"><rect x="36" y="34" width="24" height="16"/><rect x="66" y="34" width="24" height="16"/><rect x="96" y="34" width="22" height="16"/>' +
+    '<rect x="36" y="60" width="24" height="16"/><rect x="66" y="60" width="24" height="16"/><rect x="96" y="60" width="22" height="16"/></g></g></svg>'
 };
