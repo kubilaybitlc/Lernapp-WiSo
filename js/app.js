@@ -398,16 +398,29 @@
     const zaehler = themenZaehler();
     const stand = lernstand(ladeStatistik());
 
+    const bestePunkte = {};
+    ergebnisse.forEach(e => {
+      if (!e.auswahl && (bestePunkte[e.satzId] === undefined || e.punkte > bestePunkte[e.satzId])) bestePunkte[e.satzId] = e.punkte;
+    });
+
     const saetzeHtml = SAETZE.map(s => {
       const z = stand.saetze[s.id] || neuerZaehler();
-      const fortschritt = z.gesamt - z.offen ? ` · ${z.gesamt - z.offen} bearbeitet${z.falsch ? ` · <strong class="text-nok">${z.falsch} falsch</strong>` : ''}` : '';
+      const bearbeitet = z.gesamt - z.offen;
+      const beste = bestePunkte[s.id];
+      const zeile = [
+        `${bearbeitet}/${z.gesamt} bearbeitet`,
+        z.falsch ? `<strong class="text-nok">${z.falsch} falsch</strong>` : '',
+        beste !== undefined ? `beste Prüfung ${B.formatZahl(beste, 0)} P. (Note ${B.note(beste).note})` : ''
+      ].filter(Boolean).join(' · ');
       return `
-      <li>
-        <div><strong>${esc(s.titel)}</strong><span class="klein">${esc(s.untertitel || '')} · ${s.aufgaben.length} Aufgaben${fortschritt}</span></div>
+      <li class="satz-karte">
+        <div class="satz-kopf"><strong>${esc(s.titel)}</strong><span class="klein">${esc(s.untertitel || '')}</span></div>
         <div class="knoepfe">
-          <button class="btn primaer" data-aktion="deckblatt" data-satz="${esc(s.id)}">Prüfung starten</button>
-          <button class="btn" data-aktion="satz-ueben" data-satz="${esc(s.id)}">Üben</button>
+          <button class="btn primaer klein-btn" data-aktion="deckblatt" data-satz="${esc(s.id)}">Prüfung</button>
+          <button class="btn klein-btn" data-aktion="satz-ueben" data-satz="${esc(s.id)}">Üben</button>
         </div>
+        ${renderStapel(z)}
+        <span class="klein satz-info">${zeile}</span>
       </li>`;
     }).join('');
 
@@ -450,7 +463,7 @@
         <section class="karte">
           <h2>Aufgabensätze</h2>
           <p class="klein"><strong>Prüfung starten:</strong> 30 Aufgaben, 60 Minuten, Auswertung nach IHK-Schema. <strong>Üben:</strong> Aufgabe für Aufgabe mit sofortiger Lösung.</p>
-          ${SAETZE.length ? `<ul class="liste">${saetzeHtml}</ul>` : '<p>Keine Aufgabensätze gefunden.</p>'}
+          ${SAETZE.length ? `<ul class="satz-liste">${saetzeHtml}</ul>` : '<p>Keine Aufgabensätze gefunden.</p>'}
         </section>
         <section class="karte">
           <h2>Themen-Training</h2>

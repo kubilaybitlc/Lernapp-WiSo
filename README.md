@@ -29,6 +29,7 @@ Neue Aufgabensätze zusätzlich in die Liste `DATEIEN` in `sw.js` eintragen, dam
 
 ## Funktionen
 
+- **16 Übungssätze** mit je 30 selbst erstellten Aufgaben (480 insgesamt), jeweils zu einem fiktiven IT-Unternehmen, Themen gewichtet nach `docs/themenkatalog.md`.
 - **Prüfungssimulation:** Deckblatt mit Bearbeitungshinweisen, Timer (Abgabe automatisch nach 60 Min.), Lösungsbogen-Übersicht, angefangene Prüfungen lassen sich fortsetzen.
 - **Auswertung:** Punkte und Note nach IHK-Notenschlüssel, Lösungsbogen mit Teil-/Globalbewertung, Ergebnis je Thema, alle Aufgaben mit Lösung und Erklärung.
 - **Üben:** Aufgabe für Aufgabe mit sofortiger Rückmeldung, nach Satz, nach Thema oder nur die nicht gelösten Aufgaben.

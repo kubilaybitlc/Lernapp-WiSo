@@ -103,6 +103,13 @@ p { margin: 0 0 .6em; }
 }
 .liste li > div:first-child { display: flex; flex-direction: column; }
 
+.satz-liste { list-style: none; margin: .6rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: .7rem; }
+.satz-karte { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: .45rem .6rem; padding: .7rem .85rem; border: 1px solid var(--linie); border-radius: var(--radius); }
+.satz-kopf { display: flex; flex-direction: column; min-width: 0; }
+.satz-karte .knoepfe { flex-wrap: nowrap; gap: .35rem; }
+.satz-karte .stapel, .satz-info { grid-column: 1 / -1; }
+.satz-karte .stapel { height: 8px; }
+
 .themen { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: .5rem; }
 .thema {
   width: 100%; display: flex; justify-content: space-between; align-items: center; gap: .5rem;
