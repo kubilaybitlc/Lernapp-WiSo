@@ -1,3 +1,6 @@
 # IHK-Originalbögen sind urheberrechtlich geschützt und gehören nicht ins Repo
 *.pdf
 quellen/
+# Dateien mit IHK-Fragen werden nur im Browser eingelesen, nie eingecheckt
+WiSo-Trainer*.html
+*ihk*.json

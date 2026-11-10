@@ -29,6 +29,7 @@ Neue Aufgabensätze zusätzlich in die Liste `DATEIEN` in `sw.js` eintragen, dam
 
 ## Funktionen
 
+- **Zwei Bereiche** in der Menüzeile: **IHK-KI-Fragen** (die eigenen Übungssätze unten) und **IHK-Fragen**. Unter „IHK-Fragen“ liest jeder seine eigene Datei mit IHK-Prüfungsaufgaben ein (z. B. `WiSo-Trainer.html` oder JSON im selben Format). Die Aufgaben bleiben nur im Browser des jeweiligen Geräts und sind nicht Teil der App. Lernstand, Ergebnisse und Schwächen-Prüfung laufen je Bereich getrennt.
 - **16 Übungssätze** mit je 30 selbst erstellten Aufgaben (480 insgesamt), jeweils zu einem fiktiven IT-Unternehmen, Themen gewichtet nach `docs/themenkatalog.md`.
 - **Antworten anklicken:** Bei Einfach- und Mehrfachauswahl genügt ein Tipp auf die Antwort, die Ziffer wird ins Lösungskästchen eingetragen; Eintippen funktioniert weiterhin. Nach dem Prüfen sind richtige Antworten grün, falsch gewählte rot markiert.
 - **Prüfungssimulation:** Deckblatt mit Bearbeitungshinweisen, Timer (Abgabe automatisch nach 60 Min.), Lösungsbogen-Übersicht, angefangene Prüfungen lassen sich fortsetzen.

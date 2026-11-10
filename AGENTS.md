@@ -12,6 +12,7 @@ Hinweise für KI-Agenten und Mitwirkende am WiSo-Trainer. Bedienung und Datenfor
 ## Aufgaben erstellen
 
 - **Nur eigene Aufgaben.** IHK-Originalbögen sind urheberrechtlich geschützt: keine Aufgaben, Antwortlisten oder Situationstexte übernehmen oder nur leicht umformulieren. PDFs gehören nie ins Repository (`*.pdf` steht in `.gitignore`).
+- **Bereich „IHK-Fragen“:** Originalaufgaben kommen ausschließlich über den Import im Browser in die App (`importiereIhk` in `js/app.js`, gespeichert unter `wiso.ihk` im localStorage). Importdateien wie `WiSo-Trainer.html` oder daraus erzeugte Daten niemals ins Repository legen, nicht in `daten/` umwandeln und nicht in `sw.js` cachen.
 - Themenauswahl und Gewichtung nach [docs/themenkatalog.md](docs/themenkatalog.md) (Spalte „Ø/Bogen“). Themenschlüssel stehen in `daten/themen.js`.
 - Typen-Verteilung je Satz ungefähr wie bei der IHK: etwa 22 Einfachauswahl, 3 „zwei zutreffende“, 2 Zuordnungen, 1–2 Rechenaufgaben, höchstens 1 Datum, gelegentlich 1 Reihenfolge. Keine Kontierung.
 - Feste Anweisungsformeln aus Abschnitt 3.1 des Themenkatalogs verwenden, Verneinungen und „**zwei**“ fett (`**…**`).

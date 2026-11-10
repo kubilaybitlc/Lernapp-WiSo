@@ -13,6 +13,8 @@
   const S_LAUFEND = 'wiso.laufend';
   const S_ERGEBNISSE = 'wiso.ergebnisse';
   const S_STATISTIK = 'wiso.statistik';
+  const S_BEREICH = 'wiso.bereich';
+  const S_IHK = 'wiso.ihk';
   const SCHWAECHEN_ID = 'schwaechen';
   const SCHWAECHEN_ANZAHL = 30;
   const NEUE_MINDESTENS = 6;
@@ -28,7 +30,12 @@
       }
     },
     schreiben(schluessel, wert) {
-      try { localStorage.setItem(schluessel, JSON.stringify(wert)); } catch (e) { /* ohne Speicher weiter */ }
+      try {
+        localStorage.setItem(schluessel, JSON.stringify(wert));
+        return true;
+      } catch (e) {
+        return false;
+      }
     },
     loeschen(schluessel) {
       try { localStorage.removeItem(schluessel); } catch (e) { /* ohne Speicher weiter */ }
@@ -39,6 +46,11 @@
   let zustand = { ansicht: 'start' };
   let timerId = null;
   let installAufforderung = null; // Android/Chrome: vom Browser angebotene Installation
+
+  // Zwei Bereiche: 'ki' = eigene, KI-erstellte Sätze aus daten/; 'ihk' = Originalaufgaben, die jemand aus einer eigenen Datei einliest
+  let bereich = speicher.lesen(S_BEREICH, 'ki') === 'ihk' ? 'ihk' : 'ki';
+  let IHK_SAETZE = [];
+  let ihkInfo = null;
 
   // ---------- Hilfsfunktionen ----------
 
@@ -58,7 +70,30 @@
   }
 
   function satzById(id) {
-    return SAETZE.find(s => s.id === id);
+    return SAETZE.find(s => s.id === id) || IHK_SAETZE.find(s => s.id === id);
+  }
+
+  function saetzeImBereich() {
+    return bereich === 'ihk' ? IHK_SAETZE : SAETZE;
+  }
+
+  function themaName(k) {
+    return THEMEN[k] || k;
+  }
+
+  function themenImBereich() {
+    if (bereich === 'ki') return Object.keys(THEMEN);
+    const themen = new Set();
+    IHK_SAETZE.forEach(s => s.aufgaben.forEach(a => themen.add(a.thema)));
+    return [...themen].sort((x, y) => x.localeCompare(y, 'de'));
+  }
+
+  function istIhkId(id) {
+    return String(id || '').startsWith('ihk-');
+  }
+
+  function ergebnisBereich(e) {
+    return istIhkId(e.auswahl ? (e.auswahl[0] || {}).satzId : e.satzId) ? 'ihk' : 'ki';
   }
 
   function aufgabeById(satz, nr) {
@@ -144,7 +179,7 @@
 
   function alleAufgaben() {
     const liste = [];
-    SAETZE.forEach(s => s.aufgaben.forEach(a => liste.push({ satzId: s.id, nr: a.nr, thema: a.thema })));
+    saetzeImBereich().forEach(s => s.aufgaben.forEach(a => liste.push({ satzId: s.id, nr: a.nr, thema: a.thema })));
     return liste;
   }
 
@@ -188,7 +223,7 @@
     const neuePlaetze = Math.min(gruppen.offen.length, Math.max(anzahl - schwach.length, NEUE_MINDESTENS));
     const vorrang = schwach.slice(0, anzahl - neuePlaetze).concat(gruppen.offen.slice(0, neuePlaetze));
     const reserve = schwach.slice(anzahl - neuePlaetze).concat(gruppen.offen.slice(neuePlaetze), gruppen.sicher);
-    const reihenfolge = SAETZE.map(s => s.id);
+    const reihenfolge = saetzeImBereich().map(s => s.id);
 
     return vorrang.concat(reserve).slice(0, anzahl)
       .map(x => ({ satzId: x.q.satzId, nr: x.q.nr }))
@@ -200,11 +235,166 @@
       .map(q => ({ q, a: satzById(q.satzId) && aufgabeById(satzById(q.satzId), q.nr) }))
       .filter(x => x.a)
       .map((x, i) => Object.assign({}, x.a, { nr: i + 1, herkunft: { satzId: x.q.satzId, nr: x.q.nr } }));
-    return { id: SCHWAECHEN_ID, titel: 'Schwächen-Prüfung', untertitel: 'Aufgaben aus allen Sätzen', virtuell: true, auswahl, aufgaben };
+    const ihk = istIhkId((auswahl[0] || {}).satzId);
+    return {
+      id: SCHWAECHEN_ID,
+      titel: ihk ? 'Schwächen-Prüfung (IHK-Fragen)' : 'Schwächen-Prüfung',
+      untertitel: ihk ? 'Aufgaben aus deinen IHK-Fragen' : 'Aufgaben aus allen Sätzen',
+      virtuell: true,
+      auswahl,
+      aufgaben
+    };
   }
 
   function satzAus(eintrag) {
     return eintrag.auswahl ? baueSchwaechenSatz(eintrag.auswahl) : satzById(eintrag.satzId);
+  }
+
+  // ---------- IHK-Fragen aus einer eigenen Datei ----------
+  // Originalaufgaben der IHK/ZPA sind urheberrechtlich geschützt und gehören weder ins Repository noch in die
+  // öffentliche App. Wer sie für die eigene Prüfungsvorbereitung als Datei hat, liest sie hier ein; sie bleiben
+  // nur im Browser dieses Geräts. Erwartet wird das Format von „WiSo-Trainer.html“ (const DATA / const IMG)
+  // oder eine JSON-Datei mit derselben Liste.
+
+  // Liest das JSON-Literal hinter einer Zuweisung wie „const DATA = [...]“ (Klammern zählen, Zeichenketten überspringen)
+  function liesJsonNach(text, marker) {
+    const start = text.indexOf(marker);
+    if (start < 0) return null;
+    let i = start + marker.length;
+    while (i < text.length && text[i] !== '[' && text[i] !== '{') i++;
+    let tiefe = 0;
+    let inText = false;
+    let maskiert = false;
+    for (let j = i; j < text.length; j++) {
+      const c = text[j];
+      if (inText) {
+        if (maskiert) maskiert = false;
+        else if (c === '\\') maskiert = true;
+        else if (c === '"') inText = false;
+        continue;
+      }
+      if (c === '"') inText = true;
+      else if (c === '[' || c === '{') tiefe++;
+      else if (c === ']' || c === '}') {
+        tiefe--;
+        if (tiefe === 0) return JSON.parse(text.slice(i, j + 1));
+      }
+    }
+    return null;
+  }
+
+  const ZAHLWORT = { 2: 'zwei', 3: 'drei', 4: 'vier' };
+  const BILD_URL = /^data:image\/(png|jpe?g|gif|webp);base64,[A-Za-z0-9+/=]+$/;
+
+  function nachkommastellenVon(wert) {
+    const m = String(wert).match(/,(\d+)$/);
+    return m ? m[1].length : 0;
+  }
+
+  function wandleIhkAufgabe(q, bilder) {
+    const basis = { nr: Number(q.n), thema: q.t || 'Sonstiges', text: q.s || '', frage: q.q || '', erklaerung: q.e || '' };
+    if (q.img && BILD_URL.test(bilder[q.img] || '')) basis.bildUrl = bilder[q.img];
+    const loesungen = [].concat(q.a == null ? [] : q.a);
+
+    switch (q.type) {
+      case 'single':
+        return Object.assign(basis, {
+          typ: 'einfach', optionen: q.o, loesung: Number(loesungen[0]),
+          anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.'
+        });
+      case 'multi':
+        return Object.assign(basis, {
+          typ: 'mehrfach', optionen: q.o, loesung: loesungen.map(Number),
+          anweisung: `Tragen Sie die Ziffern vor den **${ZAHLWORT[loesungen.length] || loesungen.length}** zutreffenden Antworten in die Kästchen ein.`
+        });
+      case 'match': {
+        const items = (q.items || []).map((text, i) => ({ text, loesung: Number(loesungen[i]) }));
+        // Nur Ziffern als Antworten: Es geht um eine Reihenfolge, nicht um eine Zuordnung
+        if ((q.o || []).every(o => /^\d+$/.test(String(o)))) {
+          return Object.assign(basis, {
+            typ: 'reihenfolge', items,
+            anweisung: 'Tragen Sie für den ersten Schritt die Ziffer 1, für den zweiten Schritt die Ziffer 2 usw. in die Kästchen ein.'
+          });
+        }
+        return Object.assign(basis, {
+          typ: 'zuordnung', optionen: q.o, items,
+          anweisung: 'Tragen Sie die Ziffer der jeweils zutreffenden Antwort in das Kästchen ein. Eine Antwort kann mehrfach passen.'
+        });
+      }
+      case 'num': {
+        if (loesungen.length === 1 && B.leseDatum(loesungen[0])) {
+          return Object.assign(basis, { typ: 'datum', loesung: B.leseDatum(loesungen[0]), anweisung: 'Tragen Sie das Datum (TT.MM.JJJJ) in die Kästchen ein.' });
+        }
+        const uhr = loesungen.length === 1 && String(loesungen[0]).match(/^(\d{1,2}):00$/);
+        if (uhr) {
+          return Object.assign(basis, { typ: 'zahl', loesung: Number(uhr[1]), nachkommastellen: 0, einheit: 'Uhr', anweisung: 'Tragen Sie nur die volle Stunde ein, z. B. 7 für 7:00 Uhr.' });
+        }
+        const zahlen = loesungen.map(w => B.leseZahl(w));
+        if (!zahlen.length || zahlen.some(z => z === null)) return null;
+        const einheit = q.unit === 'Uhr' ? '' : (q.unit || '');
+        return Object.assign(basis, {
+          typ: 'zahl',
+          frage: q.labels && !/(^|\s)a\)/.test(basis.frage) ? `${basis.frage} ${q.labels.join('; ')}` : basis.frage,
+          loesung: zahlen.length > 1 ? zahlen : zahlen[0],
+          nachkommastellen: Math.max(einheit === 'EUR' ? 2 : 0, ...loesungen.map(nachkommastellenVon)),
+          einheit,
+          anweisung: zahlen.length > 1 ? 'Tragen Sie die Ergebnisse in die Kästchen ein.' : 'Tragen Sie das Ergebnis in die Kästchen ein.'
+        });
+      }
+      default:
+        return null;
+    }
+  }
+
+  function baueIhkSaetze(paket) {
+    const bilder = paket.bilder || {};
+    return (paket.daten || []).map(ex => {
+      const zusatz = /^extra/i.test(ex.id || '') || /zusatz/i.test(ex.exam || '');
+      const aufgaben = (ex.q || []).map(q => wandleIhkAufgabe(q, bilder)).filter(Boolean);
+      return {
+        id: 'ihk-' + String(ex.id || ex.exam).replace(/[^A-Za-z0-9_-]/g, ''),
+        titel: zusatz ? ex.exam : `IHK ${ex.exam}`,
+        untertitel: zusatz ? 'Zusatzfragen aus deiner Datei' : 'WiSo-Prüfung',
+        ausgangssituation: ex.intro || '',
+        aufgaben
+      };
+    }).filter(s => s.aufgaben.length);
+  }
+
+  function ladeIhk() {
+    const paket = speicher.lesen(S_IHK, null);
+    if (!paket) return;
+    IHK_SAETZE = baueIhkSaetze(paket);
+    ihkInfo = { quelle: paket.quelle, importiert: paket.importiert, nurSitzung: false };
+  }
+
+  function importiereIhk(datei) {
+    const meldung = document.getElementById('import-meldung');
+    const zeigeFehler = text => { if (meldung) meldung.textContent = text; };
+    const leser = new FileReader();
+    leser.onerror = () => zeigeFehler('Die Datei konnte nicht gelesen werden.');
+    leser.onload = () => {
+      let paket;
+      try {
+        const text = String(leser.result).trim();
+        const reinesJson = text.startsWith('[');
+        const daten = reinesJson ? JSON.parse(text) : liesJsonNach(text, 'const DATA');
+        if (!Array.isArray(daten) || !daten.length || !daten.every(ex => ex && Array.isArray(ex.q))) throw new Error('keine Fragenliste gefunden');
+        paket = { quelle: datei.name, importiert: new Date().toISOString(), daten, bilder: reinesJson ? {} : (liesJsonNach(text, 'const IMG') || {}) };
+      } catch (e) {
+        zeigeFehler(`Die Datei konnte nicht eingelesen werden (${e.message}). Erwartet wird „WiSo-Trainer.html“ oder eine JSON-Datei im selben Format.`);
+        return;
+      }
+      const saetze = baueIhkSaetze(paket);
+      if (!saetze.length) {
+        zeigeFehler('In der Datei wurden keine verwendbaren Fragen gefunden.');
+        return;
+      }
+      IHK_SAETZE = saetze;
+      ihkInfo = { quelle: paket.quelle, importiert: paket.importiert, nurSitzung: !speicher.schreiben(S_IHK, paket) };
+      ansichtStart();
+    };
+    leser.readAsText(datei, 'utf-8');
   }
 
   // ---------- Bausteine eines Aufgabenbogens ----------
@@ -268,7 +458,7 @@
 
   function renderKaestchen(a, antwort, ergebnis) {
     const werte = antwort || [];
-    const mitBuchstaben = a.typ === 'zuordnung' || a.typ === 'reihenfolge';
+    const mitBuchstaben = B.mitTeilen(a);
     const breit = a.typ === 'zahl' || a.typ === 'datum';
     const platzhalter = a.typ === 'datum' ? 'TT.MM.JJJJ' : (a.nachkommastellen ? '0,' + '0'.repeat(a.nachkommastellen) : '0');
     const felder = [];
@@ -302,6 +492,7 @@
       <section class="aufgabe" id="aufgabe-${a.nr}">
         <h3>${a.nr}. Aufgabe</h3>
         ${absaetze(a.text)}
+        ${a.bildUrl ? `<figure class="aufgaben-bild"><img src="${esc(a.bildUrl)}" alt="Abbildung zur ${a.nr}. Aufgabe" loading="lazy"></figure>` : ''}
         ${a.kasten ? renderKasten(a.kasten) : ''}
         ${a.frage ? `<p class="frage">${fmt(a.frage)}</p>` : ''}
         ${a.anweisung ? `<p class="anweisung">${fmt(a.anweisung)}</p>` : ''}
@@ -356,7 +547,7 @@
 
   function themenZaehler() {
     const zaehler = {};
-    SAETZE.forEach(s => s.aufgaben.forEach(a => { zaehler[a.thema] = (zaehler[a.thema] || 0) + 1; }));
+    saetzeImBereich().forEach(s => s.aufgaben.forEach(a => { zaehler[a.thema] = (zaehler[a.thema] || 0) + 1; }));
     return zaehler;
   }
 
@@ -375,9 +566,9 @@
     const nachzuarbeiten = su.falsch + su.unsicher;
     const quote = su.versuche ? Math.round(100 * su.richtig / su.versuche) : null;
 
-    const themen = Object.keys(THEMEN).filter(k => stand.themen[k]).map(k => {
+    const themen = themenImBereich().filter(k => stand.themen[k]).map(k => {
       const z = stand.themen[k];
-      return `<li><span>${esc(THEMEN[k])}</span>${renderStapel(z)}<span class="klein">${z.falsch ? `<strong class="text-nok">${z.falsch} falsch</strong> · ` : ''}${z.gesamt - z.offen}/${z.gesamt}</span></li>`;
+      return `<li><span>${esc(themaName(k))}</span>${renderStapel(z)}<span class="klein">${z.falsch ? `<strong class="text-nok">${z.falsch} falsch</strong> · ` : ''}${z.gesamt - z.offen}/${z.gesamt}</span></li>`;
     }).join('');
 
     return `
@@ -407,13 +598,58 @@
       </section>`;
   }
 
+  function renderKopf() {
+    const knopf = (wert, text) =>
+      `<button class="bereich${bereich === wert ? ' aktiv' : ''}" data-aktion="bereich" data-bereich="${wert}" aria-pressed="${bereich === wert}">${text}</button>`;
+    return `
+      <header class="kopf">
+        <h1>WiSo-Trainer</h1>
+        <p>Abschlussprüfung Teil 2 · IT-Berufe · Wirtschafts- und Sozialkunde</p>
+        <nav class="bereiche" aria-label="Fragenbereich">${knopf('ihk', 'IHK-Fragen')}${knopf('ki', 'IHK-KI-Fragen')}</nav>
+      </header>`;
+  }
+
+  function renderDateiwahl(text) {
+    return `<label class="btn primaer datei-knopf">${text}<input type="file" id="ihk-datei" class="unsichtbar" accept=".html,.htm,.json,text/html,application/json"></label>
+      <p class="klein meldung" id="import-meldung" role="status"></p>`;
+  }
+
+  function renderIhkImport() {
+    return `
+      <section class="karte">
+        <h2>IHK-Fragen einlesen</h2>
+        <p>Hier übst du mit Aufgaben aus echten IHK-Prüfungen. Diese Aufgaben sind urheberrechtlich geschützt (ZPA Nord-West) und dürfen deshalb nicht in der öffentlichen App stehen. Wenn du sie für deine eigene Prüfungsvorbereitung als Datei hast, kannst du sie hier einlesen.</p>
+        ${renderDateiwahl('Datei auswählen')}
+        <p class="klein">Unterstützt wird „WiSo-Trainer.html“ (Lernkarten-Datei) oder eine JSON-Datei im selben Format. Die Fragen werden nur in diesem Browser auf diesem Gerät gespeichert und nirgendwohin hochgeladen. Auf jedem weiteren Gerät liest du die Datei einmal ein, z. B. aus der Dateien-App.</p>
+      </section>`;
+  }
+
+  function renderIhkDatei() {
+    const anzahl = IHK_SAETZE.reduce((n, s) => n + s.aufgaben.length, 0);
+    return `
+      <section class="karte">
+        <h2>Deine IHK-Datei</h2>
+        <p class="klein">${esc(ihkInfo && ihkInfo.quelle || 'Datei')} · ${IHK_SAETZE.length} Sätze · ${anzahl} Aufgaben${ihkInfo && ihkInfo.importiert ? ` · eingelesen am ${esc(datumText(ihkInfo.importiert))}` : ''}</p>
+        ${ihkInfo && ihkInfo.nurSitzung ? '<p class="klein text-nok">Der Browser hat das dauerhafte Speichern abgelehnt (z. B. privates Fenster). Die Fragen sind nur bis zum Schließen der App geladen.</p>' : ''}
+        ${renderDateiwahl('Neu einlesen')}
+        <p class="zuruecksetzen"><button class="link" data-aktion="ihk-entfernen">IHK-Fragen von diesem Gerät entfernen</button></p>
+      </section>`;
+  }
+
   function ansichtStart() {
     stoppeTimer();
     zustand = { ansicht: 'start' };
     const name = speicher.lesen(S_NAME, '');
     const laufend = speicher.lesen(S_LAUFEND, null);
     const laufenderSatz = laufend && satzAus(laufend);
-    const ergebnisse = speicher.lesen(S_ERGEBNISSE, []);
+
+    if (bereich === 'ihk' && !IHK_SAETZE.length) {
+      zeige(`${renderKopf()}<main class="start">${renderIhkImport()}</main>`);
+      return;
+    }
+
+    const saetze = saetzeImBereich();
+    const ergebnisse = speicher.lesen(S_ERGEBNISSE, []).filter(e => ergebnisBereich(e) === bereich);
     const zaehler = themenZaehler();
     const stand = lernstand(ladeStatistik());
 
@@ -422,7 +658,7 @@
       if (!e.auswahl && (bestePunkte[e.satzId] === undefined || e.punkte > bestePunkte[e.satzId])) bestePunkte[e.satzId] = e.punkte;
     });
 
-    const saetzeHtml = SAETZE.map(s => {
+    const saetzeHtml = saetze.map(s => {
       const z = stand.saetze[s.id] || neuerZaehler();
       const bearbeitet = z.gesamt - z.offen;
       const beste = bestePunkte[s.id];
@@ -443,10 +679,10 @@
       </li>`;
     }).join('');
 
-    const themenHtml = Object.keys(THEMEN).filter(k => zaehler[k]).map(k => {
+    const themenHtml = themenImBereich().filter(k => zaehler[k]).map(k => {
       const falsch = (stand.themen[k] || {}).falsch;
       return `
-      <li><button class="thema" data-aktion="thema" data-thema="${esc(k)}">${esc(THEMEN[k])}<span class="zaehler">${falsch ? `<span class="anzahl nok">${falsch} falsch</span>` : ''}<span class="anzahl">${zaehler[k]}</span></span></button></li>`;
+      <li><button class="thema" data-aktion="thema" data-thema="${esc(k)}">${esc(themaName(k))}<span class="zaehler">${falsch ? `<span class="anzahl nok">${falsch} falsch</span>` : ''}<span class="anzahl">${zaehler[k]}</span></span></button></li>`;
     }).join('');
 
     const ergebnisseHtml = ergebnisse.length ? `
@@ -471,7 +707,7 @@
       </section>`;
 
     zeige(`
-      <header class="kopf"><h1>WiSo-Trainer</h1><p>Abschlussprüfung Teil 2 · IT-Berufe · Wirtschafts- und Sozialkunde</p></header>
+      ${renderKopf()}
       <main class="start">
         ${laufenderSatz ? `
           <div class="banner">
@@ -480,9 +716,9 @@
           </div>` : ''}
         ${renderLernstand(stand)}
         <section class="karte">
-          <h2>Aufgabensätze</h2>
-          <p class="klein"><strong>Prüfung starten:</strong> 30 Aufgaben, 60 Minuten, Auswertung nach IHK-Schema. <strong>Üben:</strong> Aufgabe für Aufgabe mit sofortiger Lösung.</p>
-          ${SAETZE.length ? `<ul class="satz-liste">${saetzeHtml}</ul>` : '<p>Keine Aufgabensätze gefunden.</p>'}
+          <h2>${bereich === 'ihk' ? 'IHK-Prüfungen' : 'Aufgabensätze'}</h2>
+          <p class="klein"><strong>Prüfung:</strong> alle Aufgaben des Satzes, 60 Minuten, Auswertung nach IHK-Schema. <strong>Üben:</strong> Aufgabe für Aufgabe mit sofortiger Lösung.</p>
+          ${saetze.length ? `<ul class="satz-liste">${saetzeHtml}</ul>` : '<p>Keine Aufgabensätze gefunden.</p>'}
         </section>
         <section class="karte">
           <h2>Themen-Training</h2>
@@ -490,6 +726,7 @@
           <ul class="themen">${themenHtml}</ul>
         </section>
         ${ergebnisseHtml}
+        ${bereich === 'ihk' ? renderIhkDatei() : ''}
         <section class="karte">
           <h2>Dein Name</h2>
           <input id="name" class="eingabe" value="${esc(name)}" placeholder="Spitzname" maxlength="30" autocomplete="nickname">
@@ -827,7 +1064,7 @@
 
   function aufgabenZumThema(thema) {
     const liste = [];
-    SAETZE.forEach(s => s.aufgaben.forEach(a => { if (a.thema === thema) liste.push({ satzId: s.id, nr: a.nr }); }));
+    saetzeImBereich().forEach(s => s.aufgaben.forEach(a => { if (a.thema === thema) liste.push({ satzId: s.id, nr: a.nr }); }));
     return liste;
   }
 
@@ -902,6 +1139,10 @@
     }
   });
 
+  app.addEventListener('change', e => {
+    if (e.target.id === 'ihk-datei' && e.target.files && e.target.files[0]) importiereIhk(e.target.files[0]);
+  });
+
   app.addEventListener('keydown', e => {
     const el = e.target;
     if (e.key === 'Backspace' && el.classList && el.classList.contains('kasten') && !el.classList.contains('breit') && !el.value) {
@@ -930,6 +1171,19 @@
     switch (d.aktion) {
       case 'start':
         ansichtStart();
+        break;
+      case 'bereich':
+        bereich = d.bereich === 'ihk' ? 'ihk' : 'ki';
+        speicher.schreiben(S_BEREICH, bereich);
+        ansichtStart();
+        break;
+      case 'ihk-entfernen':
+        if (window.confirm('IHK-Fragen von diesem Gerät entfernen? Dein Lernstand dazu bleibt erhalten, falls du die Datei später wieder einliest.')) {
+          speicher.loeschen(S_IHK);
+          IHK_SAETZE = [];
+          ihkInfo = null;
+          ansichtStart();
+        }
         break;
       case 'deckblatt':
         ansichtDeckblatt(satzById(d.satz));
@@ -1049,5 +1303,6 @@
     navigator.serviceWorker.register('sw.js').catch(() => { /* App läuft auch ohne Offline-Cache */ });
   }
 
+  ladeIhk();
   ansichtStart();
 })();

@@ -20,8 +20,14 @@
       case 'mehrfach': return aufgabe.loesung.length;
       case 'zuordnung':
       case 'reihenfolge': return aufgabe.items.length;
+      case 'zahl': return Array.isArray(aufgabe.loesung) ? aufgabe.loesung.length : 1;
       default: return 1;
     }
+  }
+
+  // Rechenaufgaben mit mehreren Teilergebnissen (a, b, …) haben ein Lösungsarray
+  function mitTeilen(aufgabe) {
+    return aufgabe.typ === 'zuordnung' || aufgabe.typ === 'reihenfolge' || (aufgabe.typ === 'zahl' && Array.isArray(aufgabe.loesung));
   }
 
   function bewertungsart(aufgabe) {
@@ -81,11 +87,12 @@
       case 'reihenfolge':
         details = aufgabe.items.map((item, i) => Number(werte[i]) === item.loesung);
         break;
-      case 'zahl': {
-        const z = leseZahl(werte[0]);
-        details = [z !== null && Math.abs(z - aufgabe.loesung) < 0.005];
+      case 'zahl':
+        details = [].concat(aufgabe.loesung).map((soll, i) => {
+          const z = leseZahl(werte[i]);
+          return z !== null && Math.abs(z - soll) < 0.005;
+        });
         break;
-      }
       case 'datum':
         details = [leseDatum(werte[0]) === aufgabe.loesung];
         break;
@@ -128,7 +135,11 @@
       case 'mehrfach': return '[' + aufgabe.loesung.join(';') + ']';
       case 'zuordnung':
       case 'reihenfolge': return aufgabe.items.map((item, i) => 'abcdefghij'[i] + ') ' + item.loesung).join('  ');
-      case 'zahl': return formatZahl(aufgabe.loesung, aufgabe.nachkommastellen || 0) + (aufgabe.einheit ? ' ' + aufgabe.einheit : '');
+      case 'zahl': {
+        const einheit = aufgabe.einheit ? ' ' + aufgabe.einheit : '';
+        const werte = [].concat(aufgabe.loesung).map(l => formatZahl(l, aufgabe.nachkommastellen || 0) + einheit);
+        return werte.length > 1 ? werte.map((w, i) => 'abcdefghij'[i] + ') ' + w).join('  ') : werte[0];
+      }
       case 'datum': return aufgabe.loesung;
       default: return '';
     }
@@ -136,7 +147,7 @@
 
   function eingabeText(aufgabe, antwort) {
     if (istLeer(antwort)) return '–';
-    if (aufgabe.typ === 'zuordnung' || aufgabe.typ === 'reihenfolge') {
+    if (mitTeilen(aufgabe)) {
       return antwort.map((w, i) => 'abcdefghij'[i] + ') ' + (w || '–')).join('  ');
     }
     return antwort.map(w => w || '–').join(' ');
@@ -146,6 +157,7 @@
     GESAMTPUNKTE,
     NOTEN,
     kaestchenAnzahl,
+    mitTeilen,
     bewertungsart,
     leseZahl,
     leseDatum,
