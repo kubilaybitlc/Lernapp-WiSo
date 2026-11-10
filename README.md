@@ -32,7 +32,9 @@ Neue Aufgabensätze zusätzlich in die Liste `DATEIEN` in `sw.js` eintragen, dam
 - **Prüfungssimulation:** Deckblatt mit Bearbeitungshinweisen, Timer (Abgabe automatisch nach 60 Min.), Lösungsbogen-Übersicht, angefangene Prüfungen lassen sich fortsetzen.
 - **Auswertung:** Punkte und Note nach IHK-Notenschlüssel, Lösungsbogen mit Teil-/Globalbewertung, Ergebnis je Thema, alle Aufgaben mit Lösung und Erklärung.
 - **Üben:** Aufgabe für Aufgabe mit sofortiger Rückmeldung, nach Satz, nach Thema oder nur die nicht gelösten Aufgaben.
-- Fortschritt und Ergebnisse werden nur im Browser gespeichert (localStorage).
+- **Lernstand:** Jede Antwort aus Üben und Prüfung wird je Aufgabe gezählt. Die Startseite zeigt bearbeitet, offen, zuletzt falsch, unsicher (zuletzt richtig, vorher falsch) und sicher, auch je Thema und je Satz.
+- **Schwächen-Prüfung:** 30 Aufgaben aus allen Sätzen, 60 Minuten, IHK-Bewertung. Reihenfolge der Auswahl: zuletzt falsch (häufigste Fehler zuerst), unsicher, mindestens 6 neue; sichere Aufgaben nur, wenn sonst nichts übrig ist.
+- Fortschritt, Lernstand und Ergebnisse werden nur im Browser gespeichert (localStorage).
 
 ## Aufbau
 

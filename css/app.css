@@ -15,6 +15,9 @@
   --teil-hell: #fdf1d8;
   --nok: #b3261e;
   --nok-hell: #fbe4e2;
+  --unsicher: #dba235;
+  --offen: #e3e6ea;
+  --offen-rand: #b9bec6;
   --radius: 6px;
   color-scheme: light;
 }
@@ -108,7 +111,44 @@ p { margin: 0 0 .6em; }
   background: var(--papier); color: var(--text); cursor: pointer;
 }
 .thema:hover { border-color: var(--akzent); background: var(--akzent-hell); }
-.thema .anzahl { font-size: .8rem; color: var(--text-leise); background: var(--hintergrund); border-radius: 99px; padding: .05em .6em; }
+.thema .zaehler { display: flex; gap: .3rem; flex: none; }
+.thema .anzahl { font-size: .8rem; color: var(--text-leise); background: var(--hintergrund); border-radius: 99px; padding: .05em .6em; white-space: nowrap; }
+.thema .anzahl.nok { color: var(--nok); background: var(--nok-hell); }
+.text-nok { color: var(--nok); }
+
+/* Lernstand (Dashboard) */
+.lernstand-kopf { margin: 0 0 .5rem; color: var(--text-leise); }
+.lernstand-kopf .wert { font-size: 2rem; font-weight: 600; color: var(--akzent); font-variant-numeric: tabular-nums; }
+.lernstand-kopf small { font-size: .5em; font-weight: 400; color: var(--text-leise); }
+
+.kacheln { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .6rem; margin: .9rem 0 .8rem; }
+.kachel { display: flex; flex-direction: column; padding: .5rem .7rem; border: 1px solid var(--linie); border-top: 5px solid var(--offen-rand); border-radius: var(--radius); font-size: .88rem; color: var(--text-leise); }
+.kachel .wert { font-size: 1.6rem; font-weight: 600; line-height: 1.15; color: var(--text); font-variant-numeric: tabular-nums; }
+.kachel.k-falsch { border-top-color: var(--nok); }
+.kachel.k-falsch .wert { color: var(--nok); }
+.kachel.k-unsicher { border-top-color: var(--unsicher); }
+.kachel.k-unsicher .wert { color: var(--teil); }
+.kachel.k-sicher { border-top-color: var(--ok); }
+.kachel.k-sicher .wert { color: var(--ok); }
+
+.stapel { display: flex; height: 12px; border-radius: 99px; overflow: hidden; background: var(--offen); }
+.stapel span { display: block; height: 100%; }
+.s-sicher { background: var(--ok); }
+.s-unsicher { background: var(--unsicher); }
+.s-falsch { background: var(--nok); }
+.lernstand .knoepfe { margin: .9rem 0 .4rem; }
+
+.themen-details { margin-top: .8rem; border-top: 1px solid var(--linie); padding-top: .6rem; }
+.themen-details summary { cursor: pointer; font-weight: 600; }
+.themen-stand { list-style: none; margin: .6rem 0 0; padding: 0; }
+.themen-stand li { display: grid; grid-template-columns: minmax(0, 1fr) 140px 7.5em; gap: .8rem; align-items: center; padding: .3rem 0; font-size: .92rem; }
+.themen-stand .klein { text-align: right; }
+
+.zuruecksetzen { margin: .8rem 0 0; text-align: right; }
+.link { font: inherit; font-size: .85rem; color: var(--text-leise); background: none; border: 0; padding: 0; text-decoration: underline; cursor: pointer; }
+.link:hover { color: var(--nok); }
+
+.zusammensetzung { margin-top: 1.2rem; padding: .6rem .8rem; background: var(--akzent-hell); border-radius: var(--radius); font-size: .92rem; }
 
 .tabelle-rahmen { overflow-x: auto; }
 table.ergebnisse, table.auswertung { width: 100%; border-collapse: collapse; font-size: .92rem; }
@@ -288,5 +328,11 @@ table.daten td:not(:first-child) { text-align: center; }
   .bogen { grid-template-columns: repeat(10, 1fr); }
   .deck-mitte { grid-template-columns: 1fr; }
   .themen-auswertung li { grid-template-columns: minmax(0, 1fr) 80px 3em; }
+  .themen-stand li { grid-template-columns: minmax(0, 1fr) 70px; gap: .2rem .8rem; }
+  .themen-stand .klein { grid-column: 1 / -1; text-align: left; margin-top: -.2rem; }
   .fortschritt { display: none; }
+}
+
+@media (max-width: 520px) {
+  .kacheln { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }

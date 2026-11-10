@@ -12,6 +12,10 @@
   const S_NAME = 'wiso.name';
   const S_LAUFEND = 'wiso.laufend';
   const S_ERGEBNISSE = 'wiso.ergebnisse';
+  const S_STATISTIK = 'wiso.statistik';
+  const SCHWAECHEN_ID = 'schwaechen';
+  const SCHWAECHEN_ANZAHL = 30;
+  const NEUE_MINDESTENS = 6;
 
   // localStorage kann gesperrt sein (privates Fenster, file://-Einschränkungen) – die App läuft dann ohne Speichern weiter
   const speicher = {
@@ -65,6 +69,11 @@
     return (satz.situationen || []).find(s => nr >= s.von && nr <= s.bis);
   }
 
+  // Ursprung einer Aufgabe: bei der Schwächen-Prüfung ist sie neu nummeriert und merkt sich Satz und Nummer
+  function quelle(satz, a) {
+    return a.herkunft || { satzId: satz.id, nr: a.nr };
+  }
+
   function datumText(iso) {
     return new Date(iso).toLocaleString('de-DE', { dateStyle: 'short', timeStyle: 'short' });
   }
@@ -82,10 +91,131 @@
     return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
   }
 
+  // ---------- Lernstand je Aufgabe ----------
+  // Je Aufgabe: v = Versuche, r = richtig, f = falsch, s = richtig in Folge, l = letzte Antwort richtig, z = Zeitpunkt
+
+  function statSchluessel(q) {
+    return q.satzId + '#' + q.nr;
+  }
+
+  function zaehle(stat, q, anteil, zeit) {
+    const k = statSchluessel(q);
+    const s = stat[k] || { v: 0, r: 0, f: 0, s: 0 };
+    const richtig = anteil === 1;
+    s.v++;
+    if (richtig) { s.r++; s.s++; } else { s.f++; s.s = 0; }
+    s.l = richtig;
+    s.z = zeit || Date.now();
+    stat[k] = s;
+  }
+
+  function ladeStatistik() {
+    let stat = speicher.lesen(S_STATISTIK, null);
+    if (!stat) {
+      // Beim ersten Start mit Lernstand die bisherigen Prüfungen übernehmen, damit niemand bei null anfängt
+      stat = {};
+      speicher.lesen(S_ERGEBNISSE, []).slice().reverse().forEach(e => {
+        const satz = satzAus(e);
+        if (!satz) return;
+        satz.aufgaben.forEach(a => {
+          const antwort = (e.antworten || {})[a.nr];
+          if (antwort && antwort.some(Boolean)) zaehle(stat, quelle(satz, a), B.pruefeAufgabe(a, antwort).anteil, Date.parse(e.datum));
+        });
+      });
+      speicher.schreiben(S_STATISTIK, stat);
+    }
+    return stat;
+  }
+
+  function erfasse(eintraege) {
+    if (!eintraege.length) return;
+    const stat = ladeStatistik();
+    eintraege.forEach(e => zaehle(stat, e.quelle, e.anteil));
+    speicher.schreiben(S_STATISTIK, stat);
+  }
+
+  // Nach einem Fehler gilt eine Aufgabe erst nach zwei richtigen Antworten in Folge wieder als sicher
+  function statusVon(s) {
+    if (!s || !s.v) return 'offen';
+    if (!s.l) return 'falsch';
+    if (s.f > 0 && s.s < 2) return 'unsicher';
+    return 'sicher';
+  }
+
+  function alleAufgaben() {
+    const liste = [];
+    SAETZE.forEach(s => s.aufgaben.forEach(a => liste.push({ satzId: s.id, nr: a.nr, thema: a.thema })));
+    return liste;
+  }
+
+  function neuerZaehler() {
+    return { offen: 0, falsch: 0, unsicher: 0, sicher: 0, gesamt: 0 };
+  }
+
+  function lernstand(stat) {
+    const summe = Object.assign(neuerZaehler(), { versuche: 0, richtig: 0 });
+    const themen = {};
+    const saetze = {};
+    alleAufgaben().forEach(q => {
+      const s = stat[statSchluessel(q)];
+      const status = statusVon(s);
+      const zaehler = [summe, themen[q.thema] || (themen[q.thema] = neuerZaehler()), saetze[q.satzId] || (saetze[q.satzId] = neuerZaehler())];
+      zaehler.forEach(z => { z[status]++; z.gesamt++; });
+      if (s) { summe.versuche += s.v; summe.richtig += s.r; }
+    });
+    return { summe, themen, saetze };
+  }
+
+  function mischen(liste) {
+    return liste.map(x => [Math.random(), x]).sort((a, b) => a[0] - b[0]).map(x => x[1]);
+  }
+
+  // Rangfolge: zuletzt falsch (häufigste Fehler zuerst) > unsicher > neu > sicher.
+  // Ein paar Plätze bleiben für neue Aufgaben, damit der Stoff weiter abgedeckt wird;
+  // sichere Aufgaben kommen nur dran, wenn sonst nichts mehr übrig ist.
+  function waehleSchwaechen(anzahl) {
+    const stat = ladeStatistik();
+    const gruppen = { falsch: [], unsicher: [], offen: [], sicher: [] };
+    mischen(alleAufgaben()).forEach(q => {
+      const s = stat[statSchluessel(q)];
+      gruppen[statusVon(s)].push({ q, s });
+    });
+    // sort ist stabil: Bei gleicher Fehlerzahl bleibt die zufällige Reihenfolge erhalten
+    gruppen.falsch.sort((x, y) => y.s.f - x.s.f);
+    gruppen.sicher.sort((x, y) => x.s.s - y.s.s || x.s.z - y.s.z);
+
+    const schwach = gruppen.falsch.concat(gruppen.unsicher);
+    const neuePlaetze = Math.min(gruppen.offen.length, Math.max(anzahl - schwach.length, NEUE_MINDESTENS));
+    const vorrang = schwach.slice(0, anzahl - neuePlaetze).concat(gruppen.offen.slice(0, neuePlaetze));
+    const reserve = schwach.slice(anzahl - neuePlaetze).concat(gruppen.offen.slice(neuePlaetze), gruppen.sicher);
+    const reihenfolge = SAETZE.map(s => s.id);
+
+    return vorrang.concat(reserve).slice(0, anzahl)
+      .map(x => ({ satzId: x.q.satzId, nr: x.q.nr }))
+      .sort((x, y) => reihenfolge.indexOf(x.satzId) - reihenfolge.indexOf(y.satzId) || x.nr - y.nr);
+  }
+
+  function baueSchwaechenSatz(auswahl) {
+    const aufgaben = auswahl
+      .map(q => ({ q, a: satzById(q.satzId) && aufgabeById(satzById(q.satzId), q.nr) }))
+      .filter(x => x.a)
+      .map((x, i) => Object.assign({}, x.a, { nr: i + 1, herkunft: { satzId: x.q.satzId, nr: x.q.nr } }));
+    return { id: SCHWAECHEN_ID, titel: 'Schwächen-Prüfung', untertitel: 'Aufgaben aus allen Sätzen', virtuell: true, auswahl, aufgaben };
+  }
+
+  function satzAus(eintrag) {
+    return eintrag.auswahl ? baueSchwaechenSatz(eintrag.auswahl) : satzById(eintrag.satzId);
+  }
+
   // ---------- Bausteine eines Aufgabenbogens ----------
 
-  function renderSituation(sit) {
-    const titel = sit.titel || `Situation zur ${sit.von}. ${sit.bis - sit.von === 1 ? 'und' : 'bis'} ${sit.bis}. Aufgabe`;
+  function situationsTitel(von, bis) {
+    return von === bis ? `Situation zur ${von}. Aufgabe` : `Situation zur ${von}. ${bis - von === 1 ? 'und' : 'bis'} ${bis}. Aufgabe`;
+  }
+
+  // nummern: neue Aufgabennummern in der Schwächen-Prüfung, sonst gelten die Nummern des Satzes
+  function renderSituation(sit, nummern) {
+    const titel = nummern ? situationsTitel(nummern[0], nummern[nummern.length - 1]) : (sit.titel || situationsTitel(sit.von, sit.bis));
     return `<div class="situation"><h4>${esc(titel)}</h4>${absaetze(sit.text)}${sit.tabelle ? renderTabelle(sit.tabelle) : ''}</div>`;
   }
 
@@ -169,13 +299,33 @@
     return `<div class="situation ausgang"><h4>Ausgangssituation</h4>${absaetze(satz.ausgangssituation)}</div>`;
   }
 
-  // Ganzer Aufgabenbogen, Situationen jeweils vor der ersten zugehörigen Aufgabe
+  function renderHerkunft(satz) {
+    return `<div class="situation ausgang"><h4>Ausgangssituation · ${esc(satz.titel)}, ${esc(satz.untertitel || '')}</h4>${absaetze(satz.ausgangssituation)}</div>`;
+  }
+
+  // Ganzer Aufgabenbogen, Situationen jeweils vor der ersten zugehörigen Aufgabe.
+  // Bei der Schwächen-Prüfung steht vor jedem Herkunftssatz dessen Ausgangssituation.
   function renderBogen(satz, antworten, mitErgebnis) {
-    let html = renderAusgangssituation(satz);
+    let html = satz.virtuell ? '' : renderAusgangssituation(satz);
     let letzteSituation = null;
+    let letzteHerkunft = null;
     for (const a of satz.aufgaben) {
-      const sit = situationFuer(satz, a.nr);
-      if (sit && sit !== letzteSituation) html += renderSituation(sit);
+      let sit;
+      if (a.herkunft) {
+        const herkunft = satzById(a.herkunft.satzId);
+        if (herkunft !== letzteHerkunft) html += renderHerkunft(herkunft);
+        letzteHerkunft = herkunft;
+        sit = situationFuer(herkunft, a.herkunft.nr);
+        if (sit && sit !== letzteSituation) {
+          const nummern = satz.aufgaben
+            .filter(x => x.herkunft.satzId === a.herkunft.satzId && x.herkunft.nr >= sit.von && x.herkunft.nr <= sit.bis)
+            .map(x => x.nr);
+          html += renderSituation(sit, nummern);
+        }
+      } else {
+        sit = situationFuer(satz, a.nr);
+        if (sit && sit !== letzteSituation) html += renderSituation(sit);
+      }
       letzteSituation = sit;
       const antwort = antworten[a.nr];
       html += renderAufgabe(satz, a, { antwort, ergebnis: mitErgebnis ? B.pruefeAufgabe(a, antwort) : null });
@@ -191,26 +341,81 @@
     return zaehler;
   }
 
+  // Gestapelter Balken: sicher, unsicher, falsch; der Rest (offen) bleibt grau
+  function renderStapel(z) {
+    const teile = ['sicher', 'unsicher', 'falsch']
+      .filter(k => z[k])
+      .map(k => `<span class="s-${k}" style="width:${(100 * z[k] / z.gesamt).toFixed(2)}%"></span>`)
+      .join('');
+    return `<span class="stapel" role="img" aria-label="${z.sicher} sicher, ${z.unsicher} unsicher, ${z.falsch} falsch, ${z.offen} offen">${teile}</span>`;
+  }
+
+  function renderLernstand(stand) {
+    const su = stand.summe;
+    const bearbeitet = su.gesamt - su.offen;
+    const nachzuarbeiten = su.falsch + su.unsicher;
+    const quote = su.versuche ? Math.round(100 * su.richtig / su.versuche) : null;
+
+    const themen = Object.keys(THEMEN).filter(k => stand.themen[k]).map(k => {
+      const z = stand.themen[k];
+      return `<li><span>${esc(THEMEN[k])}</span>${renderStapel(z)}<span class="klein">${z.falsch ? `<strong class="text-nok">${z.falsch} falsch</strong> · ` : ''}${z.gesamt - z.offen}/${z.gesamt}</span></li>`;
+    }).join('');
+
+    return `
+      <section class="karte lernstand">
+        <h2>Dein Lernstand</h2>
+        <p class="lernstand-kopf"><span class="wert">${bearbeitet}<small> von ${su.gesamt}</small></span> Aufgaben bearbeitet</p>
+        ${renderStapel(su)}
+        <div class="kacheln">
+          <div class="kachel k-offen"><span class="wert">${su.offen}</span>noch offen</div>
+          <div class="kachel k-falsch"><span class="wert">${su.falsch}</span>zuletzt falsch</div>
+          <div class="kachel k-unsicher"><span class="wert">${su.unsicher}</span>unsicher</div>
+          <div class="kachel k-sicher"><span class="wert">${su.sicher}</span>sicher</div>
+        </div>
+        <p class="klein">${quote === null
+          ? 'Noch keine Antworten. Sobald du übst oder eine Prüfung abgibst, siehst du hier deinen Stand.'
+          : `${su.versuche} Antworten, davon ${quote} % vollständig richtig. <strong>Unsicher</strong>: zuletzt richtig, vorher aber falsch. <strong>Sicher</strong> wird eine Aufgabe nach einem Fehler erst mit zwei richtigen Antworten in Folge.`}</p>
+        <div class="knoepfe">
+          <button class="btn primaer" data-aktion="schwaechen-pruefung">Schwächen-Prüfung starten</button>
+          ${nachzuarbeiten ? `<button class="btn" data-aktion="falsche-ueben">Falsche und unsichere üben (${nachzuarbeiten})</button>` : ''}
+        </div>
+        <p class="klein">Die Schwächen-Prüfung stellt ${SCHWAECHEN_ANZAHL} Aufgaben aus allen Sätzen zusammen: zuerst die, die du falsch hattest (häufigste Fehler zuerst), dann unsichere, dazu immer mindestens ${NEUE_MINDESTENS} neue. Sichere Aufgaben kommen nur, wenn sonst nichts übrig ist. ${PRUEFUNGSDAUER_MIN} Minuten, Bewertung wie bei der IHK.</p>
+        <details class="themen-details">
+          <summary>Stand nach Themen</summary>
+          <ul class="themen-stand">${themen}</ul>
+        </details>
+        ${bearbeitet ? '<p class="zuruecksetzen"><button class="link" data-aktion="statistik-loeschen">Lernstand zurücksetzen</button></p>' : ''}
+      </section>`;
+  }
+
   function ansichtStart() {
     stoppeTimer();
     zustand = { ansicht: 'start' };
     const name = speicher.lesen(S_NAME, '');
     const laufend = speicher.lesen(S_LAUFEND, null);
-    const laufenderSatz = laufend && satzById(laufend.satzId);
+    const laufenderSatz = laufend && satzAus(laufend);
     const ergebnisse = speicher.lesen(S_ERGEBNISSE, []);
     const zaehler = themenZaehler();
+    const stand = lernstand(ladeStatistik());
 
-    const saetzeHtml = SAETZE.map(s => `
+    const saetzeHtml = SAETZE.map(s => {
+      const z = stand.saetze[s.id] || neuerZaehler();
+      const fortschritt = z.gesamt - z.offen ? ` · ${z.gesamt - z.offen} bearbeitet${z.falsch ? ` · <strong class="text-nok">${z.falsch} falsch</strong>` : ''}` : '';
+      return `
       <li>
-        <div><strong>${esc(s.titel)}</strong><span class="klein">${esc(s.untertitel || '')} · ${s.aufgaben.length} Aufgaben</span></div>
+        <div><strong>${esc(s.titel)}</strong><span class="klein">${esc(s.untertitel || '')} · ${s.aufgaben.length} Aufgaben${fortschritt}</span></div>
         <div class="knoepfe">
           <button class="btn primaer" data-aktion="deckblatt" data-satz="${esc(s.id)}">Prüfung starten</button>
           <button class="btn" data-aktion="satz-ueben" data-satz="${esc(s.id)}">Üben</button>
         </div>
-      </li>`).join('');
+      </li>`;
+    }).join('');
 
-    const themenHtml = Object.keys(THEMEN).filter(k => zaehler[k]).map(k => `
-      <li><button class="thema" data-aktion="thema" data-thema="${esc(k)}">${esc(THEMEN[k])}<span class="anzahl">${zaehler[k]}</span></button></li>`).join('');
+    const themenHtml = Object.keys(THEMEN).filter(k => zaehler[k]).map(k => {
+      const falsch = (stand.themen[k] || {}).falsch;
+      return `
+      <li><button class="thema" data-aktion="thema" data-thema="${esc(k)}">${esc(THEMEN[k])}<span class="zaehler">${falsch ? `<span class="anzahl nok">${falsch} falsch</span>` : ''}<span class="anzahl">${zaehler[k]}</span></span></button></li>`;
+    }).join('');
 
     const ergebnisseHtml = ergebnisse.length ? `
       <section class="karte">
@@ -241,11 +446,7 @@
             <span>Angefangene Prüfung: <strong>${esc(laufenderSatz.titel)}</strong></span>
             <span class="knoepfe"><button class="btn primaer" data-aktion="fortsetzen">Fortsetzen</button><button class="btn" data-aktion="verwerfen">Verwerfen</button></span>
           </div>` : ''}
-        <section class="karte">
-          <h2>Dein Name</h2>
-          <input id="name" class="eingabe" value="${esc(name)}" placeholder="Spitzname" maxlength="30" autocomplete="nickname">
-          <p class="klein">Wird nur in diesem Browser gespeichert.</p>
-        </section>
+        ${renderLernstand(stand)}
         <section class="karte">
           <h2>Aufgabensätze</h2>
           <p class="klein"><strong>Prüfung starten:</strong> 30 Aufgaben, 60 Minuten, Auswertung nach IHK-Schema. <strong>Üben:</strong> Aufgabe für Aufgabe mit sofortiger Lösung.</p>
@@ -257,11 +458,29 @@
           <ul class="themen">${themenHtml}</ul>
         </section>
         ${ergebnisseHtml}
+        <section class="karte">
+          <h2>Dein Name</h2>
+          <input id="name" class="eingabe" value="${esc(name)}" placeholder="Spitzname" maxlength="30" autocomplete="nickname">
+          <p class="klein">Erscheint in deinen Ergebnissen. Name, Ergebnisse und Lernstand werden nur auf diesem Gerät gespeichert.</p>
+        </section>
         ${installHtml}
       </main>`);
   }
 
   // ---------- Deckblatt ----------
+
+  function zusammensetzungText(auswahl) {
+    const stat = ladeStatistik();
+    const z = neuerZaehler();
+    auswahl.forEach(q => { z[statusVon(stat[statSchluessel(q)])]++; });
+    const teile = [
+      z.falsch && `${z.falsch} zuletzt falsch`,
+      z.unsicher && `${z.unsicher} unsicher`,
+      z.offen && `${z.offen} noch nie bearbeitet`,
+      z.sicher && `${z.sicher} zur Wiederholung`
+    ].filter(Boolean);
+    return `Zusammengestellt aus deinem Lernstand: ${teile.join(', ')}.`;
+  }
 
   function ansichtDeckblatt(satz) {
     zustand = { ansicht: 'deckblatt', satz };
@@ -284,6 +503,7 @@
               <li><span>${PRUEFUNGSDAUER_MIN}</span> Minuten Prüfungszeit</li>
               <li><span>100</span> Punkte</li>
             </ul>
+            ${satz.virtuell ? `<p class="zusammensetzung">${esc(zusammensetzungText(satz.auswahl))}</p>` : ''}
           </div>
           <div class="deck-rechts">
             <h2>Bearbeitungshinweise</h2>
@@ -300,7 +520,8 @@
         </div>
         <div class="aktionen mitte">
           <button class="btn" data-aktion="start">Zurück</button>
-          <button class="btn primaer gross" data-aktion="beginnen" data-satz="${esc(satz.id)}">Prüfung beginnen</button>
+          ${satz.virtuell ? '<button class="btn" data-aktion="schwaechen-pruefung">Neu zusammenstellen</button>' : ''}
+          <button class="btn primaer gross" data-aktion="beginnen">Prüfung beginnen</button>
         </div>
       </main>`);
   }
@@ -315,14 +536,14 @@
 
   function setzePruefungFort() {
     const laufend = speicher.lesen(S_LAUFEND, null);
-    const satz = laufend && satzById(laufend.satzId);
+    const satz = laufend && satzAus(laufend);
     if (!satz) return ansichtStart();
     zustand = { ansicht: 'pruefung', modus: 'pruefung', satz, antworten: laufend.antworten || {}, startZeit: laufend.startZeit };
     ansichtPruefung();
   }
 
   function sichereLaufend() {
-    speicher.schreiben(S_LAUFEND, { satzId: zustand.satz.id, antworten: zustand.antworten, startZeit: zustand.startZeit });
+    speicher.schreiben(S_LAUFEND, { satzId: zustand.satz.id, auswahl: zustand.satz.auswahl, antworten: zustand.antworten, startZeit: zustand.startZeit });
   }
 
   function ansichtPruefung() {
@@ -397,10 +618,15 @@
     }
     stoppeTimer();
     const auswertung = B.werteSatzAus(satz, antworten);
+    // Leere Aufgaben zählen nicht für den Lernstand: Sie können auch an der Zeit gelegen haben
+    erfasse(auswertung.proAufgabe
+      .filter(p => !p.ergebnis.leer)
+      .map(p => ({ quelle: quelle(satz, p.aufgabe), anteil: p.ergebnis.anteil })));
     const ende = Math.min(Date.now(), startZeit + PRUEFUNGSDAUER_MIN * 60000);
     const ergebnis = {
       id: Date.now().toString(36),
       satzId: satz.id,
+      auswahl: satz.auswahl,
       titel: satz.titel,
       name: speicher.lesen(S_NAME, ''),
       datum: new Date().toISOString(),
@@ -419,7 +645,7 @@
   // ---------- Auswertung ----------
 
   function ansichtAuswertung(ergebnis) {
-    const satz = satzById(ergebnis.satzId);
+    const satz = satzAus(ergebnis);
     if (!satz) return ansichtStart();
     zustand = { ansicht: 'auswertung', satz, ergebnis };
     const aw = B.werteSatzAus(satz, ergebnis.antworten);
@@ -432,7 +658,7 @@
         <td class="mono">${esc(B.loesungText(aufgabe))}</td>
         <td>${B.formatZahl(punkte, 2)}</td>
         <td>${e.art === 'teil' ? 'Teil' : 'Global'}</td>
-        <td class="klein">${esc(THEMEN[aufgabe.thema] || aufgabe.thema)}</td>
+        <td class="klein">${esc(THEMEN[aufgabe.thema] || aufgabe.thema)}${aufgabe.herkunft ? `<br>aus ${esc(satzById(aufgabe.herkunft.satzId).titel)}, Nr. ${aufgabe.herkunft.nr}` : ''}</td>
       </tr>`;
     }).join('');
 
@@ -524,7 +750,9 @@
   function pruefeUebung() {
     const eintrag = zustand.liste[zustand.index];
     const a = aufgabeById(zustand.satz, eintrag.nr);
-    zustand.anteile[zustand.index] = B.pruefeAufgabe(a, zustand.antworten[a.nr]).anteil;
+    const anteil = B.pruefeAufgabe(a, zustand.antworten[a.nr]).anteil;
+    zustand.anteile[zustand.index] = anteil;
+    erfasse([{ quelle: { satzId: eintrag.satzId, nr: eintrag.nr }, anteil }]);
     zustand.geprueft = true;
     ansichtUebung();
   }
@@ -640,7 +868,27 @@
         ansichtDeckblatt(satzById(d.satz));
         break;
       case 'beginnen':
-        beginnePruefung(satzById(d.satz));
+        beginnePruefung(zustand.satz);
+        break;
+      case 'schwaechen-pruefung':
+        ansichtDeckblatt(baueSchwaechenSatz(waehleSchwaechen(SCHWAECHEN_ANZAHL)));
+        break;
+      case 'falsche-ueben': {
+        const stat = ladeStatistik();
+        const rang = { falsch: 0, unsicher: 1 };
+        const liste = alleAufgaben()
+          .map(q => ({ q, s: stat[statSchluessel(q)] }))
+          .filter(x => statusVon(x.s) in rang)
+          .sort((x, y) => rang[statusVon(x.s)] - rang[statusVon(y.s)] || y.s.f - x.s.f)
+          .map(x => ({ satzId: x.q.satzId, nr: x.q.nr }));
+        starteUebung(liste, 'Falsche und unsichere Aufgaben');
+        break;
+      }
+      case 'statistik-loeschen':
+        if (window.confirm('Lernstand wirklich zurücksetzen? Alle Aufgaben gelten dann wieder als offen. Deine Prüfungsergebnisse bleiben erhalten.')) {
+          speicher.schreiben(S_STATISTIK, {});
+          ansichtStart();
+        }
         break;
       case 'fortsetzen':
         setzePruefungFort();
@@ -678,7 +926,7 @@
         const { satz, ergebnis } = zustand;
         const liste = satz.aufgaben
           .filter(a => B.pruefeAufgabe(a, ergebnis.antworten[a.nr]).anteil < 1)
-          .map(a => ({ satzId: satz.id, nr: a.nr }));
+          .map(a => quelle(satz, a));
         starteUebung(liste, `${satz.titel} · nicht gelöste Aufgaben`);
         break;
       }
