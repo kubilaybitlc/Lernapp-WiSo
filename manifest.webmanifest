@@ -1,0 +1,18 @@
+{
+  "id": "./",
+  "name": "WiSo-Trainer AP2",
+  "short_name": "WiSo-Trainer",
+  "description": "Prüfungstraining Wirtschafts- und Sozialkunde, Abschlussprüfung Teil 2 IT-Berufe",
+  "lang": "de",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#e9ebee",
+  "theme_color": "#1f4e8c",
+  "categories": ["education"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

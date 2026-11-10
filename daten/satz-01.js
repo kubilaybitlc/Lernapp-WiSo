@@ -296,7 +296,8 @@
     {
       nr: 17, thema: 'tarifrecht', typ: 'reihenfolge',
       text: 'In einer Schulung erklärt Frau Brandt den Auszubildenden den typischen Ablauf einer Tarifauseinandersetzung bis zum Abschluss eines neuen Tarifvertrags.',
-      anweisung: 'Bringen Sie die folgenden Schritte in die richtige Reihenfolge, indem Sie die Ziffern 1 bis 6 in die Kästchen bei den Buchstaben eintragen.',
+      frage: 'Bringen Sie die folgenden Schritte in die richtige Reihenfolge.',
+      anweisung: 'Tragen Sie für den ersten Schritt die Ziffer 1, für den zweiten Schritt die Ziffer 2 usw. in die entsprechenden Kästchen ein.',
       itemsTitel: 'Schritte',
       items: [
         { text: 'Urabstimmung der Gewerkschaftsmitglieder über einen Streik', loesung: 4 },
