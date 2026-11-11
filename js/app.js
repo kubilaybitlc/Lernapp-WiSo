@@ -16,7 +16,8 @@
   const S_BEREICH = 'wiso.bereich';
   const S_IHK = 'wiso.ihk';
   const SCHWAECHEN_ID = 'schwaechen';
-  const SCHWAECHEN_ANZAHL = 30;
+  const ZUFALL_ID = 'zufall';
+  const VIRTUELL_ANZAHL = 30;
   const NEUE_MINDESTENS = 6;
 
   // localStorage kann gesperrt sein (privates Fenster, file://-Einschränkungen) – die App läuft dann ohne Speichern weiter
@@ -51,6 +52,7 @@
   let bereich = speicher.lesen(S_BEREICH, 'ki') === 'ihk' ? 'ihk' : 'ki';
   let IHK_SAETZE = [];
   let ihkInfo = null;
+  let gewaehlteThemen = null; // zuletzt angehakte Themen für Zufallsfragen, null = alle
 
   // ---------- Hilfsfunktionen ----------
 
@@ -223,31 +225,43 @@
     const neuePlaetze = Math.min(gruppen.offen.length, Math.max(anzahl - schwach.length, NEUE_MINDESTENS));
     const vorrang = schwach.slice(0, anzahl - neuePlaetze).concat(gruppen.offen.slice(0, neuePlaetze));
     const reserve = schwach.slice(anzahl - neuePlaetze).concat(gruppen.offen.slice(neuePlaetze), gruppen.sicher);
-    const reihenfolge = saetzeImBereich().map(s => s.id);
 
-    return vorrang.concat(reserve).slice(0, anzahl)
-      .map(x => ({ satzId: x.q.satzId, nr: x.q.nr }))
+    return nachSatzOrdnen(vorrang.concat(reserve).slice(0, anzahl).map(x => x.q));
+  }
+
+  // themen: Liste von Themenschlüsseln oder null für alle
+  function waehleZufall(anzahl, themen) {
+    return nachSatzOrdnen(mischen(alleAufgaben().filter(q => !themen || themen.includes(q.thema))).slice(0, anzahl));
+  }
+
+  // Aufgaben eines Satzes bleiben beisammen, damit die Ausgangssituation nur einmal davor steht
+  function nachSatzOrdnen(liste) {
+    const reihenfolge = saetzeImBereich().map(s => s.id);
+    return liste
+      .map(q => ({ satzId: q.satzId, nr: q.nr }))
       .sort((x, y) => reihenfolge.indexOf(x.satzId) - reihenfolge.indexOf(y.satzId) || x.nr - y.nr);
   }
 
-  function baueSchwaechenSatz(auswahl) {
+  function baueVirtuellenSatz(id, auswahl, themen) {
     const aufgaben = auswahl
       .map(q => ({ q, a: satzById(q.satzId) && aufgabeById(satzById(q.satzId), q.nr) }))
       .filter(x => x.a)
       .map((x, i) => Object.assign({}, x.a, { nr: i + 1, herkunft: { satzId: x.q.satzId, nr: x.q.nr } }));
     const ihk = istIhkId((auswahl[0] || {}).satzId);
     return {
-      id: SCHWAECHEN_ID,
-      titel: ihk ? 'Schwächen-Prüfung (IHK-Fragen)' : 'Schwächen-Prüfung',
+      id,
+      titel: (id === ZUFALL_ID ? 'Zufalls-Prüfung' : 'Schwächen-Prüfung') + (ihk ? ' (IHK-Fragen)' : ''),
       untertitel: ihk ? 'Aufgaben aus deinen IHK-Fragen' : 'Aufgaben aus allen Sätzen',
       virtuell: true,
       auswahl,
+      themen: themen || null,
       aufgaben
     };
   }
 
   function satzAus(eintrag) {
-    return eintrag.auswahl ? baueSchwaechenSatz(eintrag.auswahl) : satzById(eintrag.satzId);
+    if (!eintrag.auswahl) return satzById(eintrag.satzId);
+    return baueVirtuellenSatz(eintrag.satzId === ZUFALL_ID ? ZUFALL_ID : SCHWAECHEN_ID, eintrag.auswahl, eintrag.themen);
   }
 
   // ---------- IHK-Fragen aus einer eigenen Datei ----------
@@ -589,7 +603,7 @@
           <button class="btn primaer" data-aktion="schwaechen-pruefung">Schwächen-Prüfung starten</button>
           ${nachzuarbeiten ? `<button class="btn" data-aktion="falsche-ueben">Falsche und unsichere üben (${nachzuarbeiten})</button>` : ''}
         </div>
-        <p class="klein">Die Schwächen-Prüfung stellt ${SCHWAECHEN_ANZAHL} Aufgaben aus allen Sätzen zusammen: zuerst die, die du falsch hattest (häufigste Fehler zuerst), dann unsichere, dazu immer mindestens ${NEUE_MINDESTENS} neue. Sichere Aufgaben kommen nur, wenn sonst nichts übrig ist. ${PRUEFUNGSDAUER_MIN} Minuten, Bewertung wie bei der IHK.</p>
+        <p class="klein">Die Schwächen-Prüfung stellt ${VIRTUELL_ANZAHL} Aufgaben aus allen Sätzen zusammen: zuerst die, die du falsch hattest (häufigste Fehler zuerst), dann unsichere, dazu immer mindestens ${NEUE_MINDESTENS} neue. Sichere Aufgaben kommen nur, wenn sonst nichts übrig ist. ${PRUEFUNGSDAUER_MIN} Minuten, Bewertung wie bei der IHK.</p>
         <details class="themen-details">
           <summary>Stand nach Themen</summary>
           <ul class="themen-stand">${themen}</ul>
@@ -716,6 +730,14 @@
           </div>` : ''}
         ${renderLernstand(stand)}
         <section class="karte">
+          <h2>Zufallsfragen</h2>
+          <p class="klein">${VIRTUELL_ANZAHL} zufällig gezogene Aufgaben aus allen Sätzen als Prüfung (${PRUEFUNGSDAUER_MIN} Minuten, Bewertung wie bei der IHK), oder nur aus den Themen, die du auswählst.</p>
+          <div class="knoepfe">
+            <button class="btn primaer" data-aktion="zufall-pruefung">Zufalls-Prüfung starten</button>
+            <button class="btn" data-aktion="zufall-themen">Themen auswählen</button>
+          </div>
+        </section>
+        <section class="karte">
           <h2>${bereich === 'ihk' ? 'IHK-Prüfungen' : 'Aufgabensätze'}</h2>
           <p class="klein"><strong>Prüfung:</strong> alle Aufgaben des Satzes, 60 Minuten, Auswertung nach IHK-Schema. <strong>Üben:</strong> Aufgabe für Aufgabe mit sofortiger Lösung.</p>
           ${saetze.length ? `<ul class="satz-liste">${saetzeHtml}</ul>` : '<p>Keine Aufgabensätze gefunden.</p>'}
@@ -738,10 +760,66 @@
 
   // ---------- Deckblatt ----------
 
-  function zusammensetzungText(auswahl) {
+  function ansichtThemenauswahl() {
+    zustand = { ansicht: 'themenauswahl' };
+    const zaehler = themenZaehler();
+    const liste = themenImBereich().filter(k => zaehler[k]).map(k => `
+      <li><label class="thema thema-wahl"><span><input type="checkbox" value="${esc(k)}"${!gewaehlteThemen || gewaehlteThemen.includes(k) ? ' checked' : ''}><span>${esc(themaName(k))}</span></span><span class="zaehler"><span class="anzahl">${zaehler[k]}</span></span></label></li>`).join('');
+    zeige(`
+      ${renderKopf()}
+      <main class="start">
+        <section class="karte">
+          <h2>Zufallsfragen nach Themen</h2>
+          <p class="klein">Wähle die Themen aus. Daraus werden ${VIRTUELL_ANZAHL} Aufgaben zufällig gezogen. Gibt es zu den Themen weniger Aufgaben, kommen alle dran.</p>
+          <div class="knoepfe themen-schalter">
+            <button class="btn klein-btn" data-aktion="themen-alle" data-wert="1">Alle</button>
+            <button class="btn klein-btn" data-aktion="themen-alle" data-wert="">Keine</button>
+            <span class="klein" id="themen-summe" role="status"></span>
+          </div>
+          <ul class="themen" id="themen-liste">${liste}</ul>
+          <div class="aktionen mitte">
+            <button class="btn" data-aktion="start">Zurück</button>
+            <button class="btn" data-aktion="zufall-themen-ueben">Üben</button>
+            <button class="btn primaer" data-aktion="zufall-themen-pruefung">Prüfung</button>
+          </div>
+        </section>
+      </main>`);
+    zeigeThemenSumme();
+  }
+
+  function angehakteThemen() {
+    return [...document.querySelectorAll('#themen-liste input:checked')].map(c => c.value);
+  }
+
+  function zeigeThemenSumme() {
+    const ziel = document.getElementById('themen-summe');
+    if (!ziel) return;
+    const zaehler = themenZaehler();
+    const themen = angehakteThemen();
+    const anzahl = themen.reduce((n, k) => n + zaehler[k], 0);
+    ziel.textContent = `${themen.length} ${themen.length === 1 ? 'Thema' : 'Themen'} · ${anzahl} Aufgaben verfügbar`;
+  }
+
+  // null, wenn alle Themen angehakt sind: Dann gilt die Auswahl auch für Themen, die später dazukommen
+  function themenAusAuswahl() {
+    const themen = angehakteThemen();
+    if (!themen.length) {
+      window.alert('Wähle mindestens ein Thema aus.');
+      return undefined;
+    }
+    gewaehlteThemen = themen.length === document.querySelectorAll('#themen-liste input').length ? null : themen;
+    return gewaehlteThemen;
+  }
+
+  function zusammensetzungText(satz) {
+    if (satz.id === ZUFALL_ID) {
+      return satz.themen
+        ? `Zufällig gezogen aus ${satz.themen.length === 1 ? 'dem Thema' : `${satz.themen.length} Themen`}: ${satz.themen.map(themaName).join(', ')}.`
+        : 'Zufällig gezogen aus allen Sätzen und Themen.';
+    }
     const stat = ladeStatistik();
     const z = neuerZaehler();
-    auswahl.forEach(q => { z[statusVon(stat[statSchluessel(q)])]++; });
+    satz.auswahl.forEach(q => { z[statusVon(stat[statSchluessel(q)])]++; });
     const teile = [
       z.falsch && `${z.falsch} zuletzt falsch`,
       z.unsicher && `${z.unsicher} unsicher`,
@@ -772,7 +850,7 @@
               <li><span>${PRUEFUNGSDAUER_MIN}</span> Minuten Prüfungszeit</li>
               <li><span>100</span> Punkte</li>
             </ul>
-            ${satz.virtuell ? `<p class="zusammensetzung">${esc(zusammensetzungText(satz.auswahl))}</p>` : ''}
+            ${satz.virtuell ? `<p class="zusammensetzung">${esc(zusammensetzungText(satz))}</p>` : ''}
           </div>
           <div class="deck-rechts">
             <h2>Bearbeitungshinweise</h2>
@@ -789,7 +867,7 @@
         </div>
         <div class="aktionen mitte">
           <button class="btn" data-aktion="start">Zurück</button>
-          ${satz.virtuell ? '<button class="btn" data-aktion="schwaechen-pruefung">Neu zusammenstellen</button>' : ''}
+          ${satz.virtuell ? `<button class="btn" data-aktion="${satz.id === ZUFALL_ID ? 'zufall-neu' : 'schwaechen-pruefung'}">Neu zusammenstellen</button>` : ''}
           <button class="btn primaer gross" data-aktion="beginnen">Prüfung beginnen</button>
         </div>
       </main>`);
@@ -812,7 +890,8 @@
   }
 
   function sichereLaufend() {
-    speicher.schreiben(S_LAUFEND, { satzId: zustand.satz.id, auswahl: zustand.satz.auswahl, antworten: zustand.antworten, startZeit: zustand.startZeit });
+    const { satz } = zustand;
+    speicher.schreiben(S_LAUFEND, { satzId: satz.id, auswahl: satz.auswahl, themen: satz.themen, antworten: zustand.antworten, startZeit: zustand.startZeit });
   }
 
   function ansichtPruefung() {
@@ -896,6 +975,7 @@
       id: Date.now().toString(36),
       satzId: satz.id,
       auswahl: satz.auswahl,
+      themen: satz.themen,
       titel: satz.titel,
       name: speicher.lesen(S_NAME, ''),
       datum: new Date().toISOString(),
@@ -1141,6 +1221,7 @@
 
   app.addEventListener('change', e => {
     if (e.target.id === 'ihk-datei' && e.target.files && e.target.files[0]) importiereIhk(e.target.files[0]);
+    if (e.target.closest('#themen-liste')) zeigeThemenSumme();
   });
 
   app.addEventListener('keydown', e => {
@@ -1174,6 +1255,7 @@
         break;
       case 'bereich':
         bereich = d.bereich === 'ihk' ? 'ihk' : 'ki';
+        gewaehlteThemen = null;
         speicher.schreiben(S_BEREICH, bereich);
         ansichtStart();
         break;
@@ -1192,8 +1274,31 @@
         beginnePruefung(zustand.satz);
         break;
       case 'schwaechen-pruefung':
-        ansichtDeckblatt(baueSchwaechenSatz(waehleSchwaechen(SCHWAECHEN_ANZAHL)));
+        ansichtDeckblatt(baueVirtuellenSatz(SCHWAECHEN_ID, waehleSchwaechen(VIRTUELL_ANZAHL)));
         break;
+      case 'zufall-pruefung':
+        ansichtDeckblatt(baueVirtuellenSatz(ZUFALL_ID, waehleZufall(VIRTUELL_ANZAHL, null), null));
+        break;
+      case 'zufall-neu':
+        ansichtDeckblatt(baueVirtuellenSatz(ZUFALL_ID, waehleZufall(VIRTUELL_ANZAHL, zustand.satz.themen), zustand.satz.themen));
+        break;
+      case 'zufall-themen':
+        ansichtThemenauswahl();
+        break;
+      case 'themen-alle':
+        document.querySelectorAll('#themen-liste input').forEach(c => { c.checked = Boolean(d.wert); });
+        zeigeThemenSumme();
+        break;
+      case 'zufall-themen-pruefung': {
+        const themen = themenAusAuswahl();
+        if (themen !== undefined) ansichtDeckblatt(baueVirtuellenSatz(ZUFALL_ID, waehleZufall(VIRTUELL_ANZAHL, themen), themen));
+        break;
+      }
+      case 'zufall-themen-ueben': {
+        const themen = themenAusAuswahl();
+        if (themen !== undefined) starteUebung(mischen(waehleZufall(VIRTUELL_ANZAHL, themen)), 'Zufallsfragen');
+        break;
+      }
       case 'falsche-ueben': {
         const stat = ladeStatistik();
         const rang = { falsch: 0, unsicher: 1 };
