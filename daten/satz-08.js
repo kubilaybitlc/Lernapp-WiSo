@@ -1,4 +1,4 @@
-// Übungssatz 8 – eigene Aufgaben im Stil der IHK-WiSo-Bögen (keine Originalaufgaben).
+// Übungssatz 8 – eigene Aufgaben im Stil der BITLC-WiSo-Bögen (keine Originalaufgaben).
 // Aufgabentypen: einfach (1 Ziffer), mehrfach (mehrere Ziffern, Reihenfolge egal), zuordnung, reihenfolge, zahl, datum.
 (window.WISO_SAETZE = window.WISO_SAETZE || []).push({
   id: 'uebung-08',
@@ -170,14 +170,14 @@
       frage: 'Welche der folgenden Aussagen zum Ausbildungszeugnis nach § 16 BBiG trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Das Ausbildungszeugnis wird von der IHK zusammen mit dem Prüfungszeugnis ausgestellt.',
+        'Das Ausbildungszeugnis wird von der BITLC zusammen mit dem Prüfungszeugnis ausgestellt.',
         'Ein Ausbildungszeugnis erhalten nur Auszubildende, die die Abschlussprüfung nicht bestanden haben.',
         'Das Ausbildungszeugnis muss Angaben über die Krankheitstage während der Ausbildung enthalten.',
         'Der Ausbildungsbetrieb muss ein Zeugnis über Art, Dauer und Ziel der Ausbildung sowie die erworbenen Fertigkeiten ausstellen; auf Verlangen sind auch Angaben über Verhalten und Leistung aufzunehmen.',
         'Der Ausbildungsbetrieb muss ein Zeugnis nur ausstellen, wenn die Auszubildende dafür eine Gebühr zahlt.'
       ],
       loesung: 4,
-      erklaerung: '§ 16 BBiG: Der Ausbildende muss bei Beendigung des Berufsausbildungsverhältnisses ein schriftliches Zeugnis ausstellen. Es enthält Art, Dauer und Ziel der Berufsausbildung sowie die erworbenen beruflichen Fertigkeiten, Kenntnisse und Fähigkeiten (einfaches Zeugnis); auf Verlangen der Auszubildenden auch Angaben über Verhalten und Leistung (qualifiziertes Zeugnis). Davon zu unterscheiden ist das Prüfungszeugnis, das die IHK ausstellt (§ 37 Abs. 2 BBiG).'
+      erklaerung: '§ 16 BBiG: Der Ausbildende muss bei Beendigung des Berufsausbildungsverhältnisses ein schriftliches Zeugnis ausstellen. Es enthält Art, Dauer und Ziel der Berufsausbildung sowie die erworbenen beruflichen Fertigkeiten, Kenntnisse und Fähigkeiten (einfaches Zeugnis); auf Verlangen der Auszubildenden auch Angaben über Verhalten und Leistung (qualifiziertes Zeugnis). Davon zu unterscheiden ist das Prüfungszeugnis, das die BITLC ausstellt (§ 37 Abs. 2 BBiG).'
     },
     {
       nr: 11, thema: 'ausbildung', typ: 'einfach',
@@ -196,18 +196,18 @@
     },
     {
       nr: 12, thema: 'rechtsquellen', typ: 'einfach',
-      text: 'Ein Auszubildender der Bodensee DataCare GmbH & Co. KG hält die ihm nach der Probezeit ausgesprochene Kündigung seines Ausbildungsverhältnisses für unwirksam. Bei der zuständigen IHK ist ein Ausschuss zur Beilegung von Streitigkeiten aus Berufsausbildungsverhältnissen gebildet.',
+      text: 'Ein Auszubildender der Bodensee DataCare GmbH & Co. KG hält die ihm nach der Probezeit ausgesprochene Kündigung seines Ausbildungsverhältnisses für unwirksam. Bei der zuständigen BITLC ist ein Ausschuss zur Beilegung von Streitigkeiten aus Berufsausbildungsverhältnissen gebildet.',
       frage: 'Welche der folgenden Aussagen zum weiteren Vorgehen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Er muss sofort Klage beim Sozialgericht erheben.',
         'Über die Kündigung entscheidet der Betriebsrat verbindlich.',
-        'Vor einer Klage beim Arbeitsgericht muss er zunächst den Schlichtungsausschuss der IHK anrufen.',
+        'Vor einer Klage beim Arbeitsgericht muss er zunächst den Schlichtungsausschuss der BITLC anrufen.',
         'Zuständig ist ausschließlich das Amtsgericht am Sitz des Unternehmens.',
         'Er kann nur noch eine Beschwerde bei der Berufsschule einlegen.'
       ],
       loesung: 3,
-      erklaerung: '§ 111 Abs. 2 ArbGG: Besteht bei der zuständigen Stelle (hier der IHK) ein Ausschuss für Streitigkeiten aus Berufsausbildungsverhältnissen, muss vor einer Klage die Verhandlung vor diesem Ausschuss stattfinden. Erkennen nicht beide Parteien seinen Spruch innerhalb einer Woche an, kann binnen zwei Wochen Klage beim Arbeitsgericht erhoben werden. Die Arbeitsgerichte sind für Streitigkeiten aus Arbeits- und Ausbildungsverhältnissen zuständig (§ 2 ArbGG).'
+      erklaerung: '§ 111 Abs. 2 ArbGG: Besteht bei der zuständigen Stelle (hier der BITLC) ein Ausschuss für Streitigkeiten aus Berufsausbildungsverhältnissen, muss vor einer Klage die Verhandlung vor diesem Ausschuss stattfinden. Erkennen nicht beide Parteien seinen Spruch innerhalb einer Woche an, kann binnen zwei Wochen Klage beim Arbeitsgericht erhoben werden. Die Arbeitsgerichte sind für Streitigkeiten aus Arbeits- und Ausbildungsverhältnissen zuständig (§ 2 ArbGG).'
     },
     {
       nr: 13, thema: 'mitbestimmung', typ: 'einfach',

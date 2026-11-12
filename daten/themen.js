@@ -1,5 +1,5 @@
 // Themenbereiche der WiSo-Prüfung. Schlüssel werden in den Aufgabensätzen unter `thema` verwendet.
-// Reihenfolge und Gewichtung siehe docs/themenkatalog.md (Ø Aufgaben je IHK-Bogen in Klammern).
+// Reihenfolge und Gewichtung siehe docs/themenkatalog.md (Ø Aufgaben je BITLC-Bogen in Klammern).
 window.WISO_THEMEN = {
   'ausbildung': 'Berufsausbildung (BBiG)', // 3,1
   'mitbestimmung': 'Betriebliche Mitbestimmung (BetrVG)', // 3,0

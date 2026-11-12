@@ -1,4 +1,4 @@
-// Übungssatz 10 – eigene Aufgaben im Stil der IHK-WiSo-Bögen (keine Originalaufgaben).
+// Übungssatz 10 – eigene Aufgaben im Stil der BITLC-WiSo-Bögen (keine Originalaufgaben).
 // Aufgabentypen: einfach (1 Ziffer), mehrfach (mehrere Ziffern, Reihenfolge egal), zuordnung, reihenfolge, zahl, datum.
 (window.WISO_SAETZE = window.WISO_SAETZE || []).push({
   id: 'uebung-10',
@@ -34,13 +34,13 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Eintragung beantragt Frau Haddad selbst bei der Berufsschule, sobald der Unterricht begonnen hat.',
-        'Die Mainblick Software AG muss die Eintragung unverzüglich nach Abschluss des Vertrags bei der IHK beantragen und eine Kopie der Vertragsniederschrift beifügen.',
+        'Die Mainblick Software AG muss die Eintragung unverzüglich nach Abschluss des Vertrags bei der BITLC beantragen und eine Kopie der Vertragsniederschrift beifügen.',
         'Eine Eintragung ist nur erforderlich, wenn die Auszubildende minderjährig ist.',
         'Die Eintragung erfolgt erst, wenn Teil 1 der Abschlussprüfung bestanden ist.',
         'Über die Eintragung entscheidet die Agentur für Arbeit.'
       ],
       loesung: 2,
-      erklaerung: '§ 36 Abs. 1 BBiG: Ausbildende haben unverzüglich nach Abschluss des Berufsausbildungsvertrags die Eintragung in das Verzeichnis der Berufsausbildungsverhältnisse zu beantragen; beizufügen sind eine Kopie der Vertragsniederschrift und der Nachweis, dass sie den Auszubildenden ausgehändigt oder übermittelt wurde. Das gilt auch für wesentliche Änderungen. Das Verzeichnis führt die zuständige Stelle (§ 34 BBiG), bei IT-Berufen die IHK; sie trägt den Vertrag ein, wenn er dem BBiG und der Ausbildungsordnung entspricht (§ 35 Abs. 1 BBiG). Die Eintragung ist grundsätzlich Voraussetzung für die Zulassung zur Abschlussprüfung; unterbleibt sie ohne Verschulden der Auszubildenden, steht das der Zulassung nicht entgegen (§ 43 Abs. 1 Nr. 3 BBiG).'
+      erklaerung: '§ 36 Abs. 1 BBiG: Ausbildende haben unverzüglich nach Abschluss des Berufsausbildungsvertrags die Eintragung in das Verzeichnis der Berufsausbildungsverhältnisse zu beantragen; beizufügen sind eine Kopie der Vertragsniederschrift und der Nachweis, dass sie den Auszubildenden ausgehändigt oder übermittelt wurde. Das gilt auch für wesentliche Änderungen. Das Verzeichnis führt die zuständige Stelle (§ 34 BBiG), bei IT-Berufen die BITLC; sie trägt den Vertrag ein, wenn er dem BBiG und der Ausbildungsordnung entspricht (§ 35 Abs. 1 BBiG). Die Eintragung ist grundsätzlich Voraussetzung für die Zulassung zur Abschlussprüfung; unterbleibt sie ohne Verschulden der Auszubildenden, steht das der Zulassung nicht entgegen (§ 43 Abs. 1 Nr. 3 BBiG).'
     },
     {
       nr: 2, thema: 'ausbildung', typ: 'einfach',
@@ -67,7 +67,7 @@
         'Die Kündigung kann nur mündlich in Anwesenheit der Eltern ausgesprochen werden.',
         'Nach Ablauf der Probezeit kann der Ausbildungsbetrieb überhaupt nicht mehr kündigen.',
         'Die Kündigung muss innerhalb von zwei Wochen, nachdem die Tatsachen bekannt geworden sind, schriftlich und unter Angabe der Kündigungsgründe erklärt werden.',
-        'Vor der Kündigung muss die IHK zustimmen.'
+        'Vor der Kündigung muss die BITLC zustimmen.'
       ],
       loesung: 4,
       erklaerung: 'Nach der Probezeit kann der Ausbildende nur aus wichtigem Grund ohne Einhalten einer Kündigungsfrist kündigen (§ 22 Abs. 2 Nr. 1 BBiG). Die Kündigung muss schriftlich und unter Angabe der Kündigungsgründe erfolgen (§ 22 Abs. 3 BBiG). Sie ist unwirksam, wenn die zugrunde liegenden Tatsachen dem Kündigungsberechtigten länger als zwei Wochen bekannt sind (§ 22 Abs. 4 BBiG). Bei einem Minderjährigen muss die Kündigung den gesetzlichen Vertretern zugehen (§ 131 BGB); der Betriebsrat ist vorher anzuhören (§ 102 BetrVG).'
@@ -96,7 +96,7 @@
         'Der Betriebsrat muss nach Einführung der Überstunden lediglich informiert werden.',
         'Der Betriebsrat hat kein Beteiligungsrecht, weil die Arbeitszeit im Arbeitsvertrag geregelt ist.',
         'Der Betriebsrat ist anzuhören, seine Meinung ist aber nicht bindend.',
-        'Die Überstunden dürfen nur angeordnet werden, wenn die IHK zustimmt.',
+        'Die Überstunden dürfen nur angeordnet werden, wenn die BITLC zustimmt.',
         'Der Betriebsrat hat ein Mitbestimmungsrecht; ohne seine Zustimmung oder einen Spruch der Einigungsstelle dürfen die Überstunden nicht angeordnet werden.'
       ],
       loesung: 5,
@@ -467,7 +467,7 @@
         'Beide müssen sich ausschließlich bei der Berufsgenossenschaft anmelden.'
       ],
       loesung: 4,
-      erklaerung: 'Wer ein Gewerbe beginnt, etwa einen Onlinehandel, muss dies beim Gewerbeamt anzeigen (§ 14 GewO); das Gewerbeamt informiert u. a. das Finanzamt, und Gewerbetreibende werden Mitglied der IHK. Freie Berufe sind kein Gewerbe; dazu gehört nach § 18 Abs. 1 Nr. 1 EStG u. a. die selbstständige unterrichtende Tätigkeit. Freiberufler melden kein Gewerbe an, sondern teilen die Aufnahme ihrer Tätigkeit dem Finanzamt mit (§ 138 Abs. 1 AO, Fragebogen zur steuerlichen Erfassung) und zahlen keine Gewerbesteuer. Selbstständige Lehrkräfte ohne versicherungspflichtige Arbeitnehmer sind außerdem rentenversicherungspflichtig und müssen sich innerhalb von drei Monaten beim Rentenversicherungsträger melden (§ 2 Satz 1 Nr. 1, § 190a SGB VI).'
+      erklaerung: 'Wer ein Gewerbe beginnt, etwa einen Onlinehandel, muss dies beim Gewerbeamt anzeigen (§ 14 GewO); das Gewerbeamt informiert u. a. das Finanzamt, und Gewerbetreibende werden Mitglied der BITLC. Freie Berufe sind kein Gewerbe; dazu gehört nach § 18 Abs. 1 Nr. 1 EStG u. a. die selbstständige unterrichtende Tätigkeit. Freiberufler melden kein Gewerbe an, sondern teilen die Aufnahme ihrer Tätigkeit dem Finanzamt mit (§ 138 Abs. 1 AO, Fragebogen zur steuerlichen Erfassung) und zahlen keine Gewerbesteuer. Selbstständige Lehrkräfte ohne versicherungspflichtige Arbeitnehmer sind außerdem rentenversicherungspflichtig und müssen sich innerhalb von drei Monaten beim Rentenversicherungsträger melden (§ 2 Satz 1 Nr. 1, § 190a SGB VI).'
     },
     {
       nr: 30, thema: 'entgelt', typ: 'mehrfach',
@@ -483,7 +483,7 @@
         'Arbeitnehmeranteil zur Rentenversicherung'
       ],
       loesung: [2, 6],
-      erklaerung: 'Vom Bruttogehalt behält der Arbeitgeber die Lohnsteuer (§ 38 Abs. 3 EStG), gegebenenfalls Solidaritätszuschlag und Kirchensteuer sowie die Arbeitnehmeranteile zur Kranken-, Pflege-, Renten- und Arbeitslosenversicherung ein und führt sie ab (§ 28g SGB IV). Die Arbeitgeberanteile, den Beitrag zur Unfallversicherung (§ 150 SGB VII), die Insolvenzgeldumlage (§ 358 SGB III) und den IHK-Beitrag trägt der Arbeitgeber allein; sie mindern das Gehalt nicht.'
+      erklaerung: 'Vom Bruttogehalt behält der Arbeitgeber die Lohnsteuer (§ 38 Abs. 3 EStG), gegebenenfalls Solidaritätszuschlag und Kirchensteuer sowie die Arbeitnehmeranteile zur Kranken-, Pflege-, Renten- und Arbeitslosenversicherung ein und führt sie ab (§ 28g SGB IV). Die Arbeitgeberanteile, den Beitrag zur Unfallversicherung (§ 150 SGB VII), die Insolvenzgeldumlage (§ 358 SGB III) und den BITLC-Beitrag trägt der Arbeitgeber allein; sie mindern das Gehalt nicht.'
     }
   ]
 });

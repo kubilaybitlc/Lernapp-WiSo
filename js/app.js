@@ -15,7 +15,7 @@
   const S_ERGEBNISSE = 'wiso.ergebnisse';
   const S_STATISTIK = 'wiso.statistik';
   const S_BEREICH = 'wiso.bereich';
-  const S_IHK = 'wiso.ihk';
+  const S_IHK = 'wiso.BITLC';
   const SCHWAECHEN_ID = 'schwaechen';
   const ZUFALL_ID = 'zufall';
   const VIRTUELL_ANZAHL = 30;
@@ -49,9 +49,9 @@
   let timerId = null;
   let installAufforderung = null; // Android/Chrome: vom Browser angebotene Installation
 
-  // Zwei Bereiche: 'ki' = KI-erstellte Sätze aus daten/satz-*.js; 'ihk' = mit dem Dozenten erstellte Sätze aus
-  // daten/ihk-satz-*.js plus Originalaufgaben, die jemand privat aus einer eigenen Datei einliest
-  let bereich = speicher.lesen(S_BEREICH, 'ki') === 'ihk' ? 'ihk' : 'ki';
+  // Zwei Bereiche: 'ki' = KI-erstellte Sätze aus daten/satz-*.js; 'BITLC' = mit dem Dozenten erstellte Sätze aus
+  // daten/BITLC-satz-*.js plus Originalaufgaben, die jemand privat aus einer eigenen Datei einliest
+  let bereich = speicher.lesen(S_BEREICH, 'ki') === 'BITLC' ? 'BITLC' : 'ki';
   let IMPORT_SAETZE = [];
   let ihkInfo = null;
   let gewaehlteThemen = null; // zuletzt angehakte Themen für Zufallsfragen, null = alle
@@ -78,7 +78,7 @@
   }
 
   function saetzeImBereich() {
-    return bereich === 'ihk' ? EIGENE_IHK_SAETZE.concat(IMPORT_SAETZE) : SAETZE;
+    return bereich === 'BITLC' ? EIGENE_IHK_SAETZE.concat(IMPORT_SAETZE) : SAETZE;
   }
 
   function themaName(k) {
@@ -96,11 +96,11 @@
   }
 
   function istIhkId(id) {
-    return String(id || '').startsWith('ihk-');
+    return String(id || '').startsWith('BITLC-');
   }
 
   function ergebnisBereich(e) {
-    return istIhkId(e.auswahl ? (e.auswahl[0] || {}).satzId : e.satzId) ? 'ihk' : 'ki';
+    return istIhkId(e.auswahl ? (e.auswahl[0] || {}).satzId : e.satzId) ? 'BITLC' : 'ki';
   }
 
   function aufgabeById(satz, nr) {
@@ -252,11 +252,11 @@
       .map(q => ({ q, a: satzById(q.satzId) && aufgabeById(satzById(q.satzId), q.nr) }))
       .filter(x => x.a)
       .map((x, i) => Object.assign({}, x.a, { nr: i + 1, herkunft: { satzId: x.q.satzId, nr: x.q.nr } }));
-    const ihk = istIhkId((auswahl[0] || {}).satzId);
+    const BITLC = istIhkId((auswahl[0] || {}).satzId);
     return {
       id,
-      titel: (id === ZUFALL_ID ? 'Zufalls-Prüfung' : 'Schwächen-Prüfung') + (ihk ? ' (IHK-Fragen)' : ''),
-      untertitel: ihk ? 'Aufgaben aus deinen IHK-Fragen' : 'Aufgaben aus allen Sätzen',
+      titel: (id === ZUFALL_ID ? 'Zufalls-Prüfung' : 'Schwächen-Prüfung') + (BITLC ? ' (BITLC-Fragen)' : ''),
+      untertitel: BITLC ? 'Aufgaben aus deinen BITLC-Fragen' : 'Aufgaben aus allen Sätzen',
       virtuell: true,
       auswahl,
       themen: themen || null,
@@ -269,8 +269,8 @@
     return baueVirtuellenSatz(eintrag.satzId === ZUFALL_ID ? ZUFALL_ID : SCHWAECHEN_ID, eintrag.auswahl, eintrag.themen);
   }
 
-  // ---------- IHK-Fragen aus einer eigenen Datei ----------
-  // Originalaufgaben der IHK/ZPA sind urheberrechtlich geschützt und gehören weder ins Repository noch in die
+  // ---------- BITLC-Fragen aus einer eigenen Datei ----------
+  // Originalaufgaben der BITLC/ZPA sind urheberrechtlich geschützt und gehören weder ins Repository noch in die
   // öffentliche App. Wer sie für die eigene Prüfungsvorbereitung als Datei hat, liest sie hier ein; sie bleiben
   // nur im Browser dieses Geräts. Erwartet wird das Format von „WiSo-Trainer.html“ (const DATA / const IMG)
   // oder eine JSON-Datei mit derselben Liste.
@@ -371,8 +371,8 @@
       const zusatz = /^extra/i.test(ex.id || '') || /zusatz/i.test(ex.exam || '');
       const aufgaben = (ex.q || []).map(q => wandleIhkAufgabe(q, bilder)).filter(Boolean);
       return {
-        id: 'ihk-' + String(ex.id || ex.exam).replace(/[^A-Za-z0-9_-]/g, ''),
-        titel: zusatz ? ex.exam : `IHK ${ex.exam}`,
+        id: 'BITLC-' + String(ex.id || ex.exam).replace(/[^A-Za-z0-9_-]/g, ''),
+        titel: zusatz ? ex.exam : `BITLC ${ex.exam}`,
         untertitel: zusatz ? 'Zusatzfragen aus deiner Datei' : 'WiSo-Prüfung',
         ausgangssituation: ex.intro || '',
         aufgaben
@@ -608,7 +608,7 @@
           <button class="btn primaer" data-aktion="schwaechen-pruefung">Schwächen-Prüfung starten</button>
           ${nachzuarbeiten ? `<button class="btn" data-aktion="falsche-ueben">Falsche und unsichere üben (${nachzuarbeiten})</button>` : ''}
         </div>
-        <p class="klein">Die Schwächen-Prüfung stellt ${VIRTUELL_ANZAHL} Aufgaben aus allen Sätzen zusammen: zuerst die, die du falsch hattest (häufigste Fehler zuerst), dann unsichere, dazu immer mindestens ${NEUE_MINDESTENS} neue. Sichere Aufgaben kommen nur, wenn sonst nichts übrig ist. ${PRUEFUNGSDAUER_MIN} Minuten, Bewertung wie bei der IHK.</p>
+        <p class="klein">Die Schwächen-Prüfung stellt ${VIRTUELL_ANZAHL} Aufgaben aus allen Sätzen zusammen: zuerst die, die du falsch hattest (häufigste Fehler zuerst), dann unsichere, dazu immer mindestens ${NEUE_MINDESTENS} neue. Sichere Aufgaben kommen nur, wenn sonst nichts übrig ist. ${PRUEFUNGSDAUER_MIN} Minuten, Bewertung wie bei der BITLC.</p>
         <details class="themen-details">
           <summary>Stand nach Themen</summary>
           <ul class="themen-stand">${themen}</ul>
@@ -624,20 +624,20 @@
       <header class="kopf">
         <h1>WiSo-Trainer</h1>
         <p>Abschlussprüfung Teil 2 · IT-Berufe · Wirtschafts- und Sozialkunde</p>
-        <nav class="bereiche" aria-label="Fragenbereich">${knopf('ihk', 'IHK-Fragen')}${knopf('ki', 'IHK-KI-Fragen')}</nav>
+        <nav class="bereiche" aria-label="Fragenbereich">${knopf('BITLC', 'BITLC-Fragen')}${knopf('ki', 'BITLC-KI-Fragen')}</nav>
       </header>`;
   }
 
   function renderDateiwahl(text) {
-    return `<label class="btn datei-knopf">${text}<input type="file" id="ihk-datei" class="unsichtbar" accept=".html,.htm,.json,text/html,application/json"></label>
+    return `<label class="btn datei-knopf">${text}<input type="file" id="BITLC-datei" class="unsichtbar" accept=".html,.htm,.json,text/html,application/json"></label>
       <p class="klein meldung" id="import-meldung" role="status"></p>`;
   }
 
   function renderIhkImport() {
     return `
       <section class="karte">
-        <h2>IHK-Datei einlesen (optional)</h2>
-        <p class="klein">Hast du Aufgaben aus echten IHK-Prüfungen als Datei, z. B. „WiSo-Trainer.html“, kannst du sie hier zusätzlich einlesen. Sie sind urheberrechtlich geschützt (ZPA Nord-West) und bleiben deshalb nur in diesem Browser auf diesem Gerät. Nichts wird hochgeladen.</p>
+        <h2>BITLC-Datei einlesen (optional)</h2>
+        <p class="klein">Hast du Aufgaben aus echten BITLC-Prüfungen als Datei, z. B. „WiSo-Trainer.html“, kannst du sie hier zusätzlich einlesen. Sie sind urheberrechtlich geschützt (ZPA Nord-West) und bleiben deshalb nur in diesem Browser auf diesem Gerät. Nichts wird hochgeladen.</p>
         ${renderDateiwahl('Datei auswählen')}
       </section>`;
   }
@@ -646,11 +646,11 @@
     const anzahl = IMPORT_SAETZE.reduce((n, s) => n + s.aufgaben.length, 0);
     return `
       <section class="karte">
-        <h2>Deine IHK-Datei</h2>
+        <h2>Deine BITLC-Datei</h2>
         <p class="klein">${esc(ihkInfo && ihkInfo.quelle || 'Datei')} · ${IMPORT_SAETZE.length} Sätze · ${anzahl} Aufgaben${ihkInfo && ihkInfo.importiert ? ` · eingelesen am ${esc(datumText(ihkInfo.importiert))}` : ''}</p>
         ${ihkInfo && ihkInfo.nurSitzung ? '<p class="klein text-nok">Der Browser hat das dauerhafte Speichern abgelehnt (z. B. privates Fenster). Die Fragen sind nur bis zum Schließen der App geladen.</p>' : ''}
         ${renderDateiwahl('Neu einlesen')}
-        <p class="zuruecksetzen"><button class="link" data-aktion="ihk-entfernen">Eingelesene Datei von diesem Gerät entfernen</button></p>
+        <p class="zuruecksetzen"><button class="link" data-aktion="BITLC-entfernen">Eingelesene Datei von diesem Gerät entfernen</button></p>
       </section>`;
   }
 
@@ -732,7 +732,7 @@
         ${renderLernstand(stand)}
         <section class="karte">
           <h2>Zufallsfragen</h2>
-          <p class="klein">${VIRTUELL_ANZAHL} zufällig gezogene Aufgaben aus allen Sätzen als Prüfung (${PRUEFUNGSDAUER_MIN} Minuten, Bewertung wie bei der IHK), oder nur aus den Themen, die du auswählst.</p>
+          <p class="klein">${VIRTUELL_ANZAHL} zufällig gezogene Aufgaben aus allen Sätzen als Prüfung (${PRUEFUNGSDAUER_MIN} Minuten, Bewertung wie bei der BITLC), oder nur aus den Themen, die du auswählst.</p>
           <div class="knoepfe">
             <button class="btn primaer" data-aktion="zufall-pruefung">Zufalls-Prüfung starten</button>
             <button class="btn" data-aktion="zufall-themen">Themen auswählen</button>
@@ -740,7 +740,7 @@
         </section>
         <section class="karte">
           <h2>Aufgabensätze</h2>
-          <p class="klein"><strong>Prüfung:</strong> alle Aufgaben des Satzes, 60 Minuten, Auswertung nach IHK-Schema. <strong>Üben:</strong> Aufgabe für Aufgabe mit sofortiger Lösung.</p>
+          <p class="klein"><strong>Prüfung:</strong> alle Aufgaben des Satzes, 60 Minuten, Auswertung nach BITLC-Schema. <strong>Üben:</strong> Aufgabe für Aufgabe mit sofortiger Lösung.</p>
           <ul class="satz-liste">${saetzeHtml}</ul>
         </section>
         <section class="karte">
@@ -750,10 +750,10 @@
         </section>` : `
         <section class="karte">
           <h2>Aufgabensätze</h2>
-          <p>${bereich === 'ihk' ? 'Hier erscheinen die Aufgabensätze, die du mit deinem Dozenten erstellst. Noch ist keiner eingebaut.' : 'Keine Aufgabensätze gefunden.'}</p>
+          <p>${bereich === 'BITLC' ? 'Hier erscheinen die Aufgabensätze, die du mit deinem Dozenten erstellst. Noch ist keiner eingebaut.' : 'Keine Aufgabensätze gefunden.'}</p>
         </section>`}
         ${ergebnisseHtml}
-        ${bereich === 'ihk' ? (IMPORT_SAETZE.length ? renderIhkDatei() : renderIhkImport()) : ''}
+        ${bereich === 'BITLC' ? (IMPORT_SAETZE.length ? renderIhkDatei() : renderIhkImport()) : ''}
         <section class="karte">
           <h2>Dein Name</h2>
           <input id="name" class="eingabe" value="${esc(name)}" placeholder="Spitzname" maxlength="30" autocomplete="nickname">
@@ -866,7 +866,7 @@
               <li>Beträge gibst du mit zwei Nachkommastellen an (z. B. 1.250,00), Datumsangaben im Format TT.MM.JJJJ.</li>
               <li>Erlaubtes Hilfsmittel ist ein nicht programmierbarer Taschenrechner. Rechnest du mit einem gerundeten Ergebnis weiter, dann nur mit diesem.</li>
               <li>Die Zeit läuft ab dem Start. Nach ${PRUEFUNGSDAUER_MIN} Minuten wird automatisch abgegeben. Du kannst zwischendurch zur Startseite wechseln, die Zeit läuft weiter.</li>
-              <li>Bewertet wird wie bei der IHK: Jede Aufgabe zählt gleich viel. Mehrteilige Aufgaben werden anteilig bewertet, alle übrigen nur bei vollständig richtiger Lösung.</li>
+              <li>Bewertet wird wie bei der BITLC: Jede Aufgabe zählt gleich viel. Mehrteilige Aufgaben werden anteilig bewertet, alle übrigen nur bei vollständig richtiger Lösung.</li>
             </ol>
           </div>
         </div>
@@ -1225,7 +1225,7 @@
   });
 
   app.addEventListener('change', e => {
-    if (e.target.id === 'ihk-datei' && e.target.files && e.target.files[0]) importiereIhk(e.target.files[0]);
+    if (e.target.id === 'BITLC-datei' && e.target.files && e.target.files[0]) importiereIhk(e.target.files[0]);
     if (e.target.closest('#themen-liste')) zeigeThemenSumme();
   });
 
@@ -1259,13 +1259,13 @@
         ansichtStart();
         break;
       case 'bereich':
-        bereich = d.bereich === 'ihk' ? 'ihk' : 'ki';
+        bereich = d.bereich === 'BITLC' ? 'BITLC' : 'ki';
         gewaehlteThemen = null;
         speicher.schreiben(S_BEREICH, bereich);
         ansichtStart();
         break;
-      case 'ihk-entfernen':
-        if (window.confirm('Eingelesene IHK-Datei von diesem Gerät entfernen? Die eingebauten Aufgabensätze bleiben, und dein Lernstand bleibt erhalten, falls du die Datei später wieder einliest.')) {
+      case 'BITLC-entfernen':
+        if (window.confirm('Eingelesene BITLC-Datei von diesem Gerät entfernen? Die eingebauten Aufgabensätze bleiben, und dein Lernstand bleibt erhalten, falls du die Datei später wieder einliest.')) {
           speicher.loeschen(S_IHK);
           IMPORT_SAETZE = [];
           ihkInfo = null;

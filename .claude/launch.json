@@ -2,9 +2,9 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "wiso",
+      "name": "WiSo-Trainer",
       "runtimeExecutable": "powershell",
-      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "werkzeuge/server.ps1"],
+      "runtimeArgs": ["-ExecutionPolicy", "Bypass", "-File", "werkzeuge\\server.ps1"],
       "port": 8080
     }
   ]

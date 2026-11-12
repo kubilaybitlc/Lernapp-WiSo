@@ -1,7 +1,7 @@
 # WiSo-Trainer AP2
 
 Lernapp für den Prüfungsbereich **Wirtschafts- und Sozialkunde** der Abschlussprüfung Teil 2 (IT-Berufe).
-Ablauf wie bei den IHK-Bögen: 30 Aufgaben, 60 Minuten, 100 Punkte, Lösungskästchen und Auswertung nach IHK-Schema.
+Ablauf wie bei den BITLC-Bögen: 30 Aufgaben, 60 Minuten, 100 Punkte, Lösungskästchen und Auswertung nach BITLC-Schema.
 
 ## Starten
 
@@ -29,15 +29,15 @@ Neue Aufgabensätze zusätzlich in die Liste `DATEIEN` in `sw.js` eintragen, dam
 
 ## Funktionen
 
-- **Zwei Bereiche** in der Menüzeile mit gleichem Aufbau: **IHK-KI-Fragen** (die KI-erstellten Übungssätze unten) und **IHK-Fragen** (Sätze, die zusammen mit dem Dozenten erstellt werden, `daten/ihk-satz-*.js`). Unter „IHK-Fragen“ kann jeder zusätzlich seine eigene Datei mit IHK-Prüfungsaufgaben einlesen (z. B. `WiSo-Trainer.html` oder JSON im selben Format). Diese Aufgaben bleiben nur im Browser des jeweiligen Geräts und sind nicht Teil der App. Lernstand, Ergebnisse, Zufalls- und Schwächen-Prüfung laufen je Bereich getrennt.
+- **Zwei Bereiche** in der Menüzeile mit gleichem Aufbau: **BITLC-KI-Fragen** (die KI-erstellten Übungssätze unten) und **BITLC-Fragen** (Sätze, die zusammen mit dem Dozenten erstellt werden, `daten/BITLC-satz-*.js`). Unter „BITLC-Fragen“ kann jeder zusätzlich seine eigene Datei mit BITLC-Prüfungsaufgaben einlesen (z. B. `WiSo-Trainer.html` oder JSON im selben Format). Diese Aufgaben bleiben nur im Browser des jeweiligen Geräts und sind nicht Teil der App. Lernstand, Ergebnisse, Zufalls- und Schwächen-Prüfung laufen je Bereich getrennt.
 - **16 Übungssätze** mit je 30 selbst erstellten Aufgaben (480 insgesamt), jeweils zu einem fiktiven IT-Unternehmen, Themen gewichtet nach `docs/themenkatalog.md`.
 - **Antworten anklicken:** Bei Einfach- und Mehrfachauswahl genügt ein Tipp auf die Antwort, die Ziffer wird ins Lösungskästchen eingetragen; Eintippen funktioniert weiterhin. Nach dem Prüfen sind richtige Antworten grün, falsch gewählte rot markiert.
 - **Prüfungssimulation:** Deckblatt mit Bearbeitungshinweisen, Timer (Abgabe automatisch nach 60 Min.), Lösungsbogen-Übersicht, angefangene Prüfungen lassen sich fortsetzen.
-- **Auswertung:** Punkte und Note nach IHK-Notenschlüssel, Lösungsbogen mit Teil-/Globalbewertung, Ergebnis je Thema, alle Aufgaben mit Lösung und Erklärung.
+- **Auswertung:** Punkte und Note nach BITLC-Notenschlüssel, Lösungsbogen mit Teil-/Globalbewertung, Ergebnis je Thema, alle Aufgaben mit Lösung und Erklärung.
 - **Üben:** Aufgabe für Aufgabe mit sofortiger Rückmeldung, nach Satz, nach Thema oder nur die nicht gelösten Aufgaben.
 - **Lernstand:** Jede Antwort aus Üben und Prüfung wird je Aufgabe gezählt. Die Startseite zeigt bearbeitet, offen, zuletzt falsch, unsicher (zuletzt richtig, vorher falsch) und sicher, auch je Thema und je Satz.
-- **Schwächen-Prüfung:** 30 Aufgaben aus allen Sätzen, 60 Minuten, IHK-Bewertung. Reihenfolge der Auswahl: zuletzt falsch (häufigste Fehler zuerst), unsicher, mindestens 6 neue; sichere Aufgaben nur, wenn sonst nichts übrig ist.
-- **Zufallsfragen:** Zufalls-Prüfung mit 30 zufällig gezogenen Aufgaben aus allen Sätzen, oder nur aus ausgewählten Themen, wahlweise als Prüfung (60 Minuten, IHK-Bewertung) oder zum Üben. „Neu zusammenstellen“ zieht neue Aufgaben.
+- **Schwächen-Prüfung:** 30 Aufgaben aus allen Sätzen, 60 Minuten, BITLC-Bewertung. Reihenfolge der Auswahl: zuletzt falsch (häufigste Fehler zuerst), unsicher, mindestens 6 neue; sichere Aufgaben nur, wenn sonst nichts übrig ist.
+- **Zufallsfragen:** Zufalls-Prüfung mit 30 zufällig gezogenen Aufgaben aus allen Sätzen, oder nur aus ausgewählten Themen, wahlweise als Prüfung (60 Minuten, BITLC-Bewertung) oder zum Üben. „Neu zusammenstellen“ zieht neue Aufgaben.
 - Fortschritt, Lernstand und Ergebnisse werden nur im Browser gespeichert (localStorage).
 
 ## Aufbau
@@ -45,15 +45,15 @@ Neue Aufgabensätze zusätzlich in die Liste `DATEIEN` in `sw.js` eintragen, dam
 | Pfad | Inhalt |
 | --- | --- |
 | `index.html` | Einstieg, bindet alle Skripte ein |
-| `js/bewertung.js` | Bewertung nach IHK-Schema, Notenschlüssel |
+| `js/bewertung.js` | Bewertung nach BITLC-Schema, Notenschlüssel |
 | `js/app.js` | Oberfläche (Start, Deckblatt, Prüfung, Auswertung, Üben) |
 | `js/bilder.js` | Eigene Sicherheitszeichen als SVG für Bildaufgaben |
 | `manifest.webmanifest`, `sw.js`, `icons/` | Installation als App und Offline-Cache |
 | `werkzeuge/` | lokaler Testserver, Icon-Erzeugung |
 | `daten/themen.js` | Themenbereiche |
-| `daten/satz-*.js` | Aufgabensätze im Bereich „IHK-KI-Fragen“ |
-| `daten/ihk-satz-*.js` | Aufgabensätze im Bereich „IHK-Fragen“ (mit dem Dozenten erstellt) |
-| `docs/themenkatalog.md` | Auswertung der bisherigen IHK-Bögen (Themen, Aufgabentypen, Formulierungen) |
+| `daten/satz-*.js` | Aufgabensätze im Bereich „BITLC-KI-Fragen“ |
+| `daten/BITLC-satz-*.js` | Aufgabensätze im Bereich „BITLC-Fragen“ (mit dem Dozenten erstellt) |
+| `docs/themenkatalog.md` | Auswertung der bisherigen BITLC-Bögen (Themen, Aufgabentypen, Formulierungen) |
 
 ## Neuen Aufgabensatz hinzufügen
 
@@ -61,7 +61,7 @@ Neue Aufgabensätze zusätzlich in die Liste `DATEIEN` in `sw.js` eintragen, dam
 2. In `index.html` eine Zeile `<script src="daten/satz-02.js"></script>` ergänzen.
 3. In `sw.js` den Pfad `daten/satz-02.js` in die Liste `DATEIEN` aufnehmen.
 
-Für den Bereich „IHK-Fragen“ heißen die Dateien `daten/ihk-satz-XX.js`, tragen sich mit `(window.WISO_IHK_SAETZE = window.WISO_IHK_SAETZE || []).push({...})` ein und bekommen eine `id` mit dem Präfix `ihk-eigen-`.
+Für den Bereich „BITLC-Fragen“ heißen die Dateien `daten/BITLC-satz-XX.js`, tragen sich mit `(window.WISO_IHK_SAETZE = window.WISO_IHK_SAETZE || []).push({...})` ein und bekommen eine `id` mit dem Präfix `BITLC-eigen-`.
 
 Aufgabentypen (`typ`):
 
@@ -79,4 +79,4 @@ Weitere Felder: `text`, `kasten` (z. B. Gesetzesauszug), `frage`, `anweisung`, `
 
 ## Urheberrecht
 
-Die IHK-Originalbögen dürfen nicht vervielfältigt oder verbreitet werden. Diese App enthält deshalb nur **selbst erstellte Aufgaben** im gleichen Stil. Die Originale dienen nur zur Analyse und gehören nicht ins Repository (`*.pdf` ist in `.gitignore`).
+Die BITLC-Originalbögen dürfen nicht vervielfältigt oder verbreitet werden. Diese App enthält deshalb nur **selbst erstellte Aufgaben** im gleichen Stil. Die Originale dienen nur zur Analyse und gehören nicht ins Repository (`*.pdf` ist in `.gitignore`).

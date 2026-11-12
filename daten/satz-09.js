@@ -1,4 +1,4 @@
-// Übungssatz 9 – eigene Aufgaben im Stil der IHK-WiSo-Bögen (keine Originalaufgaben).
+// Übungssatz 9 – eigene Aufgaben im Stil der BITLC-WiSo-Bögen (keine Originalaufgaben).
 // Aufgabentypen: einfach (1 Ziffer), mehrfach (mehrere Ziffern, Reihenfolge egal), zuordnung, reihenfolge, zahl, datum.
 (window.WISO_SAETZE = window.WISO_SAETZE || []).push({
   id: 'uebung-09',
@@ -52,7 +52,7 @@
         'Den Berufsausbildungsvertrag schließt die Industrie- und Handelskammer mit dem Auszubildenden ab.'
       ],
       loesung: 2,
-      erklaerung: 'Minderjährige sind beschränkt geschäftsfähig und brauchen für den Berufsausbildungsvertrag die Zustimmung ihrer gesetzlichen Vertreter (§§ 106 ff. BGB). Vertragspartner sind der Ausbildende und der Auszubildende; die IHK trägt den Vertrag nur in das Verzeichnis ein. Der Vertrag selbst ist formfrei, der Ausbildende muss aber den wesentlichen Inhalt unverzüglich nach Abschluss, spätestens vor Beginn der Berufsausbildung in Textform niederlegen (§ 11 Abs. 1 BBiG) und die Niederschrift den Auszubildenden und ihren gesetzlichen Vertretern aushändigen oder übermitteln (§ 11 Abs. 2 BBiG). Seit 2025 genügt dafür die Textform, z. B. eine E-Mail mit dem Vertragsinhalt.'
+      erklaerung: 'Minderjährige sind beschränkt geschäftsfähig und brauchen für den Berufsausbildungsvertrag die Zustimmung ihrer gesetzlichen Vertreter (§§ 106 ff. BGB). Vertragspartner sind der Ausbildende und der Auszubildende; die BITLC trägt den Vertrag nur in das Verzeichnis ein. Der Vertrag selbst ist formfrei, der Ausbildende muss aber den wesentlichen Inhalt unverzüglich nach Abschluss, spätestens vor Beginn der Berufsausbildung in Textform niederlegen (§ 11 Abs. 1 BBiG) und die Niederschrift den Auszubildenden und ihren gesetzlichen Vertretern aushändigen oder übermitteln (§ 11 Abs. 2 BBiG). Seit 2025 genügt dafür die Textform, z. B. eine E-Mail mit dem Vertragsinhalt.'
     },
     {
       nr: 2, thema: 'ausbildung', typ: 'einfach',
@@ -71,19 +71,19 @@
     },
     {
       nr: 3, thema: 'ausbildung', typ: 'mehrfach',
-      text: 'Herr Gräfe wurde von der IHK als Prüfer in einen Prüfungsausschuss für IT-Berufe berufen. Die Auszubildenden fragen ihn, wer in dem Ausschuss sitzt.',
+      text: 'Herr Gräfe wurde von der BITLC als Prüfer in einen Prüfungsausschuss für IT-Berufe berufen. Die Auszubildenden fragen ihn, wer in dem Ausschuss sitzt.',
       frage: 'Welche der folgenden Aussagen zur Zusammensetzung des Prüfungsausschusses treffen zu?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Aussagen in die Kästchen ein.',
       optionen: [
         'Den Vorsitz führt immer der Ausbildungsleiter des jeweiligen Prüflings.',
         'Der Prüfungsausschuss besteht aus mindestens drei Mitgliedern.',
-        'Dem Prüfungsausschuss gehören ausschließlich Beschäftigte der IHK an.',
+        'Dem Prüfungsausschuss gehören ausschließlich Beschäftigte der BITLC an.',
         'Die Ausbilderin oder der Ausbilder des Prüflings muss dem Ausschuss angehören.',
         'Dem Prüfungsausschuss gehören Beauftragte der Arbeitgeber und der Arbeitnehmer in gleicher Zahl sowie mindestens eine Lehrkraft einer berufsbildenden Schule an.',
         'Die Mitglieder des Prüfungsausschusses werden vom Betriebsrat des Ausbildungsbetriebs gewählt.'
       ],
       loesung: [2, 5],
-      erklaerung: '§ 40 Abs. 1 und 2 BBiG: Der Prüfungsausschuss besteht aus mindestens drei Mitgliedern. Ihm müssen Beauftragte der Arbeitgeber und der Arbeitnehmer in gleicher Zahl sowie mindestens eine Lehrkraft einer berufsbildenden Schule angehören; mindestens zwei Drittel der Mitglieder müssen Beauftragte der Arbeitgeber und der Arbeitnehmer sein. Die Mitglieder werden von der zuständigen Stelle (IHK) berufen und sind ehrenamtlich tätig (§ 40 Abs. 3 und 6 BBiG).'
+      erklaerung: '§ 40 Abs. 1 und 2 BBiG: Der Prüfungsausschuss besteht aus mindestens drei Mitgliedern. Ihm müssen Beauftragte der Arbeitgeber und der Arbeitnehmer in gleicher Zahl sowie mindestens eine Lehrkraft einer berufsbildenden Schule angehören; mindestens zwei Drittel der Mitglieder müssen Beauftragte der Arbeitgeber und der Arbeitnehmer sein. Die Mitglieder werden von der zuständigen Stelle (BITLC) berufen und sind ehrenamtlich tätig (§ 40 Abs. 3 und 6 BBiG).'
     },
     {
       nr: 4, thema: 'mitbestimmung', typ: 'einfach',
@@ -123,7 +123,7 @@
       optionen: [
         'Frau Kaden hat keinen Anspruch auf Weiterbeschäftigung, weil kein Auszubildender übernommen werden muss.',
         'Frau Kaden wird automatisch für sechs Monate befristet weiterbeschäftigt.',
-        'Frau Kaden kann nur weiterbeschäftigt werden, wenn die IHK zustimmt.',
+        'Frau Kaden kann nur weiterbeschäftigt werden, wenn die BITLC zustimmt.',
         'Frau Kaden hat nur dann einen Anspruch, wenn sie die Abschlussprüfung mit der Note „gut“ besteht.',
         'Verlangt Frau Kaden innerhalb der letzten drei Monate vor dem Ende der Ausbildung schriftlich ihre Weiterbeschäftigung, gilt ein unbefristetes Arbeitsverhältnis als begründet.'
       ],
@@ -326,7 +326,7 @@
       optionen: [
         'Ein Tarifvertrag kann nur zwischen einer Gewerkschaft und einem Arbeitgeberverband abgeschlossen werden.',
         'Statt eines Tarifvertrags kann nur der Betriebsrat mit der Geschäftsführung die Löhne verbindlich festlegen.',
-        'Die Löhne der Elbsand Montage GmbH legt die zuständige IHK fest.',
+        'Die Löhne der Elbsand Montage GmbH legt die zuständige BITLC fest.',
         'Die Elbsand Montage GmbH kann als einzelner Arbeitgeber selbst Tarifvertragspartei sein und mit der Gewerkschaft einen Firmentarifvertrag (Haustarifvertrag) abschließen.',
         'Ohne Mitgliedschaft im Arbeitgeberverband darf die Gewerkschaft keine Tarifverhandlungen führen.'
       ],

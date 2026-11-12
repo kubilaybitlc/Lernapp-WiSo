@@ -1,4 +1,4 @@
-// Übungssatz 16 – eigene Aufgaben im Stil der IHK-WiSo-Bögen (keine Originalaufgaben).
+// Übungssatz 16 – eigene Aufgaben im Stil der BITLC-WiSo-Bögen (keine Originalaufgaben).
 // Aufgabentypen: einfach (1 Ziffer), mehrfach (mehrere Ziffern, Reihenfolge egal), zuordnung, reihenfolge, zahl, datum.
 (window.WISO_SAETZE = window.WISO_SAETZE || []).push({
   id: 'uebung-16',
@@ -50,7 +50,7 @@
       optionen: [
         'Die zusätzlichen Stunden sind mit der Ausbildungsvergütung bereits abgegolten.',
         'Mehrarbeit ist für volljährige Auszubildende generell verboten.',
-        'Die zusätzlichen Stunden dürfen nur mit Zustimmung der IHK geleistet werden.',
+        'Die zusätzlichen Stunden dürfen nur mit Zustimmung der BITLC geleistet werden.',
         'Die zusätzlichen Stunden sind besonders zu vergüten oder durch entsprechende Freizeit auszugleichen.',
         'Die zusätzlichen Stunden werden erst nach dem Ende der Ausbildung mit dem ersten Gehalt ausgeglichen.'
       ],
@@ -70,7 +70,7 @@
         'Die Zwischenprüfung wird von der Berufsschule abgenommen und ersetzt dort das Abschlusszeugnis.'
       ],
       loesung: 1,
-      erklaerung: '§ 48 Abs. 1 BBiG: Während der Berufsausbildung ist zur Ermittlung des Ausbildungsstandes eine Zwischenprüfung entsprechend der Ausbildungsordnung durchzuführen; abgenommen wird sie von der IHK. Zur Abschlussprüfung wird nur zugelassen, wer an den vorgeschriebenen Zwischenprüfungen teilgenommen hat (§ 43 Abs. 1 Nr. 2 BBiG). Bestanden werden muss sie nicht, und ihr Ergebnis fließt nicht in die Abschlussnote ein. Anders bei der gestreckten Abschlussprüfung der IT-Berufe: Dort ist Teil 1 bereits Bestandteil der Abschlussprüfung und zählt mit dem in der Ausbildungsordnung festgelegten Anteil (§ 5 Abs. 2 Nr. 2 BBiG).'
+      erklaerung: '§ 48 Abs. 1 BBiG: Während der Berufsausbildung ist zur Ermittlung des Ausbildungsstandes eine Zwischenprüfung entsprechend der Ausbildungsordnung durchzuführen; abgenommen wird sie von der BITLC. Zur Abschlussprüfung wird nur zugelassen, wer an den vorgeschriebenen Zwischenprüfungen teilgenommen hat (§ 43 Abs. 1 Nr. 2 BBiG). Bestanden werden muss sie nicht, und ihr Ergebnis fließt nicht in die Abschlussnote ein. Anders bei der gestreckten Abschlussprüfung der IT-Berufe: Dort ist Teil 1 bereits Bestandteil der Abschlussprüfung und zählt mit dem in der Ausbildungsordnung festgelegten Anteil (§ 5 Abs. 2 Nr. 2 BBiG).'
     },
     {
       nr: 4, thema: 'mitbestimmung', typ: 'einfach',

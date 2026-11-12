@@ -1,0 +1,797 @@
+// BITLC-Satz 11 (Zusatzfragen Recht & Wirtschaft) – Fragen von Klassenkamerad und Dozent.
+(window.WISO_IHK_SAETZE = window.WISO_IHK_SAETZE || []).push({
+  id: 'BITLC-eigen-11',
+  titel: 'Zusatzfragen Recht & Wirtschaft',
+  untertitel: 'Eigene Übungsfragen zu Grundlagen des Wirtschaftens, Recht, Verträgen und Finanzierung.',
+  ausgangssituation:
+    'Eigene Übungsfragen zu Grundlagen des Wirtschaftens, Recht, Verträgen und Finanzierung.',
+
+  aufgaben: [
+    {
+      nr: 1, thema: 'wirtschaft-grundlagen', typ: 'zuordnung',
+      frage: 'Ordnen Sie die Begriffe richtig zu.',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Bedürfnis',
+        'Bedarf',
+        'Nachfrage'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Ein Mangelgefühl mit dem Wunsch, es zu beseitigen', loesung: 1 },
+        { text: 'Ein Wunsch, der durch Kaufkraft gedeckt ist', loesung: 2 },
+        { text: 'Bedarf, der tatsächlich am Markt wirksam wird (Kauf)', loesung: 3 }
+      ],
+      erklaerung: 'Bedürfnis → (mit Kaufkraft) Bedarf → (am Markt geäußert) Nachfrage.'
+    },
+    {
+      nr: 2, thema: 'wirtschaft-grundlagen', typ: 'zuordnung',
+      frage: 'Ordnen Sie die Bedürfnisse den Bedürfnisarten zu.',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Existenzbedürfnis',
+        'Kulturbedürfnis',
+        'Luxusbedürfnis'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Essen und Trinken', loesung: 1 },
+        { text: 'Besuch eines Volkshochschulkurses', loesung: 2 },
+        { text: 'Kauf einer Luxusyacht', loesung: 3 }
+      ],
+      erklaerung: 'Die Abgrenzung hängt vom Lebensstandard der Gesellschaft ab.'
+    },
+    {
+      nr: 3, thema: 'wirtschaft-grundlagen', typ: 'einfach',
+      frage: 'Was ist ein freies Gut?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Software mit Open-Source-Lizenz',
+        'Luft zum Atmen',
+        'Ein kostenloses Werbegeschenk',
+        'Leitungswasser',
+        'Ein Dienstleistungsgut'
+      ],
+      loesung: 2,
+      erklaerung: 'Freie Güter sind in unbegrenzter Menge vorhanden und haben keinen Preis. Werbegeschenk und Leitungswasser sind knappe (wirtschaftliche) Güter.'
+    },
+    {
+      nr: 4, thema: 'wirtschaft-grundlagen', typ: 'zuordnung',
+      frage: 'Ordnen Sie die Güter zu.',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Konsumgut (Verbrauchsgut)',
+        'Konsumgut (Gebrauchsgut)',
+        'Investitionsgut (Produktionsgut)'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Druckerpapier im Privathaushalt', loesung: 1 },
+        { text: 'Privat genutztes Notebook', loesung: 2 },
+        { text: 'Server im Rechenzentrum eines IT-Dienstleisters', loesung: 3 }
+      ],
+      erklaerung: 'Entscheidend ist der Verwendungszweck: privat → Konsumgut, betrieblich zur Leistungserstellung → Investitionsgut.'
+    },
+    {
+      nr: 5, thema: 'wirtschaft-grundlagen', typ: 'einfach',
+      frage: 'Welche sind die betriebswirtschaftlichen Produktionsfaktoren?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Boden, Arbeit, Kapital',
+        'Ausführende Arbeit, Betriebsmittel, Werkstoffe und dispositiver Faktor (Leitung)',
+        'Angebot und Nachfrage',
+        'Einkauf, Produktion, Absatz',
+        'Staat, Haushalte, Unternehmen'
+      ],
+      loesung: 2,
+      erklaerung: 'Volkswirtschaftlich: Boden, Arbeit, Kapital (+ Bildung/Wissen). Betriebswirtschaftlich nach Gutenberg: Elementarfaktoren + dispositiver Faktor.'
+    },
+    {
+      nr: 6, thema: 'wirtschaft-grundlagen', typ: 'einfach',
+      frage: 'Ein Unternehmen ersetzt Mitarbeiter in der Rechnungsprüfung durch eine KI-Software. Wie nennt man diesen Vorgang?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Outsourcing',
+        'Substitution von Arbeit durch Kapital',
+        'Fusion',
+        'Insourcing',
+        'Arbeitszerlegung'
+      ],
+      loesung: 2,
+      erklaerung: 'Austausch von Produktionsfaktoren (Rationalisierung).'
+    },
+    {
+      nr: 7, thema: 'wirtschaft-grundlagen', typ: 'zuordnung',
+      frage: 'Ordnen Sie die Geld- und Güterströme im einfachen Wirtschaftskreislauf zu.',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Von Haushalten zu Unternehmen',
+        'Von Unternehmen zu Haushalten'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Arbeitsleistung', loesung: 1 },
+        { text: 'Lohn und Gehalt', loesung: 2 },
+        { text: 'Konsumausgaben', loesung: 1 },
+        { text: 'Konsumgüter', loesung: 2 }
+      ],
+      erklaerung: 'Güterstrom und Geldstrom laufen jeweils in entgegengesetzte Richtungen.'
+    },
+    {
+      nr: 8, thema: 'wirtschaft-grundlagen', typ: 'einfach',
+      frage: 'Ein Unternehmen will einen festgelegten Umsatz von 500.000 € mit möglichst geringen Werbekosten erreichen. Nach welchem Prinzip handelt es?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Maximalprinzip',
+        'Minimalprinzip',
+        'Optimumprinzip',
+        'Solidaritätsprinzip',
+        'Verursacherprinzip'
+      ],
+      loesung: 2,
+      erklaerung: 'Minimalprinzip: gegebenes Ziel mit geringstmöglichem Mitteleinsatz.'
+    },
+    {
+      nr: 9, thema: 'rechtsquellen', typ: 'zuordnung',
+      frage: 'Ordnen Sie die Personen der Geschäftsfähigkeit zu.',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Geschäftsunfähig',
+        'Beschränkt geschäftsfähig',
+        'Voll geschäftsfähig'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Ein 6-jähriges Kind', loesung: 1 },
+        { text: 'Eine 16-jährige Auszubildende', loesung: 2 },
+        { text: 'Ein 18-jähriger Fachinformatiker', loesung: 3 },
+        { text: 'Ein 7-jähriger Schüler', loesung: 2 }
+      ],
+      erklaerung: '§§ 104 ff. BGB: unter 7 geschäftsunfähig, 7 bis unter 18 beschränkt, ab 18 voll geschäftsfähig.'
+    },
+    {
+      nr: 10, thema: 'rechtsquellen', typ: 'einfach',
+      frage: 'Ein 15-Jähriger kauft von seinem Taschengeld ein Videospiel für 40 € ohne Wissen der Eltern. Ist der Kaufvertrag wirksam?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Nein, Minderjährige können nie Verträge schließen.',
+        'Ja, nach dem Taschengeldparagrafen, wenn er mit eigenen, ihm dafür überlassenen Mitteln bar bezahlt.',
+        'Nur mit Zustimmung des Verkäufers',
+        'Erst wenn er 18 wird',
+        'Nur bei Ratenzahlung'
+      ],
+      loesung: 2,
+      erklaerung: '§ 110 BGB („Taschengeldparagraf“): Vollständig mit überlassenen Mitteln bewirkt → wirksam. Ratenkäufe fallen nicht darunter.'
+    },
+    {
+      nr: 11, thema: 'rechtsquellen', typ: 'einfach',
+      frage: 'Was ist der Unterschied zwischen Rechtsfähigkeit und Geschäftsfähigkeit?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Es gibt keinen Unterschied.',
+        'Rechtsfähigkeit = Träger von Rechten und Pflichten sein (ab Geburt); Geschäftsfähigkeit = Rechtsgeschäfte selbst wirksam abschließen können',
+        'Rechtsfähigkeit beginnt mit 18 Jahren.',
+        'Geschäftsfähigkeit haben nur juristische Personen.',
+        'Rechtsfähigkeit endet mit dem Renteneintritt.'
+      ],
+      loesung: 2,
+      erklaerung: 'Natürliche Personen sind ab Vollendung der Geburt rechtsfähig (§ 1 BGB), juristische Personen ab Eintragung/Gründung.'
+    },
+    {
+      nr: 12, thema: 'rechtsquellen', typ: 'zuordnung',
+      frage: 'Ordnen Sie die Rechtsgeschäfte zu.',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Einseitig empfangsbedürftig',
+        'Einseitig nicht empfangsbedürftig',
+        'Zweiseitig (Vertrag)'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Kündigung eines Arbeitsvertrags', loesung: 1 },
+        { text: 'Testament', loesung: 2 },
+        { text: 'Kaufvertrag', loesung: 3 },
+        { text: 'Mahnung', loesung: 1 }
+      ],
+      erklaerung: 'Empfangsbedürftige Willenserklärungen werden erst mit Zugang wirksam; Verträge brauchen zwei übereinstimmende Willenserklärungen.'
+    },
+    {
+      nr: 13, thema: 'rechtsquellen', typ: 'zuordnung',
+      frage: 'Ist das Rechtsgeschäft nichtig oder anfechtbar?',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Nichtig',
+        'Anfechtbar'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Ein Vertrag mit einem 5-Jährigen', loesung: 1 },
+        { text: 'Ein Mitarbeiter verschreibt sich und bestellt 100 statt 10 Monitore (Erklärungsirrtum)', loesung: 2 },
+        { text: 'Ein Kauf von Drogen', loesung: 1 },
+        { text: 'Ein Verkäufer täuscht arglistig über einen Unfallschaden', loesung: 2 },
+        { text: 'Ein Grundstückskauf ohne notarielle Beurkundung', loesung: 1 },
+        { text: 'Ein offensichtlicher Scherz („Ich verkaufe dir mein Haus für 1 €“)', loesung: 1 }
+      ],
+      erklaerung: 'Nichtig = von Anfang an unwirksam (Geschäftsunfähigkeit, Formmangel, Gesetzes-/Sittenverstoß, Scherz). Anfechtbar = wirksam, bis angefochten (Irrtum, Täuschung, Drohung).'
+    },
+    {
+      nr: 14, thema: 'rechtsquellen', typ: 'einfach',
+      frage: 'Was ist der Unterschied zwischen Besitz und Eigentum?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Es gibt keinen Unterschied.',
+        'Besitz = tatsächliche Herrschaft über eine Sache; Eigentum = rechtliche Herrschaft',
+        'Eigentum hat nur, wer die Sache bei sich trägt.',
+        'Besitz ist rechtlich, Eigentum tatsächlich.',
+        'Mieter sind Eigentümer der Mietsache.'
+      ],
+      loesung: 2,
+      erklaerung: 'Beispiel: Ein Mieter ist Besitzer der Wohnung, der Vermieter bleibt Eigentümer.'
+    },
+    {
+      nr: 15, thema: 'rechtsquellen', typ: 'einfach',
+      frage: 'Ein Händler liefert Notebooks unter Eigentumsvorbehalt. Was bedeutet das?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Der Käufer wird sofort Eigentümer.',
+        'Der Verkäufer bleibt Eigentümer, bis der Kaufpreis vollständig bezahlt ist.',
+        'Der Käufer darf die Ware nicht benutzen.',
+        'Die Ware darf nicht weiterverkauft werden.',
+        'Der Kaufvertrag ist nichtig.'
+      ],
+      loesung: 2,
+      erklaerung: '§ 449 BGB: Kaufpreiszahlung ist Bedingung für den Eigentumsübergang. Der Käufer ist schon Besitzer.'
+    },
+    {
+      nr: 16, thema: 'rechtsquellen', typ: 'zuordnung',
+      frage: 'Ordnen Sie den Sachverhalten die passende Vertragsart zu.',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Kaufvertrag',
+        'Mietvertrag',
+        'Werkvertrag',
+        'Dienstvertrag',
+        'Leihvertrag'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Ein Programmierer soll eine fertige App liefern (Erfolg geschuldet).', loesung: 3 },
+        { text: 'Ein Berater soll 20 Stunden beraten (Tätigkeit geschuldet).', loesung: 4 },
+        { text: 'Ein Kollege überlässt dir unentgeltlich seinen Beamer fürs Wochenende.', loesung: 5 },
+        { text: 'Eine Firma überlässt gegen Entgelt einen Server für ein Jahr.', loesung: 2 },
+        { text: 'Ein Kunde erwirbt einen Monitor gegen Bezahlung.', loesung: 1 }
+      ],
+      erklaerung: 'Werkvertrag: Erfolg. Dienstvertrag: Tätigkeit. Leihe: unentgeltlich. Miete: entgeltlich.'
+    },
+    {
+      nr: 17, thema: 'rechtsquellen', typ: 'einfach',
+      frage: 'Wie kommt ein Kaufvertrag zustande?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Durch die Lieferung der Ware',
+        'Durch zwei übereinstimmende Willenserklärungen: Antrag und Annahme',
+        'Nur durch einen schriftlichen Vertrag',
+        'Durch die Zahlung',
+        'Durch Eintrag ins Handelsregister'
+      ],
+      loesung: 2,
+      erklaerung: 'Antrag (z. B. Angebot oder Bestellung) + Annahme (z. B. Bestellung oder Auftragsbestätigung).'
+    },
+    {
+      nr: 18, thema: 'rechtsquellen', typ: 'einfach',
+      frage: 'Ist eine Anzeige in einem Onlineshop („Notebook X für 899 €“) ein verbindlicher Antrag?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Ja, der Händler muss an jeden liefern.',
+        'Nein, sie ist eine Aufforderung zur Abgabe eines Angebots (invitatio ad offerendum).',
+        'Ja, aber nur für 24 Stunden',
+        'Nur bei Vorkasse',
+        'Nur für Unternehmer'
+      ],
+      loesung: 2,
+      erklaerung: 'Erst die Bestellung des Kunden ist der Antrag; der Händler nimmt sie an (z. B. Auftragsbestätigung oder Versand).'
+    },
+    {
+      nr: 19, thema: 'rechtsquellen', typ: 'zuordnung',
+      frage: 'Ordnen Sie die Kaufarten zu.',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Verbrauchsgüterkauf',
+        'Handelskauf (beidseitig)',
+        'Bürgerlicher Kauf'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Ein Elektronikmarkt (Unternehmer) verkauft einer Privatperson einen Fernseher.', loesung: 1 },
+        { text: 'Ein IT-Händler kauft beim Großhändler Server.', loesung: 2 },
+        { text: 'Eine Privatperson verkauft einer anderen ihr gebrauchtes Fahrrad.', loesung: 3 }
+      ],
+      erklaerung: 'Verbrauchsgüterkauf: Unternehmer verkauft an Verbraucher – besondere Schutzrechte (§§ 474 ff. BGB).'
+    },
+    {
+      nr: 20, thema: 'rechtsquellen', typ: 'einfach',
+      frage: 'Wie lange hat ein Verbraucher beim Online-Kauf (Fernabsatzvertrag) in der Regel ein Widerrufsrecht?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        '7 Tage',
+        '14 Tage',
+        '30 Tage',
+        '2 Monate',
+        'Gar keins'
+      ],
+      loesung: 2,
+      erklaerung: '§ 355 BGB: 14 Tage ab Erhalt der Ware (bei korrekter Belehrung).'
+    },
+    {
+      nr: 21, thema: 'rechtsquellen', typ: 'zuordnung',
+      frage: 'Ordnen Sie die Kaufvertragsstörungen zu.',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Mangelhafte Lieferung (Schlechtleistung)',
+        'Lieferungsverzug',
+        'Annahmeverzug',
+        'Zahlungsverzug'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Der Verkäufer liefert den bestellten Server trotz fälligem Termin nicht.', loesung: 2 },
+        { text: 'Der Käufer verweigert grundlos die Annahme der ordnungsgemäß gelieferten Ware.', loesung: 3 },
+        { text: 'Ein Monitor hat einen Pixelfehler.', loesung: 1 },
+        { text: 'Der Käufer bezahlt die Rechnung nach Fälligkeit und Mahnung nicht.', loesung: 4 }
+      ],
+      erklaerung: 'Pflichtverletzungen des Verkäufers: Mangel, Lieferverzug. Des Käufers: Annahme- und Zahlungsverzug.'
+    },
+    {
+      nr: 22, thema: 'rechtsquellen', typ: 'einfach',
+      frage: 'Welches Recht hat der Käufer bei einer mangelhaften Lieferung ZUERST (vorrangig)?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Rücktritt vom Vertrag',
+        'Minderung des Kaufpreises',
+        'Nacherfüllung (Nachbesserung oder Ersatzlieferung)',
+        'Schadensersatz statt der Leistung',
+        'Sofortige Kündigung'
+      ],
+      loesung: 3,
+      erklaerung: 'Vorrang der Nacherfüllung (§ 439 BGB). Erst wenn sie scheitert: Rücktritt, Minderung, Schadensersatz.'
+    },
+    {
+      nr: 23, thema: 'rechtsquellen', typ: 'einfach',
+      frage: 'Wie lange verjähren Mängelansprüche beim Kauf neuer Sachen regulär?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        '6 Monate',
+        '1 Jahr',
+        '2 Jahre ab Ablieferung',
+        '3 Jahre',
+        '5 Jahre'
+      ],
+      loesung: 3,
+      erklaerung: '§ 438 BGB: 2 Jahre (bei Bauwerken 5 Jahre).'
+    },
+    {
+      nr: 24, thema: 'rechtsquellen', typ: 'einfach',
+      frage: 'Beim zweiseitigen Handelskauf: Was muss der Käufer nach § 377 HGB tun?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Nichts, er hat zwei Jahre Zeit.',
+        'Die Ware unverzüglich prüfen und erkannte Mängel unverzüglich rügen',
+        'Die Ware erst nach sechs Monaten prüfen',
+        'Den Mangel nur mündlich mitteilen',
+        'Die Ware sofort zurückschicken'
+      ],
+      loesung: 2,
+      erklaerung: 'Unterlässt er die unverzügliche Rüge, gilt die Ware als genehmigt.'
+    },
+    {
+      nr: 25, thema: 'rechtsquellen', typ: 'einfach',
+      frage: 'Wann kommt ein Schuldner spätestens ohne Mahnung in Zahlungsverzug (bei Verbrauchern mit Hinweis auf der Rechnung)?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Sofort nach Rechnungserhalt',
+        '10 Tage nach Fälligkeit und Zugang der Rechnung',
+        '30 Tage nach Fälligkeit und Zugang der Rechnung',
+        '60 Tage',
+        'Nie ohne Mahnung'
+      ],
+      loesung: 3,
+      erklaerung: '§ 286 Abs. 3 BGB: 30 Tage. Bei kalendermäßig bestimmtem Termin („zahlbar bis 15.03.“) sofort mit Ablauf.'
+    },
+    {
+      nr: 26, thema: 'rechtsquellen', typ: 'einfach',
+      frage: 'Wie lange beträgt die regelmäßige Verjährungsfrist nach BGB (z. B. für Kaufpreisforderungen)?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        '1 Jahr',
+        '2 Jahre',
+        '3 Jahre, beginnend am Ende des Jahres der Entstehung',
+        '5 Jahre',
+        '30 Jahre'
+      ],
+      loesung: 3,
+      erklaerung: '§§ 195, 199 BGB: Eine Forderung von März 2026 verjährt am 31.12.2029.'
+    },
+    {
+      nr: 27, thema: 'rechtsquellen', typ: 'reihenfolge',
+      frage: 'Bringen Sie das gerichtliche Mahnverfahren in die richtige Reihenfolge (1 = zuerst).',
+      anweisung: 'Tragen Sie für den ersten Schritt die Ziffer 1, für den zweiten Schritt die Ziffer 2 usw. in die entsprechenden Kästchen ein.',
+      itemsTitel: 'Schritte',
+      items: [
+        { text: 'Vollstreckungsbescheid', loesung: 3 },
+        { text: 'Antrag auf Mahnbescheid beim Amtsgericht', loesung: 1 },
+        { text: 'Zwangsvollstreckung (z. B. Pfändung)', loesung: 4 },
+        { text: 'Zustellung des Mahnbescheids an den Schuldner', loesung: 2 }
+      ],
+      erklaerung: 'Antrag → Mahnbescheid (Widerspruch 2 Wochen) → Vollstreckungsbescheid (Einspruch 2 Wochen) → Zwangsvollstreckung.'
+    },
+    {
+      nr: 28, thema: 'rechtsquellen', typ: 'zuordnung',
+      frage: 'Ordnen Sie die Lieferbedingungen zu: Wer trägt die Versandkosten (gesetzliche Regelung beim Versendungskauf)?',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Käufer',
+        'Verkäufer'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Ohne Vereinbarung: Kosten der Versendung an einen anderen Ort als den Erfüllungsort', loesung: 1 },
+        { text: 'Ohne Vereinbarung: Kosten der Übergabe (z. B. Verpackung, Abwiegen)', loesung: 2 },
+        { text: 'Vereinbart „frei Haus“', loesung: 2 }
+      ],
+      erklaerung: '§ 448 BGB: Warenschulden sind Holschulden – Versandkosten trägt der Käufer, Übergabekosten der Verkäufer.'
+    },
+    {
+      nr: 29, thema: 'kennzahlen', typ: 'zuordnung',
+      frage: 'Ordnen Sie die Finanzierungsarten zu.',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Eigenfinanzierung (Beteiligung)',
+        'Fremdfinanzierung',
+        'Selbstfinanzierung (Innenfinanzierung)'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Ein neuer Gesellschafter bringt 50.000 € ein.', loesung: 1 },
+        { text: 'Die Bank gewährt ein Darlehen.', loesung: 2 },
+        { text: 'Gewinne werden einbehalten und nicht ausgeschüttet.', loesung: 3 },
+        { text: 'Ein Lieferant gewährt ein Zahlungsziel von 30 Tagen.', loesung: 2 }
+      ],
+      erklaerung: 'Eigenkapital von außen = Beteiligung; von innen = Gewinnthesaurierung; Lieferantenkredit = Fremdkapital.'
+    },
+    {
+      nr: 30, thema: 'kennzahlen', typ: 'einfach',
+      frage: 'Was ist ein Vorteil von Leasing gegenüber dem Kauf eines Servers?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Man wird sofort Eigentümer.',
+        'Es ist immer billiger als ein Kauf.',
+        'Liquidität wird geschont, da keine hohe Einmalzahlung nötig ist.',
+        'Der Leasinggeber trägt die Nutzungskosten.',
+        'Es gibt keine laufenden Kosten.'
+      ],
+      loesung: 3,
+      erklaerung: 'Leasing: Nutzung gegen laufende Raten, Eigentümer bleibt der Leasinggeber. Oft insgesamt teurer als Kauf.'
+    },
+    {
+      nr: 31, thema: 'kennzahlen', typ: 'zahl',
+      frage: 'Ein Lieferant bietet: Zahlung innerhalb von 10 Tagen mit 2 % Skonto oder innerhalb von 30 Tagen netto. Rechnungsbetrag 5.000 €. Wie viel Euro spart man durch Skontoabzug?',
+      anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
+      loesung: 100, nachkommastellen: 0,
+      einheit: 'EUR',
+      erklaerung: '2 % von 5.000 € = 100 €. Der Lieferantenkredit ist teuer: 2 % für 20 Tage ≈ 36 % Jahreszins.'
+    },
+    {
+      nr: 32, thema: 'kennzahlen', typ: 'zahl',
+      frage: 'Ein Darlehen über 20.000 € wird zu 6 % Jahreszins für 9 Monate aufgenommen. Wie hoch sind die Zinsen in Euro?',
+      anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
+      loesung: 900, nachkommastellen: 0,
+      einheit: 'EUR',
+      erklaerung: 'Zinsen = K × p × t ÷ (100 × 12) = 20.000 × 6 × 9 ÷ 1.200 = 900 €.'
+    },
+    {
+      nr: 33, thema: 'kennzahlen', typ: 'zuordnung',
+      frage: 'Ordnen Sie die Kreditsicherheiten zu.',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Bürgschaft',
+        'Sicherungsübereignung',
+        'Grundschuld',
+        'Pfandrecht (Faustpfand)'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Ein Dritter verpflichtet sich, für die Schuld einzustehen.', loesung: 1 },
+        { text: 'Die Bank wird Eigentümerin eines Firmenwagens, der Kreditnehmer nutzt ihn weiter.', loesung: 2 },
+        { text: 'Ein Grundstück wird im Grundbuch belastet.', loesung: 3 },
+        { text: 'Der Kreditnehmer übergibt der Bank Wertpapiere.', loesung: 4 }
+      ],
+      erklaerung: 'Personalsicherheit: Bürgschaft. Realsicherheiten: Pfand (Besitz bei der Bank), Sicherungsübereignung (Besitz beim Schuldner), Grundpfandrechte.'
+    },
+    {
+      nr: 34, thema: 'kennzahlen', typ: 'einfach',
+      frage: 'Welcher Grund berechtigt zur Stellung eines Insolvenzantrags?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Ein Quartalsverlust',
+        'Zahlungsunfähigkeit oder (bei juristischen Personen) Überschuldung',
+        'Sinkender Umsatz',
+        'Ein Streik im Unternehmen',
+        'Ein Wechsel der Geschäftsführung'
+      ],
+      loesung: 2,
+      erklaerung: 'Insolvenzgründe: Zahlungsunfähigkeit, drohende Zahlungsunfähigkeit (nur Schuldnerantrag), Überschuldung.'
+    },
+    {
+      nr: 35, thema: 'kennzahlen', typ: 'einfach',
+      frage: 'Welches Gericht ist für ein Insolvenzverfahren zuständig?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Arbeitsgericht',
+        'Sozialgericht',
+        'Amtsgericht als Insolvenzgericht',
+        'Finanzgericht',
+        'Verwaltungsgericht'
+      ],
+      loesung: 3,
+      erklaerung: 'Das Amtsgericht am Sitz des Schuldners.'
+    },
+    {
+      nr: 36, thema: 'kennzahlen', typ: 'zuordnung',
+      frage: 'Ordnen Sie die Zahlungsarten zu.',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Barzahlung',
+        'Halbbare Zahlung',
+        'Bargeldlose Zahlung'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Überweisung vom Girokonto auf ein anderes Girokonto', loesung: 3 },
+        { text: 'Bareinzahlung auf das Konto des Empfängers', loesung: 2 },
+        { text: 'Bezahlung mit Münzen und Scheinen an der Kasse', loesung: 1 },
+        { text: 'Lastschrift per SEPA-Mandat', loesung: 3 }
+      ],
+      erklaerung: 'Halbbar: Eine Seite nutzt Bargeld, die andere ein Konto.'
+    },
+    {
+      nr: 37, thema: 'sozialversicherung', typ: 'einfach',
+      frage: 'Wie berechnet sich der Nettolohn?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Brutto + Sozialversicherung',
+        'Brutto − Lohnsteuer − (Kirchensteuer, Soli) − AN-Anteil Sozialversicherung',
+        'Brutto − AG-Anteil Sozialversicherung',
+        'Brutto × 0,5',
+        'Brutto − vermögenswirksame Leistungen'
+      ],
+      loesung: 2,
+      erklaerung: 'Vom Netto werden ggf. noch VL-Sparbeträge oder Vorschüsse abgezogen → Auszahlungsbetrag.'
+    },
+    {
+      nr: 38, thema: 'sozialversicherung', typ: 'zuordnung',
+      frage: 'Ordnen Sie die Steuerklassen zu.',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Steuerklasse I',
+        'Steuerklasse II',
+        'Steuerklasse III',
+        'Steuerklasse V',
+        'Steuerklasse VI'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Ledig, keine Kinder', loesung: 1 },
+        { text: 'Alleinerziehend mit Entlastungsbetrag', loesung: 2 },
+        { text: 'Verheiratet, besserverdienender Partner (Kombination III/V)', loesung: 3 },
+        { text: 'Verheiratet, geringer verdienender Partner (Kombination III/V)', loesung: 4 },
+        { text: 'Zweites Arbeitsverhältnis', loesung: 5 }
+      ],
+      erklaerung: 'IV/IV ist die Kombination für Ehepaare mit ähnlichem Einkommen.'
+    },
+    {
+      nr: 39, thema: 'sozialversicherung', typ: 'zuordnung',
+      frage: 'Werbungskosten oder Sonderausgaben?',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Werbungskosten',
+        'Sonderausgaben'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Fahrten zur Arbeit (Entfernungspauschale)', loesung: 1 },
+        { text: 'Kirchensteuer', loesung: 2 },
+        { text: 'Fachbücher für den Beruf', loesung: 1 },
+        { text: 'Beiträge zur Haftpflichtversicherung', loesung: 2 }
+      ],
+      erklaerung: 'Werbungskosten dienen der Erzielung von Einnahmen (Arbeitnehmer-Pauschbetrag 1.230 €). Sonderausgaben sind bestimmte private Ausgaben.'
+    },
+    {
+      nr: 40, thema: 'arbeitsvertrag', typ: 'zuordnung',
+      frage: 'Ordnen Sie die Arbeitszeitmodelle zu.',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Gleitzeit',
+        'Vertrauensarbeitszeit',
+        'Jobsharing',
+        'Schichtarbeit',
+        'Teilzeit'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Kernzeit 10–15 Uhr, Beginn und Ende sonst frei wählbar', loesung: 1 },
+        { text: 'Keine Zeiterfassung, nur das Ergebnis zählt', loesung: 2 },
+        { text: 'Zwei Mitarbeiter teilen sich eine Vollzeitstelle', loesung: 3 },
+        { text: 'Ablösung im Früh-, Spät- und Nachtdienst', loesung: 4 },
+        { text: 'Wochenarbeitszeit von 20 Stunden', loesung: 5 }
+      ],
+      erklaerung: 'Achtung: Nach BAG-Rechtsprechung muss die Arbeitszeit grundsätzlich erfasst werden – auch bei Vertrauensarbeitszeit.'
+    },
+    {
+      nr: 41, thema: 'arbeitsvertrag', typ: 'einfach',
+      frage: 'Nach wie vielen Monaten Betriebszugehörigkeit können Arbeitnehmer in Betrieben mit mehr als 15 Beschäftigten einen Anspruch auf Teilzeit geltend machen?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        '3 Monate',
+        '6 Monate',
+        '12 Monate',
+        '24 Monate',
+        'Nie'
+      ],
+      loesung: 2,
+      erklaerung: '§ 8 TzBfG: nach 6 Monaten, Betrieb mit mehr als 15 Arbeitnehmern.'
+    },
+    {
+      nr: 42, thema: 'ausbildung', typ: 'einfach',
+      frage: 'Welche ärztliche Untersuchung ist für Jugendliche vor Beginn einer Ausbildung Pflicht?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Keine',
+        'Erstuntersuchung innerhalb der letzten 14 Monate vor Beginn der Beschäftigung',
+        'Untersuchung durch den Betriebsarzt nach der Probezeit',
+        'Jährliche Untersuchung',
+        'Untersuchung nur bei Krankheit'
+      ],
+      loesung: 2,
+      erklaerung: '§ 32 JArbSchG. Erste Nachuntersuchung ein Jahr nach Beginn (§ 33).'
+    },
+    {
+      nr: 43, thema: 'ausbildung', typ: 'einfach',
+      frage: 'Wird die Berufsschulzeit auf die Arbeitszeit angerechnet?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Nein, nie',
+        'Ja; für Erwachsene seit 2020 ebenfalls – ein Berufsschultag mit mehr als 5 Unterrichtsstunden zählt einmal pro Woche mit der durchschnittlichen täglichen Arbeitszeit',
+        'Nur bei Jugendlichen unter 16',
+        'Nur in der Probezeit',
+        'Nur wenn der Betriebsrat zustimmt'
+      ],
+      loesung: 2,
+      erklaerung: '§ 15 BBiG (seit 2020 auch für Volljährige) und § 9 JArbSchG.'
+    },
+    {
+      nr: 44, thema: 'wirtschaft-grundlagen', typ: 'zuordnung',
+      frage: 'Ordnen Sie die Arten der Arbeitslosigkeit zu.',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Saisonale Arbeitslosigkeit',
+        'Konjunkturelle Arbeitslosigkeit',
+        'Strukturelle Arbeitslosigkeit',
+        'Friktionelle Arbeitslosigkeit'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Bauarbeiter sind im Winter ohne Arbeit.', loesung: 1 },
+        { text: 'In einer Rezession bauen viele Betriebe Stellen ab.', loesung: 2 },
+        { text: 'Durch Digitalisierung fallen Berufe dauerhaft weg.', loesung: 3 },
+        { text: 'Eine Fachinformatikerin ist zwischen zwei Jobs kurz arbeitslos.', loesung: 4 }
+      ],
+      erklaerung: 'Friktionell = Such- bzw. Wechselarbeitslosigkeit.'
+    },
+    {
+      nr: 45, thema: 'wirtschaft-grundlagen', typ: 'einfach',
+      frage: 'Was ist ein Höchstpreis als staatlicher Markteingriff?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Ein Preis, der über dem Gleichgewichtspreis liegt und Anbieter schützt',
+        'Ein Preis unterhalb des Gleichgewichtspreises zum Schutz der Verbraucher – es entsteht ein Nachfrageüberhang',
+        'Der Preis im Marktgleichgewicht',
+        'Ein Preis, den Kartelle festlegen',
+        'Der Mindestlohn'
+      ],
+      loesung: 2,
+      erklaerung: 'Mindestpreis (z. B. Mindestlohn) liegt über dem Gleichgewicht → Angebotsüberhang.'
+    },
+    {
+      nr: 46, thema: 'wirtschaft-grundlagen', typ: 'einfach',
+      frage: 'Was passiert im Marktgleichgewicht nach dem Modell von Angebot und Nachfrage?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Es gibt einen Angebotsüberhang.',
+        'Die angebotene Menge entspricht der nachgefragten Menge – der Markt wird geräumt.',
+        'Der Staat legt den Preis fest.',
+        'Es gibt einen Nachfrageüberhang.',
+        'Die Preise steigen ständig.'
+      ],
+      loesung: 2,
+      erklaerung: 'Beim Gleichgewichtspreis wird der größtmögliche Umsatz erzielt.'
+    },
+    {
+      nr: 47, thema: 'wirtschaft-grundlagen', typ: 'einfach',
+      frage: 'Steigt der Preis eines Gutes, so sinkt (normal) die Nachfrage. Was passiert mit der Nachfrage nach einem Komplementärgut (z. B. Druckerpatronen, wenn Drucker teurer werden)?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Sie steigt.',
+        'Sie sinkt ebenfalls.',
+        'Sie bleibt gleich.',
+        'Sie wird vom Staat festgelegt.',
+        'Sie verdoppelt sich.'
+      ],
+      loesung: 2,
+      erklaerung: 'Komplementärgüter ergänzen sich. Bei Substitutionsgütern würde die Nachfrage steigen.'
+    },
+    {
+      nr: 48, thema: 'zusammenschluesse', typ: 'zuordnung',
+      frage: 'Ordnen Sie die Zusammenschlüsse nach der Produktionsstufe zu.',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Zuordnung in das Kästchen ein.',
+      optionenTitel: 'Zuordnungen',
+      optionen: [
+        'Horizontal',
+        'Vertikal',
+        'Diagonal (konglomerat)'
+      ],
+      itemsTitel: 'Sachverhalte',
+      items: [
+        { text: 'Zwei IT-Systemhäuser schließen sich zusammen.', loesung: 1 },
+        { text: 'Ein Hardwarehersteller übernimmt einen Chiplieferanten.', loesung: 2 },
+        { text: 'Ein Softwareunternehmen übernimmt eine Brauerei.', loesung: 3 }
+      ],
+      erklaerung: 'Horizontal = gleiche Stufe; vertikal = vor- oder nachgelagerte Stufe; diagonal = branchenfremd.'
+    },
+    {
+      nr: 49, thema: 'zusammenschluesse', typ: 'einfach',
+      frage: 'Welche Behörde überwacht in Deutschland Kartelle und Fusionen?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'BITLC',
+        'Bundeskartellamt',
+        'Bundesagentur für Arbeit',
+        'Finanzamt',
+        'Gewerbeaufsichtsamt'
+      ],
+      loesung: 2,
+      erklaerung: 'Rechtsgrundlage: Gesetz gegen Wettbewerbsbeschränkungen (GWB). Großfusionen prüft die EU-Kommission.'
+    },
+    {
+      nr: 50, thema: 'rechtsformen', typ: 'einfach',
+      frage: 'Wer ist Kaufmann im Sinne des HGB (Ist-Kaufmann)?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Jeder, der ein Gewerbe anmeldet',
+        'Wer ein Handelsgewerbe betreibt, das einen kaufmännisch eingerichteten Geschäftsbetrieb erfordert',
+        'Nur Inhaber einer GmbH',
+        'Jeder Freiberufler',
+        'Nur wer eine kaufmännische Ausbildung hat'
+      ],
+      loesung: 2,
+      erklaerung: '§ 1 HGB. Kleingewerbetreibende können sich freiwillig eintragen lassen (Kann-Kaufmann, § 2).'
+    }
+  ]
+});

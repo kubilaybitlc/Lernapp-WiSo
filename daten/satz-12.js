@@ -1,4 +1,4 @@
-// Übungssatz 12 – eigene Aufgaben im Stil der IHK-WiSo-Bögen (keine Originalaufgaben).
+// Übungssatz 12 – eigene Aufgaben im Stil der BITLC-WiSo-Bögen (keine Originalaufgaben).
 // Aufgabentypen: einfach (1 Ziffer), mehrfach (mehrere Ziffern, Reihenfolge egal), zuordnung, reihenfolge, zahl, datum.
 (window.WISO_SAETZE = window.WISO_SAETZE || []).push({
   id: 'uebung-12',
@@ -51,7 +51,7 @@
         'Er muss vor der Prüfung zunächst die Zwischenprüfung bei der Berufsschule bestehen.'
       ],
       loesung: 4,
-      erklaerung: '§ 45 Abs. 2 BBiG: Zur Abschlussprüfung ist auch zuzulassen, wer nachweist, dass er mindestens das Eineinhalbfache der Zeit, die als Ausbildungsdauer vorgeschrieben ist, in dem Beruf tätig gewesen ist, in dem die Prüfung abgelegt werden soll (Externenprüfung). Vom Nachweis der Mindestzeit kann abgesehen werden, wenn glaubhaft gemacht wird, dass die berufliche Handlungsfähigkeit erworben wurde. Über die Zulassung entscheidet die zuständige Stelle, hier die IHK (§ 46 Abs. 1 BBiG).'
+      erklaerung: '§ 45 Abs. 2 BBiG: Zur Abschlussprüfung ist auch zuzulassen, wer nachweist, dass er mindestens das Eineinhalbfache der Zeit, die als Ausbildungsdauer vorgeschrieben ist, in dem Beruf tätig gewesen ist, in dem die Prüfung abgelegt werden soll (Externenprüfung). Vom Nachweis der Mindestzeit kann abgesehen werden, wenn glaubhaft gemacht wird, dass die berufliche Handlungsfähigkeit erworben wurde. Über die Zulassung entscheidet die zuständige Stelle, hier die BITLC (§ 46 Abs. 1 BBiG).'
     },
     {
       nr: 3, thema: 'ausbildung', typ: 'einfach',

@@ -1,4 +1,4 @@
-// Übungssatz 5 – eigene Aufgaben im Stil der IHK-WiSo-Bögen (keine Originalaufgaben).
+// Übungssatz 5 – eigene Aufgaben im Stil der BITLC-WiSo-Bögen (keine Originalaufgaben).
 // Aufgabentypen: einfach (1 Ziffer), mehrfach (mehrere Ziffern, Reihenfolge egal), zuordnung, reihenfolge, zahl, datum.
 (window.WISO_SAETZE = window.WISO_SAETZE || []).push({
   id: 'uebung-05',
@@ -109,14 +109,14 @@
       frage: 'Welche der folgenden Aussagen zur Verkürzung der Ausbildungszeit trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die IHK kürzt die Ausbildungsdauer auf gemeinsamen Antrag von Auszubildender und Ausbildendem, wenn zu erwarten ist, dass das Ausbildungsziel in der gekürzten Zeit erreicht wird.',
+        'Die BITLC kürzt die Ausbildungsdauer auf gemeinsamen Antrag von Auszubildender und Ausbildendem, wenn zu erwarten ist, dass das Ausbildungsziel in der gekürzten Zeit erreicht wird.',
         'Der Ausbildungsbetrieb kann die Ausbildungszeit allein durch eine Mitteilung an die Berufsschule verkürzen.',
         'Eine Verkürzung ist nur möglich, wenn die Auszubildende das 25. Lebensjahr vollendet hat.',
         'Mit dem Abitur verkürzt sich die Ausbildungszeit automatisch um ein Jahr, ein Antrag ist nicht nötig.',
         'Über die Verkürzung entscheidet die Berufsschule anhand der Noten des ersten Halbjahres.'
       ],
       loesung: 1,
-      erklaerung: '§ 8 Abs. 1 BBiG: Auf gemeinsamen Antrag von Auszubildenden und Ausbildenden hat die zuständige Stelle (IHK) die Ausbildungsdauer zu kürzen, wenn zu erwarten ist, dass das Ausbildungsziel in der gekürzten Dauer erreicht wird. Das Abitur ist ein typischer Grund, wirkt aber nicht automatisch. Davon zu unterscheiden ist die vorzeitige Zulassung zur Abschlussprüfung bei guten Leistungen (§ 45 Abs. 1 BBiG).'
+      erklaerung: '§ 8 Abs. 1 BBiG: Auf gemeinsamen Antrag von Auszubildenden und Ausbildenden hat die zuständige Stelle (BITLC) die Ausbildungsdauer zu kürzen, wenn zu erwarten ist, dass das Ausbildungsziel in der gekürzten Dauer erreicht wird. Das Abitur ist ein typischer Grund, wirkt aber nicht automatisch. Davon zu unterscheiden ist die vorzeitige Zulassung zur Abschlussprüfung bei guten Leistungen (§ 45 Abs. 1 BBiG).'
     },
     {
       nr: 6, thema: 'ausbildung', typ: 'einfach',

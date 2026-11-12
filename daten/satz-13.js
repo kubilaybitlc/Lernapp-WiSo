@@ -1,4 +1,4 @@
-// Übungssatz 13 – eigene Aufgaben im Stil der IHK-WiSo-Bögen (keine Originalaufgaben).
+// Übungssatz 13 – eigene Aufgaben im Stil der BITLC-WiSo-Bögen (keine Originalaufgaben).
 // Aufgabentypen: einfach (1 Ziffer), mehrfach (mehrere Ziffern, Reihenfolge egal), zuordnung, reihenfolge, zahl, datum.
 (window.WISO_SAETZE = window.WISO_SAETZE || []).push({
   id: 'uebung-13',
@@ -56,12 +56,12 @@
       optionen: [
         'Der Ausbildungsberater ist ein Beschäftigter der Agentur für Arbeit und vermittelt freie Ausbildungsplätze.',
         'Der Besuch ist nur mit vorheriger Zustimmung des Betriebsrats zulässig.',
-        'Der Ausbildungsberater berät Ausbildungsbetriebe und Auszubildende und überwacht für die IHK die Durchführung der Ausbildung; der Betrieb muss ihm die erforderlichen Auskünfte erteilen und die Besichtigung der Ausbildungsstätte gestatten.',
+        'Der Ausbildungsberater berät Ausbildungsbetriebe und Auszubildende und überwacht für die BITLC die Durchführung der Ausbildung; der Betrieb muss ihm die erforderlichen Auskünfte erteilen und die Besichtigung der Ausbildungsstätte gestatten.',
         'Der Ausbildungsberater darf den Ausbildungsvertrag eigenmächtig kündigen, wenn er Mängel feststellt.',
         'Der Ausbildungsberater ist Mitglied des Prüfungsausschusses und nimmt bei seinem Besuch die Zwischenprüfung ab.'
       ],
       loesung: 3,
-      erklaerung: 'Die zuständige Stelle, für IT-Berufe die IHK, überwacht die Durchführung der Berufsausbildung und fördert sie durch Beratung der Ausbildenden und der Auszubildenden; dazu bestellt sie Ausbildungsberaterinnen und -berater (§ 76 Abs. 1 BBiG). Ausbildende müssen die für die Überwachung notwendigen Auskünfte erteilen, Unterlagen vorlegen und die Besichtigung der Ausbildungsstätten gestatten (§ 76 Abs. 2 BBiG). Kündigen können nur die Vertragsparteien (§ 22 BBiG). Berufsberatung und Vermittlung von Ausbildungsplätzen sind Aufgaben der Agentur für Arbeit.'
+      erklaerung: 'Die zuständige Stelle, für IT-Berufe die BITLC, überwacht die Durchführung der Berufsausbildung und fördert sie durch Beratung der Ausbildenden und der Auszubildenden; dazu bestellt sie Ausbildungsberaterinnen und -berater (§ 76 Abs. 1 BBiG). Ausbildende müssen die für die Überwachung notwendigen Auskünfte erteilen, Unterlagen vorlegen und die Besichtigung der Ausbildungsstätten gestatten (§ 76 Abs. 2 BBiG). Kündigen können nur die Vertragsparteien (§ 22 BBiG). Berufsberatung und Vermittlung von Ausbildungsplätzen sind Aufgaben der Agentur für Arbeit.'
     },
     {
       nr: 3, thema: 'ausbildung', typ: 'einfach',

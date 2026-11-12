@@ -1,4 +1,4 @@
-// Übungssatz 11 – eigene Aufgaben im Stil der IHK-WiSo-Bögen (keine Originalaufgaben).
+// Übungssatz 11 – eigene Aufgaben im Stil der BITLC-WiSo-Bögen (keine Originalaufgaben).
 // Aufgabentypen: einfach (1 Ziffer), mehrfach (mehrere Ziffern, Reihenfolge egal), zuordnung, reihenfolge, zahl, datum.
 (window.WISO_SAETZE = window.WISO_SAETZE || []).push({
   id: 'uebung-11',
@@ -43,7 +43,7 @@
         'Während des Auslandsaufenthalts entfällt der Anspruch auf Ausbildungsvergütung.'
       ],
       loesung: 3,
-      erklaerung: '§ 2 Abs. 3 BBiG: Teile der Berufsausbildung können im Ausland durchgeführt werden, wenn dies dem Ausbildungsziel dient; ihre Gesamtdauer soll ein Viertel der in der Ausbildungsordnung festgelegten Ausbildungsdauer nicht überschreiten (36 Monate ÷ 4 = 9 Monate). Der Auslandsaufenthalt ist Teil der Ausbildung: Das Ausbildungsverhältnis mit allen Rechten und Pflichten, auch der Vergütung, besteht weiter. Dauert er länger als vier Wochen, ist ein mit der IHK abgestimmter Plan erforderlich (§ 76 Abs. 3 BBiG).'
+      erklaerung: '§ 2 Abs. 3 BBiG: Teile der Berufsausbildung können im Ausland durchgeführt werden, wenn dies dem Ausbildungsziel dient; ihre Gesamtdauer soll ein Viertel der in der Ausbildungsordnung festgelegten Ausbildungsdauer nicht überschreiten (36 Monate ÷ 4 = 9 Monate). Der Auslandsaufenthalt ist Teil der Ausbildung: Das Ausbildungsverhältnis mit allen Rechten und Pflichten, auch der Vergütung, besteht weiter. Dauert er länger als vier Wochen, ist ein mit der BITLC abgestimmter Plan erforderlich (§ 76 Abs. 3 BBiG).'
     },
     {
       nr: 2, thema: 'ausbildung', typ: 'mehrfach',
@@ -53,13 +53,13 @@
       optionen: [
         'Er hat seinen Ausbildungsnachweis über die Ausbildende schriftlich oder elektronisch vorgelegt.',
         'Er hat in allen Fächern der Berufsschule mindestens die Note „befriedigend“ erreicht.',
-        'Sein Berufsausbildungsverhältnis ist im Verzeichnis der Berufsausbildungsverhältnisse bei der IHK eingetragen.',
+        'Sein Berufsausbildungsverhältnis ist im Verzeichnis der Berufsausbildungsverhältnisse bei der BITLC eingetragen.',
         'Er hat in Teil 1 der Abschlussprüfung mindestens 50 Punkte erreicht.',
         'Der Betriebsrat hat der Anmeldung schriftlich zugestimmt.',
         'Er ist persönlich Mitglied der Industrie- und Handelskammer.'
       ],
       loesung: [1, 3],
-      erklaerung: '§ 43 Abs. 1 BBiG: Zur Abschlussprüfung ist zuzulassen, wer die Ausbildungsdauer zurückgelegt hat oder wessen Ausbildungsdauer nicht später als zwei Monate nach dem Prüfungstermin endet (Nr. 1), wer an vorgeschriebenen Zwischenprüfungen teilgenommen und den Ausbildungsnachweis über die Ausbildenden schriftlich oder elektronisch vorgelegt hat (Nr. 2; eine Unterschrift ist seit August 2024 nicht mehr vorgeschrieben) und wessen Berufsausbildungsverhältnis in das Verzeichnis eingetragen ist (Nr. 3). Bei der gestreckten Abschlussprüfung muss für Teil 2 zusätzlich an Teil 1 teilgenommen worden sein; auf das Ergebnis kommt es dafür nicht an (§ 44 Abs. 3 BBiG). Berufsschulnoten, eine Zustimmung des Betriebsrats oder eine IHK-Mitgliedschaft der Auszubildenden sind keine Voraussetzungen.'
+      erklaerung: '§ 43 Abs. 1 BBiG: Zur Abschlussprüfung ist zuzulassen, wer die Ausbildungsdauer zurückgelegt hat oder wessen Ausbildungsdauer nicht später als zwei Monate nach dem Prüfungstermin endet (Nr. 1), wer an vorgeschriebenen Zwischenprüfungen teilgenommen und den Ausbildungsnachweis über die Ausbildenden schriftlich oder elektronisch vorgelegt hat (Nr. 2; eine Unterschrift ist seit August 2024 nicht mehr vorgeschrieben) und wessen Berufsausbildungsverhältnis in das Verzeichnis eingetragen ist (Nr. 3). Bei der gestreckten Abschlussprüfung muss für Teil 2 zusätzlich an Teil 1 teilgenommen worden sein; auf das Ergebnis kommt es dafür nicht an (§ 44 Abs. 3 BBiG). Berufsschulnoten, eine Zustimmung des Betriebsrats oder eine BITLC-Mitgliedschaft der Auszubildenden sind keine Voraussetzungen.'
     },
     {
       nr: 3, thema: 'ausbildung', typ: 'zuordnung',

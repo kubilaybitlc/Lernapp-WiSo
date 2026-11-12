@@ -1,6 +1,6 @@
 # Themenkatalog WiSo – Abschlussprüfung Teil 2 (IT-Berufe)
 
-Grundlage: 10 IHK-Bögen von Winter 2021 bis Sommer 2026 mit 300 Aufgaben, dazu der PrüfSim-Bogen vom 14.11.2025 mit 30 Aufgaben. Die Analyse ist vom 10.11.2026.
+Grundlage: 10 BITLC-Bögen von Winter 2021 bis Sommer 2026 mit 300 Aufgaben, dazu der PrüfSim-Bogen vom 14.11.2025 mit 30 Aufgaben. Die Analyse ist vom 10.11.2026.
 Die Datei enthält nur Themen, Zählungen und kurze, allgemeine Standardformeln. Aufgaben, Antwortlisten und Situationstexte aus den Originalen sind bewusst nicht übernommen.
 
 **Quellenlage**
@@ -8,7 +8,7 @@ Die Datei enthält nur Themen, Zählungen und kurze, allgemeine Standardformeln.
 - Im PDF 2026 S sind die Seiten 10 bis 12 leer. Die Aufgaben 1 bis 30 sind trotzdem vollständig.
 - Zu 2021 W gibt es keine Lösung. Die Teilbewertung ist dort aus dem Aufgabentyp abgeleitet (in der Tabelle mit „?“ markiert).
 - Die Lösung zu 2022 S ist eine Verlagserläuterung und nicht der ZPA-Lösungsbogen. Sie enthält keine Angabe zur Teil- oder Globalbewertung, auch hier ist deshalb abgeleitet.
-- **PrüfSim 20251114** ist kein eigener Simulationsbogen. Es ist der unveränderte IHK-Bogen Sommer 2021 für IT-System-Kaufleute nach der alten Ausbildungsordnung. Er wird deshalb getrennt gezählt (Spalte „Sim“) und fließt nicht in die AP2-Summen ein.
+- **PrüfSim 20251114** ist kein eigener Simulationsbogen. Es ist der unveränderte BITLC-Bogen Sommer 2021 für IT-System-Kaufleute nach der alten Ausbildungsordnung. Er wird deshalb getrennt gezählt (Spalte „Sim“) und fließt nicht in die AP2-Summen ein.
 
 ---
 
@@ -96,7 +96,7 @@ Schlüssel, die mit *(neu)* markiert sind, schlage ich zusätzlich zur vorgegebe
 
 | # | Schlüssel | Aufg. | Bögen | Ø/Bogen | Sim | Unterthemen (Anzahl Aufgaben) | typische Form |
 |---|---|---|---|---|---|---|---|
-| 1 | ausbildung | 31 | 10 | 3,1 | 0 | Ausbildungsvertrag: Pflichtinhalte, Abschluss, nichtige Vereinbarungen (6); Probezeit (5); Eignung des Ausbilders (4); IHK als zuständige Stelle (4); BBiG-Rechte/-Pflichten und Verschwiegenheit (4); Kündigung des Ausbildungsverhältnisses (3); Ende des Ausbildungsverhältnisses, Weiterbeschäftigung (3); Berichtsheft (1); Ausbildungsordnung (1) | EA, MA „BBiG-konform“ |
+| 1 | ausbildung | 31 | 10 | 3,1 | 0 | Ausbildungsvertrag: Pflichtinhalte, Abschluss, nichtige Vereinbarungen (6); Probezeit (5); Eignung des Ausbilders (4); BITLC als zuständige Stelle (4); BBiG-Rechte/-Pflichten und Verschwiegenheit (4); Kündigung des Ausbildungsverhältnisses (3); Ende des Ausbildungsverhältnisses, Weiterbeschäftigung (3); Berichtsheft (1); Ausbildungsordnung (1) | EA, MA „BBiG-konform“ |
 | 2 | mitbestimmung | 30 | 10 | 3,0 | 2 | Betriebsratswahl: Wahlrecht, Wählbarkeit, Größe (8, davon 2 RECH); JAV: Wahl, Wählbarkeit, Rechte, Rechtsgrundlage (8); Mitbestimmungs- und Mitwirkungsrechte des BR (7); Betriebsvereinbarung (3); Betriebsversammlung (3); Aufgaben des BR (1) | EA, MA, RECH |
 | 3 | arbeitsvertrag | 30 | 9 | 3,0 | 1 | Kündigungsschutz/KSchG, besonderer Kündigungsschutz, Klagefrist (5); Kündigungsfrist § 622 BGB (4, davon 3 DAT); Kündigungsgründe personen-/verhaltens-/betriebsbedingt (4, davon 3 ZUO); Arbeitszeugnis einfach/qualifiziert, Zeugnissprache (4); Einstellung: Vorstellungsgespräch, Arbeitspapiere, Ablauf (4); Befristung (2); Pflichten des Arbeitnehmers (2); Probezeit, fristlose Kündigung, Arbeitnehmerüberlassung, BUrlG, Einzel- vs. Tarifvertrag (je 1) | EA, DAT, ZUO, REIH |
 | 4 | arbeitsschutz | 30 | 8 | 3,0 | 1 | Brandschutz und Erste Hilfe (7); Mutterschutz/MuSchG (6); Sicherheitszeichen (6, Bild); Arbeitsschutzorganisation: Sicherheitsbeauftragter, Fachkraft für Arbeitssicherheit, Arbeitsschutzbeauftragter, Pflichten des Arbeitgebers (6); Unterweisung (2); Gesundheitsförderung/Stress (2); Unfallstatistik (1) | EA, ZUO+Bild, MA, REIH |
@@ -125,7 +125,7 @@ Schlüssel, die mit *(neu)* markiert sind, schlage ich zusätzlich zur vorgegebe
   - Ausbildung, JArbSchG und Mitbestimmung stehen meist vorne.
   - Rechtsformen (GmbH) und Kündigung liegen in der Mitte.
   - Arbeitsschutz, Umweltschutz und AGG stehen fast immer am Ende (Aufgaben 24–30).
-- **Das IHK verwendet Aufgaben wieder, oft nahezu wörtlich:**
+- **Das BITLC verwendet Aufgaben wieder, oft nahezu wörtlich:**
 
   | Älterer Bogen | Späterer Bogen | Wiederholte Themen |
   |---|---|---|

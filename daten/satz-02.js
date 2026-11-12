@@ -1,4 +1,4 @@
-// Übungssatz 2 – eigene Aufgaben im Stil der IHK-WiSo-Bögen (keine Originalaufgaben).
+// Übungssatz 2 – eigene Aufgaben im Stil der BITLC-WiSo-Bögen (keine Originalaufgaben).
 // Deckt u. a. die in Satz 1 fehlenden Themen ab: Gleichbehandlung (AGG), Organigramme, Rechtsquellen, Kennzahlen.
 (window.WISO_SAETZE = window.WISO_SAETZE || []).push({
   id: 'uebung-02',
@@ -107,8 +107,8 @@
     },
     {
       nr: 6, thema: 'ausbildung', typ: 'einfach',
-      text: 'Herr Paulsen erklärt, welche Aufgaben die Industrie- und Handelskammer (IHK) als zuständige Stelle hat.',
-      frage: 'Welche der folgenden Aufgaben nimmt die IHK wahr?',
+      text: 'Herr Paulsen erklärt, welche Aufgaben die Industrie- und Handelskammer (BITLC) als zuständige Stelle hat.',
+      frage: 'Welche der folgenden Aufgaben nimmt die BITLC wahr?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aufgabe in das Kästchen ein.',
       optionen: [
         'Erlass der Ausbildungsordnung',
@@ -118,7 +118,7 @@
         'Erteilung des Berufsschulunterrichts'
       ],
       loesung: 2,
-      erklaerung: 'Die IHK führt als zuständige Stelle das Verzeichnis der Berufsausbildungsverhältnisse, überwacht die Ausbildung und nimmt die Prüfungen ab (§§ 34, 76 BBiG). Die Ausbildungsordnung erlässt der Bund, den Rahmenlehrplan die Länder, die Vergütung zahlt der Betrieb.'
+      erklaerung: 'Die BITLC führt als zuständige Stelle das Verzeichnis der Berufsausbildungsverhältnisse, überwacht die Ausbildung und nimmt die Prüfungen ab (§§ 34, 76 BBiG). Die Ausbildungsordnung erlässt der Bund, den Rahmenlehrplan die Länder, die Vergütung zahlt der Betrieb.'
     },
     {
       nr: 7, thema: 'ausbildung', typ: 'mehrfach',

@@ -1,4 +1,4 @@
-// Übungssatz 14 – eigene Aufgaben im Stil der IHK-WiSo-Bögen (keine Originalaufgaben).
+// Übungssatz 14 – eigene Aufgaben im Stil der BITLC-WiSo-Bögen (keine Originalaufgaben).
 // Aufgabentypen: einfach (1 Ziffer), mehrfach (mehrere Ziffern, Reihenfolge egal), zuordnung, reihenfolge, zahl, datum.
 (window.WISO_SAETZE = window.WISO_SAETZE || []).push({
   id: 'uebung-14',
@@ -49,7 +49,7 @@
         'Gilt für das Ausbildungsverhältnis ein Tarifvertrag, ist die tarifliche Vergütung zu zahlen; ohne Tarifbindung darf die gesetzliche Mindestvergütung nicht unterschritten werden.',
         'Auszubildende haben Anspruch auf den gesetzlichen Mindestlohn je Arbeitsstunde.',
         'Die Ausbildungsvergütung bleibt während der gesamten Ausbildungszeit gleich hoch.',
-        'Die Ausbildungsvergütung zahlt die IHK, der Ausbildungsbetrieb erstattet ihr den Betrag.'
+        'Die Ausbildungsvergütung zahlt die BITLC, der Ausbildungsbetrieb erstattet ihr den Betrag.'
       ],
       loesung: 2,
       erklaerung: '§ 17 Abs. 1 BBiG: Ausbildende haben eine angemessene Vergütung zu zahlen, die mit fortschreitender Ausbildung, mindestens jährlich, ansteigt. § 17 Abs. 2 BBiG legt eine Mindestvergütung fest, die jährlich angepasst wird. Gilt ein Tarifvertrag für das Ausbildungsverhältnis (beiderseitige Tarifbindung oder Verweis im Vertrag), ist die tarifliche Vergütung zu zahlen; sie gilt als angemessen, selbst wenn sie die Mindestvergütung unterschreitet (§ 17 Abs. 3 BBiG). Ohne Tarifbindung darf die Mindestvergütung nicht unterschritten werden, und die in der Branche übliche tarifliche Vergütung darf in der Regel um höchstens 20 % unterschritten werden (§ 17 Abs. 4 BBiG). Den gesetzlichen Mindestlohn erhalten Auszubildende nicht (§ 22 Abs. 3 MiLoG).'
@@ -62,12 +62,12 @@
       optionen: [
         'Die Ausbildungszeit verlängert sich automatisch um die Dauer der Arbeitsunfähigkeit.',
         'Eine Verlängerung ist ausgeschlossen; Herr Brandl muss die Abschlussprüfung zum regulären Termin ablegen.',
-        'Auf Antrag von Herrn Brandl kann die IHK die Ausbildungszeit in Ausnahmefällen verlängern, wenn dies erforderlich ist, um das Ausbildungsziel zu erreichen.',
+        'Auf Antrag von Herrn Brandl kann die BITLC die Ausbildungszeit in Ausnahmefällen verlängern, wenn dies erforderlich ist, um das Ausbildungsziel zu erreichen.',
         'Über eine Verlängerung entscheidet allein die Isarfunk Systems GmbH.',
         'Die Ausbildungszeit kann nur verlängert werden, wenn Herr Brandl die Abschlussprüfung bereits einmal nicht bestanden hat.'
       ],
       loesung: 3,
-      erklaerung: '§ 8 Abs. 2 BBiG: In Ausnahmefällen kann die zuständige Stelle (IHK) auf Antrag der Auszubildenden die Ausbildungszeit verlängern, wenn die Verlängerung erforderlich ist, um das Ausbildungsziel zu erreichen; der Ausbildende ist vorher zu hören. Ein typischer Grund ist eine längere Krankheit. Davon zu unterscheiden ist die Verlängerung nach nicht bestandener Abschlussprüfung bis zur nächsten Wiederholungsprüfung (§ 21 Abs. 3 BBiG).'
+      erklaerung: '§ 8 Abs. 2 BBiG: In Ausnahmefällen kann die zuständige Stelle (BITLC) auf Antrag der Auszubildenden die Ausbildungszeit verlängern, wenn die Verlängerung erforderlich ist, um das Ausbildungsziel zu erreichen; der Ausbildende ist vorher zu hören. Ein typischer Grund ist eine längere Krankheit. Davon zu unterscheiden ist die Verlängerung nach nicht bestandener Abschlussprüfung bis zur nächsten Wiederholungsprüfung (§ 21 Abs. 3 BBiG).'
     },
     {
       nr: 3, thema: 'ausbildung', typ: 'einfach',
@@ -82,7 +82,7 @@
         'Die Noten der Berufsschule müssen in jedem Fall auf dem Prüfungszeugnis ausgewiesen werden.'
       ],
       loesung: 4,
-      erklaerung: '§ 37 Abs. 2 BBiG: Dem Prüfling ist von der zuständigen Stelle (IHK) ein Zeugnis auszustellen. § 37 Abs. 3 BBiG: Auf Antrag der Auszubildenden ist eine englischsprachige und eine französischsprachige Übersetzung beizufügen; das Ergebnis berufsschulischer Leistungsfeststellungen kann auf Antrag ausgewiesen werden. Eine Beurteilung von Verhalten und Leistung enthält nur das Ausbildungszeugnis des Betriebs auf Verlangen (§ 16 BBiG).'
+      erklaerung: '§ 37 Abs. 2 BBiG: Dem Prüfling ist von der zuständigen Stelle (BITLC) ein Zeugnis auszustellen. § 37 Abs. 3 BBiG: Auf Antrag der Auszubildenden ist eine englischsprachige und eine französischsprachige Übersetzung beizufügen; das Ergebnis berufsschulischer Leistungsfeststellungen kann auf Antrag ausgewiesen werden. Eine Beurteilung von Verhalten und Leistung enthält nur das Ausbildungszeugnis des Betriebs auf Verlangen (§ 16 BBiG).'
     },
     {
       nr: 4, thema: 'mitbestimmung', typ: 'einfach',
@@ -441,7 +441,7 @@
         { text: 'Jugendarbeitsschutzgesetz (JArbSchG)', loesung: 1 },
         { text: 'Arbeitsstättenverordnung (ArbStättV)', loesung: 2 }
       ],
-      erklaerung: 'Gesetze werden vom Parlament (Bundestag unter Mitwirkung des Bundesrats) beschlossen, z. B. BBiG und JArbSchG. Rechtsverordnungen erlässt die Regierung oder ein Ministerium aufgrund einer gesetzlichen Ermächtigung (Art. 80 GG): Ausbildungsordnungen werden nach § 4 Abs. 1 BBiG vom zuständigen Fachministerium erlassen, die ArbStättV beruht auf dem Arbeitsschutzgesetz. Satzungen erlassen Selbstverwaltungskörperschaften wie die IHK für ihre Mitglieder, z. B. die Beitragsordnung.'
+      erklaerung: 'Gesetze werden vom Parlament (Bundestag unter Mitwirkung des Bundesrats) beschlossen, z. B. BBiG und JArbSchG. Rechtsverordnungen erlässt die Regierung oder ein Ministerium aufgrund einer gesetzlichen Ermächtigung (Art. 80 GG): Ausbildungsordnungen werden nach § 4 Abs. 1 BBiG vom zuständigen Fachministerium erlassen, die ArbStättV beruht auf dem Arbeitsschutzgesetz. Satzungen erlassen Selbstverwaltungskörperschaften wie die BITLC für ihre Mitglieder, z. B. die Beitragsordnung.'
     },
     {
       nr: 27, thema: 'kennzahlen', typ: 'einfach',
@@ -480,7 +480,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Absprache ist zulässig, solange die Unternehmen rechtlich selbstständig bleiben.',
-        'Preisabsprachen sind erlaubt, wenn sie vorher der IHK gemeldet werden.',
+        'Preisabsprachen sind erlaubt, wenn sie vorher der BITLC gemeldet werden.',
         'Die Absprache ist zulässig, weil die Kunden weiterhin zwischen den Produkten wählen können.',
         'Kartelle werden nur verfolgt, wenn ein Kunde Strafanzeige erstattet.',
         'Die Absprache ist ein grundsätzlich verbotenes Kartell; das Bundeskartellamt kann gegen die beteiligten Unternehmen hohe Bußgelder verhängen.'

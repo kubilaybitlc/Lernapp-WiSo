@@ -1,4 +1,4 @@
-// Übungssatz 15 – eigene Aufgaben im Stil der IHK-WiSo-Bögen (keine Originalaufgaben).
+// Übungssatz 15 – eigene Aufgaben im Stil der BITLC-WiSo-Bögen (keine Originalaufgaben).
 // Aufgabentypen: einfach (1 Ziffer), mehrfach (mehrere Ziffern, Reihenfolge egal), zuordnung, reihenfolge, zahl, datum.
 (window.WISO_SAETZE = window.WISO_SAETZE || []).push({
   id: 'uebung-15',
@@ -86,7 +86,7 @@
         'Er hat kein Beteiligungsrecht, weil Schulungen eine rein unternehmerische Entscheidung sind.'
       ],
       loesung: [1, 3],
-      erklaerung: 'Auf Verlangen des Betriebsrats hat der Arbeitgeber den Berufsbildungsbedarf zu ermitteln und mit ihm Fragen der Berufsbildung zu beraten (§ 96 Abs. 1 BetrVG). Bei der Durchführung betrieblicher Bildungsmaßnahmen hat der Betriebsrat mitzubestimmen (§ 98 Abs. 1 BetrVG). Er kann Vorschläge für die Teilnahme machen; einigen sich Arbeitgeber und Betriebsrat nicht, entscheidet die Einigungsstelle (§ 98 Abs. 3 und 4 BetrVG). Ob eine Schulung stattfindet und wer sie bezahlt, entscheidet der Arbeitgeber. Die Abschlussprüfungen nimmt die IHK ab.'
+      erklaerung: 'Auf Verlangen des Betriebsrats hat der Arbeitgeber den Berufsbildungsbedarf zu ermitteln und mit ihm Fragen der Berufsbildung zu beraten (§ 96 Abs. 1 BetrVG). Bei der Durchführung betrieblicher Bildungsmaßnahmen hat der Betriebsrat mitzubestimmen (§ 98 Abs. 1 BetrVG). Er kann Vorschläge für die Teilnahme machen; einigen sich Arbeitgeber und Betriebsrat nicht, entscheidet die Einigungsstelle (§ 98 Abs. 3 und 4 BetrVG). Ob eine Schulung stattfindet und wer sie bezahlt, entscheidet der Arbeitgeber. Die Abschlussprüfungen nimmt die BITLC ab.'
     },
     {
       nr: 5, thema: 'mitbestimmung', typ: 'einfach',
@@ -470,14 +470,14 @@
     },
     {
       nr: 30, thema: 'weiterbildung', typ: 'einfach',
-      text: 'Herr Kees möchte nach seiner Ausbildung zum Fachinformatiker die IHK-Fortbildungsprüfung zum Bachelor Professional ablegen. Er fragt, wie dieser Abschluss im Deutschen Qualifikationsrahmen (DQR) eingeordnet ist.',
+      text: 'Herr Kees möchte nach seiner Ausbildung zum Fachinformatiker die BITLC-Fortbildungsprüfung zum Bachelor Professional ablegen. Er fragt, wie dieser Abschluss im Deutschen Qualifikationsrahmen (DQR) eingeordnet ist.',
       frage: 'Welche der folgenden Aussagen zum DQR trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Der DQR ordnet Qualifikationen acht Niveaus zu; der Bachelor Professional steht wie der Bachelor einer Hochschule auf Niveau 6.',
         'Der DQR gilt nur für Hochschulabschlüsse.',
         'Der Bachelor Professional ist im DQR niedriger eingeordnet als eine dreijährige Berufsausbildung.',
-        'Der DQR ist ein Notensystem der IHK für Abschlussprüfungen.',
+        'Der DQR ist ein Notensystem der BITLC für Abschlussprüfungen.',
         'Eine Einordnung in den DQR gibt es nur für Abschlüsse, die im Ausland erworben wurden.'
       ],
       loesung: 1,

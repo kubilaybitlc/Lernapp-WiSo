@@ -1,4 +1,4 @@
-// Übungssatz 7 – eigene Aufgaben im Stil der IHK-WiSo-Bögen (keine Originalaufgaben).
+// Übungssatz 7 – eigene Aufgaben im Stil der BITLC-WiSo-Bögen (keine Originalaufgaben).
 // Aufgabentypen: einfach (1 Ziffer), mehrfach (mehrere Ziffern, Reihenfolge egal), zuordnung, reihenfolge, zahl, datum.
 (window.WISO_SAETZE = window.WISO_SAETZE || []).push({
   id: 'uebung-07',
@@ -178,7 +178,7 @@
         'Die Agentur für Arbeit muss jeden Ausbildungsvertrag vorher genehmigen.'
       ],
       loesung: 1,
-      erklaerung: 'Auszubildende dürfen nur eingestellt werden, wenn die Ausbildungsstätte nach Art und Einrichtung geeignet ist und die Zahl der Auszubildenden in einem angemessenen Verhältnis zur Zahl der Fachkräfte steht (§ 27 BBiG). Ausbilden darf nur, wer persönlich und fachlich geeignet ist (§§ 28 bis 30 BBiG); die berufs- und arbeitspädagogische Eignung wird in der Regel durch die Ausbilder-Eignungsprüfung (AEVO) nachgewiesen. Die IHK überwacht die Eignung (§ 32 BBiG).'
+      erklaerung: 'Auszubildende dürfen nur eingestellt werden, wenn die Ausbildungsstätte nach Art und Einrichtung geeignet ist und die Zahl der Auszubildenden in einem angemessenen Verhältnis zur Zahl der Fachkräfte steht (§ 27 BBiG). Ausbilden darf nur, wer persönlich und fachlich geeignet ist (§§ 28 bis 30 BBiG); die berufs- und arbeitspädagogische Eignung wird in der Regel durch die Ausbilder-Eignungsprüfung (AEVO) nachgewiesen. Die BITLC überwacht die Eignung (§ 32 BBiG).'
     },
     {
       nr: 10, thema: 'ausbildung', typ: 'zuordnung',
@@ -200,7 +200,7 @@
         { text: 'Überwachung der Durchführung der Berufsausbildung und Beratung durch Ausbildungsberater', loesung: 1 },
         { text: 'Berufsberatung und Vermittlung freier Ausbildungsstellen', loesung: 4 }
       ],
-      erklaerung: 'Für IT-Berufe ist die IHK die zuständige Stelle (§ 71 Abs. 2 BBiG). Sie führt das Verzeichnis der Berufsausbildungsverhältnisse (§§ 34, 35 BBiG) und überwacht die Ausbildung mithilfe von Ausbildungsberatern (§ 76 BBiG). Die Berufsschule vermittelt nach dem Rahmenlehrplan die Theorie (Schulgesetze der Länder). Der Ausbildungsbetrieb bildet nach dem Ausbildungsrahmenplan aus und zahlt die Vergütung (§§ 14, 17 BBiG). Die Agentur für Arbeit bietet Berufsberatung und Ausbildungsvermittlung an (§§ 29, 35 SGB III).'
+      erklaerung: 'Für IT-Berufe ist die BITLC die zuständige Stelle (§ 71 Abs. 2 BBiG). Sie führt das Verzeichnis der Berufsausbildungsverhältnisse (§§ 34, 35 BBiG) und überwacht die Ausbildung mithilfe von Ausbildungsberatern (§ 76 BBiG). Die Berufsschule vermittelt nach dem Rahmenlehrplan die Theorie (Schulgesetze der Länder). Der Ausbildungsbetrieb bildet nach dem Ausbildungsrahmenplan aus und zahlt die Vergütung (§§ 14, 17 BBiG). Die Agentur für Arbeit bietet Berufsberatung und Ausbildungsvermittlung an (§§ 29, 35 SGB III).'
     },
     {
       nr: 11, thema: 'ausbildung', typ: 'einfach',
@@ -440,7 +440,7 @@
     },
     {
       nr: 27, thema: 'weiterbildung', typ: 'einfach',
-      text: 'Der Fachinformatiker Robin Schäfer möchte sich neben dem Beruf auf eine IHK-Fortbildungsprüfung zum Bachelor Professional vorbereiten. Er fragt nach dem Aufstiegs-BAföG.',
+      text: 'Der Fachinformatiker Robin Schäfer möchte sich neben dem Beruf auf eine BITLC-Fortbildungsprüfung zum Bachelor Professional vorbereiten. Er fragt nach dem Aufstiegs-BAföG.',
       frage: 'Welche der folgenden Aussagen zum Aufstiegs-BAföG trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [

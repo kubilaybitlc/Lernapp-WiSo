@@ -1,4 +1,4 @@
-// Übungssatz 4 – eigene Aufgaben im Stil der IHK-WiSo-Bögen (keine Originalaufgaben).
+// Übungssatz 4 – eigene Aufgaben im Stil der BITLC-WiSo-Bögen (keine Originalaufgaben).
 // Aufgabentypen: einfach (1 Ziffer), mehrfach (mehrere Ziffern, Reihenfolge egal), zuordnung, reihenfolge, zahl, datum.
 (window.WISO_SAETZE = window.WISO_SAETZE || []).push({
   id: 'uebung-04',
@@ -69,7 +69,7 @@
       optionen: [
         'Der Ausbildungsbetrieb muss in der Probezeit eine Kündigungsfrist von vier Wochen einhalten.',
         'Während der Probezeit kann das Berufsausbildungsverhältnis von beiden Seiten jederzeit ohne Einhalten einer Kündigungsfrist gekündigt werden; die Kündigung muss schriftlich erfolgen.',
-        'Eine Kündigung in der Probezeit ist nur wirksam, wenn die IHK zustimmt.',
+        'Eine Kündigung in der Probezeit ist nur wirksam, wenn die BITLC zustimmt.',
         'Die Probezeit hätte im Ausbildungsvertrag auch auf sechs Monate festgelegt werden können.',
         'Nach Ablauf der Probezeit kann der Ausbildungsbetrieb ordentlich mit einer Frist von vier Wochen kündigen.'
       ],
@@ -217,7 +217,7 @@
       optionen: [
         'Ein Anspruch auf Teilzeit besteht nur, wenn Frau Fäßler Kinder unter zwölf Jahren betreut.',
         'Die Alpenblick Systemhaus GmbH kann den Wunsch ohne Angabe von Gründen ablehnen.',
-        'Eine Verringerung der Arbeitszeit ist nur mit Zustimmung des Betriebsrats und der IHK möglich.',
+        'Eine Verringerung der Arbeitszeit ist nur mit Zustimmung des Betriebsrats und der BITLC möglich.',
         'Frau Fäßler muss die Verringerung spätestens drei Monate vor dem gewünschten Beginn in Textform verlangen; der Arbeitgeber darf nur ablehnen, wenn betriebliche Gründe entgegenstehen.',
         'Ein Anspruch auf Teilzeit besteht erst nach einer Betriebszugehörigkeit von zehn Jahren.'
       ],

@@ -1,11 +1,11 @@
-// Bewertung nach IHK-Schema: 100 Punkte verteilt auf alle Aufgaben.
+// Bewertung nach BITLC-Schema: 100 Punkte verteilt auf alle Aufgaben.
 // Teilbewertung: anteilige Punkte je richtigem Kästchen. Globalbewertung: Punkte nur bei vollständig richtiger Lösung.
 (function () {
   'use strict';
 
   const GESAMTPUNKTE = 100;
 
-  // IHK-Notenschlüssel (Punkte ab ... -> Note)
+  // BITLC-Notenschlüssel (Punkte ab ... -> Note)
   const NOTEN = [
     { ab: 92, note: 1, text: 'sehr gut' },
     { ab: 81, note: 2, text: 'gut' },

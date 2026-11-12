@@ -1,4 +1,4 @@
-// Übungssatz 3 – eigene Aufgaben im Stil der IHK-WiSo-Bögen (keine Originalaufgaben).
+// Übungssatz 3 – eigene Aufgaben im Stil der BITLC-WiSo-Bögen (keine Originalaufgaben).
 // Aufgabentypen: einfach (1 Ziffer), mehrfach (mehrere Ziffern, Reihenfolge egal), zuordnung, reihenfolge, zahl, datum.
 (window.WISO_SAETZE = window.WISO_SAETZE || []).push({
   id: 'uebung-03',
@@ -386,7 +386,7 @@
       itemsTitel: 'Vorhaben',
       items: [
         { text: 'Ein Systemadministrator besucht einen Lehrgang zur neuen Version der eingesetzten Virtualisierungssoftware.', loesung: 1 },
-        { text: 'Eine Fachinformatikerin bereitet sich auf die IHK-Fortbildungsprüfung zum Bachelor Professional vor, um eine Teamleitung zu übernehmen.', loesung: 2 },
+        { text: 'Eine Fachinformatikerin bereitet sich auf die BITLC-Fortbildungsprüfung zum Bachelor Professional vor, um eine Teamleitung zu übernehmen.', loesung: 2 },
         { text: 'Ein gelernter Koch wird nach einem Unfall in einer zweijährigen Maßnahme zum Fachinformatiker ausgebildet.', loesung: 3 }
       ],
       erklaerung: 'Die Anpassungsfortbildung hält die Kenntnisse im ausgeübten Beruf auf dem aktuellen Stand, die Aufstiegsfortbildung (z. B. Fachwirt, Meister, Bachelor Professional) qualifiziert für höherwertige Tätigkeiten (§ 1 Abs. 4 BBiG). Die Umschulung befähigt zu einer anderen beruflichen Tätigkeit (§ 1 Abs. 5 BBiG).'
