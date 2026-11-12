@@ -1099,6 +1099,10 @@
 
     const ziel = ergebnis ? document.getElementById('weiter') : app.querySelector('input.kasten');
     if (ziel) ziel.focus({ preventScroll: true });
+    if (ergebnis) {
+      var rm = app.querySelector('.rueckmeldung');
+      if (rm) rm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 
   function pruefeUebung() {

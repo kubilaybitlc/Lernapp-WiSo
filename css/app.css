@@ -271,6 +271,7 @@ table.daten td:not(:first-child) { text-align: center; }
 
 /* Anklickbare Antworten bei Einfach- und Mehrfachauswahl */
 .optionen.auswahl li { padding: 0; }
+.optionen.auswahl li.option { padding: .35rem .5rem; }
 .optionen.auswahl.bilder { gap: .5rem .8rem; }
 .option {
   display: flex; gap: .55rem; align-items: flex-start;
