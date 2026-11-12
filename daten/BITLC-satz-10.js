@@ -163,7 +163,7 @@
         { text: '7 Stunden Arbeitszeit', loesung: 3 },
         { text: '9,5 Stunden Arbeitszeit', loesung: 4 }
       ],
-      erklaerung: '§ 4 ArbZG: mehr als 6 h → 30 Min., mehr als 9 h → 45 Min. Pausenblöcke mindestens 15 Min.'
+      erklaerung: '§ 4 ArbZG: Bis 6 h keine Pflichtpause, mehr als 6 h → mindestens 30 Min., mehr als 9 h → mindestens 45 Min. Die Pause kann in Blöcke von je mindestens 15 Min. aufgeteilt werden. Pausen zählen nicht als Arbeitszeit.'
     },
     {
       nr: 13, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -274,7 +274,7 @@
         { text: 'Ordentliche Kündigung eines Mitarbeiters', loesung: 2 },
         { text: 'Regelung der Pausenzeiten', loesung: 3 }
       ],
-      erklaerung: '§ 87 BetrVG (Mitbestimmung): technische Überwachung, Pausen. § 90 (Unterrichtung/Beratung): Bauvorhaben. § 102: Anhörung/Widerspruch bei Kündigung.'
+      erklaerung: '§ 87 BetrVG (echte Mitbestimmung): z. B. Zeiterfassung (technische Überwachung) und Pausenregelung – ohne Zustimmung des BR darf der AG nicht handeln. § 90 BetrVG (Informationsrecht): bei Bauvorhaben muss der AG den BR nur unterrichten. § 102 BetrVG (Mitwirkung): vor jeder ordentlichen Kündigung muss der BR angehört werden, kann aber nur widersprechen, nicht verhindern.'
     },
     {
       nr: 21, thema: 'mitbestimmung', typ: 'einfach',
@@ -330,7 +330,7 @@
         'Keine Urabstimmung nötig'
       ],
       loesung: 3,
-      erklaerung: 'Nach den Satzungen der meisten Gewerkschaften: 75 % Zustimmung. Zur Annahme eines Ergebnisses reichen meist 25 %.'
+      erklaerung: 'Die Urabstimmung ist eine Abstimmung unter allen Gewerkschaftsmitgliedern im betroffenen Tarifgebiet. Nach den Satzungen der meisten Gewerkschaften sind mindestens 75 % Zustimmung nötig, um zum unbefristeten Erzwingungsstreik aufzurufen. Zur Beendigung des Streiks und Annahme eines Verhandlungsergebnisses reichen meist 25 %. Die Urabstimmung ist gesetzlich nicht geregelt, sondern folgt der jeweiligen Gewerkschaftssatzung.'
     },
     {
       nr: 25, thema: 'tarifrecht', typ: 'einfach',
@@ -344,7 +344,7 @@
         'Für alle Arbeitnehmer der Branche'
       ],
       loesung: 2,
-      erklaerung: 'Tarifbindung (§ 3 TVG): beidseitige Mitgliedschaft. In der Praxis wenden Arbeitgeber ihn oft per Arbeitsvertrag auf alle an.'
+      erklaerung: '§ 3 Abs. 1 TVG: Ein Tarifvertrag gilt unmittelbar nur zwischen den Mitgliedern der Tarifvertragsparteien – der AN muss Gewerkschaftsmitglied sein und der AG dem Arbeitgeberverband angehören (oder selbst den Haustarifvertrag geschlossen haben). In der Praxis wenden viele AG den Tarifvertrag per Bezugnahmeklausel im Arbeitsvertrag auch auf Nichtmitglieder an. Durch Allgemeinverbindlicherklärung (§ 5 TVG) kann der TV auf alle Beschäftigten der Branche erstreckt werden.'
     },
     {
       nr: 26, thema: 'rechtsformen', typ: 'zuordnung',
@@ -394,7 +394,7 @@
         'Wechsel unterschreiben'
       ],
       loesung: 3,
-      erklaerung: '§ 49 HGB: Grundstücksveräußerung/-belastung nur mit besonderer Befugnis. Bilanz unterschreiben, Prokura erteilen und Insolvenz anmelden darf er gar nicht.'
+      erklaerung: '§ 49 Abs. 1 HGB: Die Prokura berechtigt zu allen Rechtsgeschäften, die der Betrieb eines Handelsgewerbes mit sich bringt (Kredite, Einstellungen, Verträge, Wechsel). Ausnahme § 49 Abs. 2: Grundstücke veräußern oder belasten darf der Prokurist nur mit besonderer Ermächtigung. Außerdem darf er nie: Prokura erteilen (§ 48 Abs. 1), Bilanz/Jahresabschluss unterschreiben, Insolvenzantrag stellen oder das Unternehmen auflösen.'
     },
     {
       nr: 29, thema: 'rechtsformen', typ: 'einfach',
@@ -408,7 +408,7 @@
         'Sie wird nur im Arbeitsvertrag vermerkt.'
       ],
       loesung: 2,
-      erklaerung: 'Eintragungspflicht (§ 53 HGB), Zusatz „ppa.“ (per procura). Handlungsbevollmächtigte zeichnen mit „i. V.“.'
+      erklaerung: '§ 53 Abs. 1 HGB: Die Prokura muss im Handelsregister eingetragen werden (deklaratorisch – sie wirkt schon ab Erteilung). Der Prokurist zeichnet mit dem Zusatz „ppa.” (per procura autoritate). Nicht verwechseln: Handlungsbevollmächtigte zeichnen mit „i. V.” (in Vollmacht), Mitarbeiter mit einfacher Aufgabenübertragung mit „i. A.” (im Auftrag). Nur die Prokura wird ins Handelsregister eingetragen, die Handlungsvollmacht nicht.'
     },
     {
       nr: 30, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -498,7 +498,7 @@
         { text: 'Vorbereitung zur Wiederverwendung', loesung: 2 },
         { text: 'Sonstige Verwertung (z. B. energetisch)', loesung: 4 }
       ],
-      erklaerung: '§ 6 KrWG: Vermeidung → Wiederverwendung → Recycling → sonstige Verwertung → Beseitigung.'
+      erklaerung: '§ 6 Abs. 1 KrWG (fünfstufige Abfallhierarchie): 1. Vermeidung (gar kein Abfall erzeugen), 2. Vorbereitung zur Wiederverwendung (Reparatur/Aufbereitung), 3. Recycling (stoffliche Verwertung), 4. Sonstige Verwertung (z. B. energetische Verwertung/Verbrennung mit Energiegewinnung), 5. Beseitigung (Deponie). Die höherstufige Maßnahme hat grundsätzlich Vorrang – Beseitigung ist immer das letzte Mittel.'
     },
     {
       nr: 36, thema: 'datenschutz', typ: 'einfach',
@@ -616,7 +616,7 @@
         'Entwicklungsteam'
       ],
       loesung: 2,
-      erklaerung: 'Product Owner = Produktverantwortung und Backlog-Priorisierung; Scrum Master = Prozess und Hindernisse.'
+      erklaerung: 'Die drei Scrum-Rollen: Product Owner (priorisiert das Product Backlog und vertritt die Stakeholder-Interessen), Scrum Master (sorgt für den Scrum-Prozess und beseitigt Hindernisse, ist kein Vorgesetzter), Entwicklungsteam (selbstorganisiert, liefert das Inkrement). „Projektleiter" ist keine Scrum-Rolle – die Verantwortung verteilt sich auf die drei Rollen.'
     }
   ]
 });

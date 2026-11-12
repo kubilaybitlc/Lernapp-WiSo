@@ -55,7 +55,7 @@
         'Ein Dienstleistungsgut'
       ],
       loesung: 2,
-      erklaerung: 'Freie Güter sind in unbegrenzter Menge vorhanden und haben keinen Preis. Werbegeschenk und Leitungswasser sind knappe (wirtschaftliche) Güter.'
+      erklaerung: 'Freie Güter sind (scheinbar) unbegrenzt vorhanden und haben keinen Marktpreis – z. B. Luft, Sonnenlicht. Wirtschaftliche (knappe) Güter sind begrenzt und haben einen Preis. Open-Source-Software ist kein freies Gut im wirtschaftlichen Sinn (Entwicklung kostet Ressourcen). Werbegeschenke und Leitungswasser kosten in der Herstellung – sie sind knappe Güter, auch wenn der Endpreis null ist.'
     },
     {
       nr: 4, thema: 'wirtschaft-grundlagen', typ: 'zuordnung',
@@ -73,7 +73,7 @@
         { text: 'Privat genutztes Notebook', loesung: 2 },
         { text: 'Server im Rechenzentrum eines IT-Dienstleisters', loesung: 3 }
       ],
-      erklaerung: 'Entscheidend ist der Verwendungszweck: privat → Konsumgut, betrieblich zur Leistungserstellung → Investitionsgut.'
+      erklaerung: 'Entscheidend ist der Verwendungszweck: privat → Konsumgut, betrieblich zur Leistungserstellung → Investitionsgut (Produktionsgut). Konsumgüter unterteilen sich in Verbrauchsgüter (einmaliger Gebrauch, z. B. Papier, Lebensmittel) und Gebrauchsgüter (längere Nutzung, z. B. Notebook, Möbel). Dasselbe Gut kann je nach Einsatz verschieden eingeordnet werden: Ein Notebook privat = Konsumgut (Gebrauch), im Rechenzentrum = Investitionsgut.'
     },
     {
       nr: 5, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -87,7 +87,7 @@
         'Staat, Haushalte, Unternehmen'
       ],
       loesung: 2,
-      erklaerung: 'Volkswirtschaftlich: Boden, Arbeit, Kapital (+ Bildung/Wissen). Betriebswirtschaftlich nach Gutenberg: Elementarfaktoren + dispositiver Faktor.'
+      erklaerung: 'Volkswirtschaftliche Produktionsfaktoren: Boden, Arbeit, Kapital (+ Wissen/Bildung als 4. Faktor). Betriebswirtschaftlich nach Gutenberg: Elementarfaktoren (ausführende Arbeit, Betriebsmittel wie Maschinen/Server, Werkstoffe wie Roh-/Hilfs-/Betriebsstoffe) und der dispositive Faktor (Geschäftsführung/Planung/Organisation). Option 1 (Boden, Arbeit, Kapital) beschreibt die VWL-Sicht, nicht die BWL-Sicht.'
     },
     {
       nr: 6, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -152,7 +152,7 @@
         { text: 'Ein 18-jähriger Fachinformatiker', loesung: 3 },
         { text: 'Ein 7-jähriger Schüler', loesung: 2 }
       ],
-      erklaerung: '§§ 104 ff. BGB: unter 7 geschäftsunfähig, 7 bis unter 18 beschränkt, ab 18 voll geschäftsfähig.'
+      erklaerung: '§§ 104–113 BGB: Unter 7 Jahre → geschäftsunfähig (Willenserklärungen sind nichtig, § 105 BGB). 7 bis unter 18 → beschränkt geschäftsfähig (Verträge sind schwebend unwirksam und brauchen die Einwilligung/Genehmigung der Eltern, außer bei rechtlichem Vorteil oder Taschengeld, §§ 107, 110 BGB). Ab 18 → voll geschäftsfähig (alle Rechtsgeschäfte eigenständig wirksam).'
     },
     {
       nr: 10, thema: 'rechtsquellen', typ: 'einfach',
@@ -166,7 +166,7 @@
         'Nur bei Ratenzahlung'
       ],
       loesung: 2,
-      erklaerung: '§ 110 BGB („Taschengeldparagraf“): Vollständig mit überlassenen Mitteln bewirkt → wirksam. Ratenkäufe fallen nicht darunter.'
+      erklaerung: '§ 110 BGB („Taschengeldparagraf”): Ein Vertrag eines beschränkt Geschäftsfähigen gilt als wirksam, wenn er die Leistung vollständig mit Mitteln bewirkt, die ihm zur freien Verfügung überlassen wurden (z. B. Taschengeld). Voraussetzung: sofortige vollständige Bezahlung – Ratenkäufe oder Verträge mit laufenden Verpflichtungen (z. B. Abo) fallen nicht darunter, weil die Leistung nicht sofort vollständig erbracht wird.'
     },
     {
       nr: 11, thema: 'rechtsquellen', typ: 'einfach',
@@ -180,7 +180,7 @@
         'Rechtsfähigkeit endet mit dem Renteneintritt.'
       ],
       loesung: 2,
-      erklaerung: 'Natürliche Personen sind ab Vollendung der Geburt rechtsfähig (§ 1 BGB), juristische Personen ab Eintragung/Gründung.'
+      erklaerung: 'Rechtsfähigkeit (§ 1 BGB) = Fähigkeit, Träger von Rechten und Pflichten zu sein – beginnt bei natürlichen Personen mit der Geburt (auch ein Säugling kann erben). Geschäftsfähigkeit = Fähigkeit, Rechtsgeschäfte selbständig wirksam abzuschließen – beginnt vollständig erst mit 18 Jahren. Juristische Personen (GmbH, AG, e. V.) sind rechtsfähig ab Eintragung, geschäftsfähig durch ihre Organe (z. B. Geschäftsführer).'
     },
     {
       nr: 12, thema: 'rechtsquellen', typ: 'zuordnung',
@@ -199,7 +199,7 @@
         { text: 'Kaufvertrag', loesung: 3 },
         { text: 'Mahnung', loesung: 1 }
       ],
-      erklaerung: 'Empfangsbedürftige Willenserklärungen werden erst mit Zugang wirksam; Verträge brauchen zwei übereinstimmende Willenserklärungen.'
+      erklaerung: 'Einseitig empfangsbedürftig (§ 130 BGB): Eine Willenserklärung, die einem Empfänger zugehen muss, um wirksam zu werden (z. B. Kündigung, Mahnung, Anfechtung). Einseitig nicht empfangsbedürftig: Wird schon mit Abgabe wirksam, ohne dass jemand sie erhält (z. B. Testament, Auslobung). Zweiseitig (Vertrag): Zwei übereinstimmende Willenserklärungen – Antrag und Annahme (§§ 145 ff. BGB).'
     },
     {
       nr: 13, thema: 'rechtsquellen', typ: 'zuordnung',
@@ -219,7 +219,7 @@
         { text: 'Ein Grundstückskauf ohne notarielle Beurkundung', loesung: 1 },
         { text: 'Ein offensichtlicher Scherz („Ich verkaufe dir mein Haus für 1 €“)', loesung: 1 }
       ],
-      erklaerung: 'Nichtig = von Anfang an unwirksam (Geschäftsunfähigkeit, Formmangel, Gesetzes-/Sittenverstoß, Scherz). Anfechtbar = wirksam, bis angefochten (Irrtum, Täuschung, Drohung).'
+      erklaerung: 'Nichtig = von Anfang an unwirksam, ohne dass jemand etwas tun muss: §§ 105 (Geschäftsunfähigkeit), 125 (Formmangel), 134 (Gesetzesverstoß), 138 (Sittenwidrigkeit), 118 (Scherzerklärung). Anfechtbar = zunächst wirksam, wird aber durch Anfechtungserklärung rückwirkend nichtig: §§ 119 (Irrtum), 123 (arglistige Täuschung/Drohung). Anfechtungsfrist: bei Irrtum unverzüglich, bei Täuschung/Drohung 1 Jahr.'
     },
     {
       nr: 14, thema: 'rechtsquellen', typ: 'einfach',
@@ -247,7 +247,7 @@
         'Der Kaufvertrag ist nichtig.'
       ],
       loesung: 2,
-      erklaerung: '§ 449 BGB: Kaufpreiszahlung ist Bedingung für den Eigentumsübergang. Der Käufer ist schon Besitzer.'
+      erklaerung: '§ 449 BGB: Beim Eigentumsvorbehalt ist die vollständige Kaufpreiszahlung aufschiebende Bedingung für den Eigentumsübergang. Der Käufer erhält sofort den Besitz und darf die Sache nutzen, bleibt aber bis zur letzten Rate nur Besitzer, nicht Eigentümer. Bei Zahlungsverzug kann der Verkäufer die Ware als Eigentümer herausverlangen. Der Eigentumsvorbehalt ist im B2B-Geschäft die häufigste Kreditsicherung.'
     },
     {
       nr: 16, thema: 'rechtsquellen', typ: 'zuordnung',
@@ -269,7 +269,7 @@
         { text: 'Eine Firma überlässt gegen Entgelt einen Server für ein Jahr.', loesung: 2 },
         { text: 'Ein Kunde erwirbt einen Monitor gegen Bezahlung.', loesung: 1 }
       ],
-      erklaerung: 'Werkvertrag: Erfolg. Dienstvertrag: Tätigkeit. Leihe: unentgeltlich. Miete: entgeltlich.'
+      erklaerung: 'Werkvertrag (§ 631 BGB): Erfolg geschuldet – der Auftragnehmer haftet für das Ergebnis (z. B. fertige App, Reparatur). Dienstvertrag (§ 611 BGB): Nur die Tätigkeit geschuldet, nicht der Erfolg (z. B. Beratung, Arbeitsvertrag). Leihe (§ 598 BGB): unentgeltliche Gebrauchsüberlassung. Miete (§ 535 BGB): entgeltliche Gebrauchsüberlassung. Kaufvertrag (§ 433 BGB): dauerhafte Eigentumsübertragung gegen Bezahlung.'
     },
     {
       nr: 17, thema: 'rechtsquellen', typ: 'einfach',
@@ -315,7 +315,7 @@
         { text: 'Ein IT-Händler kauft beim Großhändler Server.', loesung: 2 },
         { text: 'Eine Privatperson verkauft einer anderen ihr gebrauchtes Fahrrad.', loesung: 3 }
       ],
-      erklaerung: 'Verbrauchsgüterkauf: Unternehmer verkauft an Verbraucher – besondere Schutzrechte (§§ 474 ff. BGB).'
+      erklaerung: 'Verbrauchsgüterkauf (§§ 474 ff. BGB): Unternehmer → Verbraucher – strengster Verbraucherschutz (z. B. keine Verkürzung der Gewährleistung unter 2 Jahre, Beweislastumkehr 1 Jahr). Handelskauf (§§ 343 ff. HGB): beide Seiten Kaufleute – strenge Untersuchungs- und Rügepflicht (§ 377 HGB). Bürgerlicher Kauf (§§ 433 ff. BGB): Privatperson an Privatperson – Gewährleistung kann vertraglich ausgeschlossen werden.'
     },
     {
       nr: 20, thema: 'rechtsquellen', typ: 'einfach',
@@ -349,7 +349,7 @@
         { text: 'Ein Monitor hat einen Pixelfehler.', loesung: 1 },
         { text: 'Der Käufer bezahlt die Rechnung nach Fälligkeit und Mahnung nicht.', loesung: 4 }
       ],
-      erklaerung: 'Pflichtverletzungen des Verkäufers: Mangel, Lieferverzug. Des Käufers: Annahme- und Zahlungsverzug.'
+      erklaerung: 'Die vier Kaufvertragsstörungen: Schlechtleistung (§ 434 BGB, Sach-/Rechtsmangel) und Lieferungsverzug (§ 286 BGB, fällige Lieferung bleibt aus) sind Pflichtverletzungen des Verkäufers. Annahmeverzug (§ 293 BGB, Käufer nimmt ordnungsgemäße Ware nicht an) und Zahlungsverzug (§ 286 BGB, Käufer zahlt trotz Fälligkeit und Mahnung nicht) sind Pflichtverletzungen des Käufers.'
     },
     {
       nr: 22, thema: 'rechtsquellen', typ: 'einfach',
@@ -432,7 +432,7 @@
         { text: 'Zwangsvollstreckung (z. B. Pfändung)', loesung: 4 },
         { text: 'Zustellung des Mahnbescheids an den Schuldner', loesung: 2 }
       ],
-      erklaerung: 'Antrag → Mahnbescheid (Widerspruch 2 Wochen) → Vollstreckungsbescheid (Einspruch 2 Wochen) → Zwangsvollstreckung.'
+      erklaerung: '§§ 688 ff. ZPO: 1. Gläubiger stellt Antrag auf Mahnbescheid beim Amtsgericht (online über mahngerichte.de). 2. Gericht stellt den Mahnbescheid zu – der Schuldner hat 2 Wochen Widerspruchsfrist (bei Widerspruch → ordentliches Klageverfahren). 3. Ohne Widerspruch: Vollstreckungsbescheid – Einspruchsfrist 2 Wochen. 4. Ohne Einspruch: Zwangsvollstreckung (Pfändung durch Gerichtsvollzieher). Vorteil: schneller und billiger als eine Klage.'
     },
     {
       nr: 28, thema: 'rechtsquellen', typ: 'zuordnung',
@@ -449,7 +449,7 @@
         { text: 'Ohne Vereinbarung: Kosten der Übergabe (z. B. Verpackung, Abwiegen)', loesung: 2 },
         { text: 'Vereinbart „frei Haus“', loesung: 2 }
       ],
-      erklaerung: '§ 448 BGB: Warenschulden sind Holschulden – Versandkosten trägt der Käufer, Übergabekosten der Verkäufer.'
+      erklaerung: '§ 448 BGB: Warenschulden sind Holschulden – der Erfüllungsort liegt beim Verkäufer. Versandkosten (Transport an einen anderen Ort) trägt deshalb der Käufer; Übergabekosten (Verpackung, Wiegen) der Verkäufer. „Frei Haus" ist eine vertragliche Vereinbarung, die alle Transportkosten auf den Verkäufer verlagert. Im Online-Handel (Verbrauchsgüterkauf) dürfen die Versandkosten dem Verbraucher berechnet werden, müssen aber vor Bestellung angegeben sein.'
     },
     {
       nr: 29, thema: 'kennzahlen', typ: 'zuordnung',
@@ -468,7 +468,7 @@
         { text: 'Gewinne werden einbehalten und nicht ausgeschüttet.', loesung: 3 },
         { text: 'Ein Lieferant gewährt ein Zahlungsziel von 30 Tagen.', loesung: 2 }
       ],
-      erklaerung: 'Eigenkapital von außen = Beteiligung; von innen = Gewinnthesaurierung; Lieferantenkredit = Fremdkapital.'
+      erklaerung: 'Finanzierungsquellen: Eigenfinanzierung von außen (Beteiligungsfinanzierung) = neue Gesellschafter bringen Kapital ein. Selbstfinanzierung von innen = Gewinne werden einbehalten (Gewinnthesaurierung) statt ausgeschüttet. Fremdfinanzierung = Kapital von Dritten mit Rückzahlungspflicht – Bankdarlehen (langfristig) und Lieferantenkredit (kurzfristig, durch Zahlungsziel). Der Lieferantenkredit ist oft teurer als ein Bankkredit (entgangenes Skonto ≈ 36 % p. a.).'
     },
     {
       nr: 30, thema: 'kennzahlen', typ: 'einfach',
@@ -490,7 +490,7 @@
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: 100, nachkommastellen: 0,
       einheit: 'EUR',
-      erklaerung: '2 % von 5.000 € = 100 €. Der Lieferantenkredit ist teuer: 2 % für 20 Tage ≈ 36 % Jahreszins.'
+      erklaerung: 'Skonto = Preisnachlass für schnelle Zahlung. Rechnung: 5.000 € × 2 % = 100 € Ersparnis. Warum Skonto immer nutzen? Wer stattdessen 20 Tage länger wartet (30 − 10), „leiht" sich 4.900 € für 20 Tage zu 100 € Kosten. Jahreszins: 100 ÷ 4.900 × 360 ÷ 20 ≈ 36,7 %. Ein Bankkredit ist fast immer günstiger – deshalb lohnt es sich, Skonto zu ziehen und notfalls einen Kontokorrentkredit zu nutzen.'
     },
     {
       nr: 32, thema: 'kennzahlen', typ: 'zahl',
@@ -518,7 +518,7 @@
         { text: 'Ein Grundstück wird im Grundbuch belastet.', loesung: 3 },
         { text: 'Der Kreditnehmer übergibt der Bank Wertpapiere.', loesung: 4 }
       ],
-      erklaerung: 'Personalsicherheit: Bürgschaft. Realsicherheiten: Pfand (Besitz bei der Bank), Sicherungsübereignung (Besitz beim Schuldner), Grundpfandrechte.'
+      erklaerung: 'Personalsicherheiten: Bürgschaft (§ 765 BGB) – ein Dritter haftet persönlich für die Schuld. Realsicherheiten: Pfandrecht/Faustpfand (§ 1204 BGB) – Sache geht in den Besitz der Bank; Sicherungsübereignung (§ 930 BGB) – Bank wird Eigentümerin, Schuldner behält den Besitz und nutzt die Sache weiter; Grundschuld/Hypothek – Grundstück wird im Grundbuch belastet. Der Unterschied Pfand vs. Sicherungsübereignung liegt im Besitz: beim Pfand hat ihn die Bank, bei der Sicherungsübereignung der Schuldner.'
     },
     {
       nr: 34, thema: 'kennzahlen', typ: 'einfach',
@@ -619,7 +619,7 @@
         { text: 'Fachbücher für den Beruf', loesung: 1 },
         { text: 'Beiträge zur Haftpflichtversicherung', loesung: 2 }
       ],
-      erklaerung: 'Werbungskosten dienen der Erzielung von Einnahmen (Arbeitnehmer-Pauschbetrag 1.230 €). Sonderausgaben sind bestimmte private Ausgaben.'
+      erklaerung: 'Werbungskosten (§ 9 EStG): Aufwendungen zur Erzielung von Einnahmen – z. B. Fahrten zur Arbeit (0,30 €/km einfach), Fachbücher, Arbeitsmittel, Fortbildung. Ohne Nachweis greift der Arbeitnehmer-Pauschbetrag von 1.230 €. Sonderausgaben (§§ 10 ff. EStG): bestimmte private Aufwendungen – z. B. Kirchensteuer, Vorsorgeaufwendungen (Haftpflicht-, Krankenversicherung), Spenden. Unterschied: Werbungskosten hängen mit dem Beruf zusammen, Sonderausgaben sind privat motiviert.'
     },
     {
       nr: 40, thema: 'arbeitsvertrag', typ: 'zuordnung',
@@ -641,7 +641,7 @@
         { text: 'Ablösung im Früh-, Spät- und Nachtdienst', loesung: 4 },
         { text: 'Wochenarbeitszeit von 20 Stunden', loesung: 5 }
       ],
-      erklaerung: 'Achtung: Nach BAG-Rechtsprechung muss die Arbeitszeit grundsätzlich erfasst werden – auch bei Vertrauensarbeitszeit.'
+      erklaerung: 'Gleitzeit: feste Kernzeit (Anwesenheitspflicht), Beginn/Ende flexibel. Vertrauensarbeitszeit: Arbeitgeber kontrolliert nicht die Anwesenheit, Ergebnis zählt (Achtung: BAG 2022 hat entschieden, dass die Arbeitszeit trotzdem erfasst werden muss). Jobsharing (§ 13 TzBfG): zwei oder mehr AN teilen sich eine Vollzeitstelle. Schichtarbeit: Früh-/Spät-/Nachtschicht zur durchgehenden Produktion. Teilzeit (§ 2 TzBfG): regelmäßige Wochenarbeitszeit unter Vollzeit.'
     },
     {
       nr: 41, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -763,7 +763,7 @@
         { text: 'Ein Hardwarehersteller übernimmt einen Chiplieferanten.', loesung: 2 },
         { text: 'Ein Softwareunternehmen übernimmt eine Brauerei.', loesung: 3 }
       ],
-      erklaerung: 'Horizontal = gleiche Stufe; vertikal = vor- oder nachgelagerte Stufe; diagonal = branchenfremd.'
+      erklaerung: 'Horizontaler Zusammenschluss: Unternehmen der gleichen Branche und Produktionsstufe (z. B. zwei IT-Systemhäuser) – Ziel: Marktmacht, Synergien. Vertikaler Zusammenschluss: Unternehmen aufeinanderfolgender Produktionsstufen (z. B. Hersteller + Zulieferer) – Ziel: Liefersicherheit, Kostensenkung. Diagonaler (konglomerater) Zusammenschluss: branchenfremde Unternehmen (z. B. Software + Brauerei) – Ziel: Risikostreuung, Diversifikation. Ab bestimmten Umsatzgrenzen muss das Bundeskartellamt zustimmen.'
     },
     {
       nr: 49, thema: 'zusammenschluesse', typ: 'einfach',
@@ -777,7 +777,7 @@
         'Gewerbeaufsichtsamt'
       ],
       loesung: 2,
-      erklaerung: 'Rechtsgrundlage: Gesetz gegen Wettbewerbsbeschränkungen (GWB). Großfusionen prüft die EU-Kommission.'
+      erklaerung: 'Das Bundeskartellamt (Sitz: Bonn) überwacht den Wettbewerb in Deutschland auf Grundlage des GWB (Gesetz gegen Wettbewerbsbeschränkungen). Aufgaben: Kartellverbot durchsetzen (§ 1 GWB), Fusionskontrolle (Zusammenschlüsse ab bestimmten Umsatzschwellen prüfen und ggf. untersagen), Missbrauchsaufsicht über marktbeherrschende Unternehmen. Bei Großfusionen mit EU-weiter Bedeutung ist die EU-Kommission zuständig. Die IHK ist keine Wettbewerbsbehörde.'
     },
     {
       nr: 50, thema: 'rechtsformen', typ: 'einfach',
