@@ -34,7 +34,7 @@
         'der Gehaltsvorstellung.'
       ],
       loesung: 1,
-      erklaerung: 'Gewerkschaftszugehörigkeit ist durch die Koalitionsfreiheit (Art. 9 GG) geschützt.'
+      erklaerung: 'Die Frage nach der Gewerkschaftsmitgliedschaft ist unzulässig, weil die Koalitionsfreiheit (Art. 9 Abs. 3 GG) das Recht schützt, einer Gewerkschaft beizutreten oder nicht. Fragen nach Qualifikationen, Schulbildung, Berufserfahrung und Gehaltsvorstellung sind zulässig, da sie für die Stelle relevant sind.'
     },
     {
       nr: 3, thema: 'arbeitsvertrag', typ: 'mehrfach',
@@ -49,14 +49,14 @@
         'Nachweis über private Krankenzusatzversicherung'
       ],
       loesung: [3, 5],
-      erklaerung: 'Urlaubsbescheinigung (§ 6 BUrlG, verhindert Doppelurlaub) und Steuer-ID für den Lohnsteuerabzug.'
+      erklaerung: '§ 6 Abs. 2 BUrlG: Die Urlaubsbescheinigung des vorherigen Arbeitgebers verhindert Doppelurlaub. Die steuerliche Identifikationsnummer (Steuer-ID) braucht der Arbeitgeber für den Lohnsteuerabzug über ELStAM. Private Versicherungen (Unfall, BU, Krankenzusatz) gehen den Arbeitgeber nichts an.'
     },
     {
       nr: 4, thema: 'kennzahlen', typ: 'zahl',
       frage: 'Stundenlohn 15,80 €, 170 Stunden im Monat, davon 12 Stunden an Samstagen mit 30 % Zuschlag. Dazu 250,00 € Urlaubsgeld brutto.\na) Bruttolohn?\nb) Arbeitnehmeranteil zur Rentenversicherung (Beitragssatz 18,6 %)?',
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: 2992.88, nachkommastellen: 2,
-      erklaerung: '170 × 15,80 = 2.686,00; Zuschlag 12 × 15,80 × 0,3 = 56,88; + 250 = 2.992,88 €. AN trägt die Hälfte: 9,3 % × 2.992,88 = 278,34 €.'
+      erklaerung: 'Grundlohn: 170 h × 15,80 € = 2.686,00 €. Samstagszuschlag: 12 h × 15,80 € × 30 % = 56,88 €. Urlaubsgeld: 250,00 €. Bruttolohn gesamt: 2.686,00 + 56,88 + 250,00 = 2.992,88 €. AN-Anteil RV: 18,6 % ÷ 2 = 9,3 %; 2.992,88 × 9,3 % = 278,34 €.'
     },
     {
       nr: 5, thema: 'rechtsformen', typ: 'einfach',
@@ -70,7 +70,7 @@
         'Kleinunternehmen können zwischen A und B wählen.'
       ],
       loesung: 3,
-      erklaerung: 'HRA: Einzelkaufleute, OHG, KG; HRB: GmbH, AG. Geführt vom Amtsgericht.'
+      erklaerung: 'Das Handelsregister wird vom Amtsgericht (Registergericht) geführt. Abteilung A (HRA): Einzelkaufleute, OHG, KG. Abteilung B (HRB): Kapitalgesellschaften wie GmbH und AG. Es ist öffentlich einsehbar und dient der Rechtssicherheit im Geschäftsverkehr.'
     },
     {
       nr: 6, thema: 'arbeitsschutz', typ: 'einfach',
@@ -84,7 +84,7 @@
         'Industrie- und Handelskammer'
       ],
       loesung: 2,
-      erklaerung: 'Die Berufsgenossenschaft erlässt Unfallverhütungsvorschriften und schult Sicherheitsbeauftragte.'
+      erklaerung: 'Die Berufsgenossenschaft (Träger der gesetzlichen Unfallversicherung) erlässt Unfallverhütungsvorschriften (UVV), überwacht deren Einhaltung und bietet Schulungen zur Arbeitssicherheit an. Sie ist die richtige Anlaufstelle für Informationen zur Unfallverhütung. Die Gewerbeaufsicht prüft die Einhaltung des Arbeitsschutzrechts.'
     },
     {
       nr: 7, thema: 'mitbestimmung', typ: 'zahl',
@@ -92,7 +92,7 @@
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: 58, nachkommastellen: 0,
       einheit: 'Personen',
-      erklaerung: '45 + 8 + 3 + 2 = 58. Die Zeitarbeitnehmer sind erst einen Monat da → nicht wahlberechtigt.'
+      erklaerung: '§ 7 BetrVG: Wahlberechtigt (aktives Wahlrecht) sind alle Arbeitnehmer ab 16 Jahren. Leiharbeitnehmer erst nach mehr als 3 Monaten Einsatz. Rechnung: 45 Volljährige + 8 volljährige Azubis + 3 Azubis (16 J.) + 2 Azubis (17 J.) = 58. Die 3 Zeitarbeitnehmer (erst 1 Monat da) sind nicht wahlberechtigt.'
     },
     {
       nr: 8, thema: 'mitbestimmung', typ: 'einfach',
@@ -106,7 +106,7 @@
         'Nein, weil sie kein Gewerkschaftsmitglied ist.'
       ],
       loesung: 4,
-      erklaerung: '§ 8 BetrVG: Wählbar nach 6 Monaten Betriebszugehörigkeit (und ab 18).'
+      erklaerung: '§ 8 BetrVG: Wählbar (passives Wahlrecht) sind wahlberechtigte Arbeitnehmer, die mindestens 18 Jahre alt sind und dem Betrieb mindestens 6 Monate angehören. Frau Medstein ist erst 2 Monate beschäftigt → nicht wählbar, obwohl sie volljährig ist. Gewerkschaftsmitgliedschaft ist keine Voraussetzung.'
     },
     {
       nr: 9, thema: 'mitbestimmung', typ: 'einfach',
@@ -120,7 +120,7 @@
         'Wählen dürfen nur Arbeitnehmer ab 25.'
       ],
       loesung: 1,
-      erklaerung: '§ 21 BetrVG: Amtszeit 4 Jahre (regelmäßige Wahlen 1. März bis 31. Mai).'
+      erklaerung: '§ 21 BetrVG: Die regelmäßige Amtszeit des Betriebsrats beträgt 4 Jahre. Regelmäßige Wahlen finden vom 1. März bis 31. Mai statt (§ 13 BetrVG). Wählbar ab 18 mit 6 Monaten Zugehörigkeit (§ 8 BetrVG). Wahlberechtigt ab 16 Jahren (§ 7 BetrVG). Geschlechterquote: Minderheitengeschlecht muss mindestens anteilig vertreten sein.'
     },
     {
       nr: 10, thema: 'mitbestimmung', typ: 'mehrfach',
@@ -135,7 +135,7 @@
         'Umwandlung der Rechtsform'
       ],
       loesung: [1, 3],
-      erklaerung: '§ 87 Abs. 1 Nr. 6 (technische Überwachung) und Nr. 2 (Arbeitszeitlage) BetrVG.'
+      erklaerung: '§ 87 Abs. 1 BetrVG (erzwingbare Mitbestimmung): Nr. 6 betrifft technische Überwachungseinrichtungen (z. B. Kameras), Nr. 2 Beginn und Ende der Arbeitszeit. Planung des Personalbedarfs → nur Informationsrecht (§ 92 BetrVG). Lagerhallenbau, Filiale, Rechtsformänderung → unternehmerische Entscheidungen ohne Mitbestimmung.'
     },
     {
       nr: 11, thema: 'ausbildung', typ: 'einfach',
@@ -149,7 +149,7 @@
         'Freitag'
       ],
       loesung: 5,
-      erklaerung: 'Freitag: 9:00 bis 14:00 = 5 Stunden ohne Pause > 4,5 Stunden.'
+      erklaerung: '§ 11 JArbSchG: Jugendliche dürfen nicht länger als 4,5 Stunden ohne Ruhepause beschäftigt werden. Am Freitag: 09:00 bis 14:00 Uhr = 5 Stunden ohne Pause → Verstoß. An den anderen Tagen beginnt die Pause nach höchstens 4,5 Stunden (Mo 3,5 h, Di 3 h, Mi 3,5 h, Do 3,5 h).'
     },
     {
       nr: 12, thema: 'ausbildung', typ: 'einfach',
@@ -163,7 +163,7 @@
         'Mitglied einer Gewerkschaft sein.'
       ],
       loesung: 2,
-      erklaerung: '§§ 28–30 BBiG.'
+      erklaerung: '§§ 28–30 BBiG: Ausbilder müssen persönlich geeignet sein (§ 29 BBiG, z. B. keine einschlägigen Vorstrafen) und fachlich geeignet sein (§ 30 BBiG, z. B. Abschlussprüfung im Beruf und Ausbildereignungsprüfung/AEVO). Mitgliedschaft in Prüfungsausschuss, Gewerkschaft oder Geschäftsleitung ist nicht erforderlich.'
     },
     {
       nr: 13, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -177,7 +177,7 @@
         'Unverschuldete Krankheit'
       ],
       loesung: 2,
-      erklaerung: '§ 626 BGB: wichtiger Grund, der die Fortsetzung unzumutbar macht (z. B. Diebstahl). Erklärung binnen 2 Wochen.'
+      erklaerung: '§ 626 BGB: Eine außerordentliche (fristlose) Kündigung setzt einen wichtigen Grund voraus, der die Fortsetzung des Arbeitsverhältnisses unzumutbar macht. Diebstahl von Firmeneigentum ist ein klassischer Grund. Die Kündigung muss innerhalb von 2 Wochen nach Bekanntwerden erklärt werden. Arbeitsmangel wäre betriebsbedingt (ordentlich), Krankheit ist kein fristloser Grund.'
     },
     {
       nr: 14, thema: 'arbeitsvertrag', typ: 'zuordnung',
@@ -195,7 +195,7 @@
         { text: 'Der Standort wird geschlossen, die Lohnbuchhaltung an ein Steuerbüro abgegeben.', loesung: 1 },
         { text: 'Ein Programmierer erfüllt die Anforderungen nicht mehr, seine Arbeit ist fehlerhaft, Fortbildung lehnt er ab.', loesung: 2 }
       ],
-      erklaerung: 'Datenverkauf = Pflichtverletzung; Standortschließung = betrieblich; fehlende Eignung für die Stelle = personenbedingt.'
+      erklaerung: '§ 1 KSchG unterscheidet drei Kündigungsgründe: Verhaltensbedingt = schuldhafte Pflichtverletzung des AN (z. B. Datenverkauf an Konkurrenz). Betriebsbedingt = dringende betriebliche Erfordernisse (z. B. Standortschließung, Outsourcing). Personenbedingt = fehlende Eignung oder Fähigkeit ohne Verschulden (z. B. dauerhaft mangelhafte Leistung trotz Fortbildungsangebot).'
     },
     {
       nr: 15, thema: 'rechtsformen', typ: 'einfach',
@@ -209,7 +209,7 @@
         'GbR'
       ],
       loesung: 3,
-      erklaerung: '40.000 € ≥ 25.000 € Stammkapital, Haftung beschränkt, beide als Geschäftsführer möglich. AG bräuchte 50.000 €.'
+      erklaerung: 'GmbH: Mindeststammkapital 25.000 € (hier 40.000 € → erfüllt), Haftung auf Gesellschaftsvermögen beschränkt, beide Gesellschafter können Geschäftsführer sein. Die AG bräuchte 50.000 € Grundkapital. KG und GbR haben mindestens einen persönlich haftenden Gesellschafter. Die eG (Genossenschaft) dient der Förderung der Mitglieder, nicht der Gewinnmaximierung.'
     },
     {
       nr: 16, thema: 'kennzahlen', typ: 'zahl',
@@ -217,7 +217,7 @@
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: 7.85, nachkommastellen: 2,
       einheit: '%',
-      erklaerung: '3.140 ÷ 40.000 × 100 = 7,85 %.'
+      erklaerung: 'Eigenkapitalrentabilität = Gewinn ÷ Eigenkapital × 100. Rechnung: 3.140 € ÷ 40.000 € × 100 = 7,85 %. Die EK-Rentabilität zeigt, wie sich das eingesetzte Eigenkapital verzinst hat – zum Vergleich mit alternativen Anlagen (z. B. Festgeld).'
     },
     {
       nr: 17, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -231,7 +231,7 @@
         'Auszubildende nach der Probezeit'
       ],
       loesung: 4,
-      erklaerung: 'Leitende Angestellte haben sogar einen eingeschränkten Kündigungsschutz.'
+      erklaerung: 'Besonderen Kündigungsschutz genießen: Betriebsratsmitglieder (§ 15 KSchG), Schwerbehinderte (§ 168 SGB IX), werdende Mütter (§ 17 MuSchG) und Azubis nach der Probezeit (§ 22 BBiG). Leitende Angestellte haben dagegen einen eingeschränkten Kündigungsschutz – das Gericht kann auf Antrag des AG das Arbeitsverhältnis gegen Abfindung auflösen (§ 14 Abs. 2 KSchG).'
     },
     {
       nr: 18, thema: 'arbeitsvertrag', typ: 'zahl',
@@ -253,14 +253,14 @@
         'Der Aufsichtsrat leitet die GmbH.'
       ],
       loesung: 2,
-      erklaerung: '§ 5 GmbHG. Geleitet wird die GmbH vom Geschäftsführer.'
+      erklaerung: '§ 5 GmbHG: Das Stammkapital der GmbH muss mindestens 25.000 € betragen. Die GmbH ist eine Kapitalgesellschaft (nicht Personengesellschaft), wird im HRB eingetragen (nicht HRA), wird vom Geschäftsführer geleitet (nicht Aufsichtsrat) und kann auch von einer Person gegründet werden. Mehrere Geschäftsführer sind zulässig.'
     },
     {
       nr: 20, thema: 'kennzahlen', typ: 'zahl',
       frage: 'Auftrag 1: Aufwand 300.000 €, Ertrag 360.000 €\nAuftrag 2: Aufwand 80.000 €, Ertrag 100.000 €\nAuftrag 3: Aufwand 80.000 €, Ertrag 104.000 €\nAuftrag 4: Aufwand 100.000 €, Ertrag 124.000 €\nWelcher Auftrag war am wirtschaftlichsten? (Nummer)',
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: 3, nachkommastellen: 0,
-      erklaerung: '1,20 / 1,25 / 1,30 / 1,24 → Auftrag 3.'
+      erklaerung: 'Wirtschaftlichkeit = Ertrag ÷ Aufwand. Auftrag 1: 360.000 ÷ 300.000 = 1,20; Auftrag 2: 100.000 ÷ 80.000 = 1,25; Auftrag 3: 104.000 ÷ 80.000 = 1,30; Auftrag 4: 124.000 ÷ 100.000 = 1,24. Auftrag 3 hat die höchste Wirtschaftlichkeit (1,30). Achtung: Nicht den absoluten Gewinn betrachten (da wäre Auftrag 1 mit 60.000 € vorn).'
     },
     {
       nr: 21, thema: 'organisation', typ: 'einfach',
@@ -274,7 +274,7 @@
         'Abteilungssystem'
       ],
       loesung: 3,
-      erklaerung: 'Eine Stelle erhält Weisungen von mehreren Vorgesetzten → Mehrliniensystem (Taylor, Funktionsmeister).'
+      erklaerung: 'Im Mehrliniensystem (Funktionalsystem nach Taylor) erhält eine Stelle Weisungen von mehreren Vorgesetzten (Funktionsmeisterprinzip). Vorteil: kurze Kommunikationswege, spezialisierte Anleitung. Nachteil: Kompetenzkonflikte, widersprüchliche Anweisungen. Im Einliniensystem hat dagegen jede Stelle genau einen Vorgesetzten.'
     },
     {
       nr: 22, thema: 'rechtsformen', typ: 'einfach',
@@ -288,7 +288,7 @@
         'Im Businessplan werden u. a. die strategischen Ziele eines Unternehmens festgelegt.'
       ],
       loesung: 5,
-      erklaerung: 'Der Businessplan beschreibt Idee, Ziele, Markt und Finanzierung.'
+      erklaerung: 'Ein Businessplan wird vom Gründer selbst erstellt (nicht von der IHK) und enthält die strategischen Ziele, Geschäftsidee, Marktanalyse und Finanzplanung. Er wird nicht im Handelsregister hinterlegt und ist für jede Rechtsform sinnvoll, nicht nur für Kapitalgesellschaften. Er dient auch der eigenen Orientierung, nicht nur der Kreditvergabe.'
     },
     {
       nr: 23, thema: 'zusammenschluesse', typ: 'einfach',
@@ -302,7 +302,7 @@
         'werden von den Handelskammern überprüft.'
       ],
       loesung: 1,
-      erklaerung: 'Kartell = horizontale Absprache rechtlich selbstständiger Unternehmen. Kontrolle durch das Bundeskartellamt.'
+      erklaerung: 'Ein Kartell ist eine Absprache zwischen rechtlich selbstständigen Unternehmen auf gleicher Wirtschaftsstufe (horizontal), um den Wettbewerb einzuschränken. Kartelle sind nach § 1 GWB grundsätzlich verboten. Die Kontrolle erfolgt durch das Bundeskartellamt, nicht durch Handelskammern. Kartelle führen nicht zu Haftungsbeschränkung oder Sanierung.'
     },
     {
       nr: 24, thema: 'tarifrecht', typ: 'mehrfach',
@@ -317,7 +317,7 @@
         'Bundesagentur für Arbeit'
       ],
       loesung: [2, 5],
-      erklaerung: 'Tarifvertragsparteien = Sozialpartner.'
+      erklaerung: '§ 2 TVG: Tarifvertragsparteien sind auf Arbeitnehmerseite die Gewerkschaften und auf Arbeitgeberseite einzelne Arbeitgeber oder Arbeitgeberverbände. Staatliche Stellen (Ministerien, Bundesagentur für Arbeit) und Kammern (IHK) sind keine Tarifvertragsparteien – das wäre ein Verstoß gegen die Tarifautonomie.'
     },
     {
       nr: 25, thema: 'tarifrecht', typ: 'einfach',
@@ -331,7 +331,7 @@
         'Tarifbindung'
       ],
       loesung: 4,
-      erklaerung: 'Tarifautonomie (Art. 9 Abs. 3 GG).'
+      erklaerung: 'Tarifautonomie (Art. 9 Abs. 3 GG) ist das Recht der Tarifvertragsparteien, Löhne und Arbeitsbedingungen eigenständig ohne staatliche Einmischung auszuhandeln. Tarifbindung bedeutet, dass ein TV nur für die Mitglieder der Vertragsparteien gilt. Allgemeinverbindlichkeit erweitert die Geltung auf alle Arbeitnehmer einer Branche. Der Generationenvertrag betrifft die Rentenversicherung, Freizügigkeit die EU-Mobilität.'
     },
     {
       nr: 26, thema: 'tarifrecht', typ: 'reihenfolge',
@@ -354,7 +354,7 @@
       frage: 'Ein Arbeitnehmer kündigt sein Arbeitsverhältnis am 06.05.2023 schriftlich. § 622 Abs. 1 BGB: Kündigung mit einer Frist von vier Wochen zum Fünfzehnten oder zum Ende eines Kalendermonats. Wann endet das Arbeitsverhältnis frühestens? (TT.MM.JJJJ)',
       anweisung: 'Tragen Sie das Datum (TT.MM.JJJJ) in die Kästchen ein.',
       loesung: '15.06.2023',
-      erklaerung: '06.05. + 4 Wochen = 03.06.2023 → nächster zulässiger Termin ist der 15.06.2023.'
+      erklaerung: '§ 622 Abs. 1 BGB: Grundkündigungsfrist = 4 Wochen zum 15. oder zum Monatsende. Rechnung: 06.05. + 4 Wochen = 03.06.2023. Der 03.06. ist weder der 15. noch das Monatsende → nächster zulässiger Termin ist der 15.06.2023. Zum 31.05. wäre es zu früh (keine 4 Wochen). Merke: 4 Wochen = 28 Tage, nicht „ein Monat".'
     },
     {
       nr: 28, thema: 'sozialversicherung', typ: 'zuordnung',
@@ -374,7 +374,7 @@
         { text: 'Rente', loesung: 4 },
         { text: 'Pflegegeld', loesung: 3 }
       ],
-      erklaerung: 'Verletztengeld ersetzt den Lohn bei Arbeitsunfähigkeit; Verletztenrente ab 20 % MdE.'
+      erklaerung: 'SGB VII (gesetzliche Unfallversicherung): Heilbehandlung = Übernahme aller medizinischen und Reha-Kosten (§ 27 SGB VII). Verletztengeld = Lohnersatz bei Arbeitsunfähigkeit infolge eines Arbeits-/Wegeunfalls (§ 45 SGB VII). Verletztenrente = Dauerrente ab 20 % Minderung der Erwerbsfähigkeit (§ 56 SGB VII). Pflegegeld = Leistung bei Pflegebedürftigkeit nach Arbeitsunfall (§ 44 SGB VII).'
     },
     {
       nr: 29, thema: 'umweltschutz', typ: 'mehrfach',
@@ -389,7 +389,7 @@
         'To-go-Behälter in der Kantine aus nachwachsenden Rohstoffen'
       ],
       loesung: [1, 6],
-      erklaerung: 'E-Mobilität und nachwachsende Rohstoffe fördern Nachhaltigkeit.'
+      erklaerung: 'Nachhaltigkeit umfasst Ökologie, Ökonomie und Soziales. Ladesäulen fördern E-Mobilität und senken CO₂-Emissionen (ökologisch). To-go-Behälter aus nachwachsenden Rohstoffen ersetzen Einwegplastik und schonen Ressourcen. Flüge statt Bahn erhöhen den CO₂-Ausstoß. Papierherkunft und Papiergewicht sind keine Nachhaltigkeitsmaßnahmen. Altersdiskriminierung (nur Bewerber über 30) verstößt gegen das AGG und hat mit Nachhaltigkeit nichts zu tun.'
     },
     {
       nr: 30, thema: 'umweltschutz', typ: 'einfach',
@@ -403,7 +403,7 @@
         'Recyclingpapier-Verpackungen von einem lokalen statt ausländischen Hersteller beziehen'
       ],
       loesung: 5,
-      erklaerung: 'Kürzere Transportwege senken Emissionen.'
+      erklaerung: 'Recyclingpapier spart Holz, Wasser und Energie gegenüber Frischfaserpapier. Ein lokaler Hersteller bedeutet kürzere Transportwege und damit weniger CO₂-Emissionen. Die anderen Optionen erhöhen die Umweltbelastung: keine Photovoltaik verschenkt erneuerbare Energie, Einwegplastik belastet Gewässer und Böden, kurzlebige Produkte erzeugen mehr Abfall, und Dieselfahrzeuge stoßen mehr Schadstoffe aus als E-/Hybridfahrzeuge.'
     }
   ]
 });

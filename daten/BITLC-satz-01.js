@@ -19,7 +19,7 @@
         'Nach der Ausbildung muss sie mindestens zwei Jahre im Betrieb bleiben.'
       ],
       loesung: 3,
-      erklaerung: '§ 13 Nr. 6 BBiG. Vergütung spätestens am letzten Arbeitstag des Monats (§ 18); Bleibeverpflichtungen sind nichtig (§ 12).'
+      erklaerung: '§ 13 Nr. 6 BBiG: Azubis sind verpflichtet, über Betriebs- und Geschäftsgeheimnisse Stillschweigen zu wahren. Vergütung muss spätestens am letzten Arbeitstag des Monats gezahlt werden (§ 18 BBiG). Bleibeverpflichtungen und Entschädigungsvereinbarungen sind nichtig (§ 12 BBiG).'
     },
     {
       nr: 2, thema: 'ausbildung', typ: 'einfach',
@@ -33,7 +33,7 @@
         'Gültig, wenn die Eltern zustimmen'
       ],
       loesung: 2,
-      erklaerung: '§ 12 BBiG: Nur die einzelne Vereinbarung ist nichtig.'
+      erklaerung: '§ 12 Abs. 1 BBiG: Vereinbarungen, die gegen das BBiG verstoßen, sind nichtig – aber nur die betroffene Klausel, nicht der gesamte Vertrag (Teilnichtigkeit). Der Ausbildungsvertrag bleibt im Übrigen wirksam.'
     },
     {
       nr: 3, thema: 'ausbildung', typ: 'einfach',
@@ -47,7 +47,7 @@
         'Nach Ablauf der Probezeit'
       ],
       loesung: 2,
-      erklaerung: '§ 11 BBiG: spätestens vor Beginn der Ausbildung.'
+      erklaerung: '§ 11 Abs. 1 BBiG: Die Niederschrift des Vertrags muss unverzüglich nach Abschluss, spätestens vor Beginn der Ausbildung vorliegen. Beginn 01.09. → spätestens am 31.08.'
     },
     {
       nr: 4, thema: 'ausbildung', typ: 'einfach',
@@ -61,7 +61,7 @@
         'Mit Beginn der Sommerferien'
       ],
       loesung: 2,
-      erklaerung: '§ 21 Abs. 2 BBiG.'
+      erklaerung: '§ 21 Abs. 2 BBiG: Besteht der Azubi die Abschlussprüfung vor Ablauf der Ausbildungszeit, endet das Ausbildungsverhältnis mit Bekanntgabe des Prüfungsergebnisses – nicht erst mit dem vertraglichen Enddatum.'
     },
     {
       nr: 5, thema: 'ausbildung', typ: 'mehrfach',
@@ -76,7 +76,7 @@
         'Volljährige müssen kein Berichtsheft führen.'
       ],
       loesung: [2, 4],
-      erklaerung: '§ 17 BBiG: Vergütung steigt jährlich. Für Volljährige gilt das ArbZG (§ 4: Pause spätestens nach 6 Stunden).'
+      erklaerung: '§ 17 Abs. 1 BBiG: Die Vergütung muss mit fortschreitender Ausbildung mindestens jährlich ansteigen. Für Volljährige gilt das ArbZG, nicht das JArbSchG: § 4 ArbZG schreibt nach spätestens 6 Stunden eine Ruhepause vor. Probezeit bleibt 1–4 Monate (§ 20 BBiG), auch bei Volljährigen.'
     },
     {
       nr: 6, thema: 'arbeitsschutz', typ: 'reihenfolge',
@@ -90,7 +90,7 @@
         { text: 'Fünfwöchige stationäre Reha im Anschluss an die Arbeitsunfähigkeit', loesung: 4 },
         { text: 'Unverzüglich zum Durchgangsarzt, der zwei Wochen arbeitsunfähig schreibt', loesung: 2 }
       ],
-      erklaerung: 'Erste Hilfe → Durchgangsarzt → Unfallanzeige an die BG → Reha (2 + 5 Wochen) → Rückkehr nach 7 Wochen.'
+      erklaerung: '1. Erste Hilfe (Sofortmaßnahme), 2. Durchgangsarzt (D-Arzt-Pflicht bei Arbeitsunfällen), 3. Unfallanzeige an die BG (Pflicht bei > 3 Tagen Arbeitsunfähigkeit), 4. Reha (Heilbehandlung durch die BG), 5. Rückkehr nach insgesamt 7 Wochen (2 + 5).'
     },
     {
       nr: 7, thema: 'sozialversicherung', typ: 'einfach',
@@ -104,7 +104,7 @@
         'Private Unfallversicherung'
       ],
       loesung: 1,
-      erklaerung: 'Arbeitsunfälle → Berufsgenossenschaft (gesetzliche Unfallversicherung).'
+      erklaerung: 'Die gesetzliche Unfallversicherung (Träger: Berufsgenossenschaften) übernimmt bei Arbeitsunfällen und Berufskrankheiten alle Kosten für Heilbehandlung und Rehabilitation. Beiträge zahlt allein der Arbeitgeber.'
     },
     {
       nr: 8, thema: 'sozialversicherung', typ: 'einfach',
@@ -118,7 +118,7 @@
         'Sozialgericht'
       ],
       loesung: 5,
-      erklaerung: 'Streit mit Sozialversicherungsträgern → Sozialgericht.'
+      erklaerung: 'Für Streitigkeiten mit Sozialversicherungsträgern (hier: Berufsgenossenschaft) ist das Sozialgericht zuständig (§ 51 SGG). Arbeitsgericht = arbeitsrechtliche Streitigkeiten; Verwaltungsgericht = öffentlich-rechtliche Streitigkeiten ohne Sozialrecht.'
     },
     {
       nr: 9, thema: 'sozialversicherung', typ: 'zahl',
@@ -126,7 +126,7 @@
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: 357, nachkommastellen: 0,
       einheit: 'EUR',
-      erklaerung: '(14,6 + 2,4) ÷ 2 = 8,5 % × 4.200 = 357,00 €.'
+      erklaerung: 'Gesamtbeitrag KV = allgemeiner Satz + Zusatzbeitrag = 14,6 % + 2,4 % = 17,0 %. AG und AN teilen sich beides je zur Hälfte: 17,0 % ÷ 2 = 8,5 %. AN-Anteil: 4.200 × 8,5 % = 357,00 €.'
     },
     {
       nr: 10, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -140,7 +140,7 @@
         'Sie muss Elterngeld als Lohnersatz beantragen.'
       ],
       loesung: 3,
-      erklaerung: '§ 17 MuSchG gilt auch für Auszubildende.'
+      erklaerung: '§ 17 MuSchG: Während der Schwangerschaft und bis vier Monate nach der Entbindung ist eine Kündigung unzulässig (besonderer Kündigungsschutz). Das gilt auch für Auszubildende – die Ausbildung läuft weiter.'
     },
     {
       nr: 11, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -154,7 +154,7 @@
         'Sofort, wenn der Arbeitgeber es erlaubt'
       ],
       loesung: 2,
-      erklaerung: '§ 3 MuSchG: absolutes Beschäftigungsverbot 8 Wochen nach der Geburt – auch auf eigenen Wunsch keine Ausnahme.'
+      erklaerung: '§ 3 Abs. 2 MuSchG: Nach der Entbindung gilt ein absolutes Beschäftigungsverbot von 8 Wochen (12 Wochen bei Früh-/Mehrlingsgeburten oder Behinderung). In dieser Zeit darf die Mutter auch auf eigenen Wunsch nicht arbeiten – weder eine ärztliche Bescheinigung noch die Erlaubnis des Arbeitgebers ändert daran etwas. Vor der Geburt gilt ein 6-wöchiges Beschäftigungsverbot, auf das die Mutter freiwillig verzichten kann.'
     },
     {
       nr: 12, thema: 'tarifrecht', typ: 'einfach',
@@ -168,7 +168,7 @@
         'Wöchentliche Arbeitszeit laut Tarifvertrag 38,5 Stunden'
       ],
       loesung: 5,
-      erklaerung: 'Tarifverträge gehören zum kollektiven Arbeitsrecht.'
+      erklaerung: 'Die wöchentliche Arbeitszeit laut Tarifvertrag ist kollektives Arbeitsrecht – sie gilt für alle tarifgebundenen Arbeitnehmer. Beginn, Homeoffice, individuelle Zulagen und Einsatzort sind Bestandteile des individuellen Arbeitsvertrags.'
     },
     {
       nr: 13, thema: 'mitbestimmung', typ: 'mehrfach',
@@ -183,7 +183,7 @@
         'Gründung einer Filiale'
       ],
       loesung: [1, 3],
-      erklaerung: '§ 87 Abs. 1 Nr. 2 und Nr. 6 BetrVG.'
+      erklaerung: '§ 87 Abs. 1 BetrVG: Der Betriebsrat hat Mitbestimmungsrecht bei Arbeitszeit (Nr. 2 – Beginn und Ende) und bei Überwachung durch technische Einrichtungen (Nr. 6). Investitionen wie Lagerhalle oder Lagertechnik sind unternehmerische Entscheidungen ohne Mitbestimmung.'
     },
     {
       nr: 14, thema: 'tarifrecht', typ: 'einfach',
@@ -197,7 +197,7 @@
         'Gewerkschaften dürfen keinen Rechtsschutz gewähren.'
       ],
       loesung: 2,
-      erklaerung: 'Art. 9 Abs. 3 GG: Wahrung und Förderung der Arbeits- und Wirtschaftsbedingungen.'
+      erklaerung: 'Art. 9 Abs. 3 GG (Koalitionsfreiheit): Gewerkschaften verhandeln mit Arbeitgeberverbänden über Löhne, Arbeitszeiten und weitere Arbeitsbedingungen (Tarifverhandlungen). Daneben bieten sie ihren Mitgliedern Rechtsschutz, Beratung und Vertretung.'
     },
     {
       nr: 15, thema: 'rechtsformen', typ: 'einfach',
@@ -211,7 +211,7 @@
         'Die Gesellschafter haften nur mit ihrer Stammeinlage.'
       ],
       loesung: 5,
-      erklaerung: 'Haftung beschränkt auf die Einlage; die GmbH selbst haftet mit ihrem Vermögen.'
+      erklaerung: '§ 13 Abs. 2 GmbHG: Die Gesellschafter haften nur mit ihrer Stammeinlage (beschränkte Haftung), nicht mit ihrem Privatvermögen. Die GmbH ist eine Kapitalgesellschaft; Mindeststammkapital 25.000 € (nicht 50.000 € – das gilt für die AG).'
     },
     {
       nr: 16, thema: 'kennzahlen', typ: 'zahl',
@@ -219,7 +219,7 @@
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: 11.3, nachkommastellen: 1,
       einheit: '%',
-      erklaerung: '24.860 ÷ 220.000 × 100 = 11,3 %.'
+      erklaerung: 'Eigenkapitalrentabilität = Reingewinn ÷ Eigenkapital × 100. Rechnung: 24.860 ÷ 220.000 × 100 = 11,3 %. Die Kennzahl zeigt, wie sich das eingesetzte Eigenkapital verzinst.'
     },
     {
       nr: 17, thema: 'unternehmensziele', typ: 'einfach',
@@ -233,7 +233,7 @@
         'Werbeetat halbieren'
       ],
       loesung: 1,
-      erklaerung: 'Nur Absatzförderung erhöht direkt den Umsatz.'
+      erklaerung: 'Umsatz = Absatzmenge × Preis. Marketingmaßnahmen steigern den Absatz und damit direkt den Umsatz. Mehr Personal, Fremdvergabe oder Lagererweiterung sind interne Maßnahmen, die den Umsatz nur indirekt beeinflussen.'
     },
     {
       nr: 18, thema: 'ausbildung', typ: 'einfach',
@@ -247,7 +247,7 @@
         'zertifiziert Fremdsprachkenntnisse.'
       ],
       loesung: 2,
-      erklaerung: 'Kostenloses Transparenzinstrument der EU.'
+      erklaerung: 'Der Europass ist ein kostenloses Online-Tool der EU, mit dem Qualifikationen, Kompetenzen und Berufserfahrung europaweit einheitlich und verständlich dargestellt werden können – z. B. für Bewerbungen im EU-Ausland.'
     },
     {
       nr: 19, thema: 'arbeitsschutz', typ: 'einfach',
@@ -261,7 +261,7 @@
         'ist automatisch Mitglied im Arbeitssicherheitsausschuss des Betriebsrats.'
       ],
       loesung: 2,
-      erklaerung: '§ 22 SGB VII: unterstützen, die Verantwortung bleibt beim Arbeitgeber.'
+      erklaerung: '§ 22 SGB VII: Sicherheitsbeauftragte unterstützen den Arbeitgeber bei der Unfallverhütung und dem Gesundheitsschutz. Sie haben keine Weisungsbefugnis – die Verantwortung für den Arbeitsschutz bleibt beim Arbeitgeber (§ 3 ArbSchG).'
     },
     {
       nr: 20, thema: 'arbeitsschutz', typ: 'mehrfach',
@@ -276,7 +276,7 @@
         'Alle Wasserstellen öffnen'
       ],
       loesung: [2, 5],
-      erklaerung: 'Brand melden und Menschen retten.'
+      erklaerung: 'Brandschutzordnung: 1. Notruf absetzen (112), 2. gefährdete Personen evakuieren. Fenster öffnen wäre falsch (Sauerstoffzufuhr facht Feuer an). Die Sicherheitsbeauftragte informieren ist keine Sofortmaßnahme.'
     },
     {
       nr: 21, thema: 'umweltschutz', typ: 'einfach',
@@ -290,7 +290,7 @@
         'Verringerung ist wichtiger als Vermeidung.'
       ],
       loesung: 2,
-      erklaerung: 'Emissionsbegriff des BImSchG.'
+      erklaerung: '§ 3 Abs. 3 BImSchG: Emissionen sind alle von einer Anlage ausgehenden Luftverunreinigungen, Geräusche, Erschütterungen, Licht, Wärme und Strahlen. Höhere Schornsteine verteilen Emissionen nur besser, reduzieren sie aber nicht.'
     },
     {
       nr: 22, thema: 'arbeitsschutz', typ: 'mehrfach',
@@ -305,7 +305,7 @@
         'Flexibleres Homeoffice'
       ],
       loesung: [1, 5],
-      erklaerung: 'Öffentliches Bloßstellen erzeugt Stress.'
+      erklaerung: 'Beschwerden veröffentlichen und Misserfolge bekanntgeben sind Bloßstellungen, die Stress und Angst erzeugen. Workshops, gute Atmosphäre, Betriebssport und Homeoffice sind anerkannte Maßnahmen zur Stressreduzierung.'
     },
     {
       nr: 23, thema: 'umweltschutz', typ: 'einfach',
@@ -319,7 +319,7 @@
         'Umsatzsteigerung durch mehr Sortiment'
       ],
       loesung: 1,
-      erklaerung: 'Nur Option 1 ist ein ökologisches Ziel; 2 ist eine (falsche) Behauptung über Zielbeziehungen.'
+      erklaerung: 'Ökologische Ziele betreffen den Umwelt- und Ressourcenschutz. Produkte von ökologisch zertifizierten Lieferanten zu beziehen ist ein konkretes ökologisches Ziel. Hohe Umweltinvestitionen bedeuten nicht automatisch Zielharmonie – Ökologie und Ökonomie können in Konflikt stehen (Zielkonflikt). Kundenzufriedenheit und Umsatzsteigerung sind ökonomische Ziele. Größere Verbrenner widersprechen ökologischen Zielen.'
     },
     {
       nr: 24, thema: 'umweltschutz', typ: 'einfach',
@@ -333,7 +333,7 @@
         'ist ausschließlich über das Duale System zu entsorgen.'
       ],
       loesung: 3,
-      erklaerung: 'Umweltzeichen für umweltfreundliche Produkte.'
+      erklaerung: 'Der Blaue Engel ist das älteste staatliche Umweltzeichen der Welt (seit 1978). Er kennzeichnet Produkte, die aus schadstoffarmen Rohstoffen und besonders umweltschonend hergestellt wurden. Er sagt nichts über Haltbarkeit oder Sicherheit aus.'
     },
     {
       nr: 25, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -347,7 +347,7 @@
         'Wettbewerbspolitik soll den Wettbewerb ausschalten.'
       ],
       loesung: 2,
-      erklaerung: 'Marktfreiheit plus sozialer Ausgleich.'
+      erklaerung: 'Art. 20 Abs. 1 GG (Sozialstaatsprinzip): In der sozialen Marktwirtschaft regelt der Markt das Wirtschaftsgeschehen, aber der Staat greift ein, um wirtschaftlich Schwächere zu schützen (z. B. Sozialversicherung, Mindestlohn, Wohngeld).'
     },
     {
       nr: 26, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -361,7 +361,7 @@
         'schließt eine Filiale.'
       ],
       loesung: 2,
-      erklaerung: 'Arbeitszerlegung = ein Prozess wird innerbetrieblich auf mehrere Personen verteilt.'
+      erklaerung: 'Betriebliche Arbeitsteilung (Arbeitszerlegung) bedeutet, dass ein Arbeitsprozess innerhalb des Betriebs in Teilschritte zerlegt wird, die von verschiedenen Mitarbeitern ausgeführt werden. Abzugrenzen von: Auslagerung/Outsourcing (Abgabe an externe Firmen), überbetrieblicher Arbeitsteilung (Zusammenarbeit mehrerer Unternehmen in der Lieferkette) und Filialschließung (kein Arbeitsteilungskonzept).'
     },
     {
       nr: 27, thema: 'wirtschaft-grundlagen', typ: 'mehrfach',
@@ -376,7 +376,7 @@
         'Gesellschaft bürgerlichen Rechts'
       ],
       loesung: [2, 3],
-      erklaerung: 'Dienstleister = tertiär; AG = Kapitalgesellschaft mit Gewinnerzielungsabsicht.'
+      erklaerung: 'Dienstleistungen gehören zum tertiären Sektor (primär = Urproduktion, sekundär = Verarbeitung). Die AG ist eine Kapitalgesellschaft mit Gewinnerzielungsabsicht (= erwerbswirtschaftlich). Eine Personengesellschaft (OHG, KG, GbR) ist die AG nicht.'
     },
     {
       nr: 28, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -390,7 +390,7 @@
         'Zentralisierung der weltweiten Fertigung in Deutschland'
       ],
       loesung: 2,
-      erklaerung: 'Freihandel baut Handelshemmnisse ab.'
+      erklaerung: 'Freihandelsabkommen bauen Zölle und andere Handelshemmnisse ab und fördern so die internationale wirtschaftliche Verflechtung (Globalisierung). Höhere Zölle und Steuern auf Transport bewirken das Gegenteil (Protektionismus).'
     },
     {
       nr: 29, thema: 'zusammenschluesse', typ: 'zuordnung',
@@ -425,7 +425,7 @@
         'Das Wohngeld wird erhöht.'
       ],
       loesung: 5,
-      erklaerung: 'Sozialstaatsprinzip (Art. 20 GG): Unterstützung Bedürftiger.'
+      erklaerung: 'Art. 20 Abs. 1 GG: Das Sozialstaatsprinzip verpflichtet den Staat, für soziale Sicherheit und Gerechtigkeit zu sorgen. Wohngeld ist eine direkte Hilfe für einkommensschwache Haushalte. Die anderen Optionen begünstigen vor allem Unternehmen oder Vermögende.'
     }
   ]
 });

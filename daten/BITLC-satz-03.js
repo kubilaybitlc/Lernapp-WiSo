@@ -19,7 +19,7 @@
         'Handelsvertretung Show & More GmbH'
       ],
       loesung: 4,
-      erklaerung: 'Sekundär = Herstellung/Verarbeitung. Spedition, Lager, Import und Handelsvertretung sind Dienstleistungen (tertiär).'
+      erklaerung: 'Die drei Wirtschaftssektoren: primär (Urproduktion: Landwirtschaft, Bergbau), sekundär (Verarbeitung/Herstellung: Industrie, Handwerk, Bau), tertiär (Dienstleistungen: Handel, Transport, Beratung). Die Akku- und Ladegerätebau GmbH produziert/verarbeitet → sekundärer Sektor. Spedition, Lagerlogistik, Import und Handelsvertretung erbringen Dienstleistungen → tertiär.'
     },
     {
       nr: 2, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -33,7 +33,7 @@
         'Nachfrageoligopol'
       ],
       loesung: 3,
-      erklaerung: 'Zwei (wenige) Anbieter, viele Nachfrager = Angebotsoligopol (Sonderfall Dyopol).'
+      erklaerung: 'Wenige Anbieter + viele Nachfrager = Angebotsoligopol. Bei genau zwei Anbietern spricht man vom Dyopol (Sonderfall des Oligopols). Monopol wäre nur ein Anbieter, Polypol wären viele Anbieter. Die Begriffe beziehen sich hier auf die Angebotsseite, nicht auf die Nachfrageseite.'
     },
     {
       nr: 3, thema: 'kennzahlen', typ: 'einfach',
@@ -47,7 +47,7 @@
         'Vertriebskosten für B2B um 5 % gesenkt'
       ],
       loesung: 3,
-      erklaerung: 'Maximalprinzip: mit gegebenen Mitteln den größtmöglichen Erfolg. Minimalprinzip: ein gegebenes Ziel mit möglichst wenig Mitteln.'
+      erklaerung: 'Maximalprinzip: mit gegebenen Mitteln den größtmöglichen Erfolg erzielen. Hier: gleicher Personaleinsatz → 20 % mehr Umsatz. Minimalprinzip: ein vorgegebenes Ziel mit möglichst wenig Mitteln erreichen (z. B. gleiche Umschlagmenge mit weniger Beschäftigten). Kostensenkungen allein (Verwaltung −15 %, Vertrieb −5 %) beschreiben das Minimalprinzip, nicht das Maximalprinzip.'
     },
     {
       nr: 4, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -61,7 +61,7 @@
         'Tiefstand/Depression'
       ],
       loesung: 4,
-      erklaerung: 'Schrumpfendes BIP und steigende Arbeitslosigkeit, aber noch kein Tiefpunkt (Prognose −2,0 %) → Abschwung.'
+      erklaerung: 'Rezession/Abschwung: BIP schrumpft (hier −1,0 %, Vorjahr −0,5 % → Abwärtstrend), Arbeitslosigkeit steigt (6,0 → 6,5 %). Stagnation = kein Wachstum, aber kein Rückgang. Depression = Tiefpunkt. Expansion = wachsendes BIP. Boom = Höchststand mit Vollbeschäftigung. Da das BIP stärker schrumpft als im Vorjahr, ist es kein Tiefpunkt, sondern ein laufender Abschwung.'
     },
     {
       nr: 5, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -75,7 +75,7 @@
         'der Lagerbestände'
       ],
       loesung: 5,
-      erklaerung: 'In der Rezession sinkt die Nachfrage – unverkaufte Ware stapelt sich im Lager.'
+      erklaerung: 'In der Rezession sinkt die Nachfrage → Produkte werden nicht verkauft → Lagerbestände steigen (Zunahme). Investitionen, BIP, Lohnsumme und Kapazitätsauslastung sinken in der Rezession dagegen. Steigende Lagerbestände sind ein typisches Frühwarnsignal für eine Abschwungphase.'
     },
     {
       nr: 6, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -89,7 +89,7 @@
         'Kürzung des Arbeitslosengeldes'
       ],
       loesung: 1,
-      erklaerung: 'Staatliche Investitionen erhöhen direkt die Nachfrage.'
+      erklaerung: 'Antizyklische Fiskalpolitik: In der Rezession erhöht der Staat seine Investitionen (z. B. Infrastruktur), um die gesamtwirtschaftliche Nachfrage zu stärken. Steuererhöhungen, Leitzinserhöhungen und Kürzungen von Sozialleistungen würden die Nachfrage weiter dämpfen.'
     },
     {
       nr: 7, thema: 'unternehmensziele', typ: 'zuordnung',
@@ -109,7 +109,7 @@
         { text: 'CO₂-Emission durch eine Photovoltaikanlage senken', loesung: 2 },
         { text: 'Moderne Lagerlogistik, damit die natürliche Lebensgrundlage möglichst wenig belastet wird', loesung: 2 }
       ],
-      erklaerung: 'Chancengleichheit = soziales Ziel. Effizienz und Gewinn = ökonomisch. CO₂ und Lebensgrundlage = ökologisch.'
+      erklaerung: 'Unternehmensziele lassen sich in drei Kategorien einteilen: Ökonomisch = Gewinn, Rentabilität, Effizienz (Gewinnbeteiligung zur Motivation, Eigenkapitalbildung). Ökologisch = Umwelt- und Ressourcenschutz (CO₂-Reduktion durch Photovoltaik, schonende Lagerlogistik). Sozial = Mitarbeiter und Gesellschaft (Chancengleichheit, Gesundheit, Work-Life-Balance). Option 1 ist daher weder ökonomisch noch ökologisch.'
     },
     {
       nr: 8, thema: 'ausbildung', typ: 'einfach',
@@ -123,7 +123,7 @@
         'Die Ausbildungsdauer ist mit 36 Monaten eingetragen.'
       ],
       loesung: 4,
-      erklaerung: 'Probezeit max. 4 Monate (§ 20 BBiG). Eltern sind bei einer Volljährigen nicht nötig.'
+      erklaerung: '§ 20 BBiG: Die Probezeit muss mindestens 1 und darf höchstens 4 Monate betragen – 6 Monate sind unzulässig und müssen korrigiert werden. Da Frau Jung volljährig ist (20 J.), müssen die Eltern nicht im Vertrag stehen. Vergütungen für alle Jahre, Kündigungsvoraussetzungen und eine 36-monatige Ausbildungsdauer sind reguläre Vertragsbestandteile.'
     },
     {
       nr: 9, thema: 'ausbildung', typ: 'mehrfach',
@@ -138,7 +138,7 @@
         'Der Betrieb muss am Tag nach der Prüfung einen unbefristeten Vertrag anbieten.'
       ],
       loesung: [2, 5],
-      erklaerung: '§ 22 Abs. 2 Nr. 2 und § 16 BBiG. Weiterbeschäftigungsvereinbarungen sind erst in den letzten 6 Monaten zulässig (§ 12).'
+      erklaerung: '§ 22 Abs. 2 Nr. 2 BBiG: Azubis dürfen nach der Probezeit kündigen, um eine andere Ausbildung zu beginnen (Frist: 4 Wochen). § 16 BBiG: Der Betrieb muss ein Zeugnis ausstellen (auf Wunsch qualifiziert). Probezeit: Kündigung jederzeit ohne Frist (§ 22 Abs. 1). Weiterbeschäftigungsvereinbarung: erst in den letzten 6 Monaten zulässig (§ 12 Abs. 1 BBiG). Bei bestandener Prüfung endet das Ausbildungsverhältnis sofort (§ 21 Abs. 2).'
     },
     {
       nr: 10, thema: 'ausbildung', typ: 'einfach',
@@ -152,7 +152,7 @@
         'Einsatz- und Pausenplan des Betriebes'
       ],
       loesung: 4,
-      erklaerung: '§ 11 BBiG: Die sachliche und zeitliche Gliederung (betrieblicher Ausbildungsplan) gehört zum Vertrag.'
+      erklaerung: '§ 11 Abs. 1 Nr. 1 BBiG: Der sachlich und zeitlich gegliederte Ausbildungsplan (betrieblicher Ausbildungsplan) ist Bestandteil des Berufsausbildungsvertrages. Er beschreibt, welche Fertigkeiten und Kenntnisse wann im Betrieb vermittelt werden. Der Rahmenlehrplan der Berufsschule und der schulische Stoffplan gehören nicht zum Ausbildungsvertrag.'
     },
     {
       nr: 11, thema: 'mitbestimmung', typ: 'einfach',
@@ -166,7 +166,7 @@
         'Betriebsverfassungsgesetz'
       ],
       loesung: 5,
-      erklaerung: '§§ 60 ff. BetrVG.'
+      erklaerung: '§§ 60–73 BetrVG regeln die Jugend- und Auszubildendenvertretung (JAV). Häufiger Fehler: Verwechslung mit dem JArbSchG (regelt Arbeitszeiten und Schutz Jugendlicher) oder dem BBiG (regelt die Ausbildung selbst).'
     },
     {
       nr: 12, thema: 'mitbestimmung', typ: 'einfach',
@@ -180,7 +180,7 @@
         'hat man bei allen Belangen Mitspracherecht.'
       ],
       loesung: 2,
-      erklaerung: '§ 70 BetrVG: Die JAV handelt über den Betriebsrat.'
+      erklaerung: '§ 70 Abs. 1 Nr. 1 BetrVG: Die JAV kann beim Betriebsrat Maßnahmen beantragen, die den jugendlichen Arbeitnehmern und Azubis dienen. Die JAV vertritt ihre Interessen nicht direkt gegenüber dem Arbeitgeber, sondern stets über den Betriebsrat.'
     },
     {
       nr: 13, thema: 'mitbestimmung', typ: 'einfach',
@@ -194,7 +194,7 @@
         'Volljährig und höchstens sechs Monate im Betrieb'
       ],
       loesung: 3,
-      erklaerung: '§ 8 BetrVG.'
+      erklaerung: '§ 8 BetrVG: Wählbar (passives Wahlrecht) ist, wer volljährig ist und dem Betrieb mindestens sechs Monate angehört. Aktives Wahlrecht ab 16 (§ 7 BetrVG). Eine abgeschlossene Ausbildung ist keine Voraussetzung.'
     },
     {
       nr: 14, thema: 'ausbildung', typ: 'einfach',
@@ -208,7 +208,7 @@
         'Zwei freie Arbeitstage vor der Abschlussprüfung'
       ],
       loesung: 3,
-      erklaerung: 'Schutzzweck des JArbSchG. Richtig wären: 4,5 h, 12 h Ruhe, ab 6 Uhr, ein freier Tag vor der Prüfung.'
+      erklaerung: '§ 1 JArbSchG: Das Gesetz soll Jugendliche vor Überforderung, Gesundheitsgefährdung und Entwicklungsstörungen schützen. Merke die richtigen Werte: Pause nach 4,5 h (nicht 3 h), 12 h Ruhezeit (nicht 8 h), Beschäftigung ab 6 Uhr (nicht 8 Uhr), ein Freistellungstag vor der Prüfung (nicht zwei).'
     },
     {
       nr: 15, thema: 'mitbestimmung', typ: 'einfach',
@@ -222,7 +222,7 @@
         'Nur Vollzeitkräfte und Azubis'
       ],
       loesung: 1,
-      erklaerung: '§ 42 BetrVG: Die Betriebsversammlung besteht aus allen Arbeitnehmern des Betriebs.'
+      erklaerung: '§ 42 Abs. 1 BetrVG: Die Betriebsversammlung besteht aus allen Arbeitnehmern des Betriebs – also Vollzeit, Teilzeit, Azubis, befristet Beschäftigte und Leiharbeitnehmer. Sie findet mindestens vierteljährlich statt (§ 43 BetrVG). Gewerkschaftsvertreter dürfen teilnehmen, aber die Versammlung ist nicht auf sie beschränkt.'
     },
     {
       nr: 16, thema: 'arbeitsvertrag', typ: 'zuordnung',
@@ -242,7 +242,7 @@
         { text: 'Geschäftsführung und Betriebsrat arbeiten konstruktiv zusammen.', loesung: 3 },
         { text: 'Die Geschäftsleitung erarbeitet neue Allgemeine Geschäftsbedingungen.', loesung: 4 }
       ],
-      erklaerung: 'Zusammenarbeit: § 2 BetrVG. AGB: §§ 305 ff. BGB.'
+      erklaerung: 'Vertrauensvolle Zusammenarbeit von Geschäftsführung und Betriebsrat unter Beachtung der Tarifverträge → § 2 BetrVG. Allgemeine Geschäftsbedingungen (AGB) → §§ 305 ff. BGB (nicht HGB, obwohl es um Geschäftsverkehr geht). BBiG regelt Ausbildungsverhältnisse, JArbSchG den Jugendschutz, BUrlG den Erholungsurlaub.'
     },
     {
       nr: 17, thema: 'tarifrecht', typ: 'einfach',
@@ -256,14 +256,14 @@
         'kann von den Arbeitgebern mit Aussperrung erwidert werden.'
       ],
       loesung: 5,
-      erklaerung: 'Aussperrung ist das Arbeitskampfmittel der Arbeitgeber.'
+      erklaerung: 'Die Aussperrung ist das Arbeitskampfmittel der Arbeitgeberseite: Arbeitnehmer werden vorübergehend von der Arbeit und der Lohnzahlung ausgeschlossen. Ein Streik bedarf keiner staatlichen Genehmigung und wird nicht vom DGB, sondern von der zuständigen Einzelgewerkschaft getragen. Er ist erst nach Ablauf der Friedenspflicht (Tarifvertrag muss gekündigt sein) und nach erfolgreicher Urabstimmung zulässig.'
     },
     {
       nr: 18, thema: 'arbeitsvertrag', typ: 'datum',
       frage: 'Paul Kropp ist seit 01.01.2012 beschäftigt. Der Arbeitgeber kündigt im Dezember 2025 betriebsbedingt zum nächstmöglichen Termin (gesetzliche Frist).\n§ 622 Abs. 2 BGB (Kündigung durch Arbeitgeber): nach 10 Jahren 4 Monate, nach 12 Jahren 5 Monate, nach 15 Jahren 6 Monate – jeweils zum Ende eines Kalendermonats.\nAn welchem Tag endet das Arbeitsverhältnis? (TT.MM.JJJJ)',
       anweisung: 'Tragen Sie das Datum (TT.MM.JJJJ) in die Kästchen ein.',
       loesung: '31.05.2026',
-      erklaerung: 'Fast 14 Jahre Betriebszugehörigkeit → 12-Jahres-Stufe → 5 Monate zum Monatsende. Dezember + 5 Monate → 31.05.2026.'
+      erklaerung: '§ 622 Abs. 2 BGB (verlängerte Fristen bei AG-Kündigung): Beschäftigt seit 01.01.2012, Kündigung Dezember 2025 → fast 14 Jahre Zugehörigkeit → 12-Jahres-Stufe → 5 Monate Frist zum Monatsende. Dezember 2025 + 5 Monate = Mai 2026 → Ende am 31.05.2026. Die 15-Jahres-Stufe (6 Monate) greift noch nicht, da noch keine 15 Jahre voll sind.'
     },
     {
       nr: 19, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -277,7 +277,7 @@
         'muss nur auf Verlangen des Arbeitnehmers ausgestellt werden.'
       ],
       loesung: 5,
-      erklaerung: '§ 109 GewO: Leistung und Verhalten nur auf Verlangen.'
+      erklaerung: '§ 109 GewO: Ein einfaches Zeugnis (Art und Dauer) muss immer ausgestellt werden. Das qualifizierte Zeugnis mit Aussagen zu Leistung und Verhalten gibt es nur auf Verlangen des Arbeitnehmers. Angaben zum Privatleben gehören nicht ins Zeugnis.'
     },
     {
       nr: 20, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -291,7 +291,7 @@
         '38-Jähriger, seit einem Jahr im Betriebsrat'
       ],
       loesung: 2,
-      erklaerung: 'Alle anderen haben besonderen Kündigungsschutz; bei der Sozialauswahl ist er am wenigsten schutzbedürftig.'
+      erklaerung: 'Azubis nach der Probezeit (§ 22 BBiG), Schwangere (§ 17 MuSchG) und Betriebsratsmitglieder (§ 15 KSchG) sind ordentlich unkündbar. Schwerbehinderte nur mit Zustimmung des Integrationsamts (§ 168 SGB IX). Bei der Sozialauswahl (§ 1 Abs. 3 KSchG: Alter, Betriebszugehörigkeit, Unterhaltspflichten, Behinderung) ist der 32-jährige Ledige am wenigsten schutzwürdig.'
     },
     {
       nr: 21, thema: 'rechtsformen', typ: 'einfach',
@@ -305,7 +305,7 @@
         'Ein mündlicher Gesellschaftsvertrag genügt.'
       ],
       loesung: 3,
-      erklaerung: 'Gesellschafter können Geschäftsführer sein. Eintragung beim Amtsgericht, Vertrag notariell, Firma muss unterscheidbar sein.'
+      erklaerung: 'Bei der GmbH können Gesellschafter zugleich Geschäftsführer sein (Gesellschafter-Geschäftsführer). Eintragung erfolgt beim Amtsgericht (Handelsregister), nicht beim Arbeitsgericht. Der Gesellschaftsvertrag bedarf der notariellen Beurkundung (§ 2 GmbHG).'
     },
     {
       nr: 22, thema: 'rechtsformen', typ: 'einfach',
@@ -319,7 +319,7 @@
         'Das Stammkapital muss die Geschäftsführung leisten.'
       ],
       loesung: 2,
-      erklaerung: 'Gesellschafter-Geschäftsführer sind üblich.'
+      erklaerung: 'Bei der GmbH müssen nicht alle Gesellschafter in der Geschäftsführung tätig sein. Es können ein oder mehrere Gesellschafter oder auch Fremdgeschäftsführer bestellt werden. Haftung ist auf das Gesellschaftsvermögen beschränkt (§ 13 Abs. 2 GmbHG), Eintragung im Handelsregister ist Pflicht.'
     },
     {
       nr: 23, thema: 'kennzahlen', typ: 'zahl',
@@ -327,7 +327,7 @@
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: 20000, nachkommastellen: 0,
       einheit: 'EUR',
-      erklaerung: '§ 29 GmbHG nach Geschäftsanteilen: 40.000 ÷ 120.000 = ⅓ → 20.000 €.'
+      erklaerung: '§ 29 Abs. 3 GmbHG: Ohne anderslautende Satzungsregelung wird der Gewinn nach dem Verhältnis der Geschäftsanteile verteilt. Wegener: 40.000 ÷ (80.000 + 40.000) = 40.000 ÷ 120.000 = ⅓. Gewinnanteil: 60.000 × ⅓ = 20.000 €. Trout erhält die übrigen ⅔ = 40.000 €.'
     },
     {
       nr: 24, thema: 'arbeitsvertrag', typ: 'mehrfach',
@@ -342,7 +342,7 @@
         'Bewerber ohne PC-Kenntnisse wird abgelehnt'
       ],
       loesung: [1, 4],
-      erklaerung: 'Alter und ethnische Herkunft sind geschützte Merkmale.'
+      erklaerung: '§ 1 AGG schützt vor Benachteiligung wegen Rasse/ethnischer Herkunft, Geschlecht, Religion, Behinderung, Alter und sexueller Identität. „Junge Mitarbeiter" diskriminiert nach Alter; Ablehnung wegen Hautfarbe nach ethnischer Herkunft. Zusatzurlaub für Schwerbehinderte ist gesetzlich vorgesehen (§ 208 SGB IX).'
     },
     {
       nr: 25, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -356,7 +356,7 @@
         'Nur Bewerberinnen unter 35 werden berücksichtigt.'
       ],
       loesung: 4,
-      erklaerung: 'Qualifikation ist ein zulässiges, diskriminierungsfreies Kriterium.'
+      erklaerung: '§ 11 AGG: Stellenausschreibungen müssen diskriminierungsfrei sein. Allein die fachliche Qualifikation als Auswahlkriterium ist zulässig. Bevorzugung nach Herkunft, Geschlecht oder Alter verstößt gegen das AGG.'
     },
     {
       nr: 26, thema: 'arbeitsschutz', typ: 'einfach',
@@ -370,7 +370,7 @@
         'Keine Pflicht'
       ],
       loesung: 2,
-      erklaerung: '§ 12 ArbSchG: vor Aufnahme der Tätigkeit und regelmäßig (mind. jährlich) wiederholen.'
+      erklaerung: '§ 12 ArbSchG: Der Arbeitgeber muss die Beschäftigten über Sicherheit und Gesundheitsschutz bei der Arbeit unterweisen – und zwar vor Aufnahme der Tätigkeit und danach in regelmäßigen Abständen (mindestens einmal jährlich). Einmalig bei Einstellung reicht nicht aus. Auch bei Änderung des Aufgabenbereichs oder neuen Gefährdungen muss erneut unterwiesen werden.'
     },
     {
       nr: 27, thema: 'arbeitsschutz', typ: 'einfach',
@@ -384,7 +384,7 @@
         'Handwerkskammer'
       ],
       loesung: 3,
-      erklaerung: 'Die Berufsgenossenschaft schult Sicherheitsbeauftragte.'
+      erklaerung: 'Die Berufsgenossenschaft (Träger der gesetzlichen Unfallversicherung) ist zuständig für Unfallverhütung und Arbeitsschutz. Sie berät Unternehmen, erstellt Unfallverhütungsvorschriften (DGUV) und schult Sicherheitsbeauftragte.'
     },
     {
       nr: 28, thema: 'arbeitsschutz', typ: 'zuordnung',
@@ -407,7 +407,7 @@
         { text: 'Warnzeichen', loesung: 4 }
       ],
       bildUrl: 'bilder/2025S-28.jpg',
-      erklaerung: 'Grün = Rettung, rot umrandet/durchgestrichen = Verbot, rot gefüllt = Brandschutz, blau = Gebot, gelb = Warnung.'
+      erklaerung: 'ASR A1.3 (Sicherheitskennzeichnung): Blauer Kreis = Gebotszeichen (z. B. Schutzschuhe tragen). Grünes Kreuz = Rettungszeichen (Erste Hilfe). Roter Kreis mit Strich = Verbotszeichen (Rauchen verboten). Gelbes Dreieck = Warnzeichen (Stolpergefahr). Rotes Quadrat = Brandschutzzeichen (Löschschlauch). Merkhilfe: Blau = Pflicht, Grün = Rettung, Rot rund = Verbot, Rot eckig = Brandschutz, Gelb = Warnung.'
     },
     {
       nr: 29, thema: 'umweltschutz', typ: 'einfach',
@@ -421,7 +421,7 @@
         'Nur Recyclingpapier'
       ],
       loesung: 2,
-      erklaerung: 'Einwegplastik erzeugt unnötigen Abfall.'
+      erklaerung: 'Einwegbecher aus Kunststoff erzeugen unnötigen Abfall und widersprechen dem Abfallvermeidungsprinzip (§ 6 KrWG: Vermeidung vor Verwertung vor Beseitigung). LED, Transportoptimierung, Bio-Reiniger und Recyclingpapier sind umweltschonende Maßnahmen.'
     },
     {
       nr: 30, thema: 'umweltschutz', typ: 'einfach',
@@ -436,7 +436,7 @@
       ],
       loesung: 4,
       bildUrl: 'bilder/2025S-30.jpg',
-      erklaerung: 'Recycling-Symbol (Möbius-Pfeile). 1 = Umweltzeichen, 2 = fairer Handel, 3 = EU-Konformität, 5 = Haltbarkeit nach Öffnen (6 Monate).'
+      erklaerung: 'Das Recycling-Symbol (drei Pfeile im Dreieck, „Möbiusband") zeigt an, dass die Verpackung recycelbar ist oder aus recyceltem Material besteht. Blauer Engel (1) = umweltschonende Herstellung. Fairtrade (2) = fair gehandelt (Sozialstandards). CE (3) = EU-Konformitätserklärung des Herstellers (kein Umwelt- oder Qualitätszeichen). Offener Tiegel „6M" (5) = Haltbarkeit 6 Monate nach dem Öffnen (Kosmetik).'
     }
   ]
 });

@@ -19,7 +19,7 @@
         'darf für höchstens zwei Jahre geschlossen werden.'
       ],
       loesung: 4,
-      erklaerung: 'Günstigkeitsprinzip: Abweichungen vom Tarifvertrag zugunsten des Arbeitnehmers sind zulässig.'
+      erklaerung: 'Günstigkeitsprinzip (§ 4 Abs. 3 TVG): Einzelarbeitsverträge dürfen vom Tarifvertrag abweichen, wenn die Regelung für den AN günstiger ist – z. B. ein höheres Entgelt. Ein Einzelarbeitsvertrag kann jederzeit geschlossen werden, auch neben einem Tarifvertrag.'
     },
     {
       nr: 2, thema: 'arbeitsvertrag', typ: 'mehrfach',
@@ -34,7 +34,7 @@
         'kann neuerdings bis zu zwei Jahre betragen.'
       ],
       loesung: [1, 5],
-      erklaerung: 'Im Arbeitsverhältnis ist eine Probezeit freiwillig, höchstens 6 Monate (§ 622 Abs. 3 BGB). Nur in der Ausbildung ist sie Pflicht (1–4 Monate).'
+      erklaerung: '§ 622 Abs. 3 BGB: Im normalen Arbeitsverhältnis ist eine Probezeit freiwillig (kann entfallen) und darf höchstens 6 Monate dauern. Achtung: In der Ausbildung ist die Probezeit Pflicht und beträgt 1–4 Monate (§ 20 BBiG) – nicht verwechseln!'
     },
     {
       nr: 3, thema: 'ausbildung', typ: 'zahl',
@@ -42,7 +42,7 @@
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: '06:00',
       einheit: 'Uhr',
-      erklaerung: 'Keine der Ausnahmen gilt für einen IT-Betrieb → frühestens 6:00 Uhr.'
+      erklaerung: '§ 14 JArbSchG: Jugendliche dürfen grundsätzlich nur zwischen 6:00 und 20:00 Uhr beschäftigt werden. Die genannten Ausnahmen (Gaststätten bis 22 Uhr, Schichtbetriebe bis 23 Uhr, Landwirtschaft/Bäckereien ab 5 Uhr) gelten nicht für einen normalen IT-Betrieb → frühestens 6:00 Uhr.'
     },
     {
       nr: 4, thema: 'ausbildung', typ: 'einfach',
@@ -56,7 +56,7 @@
         'Jugendliche dürfen nicht mehr als 48 Stunden wöchentlich beschäftigt werden.'
       ],
       loesung: 1,
-      erklaerung: '§ 15 JArbSchG: Fünf-Tage-Woche. Max. 40 h/Woche, Nachuntersuchung nach 1 Jahr, Ruhetage „sollen“ aufeinanderfolgen, Feiertage mit Ausnahmen.'
+      erklaerung: '§ 15 JArbSchG: Jugendliche dürfen nur an fünf Tagen in der Woche beschäftigt werden. Die maximale Wochenarbeitszeit beträgt 40 Stunden (§ 8), nicht 48. Die Nachuntersuchung erfolgt nach einem Jahr (nicht drei Monaten). An Feiertagen gibt es Ausnahmen für bestimmte Branchen (§ 18).'
     },
     {
       nr: 5, thema: 'ausbildung', typ: 'zahl',
@@ -64,7 +64,7 @@
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: 30, nachkommastellen: 0,
       einheit: 'Tage',
-      erklaerung: 'Gesetzlich 25 Werktage (= ca. 21 Arbeitstage), tariflich 30 Arbeitstage. Die günstigere Regelung gilt → 30.'
+      erklaerung: 'Günstigkeitsprinzip: § 19 JArbSchG gibt 25 Werktage (6-Tage-Woche, umgerechnet ca. 21 Arbeitstage). Der Tarifvertrag gewährt 30 Arbeitstage (5-Tage-Woche). Da der Tarifvertrag günstiger ist, gilt er → 30 Tage. Dass Henry im April 18 wird, ändert nichts – maßgeblich ist das Alter zu Jahresbeginn (§ 19 JArbSchG).'
     },
     {
       nr: 6, thema: 'ausbildung', typ: 'einfach',
@@ -78,7 +78,7 @@
         'Mitglied einer Gewerkschaft sein.'
       ],
       loesung: 2,
-      erklaerung: '§ 28–30 BBiG: Ausbilder müssen persönlich und fachlich geeignet sein.'
+      erklaerung: '§ 28–30 BBiG: Wer ausbildet, muss persönlich und fachlich geeignet sein. Fachliche Eignung umfasst berufliche Fertigkeiten und berufs- und arbeitspädagogische Kenntnisse (Nachweis z. B. durch AEVO-Prüfung). Mitgliedschaft in Prüfungsausschuss, Geschäftsleitung oder Gewerkschaft ist nicht erforderlich.'
     },
     {
       nr: 7, thema: 'mitbestimmung', typ: 'einfach',
@@ -92,7 +92,7 @@
         'ist unwirksam, wenn das Arbeitsgericht nicht beteiligt wurde.'
       ],
       loesung: 3,
-      erklaerung: '§ 102 BetrVG: Eine ohne Anhörung des Betriebsrats ausgesprochene Kündigung ist unwirksam.'
+      erklaerung: '§ 102 Abs. 1 BetrVG: Vor jeder Kündigung muss der Betriebsrat angehört werden – sonst ist die Kündigung unwirksam. Wichtig: Der Betriebsrat muss angehört, aber nicht zugestimmt werden (Anhörung ≠ Zustimmung). Eine nachträgliche Anhörung heilt den Mangel nicht. Das Arbeitsgericht muss nicht an der Kündigung beteiligt werden, kann aber im Kündigungsschutzprozess angerufen werden.'
     },
     {
       nr: 8, thema: 'ausbildung', typ: 'einfach',
@@ -106,7 +106,7 @@
         'Nein, weil die Kündigungsfrist von vier Wochen nicht eingehalten wurde.'
       ],
       loesung: 4,
-      erklaerung: 'Minderjährige sind beschränkt geschäftsfähig – die Kündigung braucht die Zustimmung/Unterschrift der gesetzlichen Vertreter. Die 4-Wochen-Frist wäre eingehalten.'
+      erklaerung: '§§ 107, 111 BGB: Minderjährige sind beschränkt geschäftsfähig. Eine Kündigung ist ein einseitiges Rechtsgeschäft und bedarf der Einwilligung der gesetzlichen Vertreter – ohne deren Unterschrift ist sie unwirksam. Die 4-Wochen-Frist nach § 22 Abs. 2 BBiG wäre hier eingehalten (12.03. → 15.04.), aber die fehlende Zustimmung der Eltern macht die Kündigung dennoch nichtig.'
     },
     {
       nr: 9, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -120,7 +120,7 @@
         '„Wir wünschen Frau Bommering für die Zukunft alles Gute.“'
       ],
       loesung: 4,
-      erklaerung: 'Ein qualifiziertes Zeugnis enthält zusätzlich Angaben zu Leistung und Verhalten.'
+      erklaerung: 'Ein qualifiziertes Zeugnis enthält neben den Pflichtangaben (Name, Dauer, Art der Tätigkeit) auch eine Bewertung von Leistung und Verhalten (§ 109 GewO). „Stets … vollsten Zufriedenheit" ist eine Leistungsbewertung (Note 1). Persönliche Daten (Geburtsdatum, Wohnort) und Schlussformel sind kein qualifizierendes Merkmal.'
     },
     {
       nr: 10, thema: 'mitbestimmung', typ: 'einfach',
@@ -134,7 +134,7 @@
         'besitzt bei der Aufstellung des Urlaubsplans ein Mitbestimmungsrecht.'
       ],
       loesung: 5,
-      erklaerung: '§ 87 Abs. 1 Nr. 5 BetrVG: Mitbestimmung beim Urlaubsplan. Ein Betriebsrat ist nicht Pflicht, sondern kann ab 5 AN gewählt werden.'
+      erklaerung: '§ 87 Abs. 1 Nr. 5 BetrVG: Der Betriebsrat hat ein erzwingbares Mitbestimmungsrecht bei der Aufstellung des Urlaubsplans (einschließlich Betriebsferien). Ein Betriebsrat ist keine Pflicht – er kann ab 5 wahlberechtigten Arbeitnehmern gewählt werden (§ 1 BetrVG). Er muss nicht paritätisch besetzt sein, hat keine Handlungsvollmacht für Rechtsgeschäfte und bei Filial-Gründungen keine Mitbestimmung.'
     },
     {
       nr: 11, thema: 'mitbestimmung', typ: 'einfach',
@@ -148,7 +148,7 @@
         '„Mit der Zweitstimme können Sie als Ersatzmitglied gewählt werden.“'
       ],
       loesung: 3,
-      erklaerung: '§ 61 BetrVG: Azubis unter 25 dürfen wählen; wählbar sind alle AN unter 25. Bei 6–20 Wahlberechtigten gibt es nur 1 JAV-Mitglied.'
+      erklaerung: '§ 60 BetrVG: Wahlberechtigt und wählbar zur JAV sind alle AN unter 18 sowie Azubis unter 25. Bei 6–20 Wahlberechtigten wird nur 1 JAV-Mitglied gewählt (§ 62 Abs. 1). Die Aufstellung braucht keine Vorgesetzten-Unterstützung, und eine Zweitstimme gibt es bei der JAV-Wahl nicht.'
     },
     {
       nr: 12, thema: 'tarifrecht', typ: 'einfach',
@@ -162,7 +162,7 @@
         'Konstruktive Zusammenarbeit zwischen Arbeitgebern und Arbeitnehmern'
       ],
       loesung: 2,
-      erklaerung: 'Absolute Friedenspflicht: während der Laufzeit des Tarifvertrags gar keine Arbeitskämpfe (relative: nur nicht über geregelte Inhalte).'
+      erklaerung: 'Die absolute Friedenspflicht verbietet während der Laufzeit eines gültigen Tarifvertrags jeglichen Arbeitskampf (Streik/Aussperrung) – auch über nicht geregelte Themen. Die relative Friedenspflicht gilt immer und verbietet Streiks nur über bereits tarifvertraglich geregelte Inhalte.'
     },
     {
       nr: 13, thema: 'tarifrecht', typ: 'mehrfach',
@@ -177,7 +177,7 @@
         'gibt Höchstgrenzen für Löhne und Gehälter an.'
       ],
       loesung: [1, 3],
-      erklaerung: 'Tarifautonomie: Tarifpartner verhandeln frei. Tarifverträge sind Mindestbedingungen – Günstigeres ist möglich.'
+      erklaerung: 'Art. 9 Abs. 3 GG (Tarifautonomie): Tarifverträge kommen durch freie Vereinbarung zwischen Gewerkschaft und Arbeitgeberverband zustande – ohne staatlichen Schlichter. Tarifverträge legen Mindestbedingungen fest; günstigere Betriebsvereinbarungen und Einzelverträge sind zulässig (Günstigkeitsprinzip). Eine Laufzeitbegrenzung auf drei Jahre gibt es nicht.'
     },
     {
       nr: 14, thema: 'tarifrecht', typ: 'einfach',
@@ -191,7 +191,7 @@
         'Der Betrag des Ecklohns'
       ],
       loesung: 3,
-      erklaerung: 'Manteltarifvertrag: allgemeine Arbeitsbedingungen wie Arbeitszeit, Urlaub, Sonderurlaub, Kündigungsfristen. Beträge stehen im Lohn-/Gehaltstarifvertrag.'
+      erklaerung: 'Der Manteltarifvertrag (Rahmentarifvertrag) regelt allgemeine Arbeitsbedingungen: Arbeitszeit, Urlaub, Sonderurlaub, Kündigungsfristen, Zuschläge. Konkrete Lohn- und Gehaltsbeträge, Vergütungsgruppen und Ecklöhne stehen dagegen im Lohn-/Gehaltstarifvertrag bzw. Entgelttarifvertrag.'
     },
     {
       nr: 15, thema: 'sozialversicherung', typ: 'mehrfach',
@@ -206,7 +206,7 @@
         'Unfallversicherung'
       ],
       loesung: [3, 6],
-      erklaerung: 'Lebensversicherung ist privat. Die gesetzliche Unfallversicherung zahlt allein der Arbeitgeber (Berufsgenossenschaft).'
+      erklaerung: 'Die fünf Zweige der Sozialversicherung: Kranken-, Pflege-, Renten-, Arbeitslosen- und Unfallversicherung. Im Arbeitnehmerbeitrag (Gehaltsabrechnung) fehlen zwei: Die Lebensversicherung ist privat und gehört nicht zur SV. Die Unfallversicherung zahlt allein der Arbeitgeber an die Berufsgenossenschaft – sie wird dem AN nicht abgezogen.'
     },
     {
       nr: 16, thema: 'ausbildung', typ: 'einfach',
@@ -220,7 +220,7 @@
         'Der Europass zertifiziert Fremdsprachenkenntnisse.'
       ],
       loesung: 2,
-      erklaerung: 'Der Europass ist ein kostenloses EU-Dokumentenset (Lebenslauf, Mobilität u. a.) zur verständlichen Darstellung von Kompetenzen.'
+      erklaerung: 'Der Europass ist ein kostenloses EU-Portfolio (Lebenslauf, Sprachenpass, Mobilität, Diploma Supplement), das Qualifikationen und Kompetenzen europaweit verständlich und vergleichbar darstellt. Er zertifiziert keine Sprachkenntnisse und ist keine Pflicht für Auslandsaufenthalte.'
     },
     {
       nr: 17, thema: 'wirtschaft-grundlagen', typ: 'zuordnung',
@@ -240,7 +240,7 @@
         { text: 'Die Sachs-IT GmbH kauft Monitore und verkauft sie an einen Kunden.', loesung: 3 },
         { text: 'Die Sachs-IT GmbH berät Kunden bei Sicherheitsproblemen.', loesung: 3 }
       ],
-      erklaerung: 'Primär = Urproduktion, sekundär = Verarbeitung/Industrie, tertiär = Dienstleistung/Handel. Softwareerstellung zählt als IT-Dienstleistung zum tertiären Sektor (bei c ist die Zuordnung in Lösungen teils umstritten).'
+      erklaerung: 'Primärer Sektor = Urproduktion (Landwirtschaft, Bergbau, Rohstoffgewinnung). Sekundärer Sektor = Verarbeitung/Industrie (Laptopproduktion). Tertiärer Sektor = Dienstleistungen und Handel (IT-Beratung, Softwareerstellung, Handel mit Monitoren). Merke: IT-Unternehmen gehören fast immer zum tertiären Sektor.'
     },
     {
       nr: 18, thema: 'rechtsformen', typ: 'einfach',
@@ -254,14 +254,14 @@
         'Die Gewinnverteilung erfolgt nach gesetzlicher Regelung nach Geschäftsanteilen.'
       ],
       loesung: 5,
-      erklaerung: '§ 29 GmbHG: Gewinnverteilung nach dem Verhältnis der Geschäftsanteile. Stammkapital mind. 25.000 €.'
+      erklaerung: '§ 29 GmbHG: Die Gewinnverteilung erfolgt nach dem Verhältnis der Geschäftsanteile (nicht Köpfe). Das Mindeststammkapital beträgt 25.000 € (§ 5 GmbHG), nicht 100.000 €. GmbH-Anteile werden nicht an der Börse gehandelt (das ist die AG), und die Haftung ist auf das Gesellschaftsvermögen beschränkt.'
     },
     {
       nr: 19, thema: 'kennzahlen', typ: 'zahl',
       frage: 'Vier Aufträge:\nAuftrag 1: Aufwand 150.000 €, Ertrag 180.000 €\nAuftrag 2: Aufwand 40.000 €, Ertrag 50.000 €\nAuftrag 3: Aufwand 40.000 €, Ertrag 52.000 €\nAuftrag 4: Aufwand 50.000 €, Ertrag 62.000 €\nWelcher Auftrag wurde am wirtschaftlichsten abgewickelt? (Auftragsnummer)',
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: 3, nachkommastellen: 0,
-      erklaerung: 'Wirtschaftlichkeit = Ertrag ÷ Aufwand: 1,20 / 1,25 / 1,30 / 1,24 → Auftrag 3.'
+      erklaerung: 'Wirtschaftlichkeit = Ertrag ÷ Aufwand. Auftrag 1: 180.000 ÷ 150.000 = 1,20. Auftrag 2: 50.000 ÷ 40.000 = 1,25. Auftrag 3: 52.000 ÷ 40.000 = 1,30. Auftrag 4: 62.000 ÷ 50.000 = 1,24. Der höchste Wert (1,30) zeigt das beste Verhältnis → Auftrag 3. Nicht den absoluten Gewinn vergleichen, sondern die Relation!'
     },
     {
       nr: 20, thema: 'zusammenschluesse', typ: 'einfach',
@@ -275,7 +275,7 @@
         'Konzern'
       ],
       loesung: 5,
-      erklaerung: 'Konzern: rechtlich selbstständige Unternehmen unter einheitlicher Leitung. Bei einer Fusion würde ein Unternehmen untergehen.'
+      erklaerung: '§ 18 AktG: Ein Konzern besteht aus rechtlich selbstständigen Unternehmen unter einheitlicher Leitung. Hier bleibt die Bätje GmbH als eigene Firma bestehen – das ist typisch für einen Konzern. Bei einer Fusion (Verschmelzung) würde ein Unternehmen aufgelöst und im anderen aufgehen. Kartell und Interessengemeinschaft sind losere Kooperationen.'
     },
     {
       nr: 21, thema: 'organisation', typ: 'einfach',
@@ -289,7 +289,7 @@
         'Abteilungssystem'
       ],
       loesung: 2,
-      erklaerung: 'Überlagerung von Funktions- und Produktorientierung (Gitter) = Matrixorganisation.'
+      erklaerung: 'Eine Matrixorganisation überlagert zwei Gliederungsprinzipien (hier: Funktionen wie Einkauf/Produktion/Absatz und Produktbereiche wie PC/Netz/Software) in einem Gitter. Jeder Mitarbeiter hat zwei Vorgesetzte. Einliniensystem = ein Vorgesetzter, Stablinie = mit beratenden Stabsstellen, Mehrlinie = mehrere fachliche Vorgesetzte.'
     },
     {
       nr: 22, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -303,7 +303,7 @@
         'Auf dem Weltarbeitsmarkt herrscht allgemeine Freizügigkeit.'
       ],
       loesung: 2,
-      erklaerung: 'Globale Arbeitsteilung = Spezialisierung auf Standortvorteile → mehr Transporte.'
+      erklaerung: 'Globale Arbeitsteilung bedeutet, dass Länder sich auf ihre Standortvorteile spezialisieren (günstige Rohstoffe, niedrige Lohnkosten). Die Folge: Waren werden weltweit transportiert, die Transportmenge nimmt zu. Gleiche Sozial- und Umweltstandards gibt es dabei nicht, und allgemeine Freizügigkeit auf dem Weltarbeitsmarkt besteht ebenfalls nicht.'
     },
     {
       nr: 23, thema: 'arbeitsschutz', typ: 'zuordnung',
@@ -327,7 +327,7 @@
         { text: 'Richtungsangabe Rettungsweg', loesung: 5 }
       ],
       bildUrl: 'bilder/2022S-23.jpg',
-      erklaerung: 'Gelbes Dreieck = Warnung, roter Kreis = Verbot, rotes Quadrat = Brandschutz, grün = Rettung. 1 Handfeuermelder, 2 Warnung feuergefährlich, 3 Warnung elektr. Spannung, 4 Berühren verboten, 5 Rettungsweg-Pfeil, 6 Gehäuse unter Spannung – Berühren verboten, 7 Sammelstelle.'
+      erklaerung: 'ASR A1.3 / ISO 7010: Rotes Quadrat = Brandschutzzeichen (1 Handfeuermelder), gelbes Dreieck = Warnzeichen (2 feuergefährlich, 3 elektr. Spannung), roter Kreis = Verbotszeichen (4 Berühren verboten), grünes Rechteck = Rettungszeichen (5 Rettungsweg, 7 Sammelstelle). 6 „Gehäuse unter Spannung" ist ein Warnhinweis, der zum Verbot des Berührens führt.'
     },
     {
       nr: 24, thema: 'arbeitsschutz', typ: 'einfach',
@@ -341,7 +341,7 @@
         'jeden neuen Mitarbeiter zu einer Veranstaltung der Berufsgenossenschaft anmelden.'
       ],
       loesung: 4,
-      erklaerung: 'Unfallverhütungsvorschriften müssen an geeigneter Stelle zugänglich ausgehängt werden.'
+      erklaerung: '§ 15 DGUV Vorschrift 1: Der Arbeitgeber muss die Unfallverhütungsvorschriften im Betrieb an geeigneter Stelle aushängen oder auslegen, damit alle Beschäftigten jederzeit Einsicht nehmen können. Einmalige mündliche Information reicht nicht aus.'
     },
     {
       nr: 25, thema: 'arbeitsschutz', typ: 'einfach',
@@ -355,7 +355,7 @@
         'Immer in Windrichtung löschen, NICHT gegen den Wind'
       ],
       loesung: 3,
-      erklaerung: 'Tropf- und Fließbrände werden von oben nach unten gelöscht.'
+      erklaerung: 'Tropf- und Fließbrände (z. B. brennendes Öl, das herabtropft) werden von oben nach unten gelöscht, damit das Löschmittel der Schwerkraft folgend wirkt. Das Piktogramm „von unten löschen" wäre hier falsch. Alle anderen Regeln (Windrichtung, viele Löscher gleichzeitig, Brandstelle beobachten, von vorn nach hinten) sind korrekt.'
     },
     {
       nr: 26, thema: 'arbeitsschutz', typ: 'reihenfolge',
@@ -369,7 +369,7 @@
         { text: 'Schlauch in Richtung Feuer halten', loesung: 4 },
         { text: 'Zum Feuerlöschgerät laufen', loesung: 1 }
       ],
-      erklaerung: 'Hinlaufen → entnehmen → Sicherung ziehen → Schlauch aufs Feuer richten → Hebel betätigen.'
+      erklaerung: 'Merkregel für Dauerdruck-Feuerlöscher: 1. Hinlaufen, 2. aus Halterung nehmen, 3. Sicherungsstift/-lasche ziehen, 4. Schlauch in Richtung Feuer halten, 5. Hebel drücken/ziehen. Erst den Schlauch ausrichten, dann den Hebel betätigen – sonst wird das Löschmittel unkontrolliert freigesetzt.'
     },
     {
       nr: 27, thema: 'umweltschutz', typ: 'einfach',
@@ -383,7 +383,7 @@
         'Es wird ausreichend Verpackung eingesetzt, damit die Ware nicht beschädigt wird.'
       ],
       loesung: 2,
-      erklaerung: 'Wer verursacht, zahlt. (Gegenstück: Gemeinlastprinzip.)'
+      erklaerung: 'Das Verursacherprinzip besagt: Wer Umweltschäden verursacht, muss die Kosten für deren Beseitigung tragen. Es ist ein Grundprinzip der deutschen Umweltpolitik und im Umwelthaftungsgesetz verankert. Das Gegenstück ist das Gemeinlastprinzip (Kosten werden auf die Allgemeinheit verteilt).'
     },
     {
       nr: 28, thema: 'umweltschutz', typ: 'einfach',
@@ -397,7 +397,7 @@
         'Nur Bio-Lebensmittel in der Kantine verwenden'
       ],
       loesung: 3,
-      erklaerung: 'Recycling = Rückführung von Abfällen in den Stoffkreislauf.'
+      erklaerung: 'Recycling (§ 3 Abs. 25 KrWG) bedeutet die Rückführung von Abfällen in den Stoffkreislauf: Materialien werden getrennt gesammelt und als Rohstoff wiederverwertet. Das Duale System (Grüner Punkt) organisiert die Sammlung und Verwertung von Verpackungsabfällen. Die anderen Optionen beschreiben Vermeidung oder nachhaltige Beschaffung, nicht Recycling.'
     },
     {
       nr: 29, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -411,7 +411,7 @@
         'Nationalität/ethnische Herkunft'
       ],
       loesung: 4,
-      erklaerung: 'Die Charta nennt u. a. Alter, ethnische Herkunft/Nationalität, Geschlecht, Behinderung, Religion/Weltanschauung, sexuelle Orientierung, soziale Herkunft – nicht den Bildungsabschluss.'
+      erklaerung: 'Die „Charta der Vielfalt" ist eine Selbstverpflichtung von Unternehmen gegen Diskriminierung. Sie benennt sieben Dimensionen: Alter, ethnische Herkunft/Nationalität, Geschlecht/geschlechtliche Identität, körperliche/geistige Fähigkeiten, Religion/Weltanschauung, sexuelle Orientierung und soziale Herkunft. Der Ausbildungsstand oder die Art des Abschlusses gehört nicht dazu.'
     },
     {
       nr: 30, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -425,7 +425,7 @@
         'Die in der Vielfalt der Belegschaft liegenden Potenziale für das Unternehmen nutzbar machen'
       ],
       loesung: 5,
-      erklaerung: 'Diversity Management nutzt Vielfalt als Ressource.'
+      erklaerung: 'Diversity Management hat das Ziel, die Vielfalt der Belegschaft (unterschiedliche Erfahrungen, Perspektiven, Kompetenzen) als Potenzial für das Unternehmen zu nutzen – z. B. für Innovation, Kundennähe und Mitarbeiterzufriedenheit. Es geht nicht um Einsparung, sondern um wertschätzenden Umgang mit Unterschieden.'
     }
   ]
 });

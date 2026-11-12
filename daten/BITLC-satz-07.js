@@ -19,7 +19,7 @@
         'seit 2009 keinen Nachweis einer Ausbildereignungsprüfung mehr vorlegen.'
       ],
       loesung: 3,
-      erklaerung: '§ 28 BBiG: Ausbilden darf nur, wer persönlich und fachlich geeignet ist.'
+      erklaerung: '§ 28 BBiG: Ausbilden darf nur, wer persönlich und fachlich geeignet ist. Persönlich ungeeignet ist z. B., wer gegen das JArbSchG verstoßen hat; fachliche Eignung setzt berufliche Kenntnisse und pädagogische Fähigkeiten voraus (AEVO).'
     },
     {
       nr: 2, thema: 'rechtsformen', typ: 'einfach',
@@ -33,7 +33,7 @@
         'ein legales Kartell.'
       ],
       loesung: 1,
-      erklaerung: 'Die GmbH ist eine Kapitalgesellschaft und juristische Person des Privatrechts.'
+      erklaerung: 'Die GmbH ist eine Kapitalgesellschaft und juristische Person des Privatrechts (§ 13 GmbHG). Sie ist weder öffentlich-rechtlich noch ein Kartell; die Haftung ist auf das Gesellschaftsvermögen beschränkt.'
     },
     {
       nr: 3, thema: 'kennzahlen', typ: 'zahl',
@@ -41,7 +41,7 @@
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: 7.5, nachkommastellen: 1,
       einheit: '%',
-      erklaerung: '28.125 ÷ 375.000 × 100 = 7,5 %.'
+      erklaerung: 'Eigenkapitalrentabilität = Gewinn ÷ Eigenkapital × 100. Hier: 28.125 ÷ 375.000 × 100 = 7,5 %. Sie zeigt, wie gut sich das eingesetzte Eigenkapital verzinst.'
     },
     {
       nr: 4, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -55,7 +55,7 @@
         'Befristete Arbeitsverhältnisse sollen Arbeitssuchende schützen.'
       ],
       loesung: 4,
-      erklaerung: '§ 14 Abs. 4 TzBfG: Befristung braucht die Schriftform. Ohne Sachgrund max. 2 Jahre.'
+      erklaerung: '§ 14 Abs. 4 TzBfG: Die Befristung eines Arbeitsvertrags bedarf zu ihrer Wirksamkeit der Schriftform. Ohne sachlichen Grund ist eine Befristung bis zu zwei Jahren zulässig (§ 14 Abs. 2). Fehlt die Schriftform, gilt der Vertrag als unbefristet.'
     },
     {
       nr: 5, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -69,7 +69,7 @@
         'Gleichbehandlungspflicht'
       ],
       loesung: 4,
-      erklaerung: 'Fürsorge-, Beschäftigungs- und Gleichbehandlungspflicht sind Pflichten des Arbeitgebers.'
+      erklaerung: 'Verschwiegenheitspflicht ist eine Nebenpflicht des Arbeitnehmers (Treuepflicht). Fürsorge-, Beschäftigungs- und Gleichbehandlungspflicht treffen den Arbeitgeber. Die Haftung ist auf Vorsatz und grobe Fahrlässigkeit beschränkt – nicht „jede Haftung".'
     },
     {
       nr: 6, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -83,7 +83,7 @@
         'Zeitarbeitnehmer werden ausschließlich unbefristet eingestellt.'
       ],
       loesung: 2,
-      erklaerung: 'Arbeitgeber des Zeitarbeitnehmers ist der Verleiher – er zahlt den Lohn.'
+      erklaerung: 'Bei Arbeitnehmerüberlassung (AÜG) bleibt der Verleiher Arbeitgeber – er zahlt das Entgelt, gewährt Urlaub und führt Sozialversicherungsbeiträge ab. Der Entleiher hat nur das Weisungsrecht im Betrieb. Zeitarbeitnehmer haben die gleichen Rechte wie Stammkräfte (Equal Pay).'
     },
     {
       nr: 7, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -97,7 +97,7 @@
         'Urlaubsregelungen nach dem Bundesurlaubsgesetz'
       ],
       loesung: 5,
-      erklaerung: 'Individualarbeitsrecht regelt das Verhältnis einzelner AN zum AG (z. B. BUrlG, Kündigungsschutz). Betriebsvereinbarungen/betriebliche Regelungen = kollektives Arbeitsrecht.'
+      erklaerung: 'Individualarbeitsrecht regelt das Verhältnis zwischen einzelnem Arbeitnehmer und Arbeitgeber: BUrlG (Urlaubsanspruch), KSchG (Kündigungsschutz), BGB (Arbeitsvertrag), EFZG (Lohnfortzahlung). Kollektives Arbeitsrecht regelt das Verhältnis zwischen Arbeitnehmergruppen und dem AG: BetrVG (Betriebsvereinbarungen, Betriebsrat), TVG (Tarifverträge). Übertarifliche Gehälter und Überstundenregelungen sind betriebliche/tarifliche Regelungen (kollektiv).'
     },
     {
       nr: 8, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -111,7 +111,7 @@
         'Alleinerziehende haben Anspruch auf Urlaub in den Schulferien.'
       ],
       loesung: 2,
-      erklaerung: '§ 4 BUrlG: Wartezeit 6 Monate. Mindesturlaub 24 Werktage; Übertragung nur bis 31.03.; Krankheitstage werden nicht angerechnet.'
+      erklaerung: '§ 4 BUrlG: Der volle Urlaubsanspruch entsteht erst nach sechsmonatigem Bestehen des Arbeitsverhältnisses. Mindesturlaub: 24 Werktage bei 6-Tage-Woche (§ 3). Erkrankt man im Urlaub, werden die Tage mit Attest nicht angerechnet (§ 9). Übertragung nur bis 31. März des Folgejahrs (§ 7 Abs. 3).'
     },
     {
       nr: 9, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -125,7 +125,7 @@
         'Kündigungsschutz während der gesamten Schwangerschaft und bis vier Monate nach der Entbindung.'
       ],
       loesung: 5,
-      erklaerung: '§ 17 MuSchG. Schutzfristen: 6 Wochen vor, 8 Wochen nach der Geburt. Elternzeit regelt das BEEG (bis 8. Lebensjahr).'
+      erklaerung: '§ 17 MuSchG: Kündigungsverbot während der gesamten Schwangerschaft und bis vier Monate nach der Entbindung. Die Schutzfristen betragen 6 Wochen vor und 8 Wochen nach der Geburt (§§ 3, 6 MuSchG). Elternzeit regelt das BEEG (bis zum 8. Lebensjahr, nicht 6.).'
     },
     {
       nr: 10, thema: 'arbeitsvertrag', typ: 'zuordnung',
@@ -145,7 +145,7 @@
         { text: 'Wiederholter Verstoß gegen das Rauchverbot', loesung: 2 },
         { text: 'Schließung einer Abteilung', loesung: 3 }
       ],
-      erklaerung: 'Personenbedingt = AN kann nicht (Krankheit); verhaltensbedingt = AN will nicht (Pflichtverstöße); betriebsbedingt = betriebliche Gründe.'
+      erklaerung: 'Personenbedingt = der AN kann seine Leistung nicht erbringen (z. B. Langzeitkrankheit). Verhaltensbedingt = der AN verstößt schuldhaft gegen Pflichten (Alkoholverbot, Rauchverbot) – hier ist vorher eine Abmahnung nötig. Betriebsbedingt = betriebliche Gründe (Umsatzrückgang, Abteilungsschließung) machen den Arbeitsplatz überflüssig.'
     },
     {
       nr: 11, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -159,7 +159,7 @@
         'die Arbeiten im Großen und Ganzen zu unserer Zufriedenheit erledigt.“'
       ],
       loesung: 2,
-      erklaerung: '„stets … vollsten“ = sehr gut; „stets … vollen“ = gut; „zur Zufriedenheit“ = ausreichend; „bemüht“ = mangelhaft.'
+      erklaerung: 'Zeugnissprache-Notenskala: „stets zu unserer vollsten Zufriedenheit” = sehr gut (1). „Stets zu unserer vollen Zufriedenheit” = gut (2). „Zu unserer vollen Zufriedenheit” = befriedigend (3). „Zu unserer Zufriedenheit” = ausreichend (4). „Im Großen und Ganzen zu unserer Zufriedenheit” = mangelhaft (5). „Hat sich bemüht” = ungenügend (6). Schlüsselwörter: „stets” verstärkt, „vollsten” ist der Superlativ.'
     },
     {
       nr: 12, thema: 'mitbestimmung', typ: 'zahl',
@@ -167,7 +167,7 @@
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: 11, nachkommastellen: 0,
       einheit: 'Mitglieder',
-      erklaerung: 'Auch Befristete und Azubis sind AN: 537 + 17 + 2 = 556 → Stufe 401–700 → 11.'
+      erklaerung: 'Alle Arbeitnehmer zählen, auch Befristete und Azubis (§ 5 BetrVG). 537 + 17 + 2 = 556 AN. Nach § 9 BetrVG gilt die Stufe 401–700 AN → 11 Betriebsratsmitglieder.'
     },
     {
       nr: 13, thema: 'mitbestimmung', typ: 'einfach',
@@ -181,7 +181,7 @@
         'Einstellung von leitenden Mitarbeitern'
       ],
       loesung: 3,
-      erklaerung: '§ 87 Abs. 1 Nr. 5 BetrVG: Urlaubsgrundsätze/Urlaubsplan (Betriebsferien). Bei Umbau und Personalplanung nur Unterrichtung/Beratung.'
+      erklaerung: '§ 87 Abs. 1 Nr. 5 BetrVG: Urlaubsgrundsätze und Urlaubsplan (einschließlich Betriebsferien) unterliegen der erzwingbaren Mitbestimmung des Betriebsrats. Unternehmerische Entscheidungen wie Umbau des Geländes, Personalplanung, Umweltschutzmaßnahmen und Einstellung leitender Angestellter sind nicht mitbestimmungspflichtig – hier hat der BR allenfalls Informations- oder Beratungsrechte (§§ 90, 92, 105 BetrVG).'
     },
     {
       nr: 14, thema: 'mitbestimmung', typ: 'einfach',
@@ -195,7 +195,7 @@
         'Wer in die JAV gewählt wird, wird automatisch übernommen.'
       ],
       loesung: 4,
-      erklaerung: 'Die JAV arbeitet über den Betriebsrat; ab 5 Wahlberechtigten (unter 18 oder Azubis unter 25).'
+      erklaerung: '§ 60 BetrVG: Eine JAV kann nur gewählt werden, wenn ein Betriebsrat besteht – sie ist kein eigenständiges Organ. Wahlberechtigt sind AN unter 18 und Azubis unter 25 (ab 5 Wahlberechtigten). Die JAV vertritt Interessen gegenüber dem Betriebsrat, nicht direkt gegenüber der Geschäftsleitung.'
     },
     {
       nr: 15, thema: 'sozialversicherung', typ: 'einfach',
@@ -209,7 +209,7 @@
         'Arbeitsagenturen und BITLC'
       ],
       loesung: 4,
-      erklaerung: 'Arbeitsagentur (Bildungsgutschein) und Rentenversicherung (berufliche Reha/Umschulung) fördern finanziell.'
+      erklaerung: 'Die Agentur für Arbeit fördert Weiterbildung (z. B. Bildungsgutschein, § 81 SGB III). Die Rentenversicherung finanziert berufliche Rehabilitation und Umschulung (§ 16 SGB VI). BITLC und Krankenkassen sind keine Kostenträger für Weiterbildungsförderung.'
     },
     {
       nr: 16, thema: 'sozialversicherung', typ: 'einfach',
@@ -223,7 +223,7 @@
         'Wer sehr gut verdient, zahlt keine Sozialversicherungsbeiträge mehr.'
       ],
       loesung: 2,
-      erklaerung: 'Minijob: Arbeitgeber zahlt Pauschalbeiträge. Sonst teilen sich AG und AN die Beiträge (bis zur Beitragsbemessungsgrenze).'
+      erklaerung: 'Bei geringfügiger Beschäftigung (Minijob) zahlt der Arbeitgeber pauschal Beiträge zur Kranken- und Rentenversicherung. Normalerweise teilen sich AG und AN die Beiträge hälftig. Auch Gutverdiener zahlen Beiträge – aber nur bis zur Beitragsbemessungsgrenze.'
     },
     {
       nr: 17, thema: 'ausbildung', typ: 'einfach',
@@ -237,7 +237,7 @@
         'nimmt als Interessenvertreter der gewerblichen Wirtschaft Aufgaben in Beratung sowie Aus- und Weiterbildung wahr.'
       ],
       loesung: 5,
-      erklaerung: 'Die BITLC ist eine Körperschaft des öffentlichen Rechts, vertritt die gewerbliche Wirtschaft und ist zuständige Stelle für die Ausbildung.'
+      erklaerung: 'Die IHK (Industrie- und Handelskammer) ist eine Körperschaft des öffentlichen Rechts und Interessenvertretung der gewerblichen Wirtschaft (§ 1 IHKG). Zu ihren Aufgaben gehören: Beratung der Unternehmen, Aus- und Weiterbildung (zuständige Stelle nach § 71 BBiG), Abnahme von Prüfungen, Erstellen von Sachverständigengutachten. Sie überwacht nicht die Schutzgesetze (Gewerbeaufsicht), nimmt keine Unfallmeldungen entgegen (BG) und ist kein Verein.'
     },
     {
       nr: 18, thema: 'sozialversicherung', typ: 'einfach',
@@ -251,7 +251,7 @@
         'Sie schützt auch bei Unfällen in der Freizeit.'
       ],
       loesung: 4,
-      erklaerung: 'Träger: Berufsgenossenschaften (bzw. Unfallkassen). Versichert: Arbeits-, Wegeunfälle und Berufskrankheiten.'
+      erklaerung: 'Träger der gesetzlichen Unfallversicherung sind die Berufsgenossenschaften (SGB VII). Sie versichern Arbeitsunfälle, Wegeunfälle und Berufskrankheiten. Die Beiträge zahlt allein der Arbeitgeber. Freizeitunfälle sind nicht abgedeckt, und Ersthelfer sind ebenfalls versichert.'
     },
     {
       nr: 19, thema: 'sozialversicherung', typ: 'einfach',
@@ -265,7 +265,7 @@
         'Vorher müssen alle Ersparnisse aufgebraucht werden.'
       ],
       loesung: 3,
-      erklaerung: 'Bemessungszeitraum: Entgelt der letzten 12 Monate. ALG I ist eine Versicherungsleistung ohne Bedürftigkeitsprüfung.'
+      erklaerung: 'ALG I berechnet sich aus dem Bruttoentgelt der letzten 12 Monate (§ 149 SGB III). Es beträgt ca. 60 % (mit Kind 67 %) des pauschalierten Nettoentgelts. Anders als Bürgergeld ist ALG I eine Versicherungsleistung ohne Bedürftigkeitsprüfung – Ersparnisse müssen nicht aufgebraucht werden.'
     },
     {
       nr: 20, thema: 'sozialversicherung', typ: 'einfach',
@@ -279,7 +279,7 @@
         'Sie zahlt nur ambulante Pflege durch Angehörige.'
       ],
       loesung: 4,
-      erklaerung: 'Kinderlosenzuschlag ab 23 Jahren. Träger sind die Pflegekassen bei den Krankenkassen.'
+      erklaerung: '§ 55 Abs. 3 SGB XI: Kinderlose AN über 23 zahlen einen Zuschlag von 0,6 %, den sie allein tragen. Träger der Pflegeversicherung sind die Pflegekassen, die bei den Krankenkassen angesiedelt sind – keine eigenständigen staatlichen Institutionen.'
     },
     {
       nr: 21, thema: 'arbeitsschutz', typ: 'einfach',
@@ -293,7 +293,7 @@
         'Private Unfallversicherung'
       ],
       loesung: 2,
-      erklaerung: 'Arbeitsunfälle werden der Berufsgenossenschaft (Träger der gesetzl. Unfallversicherung) gemeldet.'
+      erklaerung: 'Arbeitsunfälle mit ärztlicher Behandlung müssen der zuständigen Berufsgenossenschaft gemeldet werden (§ 193 SGB VII). Die BG ist Träger der gesetzlichen Unfallversicherung und übernimmt die Heilbehandlungskosten. Private Unfall- oder Haftpflichtversicherung sind nicht zuständig.'
     },
     {
       nr: 22, thema: 'kennzahlen', typ: 'mehrfach',
@@ -308,7 +308,7 @@
         'Die Anzahl der tödlichen Wegeunfälle ist gestiegen.'
       ],
       loesung: [2, 6],
-      erklaerung: '223.973 > 188.452 und 367 → 394. Alle anderen Aussagen widersprechen den Zahlen.'
+      erklaerung: 'Wegeunfälle meldepflichtig: 223.973 → 188.452 (gesunken, also Vorjahr mehr = Aussage 2 stimmt). Tödliche Wegeunfälle: 367 → 394 (gestiegen = Aussage 6 stimmt). Arbeitsunfälle und Quote je 1.000 sind gesunken, tödliche Gesamtzahl ist gestiegen – daher stimmen die anderen Aussagen nicht.'
     },
     {
       nr: 23, thema: 'rechtsformen', typ: 'einfach',
@@ -322,7 +322,7 @@
         'Gründer sind automatisch über die Sozialversicherung abgesichert.'
       ],
       loesung: 2,
-      erklaerung: 'Markt- und Kundenkenntnis ist ein zentraler Erfolgsfaktor.'
+      erklaerung: 'Markt- und Kundenkenntnis ist ein zentraler Erfolgsfaktor für Existenzgründungen. Selbstständigkeit birgt durchaus finanzielles Risiko, guter Verdienst in der Gründungsphase ist nicht garantiert, und Selbstständige sind nicht automatisch sozialversichert (müssen sich selbst absichern).'
     },
     {
       nr: 24, thema: 'rechtsformen', typ: 'einfach',
@@ -336,7 +336,7 @@
         'Als Ist-Kaufmann braucht er keine Krankenversicherung.'
       ],
       loesung: 3,
-      erklaerung: 'Ist-Kaufmann ist man durch den Betrieb eines Handelsgewerbes; die Eintragung bestätigt das nur (deklaratorisch). Kann-Kaufmann: konstitutiv.'
+      erklaerung: '§ 1 HGB: Ist-Kaufmann ist, wer ein Handelsgewerbe betreibt – die Kaufmannseigenschaft entsteht durch die Tätigkeit selbst, nicht durch die Eintragung. Die Handelsregistereintragung wirkt nur deklaratorisch (bestätigend). Beim Kann-Kaufmann (§ 2 HGB) dagegen begründet erst die Eintragung die Kaufmannseigenschaft (konstitutiv).'
     },
     {
       nr: 25, thema: 'arbeitsschutz', typ: 'einfach',
@@ -350,7 +350,7 @@
         'Den nächsten Feuermelder betätigen'
       ],
       loesung: 1,
-      erklaerung: 'Zusätzlicher Sauerstoff facht den Brand an.'
+      erklaerung: 'Fenster öffnen führt dem Brand zusätzlichen Sauerstoff zu und facht ihn an. Richtig: Türen schließen (Sauerstoff abschneiden), warnen, Feuerwehr rufen (112), Brandmelder betätigen.'
     },
     {
       nr: 26, thema: 'arbeitsschutz', typ: 'zuordnung',
@@ -375,7 +375,7 @@
         { text: 'Gefahrensymbol/Gefahrenpiktogramm', loesung: 5 }
       ],
       bildUrl: 'bilder/2022W-26.jpg',
-      erklaerung: 'Gelb/schwarzes Dreieck = Warnung, blauer Kreis = Gebot, grün = Rettung, rotes Quadrat = Brandschutz, rote Raute = GHS-Gefahrenpiktogramm, roter Kreis mit Balken = Verbot.'
+      erklaerung: 'Nach ASR A1.3 / ISO 7010: Gelbes Dreieck (schwarz) = Warnzeichen, blauer Kreis (weiß) = Gebotszeichen, grünes Rechteck (weiß) = Rettungszeichen, rotes Quadrat (weiß) = Brandschutzzeichen, rote Raute (GHS) = Gefahrenpiktogramm, roter Kreis mit Balken = Verbotszeichen.'
     },
     {
       nr: 27, thema: 'arbeitsschutz', typ: 'einfach',
@@ -390,7 +390,7 @@
       ],
       loesung: 5,
       bildUrl: 'bilder/2022W-26.jpg',
-      erklaerung: 'Grünes Rettungszeichen „Sammelstelle“.'
+      erklaerung: 'Das grüne Rettungszeichen mit Personengruppe und Pfeilen zur Mitte kennzeichnet den Sammelpunkt (Sammelstelle) im Gefahrenfall nach ISO 7010 (E007). Dort treffen sich alle Mitarbeiter nach der Evakuierung zur Vollständigkeitskontrolle.'
     },
     {
       nr: 28, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -404,7 +404,7 @@
         'Sie können gelegentlich abends länger arbeiten.'
       ],
       loesung: 4,
-      erklaerung: 'Benachteiligung wegen ethnischer Herkunft (und „jung“ zusätzlich wegen Alters).'
+      erklaerung: '§ 11 AGG: Stellenausschreibungen müssen diskriminierungsfrei sein. „Deutscher Herkunft” diskriminiert wegen ethnischer Herkunft, „jung” wegen Alters. Fachliche Anforderungen (JAVA, Englisch, Reisebereitschaft, Überstunden) sind zulässig, da sie sich auf die Tätigkeit beziehen.'
     },
     {
       nr: 29, thema: 'organisation', typ: 'einfach',
@@ -418,7 +418,7 @@
         'Lösung und Weg werden vom Vorgesetzten im Rahmen der Hierarchie vorgegeben'
       ],
       loesung: 5,
-      erklaerung: 'Agile Teams organisieren sich selbst – Vorgaben von oben sind klassisch/hierarchisch.'
+      erklaerung: 'Agile Methoden (z. B. Scrum, Kanban) setzen auf Selbstorganisation der Teams, transparente Kommunikation und adaptives Planen. Wenn Lösung und Weg vom Vorgesetzten vorgegeben werden, ist das ein klassisch-hierarchisches Vorgehen (Wasserfall) – das Gegenteil von Agilität.'
     },
     {
       nr: 30, thema: 'organisation', typ: 'einfach',
@@ -432,7 +432,7 @@
         'Hoher Kommunikations- und Abstimmungsaufwand'
       ],
       loesung: 2,
-      erklaerung: 'Kurze Iterationen erlauben schnelle Reaktion auf Änderungen.'
+      erklaerung: 'Der Hauptvorteil agilen Projektmanagements ist die schnelle Anpassungsfähigkeit: Durch kurze Iterationen (Sprints) können neue Kundenwünsche zeitnah berücksichtigt werden. Der höhere Kommunikationsaufwand (Option 5) ist ein bekannter Nachteil, kein Vorteil.'
     }
   ]
 });

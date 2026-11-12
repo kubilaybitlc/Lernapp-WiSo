@@ -19,7 +19,7 @@
         'Mitgliedschaft im Prüfungsausschuss der BITLC'
       ],
       loesung: 3,
-      erklaerung: '§ 28 BBiG.'
+      erklaerung: '§ 28 BBiG: Ausbilder müssen persönlich und fachlich geeignet sein. Persönliche Eignung fehlt z. B. bei schweren Straftaten; fachliche Eignung setzt berufliche Kenntnisse und berufs- und arbeitspädagogische Fertigkeiten (AEVO) voraus. Verbandsmitgliedschaft ist keine Voraussetzung.'
     },
     {
       nr: 2, thema: 'ausbildung', typ: 'einfach',
@@ -33,7 +33,7 @@
         'haben keine Verschwiegenheitspflicht gegenüber Lebenspartnern.'
       ],
       loesung: 2,
-      erklaerung: '§ 13 Nr. 6 BBiG: Stillschweigen über Betriebs- und Geschäftsgeheimnisse – gegenüber allen Dritten.'
+      erklaerung: '§ 13 Nr. 6 BBiG: Azubis müssen über Betriebs- und Geschäftsgeheimnisse Stillschweigen bewahren – gegenüber allen Dritten, auch Lebenspartnern. Nicht alles im Betrieb ist ein Geheimnis: Gemeint sind Informationen, deren Geheimhaltung im Interesse des Unternehmens liegt (z. B. Kundendaten, Kalkulationen, Rezepturen). Eine jährliche schriftliche Bestätigung ist nicht erforderlich.'
     },
     {
       nr: 3, thema: 'ausbildung', typ: 'mehrfach',
@@ -62,7 +62,7 @@
         'Es beginnt ein Arbeitsverhältnis mit sechs Monaten Probezeit.'
       ],
       loesung: 1,
-      erklaerung: '§ 24 BBiG.'
+      erklaerung: '§ 24 BBiG: Werden Ausgebildete nach bestandener Prüfung ohne ausdrückliche Vereinbarung weiterbeschäftigt, gilt ein unbefristetes Arbeitsverhältnis als begründet. Es bedarf keiner gesonderten Kündigung des Ausbildungsverhältnisses.'
     },
     {
       nr: 5, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -76,7 +76,7 @@
         'Kürzung des Arbeitslosengeldes'
       ],
       loesung: 1,
-      erklaerung: 'Mehr Staatsausgaben erhöhen die Nachfrage (antizyklische Fiskalpolitik). Die anderen Maßnahmen dämpfen.'
+      erklaerung: 'Antizyklische Fiskalpolitik: In einer Rezession erhöht der Staat seine Investitionen (z. B. Infrastruktur), um die Nachfrage zu steigern und die Konjunktur zu beleben. Steuererhöhungen und Leitzinserhöhungen dämpfen die Wirtschaft (kontraktiv). Kürzungen von Kindergeld und Arbeitslosengeld senken das verfügbare Einkommen und damit den Konsum.'
     },
     {
       nr: 6, thema: 'unternehmensziele', typ: 'einfach',
@@ -90,7 +90,7 @@
         'Firmenwagen auf E-Mobilität umstellen und Papierbedarf senken'
       ],
       loesung: 3,
-      erklaerung: 'Personalkosten sparen geht meist mit Stellenabbau einher → konkurrierende Ziele.'
+      erklaerung: 'Zielkonflikt (konkurrierende Ziele) liegt vor, wenn die Erreichung eines Ziels die Erreichung eines anderen behindert. Personalkosten einsparen bedeutet meist weniger Personal → widerspricht der Arbeitsplatzsicherung. Die anderen Paare sind komplementär (unterstützen sich gegenseitig) oder neutral (beeinflussen sich nicht).'
     },
     {
       nr: 7, thema: 'ausbildung', typ: 'einfach',
@@ -104,7 +104,7 @@
         'Eine Probezeit muss nicht vereinbart werden.'
       ],
       loesung: 2,
-      erklaerung: '§ 20 BBiG.'
+      erklaerung: '§ 20 BBiG: Die Probezeit muss mindestens einen Monat und darf höchstens vier Monate betragen. In dieser Zeit kann das Ausbildungsverhältnis von beiden Seiten ohne Frist und ohne Angabe von Gründen gekündigt werden (§ 22 Abs. 1 BBiG).'
     },
     {
       nr: 8, thema: 'mitbestimmung', typ: 'einfach',
@@ -118,7 +118,7 @@
         'Betriebsverfassungsgesetz'
       ],
       loesung: 5,
-      erklaerung: '§§ 60–73 BetrVG.'
+      erklaerung: '§§ 60–73 BetrVG regeln die Jugend- und Auszubildendenvertretung (JAV): Wahl, Amtszeit, Aufgaben und Zusammenarbeit mit dem Betriebsrat. Nicht im BBiG oder JArbSchG, obwohl es um Jugendliche geht.'
     },
     {
       nr: 9, thema: 'mitbestimmung', typ: 'einfach',
@@ -132,7 +132,7 @@
         'hat man bei allen betrieblichen Belangen ein Mitspracherecht.'
       ],
       loesung: 2,
-      erklaerung: '§ 70 Abs. 1 Nr. 1 BetrVG. Die JAV handelt über den Betriebsrat, nicht direkt gegenüber dem Arbeitgeber.'
+      erklaerung: '§ 70 Abs. 1 Nr. 1 BetrVG: Die JAV kann beim Betriebsrat Maßnahmen beantragen, die den Jugendlichen und Auszubildenden dienen. Die JAV handelt jedoch nicht direkt gegenüber dem Arbeitgeber – sie wirkt über den Betriebsrat. Kein allgemeines Mitspracherecht bei allen Belangen, und die Teilnahme an Betriebsratssitzungen ist nicht auf zweimal im Jahr beschränkt.'
     },
     {
       nr: 10, thema: 'mitbestimmung', typ: 'einfach',
@@ -146,7 +146,7 @@
         'Er muss 17 sein und darf maximal sechs Monate dort gearbeitet haben.'
       ],
       loesung: 3,
-      erklaerung: '§ 8 BetrVG.'
+      erklaerung: '§ 8 BetrVG: Wählbar ist, wer volljährig ist und dem Betrieb seit mindestens sechs Monaten angehört. Eine abgeschlossene Ausbildung ist nicht nötig. Wahlberechtigt (aktiv) ist man schon ab 16 (§ 7 BetrVG), aber passiv wählbar erst ab 18.'
     },
     {
       nr: 11, thema: 'ausbildung', typ: 'einfach',
@@ -160,7 +160,7 @@
         'Freistellung an zwei Arbeitstagen vor der Abschlussprüfung'
       ],
       loesung: 3,
-      erklaerung: '§ 8 JArbSchG: max. 8 h/Tag, 40 h/Woche. Pause nach 4,5 h, 12 h Freizeit, 6–20 Uhr, Freistellung am Arbeitstag unmittelbar vor der Prüfung.'
+      erklaerung: '§ 8 JArbSchG: Jugendliche dürfen höchstens 8 Stunden täglich und 40 Stunden wöchentlich arbeiten. Da 40 h/Woche zulässig ist, ist Option 3 korrekt. Pause nach spätestens 4,5 h (nicht 5 h). Ruhezeit zwischen zwei Arbeitstagen: 12 h (nicht 10 h). Arbeitszeit: 6–20 Uhr (nicht erst ab 8 Uhr). Freistellung: am Arbeitstag unmittelbar vor der Prüfung (§ 10 JArbSchG), nicht an zwei Tagen.'
     },
     {
       nr: 12, thema: 'ausbildung', typ: 'einfach',
@@ -174,7 +174,7 @@
         'Nach der Ausbildung zur Kauffrau für IT-System-Management ein Fernlehrgang „Business English“'
       ],
       loesung: 5,
-      erklaerung: 'Fortbildung = Erweiterung beruflicher Kompetenzen nach abgeschlossener Ausbildung. Der Lehrgang während der Ausbildung gehört zur Ausbildung selbst.'
+      erklaerung: '§ 1 Abs. 4 BBiG: Berufliche Fortbildung dient der Erhaltung, Anpassung oder Erweiterung beruflicher Kompetenzen nach einer abgeschlossenen Berufsausbildung. „Business English" nach der Ausbildung ist eine Anpassungsfortbildung. Ein Lehrgang während der Ausbildung gehört zur Ausbildung selbst, nicht zur Fortbildung. Ein Segelkurs ist privat. Ein Studium nach der Ausbildung ist Weiterbildung im weiteren Sinne, aber keine Fortbildung nach BBiG.'
     },
     {
       nr: 13, thema: 'arbeitsvertrag', typ: 'zuordnung',
@@ -194,7 +194,7 @@
         { text: 'Geschäftsführung und Betriebsrat arbeiten unter Beachtung der Tarifverträge und Gesetze konstruktiv zusammen.', loesung: 3 },
         { text: 'Jugendlichen sind je nach Alter mindestens 25 Werktage Urlaub zu gewähren.', loesung: 6 }
       ],
-      erklaerung: 'Vertrauensvolle Zusammenarbeit: § 2 BetrVG. Jugendurlaub: § 19 JArbSchG.'
+      erklaerung: 'Zusammenarbeit von Betriebsrat und Geschäftsführung unter Beachtung der Tarifverträge → § 2 BetrVG (vertrauensvolle Zusammenarbeit). Urlaubsanspruch für Jugendliche nach Alter gestaffelt → § 19 JArbSchG (nicht BUrlG, da das JArbSchG als Spezialgesetz vorgeht). BBiG regelt die Ausbildung, HGB das Handelsrecht, TVG Tarifverträge.'
     },
     {
       nr: 14, thema: 'tarifrecht', typ: 'einfach',
@@ -208,7 +208,7 @@
         'Arbeitgeber können mit einer Aussperrung reagieren.'
       ],
       loesung: 5,
-      erklaerung: 'Aussperrung = Kampfmittel der Arbeitgeber. Streik erst nach Ende der Friedenspflicht und erfolgreicher Urabstimmung (meist 75 %).'
+      erklaerung: 'Bei einem (auch unbefristeten) Streik dürfen Arbeitgeber mit einer Aussperrung reagieren – das ist ihr Arbeitskampfmittel. Ein Streik bedarf keiner Genehmigung durch das Arbeitsministerium, muss aber von einer Gewerkschaft getragen sein (nicht DGB-Bundesvorstand). Er darf nur nach Ende der Friedenspflicht und erfolgreicher Urabstimmung (meist 75 % Zustimmung) erfolgen.'
     },
     {
       nr: 15, thema: 'arbeitsvertrag', typ: 'datum',
@@ -229,7 +229,7 @@
         'muss nur auf Verlangen des Arbeitnehmers ausgestellt werden.'
       ],
       loesung: 5,
-      erklaerung: '§ 109 GewO: Das qualifizierte Zeugnis (mit Leistung und Verhalten) gibt es auf Verlangen des Arbeitnehmers.'
+      erklaerung: '§ 109 GewO: Das einfache Zeugnis (Art und Dauer der Beschäftigung) muss der Arbeitgeber immer ausstellen. Das qualifizierte Zeugnis (zusätzlich: Leistung und Verhalten) wird nur auf Verlangen des Arbeitnehmers erstellt. Es darf keine Angaben zum Privatleben enthalten und muss wohlwollend formuliert sein (Grundsatz der wohlwollenden Beurteilung).'
     },
     {
       nr: 17, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -243,7 +243,7 @@
         '38-jähriger IT-System-Elektroniker, seit einem Jahr im Betriebsrat'
       ],
       loesung: 2,
-      erklaerung: 'Azubis (nach Probezeit), Schwangere und Betriebsräte sind ordentlich nicht kündbar; Schwerbehinderte nur mit Zustimmung des Integrationsamts.'
+      erklaerung: 'Azubis nach der Probezeit (§ 22 BBiG), Schwangere (§ 17 MuSchG) und Betriebsratsmitglieder (§ 15 KSchG) haben besonderen Kündigungsschutz. Schwerbehinderte können nur mit Zustimmung des Integrationsamts gekündigt werden (§ 168 SGB IX). Der 32-jährige Ledige ohne Kinder hat den geringsten Sozialschutz (§ 1 Abs. 3 KSchG: Alter, Betriebszugehörigkeit, Unterhaltspflichten, Schwerbehinderung).'
     },
     {
       nr: 18, thema: 'rechtsformen', typ: 'einfach',
@@ -257,7 +257,7 @@
         'Ein Stammkapital von 50.000 € muss vollständig eingezahlt werden.'
       ],
       loesung: 4,
-      erklaerung: 'Die GmbH entsteht erst mit Eintragung ins Handelsregister (konstitutiv).'
+      erklaerung: '§ 11 GmbHG: Die GmbH entsteht als juristische Person erst mit Eintragung ins Handelsregister (konstitutive Wirkung). Ein Gesellschafter reicht zur Gründung; Stammkapital mind. 25.000 € (nicht 50.000 €); Vertrag muss notariell beurkundet werden.'
     },
     {
       nr: 19, thema: 'rechtsformen', typ: 'einfach',
@@ -271,7 +271,7 @@
         'Ein mündlicher Gesellschaftsvertrag genügt.'
       ],
       loesung: 3,
-      erklaerung: 'Gesellschafter dürfen Geschäftsführer sein. 120.000 € < 250.000 €; Eintragung beim Amtsgericht; Vertrag notariell.'
+      erklaerung: '§ 6 Abs. 3 GmbHG: Gesellschafter können zugleich Geschäftsführer sein – das ist bei der GmbH sogar üblich. Die Eintragung erfolgt beim Amtsgericht (Registergericht), nicht beim Arbeitsgericht. Der Gesellschaftsvertrag muss notariell beurkundet werden (§ 2 GmbHG), ein mündlicher Vertrag genügt nicht. 120.000 € Einlagen sind weniger als das Zehnfache des Mindeststammkapitals (250.000 €).'
     },
     {
       nr: 20, thema: 'kennzahlen', typ: 'zahl',
@@ -279,7 +279,7 @@
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: 17500, nachkommastellen: 0,
       einheit: 'EUR',
-      erklaerung: '§ 29 GmbHG: nach Geschäftsanteilen. 35.000 ÷ 120.000 × 60.000 = 17.500 €.'
+      erklaerung: '§ 29 Abs. 3 GmbHG: Ohne abweichende Satzungsregelung wird der Gewinn nach dem Verhältnis der Geschäftsanteile verteilt. Gesamteinlage: 85.000 + 35.000 = 120.000 €. Wegeners Anteil: 35.000 ÷ 120.000 = 29,17 %. Gewinnanteil: 60.000 × 35.000 ÷ 120.000 = 17.500 €. Trout erhält 42.500 €.'
     },
     {
       nr: 21, thema: 'arbeitsvertrag', typ: 'mehrfach',
@@ -294,7 +294,7 @@
         'Bewerber ohne PC-Kenntnisse wird abgelehnt'
       ],
       loesung: [1, 4],
-      erklaerung: 'Alter und ethnische Herkunft/Hautfarbe sind geschützte Merkmale. Zusatzurlaub für Schwerbehinderte ist gesetzlich vorgesehen.'
+      erklaerung: '§ 1 AGG schützt vor Benachteiligung wegen Rasse/ethnischer Herkunft, Geschlecht, Religion, Behinderung, Alter und sexueller Identität. „Junge Mitarbeiter" diskriminiert nach Alter; Ablehnung wegen Hautfarbe nach ethnischer Herkunft. Zusatzurlaub für Schwerbehinderte ist gesetzlich vorgesehen (§ 208 SGB IX) und kein AGG-Verstoß.'
     },
     {
       nr: 22, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -308,7 +308,7 @@
         'Einführung einer Frauenquote'
       ],
       loesung: 1,
-      erklaerung: 'Aufteilung der Aufgaben innerhalb des Betriebs auf spezialisierte Mitarbeiter.'
+      erklaerung: 'Betriebliche (innerbetriebliche) Arbeitsteilung bedeutet, dass ein Arbeitsprozess im Betrieb in Teilaufgaben zerlegt und auf spezialisierte Mitarbeiter verteilt wird. Drei Informatiker mit je einem Fachgebiet (App-Programmierung, Wartung, Schulungen) sind ein Paradebeispiel. Bezug aus China oder Logo-Veredelung durch einen Dienstleister ist überbetriebliche Arbeitsteilung.'
     },
     {
       nr: 23, thema: 'organisation', typ: 'einfach',
@@ -323,7 +323,7 @@
       ],
       loesung: 2,
       bildUrl: 'bilder/2025W-23.jpg',
-      erklaerung: 'Einliniensystem mit Stabsstelle (Rechtsabteilung).'
+      erklaerung: 'Stab-Liniensystem = Einliniensystem (jede Stelle hat genau einen Vorgesetzten) ergänzt um Stabsstellen. Die Rechtsabteilung ist gestrichelt angehängt → Stabsstelle: sie berät die Leitung, hat aber keine eigene Weisungsbefugnis gegenüber den Linienabteilungen. Im Mehrliniensystem hätte eine Stelle mehrere Vorgesetzte; eine Matrix- oder Spartenorganisation liegt hier nicht vor.'
     },
     {
       nr: 24, thema: 'organisation', typ: 'einfach',
@@ -338,7 +338,7 @@
       ],
       loesung: 5,
       bildUrl: 'bilder/2025W-23.jpg',
-      erklaerung: 'Stabsstellen beraten ohne Weisungsbefugnis.'
+      erklaerung: 'Stabsstellen (hier: Rechtsabteilung) haben eine beratende Funktion ohne eigene Weisungsbefugnis gegenüber den Linienabteilungen. Fertigung und Vertrieb sind Linienstellen (nicht Stäbe). Der Einkauf untersteht der Beschaffung (nicht dem Vertrieb). Die Fertigung ist als Linienstelle an Weisungen der Geschäftsführung gebunden.'
     },
     {
       nr: 25, thema: 'sozialversicherung', typ: 'zahl',
@@ -346,7 +346,7 @@
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: 287, nachkommastellen: 0,
       einheit: 'EUR',
-      erklaerung: 'AG und AN teilen beides je zur Hälfte: (14,6 + 1,8) ÷ 2 = 8,2 %. 3.500 × 0,082 = 287,00 €.'
+      erklaerung: 'Gesamtbeitrag KV = allgemeiner Satz + Zusatzbeitrag = 14,6 % + 1,8 % = 16,4 %. AG und AN teilen sich beides je zur Hälfte: 16,4 % ÷ 2 = 8,2 %. AN-Anteil: 3.500 × 8,2 % = 287,00 €. Seit 2019 wird auch der Zusatzbeitrag paritätisch geteilt.'
     },
     {
       nr: 26, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -360,7 +360,7 @@
         'Erhöhung der Produktionstiefe an Standorten weltweit'
       ],
       loesung: 4,
-      erklaerung: 'Freier Kapital- und Investitionsverkehr fördert die internationale Verflechtung.'
+      erklaerung: 'Globalisierung = zunehmende internationale Verflechtung von Märkten, Kapital und Arbeit. Offenheit für ausländische Investitionen (Kapitalverkehrsfreiheit) fördert die Globalisierung. Importzölle und Einschränkung des Technologietransfers sind protektionistische Maßnahmen, die die Globalisierung hemmen. Subventionen zur Marktbereinigung verzerren den Wettbewerb.'
     },
     {
       nr: 27, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -374,7 +374,7 @@
         'Alle insolvenzbedrohten Unternehmen werden subventioniert.'
       ],
       loesung: 3,
-      erklaerung: 'Freier Markt + sozialer Ausgleich durch den Staat (Sozialstaatsprinzip).'
+      erklaerung: 'Art. 20 Abs. 1 GG (Sozialstaatsprinzip): Die Soziale Marktwirtschaft verbindet freien Wettbewerb mit sozialem Ausgleich. Der Staat sorgt durch Sozialversicherung, Mindestlohn, Wohngeld und Transferleistungen für Chancengleichheit. Er fördert keine Monopole/Kartelle (GWB verbietet sie), setzt keine Fest-/Planpreise (das wäre Planwirtschaft) und subventioniert nicht pauschal insolvenzbedrohte Unternehmen.'
     },
     {
       nr: 28, thema: 'zusammenschluesse', typ: 'mehrfach',
@@ -389,7 +389,7 @@
         'Pflicht zur Änderung der Rechtsform'
       ],
       loesung: [1, 2],
-      erklaerung: 'Synergien und größere Finanzkraft sind typische Fusionsziele.'
+      erklaerung: 'Fusion = Verschmelzung zweier Unternehmen zu einem. Typische Vorteile: Rationalisierung durch gemeinsame Nutzung von Ressourcen (Synergien) und eine breitere Kapitalbasis für Investitionen. Keine EU-Prämie, keine Pflicht zum Rechtsformwechsel und keine geringere USt.'
     },
     {
       nr: 29, thema: 'umweltschutz', typ: 'einfach',
@@ -403,7 +403,7 @@
         'Verringerung ist wichtiger als Vermeidung.'
       ],
       loesung: 2,
-      erklaerung: 'Emissionen nach BImSchG umfassen Luftverunreinigungen, Geräusche, Erschütterungen, Licht, Wärme, Strahlen.'
+      erklaerung: '§ 3 Abs. 3 BImSchG: Emissionen umfassen Luftverunreinigungen, Geräusche, Erschütterungen, Licht, Wärme und Strahlen (Elektrosmog). Höhere Schornsteine verteilen Schadstoffe nur in größerem Radius, verringern aber nicht die Gesamtmenge.'
     },
     {
       nr: 30, thema: 'umweltschutz', typ: 'einfach',
@@ -417,7 +417,7 @@
         'ist ausschließlich über das Duale System zu entsorgen.'
       ],
       loesung: 3,
-      erklaerung: 'Blauer Engel = staatliches Umweltzeichen für umweltfreundliche Produkte.'
+      erklaerung: 'Der Blaue Engel ist das älteste staatliche Umweltzeichen Deutschlands und kennzeichnet Produkte, die aus schadstoffarmen Rohstoffen und besonders umweltschonend hergestellt wurden. Er macht keine Aussage über Haltbarkeit, Sicherheit oder Entsorgungspflichten.'
     }
   ]
 });

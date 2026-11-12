@@ -19,7 +19,7 @@
         'von einem Monat ist nur bei dreijähriger Ausbildung vorgeschrieben.'
       ],
       loesung: 4,
-      erklaerung: '§ 20 BBiG.'
+      erklaerung: '§ 20 BBiG: Die Probezeit in der Ausbildung muss mindestens einen Monat und darf höchstens vier Monate betragen. Sie ist zwingend vorgeschrieben – ein Ausbildungsvertrag ohne Probezeit ist unwirksam in diesem Punkt.'
     },
     {
       nr: 2, thema: 'ausbildung', typ: 'einfach',
@@ -47,7 +47,7 @@
         'Es endet mit dem Ende der Berufsschulpflicht.'
       ],
       loesung: 3,
-      erklaerung: '§ 21 Abs. 2 BBiG: Ende mit Bekanntgabe des Prüfungsergebnisses.'
+      erklaerung: '§ 21 Abs. 2 BBiG: Besteht der Azubi die Abschlussprüfung, endet das Ausbildungsverhältnis mit Bekanntgabe des Prüfungsergebnisses – auch wenn die vertraglich vereinbarte Ausbildungszeit noch nicht abgelaufen ist. Eine Kündigung ist dafür nicht nötig.'
     },
     {
       nr: 4, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -61,7 +61,7 @@
         'Befristung nur mit Zustimmung des Betriebsrats'
       ],
       loesung: 2,
-      erklaerung: 'Befristete Verträge enden automatisch mit Fristablauf (§ 15 TzBfG).'
+      erklaerung: '§ 15 TzBfG: Ein befristeter Arbeitsvertrag endet automatisch mit Ablauf der vereinbarten Zeit, ohne dass es einer Kündigung bedarf. Ohne Sachgrund ist eine Befristung bis zu zwei Jahren zulässig (§ 14 Abs. 2 TzBfG). Eine Zustimmung von Betriebsrat oder Agentur für Arbeit ist nicht erforderlich.'
     },
     {
       nr: 5, thema: 'mitbestimmung', typ: 'mehrfach',
@@ -90,7 +90,7 @@
         'Bundesagentur für Arbeit.'
       ],
       loesung: 2,
-      erklaerung: 'Leitende Angestellte werden nicht vom Betriebsrat vertreten (ggf. Sprecherausschuss).'
+      erklaerung: '§ 80 BetrVG: Der Betriebsrat vertritt die Interessen der Arbeitnehmer. Leitende Angestellte (§ 5 Abs. 3 BetrVG) zählen nicht dazu – für sie kann ein Sprecherausschuss gebildet werden (SprAuG). Der Betriebsrat vertritt auch keine Arbeitgeber, Kammern oder Behörden.'
     },
     {
       nr: 7, thema: 'sozialversicherung', typ: 'einfach',
@@ -104,7 +104,7 @@
         'Finanzgericht'
       ],
       loesung: 4,
-      erklaerung: 'Streitigkeiten mit Sozialversicherungsträgern → Sozialgericht.'
+      erklaerung: '§ 51 SGG: Für Streitigkeiten in Angelegenheiten der Sozialversicherung (Kranken-, Renten-, Unfall-, Pflege- und Arbeitslosenversicherung) ist das Sozialgericht zuständig. Amts-/Landgericht = Zivilsachen, Arbeitsgericht = Arbeitsrecht, Finanzgericht = Steuern.'
     },
     {
       nr: 8, thema: 'sozialversicherung', typ: 'einfach',
@@ -118,7 +118,7 @@
         'Wer darüber verdient, hat keinen Anspruch auf Erwerbsminderungsrente.'
       ],
       loesung: 2,
-      erklaerung: 'BBG = Obergrenze für die Beitragsberechnung. Nicht verwechseln mit der Versicherungspflichtgrenze (nur KV/PV).'
+      erklaerung: 'Die Beitragsbemessungsgrenze (BBG) ist die Obergrenze, bis zu der das Einkommen für die Beitragsberechnung herangezogen wird. Auf den Teil darüber werden keine Beiträge erhoben. Achtung: Die BBG befreit nicht von der Versicherungspflicht! Die Versicherungspflichtgrenze (nur KV/PV) ist etwas anderes.'
     },
     {
       nr: 9, thema: 'wirtschaft-grundlagen', typ: 'mehrfach',
@@ -133,7 +133,7 @@
         'Personengesellschaft'
       ],
       loesung: [3, 4],
-      erklaerung: 'Dienstleistung = tertiär; Gewinnerzielung = erwerbswirtschaftlich. GmbH = Kapitalgesellschaft.'
+      erklaerung: 'IT-Dienstleistung gehört zum tertiären Sektor (Dienstleistungen). Primär = Urproduktion (Land-/Forstwirtschaft), sekundär = Industrie/Handwerk. Als GmbH verfolgt das Unternehmen Gewinnerzielung → erwerbswirtschaftlich (nicht gemeinwirtschaftlich). Die GmbH ist eine Kapitalgesellschaft, keine Personengesellschaft.'
     },
     {
       nr: 10, thema: 'arbeitsschutz', typ: 'einfach',
@@ -147,7 +147,7 @@
         'Die Unterweisung erfolgt durch externe Berater der Gewerkschaft.'
       ],
       loesung: 3,
-      erklaerung: '§ 11 ASiG: Arbeitsschutzausschuss bei mehr als 20 Beschäftigten.'
+      erklaerung: '§ 11 ASiG: Betriebe mit mehr als 20 Beschäftigten müssen einen Arbeitsschutzausschuss (ASA) bilden, der mindestens vierteljährlich tagt. Arbeitsschutzbestimmungen sind zwingendes Recht, Ergonomie ist keine freiwillige Leistung, und der Betriebsrat hat ein Mitbestimmungsrecht (§ 87 Abs. 1 Nr. 7 BetrVG).'
     },
     {
       nr: 11, thema: 'sozialversicherung', typ: 'mehrfach',
@@ -162,7 +162,7 @@
         'Sehkraft verschlechtert sich, Besuch beim Augenarzt'
       ],
       loesung: [1, 3],
-      erklaerung: 'Arbeitsunfall und Wegeunfall (direkter Weg).'
+      erklaerung: '§ 8 SGB VII: Die gesetzliche Unfallversicherung deckt Arbeitsunfälle (im Betrieb) und Wegeunfälle (direkter Weg zwischen Wohnung und Arbeitsstätte). Freizeitunfälle, Krankheiten und Kinderbetreuung sind Sache der Krankenversicherung, nicht der Unfallversicherung.'
     },
     {
       nr: 12, thema: 'sozialversicherung', typ: 'einfach',
@@ -176,7 +176,7 @@
         'Private Krankenkasse'
       ],
       loesung: 3,
-      erklaerung: 'Berufsgenossenschaften (gewerbliche Wirtschaft) und Unfallkassen (öffentlicher Dienst).'
+      erklaerung: 'Träger der gesetzlichen Unfallversicherung sind die Berufsgenossenschaften (für die gewerbliche Wirtschaft) und die Unfallkassen (für den öffentlichen Dienst). Die Beiträge zahlt allein der Arbeitgeber – der Arbeitnehmer zahlt keinen Beitrag zur Unfallversicherung.'
     },
     {
       nr: 13, thema: 'arbeitsschutz', typ: 'zuordnung',
@@ -199,7 +199,7 @@
         { text: 'Schild: gelbes Dreieck mit Strahlenstern', loesung: 2 }
       ],
       bildUrl: 'bilder/2024S-13.jpg',
-      erklaerung: 'Grün = Rettung, rot = Brandschutz, blau = Gebot, gelb = Warnung.'
+      erklaerung: 'Sicherheitskennzeichnung nach ASR A1.3: Grüne Schilder = Rettungszeichen (Fluchtweg, Erste Hilfe), rote Schilder = Brandschutzzeichen (Feuerlöscher, Löschschlauch), blaue Kreise = Gebotszeichen (z. B. Netzstecker ziehen), gelbe Dreiecke = Warnzeichen (z. B. Laserstrahl).'
     },
     {
       nr: 14, thema: 'arbeitsschutz', typ: 'einfach',
@@ -213,7 +213,7 @@
         'Sofort den Sammelpunkt aufsuchen'
       ],
       loesung: 3,
-      erklaerung: 'Brandschutzordnung: 1. Brand melden, 2. in Sicherheit bringen, 3. Löschversuch unternehmen.'
+      erklaerung: 'Brandschutzordnung (DIN 14096): 1. Brand melden (Brandmelder oder Notruf 112), 2. gefährdete Personen in Sicherheit bringen, 3. Löschversuch unternehmen – nur wenn möglich und ohne Eigengefährdung. Sofortiges Löschen ohne Meldung ist falsch, da die Feuerwehr Zeit braucht.'
     },
     {
       nr: 15, thema: 'rechtsformen', typ: 'einfach',
@@ -235,7 +235,7 @@
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: 34980, nachkommastellen: 0,
       einheit: 'EUR',
-      erklaerung: 'Simmer: 330.000 − 198.000 = 132.000 € = 40 %. 87.450 × 0,4 = 34.980,00 €.'
+      erklaerung: '§ 29 Abs. 3 GmbHG: Ohne abweichende Satzungsregelung wird der Gewinn nach dem Verhältnis der Geschäftsanteile verteilt. Simmers Anteil: 330.000 − 198.000 = 132.000 €. Anteil am Stammkapital: 132.000 ÷ 330.000 = 0,4 (40 %). Gewinnanteil: 87.450 × 0,4 = 34.980,00 €.'
     },
     {
       nr: 17, thema: 'rechtsformen', typ: 'einfach',
@@ -249,7 +249,7 @@
         'Mehrere Geschäftsführer sind nicht zulässig.'
       ],
       loesung: 3,
-      erklaerung: 'Ein-Personen-GmbH ist möglich. HRB (Abt. B), Mindeststammkapital 25.000 € (UG ab 1 €).'
+      erklaerung: '§ 1 GmbHG: Eine GmbH kann auch von nur einer Person gegründet werden (Ein-Personen-GmbH). Eintragung erfolgt im Handelsregister Abt. B (HRB, nicht HRA). Das Mindeststammkapital beträgt 25.000 € (§ 5 GmbHG), nicht 5.000 €. Mehrere Geschäftsführer sind zulässig.'
     },
     {
       nr: 18, thema: 'arbeitsvertrag', typ: 'zahl',
@@ -271,14 +271,14 @@
         'Im Businessplan werden u. a. Finanzkonzept und Unternehmensidee vorgestellt.'
       ],
       loesung: 5,
-      erklaerung: 'Businessplan: Geschäftsidee, Markt, Marketing, Organisation, Finanzplanung.'
+      erklaerung: 'Ein Businessplan wird vom Gründer selbst erstellt und enthält u. a. die Geschäftsidee, Marktanalyse, Marketingstrategie, Organisation und einen Finanzplan. Er ist nicht nur für Darlehen nötig, sondern dient auch der eigenen Planung und wird weder von der IHK ausgestellt noch ins Handelsregister eingetragen.'
     },
     {
       nr: 20, thema: 'kennzahlen', typ: 'zahl',
       frage: 'Auftrag 1: Aufwand 600.000 €, Ertrag 720.000 €\nAuftrag 2: Aufwand 320.000 €, Ertrag 400.000 €\nAuftrag 3: Aufwand 160.000 €, Ertrag 208.000 €\nAuftrag 4: Aufwand 200.000 €, Ertrag 248.000 €\nWelcher Auftrag wurde am wirtschaftlichsten abgewickelt? (Nummer)',
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: 3, nachkommastellen: 0,
-      erklaerung: 'Ertrag ÷ Aufwand: 1,20 / 1,25 / 1,30 / 1,24 → Auftrag 3.'
+      erklaerung: 'Wirtschaftlichkeit = Ertrag ÷ Aufwand. Auftrag 1: 720.000 ÷ 600.000 = 1,20; Auftrag 2: 400.000 ÷ 320.000 = 1,25; Auftrag 3: 208.000 ÷ 160.000 = 1,30; Auftrag 4: 248.000 ÷ 200.000 = 1,24. Auftrag 3 hat mit 1,30 die höchste Wirtschaftlichkeit (je 1 € Aufwand = 1,30 € Ertrag).'
     },
     {
       nr: 21, thema: 'organisation', typ: 'einfach',
@@ -292,7 +292,7 @@
         'Abteilungssystem'
       ],
       loesung: 1,
-      erklaerung: 'Jede Stelle hat genau einen Vorgesetzten → Einliniensystem.'
+      erklaerung: 'Im Einliniensystem hat jede Stelle genau einen Vorgesetzten (klare Zuständigkeit). Im Mehrliniensystem erhält eine Stelle Weisungen von mehreren Vorgesetzten. Das Stabliniensystem ergänzt das Einliniensystem um beratende Stabsstellen (ohne Weisungsbefugnis). Keine Stabsstellen im Schema → kein Stabliniensystem.'
     },
     {
       nr: 22, thema: 'zusammenschluesse', typ: 'einfach',
@@ -306,7 +306,7 @@
         'Vereinbarung eines Höchstpreises'
       ],
       loesung: 2,
-      erklaerung: 'Preis-, Gebiets- und Quotenkartelle sind verboten. Normen- und Typenkartelle sind (nach der Prüfungslogik) anmeldepflichtig bzw. erlaubt.'
+      erklaerung: '§ 1 GWB: Kartelle sind grundsätzlich verboten, insbesondere Preiskartelle (Mindest-/Höchstpreise), Gebietskartelle und Quotenkartelle. Normen- und Typenkartelle (einheitliche Abmessungen, Standards) können als Widerspruchskartelle beim Bundeskartellamt angemeldet werden, da sie den Wettbewerb weniger stark einschränken.'
     },
     {
       nr: 23, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -320,7 +320,7 @@
         'Auszubildende nach der Probezeit'
       ],
       loesung: 4,
-      erklaerung: 'Ein Alter über 45 begründet keinen Sonderkündigungsschutz.'
+      erklaerung: 'Besonderen Kündigungsschutz genießen: Betriebsratsmitglieder (§ 15 KSchG), Schwerbehinderte (§ 168 SGB IX, Zustimmung des Integrationsamts), werdende Mütter (§ 17 MuSchG) und Auszubildende nach der Probezeit (§ 22 Abs. 2 BBiG, nur aus wichtigem Grund). Ein bestimmtes Alter allein begründet keinen Sonderkündigungsschutz.'
     },
     {
       nr: 24, thema: 'tarifrecht', typ: 'einfach',
@@ -334,7 +334,7 @@
         'Arbeitsbefreiung für Prüfertätigkeit'
       ],
       loesung: 4,
-      erklaerung: 'Alles andere gehört in den Manteltarifvertrag.'
+      erklaerung: 'Der Lohn-/Gehaltstarifvertrag (Entgelttarifvertrag) regelt die konkreten Gehaltssätze für die einzelnen Entgeltgruppen. Er hat eine kurze Laufzeit (oft 12–24 Monate). Kündigungsfristen, Arbeitszeit, Urlaub und Arbeitsbefreiung stehen im Manteltarifvertrag (lange Laufzeit).'
     },
     {
       nr: 25, thema: 'tarifrecht', typ: 'einfach',
@@ -348,7 +348,7 @@
         'Arbeitskampfmaßnahmen müssen jeder Verhandlung vorausgehen.'
       ],
       loesung: 1,
-      erklaerung: 'Tarifparteien: Gewerkschaften und Arbeitgeberverbände (oder einzelne Arbeitgeber beim Haustarif).'
+      erklaerung: '§ 2 TVG: Tarifvertragsparteien sind auf Arbeitnehmerseite die Gewerkschaften und auf Arbeitgeberseite die Arbeitgeberverbände (Verbandstarif) oder ein einzelner Arbeitgeber (Haustarif/Firmentarif). Während der Laufzeit gilt die Friedenspflicht – Arbeitskämpfe sind verboten.'
     },
     {
       nr: 26, thema: 'sozialversicherung', typ: 'einfach',
@@ -362,7 +362,7 @@
         'besagt, dass sich die Sozialversicherungszweige gegenseitig finanzieren.'
       ],
       loesung: 4,
-      erklaerung: 'Umlageverfahren: Die Erwerbstätigen finanzieren die aktuellen Renten.'
+      erklaerung: 'Der Generationenvertrag basiert auf dem Umlageverfahren: Die Beiträge der aktuell Erwerbstätigen werden direkt zur Finanzierung der aktuellen Renten verwendet – nicht angespart. Jede Generation finanziert also die vorherige. Problem: Demografischer Wandel (weniger Beitragszahler, mehr Rentner) belastet das System.'
     },
     {
       nr: 27, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -376,7 +376,7 @@
         'Nationalität/ethnische Herkunft'
       ],
       loesung: 4,
-      erklaerung: '§ 1 AGG nennt keinen Bildungsabschluss.'
+      erklaerung: '§ 1 AGG schützt vor Benachteiligung wegen: ethnischer Herkunft, Geschlecht, Religion/Weltanschauung, Behinderung, Alter und sexueller Identität. Die Art des Bildungsabschlusses ist kein geschütztes Merkmal – danach darf also differenziert werden.'
     },
     {
       nr: 28, thema: 'arbeitsschutz', typ: 'einfach',
@@ -391,7 +391,7 @@
       ],
       loesung: 5,
       bildUrl: 'bilder/2024S-28.jpg',
-      erklaerung: 'Brandschutzzeichen F002 „Löschschlauch“.'
+      erklaerung: 'Rotes Brandschutzschild mit aufgerollter Schlauchtrommel und Flamme = Brandschutzzeichen F002 „Löschschlauch”. Rote Schilder kennzeichnen immer Brandschutzeinrichtungen (Feuerlöscher, Löschschlauch, Brandmelder). Grüne Schilder = Rettung/Fluchtweg, gelbe = Warnung.'
     },
     {
       nr: 29, thema: 'umweltschutz', typ: 'mehrfach',
@@ -406,7 +406,7 @@
         'Ausweitung der Produktion bei nur wenigen Produkten'
       ],
       loesung: [3, 5],
-      erklaerung: 'Rohöl bleibt ein endlicher fossiler Rohstoff. Recycling und nachwachsende Rohstoffe schonen Ressourcen.'
+      erklaerung: 'Nachhaltiges Wirtschaften bedeutet, die Bedürfnisse der Gegenwart zu befriedigen, ohne die Möglichkeiten zukünftiger Generationen einzuschränken. Recycling und nachwachsende Rohstoffe schonen endliche Ressourcen. Rohöl ist zwar „schonend abgebaut", bleibt aber ein fossiler, endlicher Rohstoff und ist daher nicht nachhaltig.'
     },
     {
       nr: 30, thema: 'umweltschutz', typ: 'einfach',
@@ -420,7 +420,7 @@
         'Die Kosten werden auf alle Einwohner verteilt.'
       ],
       loesung: 4,
-      erklaerung: 'Verursacher zahlt. (Gemeinlastprinzip = Allgemeinheit zahlt.)'
+      erklaerung: 'Verursacherprinzip: Wer einen Umweltschaden verursacht, muss die Kosten für dessen Beseitigung tragen. Gegenstück ist das Gemeinlastprinzip, bei dem die Allgemeinheit (z. B. über Steuern) die Kosten übernimmt. Abfallvermeidung hat Vorrang vor Trennung und Entsorgung (§ 6 KrWG).'
     }
   ]
 });

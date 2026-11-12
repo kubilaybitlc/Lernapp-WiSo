@@ -24,7 +24,7 @@
         { text: 'Mindestens', loesung: 1 },
         { text: 'Maximal', loesung: 4 }
       ],
-      erklaerung: '§ 20 BBiG: mindestens 1, höchstens 4 Monate.'
+      erklaerung: '§ 20 BBiG: Die Probezeit in einem Ausbildungsverhältnis muss mindestens einen Monat und darf höchstens vier Monate betragen. In dieser Zeit kann das Ausbildungsverhältnis von beiden Seiten jederzeit ohne Frist und ohne Angabe von Gründen schriftlich gekündigt werden (§ 22 Abs. 1 BBiG).'
     },
     {
       nr: 2, thema: 'ausbildung', typ: 'einfach',
@@ -38,7 +38,7 @@
         'der Dokumentation der vermittelten Ausbildungsinhalte.'
       ],
       loesung: 5,
-      erklaerung: 'Der Ausbildungsnachweis dokumentiert den Ausbildungsverlauf; er ist Zulassungsvoraussetzung, wird aber nicht benotet.'
+      erklaerung: '§ 13 Nr. 7 BBiG: Der Azubi muss einen Ausbildungsnachweis (Berichtsheft) führen. Er dokumentiert die vermittelten Ausbildungsinhalte und ist Zulassungsvoraussetzung zur Abschlussprüfung (§ 43 Abs. 1 Nr. 2 BBiG), fließt aber nicht in die Note ein. Die Kontrolle liegt beim Ausbilder, nicht bei der Gewerkschaft.'
     },
     {
       nr: 3, thema: 'arbeitsvertrag', typ: 'zuordnung',
@@ -58,7 +58,7 @@
         { text: 'Mehrfacher Verstoß gegen das Rauchverbot trotz Abmahnung', loesung: 2 },
         { text: 'Ständige Verspätungen trotz wiederholter Abmahnung', loesung: 2 }
       ],
-      erklaerung: 'Verhalten (steuerbar) → verhaltensbedingt; Krankheit → personenbedingt; Wirtschaftslage → betriebsbedingt.'
+      erklaerung: 'Verhaltensbedingt: Der AN verstößt schuldhaft gegen Pflichten (Alkoholverbot, Rauchverbot, Verspätungen) – vorher ist eine Abmahnung erforderlich. Personenbedingt: Der AN kann seine Leistung nicht erbringen, ohne es steuern zu können (Langzeitkrankheit). Betriebsbedingt: Wirtschaftliche Gründe machen den Arbeitsplatz überflüssig (§ 1 KSchG).'
     },
     {
       nr: 4, thema: 'mitbestimmung', typ: 'einfach',
@@ -72,7 +72,7 @@
         'Besteht ein Tarifvertrag, sind weitere Regelungen per Betriebsvereinbarung ausgeschlossen.'
       ],
       loesung: 4,
-      erklaerung: 'Betriebsvereinbarungen gelten unmittelbar und zwingend für die Arbeitnehmer des Betriebs (§ 77 Abs. 4 BetrVG).'
+      erklaerung: '§ 77 Abs. 4 BetrVG: Betriebsvereinbarungen gelten unmittelbar und zwingend für alle Arbeitnehmer des Betriebs – sie sind keine Empfehlung. Sie werden zwischen Arbeitgeber und Betriebsrat geschlossen (nicht Gewerkschaft). Sie gelten nur im Betrieb, nicht branchenweit. Wo ein Tarifvertrag greift, darf die Betriebsvereinbarung ergänzen, aber nicht verschlechtern.'
     },
     {
       nr: 5, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -86,7 +86,7 @@
         'kann in der Schutzfrist nach der Entbindung beschäftigt werden.'
       ],
       loesung: 4,
-      erklaerung: '§ 17 MuSchG. Nach der Entbindung gilt ein absolutes Beschäftigungsverbot (8 Wochen); Mutterschutzlohn = voller Durchschnittsverdienst.'
+      erklaerung: '§ 17 MuSchG: Kündigungsverbot während der gesamten Schwangerschaft und bis vier Monate nach der Entbindung. Nach der Geburt gilt ein absolutes Beschäftigungsverbot von 8 Wochen (§ 6 MuSchG). Das Mutterschaftsgeld plus AG-Zuschuss sichert den vollen Durchschnittsverdienst – es gibt keine Lohneinbußen.'
     },
     {
       nr: 6, thema: 'tarifrecht', typ: 'einfach',
@@ -100,7 +100,7 @@
         'Haustarifverträge gelten für die gesamte Branche.'
       ],
       loesung: 3,
-      erklaerung: 'Allgemeinverbindlicherklärung (§ 5 TVG) durch das Arbeitsministerium. Haustarif gilt nur für ein Unternehmen.'
+      erklaerung: '§ 5 TVG: Das Bundesarbeitsministerium kann einen Tarifvertrag für allgemeinverbindlich erklären – dann gilt er für alle Arbeitnehmer der Branche, auch für Nichtgewerkschaftsmitglieder. Ein Haustarifvertrag (Firmentarifvertrag) gilt nur für das einzelne Unternehmen, nicht die ganze Branche. Während der Friedenspflicht sind Streiks unzulässig.'
     },
     {
       nr: 7, thema: 'tarifrecht', typ: 'reihenfolge',
@@ -115,7 +115,7 @@
         { text: 'Einleitung einer Schlichtung', loesung: 3 },
         { text: 'Erklärung des Scheiterns der Tarifverhandlung', loesung: 2 }
       ],
-      erklaerung: 'Verhandlungen → Scheitern → Schlichtung einleiten → Schlichterspruch → Annahme → Abschluss.'
+      erklaerung: 'Der Ablauf einer Tarifauseinandersetzung folgt festen Stufen: Zunächst verhandeln Arbeitgeber(verband) und Gewerkschaft. Scheitern die Verhandlungen, wird eine Schlichtung eingeleitet, ein neutraler Schlichter gibt einen Vorschlag ab. Nehmen beide Seiten an, wird der neue Tarifvertrag abgeschlossen. Erst wenn auch die Schlichtung scheitert, kann die Gewerkschaft nach Urabstimmung zum Streik aufrufen.'
     },
     {
       nr: 8, thema: 'sozialversicherung', typ: 'einfach',
@@ -129,7 +129,7 @@
         'Sie ist nur nötig, wenn die Inflation steigt.'
       ],
       loesung: 1,
-      erklaerung: 'Durch den demografischen Wandel (weniger Beitragszahler, mehr Rentner) sinkt das Rentenniveau → Versorgungslücke.'
+      erklaerung: 'Durch den demografischen Wandel kommen immer weniger Beitragszahler auf immer mehr Rentner (Generationenvertrag). Das gesetzliche Rentenniveau sinkt langfristig auf unter 50 % des letzten Nettogehalts – es entsteht eine Versorgungslücke. Private Vorsorge (z. B. Riester-Rente, betriebliche Altersvorsorge, Fondssparpläne) ist daher als Ergänzung empfohlen.'
     },
     {
       nr: 9, thema: 'sozialversicherung', typ: 'mehrfach',
@@ -144,7 +144,7 @@
         'Spezieller VL-Sparplan der Bank'
       ],
       loesung: [3, 6],
-      erklaerung: 'Gefördert (Arbeitnehmersparzulage) werden u. a. Bausparverträge und VL-Fondssparpläne.'
+      erklaerung: '5. VermBG: Vermögenswirksame Leistungen (VL) werden vom Staat mit der Arbeitnehmersparzulage gefördert, wenn sie in bestimmte Anlageformen fließen: Bausparverträge (Zulage 9 %, max. 43 € p. a.) und Beteiligungssparpläne/VL-Fondssparpläne (Zulage 20 %, max. 80 € p. a.). Sparlose, Versicherungen oder reine Banksparpläne ohne Beteiligungscharakter werden nicht gefördert.'
     },
     {
       nr: 10, thema: 'ausbildung', typ: 'einfach',
@@ -158,7 +158,7 @@
         'Bestimmungen über Kenntnisse, Fertigkeiten und Fähigkeiten, die zu vermitteln sind'
       ],
       loesung: 5,
-      erklaerung: '§ 5 BBiG: Ausbildungsordnung enthält Berufsbild, Ausbildungsrahmenplan, Dauer, Prüfungsanforderungen.'
+      erklaerung: '§ 5 BBiG: Die Ausbildungsordnung wird vom zuständigen Bundesministerium erlassen und enthält: Berufsbezeichnung, Ausbildungsdauer, Ausbildungsberufsbild (Fertigkeiten, Kenntnisse und Fähigkeiten), Ausbildungsrahmenplan und Prüfungsanforderungen. Vergütungshöhe und Urlaubsdauer regelt sie nicht – das steht im Tarifvertrag bzw. im BUrlG.'
     },
     {
       nr: 11, thema: 'sozialversicherung', typ: 'einfach',
@@ -172,7 +172,7 @@
         'Lohnsteuerklasse 5'
       ],
       loesung: 1,
-      erklaerung: 'I = ledig; II = alleinerziehend; III/V bzw. IV/IV = verheiratet; VI = Zweitjob.'
+      erklaerung: '§ 38b EStG: Steuerklasse I gilt für ledige, geschiedene oder verwitwete Arbeitnehmer ohne Kinder bzw. ohne Alleinerziehendenentlastung. Klasse II: Alleinerziehende mit Kind. Klasse III/V oder IV/IV: Verheiratete (Kombination je nach Einkommensverhältnis). Klasse VI: Zweit- und Nebenjob. Kinderlosigkeit allein ändert die Klasse nicht, erhöht aber den Pflegeversicherungsbeitrag.'
     },
     {
       nr: 12, thema: 'rechtsformen', typ: 'einfach',
@@ -186,7 +186,7 @@
         'Die GmbH ist eine Personengesellschaft.'
       ],
       loesung: 2,
-      erklaerung: '§ 5 GmbHG: Mindeststammkapital 25.000 €. Komplementär/Kommanditist gibt es bei der KG.'
+      erklaerung: '§ 5 Abs. 1 GmbHG: Das Mindeststammkapital einer GmbH beträgt 25.000 €. Die Gesellschafter haften nur mit ihrer Einlage, nicht mit dem Privatvermögen (beschränkte Haftung). Komplementär und Kommanditist sind Begriffe der KG (§§ 161 ff. HGB), nicht der GmbH. Die GmbH ist eine Kapitalgesellschaft und juristische Person.'
     },
     {
       nr: 13, thema: 'organisation', typ: 'zuordnung',
@@ -206,7 +206,7 @@
         { text: 'Einige Instanzen werden entlastet, Spezialkenntnisse der Stabsstellen werden besser genutzt.', loesung: 4 }
       ],
       bildUrl: 'bilder/2021W-13.jpg',
-      erklaerung: '1 Einlinien-, 2 Matrix-, 3 Mehrlinien-, 4 Stabliniensystem.'
+      erklaerung: 'Org. 1 (ein Vorgesetzter je Stelle) = Einliniensystem: klare Zuständigkeiten, aber lange Wege. Org. 2 (Gitter) = Matrixorganisation: hoher Kommunikationsbedarf, Teamfähigkeit nötig. Org. 3 (mehrere Vorgesetzte) = Mehrliniensystem: kurze Wege, aber Gefahr uneinheitlicher Führung (Kompetenzüberschneidungen). Org. 4 (angehängte Stabsstellen) = Stabliniensystem: Experten beraten Instanzen, entlasten sie, haben aber keine Weisungsbefugnis.'
     },
     {
       nr: 14, thema: 'ausbildung', typ: 'einfach',
@@ -220,7 +220,7 @@
         'das Recht, eine Verschiebung des Prüfungstermins zu verlangen.'
       ],
       loesung: 2,
-      erklaerung: '§ 8 BBiG: Verkürzung auf gemeinsamen Antrag – die BITLC entscheidet.'
+      erklaerung: '§ 8 Abs. 1 BBiG: Die Ausbildungszeit kann auf gemeinsamen Antrag von Azubi und Betrieb verkürzt werden – entscheiden muss die zuständige Kammer (z. B. IHK). Ohne IHK-Zustimmung darf die Ausbildung also nicht eigenmächtig gekürzt werden. Voraussetzungen: z. B. höherer Schulabschluss, Vorausbildung oder überdurchschnittliche Leistungen.'
     },
     {
       nr: 15, thema: 'mitbestimmung', typ: 'einfach',
@@ -234,7 +234,7 @@
         'Ja, wenn die Geschäftsleitung einverstanden ist.'
       ],
       loesung: 4,
-      erklaerung: 'Aktives Wahlrecht hat keine Mindestbeschäftigungsdauer; maßgeblich ist das Alter am Wahltag. (Seit Juni 2021 liegt das Wahlalter bei 16.)'
+      erklaerung: '§ 7 BetrVG: Aktives Wahlrecht (wählen dürfen) haben alle Arbeitnehmer ab dem Wahlalter, die dem Betrieb angehören – es gibt keine Mindestbeschäftigungsdauer. Maßgeblich ist das Alter am Wahltag: Frau Monion ist seit 16.04.2021 volljährig, bei der Wahl im Mai also wahlberechtigt. Gewerkschaftsmitgliedschaft oder Zustimmung des Arbeitgebers sind nicht nötig. (Seit 2021 liegt das aktive Wahlalter bei 16 Jahren.)'
     },
     {
       nr: 16, thema: 'mitbestimmung', typ: 'einfach',
@@ -248,7 +248,7 @@
         'Eine Absolventin wechselt zu einem anderen Arbeitgeber.'
       ],
       loesung: 2,
-      erklaerung: '§ 87 Abs. 1 Nr. 3 BetrVG: vorübergehende Verlängerung der Arbeitszeit (Überstunden).'
+      erklaerung: '§ 87 Abs. 1 Nr. 3 BetrVG: Der Betriebsrat hat ein zwingendes Mitbestimmungsrecht bei der vorübergehenden Verkürzung oder Verlängerung der betriebsüblichen Arbeitszeit (z. B. Überstunden/Mehrarbeit in der Weihnachtssaison). Kündigungen in der Probezeit, gesetzliche Mindestlohn-Änderungen und Geschäftsführer-Bestellung fallen nicht unter die Mitbestimmung nach § 87 BetrVG.'
     },
     {
       nr: 17, thema: 'arbeitsschutz', typ: 'einfach',
@@ -262,7 +262,7 @@
         'Externe Spezialfirmen'
       ],
       loesung: 3,
-      erklaerung: 'Die Verantwortung für den Arbeitsschutz trägt der Arbeitgeber (DGUV Vorschrift 1, § 4).'
+      erklaerung: 'DGUV Vorschrift 1, § 4: Die Verantwortung für Arbeitsschutz und Sicherheitsunterweisung liegt beim Arbeitgeber bzw. den von ihm beauftragten betrieblichen Vorgesetzten. Fachkräfte für Arbeitssicherheit (§ 6 ASiG) beraten nur, tragen aber keine Durchführungsverantwortung. Der Betriebsrat wirkt mit, ist aber nicht für die Unterweisung zuständig.'
     },
     {
       nr: 18, thema: 'arbeitsvertrag', typ: 'zuordnung',
@@ -284,7 +284,7 @@
         { text: 'Tägliche Arbeitszeit von acht Stunden, im Ausnahmefall verlängerbar', loesung: 2 },
         { text: 'Besonderer Kündigungsschutz und Anspruch auf fünf Tage Zusatzurlaub', loesung: 1 }
       ],
-      erklaerung: 'Elternzeit bis 3 Jahre je Kind; Schwerbehinderte: 5 Tage Zusatzurlaub und Zustimmung des Integrationsamts bei Kündigung.'
+      erklaerung: 'SGB IX, § 168: Schwerbehinderte haben besonderen Kündigungsschutz (Zustimmung des Integrationsamts) und 5 Tage Zusatzurlaub (§ 208 SGB IX). BEEG: Elternzeit bis zu 36 Monate je Kind mit Kündigungsschutz. BUrlG: Mindestens 24 Werktage (6-Tage-Woche) bzw. 20 Arbeitstage (5-Tage-Woche). EFZG: Entgeltfortzahlung auch an Feiertagen. ArbZG: Grundsätzlich max. 8 Stunden/Tag, vorübergehend auf 10 Stunden verlängerbar.'
     },
     {
       nr: 19, thema: 'umweltschutz', typ: 'einfach',
@@ -298,7 +298,7 @@
         'Häufige Bestellungen von Kleinpackungen vermeiden'
       ],
       loesung: 4,
-      erklaerung: 'Hochglanzpapier ist schwer recycelbar und ressourcenintensiv.'
+      erklaerung: 'Hochglanzkataloge verbrauchen mehr Ressourcen (Energie, Chemikalien, Beschichtung) und sind schwerer recycelbar als Recyclingpapier – das ist keine Umweltschutzmaßnahme, sondern das Gegenteil. Nachfüllbare Textmarker, Recyclingpapier, weniger Verpackungsmüll und gebündelte Bestellungen (weniger Lieferfahrten, weniger Verpackung) dienen alle dem Umweltschutz.'
     },
     {
       nr: 20, thema: 'umweltschutz', typ: 'einfach',
@@ -312,7 +312,7 @@
         'ist ausschließlich über das Duale System zu entsorgen.'
       ],
       loesung: 3,
-      erklaerung: 'Der Blaue Engel steht für umweltfreundliche Produkte.'
+      erklaerung: 'Der „Blaue Engel" ist das älteste Umweltzeichen weltweit (seit 1978, RAL gGmbH / Umweltbundesamt). Er kennzeichnet Produkte und Dienstleistungen, die besonders umweltschonend hergestellt wurden oder im Gebrauch die Umwelt weniger belasten. Er sagt nichts über Haltbarkeit, Handhabungssicherheit oder Umweltpreise aus. Die Entsorgung über das Duale System (Grüner Punkt) ist davon unabhängig.'
     },
     {
       nr: 21, thema: 'arbeitsschutz', typ: 'einfach',
@@ -326,7 +326,7 @@
         'Den Unfall fotografieren und an die Geschäftsleitung senden'
       ],
       loesung: 2,
-      erklaerung: 'Keimfrei abdecken; keine Hausmittel, Blasen nicht öffnen. (Kleinflächig kurz mit handwarmem Wasser kühlen.)'
+      erklaerung: 'Erste Hilfe bei Verbrennungen: Die Wunde mit keimfreiem Verbandmaterial (spezielle Brandwundenverbände) abdecken. Keine Salben, Öle, Talk oder Hausmittel auftragen – das erhöht die Infektionsgefahr und erschwert die ärztliche Behandlung. Brandblasen nie öffnen (Infektionsrisiko). Kleinflächige Verbrennungen dürfen kurz mit handwarmem (nicht eiskaltem) Wasser gekühlt werden.'
     },
     {
       nr: 22, thema: 'arbeitsvertrag', typ: 'mehrfach',
@@ -341,7 +341,7 @@
         'Position 6'
       ],
       loesung: [1, 2],
-      erklaerung: '1: Ausschreibung nicht geschlechtsneutral (kein m/w/d). 2: „jung“ = Altersdiskriminierung.'
+      erklaerung: 'AGG (§§ 1, 7, 11): Stellenausschreibungen müssen diskriminierungsfrei sein. Position 1 verstößt, weil „Fachinformatiker” ohne Zusatz (m/w/d) nicht geschlechtsneutral formuliert ist – das benachteiligt andere Geschlechter. Position 2 verstößt, weil „jung” eine unmittelbare Altersdiskriminierung darstellt. Die übrigen Positionen (Gehalt, Weiterbildung, Gestaltungsmöglichkeiten, Team) sind sachliche Arbeitgebereigenschaften und zulässig.'
     },
     {
       nr: 23, thema: 'datenschutz', typ: 'einfach',
@@ -355,7 +355,7 @@
         'Sie können die Herausgabe des Quelltextes verweigern.'
       ],
       loesung: 1,
-      erklaerung: '§ 69b UrhG: Bei Programmen aus dem Arbeitsverhältnis stehen die Verwertungsrechte dem Arbeitgeber zu; Urheber bleibt der Entwickler.'
+      erklaerung: '§ 69b UrhG: Wird ein Computerprogramm von einem Arbeitnehmer in Wahrnehmung seiner Aufgaben geschaffen, stehen dem Arbeitgeber automatisch alle vermögensrechtlichen Befugnisse (Verwertungsrechte) zu, sofern nichts anderes vereinbart ist. Das Urheberrecht selbst (Persönlichkeitsrecht) verbleibt beim Entwickler – es ist nicht übertragbar. Ein Verbot der Nutzung, Beteiligung an Erlösen oder Verweigerung der Quellcode-Herausgabe steht dem AN nicht zu.'
     },
     {
       nr: 24, thema: 'ausbildung', typ: 'einfach',
@@ -369,7 +369,7 @@
         'Kostenlose medizinische Versorgung in der EU'
       ],
       loesung: 2,
-      erklaerung: 'Europass = Transparenz von Qualifikationen in Europa.'
+      erklaerung: 'Der Europass ist ein EU-weites Portfolio (Beschluss 2018/646/EU), das Qualifikationen, Kompetenzen und Berufserfahrung in einem europaweit einheitlichen und verständlichen Format darstellt. Er umfasst u. a. den Lebenslauf, den Sprachenpass und die Zeugniserläuterung. Er ersetzt keinen Reisepass und berechtigt weder zu Freifahrten noch zu Firmengründungen oder medizinischer Versorgung.'
     },
     {
       nr: 25, thema: 'datenschutz', typ: 'einfach',
@@ -383,7 +383,7 @@
         'Sie werden immer per HTTPS übermittelt.'
       ],
       loesung: 2,
-      erklaerung: 'Typisch: Link auf gefälschte Seite zur Dateneingabe, oft gefälschter Absender.'
+      erklaerung: 'Phishing-Mails zeichnen sich dadurch aus, dass sie Zugangsdaten (Passwörter, PINs, Kreditkartennummern) abgreifen wollen – typischerweise über einen Link zu einer gefälschten Eingabeseite. Der angezeigte Absender ist oft gefälscht und stimmt nicht mit der tatsächlichen E-Mail-Adresse überein. Phishing-Mails können durchaus Anhänge enthalten (Malware), haben oft keine persönliche Anrede und nutzen kein HTTPS als Sicherheitsmerkmal.'
     },
     {
       nr: 26, thema: 'datenschutz', typ: 'einfach',
@@ -397,7 +397,7 @@
         'E-Mail ausdrucken und archivieren'
       ],
       loesung: 4,
-      erklaerung: 'Nicht klicken, nicht weiterleiten – IT informieren.'
+      erklaerung: 'Bei einer verdächtigen E-Mail (Phishing-Verdacht): Keinesfalls den Link anklicken oder Daten eingeben – sonst können Zugangsdaten und Kreditkartendaten gestohlen werden. Nicht weiterleiten, damit sich die Bedrohung nicht ausbreitet. Die E-Mail löschen und sofort die IT-Abteilung bzw. den IT-Sicherheitsbeauftragten informieren, damit weitere Maßnahmen (Sperrung, Warnung an Kollegen) eingeleitet werden können.'
     },
     {
       nr: 27, thema: 'datenschutz', typ: 'einfach',
@@ -411,7 +411,7 @@
         'Nur Seiten mit Werbung sind unsicher'
       ],
       loesung: 3,
-      erklaerung: 'Auch seriöse Seiten können kompromittiert sein.'
+      erklaerung: 'IT-Sicherheitsgrundsatz: Auch bekannte, vertrauenswürdige Webseiten können durch Hackerangriffe kompromittiert werden (z. B. eingeschleuster Schadcode, Drive-by-Downloads). Deshalb gelten Standardsicherheitsmaßnahmen immer: aktuelle Browser-Version, Virenscanner, Firewall, regelmäßige Updates. Das Vertrauen in den Betreiber allein schützt nicht vor Angriffen auf dessen Server.'
     },
     {
       nr: 28, thema: 'datenschutz', typ: 'einfach',
@@ -425,7 +425,7 @@
         'Ein öffentliches WLAN ist sicher, wenn man sich mit E-Mail-Adresse einloggt.'
       ],
       loesung: 4,
-      erklaerung: 'VPN baut einen verschlüsselten Tunnel ins Firmennetz auf.'
+      erklaerung: 'In einem öffentlichen, unverschlüsselten WLAN können Dritte den Datenverkehr mitlesen (Man-in-the-Middle). Ein VPN (Virtual Private Network) baut einen verschlüsselten Tunnel auf – der gesamte Datenverkehr wird so geschützt wie im Firmennetz. Weder der Café-Betreiber noch andere Nutzer können die Daten entschlüsseln. Ohne VPN sollte man keine vertraulichen Daten über offene WLANs übertragen.'
     },
     {
       nr: 29, thema: 'datenschutz', typ: 'einfach',
@@ -439,7 +439,7 @@
         'Verständlichkeit'
       ],
       loesung: 2,
-      erklaerung: 'Prüfsumme/Hash erkennt Veränderungen → Integrität.'
+      erklaerung: 'Die drei Schutzziele der Informationssicherheit (CIA-Triade): Vertraulichkeit (nur Berechtigte lesen die Daten), Integrität (Daten sind unverändert/vollständig) und Verfügbarkeit (Daten sind bei Bedarf abrufbar). Eine Kontrollsumme (Hash/Prüfsumme) wird beim Sender berechnet und beim Empfänger verglichen – stimmen sie überein, wurden die Daten nicht verändert. Damit wird die Datenintegrität sichergestellt.'
     },
     {
       nr: 30, thema: 'unternehmensziele', typ: 'einfach',
@@ -453,7 +453,7 @@
         'Disruption'
       ],
       loesung: 2,
-      erklaerung: 'Compliance = Einhaltung von Gesetzen und internen Regeln (z. B. Antikorruption).'
+      erklaerung: 'Compliance bedeutet die Einhaltung aller gesetzlichen Vorschriften, internen Richtlinien und ethischen Standards im Unternehmen. Persönliche Zuwendungen an Geschäftspartner zur Beeinflussung (Bestechung, Korruption) sind ein klassischer Compliance-Verstoß (§§ 299, 331 ff. StGB). Unternehmen richten dafür Compliance-Management-Systeme ein, um solche Verstöße zu verhindern und aufzudecken.'
     }
   ]
 });

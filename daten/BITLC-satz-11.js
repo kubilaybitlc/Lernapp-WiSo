@@ -23,7 +23,7 @@
         { text: 'Ein Wunsch, der durch Kaufkraft gedeckt ist', loesung: 2 },
         { text: 'Bedarf, der tatsächlich am Markt wirksam wird (Kauf)', loesung: 3 }
       ],
-      erklaerung: 'Bedürfnis → (mit Kaufkraft) Bedarf → (am Markt geäußert) Nachfrage.'
+      erklaerung: 'Die drei Stufen: Bedürfnis = subjektives Mangelgefühl → Bedarf = Bedürfnis + vorhandene Kaufkraft → Nachfrage = Bedarf, der tatsächlich am Markt wirksam wird (Kaufhandlung). Ohne Kaufkraft bleibt ein Bedürfnis bloßer Wunsch.'
     },
     {
       nr: 2, thema: 'wirtschaft-grundlagen', typ: 'zuordnung',
@@ -41,7 +41,7 @@
         { text: 'Besuch eines Volkshochschulkurses', loesung: 2 },
         { text: 'Kauf einer Luxusyacht', loesung: 3 }
       ],
-      erklaerung: 'Die Abgrenzung hängt vom Lebensstandard der Gesellschaft ab.'
+      erklaerung: 'Existenzbedürfnisse sichern das Überleben (Nahrung, Kleidung, Wohnung). Kulturbedürfnisse dienen der geistigen und sozialen Entwicklung (Bildung, Sport, Medien). Luxusbedürfnisse gehen über den üblichen Lebensstandard hinaus. Die Abgrenzung ist fließend und hängt vom Lebensstandard der Gesellschaft ab.'
     },
     {
       nr: 3, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -101,7 +101,7 @@
         'Arbeitszerlegung'
       ],
       loesung: 2,
-      erklaerung: 'Austausch von Produktionsfaktoren (Rationalisierung).'
+      erklaerung: 'Substitution = Austausch eines Produktionsfaktors durch einen anderen. Hier wird der Faktor Arbeit (Mitarbeiter) durch den Faktor Kapital (KI-Software) ersetzt. Das Ziel ist Rationalisierung: gleiche oder bessere Leistung mit weniger Aufwand. Outsourcing wäre die Auslagerung an ein externes Unternehmen.'
     },
     {
       nr: 7, thema: 'wirtschaft-grundlagen', typ: 'zuordnung',
@@ -119,7 +119,7 @@
         { text: 'Konsumausgaben', loesung: 1 },
         { text: 'Konsumgüter', loesung: 2 }
       ],
-      erklaerung: 'Güterstrom und Geldstrom laufen jeweils in entgegengesetzte Richtungen.'
+      erklaerung: 'Im einfachen Wirtschaftskreislauf: Haushalte liefern Arbeit an Unternehmen und zahlen Konsumausgaben → beides fließt von Haushalten zu Unternehmen. Unternehmen zahlen Lohn/Gehalt und liefern Konsumgüter → beides fließt von Unternehmen zu Haushalten. Güter- und Geldstrom laufen entgegengesetzt.'
     },
     {
       nr: 8, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -133,7 +133,7 @@
         'Verursacherprinzip'
       ],
       loesung: 2,
-      erklaerung: 'Minimalprinzip: gegebenes Ziel mit geringstmöglichem Mitteleinsatz.'
+      erklaerung: 'Minimalprinzip (Sparsamkeitsprinzip): ein festgelegtes Ziel mit dem geringstmöglichen Mitteleinsatz erreichen. Maximalprinzip: mit gegebenen Mitteln das bestmögliche Ergebnis erzielen. Hier ist das Ziel fest (500.000 € Umsatz) und der Einsatz (Werbekosten) soll minimiert werden → Minimalprinzip.'
     },
     {
       nr: 9, thema: 'rechtsquellen', typ: 'zuordnung',
@@ -233,7 +233,7 @@
         'Mieter sind Eigentümer der Mietsache.'
       ],
       loesung: 2,
-      erklaerung: 'Beispiel: Ein Mieter ist Besitzer der Wohnung, der Vermieter bleibt Eigentümer.'
+      erklaerung: '§ 854 BGB (Besitz): tatsächliche Sachherrschaft – wer die Sache in Händen hält. § 903 BGB (Eigentum): rechtliche Sachherrschaft – wer mit der Sache nach Belieben verfahren darf. Beispiel: Ein Mieter ist Besitzer der Wohnung, der Vermieter bleibt Eigentümer. Besitz und Eigentum können also auseinanderfallen.'
     },
     {
       nr: 15, thema: 'rechtsquellen', typ: 'einfach',
@@ -283,7 +283,7 @@
         'Durch Eintrag ins Handelsregister'
       ],
       loesung: 2,
-      erklaerung: 'Antrag (z. B. Angebot oder Bestellung) + Annahme (z. B. Bestellung oder Auftragsbestätigung).'
+      erklaerung: '§§ 145 ff. BGB: Ein Kaufvertrag kommt durch zwei übereinstimmende Willenserklärungen zustande – Antrag (= Angebot) und Annahme (= Bestellung/Auftragsbestätigung). Schriftform ist nicht erforderlich (Formfreiheit); auch mündliche oder konkludente Verträge sind wirksam.'
     },
     {
       nr: 18, thema: 'rechtsquellen', typ: 'einfach',
@@ -297,7 +297,7 @@
         'Nur für Unternehmer'
       ],
       loesung: 2,
-      erklaerung: 'Erst die Bestellung des Kunden ist der Antrag; der Händler nimmt sie an (z. B. Auftragsbestätigung oder Versand).'
+      erklaerung: 'Eine Anzeige (Schaufenster, Katalog, Onlineshop) ist rechtlich eine „invitatio ad offerendum" – eine Aufforderung an andere, ein Angebot abzugeben. Der Händler müsste sonst an jeden liefern, auch wenn die Ware ausverkauft ist. Erst die Bestellung des Kunden ist der Antrag; der Händler nimmt mit Auftragsbestätigung oder Versand an.'
     },
     {
       nr: 19, thema: 'rechtsquellen', typ: 'zuordnung',
@@ -329,7 +329,7 @@
         'Gar keins'
       ],
       loesung: 2,
-      erklaerung: '§ 355 BGB: 14 Tage ab Erhalt der Ware (bei korrekter Belehrung).'
+      erklaerung: '§ 355 Abs. 2 BGB i. V. m. § 312g BGB: Bei Fernabsatzverträgen (Online-Kauf) hat der Verbraucher ein 14-tägiges Widerrufsrecht. Die Frist beginnt mit Erhalt der Ware (bei Waren) bzw. mit Vertragsschluss (bei Dienstleistungen), sofern der Händler korrekt über das Widerrufsrecht belehrt hat. Ohne ordnungsgemäße Belehrung verlängert sich die Frist um bis zu 12 Monate.'
     },
     {
       nr: 21, thema: 'rechtsquellen', typ: 'zuordnung',
@@ -363,7 +363,7 @@
         'Sofortige Kündigung'
       ],
       loesung: 3,
-      erklaerung: 'Vorrang der Nacherfüllung (§ 439 BGB). Erst wenn sie scheitert: Rücktritt, Minderung, Schadensersatz.'
+      erklaerung: '§ 437 Nr. 1 i. V. m. § 439 BGB: Bei Mängeln hat der Käufer zunächst nur Anspruch auf Nacherfüllung (Nachbesserung oder Ersatzlieferung – er darf wählen). Erst wenn die Nacherfüllung fehlschlägt (in der Regel nach zwei Versuchen), kann er zurücktreten, mindern oder Schadensersatz verlangen.'
     },
     {
       nr: 23, thema: 'rechtsquellen', typ: 'einfach',
@@ -377,7 +377,7 @@
         '5 Jahre'
       ],
       loesung: 3,
-      erklaerung: '§ 438 BGB: 2 Jahre (bei Bauwerken 5 Jahre).'
+      erklaerung: '§ 438 Abs. 1 Nr. 3 BGB: Die reguläre Verjährungsfrist für Mängelansprüche beträgt 2 Jahre ab Ablieferung der Sache. Bei Bauwerken gilt eine Frist von 5 Jahren (§ 438 Abs. 1 Nr. 2 BGB). Beim Verbrauchsgüterkauf darf die Frist nicht unter 2 Jahre verkürzt werden.'
     },
     {
       nr: 24, thema: 'rechtsquellen', typ: 'einfach',
@@ -391,7 +391,7 @@
         'Die Ware sofort zurückschicken'
       ],
       loesung: 2,
-      erklaerung: 'Unterlässt er die unverzügliche Rüge, gilt die Ware als genehmigt.'
+      erklaerung: '§ 377 HGB (nur beim beidseitigen Handelskauf): Der Käufer muss die Ware unverzüglich untersuchen und erkannte Mängel sofort rügen. Unterlässt er die Rüge, gilt die Ware als genehmigt – er verliert seine Mängelrechte. Diese strenge Pflicht gilt nur zwischen Kaufleuten, nicht im Verbrauchsgüterkauf.'
     },
     {
       nr: 25, thema: 'rechtsquellen', typ: 'einfach',
@@ -405,7 +405,7 @@
         'Nie ohne Mahnung'
       ],
       loesung: 3,
-      erklaerung: '§ 286 Abs. 3 BGB: 30 Tage. Bei kalendermäßig bestimmtem Termin („zahlbar bis 15.03.“) sofort mit Ablauf.'
+      erklaerung: '§ 286 Abs. 3 BGB: Ein Schuldner kommt spätestens 30 Tage nach Fälligkeit und Zugang der Rechnung in Verzug – bei Verbrauchern nur, wenn auf der Rechnung darauf hingewiesen wurde. Bei einem kalendermäßig bestimmten Termin (z. B. „zahlbar bis 15.03.”) tritt Verzug ohne Mahnung mit Ablauf des Termins ein (§ 286 Abs. 2 Nr. 1).'
     },
     {
       nr: 26, thema: 'rechtsquellen', typ: 'einfach',
@@ -419,7 +419,7 @@
         '30 Jahre'
       ],
       loesung: 3,
-      erklaerung: '§§ 195, 199 BGB: Eine Forderung von März 2026 verjährt am 31.12.2029.'
+      erklaerung: '§ 195 BGB: Die regelmäßige Verjährungsfrist beträgt 3 Jahre. § 199 Abs. 1 BGB: Sie beginnt mit dem Schluss des Jahres, in dem der Anspruch entstanden ist und der Gläubiger Kenntnis erlangt hat. Forderung aus März 2026 → Fristbeginn 31.12.2026 → Verjährung am 31.12.2029 (3 volle Kalenderjahre). Wichtig: Die Verjährung beginnt immer am Jahresende, nicht am Tag der Entstehung.'
     },
     {
       nr: 27, thema: 'rechtsquellen', typ: 'reihenfolge',
@@ -482,7 +482,7 @@
         'Es gibt keine laufenden Kosten.'
       ],
       loesung: 3,
-      erklaerung: 'Leasing: Nutzung gegen laufende Raten, Eigentümer bleibt der Leasinggeber. Oft insgesamt teurer als Kauf.'
+      erklaerung: 'Leasing = Nutzungsüberlassung gegen laufende Raten. Der Leasinggeber bleibt Eigentümer. Vorteil: Liquidität wird geschont (keine hohe Einmalzahlung), planbare Kosten, immer aktuelle Technik. Nachteil: Insgesamt oft teurer als ein Kauf, kein Eigentumsaufbau, Vertragsbindung.'
     },
     {
       nr: 31, thema: 'kennzahlen', typ: 'zahl',
@@ -498,7 +498,7 @@
       anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
       loesung: 900, nachkommastellen: 0,
       einheit: 'EUR',
-      erklaerung: 'Zinsen = K × p × t ÷ (100 × 12) = 20.000 × 6 × 9 ÷ 1.200 = 900 €.'
+      erklaerung: 'Zinsformel (Monatsformel): Zinsen = Kapital × Zinssatz × Monate ÷ (100 × 12). Rechnung: 20.000 × 6 × 9 ÷ 1.200 = 1.080.000 ÷ 1.200 = 900 €. Alternativ: Jahreszinsen = 20.000 × 6 % = 1.200 €, davon 9/12 = 900 €. Bei der Tagesformel wird durch 360 (statt 12) geteilt und die Laufzeit in Tagen angegeben.'
     },
     {
       nr: 33, thema: 'kennzahlen', typ: 'zuordnung',
@@ -532,7 +532,7 @@
         'Ein Wechsel der Geschäftsführung'
       ],
       loesung: 2,
-      erklaerung: 'Insolvenzgründe: Zahlungsunfähigkeit, drohende Zahlungsunfähigkeit (nur Schuldnerantrag), Überschuldung.'
+      erklaerung: '§§ 17–19 InsO: Insolvenzgründe sind Zahlungsunfähigkeit (kann fällige Schulden nicht begleichen), drohende Zahlungsunfähigkeit (nur Eigenantrag) und Überschuldung (Schulden übersteigen das Vermögen – nur bei juristischen Personen). Ein Quartalsverlust oder sinkender Umsatz allein genügt nicht.'
     },
     {
       nr: 35, thema: 'kennzahlen', typ: 'einfach',
@@ -546,7 +546,7 @@
         'Verwaltungsgericht'
       ],
       loesung: 3,
-      erklaerung: 'Das Amtsgericht am Sitz des Schuldners.'
+      erklaerung: '§ 2 InsO: Das Amtsgericht, in dessen Bezirk der Schuldner seinen Sitz hat, ist als Insolvenzgericht zuständig. Arbeitsgericht → Arbeitsstreitigkeiten, Sozialgericht → Sozialversicherungsrecht, Finanzgericht → Steuerrecht, Verwaltungsgericht → öffentliches Recht.'
     },
     {
       nr: 36, thema: 'kennzahlen', typ: 'zuordnung',
@@ -565,7 +565,7 @@
         { text: 'Bezahlung mit Münzen und Scheinen an der Kasse', loesung: 1 },
         { text: 'Lastschrift per SEPA-Mandat', loesung: 3 }
       ],
-      erklaerung: 'Halbbar: Eine Seite nutzt Bargeld, die andere ein Konto.'
+      erklaerung: 'Barzahlung: Beide Seiten nutzen Bargeld (Münzen/Scheine). Halbbare Zahlung: Eine Seite nutzt Bargeld, die andere ein Konto (z. B. Bareinzahlung aufs Konto des Empfängers). Bargeldlose Zahlung: Beide Seiten nutzen Konten (Überweisung, Lastschrift, Kartenzahlung).'
     },
     {
       nr: 37, thema: 'sozialversicherung', typ: 'einfach',
@@ -579,7 +579,7 @@
         'Brutto − vermögenswirksame Leistungen'
       ],
       loesung: 2,
-      erklaerung: 'Vom Netto werden ggf. noch VL-Sparbeträge oder Vorschüsse abgezogen → Auszahlungsbetrag.'
+      erklaerung: 'Nettolohn = Bruttolohn − Lohnsteuer − (ggf. Kirchensteuer + Soli) − AN-Anteile zur Sozialversicherung (KV, PV, RV, AV). Der AG-Anteil wird nicht vom Brutto des AN abgezogen. Vom Netto werden ggf. noch VL-Sparbeträge oder Vorschüsse abgezogen → Auszahlungsbetrag.'
     },
     {
       nr: 38, thema: 'sozialversicherung', typ: 'zuordnung',
@@ -601,7 +601,7 @@
         { text: 'Verheiratet, geringer verdienender Partner (Kombination III/V)', loesung: 4 },
         { text: 'Zweites Arbeitsverhältnis', loesung: 5 }
       ],
-      erklaerung: 'IV/IV ist die Kombination für Ehepaare mit ähnlichem Einkommen.'
+      erklaerung: '§ 38b EStG – die Steuerklassen: I = ledig/geschieden/verwitwet, II = alleinerziehend (Entlastungsbetrag nach § 24b EStG), III = verheiratet, besserverdienend (Partner hat V), IV = verheiratet, beide ähnlich verdienend (Standardkombination IV/IV), V = verheiratet, geringer verdienend (Partner hat III), VI = zweites oder weiteres Arbeitsverhältnis. Die Kombination III/V lohnt sich bei deutlichem Einkommensunterschied.'
     },
     {
       nr: 39, thema: 'sozialversicherung', typ: 'zuordnung',
@@ -655,7 +655,7 @@
         'Nie'
       ],
       loesung: 2,
-      erklaerung: '§ 8 TzBfG: nach 6 Monaten, Betrieb mit mehr als 15 Arbeitnehmern.'
+      erklaerung: '§ 8 TzBfG: Der Anspruch auf Verringerung der Arbeitszeit besteht, wenn das Arbeitsverhältnis länger als 6 Monate besteht und der Betrieb mehr als 15 Arbeitnehmer beschäftigt. Seit 2019 gibt es auch die Brückenteilzeit (§ 9a TzBfG): zeitlich begrenzte Teilzeit mit Rückkehrrecht.'
     },
     {
       nr: 42, thema: 'ausbildung', typ: 'einfach',
@@ -669,7 +669,7 @@
         'Untersuchung nur bei Krankheit'
       ],
       loesung: 2,
-      erklaerung: '§ 32 JArbSchG. Erste Nachuntersuchung ein Jahr nach Beginn (§ 33).'
+      erklaerung: '§ 32 Abs. 1 JArbSchG: Jugendliche (unter 18) dürfen erst beschäftigt werden, wenn eine Erstuntersuchung innerhalb der letzten 14 Monate stattgefunden hat und die Bescheinigung vorliegt. § 33: Erste Nachuntersuchung ein Jahr nach Aufnahme der Beschäftigung. Kosten trägt das Land.'
     },
     {
       nr: 43, thema: 'ausbildung', typ: 'einfach',
@@ -683,7 +683,7 @@
         'Nur wenn der Betriebsrat zustimmt'
       ],
       loesung: 2,
-      erklaerung: '§ 15 BBiG (seit 2020 auch für Volljährige) und § 9 JArbSchG.'
+      erklaerung: '§ 15 BBiG (seit 2020 auch für volljährige Azubis): Ein Berufsschultag mit mehr als 5 Unterrichtsstunden (à 45 Min.) wird einmal pro Woche mit der durchschnittlichen täglichen Arbeitszeit angerechnet. Für Jugendliche gilt zusätzlich § 9 JArbSchG mit ähnlichen Regelungen.'
     },
     {
       nr: 44, thema: 'wirtschaft-grundlagen', typ: 'zuordnung',
@@ -703,7 +703,7 @@
         { text: 'Durch Digitalisierung fallen Berufe dauerhaft weg.', loesung: 3 },
         { text: 'Eine Fachinformatikerin ist zwischen zwei Jobs kurz arbeitslos.', loesung: 4 }
       ],
-      erklaerung: 'Friktionell = Such- bzw. Wechselarbeitslosigkeit.'
+      erklaerung: 'Saisonal: jahreszeitlich bedingt (Bau, Tourismus). Konjunkturell: durch Nachfragerückgang in einer Rezession. Strukturell: durch langfristigen Wandel (Digitalisierung, Branchensterben) – am schwierigsten zu bekämpfen. Friktionell (Such-/Wechselarbeitslosigkeit): kurzzeitig beim Jobwechsel – unvermeidlich und meist unproblematisch.'
     },
     {
       nr: 45, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -717,7 +717,7 @@
         'Der Mindestlohn'
       ],
       loesung: 2,
-      erklaerung: 'Mindestpreis (z. B. Mindestlohn) liegt über dem Gleichgewicht → Angebotsüberhang.'
+      erklaerung: 'Ein Höchstpreis wird vom Staat unter dem Gleichgewichtspreis festgesetzt, um Verbraucher zu schützen (z. B. Mietpreisbremse). Folge: Nachfrage > Angebot → Nachfrageüberhang (Knappheit). Ein Mindestpreis (z. B. Mindestlohn) liegt über dem Gleichgewicht → Angebotsüberhang (z. B. Arbeitslosigkeit).'
     },
     {
       nr: 46, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -731,7 +731,7 @@
         'Die Preise steigen ständig.'
       ],
       loesung: 2,
-      erklaerung: 'Beim Gleichgewichtspreis wird der größtmögliche Umsatz erzielt.'
+      erklaerung: 'Im Marktgleichgewicht schneiden sich Angebots- und Nachfragekurve: Die angebotene Menge entspricht der nachgefragten Menge, der Markt wird „geräumt" (kein Überschuss, keine Knappheit). Weicht der Preis ab, entstehen Angebots- oder Nachfrageüberhänge, die den Preis zurück zum Gleichgewicht treiben.'
     },
     {
       nr: 47, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -745,7 +745,7 @@
         'Sie verdoppelt sich.'
       ],
       loesung: 2,
-      erklaerung: 'Komplementärgüter ergänzen sich. Bei Substitutionsgütern würde die Nachfrage steigen.'
+      erklaerung: 'Komplementärgüter ergänzen sich und werden zusammen nachgefragt (Drucker + Patronen, Auto + Benzin). Steigt der Preis eines Gutes, sinkt die Nachfrage nach beiden. Bei Substitutionsgütern (z. B. Butter/Margarine) ist es umgekehrt: Wird eines teurer, steigt die Nachfrage nach dem Ersatzgut.'
     },
     {
       nr: 48, thema: 'zusammenschluesse', typ: 'zuordnung',
@@ -791,7 +791,7 @@
         'Nur wer eine kaufmännische Ausbildung hat'
       ],
       loesung: 2,
-      erklaerung: '§ 1 HGB. Kleingewerbetreibende können sich freiwillig eintragen lassen (Kann-Kaufmann, § 2).'
+      erklaerung: '§ 1 HGB: Kaufmann ist, wer ein Handelsgewerbe betreibt (Ist-Kaufmann). Entscheidend ist nicht die Ausbildung, sondern ob Art und Umfang einen kaufmännisch eingerichteten Geschäftsbetrieb erfordern. Kleingewerbetreibende können sich freiwillig ins Handelsregister eintragen lassen (Kann-Kaufmann, § 2 HGB). Freiberufler sind keine Kaufleute.'
     }
   ]
 });

@@ -27,7 +27,7 @@
         'Ausbildungsmaßnahmen außerhalb der Ausbildungsstätte'
       ],
       loesung: 4,
-      erklaerung: '§ 11 BBiG listet die Mindestinhalte – Gleitzeitregelungen gehören nicht dazu.'
+      erklaerung: '§ 11 BBiG listet die Mindestinhalte des Ausbildungsvertrags (z. B. Ziel, Dauer, Vergütung, Arbeitszeit). Gleitzeitregelungen gehören nicht dazu, da sie betrieblich geregelt werden.'
     },
     {
       nr: 3, thema: 'ausbildung', typ: 'einfach',
@@ -41,7 +41,7 @@
         'Eine Probezeit ist nicht zwingend notwendig.'
       ],
       loesung: 1,
-      erklaerung: '§ 20 BBiG: Probezeit mindestens 1 Monat, höchstens 4 Monate.'
+      erklaerung: '§ 20 BBiG: Die Probezeit in der Ausbildung muss mindestens 1 Monat und darf höchstens 4 Monate betragen. Sie ist zwingend vorgeschrieben – anders als im normalen Arbeitsvertrag.'
     },
     {
       nr: 4, thema: 'ausbildung', typ: 'einfach',
@@ -55,7 +55,7 @@
         'Der Arbeitgeber kann während der Ausbildung nie kündigen, auch nicht in der Probezeit.'
       ],
       loesung: 3,
-      erklaerung: '§ 22 Abs. 1 BBiG: In der Probezeit jederzeit ohne Frist kündbar – aber immer schriftlich.'
+      erklaerung: '§ 22 Abs. 1 BBiG: Während der Probezeit kann das Ausbildungsverhältnis von beiden Seiten jederzeit ohne Einhalten einer Kündigungsfrist und ohne Angabe von Gründen gekündigt werden. Die Kündigung muss aber schriftlich erfolgen (§ 22 Abs. 3 BBiG) – mündlich ist unwirksam.'
     },
     {
       nr: 5, thema: 'mitbestimmung', typ: 'einfach',
@@ -69,7 +69,7 @@
         'Alle Wahlberechtigten, die dem Betrieb seit mindestens sechs Wochen angehören.'
       ],
       loesung: 3,
-      erklaerung: '§ 8 BetrVG: wählbar sind Wahlberechtigte (ab 18), die 6 Monate dem Betrieb angehören.'
+      erklaerung: '§ 8 BetrVG: Wählbar (passives Wahlrecht) sind alle wahlberechtigten Arbeitnehmer, die das 18. Lebensjahr vollendet haben und dem Betrieb mindestens 6 Monate angehören. Aktives Wahlrecht (wählen dürfen) hat man bereits ab 16 Jahren (§ 7 BetrVG).'
     },
     {
       nr: 6, thema: 'tarifrecht', typ: 'einfach',
@@ -83,7 +83,7 @@
         'haben bei Tarifverhandlungen für die Belange aller Arbeitnehmer einzutreten.'
       ],
       loesung: 3,
-      erklaerung: 'Gewerkschaften vertreten ihre Mitglieder, z. B. mit Rechtsschutz vor dem Arbeitsgericht. Betriebsvereinbarungen schließen Arbeitgeber und Betriebsrat.'
+      erklaerung: 'Gewerkschaften bieten ihren Mitgliedern Rechtsschutz, z. B. Vertretung vor dem Arbeitsgericht. Betriebsvereinbarungen werden zwischen Arbeitgeber und Betriebsrat geschlossen (§ 77 BetrVG), nicht von Gewerkschaften. Tarifverträge sind Aufgabe der Gewerkschaften.'
     },
     {
       nr: 7, thema: 'tarifrecht', typ: 'mehrfach',
@@ -99,7 +99,7 @@
         'Zustimmung der Tarifparteien zum Ergebnis'
       ],
       loesung: [3, 4],
-      erklaerung: 'Erst wird das Scheitern erklärt, danach folgt die Urabstimmung über den Streik.'
+      erklaerung: 'Richtige Reihenfolge: Kündigung → Verhandlung → Scheitern → Urabstimmung/Streik → neue Verhandlungen → Urabstimmung über Ergebnis → Zustimmung. Die Schritte 3 und 4 sind vertauscht: Erst muss eine Tarifpartei das Scheitern erklären, bevor über einen Arbeitskampf abgestimmt werden darf (Ultima-Ratio-Prinzip).'
     },
     {
       nr: 8, thema: 'tarifrecht', typ: 'einfach',
@@ -190,7 +190,7 @@
       ],
       loesung: 2,
       bildUrl: 'bilder/2024W-13.jpg',
-      erklaerung: 'Einliniensystem plus beratende Stabsstelle (Rechtsabteilung) = Stabliniensystem.'
+      erklaerung: 'Stab-Liniensystem: Ein Einliniensystem (jede Stelle hat genau einen Vorgesetzten), ergänzt um Stabsstellen. Die gestrichelt angehängte Rechtsabteilung ist eine Stabsstelle – sie berät die Leitung, hat aber keine eigene Weisungsbefugnis gegenüber den Linienabteilungen. Im Mehrliniensystem hätte eine Stelle mehrere Vorgesetzte; eine Matrixorganisation kombiniert Funktions- und Objektgliederung.'
     },
     {
       nr: 14, thema: 'organisation', typ: 'einfach',
@@ -219,7 +219,7 @@
         'Abschwung (Rezession)'
       ],
       loesung: 5,
-      erklaerung: 'Sinkendes BIP, negatives Wachstum, steigende Arbeitslosigkeit → Abschwung/Rezession.'
+      erklaerung: 'Sinkendes BIP, negatives Wachstum und steigende Arbeitslosigkeit sind die drei Hauptmerkmale einer Rezession (Abschwung). Stagnation wäre gleichbleibendes Niveau ohne Wachstum, aber kein Rückgang. Inflation beschreibt Preissteigerungen, nicht Produktionsrückgang.'
     },
     {
       nr: 16, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -233,7 +233,7 @@
         'Es liegt ein Quasi-Monopol vor, da es nur vier Anbieter für Steuerabrechnungen gibt.'
       ],
       loesung: 2,
-      erklaerung: 'Viele Anbieter + viele Nachfrager = Polypol. (Medikamentenabrechnung: wenige Anbieter = Angebotsoligopol.)'
+      erklaerung: 'Polypol = viele Anbieter treffen auf viele Nachfrager (z. B. Steuerabrechnungen). Wenige Anbieter + viele Nachfrager = Angebotsoligopol (z. B. Medikamentenabrechnungen). Nur ein Anbieter = Monopol.'
     },
     {
       nr: 17, thema: 'wirtschaft-grundlagen', typ: 'einfach',
@@ -247,7 +247,7 @@
         'Der vollkommene Markt unterstellt homogene Güter; hier bieten die Anbieter Software mit unterschiedlichen Merkmalen an.'
       ],
       loesung: 5,
-      erklaerung: 'Homogenität der Güter ist eine Bedingung des vollkommenen Marktes – unterschiedliche Produkte verletzen sie.'
+      erklaerung: 'Der vollkommene Markt setzt u. a. homogene Güter (gleiche Produkte), vollständige Markttransparenz und keine persönlichen Präferenzen voraus. Unterschiedliche Softwareprodukte mit verschiedenen Merkmalen verletzen die Bedingung der Homogenität → unvollkommener Markt.'
     },
     {
       nr: 18, thema: 'unternehmensziele', typ: 'zuordnung',
@@ -281,7 +281,7 @@
         'Sammeln der Verpackungsabfälle aus dem Wareneingang'
       ],
       loesung: 5,
-      erklaerung: 'Verpackungsabfälle sammeln ist ein ökologisches Ziel.'
+      erklaerung: 'Verpackungsabfälle sammeln dient dem Umweltschutz und ist damit ein ökologisches Ziel. Soziale Ziele betreffen die Menschen im Unternehmen und Umfeld (z. B. Fair Trade, Diversity, Mitarbeiterbeteiligung, Kinderbetreuung).'
     },
     {
       nr: 20, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -295,7 +295,7 @@
         'Grobe Beleidigung eines Vorgesetzten'
       ],
       loesung: 3,
-      erklaerung: 'Betriebsbedingt = dringende betriebliche Erfordernisse. Trunkenheit/Beleidigung = verhaltensbedingt, mangelndes Fachwissen = personenbedingt, Befristung = keine Kündigung.'
+      erklaerung: '§ 1 KSchG: Betriebsbedingte Kündigung bei dringenden betrieblichen Erfordernissen, z. B. Standortschließung oder Rationalisierung. Trunkenheit und Beleidigung = verhaltensbedingt (Pflichtverletzung); mangelndes Fachwissen = personenbedingt (fehlende Eignung). Befristungsende ist keine Kündigung, sondern automatisches Auslaufen.'
     },
     {
       nr: 21, thema: 'rechtsformen', typ: 'einfach',
@@ -309,7 +309,7 @@
         'Der Gesellschaftsvertrag kann auch mündlich abgeschlossen werden.'
       ],
       loesung: 4,
-      erklaerung: '85.000 € > 25.000 € Mindeststammkapital. Eintragung ist Pflicht, Vertrag braucht notarielle Form, Gesellschafter dürfen Geschäftsführer sein.'
+      erklaerung: '§ 5 GmbHG: Mindeststammkapital 25.000 €. Die Einlagen von 85.000 € übersteigen dieses Minimum. Die GmbH muss zwingend ins Handelsregister eingetragen werden (§ 7 GmbHG). Der Gesellschaftsvertrag bedarf der notariellen Beurkundung (§ 2 GmbHG). Gesellschafter dürfen zugleich Geschäftsführer sein.'
     },
     {
       nr: 22, thema: 'rechtsformen', typ: 'einfach',
@@ -323,7 +323,7 @@
         'Die GmbH haftet nur mit ihren liquiden Mitteln.'
       ],
       loesung: 3,
-      erklaerung: 'Die GmbH als juristische Person haftet mit ihrem gesamten Gesellschaftsvermögen, die Gesellschafter nicht privat.'
+      erklaerung: 'Die GmbH ist eine juristische Person und haftet mit ihrem gesamten Gesellschaftsvermögen (nicht nur dem Stammkapital). Die Gesellschafter haften nicht persönlich – ihre Haftung ist auf die Einlage beschränkt (§ 13 Abs. 2 GmbHG). „Beschränkte Haftung" heißt nicht „begrenzt auf das Stammkapital".'
     },
     {
       nr: 23, thema: 'umweltschutz', typ: 'einfach',
@@ -337,7 +337,7 @@
         'Umsatzsteigerung durch Erweiterung des Sortiments'
       ],
       loesung: 1,
-      erklaerung: 'Nur der Bezug von ökologisch zertifizierten Lieferanten verfolgt ein Umweltziel.'
+      erklaerung: 'Ökologische Ziele betreffen den Umweltschutz. Nur der Bezug von ökologisch zertifizierten Lieferanten ist ein Umweltziel. Investitionen in Anlagen und Umsatzsteigerung sind wirtschaftliche Ziele; Kundenzufriedenheit kann sozial oder wirtschaftlich sein; größere Verbrenner-Fahrzeuge schaden der Umwelt.'
     },
     {
       nr: 24, thema: 'umweltschutz', typ: 'einfach',
@@ -379,7 +379,7 @@
         'ist automatisch Mitglied im Arbeitssicherheitsausschuss des Betriebsrates.'
       ],
       loesung: 2,
-      erklaerung: 'Er unterstützt den Arbeitgeber – die Verantwortung bleibt beim Arbeitgeber.'
+      erklaerung: '§ 22 SGB VII: Der Sicherheitsbeauftragte unterstützt den Arbeitgeber bei der Durchführung des Arbeitsschutzes und der Unfallverhütung. Er hat keine Weisungsbefugnis und ist nicht allein verantwortlich – die Gesamtverantwortung bleibt beim Arbeitgeber (§ 3 ArbSchG).'
     },
     {
       nr: 27, thema: 'arbeitsschutz', typ: 'mehrfach',
@@ -394,7 +394,7 @@
         'Alle erreichbaren Wasserstellen öffnen'
       ],
       loesung: [2, 5],
-      erklaerung: 'Brand melden (Notruf 112) und Menschen in Sicherheit bringen. Fenster öffnen fördert das Feuer.'
+      erklaerung: 'Brandschutzordnung: 1. Brand melden (Notruf 112), 2. gefährdete Personen evakuieren, 3. Löschversuch unternehmen. Fenster öffnen fördert die Sauerstoffzufuhr und damit das Feuer – deshalb Türen und Fenster schließen.'
     },
     {
       nr: 28, thema: 'arbeitsschutz', typ: 'mehrfach',
@@ -409,7 +409,7 @@
         'Homeoffice offener und flexibler gestalten'
       ],
       loesung: [1, 5],
-      erklaerung: 'Öffentliches Anprangern (schwarzes Brett, Misserfolge bekanntgeben) erhöht den Stress.'
+      erklaerung: 'Öffentliches Anprangern (Beschwerden am schwarzen Brett, Misserfolge bekanntgeben) erhöht Druck und Stress statt sie zu verringern. Maßnahmen wie Work-Life-Balance-Workshops, gutes Betriebsklima, Betriebssport und flexibles Homeoffice fördern dagegen die Gesundheit und reduzieren Stress.'
     },
     {
       nr: 29, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -423,7 +423,7 @@
         'Die Benachteiligungsverbote gelten nicht für Aufstieg und Arbeitsbedingungen.'
       ],
       loesung: 3,
-      erklaerung: '§ 1 AGG: Schutz vor Benachteiligung wegen Rasse/ethnischer Herkunft, Geschlecht, Religion/Weltanschauung, Behinderung, Alter, sexueller Identität.'
+      erklaerung: '§ 1 AGG schützt vor Benachteiligung wegen: ethnischer Herkunft, Geschlecht, Religion/Weltanschauung, Behinderung, Alter und sexueller Identität. Es gilt auch für Auszubildende (§ 6 AGG) und bei Verstoß haben Betroffene Anspruch auf Entschädigung und Schadenersatz (§ 15 AGG).'
     },
     {
       nr: 30, thema: 'arbeitsvertrag', typ: 'einfach',
@@ -437,7 +437,7 @@
         'Sie beherrschen Englisch verhandlungssicher.'
       ],
       loesung: 2,
-      erklaerung: 'Eine Altersgrenze ist eine Benachteiligung wegen des Alters.'
+      erklaerung: '§ 11 AGG: Stellenausschreibungen dürfen nicht diskriminierend sein. „Jünger als 30" ist eine unmittelbare Benachteiligung wegen des Alters (§ 1 AGG). Anforderungen an Fähigkeiten (Programmierung, Englisch, Reisebereitschaft, flexible Arbeitszeiten) sind sachlich begründet und zulässig.'
     }
   ]
 });
