@@ -4,6 +4,7 @@
 
   const B = window.WISO_BEWERTUNG;
   const SAETZE = window.WISO_SAETZE || [];
+  const EIGENE_IHK_SAETZE = window.WISO_IHK_SAETZE || [];
   const THEMEN = window.WISO_THEMEN || {};
   const BILDER = window.WISO_BILDER || {};
   const PRUEFUNGSDAUER_MIN = 60;
@@ -48,9 +49,10 @@
   let timerId = null;
   let installAufforderung = null; // Android/Chrome: vom Browser angebotene Installation
 
-  // Zwei Bereiche: 'ki' = eigene, KI-erstellte Sätze aus daten/; 'ihk' = Originalaufgaben, die jemand aus einer eigenen Datei einliest
+  // Zwei Bereiche: 'ki' = KI-erstellte Sätze aus daten/satz-*.js; 'ihk' = mit dem Dozenten erstellte Sätze aus
+  // daten/ihk-satz-*.js plus Originalaufgaben, die jemand privat aus einer eigenen Datei einliest
   let bereich = speicher.lesen(S_BEREICH, 'ki') === 'ihk' ? 'ihk' : 'ki';
-  let IHK_SAETZE = [];
+  let IMPORT_SAETZE = [];
   let ihkInfo = null;
   let gewaehlteThemen = null; // zuletzt angehakte Themen für Zufallsfragen, null = alle
 
@@ -72,22 +74,25 @@
   }
 
   function satzById(id) {
-    return SAETZE.find(s => s.id === id) || IHK_SAETZE.find(s => s.id === id);
+    return SAETZE.concat(EIGENE_IHK_SAETZE, IMPORT_SAETZE).find(s => s.id === id);
   }
 
   function saetzeImBereich() {
-    return bereich === 'ihk' ? IHK_SAETZE : SAETZE;
+    return bereich === 'ihk' ? EIGENE_IHK_SAETZE.concat(IMPORT_SAETZE) : SAETZE;
   }
 
   function themaName(k) {
     return THEMEN[k] || k;
   }
 
+  // Bekannte Themen in der Reihenfolge von daten/themen.js, Themen aus eingelesenen Dateien alphabetisch dahinter
   function themenImBereich() {
     if (bereich === 'ki') return Object.keys(THEMEN);
+    const bekannt = Object.keys(THEMEN);
+    const rang = k => (bekannt.includes(k) ? bekannt.indexOf(k) : bekannt.length);
     const themen = new Set();
-    IHK_SAETZE.forEach(s => s.aufgaben.forEach(a => themen.add(a.thema)));
-    return [...themen].sort((x, y) => x.localeCompare(y, 'de'));
+    saetzeImBereich().forEach(s => s.aufgaben.forEach(a => themen.add(a.thema)));
+    return [...themen].sort((x, y) => rang(x) - rang(y) || x.localeCompare(y, 'de'));
   }
 
   function istIhkId(id) {
@@ -378,7 +383,7 @@
   function ladeIhk() {
     const paket = speicher.lesen(S_IHK, null);
     if (!paket) return;
-    IHK_SAETZE = baueIhkSaetze(paket);
+    IMPORT_SAETZE = baueIhkSaetze(paket);
     ihkInfo = { quelle: paket.quelle, importiert: paket.importiert, nurSitzung: false };
   }
 
@@ -404,7 +409,7 @@
         zeigeFehler('In der Datei wurden keine verwendbaren Fragen gefunden.');
         return;
       }
-      IHK_SAETZE = saetze;
+      IMPORT_SAETZE = saetze;
       ihkInfo = { quelle: paket.quelle, importiert: paket.importiert, nurSitzung: !speicher.schreiben(S_IHK, paket) };
       ansichtStart();
     };
@@ -624,29 +629,28 @@
   }
 
   function renderDateiwahl(text) {
-    return `<label class="btn primaer datei-knopf">${text}<input type="file" id="ihk-datei" class="unsichtbar" accept=".html,.htm,.json,text/html,application/json"></label>
+    return `<label class="btn datei-knopf">${text}<input type="file" id="ihk-datei" class="unsichtbar" accept=".html,.htm,.json,text/html,application/json"></label>
       <p class="klein meldung" id="import-meldung" role="status"></p>`;
   }
 
   function renderIhkImport() {
     return `
       <section class="karte">
-        <h2>IHK-Fragen einlesen</h2>
-        <p>Hier übst du mit Aufgaben aus echten IHK-Prüfungen. Diese Aufgaben sind urheberrechtlich geschützt (ZPA Nord-West) und dürfen deshalb nicht in der öffentlichen App stehen. Wenn du sie für deine eigene Prüfungsvorbereitung als Datei hast, kannst du sie hier einlesen.</p>
+        <h2>IHK-Datei einlesen (optional)</h2>
+        <p class="klein">Hast du Aufgaben aus echten IHK-Prüfungen als Datei, z. B. „WiSo-Trainer.html“, kannst du sie hier zusätzlich einlesen. Sie sind urheberrechtlich geschützt (ZPA Nord-West) und bleiben deshalb nur in diesem Browser auf diesem Gerät. Nichts wird hochgeladen.</p>
         ${renderDateiwahl('Datei auswählen')}
-        <p class="klein">Unterstützt wird „WiSo-Trainer.html“ (Lernkarten-Datei) oder eine JSON-Datei im selben Format. Die Fragen werden nur in diesem Browser auf diesem Gerät gespeichert und nirgendwohin hochgeladen. Auf jedem weiteren Gerät liest du die Datei einmal ein, z. B. aus der Dateien-App.</p>
       </section>`;
   }
 
   function renderIhkDatei() {
-    const anzahl = IHK_SAETZE.reduce((n, s) => n + s.aufgaben.length, 0);
+    const anzahl = IMPORT_SAETZE.reduce((n, s) => n + s.aufgaben.length, 0);
     return `
       <section class="karte">
         <h2>Deine IHK-Datei</h2>
-        <p class="klein">${esc(ihkInfo && ihkInfo.quelle || 'Datei')} · ${IHK_SAETZE.length} Sätze · ${anzahl} Aufgaben${ihkInfo && ihkInfo.importiert ? ` · eingelesen am ${esc(datumText(ihkInfo.importiert))}` : ''}</p>
+        <p class="klein">${esc(ihkInfo && ihkInfo.quelle || 'Datei')} · ${IMPORT_SAETZE.length} Sätze · ${anzahl} Aufgaben${ihkInfo && ihkInfo.importiert ? ` · eingelesen am ${esc(datumText(ihkInfo.importiert))}` : ''}</p>
         ${ihkInfo && ihkInfo.nurSitzung ? '<p class="klein text-nok">Der Browser hat das dauerhafte Speichern abgelehnt (z. B. privates Fenster). Die Fragen sind nur bis zum Schließen der App geladen.</p>' : ''}
         ${renderDateiwahl('Neu einlesen')}
-        <p class="zuruecksetzen"><button class="link" data-aktion="ihk-entfernen">IHK-Fragen von diesem Gerät entfernen</button></p>
+        <p class="zuruecksetzen"><button class="link" data-aktion="ihk-entfernen">Eingelesene Datei von diesem Gerät entfernen</button></p>
       </section>`;
   }
 
@@ -657,12 +661,8 @@
     const laufend = speicher.lesen(S_LAUFEND, null);
     const laufenderSatz = laufend && satzAus(laufend);
 
-    if (bereich === 'ihk' && !IHK_SAETZE.length) {
-      zeige(`${renderKopf()}<main class="start">${renderIhkImport()}</main>`);
-      return;
-    }
-
     const saetze = saetzeImBereich();
+    const hatAufgaben = saetze.some(s => s.aufgaben.length);
     const ergebnisse = speicher.lesen(S_ERGEBNISSE, []).filter(e => ergebnisBereich(e) === bereich);
     const zaehler = themenZaehler();
     const stand = lernstand(ladeStatistik());
@@ -728,6 +728,7 @@
             <span>Angefangene Prüfung: <strong>${esc(laufenderSatz.titel)}</strong></span>
             <span class="knoepfe"><button class="btn primaer" data-aktion="fortsetzen">Fortsetzen</button><button class="btn" data-aktion="verwerfen">Verwerfen</button></span>
           </div>` : ''}
+        ${hatAufgaben ? `
         ${renderLernstand(stand)}
         <section class="karte">
           <h2>Zufallsfragen</h2>
@@ -738,17 +739,21 @@
           </div>
         </section>
         <section class="karte">
-          <h2>${bereich === 'ihk' ? 'IHK-Prüfungen' : 'Aufgabensätze'}</h2>
+          <h2>Aufgabensätze</h2>
           <p class="klein"><strong>Prüfung:</strong> alle Aufgaben des Satzes, 60 Minuten, Auswertung nach IHK-Schema. <strong>Üben:</strong> Aufgabe für Aufgabe mit sofortiger Lösung.</p>
-          ${saetze.length ? `<ul class="satz-liste">${saetzeHtml}</ul>` : '<p>Keine Aufgabensätze gefunden.</p>'}
+          <ul class="satz-liste">${saetzeHtml}</ul>
         </section>
         <section class="karte">
           <h2>Themen-Training</h2>
           <p class="klein">Alle Aufgaben eines Themas aus allen Sätzen nacheinander üben.</p>
           <ul class="themen">${themenHtml}</ul>
-        </section>
+        </section>` : `
+        <section class="karte">
+          <h2>Aufgabensätze</h2>
+          <p>${bereich === 'ihk' ? 'Hier erscheinen die Aufgabensätze, die du mit deinem Dozenten erstellst. Noch ist keiner eingebaut.' : 'Keine Aufgabensätze gefunden.'}</p>
+        </section>`}
         ${ergebnisseHtml}
-        ${bereich === 'ihk' ? renderIhkDatei() : ''}
+        ${bereich === 'ihk' ? (IMPORT_SAETZE.length ? renderIhkDatei() : renderIhkImport()) : ''}
         <section class="karte">
           <h2>Dein Name</h2>
           <input id="name" class="eingabe" value="${esc(name)}" placeholder="Spitzname" maxlength="30" autocomplete="nickname">
@@ -1260,9 +1265,9 @@
         ansichtStart();
         break;
       case 'ihk-entfernen':
-        if (window.confirm('IHK-Fragen von diesem Gerät entfernen? Dein Lernstand dazu bleibt erhalten, falls du die Datei später wieder einliest.')) {
+        if (window.confirm('Eingelesene IHK-Datei von diesem Gerät entfernen? Die eingebauten Aufgabensätze bleiben, und dein Lernstand bleibt erhalten, falls du die Datei später wieder einliest.')) {
           speicher.loeschen(S_IHK);
-          IHK_SAETZE = [];
+          IMPORT_SAETZE = [];
           ihkInfo = null;
           ansichtStart();
         }

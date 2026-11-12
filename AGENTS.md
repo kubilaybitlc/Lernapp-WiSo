@@ -12,12 +12,14 @@ Hinweise für KI-Agenten und Mitwirkende am WiSo-Trainer. Bedienung und Datenfor
 ## Aufgaben erstellen
 
 - **Nur eigene Aufgaben.** IHK-Originalbögen sind urheberrechtlich geschützt: keine Aufgaben, Antwortlisten oder Situationstexte übernehmen oder nur leicht umformulieren. PDFs gehören nie ins Repository (`*.pdf` steht in `.gitignore`).
-- **Bereich „IHK-Fragen“:** Originalaufgaben kommen ausschließlich über den Import im Browser in die App (`importiereIhk` in `js/app.js`, gespeichert unter `wiso.ihk` im localStorage). Importdateien wie `WiSo-Trainer.html` oder daraus erzeugte Daten niemals ins Repository legen, nicht in `daten/` umwandeln und nicht in `sw.js` cachen.
+- **Bereich „IHK-KI-Fragen“:** die KI-erstellten Sätze `daten/satz-XX.js` (`window.WISO_SAETZE`, `id` wie `uebung-01`).
+- **Bereich „IHK-Fragen“:** die Sätze, die der Nutzer mit seinem Dozenten erstellt und zum Einbauen schickt. Dateien `daten/ihk-satz-XX.js`, eingetragen über `(window.WISO_IHK_SAETZE = window.WISO_IHK_SAETZE || []).push({...})`, `id` mit Präfix `ihk-eigen-` (z. B. `ihk-eigen-01`), sonst gleiches Format wie die KI-Sätze. Nur Fragen übernehmen, die Nutzer oder Dozent selbst formuliert haben; erkennbar aus IHK-Bögen abgeschriebene Aufgaben nicht einbauen, sondern nachfragen. Fehlende `thema`-Schlüssel und `erklaerung` ergänzen, Lösungen prüfen.
+- **IHK-Originale** kommen ausschließlich über den Import im Browser in die App (`importiereIhk` in `js/app.js`, gespeichert unter `wiso.ihk` im localStorage, erscheinen im Bereich „IHK-Fragen“). Importdateien wie `WiSo-Trainer.html` oder daraus erzeugte Daten niemals ins Repository legen, nicht in `daten/` umwandeln und nicht in `sw.js` cachen.
 - Themenauswahl und Gewichtung nach [docs/themenkatalog.md](docs/themenkatalog.md) (Spalte „Ø/Bogen“). Themenschlüssel stehen in `daten/themen.js`.
 - Typen-Verteilung je Satz ungefähr wie bei der IHK: etwa 22 Einfachauswahl, 3 „zwei zutreffende“, 2 Zuordnungen, 1–2 Rechenaufgaben, höchstens 1 Datum, gelegentlich 1 Reihenfolge. Keine Kontierung.
 - Feste Anweisungsformeln aus Abschnitt 3.1 des Themenkatalogs verwenden, Verneinungen und „**zwei**“ fett (`**…**`).
 - Jede Aufgabe bekommt eine `erklaerung` mit Rechtsgrundlage. Werte, die sich jährlich ändern (Beitragssätze, Grenzen), immer im Aufgabentext angeben.
-- Neuer Satz: Datei `daten/satz-XX.js`, Skript-Zeile in `index.html` und Pfad in der Liste `DATEIEN` in `sw.js` ergänzen.
+- Neuer Satz: Datei `daten/satz-XX.js` bzw. `daten/ihk-satz-XX.js`, Skript-Zeile in `index.html` und Pfad in der Liste `DATEIEN` in `sw.js` ergänzen.
 
 ## Testen
 
