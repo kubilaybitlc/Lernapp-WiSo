@@ -732,9 +732,10 @@
         ${renderLernstand(stand)}
         <section class="karte">
           <h2>Zufallsfragen</h2>
-          <p class="klein">${VIRTUELL_ANZAHL} zufällig gezogene Aufgaben aus allen Sätzen als Prüfung (${PRUEFUNGSDAUER_MIN} Minuten, Bewertung wie bei der BITLC), oder nur aus den Themen, die du auswählst.</p>
+          <p class="klein">${VIRTUELL_ANZAHL} zufällig gezogene Aufgaben aus allen Sätzen – als Prüfung (${PRUEFUNGSDAUER_MIN} Minuten, Bewertung wie bei der BITLC) oder zum Üben mit sofortiger Lösung. Du kannst auch nur bestimmte Themen auswählen.</p>
           <div class="knoepfe">
             <button class="btn primaer" data-aktion="zufall-pruefung">Zufalls-Prüfung starten</button>
+            <button class="btn" data-aktion="zufall-ueben">Zufalls-Übung starten</button>
             <button class="btn" data-aktion="zufall-themen">Themen auswählen</button>
           </div>
         </section>
@@ -1287,6 +1288,9 @@
         break;
       case 'zufall-pruefung':
         ansichtDeckblatt(baueVirtuellenSatz(ZUFALL_ID, waehleZufall(VIRTUELL_ANZAHL, null), null));
+        break;
+      case 'zufall-ueben':
+        starteUebung(mischen(waehleZufall(VIRTUELL_ANZAHL, null)), 'Zufallsfragen');
         break;
       case 'zufall-neu':
         ansichtDeckblatt(baueVirtuellenSatz(ZUFALL_ID, waehleZufall(VIRTUELL_ANZAHL, zustand.satz.themen), zustand.satz.themen));
