@@ -56,7 +56,7 @@
       optionen: [
         'Der Ausbildungsberater ist ein Beschäftigter der Agentur für Arbeit und vermittelt freie Ausbildungsplätze.',
         'Der Besuch ist nur mit vorheriger Zustimmung des Betriebsrats zulässig.',
-        'Der Ausbildungsberater berät Ausbildungsbetriebe und Auszubildende und überwacht für die BITLC die Durchführung der Ausbildung; der Betrieb muss ihm die erforderlichen Auskünfte erteilen und die Besichtigung der Ausbildungsstätte gestatten.',
+        'Der Ausbildungsberater überwacht die Ausbildung für die BITLC und berät Betriebe sowie Auszubildende.',
         'Der Ausbildungsberater darf den Ausbildungsvertrag eigenmächtig kündigen, wenn er Mängel feststellt.',
         'Der Ausbildungsberater ist Mitglied des Prüfungsausschusses und nimmt bei seinem Besuch die Zwischenprüfung ab.'
       ],
@@ -72,7 +72,7 @@
         'Die Kündigung ist wirksam, weil Messenger-Nachrichten heute der Schriftform gleichgestellt sind.',
         'Die Kündigung ist wirksam, weil nach der Probezeit jederzeit ohne Angabe von Gründen gekündigt werden kann.',
         'Die Kündigung ist wirksam, sobald Frau Sutter die Nachricht gelesen hat.',
-        'Die Kündigung ist unwirksam: Sie muss schriftlich mit eigenhändiger Unterschrift erfolgen und nach der Probezeit die Kündigungsgründe angeben.',
+        'Die Kündigung ist unwirksam, weil die Schriftform und die Angabe der Gründe fehlen.',
         'Die Kündigung ist unwirksam, weil Auszubildenden nach der Probezeit überhaupt nicht mehr gekündigt werden kann.'
       ],
       loesung: 4,
@@ -119,7 +119,7 @@
         'Der Gesamtbetriebsrat wird von allen Beschäftigten des Unternehmens in einer gemeinsamen Wahl gewählt.',
         'Der Gesamtbetriebsrat ist den einzelnen Betriebsräten übergeordnet und kann ihnen Weisungen erteilen.',
         'Der Gesamtbetriebsrat ersetzt die Betriebsräte in Freiburg und Karlsruhe, die danach aufgelöst werden.',
-        'Ein Gesamtbetriebsrat ist zu errichten; der Betriebsrat Freiburg entsendet zwei, der Betriebsrat Karlsruhe ein Mitglied. Er ist für Angelegenheiten zuständig, die das ganze Unternehmen betreffen und nicht innerhalb der einzelnen Betriebe geregelt werden können.'
+        'Ein Gesamtbetriebsrat ist zu errichten; er ist für unternehmensweite Angelegenheiten zuständig.'
       ],
       loesung: 5,
       erklaerung: '§ 47 Abs. 1 BetrVG: Bestehen in einem Unternehmen mehrere Betriebsräte, ist ein Gesamtbetriebsrat zu errichten. Jeder Betriebsrat mit bis zu drei Mitgliedern entsendet eines, jeder Betriebsrat mit mehr als drei Mitgliedern zwei seiner Mitglieder (§ 47 Abs. 2 BetrVG). Der Gesamtbetriebsrat ist zuständig für Angelegenheiten, die das Gesamtunternehmen oder mehrere Betriebe betreffen und nicht durch die einzelnen Betriebsräte innerhalb ihrer Betriebe geregelt werden können; er ist den Betriebsräten nicht übergeordnet (§ 50 Abs. 1 BetrVG).'
@@ -130,7 +130,7 @@
       frage: 'Welche der folgenden Aussagen zur Fortzahlung seines Arbeitsentgelts trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Einen Anspruch auf Entgeltfortzahlung gegen den Arbeitgeber hat Herr Ketterer erst nach vierwöchiger ununterbrochener Dauer des Arbeitsverhältnisses; für die Zeit davor kann er Krankengeld von seiner Krankenkasse erhalten.',
+        'Der Anspruch auf Entgeltfortzahlung entsteht erst nach vierwöchiger Wartezeit; vorher erhält er Krankengeld.',
         'Die Feldberg Datentechnik GmbH muss das Entgelt vom ersten Tag des Arbeitsverhältnisses an für bis zu sechs Wochen fortzahlen.',
         'Herr Ketterer erhält für die zehn Tage weder Entgelt noch Krankengeld.',
         'Die Feldberg Datentechnik GmbH darf das Arbeitsverhältnis wegen der Erkrankung fristlos kündigen.',
@@ -162,7 +162,7 @@
       optionen: [
         'Frau Vögele muss für die Organisation der Pflege ihren Jahresurlaub einsetzen.',
         'Frau Vögele darf der Arbeit nur fernbleiben, wenn das Unternehmen mehr als 250 Beschäftigte hat und der Betriebsrat zustimmt.',
-        'Frau Vögele darf bis zu zehn Arbeitstage der Arbeit fernbleiben, um die Pflege zu organisieren oder sicherzustellen; als Lohnersatz kann sie Pflegeunterstützungsgeld bei der Pflegekasse beantragen.',
+        'Frau Vögele darf bis zu zehn Arbeitstage der Arbeit fernbleiben, um die Pflege zu organisieren.',
         'Frau Vögele hat sofort Anspruch auf eine bezahlte Freistellung von sechs Monaten.',
         'Die Feldberg Datentechnik GmbH darf ihr wegen der Pflegesituation fristlos kündigen.'
       ],
@@ -250,7 +250,7 @@
         'Die Rente zahlt die Feldberg Datentechnik GmbH aus den Arbeitgeberbeiträgen.',
         'Alle Versicherten können ab dem 60. Geburtstag ohne Abschläge in Rente gehen.',
         'Eine Altersrente erhalten nur Versicherte, die zusätzlich privat vorgesorgt haben.',
-        'Frau Riesterer erreicht die Regelaltersgrenze mit Vollendung des 67. Lebensjahres; daneben zahlt die Rentenversicherung u. a. Renten wegen Erwerbsminderung und Hinterbliebenenrenten.',
+        'Frau Riesterer erreicht die Regelaltersgrenze mit Vollendung des 67. Lebensjahres.',
         'Renten wegen Erwerbsminderung zahlt die Berufsgenossenschaft.'
       ],
       loesung: 4,
@@ -264,7 +264,7 @@
       optionen: [
         'Jede Arbeitnehmerin überweist ihre Beiträge selbst an die einzelnen Versicherungsträger.',
         'Alle Beiträge einschließlich der Unfallversicherung gehen an das Finanzamt.',
-        'Der Arbeitgeber zahlt die Beiträge zur Kranken-, Pflege-, Renten- und Arbeitslosenversicherung als Gesamtsozialversicherungsbeitrag an die Krankenkasse der Beschäftigten; den Beitrag zur Unfallversicherung zahlt er an die Berufsgenossenschaft.',
+        'Der Arbeitgeber zahlt den Gesamtsozialversicherungsbeitrag an die Krankenkasse und den Unfallversicherungsbeitrag an die Berufsgenossenschaft.',
         'Die Deutsche Rentenversicherung zieht alle Sozialversicherungsbeiträge ein und verteilt sie.',
         'Die Beiträge werden nur einmal im Jahr nach Abschluss des Geschäftsjahres gezahlt.'
       ],
@@ -307,7 +307,7 @@
       frage: 'Welche der folgenden Aussagen zum Tarifvertrag trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Tarifverträge bedürfen der Schriftform; der Arbeitgeber muss die im Betrieb anwendbaren Tarifverträge im Betrieb bekannt machen, z. B. im Intranet oder durch Auslegen.',
+        'Tarifverträge bedürfen der Schriftform und müssen im Betrieb bekannt gemacht werden.',
         'Ein Tarifvertrag kann mündlich zwischen Gewerkschaft und Arbeitgeberverband vereinbart werden.',
         'Tarifverträge sind vertraulich und dürfen den Beschäftigten nicht zugänglich gemacht werden.',
         'Einsicht in den Tarifvertrag erhalten nur Beschäftigte, die länger als zehn Jahre im Betrieb sind.',
@@ -326,7 +326,7 @@
         'Durch die Aussperrung werden die Arbeitsverhältnisse der Ausgesperrten automatisch beendet.',
         'Die Ausgesperrten erhalten während der Aussperrung ihr volles Gehalt vom Arbeitgeber.',
         'Eine Aussperrung darf sich ausschließlich gegen Gewerkschaftsmitglieder richten.',
-        'Während einer rechtmäßigen Aussperrung ruhen die Arbeitsverhältnisse und die Ausgesperrten erhalten kein Entgelt; als Abwehrmaßnahme muss die Aussperrung verhältnismäßig sein.'
+        'Bei einer Aussperrung ruhen die Arbeitsverhältnisse und es wird kein Entgelt gezahlt.'
       ],
       loesung: 5,
       erklaerung: 'Die Aussperrung ist das Kampfmittel der Arbeitgeberseite; sie ist durch die Koalitionsfreiheit geschützt (Art. 9 Abs. 3 GG). Nach der Rechtsprechung des Bundesarbeitsgerichts ist sie als Abwehraussperrung gegen Teil- oder Schwerpunktstreiks zulässig, muss aber verhältnismäßig sein. Sie beendet die Arbeitsverhältnisse nicht, sondern lässt sie ruhen: Arbeitspflicht und Entgeltanspruch entfallen, nach dem Arbeitskampf wird die Arbeit fortgesetzt. Eine Aussperrung, die gezielt nur Gewerkschaftsmitglieder trifft, ist unzulässig, weil sie die Koalitionsfreiheit verletzt.'
@@ -369,7 +369,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Es handelt sich um eine Daueraufgabe ohne festen Endtermin, die eine Abteilung allein erledigt.',
-        'Es handelt sich um ein Projekt: ein einmaliges Vorhaben mit klarem Ziel, festgelegtem Anfangs- und Endtermin, begrenzten Mitteln und einer eigenen Projektorganisation.',
+        'Es handelt sich um ein Projekt mit klarem Ziel, festem Zeitrahmen und eigener Organisation.',
         'Projekte werden ausschließlich im Einliniensystem geführt; eine Projektleitung gibt es nicht.',
         'Die Planung eines Projekts beginnt erst nach Abschluss der Umsetzung.',
         'Für Projekte gelten die Vorschriften der Ausbildungsordnung.'
@@ -383,7 +383,7 @@
       frage: 'Welche der folgenden Aussagen zu diesem Ziel trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Es handelt sich um ein ökonomisches Marktziel; der Marktanteil gibt an, welchen Anteil am Umsatz aller Anbieter eines Marktes die Feldberg Datentechnik GmbH erzielt.',
+        'Es handelt sich um ein ökonomisches Marktziel, das den Anteil am Gesamtumsatz des Marktes angibt.',
         'Es handelt sich um ein soziales Ziel, weil es die Beschäftigten betrifft.',
         'Der Marktanteil ergibt sich aus dem Gewinn geteilt durch das Eigenkapital.',
         'Das Ziel ist nicht operational, weil Zielausmaß und Zeitraum fehlen.',
@@ -417,7 +417,7 @@
         'Das Arbeitsgericht entscheidet ohne mündliche Verhandlung allein nach Aktenlage.',
         'Über die Klage entscheidet in erster Instanz der Betriebsrat.',
         'Die Kammer des Arbeitsgerichts besteht aus drei Berufsrichtern.',
-        'Das Verfahren beginnt mit einer Güteverhandlung vor der oder dem Vorsitzenden; scheitert eine Einigung, entscheidet die Kammer aus einer Berufsrichterin oder einem Berufsrichter und je einer ehrenamtlichen Person aus Arbeitnehmer- und Arbeitgeberkreisen.'
+        'Das Verfahren beginnt mit einer Güteverhandlung; scheitert sie, entscheidet die Kammer mit einem Berufsrichter und zwei ehrenamtlichen Richtern.'
       ],
       loesung: 5,
       erklaerung: 'Die mündliche Verhandlung beginnt mit einer Güteverhandlung vor der oder dem Vorsitzenden mit dem Ziel einer gütlichen Einigung, z. B. durch einen Vergleich (§ 54 ArbGG). Scheitert sie, verhandelt die Kammer, die mit einem Berufsrichter als Vorsitzendem und je einem ehrenamtlichen Richter aus Kreisen der Arbeitnehmer und der Arbeitgeber besetzt ist (§ 16 Abs. 2 ArbGG). Vor dem Arbeitsgericht können die Parteien den Rechtsstreit selbst führen oder sich z. B. durch ihre Gewerkschaft vertreten lassen (§ 11 Abs. 1, 2 ArbGG); vor dem Landesarbeitsgericht und dem Bundesarbeitsgericht müssen sie sich vertreten lassen (§ 11 Abs. 4 ArbGG).'
@@ -444,7 +444,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Inflationsrate wird von der Europäischen Zentralbank anhand der Aktienkurse berechnet.',
-        'Das Statistische Bundesamt misst die Preisentwicklung eines Warenkorbs aus Waren und Dienstleistungen, die private Haushalte typischerweise kaufen; die Veränderung des Verbraucherpreisindex gegenüber dem Vorjahresmonat ist die Inflationsrate.',
+        'Das Statistische Bundesamt misst die Preisentwicklung eines Warenkorbs; die jährliche Veränderung ist die Inflationsrate.',
         'Die Inflationsrate gibt an, um wie viel Prozent die Löhne gestiegen sind.',
         'In den Warenkorb gehen nur Lebensmittel ein.',
         'Eine Inflationsrate von 2,4 % bedeutet, dass die Kaufkraft des Geldes um 2,4 % gestiegen ist.'
@@ -477,7 +477,7 @@
         'Die KfW zahlt jedem Gründer auf Antrag einen Zuschuss, der nicht zurückgezahlt werden muss.',
         'Den Gründungszuschuss der Agentur für Arbeit erhält jeder Gründer, auch ohne Anspruch auf Arbeitslosengeld.',
         'Banken vergeben Gründungskredite grundsätzlich ohne Businessplan und ohne Sicherheiten.',
-        'Förderkredite der KfW werden in der Regel über die Hausbank beantragt; ein eigener Kapitalanteil und ein schlüssiger Businessplan verbessern die Aussichten auf eine Finanzierung.',
+        'Förderkredite der KfW werden über die Hausbank beantragt; Eigenkapital und Businessplan verbessern die Aussichten.',
         'Kredite müssen nicht zurückgezahlt werden, wenn die Gründung scheitert.'
       ],
       loesung: 4,

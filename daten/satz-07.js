@@ -92,7 +92,7 @@
         'Die Personalakten der künftigen Mitarbeitenden',
         'Eine Markt- und Wettbewerbsanalyse',
         'Der Ausbildungsrahmenplan für Fachinformatiker',
-        'Ein Finanzplan mit Kapitalbedarfs-, Rentabilitäts- und Liquiditätsplanung',
+        'Ein Finanzplan mit Kapital-, Rentabilitäts- und Liquiditätsplanung',
         'Die Satzung der zuständigen Industrie- und Handelskammer',
         'Die Protokolle künftiger Betriebsversammlungen'
       ],
@@ -158,7 +158,7 @@
       optionen: [
         'nur mit dem in das Unternehmen eingebrachten Kapital.',
         'nur bis zu dem im Handelsregister eingetragenen Betrag.',
-        'unbeschränkt, also auch mit seinem Privatvermögen, für alle Verbindlichkeiten des Unternehmens.',
+        'unbeschränkt mit seinem gesamten Privatvermögen.',
         'gemeinsam mit der Industrie- und Handelskammer als Gesamtschuldner.',
         'erst nach Ablauf von zwei Jahren ab der Eintragung in das Handelsregister.'
       ],
@@ -171,7 +171,7 @@
       frage: 'Welche der folgenden Voraussetzungen muss erfüllt sein, damit die Spreetakt Software UG ausbilden darf?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Voraussetzung in das Kästchen ein.',
       optionen: [
-        'Die Ausbildungsstätte muss nach Art und Einrichtung für die Berufsausbildung geeignet sein, und Frau Kroll muss persönlich und fachlich geeignet sein.',
+        'Die Ausbildungsstätte muss geeignet sein und Frau Kroll persönlich und fachlich geeignet.',
         'Das Unternehmen muss mindestens 50 Beschäftigte haben.',
         'Frau Kroll muss ein abgeschlossenes Hochschulstudium in Informatik nachweisen.',
         'Das Unternehmen muss Mitglied eines Arbeitgeberverbands sein.',
@@ -211,7 +211,7 @@
       optionen: [
         'darf nur außerhalb der Ausbildungszeit und auf eigene Kosten geführt werden.',
         'muss für die Zulassung zur Abschlussprüfung nicht vorgelegt werden.',
-        'wird schriftlich oder elektronisch geführt; Frau Okafor darf ihn am Arbeitsplatz führen, und die Ausbildenden müssen ihn regelmäßig durchsehen.',
+        'wird schriftlich oder elektronisch geführt und von den Ausbildenden regelmäßig durchgesehen.',
         'wird ausschließlich von der Berufsschule geführt und benotet.',
         'muss nur geführt werden, solange die Auszubildende minderjährig ist.'
       ],
@@ -227,7 +227,7 @@
         'Frau Okafor darf am Samstag arbeiten, wenn ihre Eltern schriftlich zustimmen.',
         'Frau Okafor darf am Samstag arbeiten, wenn sie dafür einen Zuschlag von 25 % erhält.',
         'Frau Okafor darf an bis zu sechs Tagen in der Woche beschäftigt werden, solange sie insgesamt nicht mehr als 48 Stunden arbeitet.',
-        'Frau Okafor darf nur an fünf Tagen in der Woche und grundsätzlich nicht an Samstagen beschäftigt werden; die gesetzlichen Ausnahmen für die Samstagsarbeit gelten für ein Softwareunternehmen nicht.',
+        'Frau Okafor darf nur an fünf Tagen in der Woche und grundsätzlich nicht an Samstagen beschäftigt werden.',
         'Für Auszubildende über 15 Jahren gelten bei der Samstagsarbeit dieselben Regeln wie für Erwachsene.'
       ],
       loesung: 4,
@@ -240,7 +240,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       einleitung: 'Die regelmäßige Betriebsversammlung …',
       optionen: [
-        'findet einmal in jedem Kalendervierteljahr statt; der Betriebsrat erstattet dort einen Tätigkeitsbericht.',
+        'findet einmal in jedem Kalendervierteljahr statt.',
         'ist öffentlich, sodass auch Kunden und Presse teilnehmen dürfen.',
         'findet grundsätzlich außerhalb der Arbeitszeit und ohne Vergütung statt.',
         'wird von der Geschäftsführung geleitet; der Betriebsrat darf nur zuhören.',
@@ -257,7 +257,7 @@
       optionen: [
         'Der Betriebsrat muss erst informiert werden, wenn die Kündigungen bereits ausgesprochen sind.',
         'Die Schließung einer Abteilung ist eine rein unternehmerische Entscheidung, bei der der Betriebsrat keinerlei Beteiligungsrechte hat.',
-        'Die Geschäftsführung muss den Betriebsrat rechtzeitig und umfassend unterrichten und mit ihm über einen Interessenausgleich beraten; der Betriebsrat kann einen Sozialplan zum Ausgleich der wirtschaftlichen Nachteile verlangen, notfalls über die Einigungsstelle.',
+        'Die Geschäftsführung muss den Betriebsrat rechtzeitig und umfassend unterrichten und über einen Interessenausgleich beraten.',
         'Der Betriebsrat kann die Schließung der Abteilung durch seinen Widerspruch endgültig verhindern.',
         'Über die Schließung entscheiden die betroffenen Beschäftigten in einer geheimen Abstimmung.'
       ],
@@ -272,7 +272,7 @@
       einleitung: 'Der Wirtschaftsausschuss …',
       optionen: [
         'entscheidet anstelle der Geschäftsführung über Investitionen.',
-        'berät wirtschaftliche Angelegenheiten mit dem Unternehmer und unterrichtet den Betriebsrat; der Unternehmer muss ihn rechtzeitig und umfassend informieren.',
+        'berät wirtschaftliche Angelegenheiten mit dem Unternehmer und unterrichtet den Betriebsrat.',
         'wird von den Gesellschaftern gewählt und kontrolliert die Geschäftsführung.',
         'ist nur in Aktiengesellschaften vorgeschrieben.',
         'legt die Gehälter aller Beschäftigten verbindlich fest.'
@@ -290,7 +290,7 @@
         'Studierende, die ein in ihrer Studienordnung vorgeschriebenes Pflichtpraktikum absolvieren, haben Anspruch auf den Mindestlohn.',
         'Der Mindestlohn gilt nur in Unternehmen, die an einen Tarifvertrag gebunden sind.',
         'Arbeitgeber und Arbeitnehmer können im Arbeitsvertrag wirksam einen niedrigeren Stundenlohn vereinbaren.',
-        'Auszubildende haben keinen Anspruch auf den gesetzlichen Mindestlohn; für sie gilt die Mindestvergütung nach dem Berufsbildungsgesetz.'
+        'Auszubildende haben keinen Anspruch auf den gesetzlichen Mindestlohn.'
       ],
       loesung: 5,
       erklaerung: 'Der Mindestlohn steht grundsätzlich allen Arbeitnehmerinnen und Arbeitnehmern zu, auch Minijobbern und unabhängig von einer Tarifbindung (§§ 1, 22 Abs. 1 MiLoG). Vereinbarungen, die ihn unterschreiten, sind insoweit unwirksam (§ 3 MiLoG). Ausgenommen sind u. a. Auszubildende (§ 22 Abs. 3 MiLoG), für die die Mindestvergütung nach § 17 Abs. 2 BBiG gilt, sowie Pflichtpraktika aufgrund einer Studien- oder Ausbildungsordnung (§ 22 Abs. 1 Satz 2 Nr. 1 MiLoG). Die Höhe passt die Mindestlohnkommission regelmäßig an.'
@@ -301,7 +301,7 @@
       frage: 'Welche der folgenden Aussagen zur Arbeitnehmerüberlassung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Leiharbeitnehmer haben ihren Arbeitsvertrag mit der FlexIT Personal GmbH; die Arbeitsanweisungen im Projekt erteilt die Spreetakt Software UG.',
+        'Die Leiharbeitnehmer haben ihren Arbeitsvertrag mit der FlexIT Personal GmbH.',
         'Die Leiharbeitnehmer erhalten ihr Gehalt direkt von der Spreetakt Software UG.',
         'Leiharbeitnehmer dürfen unbegrenzt lange an denselben Entleiher überlassen werden.',
         'Leiharbeitnehmer dürfen grundsätzlich dauerhaft schlechter bezahlt werden als vergleichbare Stammbeschäftigte des Entleihers.',
@@ -333,7 +333,7 @@
         'Herr Lindner muss den Schaden immer in voller Höhe ersetzen, weil er das Gerät beschädigt hat.',
         'Herr Lindner und die Spreetakt Software UG tragen jeden Schaden stets je zur Hälfte.',
         'Die Haftung richtet sich allein nach der Höhe seines Monatsgehalts.',
-        'Bei leichtester Fahrlässigkeit haftet Herr Lindner nicht; bei mittlerer Fahrlässigkeit würde der Schaden anteilig verteilt, bei grober Fahrlässigkeit oder Vorsatz haftete er grundsätzlich voll.',
+        'Bei leichtester Fahrlässigkeit haftet Herr Lindner nicht.',
         'Herr Lindner muss beweisen, dass ihn kein Verschulden trifft, sonst haftet er voll.'
       ],
       loesung: 4,
@@ -363,7 +363,7 @@
       optionen: [
         'Ein Telearbeitsplatz liegt bereits vor, wenn Beschäftigte gelegentlich unterwegs mit dem Notebook arbeiten.',
         'Für einen Telearbeitsplatz gelten keinerlei Arbeitsschutzvorschriften, weil er sich in der Privatwohnung befindet.',
-        'Ein Telearbeitsplatz ist ein vom Arbeitgeber fest eingerichteter Bildschirmarbeitsplatz im Privatbereich der Beschäftigten; die Bedingungen werden vereinbart, und der Arbeitgeber stellt die benötigte Ausstattung bereit.',
+        'Ein Telearbeitsplatz ist ein vom Arbeitgeber fest eingerichteter Bildschirmarbeitsplatz im Privatbereich.',
         'Die Einrichtung und Ausstattung des Telearbeitsplatzes muss Frau Kraus selbst bezahlen.',
         'Ein Telearbeitsplatz darf nur mit Genehmigung der Berufsgenossenschaft eingerichtet werden.'
       ],
@@ -392,7 +392,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Spreetakt Software UG zahlt sein Arbeitsentgelt für die gesamten zehn Wochen weiter.',
-        'Die Spreetakt Software UG zahlt sein Arbeitsentgelt bis zu sechs Wochen weiter; danach erhält er Krankengeld von seiner Krankenkasse.',
+        'Die Spreetakt Software UG zahlt sein Arbeitsentgelt bis zu sechs Wochen weiter.',
         'Weil es ein Freizeitunfall ist, zahlt die Berufsgenossenschaft vom ersten Tag an Verletztengeld.',
         'In den ersten sechs Wochen zahlt die Krankenkasse Krankengeld, danach setzt der Arbeitgeber das Gehalt fort.',
         'Herr Neumann erhält während der Arbeitsunfähigkeit keinerlei Leistungen, weil sich der Unfall in der Freizeit ereignet hat.'
@@ -429,7 +429,7 @@
       frage: 'Welche der folgenden Aussagen zu den Rechten von Frau Yıldız nach dem Allgemeinen Gleichbehandlungsgesetz (AGG) trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Sie kann sich bei der zuständigen Stelle des Betriebs beschweren; die Beschwerde ist zu prüfen und ihr das Ergebnis mitzuteilen.',
+        'Sie kann sich bei der zuständigen Stelle des Betriebs beschweren.',
         'Eine Beschwerde ist nur zulässig, wenn mindestens drei Kolleginnen und Kollegen sie unterschreiben.',
         'Wegen der Beschwerde darf der Arbeitgeber sie abmahnen.',
         'Sie muss zuerst beim Arbeitsgericht klagen, bevor sie sich im Betrieb beschweren darf.',
@@ -445,7 +445,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Das Aufstiegs-BAföG fördert nur ein Hochschulstudium in Vollzeit.',
-        'Es fördert die Vorbereitung auf Fortbildungsabschlüsse wie den Bachelor Professional in Voll- oder Teilzeit; ein Teil der Lehrgangs- und Prüfungsgebühren ist ein Zuschuss, der nicht zurückgezahlt werden muss.',
+        'Es fördert die Vorbereitung auf Fortbildungsabschlüsse wie den Bachelor Professional.',
         'Die gesamte Förderung muss in voller Höhe zurückgezahlt werden.',
         'Gefördert werden nur Personen unter 25 Jahren.',
         'Den Antrag stellt der Arbeitgeber bei der Berufsgenossenschaft.'
@@ -475,7 +475,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Ein Datenschutzbeauftragter muss erst ab 500 Beschäftigten benannt werden.',
-        'Die Spreetakt Software UG muss einen Datenschutzbeauftragten benennen; das kann ein Beschäftigter oder ein externer Dienstleister sein, der bei seiner Aufgabe keinen Weisungen unterliegt.',
+        'Die Spreetakt Software UG muss einen Datenschutzbeauftragten benennen.',
         'Datenschutzbeauftragter muss immer ein Geschäftsführer des Unternehmens sein.',
         'Der Datenschutzbeauftragte wird vom Betriebsrat gewählt und ist an dessen Weisungen gebunden.',
         'Der Datenschutzbeauftragte ist anstelle des Unternehmens für die Einhaltung des Datenschutzes verantwortlich.'

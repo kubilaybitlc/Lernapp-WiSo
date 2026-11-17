@@ -34,7 +34,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Das Verhalten ist zulässig, weil Auszubildende nur an die Weisungen ihrer Ausbilderin gebunden sind.',
-        'Herr Feltes verletzt seine Pflicht, über Betriebs- und Geschäftsgeheimnisse Stillschweigen zu wahren; das kann zu einer Abmahnung oder im schweren Fall zu einer Kündigung führen.',
+        'Herr Feltes verletzt seine Pflicht zur Verschwiegenheit über Betriebs- und Geschäftsgeheimnisse.',
         'Die Pflicht zur Verschwiegenheit gilt erst nach bestandener Abschlussprüfung.',
         'Zur Verschwiegenheit sind nur die Gesellschafter der OHG verpflichtet, nicht die Beschäftigten.',
         'Das Verhalten ist zulässig, weil das Forum nur von Privatpersonen genutzt wird.'
@@ -51,7 +51,7 @@
         'Frau Junk muss Fachbuch und Lizenz selbst bezahlen, weil sie die Prüfung für sich selbst ablegt.',
         'Die Kosten werden zwischen Frau Junk und der Mosel Digital OHG je zur Hälfte geteilt.',
         'Die OHG muss Fachbuch und Lizenz nur bezahlen, wenn Frau Junk minderjährig ist.',
-        'Die Mosel Digital OHG muss die für die Ausbildung und die Prüfungen erforderlichen Ausbildungsmittel wie Fachliteratur und Software kostenlos zur Verfügung stellen.',
+        'Die OHG muss Ausbildungsmittel wie Fachliteratur und Software kostenlos zur Verfügung stellen.',
         'Die Kosten trägt die Industrie- und Handelskammer als zuständige Stelle.'
       ],
       loesung: 4,
@@ -63,7 +63,7 @@
       frage: 'Welche der folgenden Aussagen zu einer Kündigung des Berufsausbildungsverhältnisses trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Nach der Probezeit kann die OHG nur aus einem wichtigen Grund fristlos kündigen; bei wiederholtem Zuspätkommen ist in der Regel zuvor eine Abmahnung erforderlich.',
+        'Nach der Probezeit kann nur aus wichtigem Grund fristlos gekündigt werden; zuvor ist eine Abmahnung erforderlich.',
         'Nach der Probezeit kann die OHG jederzeit ordentlich mit einer Frist von vier Wochen kündigen.',
         'Nach der Probezeit ist eine Kündigung durch den Ausbildungsbetrieb in jedem Fall ausgeschlossen.',
         'Die Kündigung ist wirksam, wenn Herr Lehnen sie Herrn Molitor mündlich mitteilt.',
@@ -96,7 +96,7 @@
       optionen: [
         'Betriebsratssitzungen sind öffentlich; alle Beschäftigten dürfen als Zuhörer teilnehmen.',
         'Betriebsratssitzungen finden grundsätzlich nach Feierabend statt, damit die Arbeit nicht gestört wird.',
-        'Betriebsratssitzungen sind nicht öffentlich und finden in der Regel während der Arbeitszeit statt; der Besuch einer Sprechstunde des Betriebsrats führt nicht zu einer Minderung des Arbeitsentgelts.',
+        'Betriebsratssitzungen sind nicht öffentlich und finden während der Arbeitszeit statt.',
         'Für den Besuch der Sprechstunde des Betriebsrats muss der Kollege Urlaub nehmen.',
         'Ob Zuhörer an einer Betriebsratssitzung teilnehmen dürfen, entscheiden die Gesellschafter.'
       ],
@@ -113,7 +113,7 @@
         'Die Personalplanung ist allein Sache der Gesellschafter; der Betriebsrat erfährt davon erst bei den Einstellungen.',
         'Der Betriebsrat legt fest, wie viele Stellen geschaffen werden.',
         'Eine Unterrichtung des Betriebsrats ist erst in Unternehmen mit mehr als 500 Arbeitnehmern vorgeschrieben.',
-        'Der Arbeitgeber muss den Betriebsrat über die Personalplanung, insbesondere den gegenwärtigen und künftigen Personalbedarf, rechtzeitig und umfassend anhand von Unterlagen unterrichten und mit ihm über die Maßnahmen beraten.'
+        'Der Arbeitgeber muss den Betriebsrat rechtzeitig über die Personalplanung unterrichten und mit ihm beraten.'
       ],
       loesung: 5,
       erklaerung: 'Der Arbeitgeber hat den Betriebsrat über die Personalplanung, insbesondere über den gegenwärtigen und künftigen Personalbedarf sowie die sich daraus ergebenden personellen Maßnahmen und Maßnahmen der Berufsbildung, anhand von Unterlagen rechtzeitig und umfassend zu unterrichten und mit ihm über Art und Umfang der Maßnahmen zu beraten (§ 92 Abs. 1 BetrVG). Der Betriebsrat kann Vorschläge machen (§ 92 Abs. 2 BetrVG). Ein Zustimmungsverweigerungsrecht hat er erst bei der einzelnen Einstellung (§ 99 BetrVG).'
@@ -128,7 +128,7 @@
         'Eine Kündigung ist frühestens nach sechs Wochen Arbeitsunfähigkeit erlaubt.',
         'Eine Kündigung während der Krankheit ist nur mit Zustimmung der Krankenkasse zulässig.',
         'Mit dem Zugang einer Kündigung während der Krankheit endet die Entgeltfortzahlung sofort.',
-        'Auch während einer Arbeitsunfähigkeit kann gekündigt werden; die Krankheit schützt nicht vor einer Kündigung, es gelten die üblichen Kündigungsfristen und der allgemeine Kündigungsschutz.'
+        'Auch während einer Arbeitsunfähigkeit kann gekündigt werden; es gelten die üblichen Fristen und der Kündigungsschutz.'
       ],
       loesung: 5,
       erklaerung: 'Ein gesetzliches Kündigungsverbot während einer Krankheit gibt es nicht. Es gelten die Kündigungsfristen (§ 622 BGB) und, bei mehr als zehn Arbeitnehmern und einem Arbeitsverhältnis von mehr als sechs Monaten, der Kündigungsschutz: Die Kündigung muss sozial gerechtfertigt sein (§§ 1, 23 KSchG). Eine krankheitsbedingte Kündigung setzt unter anderem eine negative Gesundheitsprognose voraus. Kündigt der Arbeitgeber aus Anlass der Arbeitsunfähigkeit, bleibt der Anspruch auf Entgeltfortzahlung bestehen (§ 8 Abs. 1 EFZG).'
@@ -140,7 +140,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Rückzahlungsvereinbarungen für Fortbildungskosten sind in Arbeitsverhältnissen grundsätzlich verboten.',
-        'Eine Rückzahlungsklausel ist zulässig, wenn die Fortbildung Herrn Kees einen beruflichen Vorteil bringt, die Bindungsdauer angemessen ist und sich der Rückzahlungsbetrag mit der Zeit anteilig verringert.',
+        'Eine Rückzahlungsklausel ist zulässig, wenn die Bindungsdauer angemessen ist und sich der Betrag zeitanteilig verringert.',
         'Die OHG darf die Rückzahlung für jeden Fall der Beendigung vereinbaren, auch wenn sie selbst betriebsbedingt kündigt.',
         'Herr Kees muss die Kosten immer vollständig zurückzahlen, egal wann er kündigt.',
         'Eine Rückzahlungspflicht entsteht kraft Gesetzes, auch wenn nichts vereinbart wurde.'
@@ -155,7 +155,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Herr Fuchs erhält keine Vergütung, weil er nicht gearbeitet hat; er muss für diesen Tag Urlaub nehmen.',
-        'Herr Fuchs behält seinen Vergütungsanspruch, weil er für eine verhältnismäßig nicht erhebliche Zeit ohne sein Verschulden aus einem in seiner Person liegenden Grund an der Arbeit verhindert ist.',
+        'Herr Fuchs behält seinen Vergütungsanspruch, weil er ohne eigenes Verschulden für kurze Zeit verhindert ist.',
         'Herr Fuchs erhält die Vergütung nur, wenn seine Krankenkasse sie erstattet.',
         'Herr Fuchs muss den Tag in der folgenden Woche unbezahlt nacharbeiten.',
         'Eine bezahlte Freistellung gibt es ausschließlich bei Krankheit.'
@@ -187,7 +187,7 @@
         'Eine Fortbildung ist nicht nötig, die einmalige Ausbildung gilt für das gesamte Arbeitsleben.',
         'Frau Wirtz muss die Fortbildung in ihrer Freizeit und auf eigene Kosten besuchen.',
         'Eine Fortbildung ist nur alle zehn Jahre vorgeschrieben.',
-        'Frau Wirtz soll in der Regel alle zwei Jahre fortgebildet werden; die Lehrgangsgebühren übernimmt in der Regel der Unfallversicherungsträger.',
+        'Frau Wirtz soll alle zwei Jahre fortgebildet werden; die Kosten trägt der Unfallversicherungsträger.',
         'Ersthelfer müssen erst in Betrieben mit mehr als 500 Beschäftigten bestellt werden.'
       ],
       loesung: 4,
@@ -217,7 +217,7 @@
         'Mit dem Ausscheiden endet seine Haftung für alle Verbindlichkeiten der OHG sofort.',
         'Er haftet nach dem Ausscheiden auch für alle neuen Verträge, die die OHG später abschließt.',
         'Er haftet nur noch bis zur Höhe seiner früheren Kapitaleinlage.',
-        'Für die bis zu seinem Ausscheiden begründeten Verbindlichkeiten haftet er weiter, soweit sie innerhalb von fünf Jahren nach dem Ausscheiden fällig und gegen ihn gerichtlich geltend gemacht werden (Nachhaftung).',
+        'Für die bis zu seinem Ausscheiden begründeten Verbindlichkeiten haftet er noch fünf Jahre weiter (Nachhaftung).',
         'Für die Leasingraten haften ausschließlich Frau Kirsten und Frau Bungert als Gesellschafterinnen.'
       ],
       loesung: 4,
@@ -248,7 +248,7 @@
         'Eine Anmeldung ist erst nach Ablauf der Probezeit erforderlich.',
         'Die Anmeldung erfolgt schriftlich beim Finanzamt.',
         'Die OHG muss nur die Rentenversicherung informieren; die übrigen Träger erhalten keine Meldung.',
-        'Die OHG meldet Frau Haubrich elektronisch bei ihrer Krankenkasse an, und zwar mit der ersten Entgeltabrechnung, spätestens innerhalb von sechs Wochen nach Beschäftigungsbeginn.'
+        'Die OHG meldet Frau Haubrich elektronisch bei ihrer Krankenkasse an, spätestens sechs Wochen nach Beschäftigungsbeginn.'
       ],
       loesung: 5,
       erklaerung: 'Der Arbeitgeber hat versicherungspflichtig Beschäftigte der Einzugsstelle, also der Krankenkasse, durch elektronische Datenübertragung zu melden (§ 28a Abs. 1 SGB IV). Die Anmeldung erfolgt mit der ersten folgenden Entgeltabrechnung, spätestens innerhalb von sechs Wochen nach Beginn der Beschäftigung (§ 6 DEÜV). Die Krankenkasse leitet die Daten an die übrigen Versicherungszweige weiter. In einigen Branchen, z. B. im Baugewerbe und in der Gastronomie, ist zusätzlich eine Sofortmeldung bei Arbeitsbeginn vorgeschrieben (§ 28a Abs. 4 SGB IV).'
@@ -329,7 +329,7 @@
       optionen: [
         'Während eines Streiks darf im Betrieb überhaupt nicht gearbeitet werden, auch keine Sicherungsarbeiten.',
         'Der Arbeitgeber darf alle Streikenden zwingen, ihre normale Arbeit fortzusetzen.',
-        'Erhaltungsarbeiten, die verhindern, dass Anlagen und Daten dauerhaft geschädigt werden, sind auch während des Streiks zu leisten; Umfang und Besetzung sollen Gewerkschaft und Arbeitgeber gemeinsam regeln.',
+        'Erhaltungsarbeiten zum Schutz von Anlagen und Daten sind auch während des Streiks zu leisten.',
         'Erhaltungsarbeiten dürfen ausschließlich die Gesellschafter selbst ausführen.',
         'Während eines Streiks teilt das Arbeitsgericht die Beschäftigten für die Erhaltungsarbeiten ein.'
       ],
@@ -360,7 +360,7 @@
         'Herr Thewes muss die Benachteiligung vollständig beweisen; Indizien reichen nicht aus.',
         'Die OHG muss beweisen, dass Herr Thewes ungeeignet ist, sonst muss sie ihn einstellen.',
         'Bei Streitigkeiten nach dem AGG gibt es keine Regeln zur Beweislast.',
-        'Herr Thewes muss Indizien beweisen, die eine Benachteiligung wegen des Alters vermuten lassen; dann muss die OHG beweisen, dass kein Verstoß gegen das AGG vorliegt.',
+        'Herr Thewes muss Indizien für eine Altersdiskriminierung vorbringen; die OHG muss dann das Gegenteil beweisen.',
         'Die Beweislast trägt immer das Arbeitsgericht.'
       ],
       loesung: 4,
@@ -409,7 +409,7 @@
         'Leichte körperliche Strafen sind bei Auszubildenden zu Erziehungszwecken erlaubt.',
         'Für den Schutz von Herrn Kremer sind allein seine Eltern zuständig.',
         'Der Arbeitgeber muss erst eingreifen, wenn Herr Kremer Strafanzeige erstattet.',
-        'Wer Jugendliche beschäftigt, darf sie nicht körperlich züchtigen und muss sie vor Züchtigung, Misshandlung und sittlicher Gefährdung durch andere Beschäftigte schützen.',
+        'Wer Jugendliche beschäftigt, darf sie nicht körperlich züchtigen und muss sie vor Misshandlung schützen.',
         'Das Jugendarbeitsschutzgesetz schützt Jugendliche nur während des Berufsschulunterrichts.'
       ],
       loesung: 4,
@@ -425,7 +425,7 @@
         'Die Staatskasse, weil Arbeitsgerichtsverfahren kostenlos sind',
         'Die Industrie- und Handelskammer',
         'Herr Rausch und die Mosel Digital OHG je zur Hälfte',
-        'Herr Rausch selbst, weil im ersten Rechtszug vor dem Arbeitsgericht kein Anspruch auf Erstattung der Anwaltskosten durch die Gegenseite besteht'
+        'Herr Rausch selbst, weil im ersten Rechtszug vor dem Arbeitsgericht keine Anwaltskosten erstattet werden'
       ],
       loesung: 5,
       erklaerung: 'Im Urteilsverfahren des ersten Rechtszugs vor dem Arbeitsgericht hat die obsiegende Partei keinen Anspruch auf Erstattung der Kosten für die Zuziehung eines Prozessbevollmächtigten (§ 12a Abs. 1 Satz 1 ArbGG). Jede Partei trägt ihre Anwaltskosten also selbst; darauf muss die Anwältin vor Abschluss der Vereinbarung hinweisen. Die Gerichtskosten trägt dagegen grundsätzlich die unterlegene Partei. Viele Beschäftigte nutzen den Rechtsschutz ihrer Gewerkschaft oder eine Rechtsschutzversicherung.'
@@ -445,7 +445,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die EZB muss Weisungen der Bundesregierung befolgen.',
-        'Vorrangiges Ziel der EZB ist die Preisstabilität; sie strebt mittelfristig eine Inflationsrate von 2 % an und ist von Weisungen der Regierungen unabhängig.',
+        'Vorrangiges Ziel der EZB ist die Preisstabilität; sie ist von Weisungen der Regierungen unabhängig.',
         'Die EZB legt die Höhe der Einkommensteuer fest.',
         'Hauptziel der EZB ist ein möglichst hoher Wechselkurs des Euro.',
         'Die EZB darf den Mitgliedstaaten direkt Kredite für Straßenbauprojekte gewähren.'
@@ -459,7 +459,7 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die OHG muss die Einhaltung der Datenschutzgrundsätze nachweisen können; bei Verstößen kann die Aufsichtsbehörde Geldbußen von bis zu 20 Mio. EUR oder 4 % des weltweiten Jahresumsatzes verhängen, je nachdem, welcher Betrag höher ist.',
+        'Die OHG muss die Einhaltung der Datenschutzgrundsätze nachweisen können; bei Verstößen drohen hohe Geldbußen.',
         'Bußgelder nach der DSGVO dürfen nur gegen Konzerne mit mehr als 1.000 Beschäftigten verhängt werden.',
         'Die Aufsichtsbehörde darf nur tätig werden, wenn sich eine betroffene Person beschwert.',
         'Die DSGVO sieht für Unternehmen keine Bußgelder vor, sondern nur Verwarnungen.',
@@ -474,7 +474,7 @@
       frage: 'Welche der folgenden Aussagen zum DQR trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der DQR ordnet Qualifikationen acht Niveaus zu; der Bachelor Professional steht wie der Bachelor einer Hochschule auf Niveau 6.',
+        'Der DQR hat acht Niveaus; der Bachelor Professional steht auf Niveau 6 wie der Hochschul-Bachelor.',
         'Der DQR gilt nur für Hochschulabschlüsse.',
         'Der Bachelor Professional ist im DQR niedriger eingeordnet als eine dreijährige Berufsausbildung.',
         'Der DQR ist ein Notensystem der BITLC für Abschlussprüfungen.',

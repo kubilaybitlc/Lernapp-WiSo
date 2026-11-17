@@ -46,7 +46,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Höhe der Ausbildungsvergütung kann der Ausbildungsbetrieb frei festlegen; eine gesetzliche Untergrenze gibt es nicht.',
-        'Gilt für das Ausbildungsverhältnis ein Tarifvertrag, ist die tarifliche Vergütung zu zahlen; ohne Tarifbindung darf die gesetzliche Mindestvergütung nicht unterschritten werden.',
+        'Bei Tarifbindung ist die tarifliche Vergütung zu zahlen; ohne Tarifbindung gilt die gesetzliche Mindestvergütung.',
         'Auszubildende haben Anspruch auf den gesetzlichen Mindestlohn je Arbeitsstunde.',
         'Die Ausbildungsvergütung bleibt während der gesamten Ausbildungszeit gleich hoch.',
         'Die Ausbildungsvergütung zahlt die BITLC, der Ausbildungsbetrieb erstattet ihr den Betrag.'
@@ -62,7 +62,7 @@
       optionen: [
         'Die Ausbildungszeit verlängert sich automatisch um die Dauer der Arbeitsunfähigkeit.',
         'Eine Verlängerung ist ausgeschlossen; Herr Brandl muss die Abschlussprüfung zum regulären Termin ablegen.',
-        'Auf Antrag von Herrn Brandl kann die BITLC die Ausbildungszeit in Ausnahmefällen verlängern, wenn dies erforderlich ist, um das Ausbildungsziel zu erreichen.',
+        'Auf Antrag von Herrn Brandl kann die BITLC die Ausbildungszeit verlängern, um das Ausbildungsziel zu erreichen.',
         'Über eine Verlängerung entscheidet allein die Isarfunk Systems GmbH.',
         'Die Ausbildungszeit kann nur verlängert werden, wenn Herr Brandl die Abschlussprüfung bereits einmal nicht bestanden hat.'
       ],
@@ -78,7 +78,7 @@
         'Das Prüfungszeugnis stellt die Isarfunk Systems GmbH als Ausbildungsbetrieb aus.',
         'Das Prüfungszeugnis enthält stets eine Beurteilung von Frau Pichlers Verhalten im Betrieb.',
         'Ein Prüfungszeugnis erhält nur, wer die Abschlussprüfung mindestens mit der Note „gut“ bestanden hat.',
-        'Auf Antrag von Frau Pichler wird dem Prüfungszeugnis eine englischsprachige und eine französischsprachige Übersetzung beigefügt.',
+        'Auf Antrag wird dem Prüfungszeugnis eine englische und eine französische Übersetzung beigefügt.',
         'Die Noten der Berufsschule müssen in jedem Fall auf dem Prüfungszeugnis ausgewiesen werden.'
       ],
       loesung: 4,
@@ -108,7 +108,7 @@
         'Frau Riedl muss sich selbst über ihre Aufgaben und die Gefahren an ihrem Arbeitsplatz informieren.',
         'Die Unterrichtung der Beschäftigten übernimmt ausschließlich der Betriebsrat.',
         'Eine Unterrichtung ist nur in Betrieben mit mehr als 500 Beschäftigten vorgeschrieben.',
-        'Der Arbeitgeber muss Frau Riedl über ihre Aufgaben, ihre Verantwortung und die Einordnung ihrer Tätigkeit in den Arbeitsablauf unterrichten und sie vor Beginn der Beschäftigung über Unfall- und Gesundheitsgefahren belehren.',
+        'Der Arbeitgeber muss Frau Riedl vor Beginn der Beschäftigung über ihre Aufgaben und die Gefahren unterrichten.',
         'Über spätere Veränderungen in ihrem Arbeitsbereich muss Frau Riedl nicht informiert werden.'
       ],
       loesung: 4,
@@ -120,7 +120,7 @@
       frage: 'Welche der folgenden Aussagen zur Jugend- und Auszubildendenversammlung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die JAV kann die Versammlung im Einvernehmen mit dem Betriebsrat vor oder nach jeder Betriebsversammlung einberufen; sie findet grundsätzlich während der Arbeitszeit statt, die Zeit wird vergütet.',
+        'Die JAV kann die Versammlung im Einvernehmen mit dem Betriebsrat vor oder nach jeder Betriebsversammlung einberufen.',
         'Die Versammlung darf nur außerhalb der Arbeitszeit und ohne Vergütung stattfinden.',
         'An der Versammlung dürfen nur Auszubildende teilnehmen, die das 18. Lebensjahr vollendet haben.',
         'Die Versammlung kann verbindliche Weisungen an die Geschäftsführung beschließen.',
@@ -139,7 +139,7 @@
         'An Sonntagen dürfen Arbeitnehmer höchstens vier Stunden beschäftigt werden.',
         'Sonntagsarbeit ist ohne jede Ausnahme verboten.',
         'Sonntagsarbeit ist in allen Unternehmen erlaubt, wenn der Arbeitnehmer zustimmt.',
-        'Herr Moser muss einen Ersatzruhetag erhalten, der innerhalb von zwei Wochen zu gewähren ist; mindestens 15 Sonntage im Jahr müssen für ihn beschäftigungsfrei bleiben.'
+        'Herr Moser muss einen Ersatzruhetag innerhalb von zwei Wochen erhalten; 15 Sonntage im Jahr müssen beschäftigungsfrei bleiben.'
       ],
       loesung: 5,
       erklaerung: '§ 9 ArbZG: An Sonn- und Feiertagen dürfen Arbeitnehmer grundsätzlich nicht beschäftigt werden; § 10 ArbZG lässt Ausnahmen zu. § 11 ArbZG: Mindestens 15 Sonntage im Jahr müssen beschäftigungsfrei bleiben (Abs. 1), die Höchstarbeitszeiten gelten auch sonntags (Abs. 2), und für einen Sonntag ist ein Ersatzruhetag innerhalb von zwei Wochen zu gewähren, für einen Feiertag innerhalb von acht Wochen (Abs. 3). Einen gesetzlichen Sonntagszuschlag gibt es nicht; Zuschläge regeln Tarifverträge.'
@@ -151,7 +151,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Eine Probezeit ist gesetzlich vorgeschrieben und dauert immer sechs Monate.',
-        'Während einer vereinbarten Probezeit von längstens sechs Monaten kann mit einer Frist von zwei Wochen gekündigt werden; den allgemeinen Kündigungsschutz erwirbt Frau Wagner erst nach sechs Monaten Beschäftigung.',
+        'In der Probezeit von höchstens sechs Monaten kann mit zwei Wochen Frist gekündigt werden.',
         'In der Probezeit kann das Arbeitsverhältnis von beiden Seiten fristlos und ohne Grund gekündigt werden.',
         'Die verkürzte Kündigungsfrist von zwei Wochen gilt auch für eine vereinbarte Probezeit von zwölf Monaten.',
         'Während der Probezeit hat Frau Wagner keinen Anspruch auf Entgeltfortzahlung im Krankheitsfall.'
@@ -180,7 +180,7 @@
       frage: 'Welche der folgenden Erste-Hilfe-Maßnahmen ist jetzt richtig?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Maßnahme in das Kästchen ein.',
       optionen: [
-        'Herrn Weber in die stabile Seitenlage bringen, zudecken und seine Atmung bis zum Eintreffen des Rettungsdienstes regelmäßig kontrollieren',
+        'Herrn Weber in die stabile Seitenlage bringen und seine Atmung regelmäßig kontrollieren',
         'Sofort mit der Herzdruckmassage beginnen',
         'Herrn Weber etwas zu trinken geben, damit sein Kreislauf stabil bleibt',
         'Herrn Weber auf dem Rücken liegen lassen und die Prüfhalle verlassen, um weitere Hilfe zu holen',
@@ -243,7 +243,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Herr Seidl haftet nur für Verbindlichkeiten, die nach seinem Eintritt entstehen.',
-        'Herr Seidl haftet auch für die vor seinem Eintritt begründete Verbindlichkeit persönlich und unbeschränkt; die abweichende Vereinbarung im Gesellschaftsvertrag ist dem Lieferanten gegenüber unwirksam.',
+        'Herr Seidl haftet auch für die Altverbindlichkeit persönlich und unbeschränkt; die abweichende Vereinbarung ist Dritten gegenüber unwirksam.',
         'Herr Seidl haftet nur bis zur Höhe seiner Einlage.',
         'Die Vereinbarung im Gesellschaftsvertrag schließt die Haftung gegenüber allen Gläubigern wirksam aus.',
         'Für die Verbindlichkeit haftet allein der Gesellschafter, der den Vertrag mit dem Lieferanten unterschrieben hat.'
@@ -260,7 +260,7 @@
         'Insolvenzgeld zahlt die Krankenkasse für höchstens sechs Wochen.',
         'Insolvenzgeld erhalten nur Beschäftigte, die mindestens zwölf Monate Beiträge zur Arbeitslosenversicherung gezahlt haben.',
         'Das Insolvenzgeld wird aus Steuermitteln des Landes finanziert und vom Insolvenzverwalter ausgezahlt.',
-        'Die Agentur für Arbeit zahlt auf Antrag Insolvenzgeld für das ausgefallene Nettoarbeitsentgelt der letzten drei Monate vor dem Insolvenzereignis; der Antrag ist innerhalb von zwei Monaten nach dem Insolvenzereignis zu stellen.',
+        'Die Agentur für Arbeit zahlt Insolvenzgeld für die letzten drei Monate vor dem Insolvenzereignis.',
         'Ein Anspruch auf Insolvenzgeld besteht nur, wenn das Arbeitsverhältnis bereits gekündigt ist.'
       ],
       loesung: 4,
@@ -274,7 +274,7 @@
       optionen: [
         'Berufskrankheiten sind alle Krankheiten, die während der Arbeitszeit auftreten, z. B. eine Grippe.',
         'Für Berufskrankheiten ist allein die Krankenkasse zuständig; die Unfallversicherung leistet nur bei Arbeitsunfällen.',
-        'Berufskrankheiten sind die in der Berufskrankheiten-Verordnung bezeichneten Krankheiten, die Versicherte infolge ihrer versicherten Tätigkeit erleiden; zuständig ist die gesetzliche Unfallversicherung.',
+        'Berufskrankheiten sind die in der Berufskrankheiten-Verordnung bezeichneten Krankheiten; zuständig ist die Unfallversicherung.',
         'Ärzte dürfen den Verdacht auf eine Berufskrankheit nur mit Zustimmung des Arbeitgebers melden.',
         'Leistungen wegen einer Berufskrankheit gibt es erst nach Beginn der Altersrente.'
       ],
@@ -291,7 +291,7 @@
         'Die CO₂-Bepreisung gilt nur für Privathaushalte, nicht für Unternehmen.',
         'Wer CO₂-Zertifikate erwirbt, darf unbegrenzt Schadstoffe in Gewässer einleiten.',
         'Die CO₂-Bepreisung ersetzt alle anderen Umweltschutzvorschriften.',
-        'Für jede Tonne CO₂ muss ein Zertifikat vorgelegt werden; der dadurch entstehende Preis soll Anreize setzen, Energie zu sparen und Emissionen zu verringern.'
+        'Für jede Tonne CO₂ muss ein Zertifikat vorgelegt werden; der Preis soll Anreize zur Emissionsverringerung setzen.'
       ],
       loesung: 5,
       erklaerung: 'Im europäischen Emissionshandel müssen Betreiber großer Anlagen in Energiewirtschaft und Industrie für jede ausgestoßene Tonne CO₂ ein Zertifikat abgeben. Für Brennstoffe wie Erdgas, Heizöl, Benzin und Diesel gilt in Deutschland seit 2021 der nationale Emissionshandel nach dem Brennstoffemissionshandelsgesetz (BEHG): Die Inverkehrbringer, z. B. Gaslieferanten, erwerben Zertifikate und geben die Kosten über den Preis weiter. Die Bepreisung setzt das Verursacherprinzip um und macht klimafreundliches Verhalten wirtschaftlich attraktiver.'
@@ -320,7 +320,7 @@
       optionen: [
         'Sie ist rechtmäßig, weil das Streikrecht jedem Arbeitnehmer einzeln zusteht.',
         'Sie ist rechtmäßig, sofern der Betriebsrat zustimmt.',
-        'Sie ist rechtswidrig, weil ein Streik nur zulässig ist, wenn er von einer Gewerkschaft getragen wird und ein tariflich regelbares Ziel verfolgt; den Beteiligten drohen Abmahnung oder Kündigung.',
+        'Sie ist rechtswidrig, weil ein Streik nur von einer Gewerkschaft getragen werden darf; den Beteiligten drohen Abmahnung oder Kündigung.',
         'Sie ist rechtmäßig, weil während der Laufzeit eines Tarifvertrags jederzeit gestreikt werden darf.',
         'Sie ist rechtmäßig, wenn die Beschäftigten die Arbeit nach höchstens einem Tag wieder aufnehmen.'
       ],
@@ -333,7 +333,7 @@
       frage: 'Welche der folgenden Aussagen beschreibt einen Vorteil der Gewerkschaftsmitgliedschaft zutreffend?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Als Mitglied hat Herr Aksoy einen unmittelbaren und zwingenden Anspruch auf die tariflichen Leistungen; außerdem erhält er Beratung und Rechtsschutz in arbeitsrechtlichen Streitigkeiten.',
+        'Als Mitglied hat Herr Aksoy unmittelbaren Anspruch auf die tariflichen Leistungen und erhält Rechtsschutz.',
         'Gewerkschaftsmitglieder können nicht gekündigt werden.',
         'Gewerkschaftsmitglieder müssen keine Beiträge zur Sozialversicherung zahlen.',
         'Mit dem Eintritt wird Herr Aksoy automatisch Mitglied des Betriebsrats.',
@@ -352,7 +352,7 @@
         'Die Einarbeitungszeit neuer Beschäftigter wird kürzer.',
         'Für einzelne Arbeitsschritte können Spezialmaschinen eingesetzt werden.',
         'Die Arbeitsproduktivität steigt durch die Spezialisierung.',
-        'Die eintönige Tätigkeit kann zu Monotonie, sinkender Motivation und einseitiger Belastung führen; fällt ein Arbeitsschritt aus, steht die ganze Montage still.'
+        'Die eintönige Tätigkeit kann zu Monotonie und sinkender Motivation führen.'
       ],
       loesung: 5,
       erklaerung: 'Arbeitszerlegung ist eine Form der innerbetrieblichen Arbeitsteilung. Vorteile sind Übung und Routine, kürzere Einarbeitung, Einsatz von Spezialmaschinen und höhere Produktivität. Nachteile sind Monotonie, einseitige körperliche und psychische Belastung, geringere Motivation und Abhängigkeit des Gesamtablaufs von jedem einzelnen Schritt. Gegenmaßnahmen sind z. B. Jobrotation, Job-Enlargement und Job-Enrichment.'
@@ -365,7 +365,7 @@
       optionen: [
         'Eine sexuelle Belästigung liegt nur bei körperlichen Berührungen vor.',
         'Weil der Kollege es als Spaß gemeint hat, liegt keine Belästigung vor.',
-        'Unerwünschte sexuell bestimmte Bemerkungen und Nachrichten, die die Würde von Frau Kern verletzen, sind eine sexuelle Belästigung und damit eine verbotene Benachteiligung; der Arbeitgeber muss dagegen einschreiten.',
+        'Unerwünschte sexuell bestimmte Bemerkungen sind eine sexuelle Belästigung; der Arbeitgeber muss einschreiten.',
         'Das AGG schützt nur vor Belästigungen durch Vorgesetzte, nicht durch Kollegen.',
         'Frau Kern muss die Belästigung zuerst bei der Polizei anzeigen, bevor der Arbeitgeber handeln darf.'
       ],
@@ -413,7 +413,7 @@
       frage: 'Welche der folgenden Aussagen zur Unterweisung nach dem Jugendarbeitsschutzgesetz trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Herr Wimmer muss vor Beginn der Beschäftigung über die Unfall- und Gesundheitsgefahren unterwiesen werden; die Unterweisung ist mindestens halbjährlich zu wiederholen.',
+        'Herr Wimmer muss vor Beginn der Beschäftigung unterwiesen werden; die Unterweisung ist halbjährlich zu wiederholen.',
         'Eine Unterweisung ist erst nach dem ersten Arbeitsunfall vorgeschrieben.',
         'Eine einmalige Unterweisung zu Beginn der Ausbildung genügt; Wiederholungen sind nicht nötig.',
         'Die Unterweisung über betriebliche Gefahren übernimmt die Berufsschule.',
@@ -483,7 +483,7 @@
         'Preisabsprachen sind erlaubt, wenn sie vorher der BITLC gemeldet werden.',
         'Die Absprache ist zulässig, weil die Kunden weiterhin zwischen den Produkten wählen können.',
         'Kartelle werden nur verfolgt, wenn ein Kunde Strafanzeige erstattet.',
-        'Die Absprache ist ein grundsätzlich verbotenes Kartell; das Bundeskartellamt kann gegen die beteiligten Unternehmen hohe Bußgelder verhängen.'
+        'Die Absprache ist ein verbotenes Kartell; das Bundeskartellamt kann hohe Bußgelder verhängen.'
       ],
       loesung: 5,
       erklaerung: '§ 1 GWB verbietet Vereinbarungen zwischen Unternehmen, die eine Verhinderung, Einschränkung oder Verfälschung des Wettbewerbs bezwecken oder bewirken, insbesondere Preis- und Gebietsabsprachen; bei grenzüberschreitender Wirkung gilt zusätzlich Art. 101 AEUV. Das Bundeskartellamt verfolgt Kartelle von Amts wegen und kann Bußgelder bis zu 10 % des Gesamtumsatzes eines Unternehmens verhängen. Ein Unternehmen, das ein Kartell als Erstes aufdeckt, kann über das Kronzeugenprogramm einen Erlass der Geldbuße erhalten (§§ 81h ff. GWB).'

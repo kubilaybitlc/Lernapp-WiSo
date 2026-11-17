@@ -46,7 +46,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Herr Hentschel kann den Vertrag ohne Zustimmung seiner Eltern abschließen, weil er bereits 16 Jahre alt ist.',
-        'Für den Vertrag ist die Zustimmung seiner gesetzlichen Vertreter erforderlich; der wesentliche Vertragsinhalt ist unverzüglich nach Vertragsschluss, spätestens vor Beginn der Ausbildung in Textform niederzulegen und Herrn Hentschel und seinen Eltern auszuhändigen oder zu übermitteln.',
+        'Für den Vertrag ist die Zustimmung der gesetzlichen Vertreter erforderlich.',
         'Ein mündlich geschlossener Berufsausbildungsvertrag ist in jedem Fall unwirksam.',
         'Die Vertragsniederschrift muss erst nach dem Ende der Probezeit erstellt werden.',
         'Den Berufsausbildungsvertrag schließt die Industrie- und Handelskammer mit dem Auszubildenden ab.'
@@ -63,7 +63,7 @@
         'Frau Ullrich muss für den Montag einen Tag Urlaub nehmen, wenn sie sich vorbereiten möchte.',
         'Eine Freistellung am Montag steht nur Auszubildenden zu, die noch nicht 18 Jahre alt sind.',
         'Frau Ullrich ist am Montag nur bis 12:00 Uhr freizustellen.',
-        'Frau Ullrich ist am Montag von der Arbeit freizustellen; ihre Ausbildungsvergütung wird für diesen Tag fortgezahlt.',
+        'Frau Ullrich ist am Montag freizustellen, die Vergütung wird fortgezahlt.',
         'Frau Ullrich ist in der gesamten Woche vor der Prüfung freizustellen.'
       ],
       loesung: 4,
@@ -79,7 +79,7 @@
         'Der Prüfungsausschuss besteht aus mindestens drei Mitgliedern.',
         'Dem Prüfungsausschuss gehören ausschließlich Beschäftigte der BITLC an.',
         'Die Ausbilderin oder der Ausbilder des Prüflings muss dem Ausschuss angehören.',
-        'Dem Prüfungsausschuss gehören Beauftragte der Arbeitgeber und der Arbeitnehmer in gleicher Zahl sowie mindestens eine Lehrkraft einer berufsbildenden Schule an.',
+        'Er setzt sich paritätisch aus Arbeitgeber- und Arbeitnehmervertretern sowie Lehrkräften zusammen.',
         'Die Mitglieder des Prüfungsausschusses werden vom Betriebsrat des Ausbildungsbetriebs gewählt.'
       ],
       loesung: [2, 5],
@@ -91,7 +91,7 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Ein Betriebsrat kann gewählt werden, weil in der Regel mindestens fünf ständige wahlberechtigte Arbeitnehmer beschäftigt sind, von denen drei wählbar sind; die Wahl leitet ein Wahlvorstand.',
+        'Ein Betriebsrat kann gewählt werden, weil mindestens fünf Wahlberechtigte beschäftigt sind, davon drei wählbar.',
         'Ein Betriebsrat kann erst ab 20 Arbeitnehmern gewählt werden.',
         'Ein Betriebsrat darf nur gewählt werden, wenn die Geschäftsführung der Wahl zustimmt.',
         'Ein Betriebsrat ist nur zulässig, wenn mindestens ein Beschäftigter Mitglied einer Gewerkschaft ist.',
@@ -108,7 +108,7 @@
       optionen: [
         'Der Betriebsrat muss nur nachträglich über die Einführung informiert werden.',
         'Der Betriebsrat ist lediglich anzuhören; seine Meinung ist für die Geschäftsführung nicht bindend.',
-        'Der Betriebsrat hat ein Mitbestimmungsrecht, weil eine Kleiderordnung die Ordnung des Betriebs und das Verhalten der Arbeitnehmer im Betrieb betrifft.',
+        'Der Betriebsrat hat ein Mitbestimmungsrecht, weil eine Kleiderordnung die betriebliche Ordnung betrifft.',
         'Der Betriebsrat hat kein Beteiligungsrecht, weil die Geschäftsführung über das Erscheinungsbild des Unternehmens allein entscheidet.',
         'Der Betriebsrat entscheidet allein über die Einführung der Dienstkleidung.'
       ],
@@ -125,7 +125,7 @@
         'Frau Kaden wird automatisch für sechs Monate befristet weiterbeschäftigt.',
         'Frau Kaden kann nur weiterbeschäftigt werden, wenn die BITLC zustimmt.',
         'Frau Kaden hat nur dann einen Anspruch, wenn sie die Abschlussprüfung mit der Note „gut“ besteht.',
-        'Verlangt Frau Kaden innerhalb der letzten drei Monate vor dem Ende der Ausbildung schriftlich ihre Weiterbeschäftigung, gilt ein unbefristetes Arbeitsverhältnis als begründet.'
+        'Verlangt sie schriftlich ihre Weiterbeschäftigung, gilt ein unbefristetes Arbeitsverhältnis als begründet.'
       ],
       loesung: 5,
       erklaerung: '§ 78a BetrVG schützt Auszubildende, die Mitglied der JAV oder des Betriebsrats sind. Will der Arbeitgeber sie nicht übernehmen, muss er dies drei Monate vor Ende der Ausbildung schriftlich mitteilen (Abs. 1). Verlangt die oder der Auszubildende innerhalb der letzten drei Monate vor Beendigung schriftlich die Weiterbeschäftigung, gilt ein unbefristetes Arbeitsverhältnis als begründet (Abs. 2). Der Arbeitgeber kann sich davon nur durch eine Entscheidung des Arbeitsgerichts lösen, wenn ihm die Weiterbeschäftigung nicht zugemutet werden kann (Abs. 4).'
@@ -154,7 +154,7 @@
         'Er muss dem Arbeitgeber die Arbeitsunfähigkeit und deren voraussichtliche Dauer unverzüglich mitteilen.',
         'Er muss die Arbeitsunfähigkeit erst nach seiner Genesung mitteilen.',
         'Er muss dem Arbeitgeber die ärztliche Diagnose nennen.',
-        'Dauert die Arbeitsunfähigkeit länger als drei Kalendertage, muss er sie spätestens am darauffolgenden Arbeitstag ärztlich feststellen lassen; der Arbeitgeber ruft die elektronische Arbeitsunfähigkeitsbescheinigung bei der Krankenkasse ab.',
+        'Dauert die Arbeitsunfähigkeit länger als drei Kalendertage, muss er sie am nächsten Arbeitstag ärztlich feststellen lassen.',
         'Er muss die Krankmeldung erst am Ende der Woche abgeben, wenn feststeht, wie lange er fehlt.',
         'Während der Arbeitsunfähigkeit darf er seine Wohnung grundsätzlich nicht verlassen.'
       ],
@@ -200,7 +200,7 @@
         'Der Vorfall muss innerhalb von drei Tagen als Unfallanzeige an die Berufsgenossenschaft gemeldet werden.',
         'Kleine Verletzungen müssen nicht dokumentiert werden.',
         'Der Vorfall muss der Polizei gemeldet werden.',
-        'Die Erste-Hilfe-Leistung ist zu dokumentieren, z. B. im Verbandbuch; die Aufzeichnungen sind fünf Jahre aufzubewahren.',
+        'Jede Erste-Hilfe-Leistung muss dokumentiert werden, z. B. im Verbandbuch.',
         'Eine Dokumentation ist nur erforderlich, wenn der Auszubildende anschließend arbeitsunfähig ist.'
       ],
       loesung: 4,
@@ -212,7 +212,7 @@
       frage: 'Welche der folgenden Aussagen trifft nach dem Mutterschutzgesetz zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Einsatz ist unzulässig, weil Schwangere grundsätzlich nicht zwischen 20 und 6 Uhr beschäftigt werden dürfen.',
+        'Der Einsatz ist unzulässig, weil Schwangere nicht zwischen 20 und 6 Uhr arbeiten dürfen.',
         'Der Einsatz ist zulässig, wenn Frau Böhme ausdrücklich zustimmt.',
         'Der Einsatz ist zulässig, wenn Frau Böhme einen Nachtzuschlag erhält.',
         'Nachtarbeit ist bis zum Ende des sechsten Schwangerschaftsmonats ohne Einschränkung erlaubt.',
@@ -231,7 +231,7 @@
         'Die Gesellschafter haften nur bis zur Höhe ihrer Einlage.',
         'Die GbR muss in das Handelsregister eingetragen werden, sonst ist sie unwirksam.',
         'Die GbR ist eine Kapitalgesellschaft.',
-        'Für Verbindlichkeiten der GbR haften die Gesellschafter persönlich als Gesamtschuldner; die Eintragung in das Gesellschaftsregister ist freiwillig.'
+        'Die Gesellschafter haften persönlich und gesamtschuldnerisch, die Eintragung ist freiwillig.'
       ],
       loesung: 5,
       erklaerung: 'Seit dem Gesetz zur Modernisierung des Personengesellschaftsrechts (MoPeG, 2024) haften die Gesellschafter einer GbR für deren Verbindlichkeiten den Gläubigern als Gesamtschuldner persönlich und unbeschränkt (§ 721 BGB). Die Gesellschafter können die GbR in das Gesellschaftsregister eintragen lassen (§ 707 BGB); sie heißt dann eingetragene GbR (eGbR). Nötig ist die Eintragung z. B., wenn die GbR ein Grundstück erwerben will. Ein Mindestkapital gibt es nicht; die GbR ist eine Personengesellschaft.'
@@ -279,7 +279,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Der Kollege muss Herrn Tietze den gesamten Personenschaden einschließlich Schmerzensgeld aus eigener Tasche ersetzen.',
-        'Die gesetzliche Unfallversicherung erbringt die Leistungen; der Kollege und der Arbeitgeber haften für den Personenschaden grundsätzlich nicht, es sei denn, sie haben ihn vorsätzlich verursacht.',
+        'Die gesetzliche Unfallversicherung erbringt die Leistungen, Kollege und Arbeitgeber haften nur bei Vorsatz.',
         'Da ein Kollege den Unfall verursacht hat, besteht kein Schutz durch die gesetzliche Unfallversicherung.',
         'Der Arbeitgeber muss in jedem Fall Schmerzensgeld zahlen, weil der Unfall im Betrieb geschehen ist.',
         'Die Kosten trägt allein die private Haftpflichtversicherung von Herrn Tietze.'
@@ -298,7 +298,7 @@
         'bestätigt nur, dass der Monitor die elektrischen Sicherheitsvorschriften der EU einhält.',
         'kennzeichnet Lebensmittel aus ökologischem Landbau.',
         'zeigt an, dass der Monitor ausschließlich aus recyceltem Kunststoff besteht.',
-        'ist ein freiwilliges Nachhaltigkeitszertifikat für IT-Produkte, das u. a. Anforderungen an Energieeffizienz, Schadstoffe, Ergonomie und Arbeitsbedingungen in der Herstellung stellt.'
+        'ist ein freiwilliges Nachhaltigkeitszertifikat für IT-Produkte.'
       ],
       loesung: 5,
       erklaerung: '„TCO Certified“ ist ein internationales, freiwilliges Nachhaltigkeitszertifikat für IT-Produkte wie Monitore, Notebooks und Smartphones. Geprüft werden Umweltaspekte (z. B. Energieverbrauch, gefährliche Stoffe, Lebensdauer), Ergonomie und soziale Verantwortung in der Lieferkette. Das CE-Zeichen bestätigt dagegen die Einhaltung von EU-Anforderungen, z. B. an die Produktsicherheit; verpflichtend ist für Bildschirme auch das EU-Energielabel. Nachhaltige Beschaffung unterstützt die Ziele des Kreislaufwirtschaftsgesetzes (§ 1 KrWG).'
@@ -327,7 +327,7 @@
         'Ein Tarifvertrag kann nur zwischen einer Gewerkschaft und einem Arbeitgeberverband abgeschlossen werden.',
         'Statt eines Tarifvertrags kann nur der Betriebsrat mit der Geschäftsführung die Löhne verbindlich festlegen.',
         'Die Löhne der Elbsand Montage GmbH legt die zuständige BITLC fest.',
-        'Die Elbsand Montage GmbH kann als einzelner Arbeitgeber selbst Tarifvertragspartei sein und mit der Gewerkschaft einen Firmentarifvertrag (Haustarifvertrag) abschließen.',
+        'Die Elbsand Montage GmbH kann als einzelner Arbeitgeber einen Firmentarifvertrag mit der Gewerkschaft abschließen.',
         'Ohne Mitgliedschaft im Arbeitgeberverband darf die Gewerkschaft keine Tarifverhandlungen führen.'
       ],
       loesung: 4,
@@ -341,7 +341,7 @@
       optionen: [
         'Der Warnstreik ist rechtswidrig, weil während laufender Verhandlungen nicht gestreikt werden darf.',
         'Der Warnstreik ist erst nach einer gescheiterten Schlichtung zulässig.',
-        'Der Warnstreik ist zulässig, weil die Friedenspflicht mit dem Ablauf des Tarifvertrags geendet hat; eine Urabstimmung ist dafür nicht vorgeschrieben.',
+        'Der Warnstreik ist zulässig, weil die Friedenspflicht mit dem Ablauf des Tarifvertrags geendet hat.',
         'Für die Dauer des Warnstreiks muss der Arbeitgeber das Entgelt weiterzahlen.',
         'An einem Warnstreik dürfen nur Beschäftigte teilnehmen, die nicht Gewerkschaftsmitglied sind.'
       ],
@@ -406,7 +406,7 @@
       einleitung: 'Ein Unternehmensleitbild …',
       optionen: [
         'ist die grafische Darstellung der Abteilungen und Weisungswege.',
-        'beschreibt Selbstverständnis, Werte und langfristige Ausrichtung des Unternehmens und gibt Beschäftigten und Kunden Orientierung.',
+        'beschreibt Selbstverständnis, Werte und langfristige Ausrichtung des Unternehmens.',
         'legt die Umsatzziele der einzelnen Vertriebsmitarbeiter für das nächste Quartal fest.',
         'ist ein gesetzlich vorgeschriebener Teil jedes Arbeitsvertrags.',
         'ist die Auflistung aller Kosten des Unternehmens für das kommende Jahr.'
@@ -424,7 +424,7 @@
         'Das Jugendarbeitsschutzgesetz gilt nur für Auszubildende, nicht für Ferienjobs.',
         'Für 17-Jährige gelten dieselben Regeln wie für Erwachsene.',
         'Kind ist, wer noch nicht 12 Jahre alt ist.',
-        'Kind ist, wer noch nicht 15 Jahre alt ist; Jugendlicher ist, wer 15, aber noch nicht 18 Jahre alt ist. Für Jugendliche, die noch vollzeitschulpflichtig sind, gelten die Vorschriften für Kinder.'
+        'Kind ist, wer noch nicht 15 Jahre alt ist; Jugendlicher, wer 15 bis unter 18 ist.'
       ],
       loesung: 5,
       erklaerung: '§ 2 JArbSchG: Kind ist, wer noch nicht 15 Jahre alt ist (Abs. 1), Jugendlicher, wer 15, aber noch nicht 18 Jahre alt ist (Abs. 2). Auf Jugendliche, die der Vollzeitschulpflicht unterliegen, finden die für Kinder geltenden Vorschriften Anwendung (Abs. 3). Das Gesetz gilt für alle Beschäftigungen von Personen unter 18 Jahren, also auch für Ferienjobs (§ 1 JArbSchG). Die Beschäftigung von Kindern ist grundsätzlich verboten (§ 5 JArbSchG).'
@@ -488,7 +488,7 @@
       frage: 'Welche der folgenden Aussagen zum Europass trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Mit dem Europass kann Frau Kunze ihre Qualifikationen und Kompetenzen europaweit verständlich darstellen, z. B. mit dem Europass-Lebenslauf und einer Zeugniserläuterung zu ihrem Berufsabschluss.',
+        'Mit dem Europass kann sie ihre Qualifikationen europaweit verständlich darstellen.',
         'Der Europass ersetzt den Reisepass bei Reisen innerhalb der EU.',
         'Der Europass ist eine Arbeitserlaubnis, ohne die Frau Kunze in Österreich nicht arbeiten darf.',
         'Mit dem Europass werden alle ausländischen Abschlüsse automatisch als gleichwertig anerkannt.',

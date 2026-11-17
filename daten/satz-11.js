@@ -38,7 +38,7 @@
       optionen: [
         'Ein Auslandsaufenthalt ist während der Berufsausbildung nicht zulässig; er ist erst nach der Abschlussprüfung möglich.',
         'Für die Zeit im Ausland muss das Berufsausbildungsverhältnis aufgelöst und danach neu abgeschlossen werden.',
-        'Teile der Ausbildung dürfen im Ausland stattfinden, wenn dies dem Ausbildungsziel dient; insgesamt sollen sie ein Viertel der Ausbildungsdauer, hier neun Monate, nicht überschreiten.',
+        'Teile der Ausbildung dürfen im Ausland stattfinden, wenn dies dem Ausbildungsziel dient.',
         'Die Zeit im Ausland wird nicht auf die Ausbildungsdauer angerechnet, sodass sich die Ausbildung um drei Monate verlängert.',
         'Während des Auslandsaufenthalts entfällt der Anspruch auf Ausbildungsvergütung.'
       ],
@@ -53,7 +53,7 @@
       optionen: [
         'Er hat seinen Ausbildungsnachweis über die Ausbildende schriftlich oder elektronisch vorgelegt.',
         'Er hat in allen Fächern der Berufsschule mindestens die Note „befriedigend“ erreicht.',
-        'Sein Berufsausbildungsverhältnis ist im Verzeichnis der Berufsausbildungsverhältnisse bei der BITLC eingetragen.',
+        'Sein Ausbildungsverhältnis ist im Verzeichnis bei der BITLC eingetragen.',
         'Er hat in Teil 1 der Abschlussprüfung mindestens 50 Punkte erreicht.',
         'Der Betriebsrat hat der Anmeldung schriftlich zugestimmt.',
         'Er ist persönlich Mitglied der Industrie- und Handelskammer.'
@@ -88,7 +88,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Herr Lüttgen muss für das Seminar Urlaub nehmen, weil es außerhalb des Betriebs stattfindet.',
-        'Herr Lüttgen ist unter Fortzahlung seines Arbeitsentgelts freizustellen, und die erforderlichen Seminarkosten trägt der Arbeitgeber.',
+        'Er ist unter Fortzahlung des Entgelts freizustellen, die Seminarkosten trägt der Arbeitgeber.',
         'Die Seminarkosten muss die Gewerkschaft tragen, in der Herr Lüttgen Mitglied ist.',
         'Ein Seminarbesuch ist nur mit ausdrücklicher Zustimmung der Inhaberin zulässig, die sie ohne Begründung verweigern kann.',
         'Die Seminarkosten werden in Raten vom Gehalt des Betriebsratsmitglieds einbehalten.'
@@ -105,7 +105,7 @@
         'Der Betriebsrat darf selbst bestimmen, welcher Bewerber die Stelle erhält.',
         'Interne Bewerber müssen bei gleicher Eignung immer den Vorzug vor externen Bewerbern erhalten.',
         'Eine innerbetriebliche Ausschreibung kann der Betriebsrat nur für Ausbildungsplätze verlangen.',
-        'Die Stelle muss vor ihrer Besetzung im Betrieb ausgeschrieben werden; unterbleibt dies, kann der Betriebsrat die Zustimmung zur Einstellung verweigern.',
+        'Die Stelle muss intern ausgeschrieben werden, sonst kann der Betriebsrat die Zustimmung verweigern.',
         'Nach dem Verlangen des Betriebsrats ist eine Stellenanzeige außerhalb des Betriebs verboten.'
       ],
       loesung: 4,
@@ -117,7 +117,7 @@
       frage: 'Welche der folgenden Aussagen zum Verhältnis zwischen Arbeitgeberin und Betriebsrat trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Arbeitgeberin und Betriebsrat arbeiten vertrauensvoll zusammen und sollen mindestens einmal im Monat zu einer Besprechung zusammentreten; Maßnahmen des Arbeitskampfes zwischen ihnen sind unzulässig.',
+        'Arbeitgeberin und Betriebsrat arbeiten vertrauensvoll zusammen, Arbeitskampf ist unzulässig.',
         'Der Betriebsrat darf zur Arbeitsniederlegung aufrufen, wenn die Mehrheit der Beschäftigten zustimmt.',
         'Der Betriebsrat darf streiken, sobald die Arbeitgeberin einen Vorschlag des Betriebsrats ablehnt.',
         'Die Arbeitgeberin darf dem Betriebsrat im Gegenzug Sitzungen während der Arbeitszeit verbieten.',
@@ -136,7 +136,7 @@
         'Eine Änderungskündigung ist ohne Einhaltung einer Kündigungsfrist wirksam.',
         'Lehnt Herr Ebert das Angebot ab, arbeitet er automatisch zu den bisherigen Bedingungen in Bochum weiter.',
         'Eine Änderungskündigung ist nur gegenüber Auszubildenden zulässig.',
-        'Herr Ebert kann das Angebot unter dem Vorbehalt annehmen, dass die Änderung nicht sozial ungerechtfertigt ist, und dies vom Arbeitsgericht prüfen lassen; den Vorbehalt muss er spätestens innerhalb von drei Wochen nach Zugang der Kündigung erklären.'
+        'Er kann das Angebot unter Vorbehalt annehmen und die soziale Rechtfertigung gerichtlich prüfen lassen.'
       ],
       loesung: 5,
       erklaerung: 'Bei einer Änderungskündigung kündigt der Arbeitgeber das Arbeitsverhältnis und bietet zugleich die Fortsetzung zu geänderten Bedingungen an. Der Arbeitnehmer kann das Angebot unter dem Vorbehalt annehmen, dass die Änderung nicht sozial ungerechtfertigt ist; den Vorbehalt muss er innerhalb der Kündigungsfrist, spätestens innerhalb von drei Wochen nach Zugang der Kündigung erklären (§ 2 KSchG) und Änderungsschutzklage erheben (§ 4 Satz 2 KSchG). Lehnt er ab, endet das Arbeitsverhältnis, wenn die Kündigung sozial gerechtfertigt ist. Kündigungsfristen (§ 622 BGB) und Anhörung des Betriebsrats (§ 102 BetrVG) gelten auch hier. Weil Bochum vertraglich festgelegt ist, kann der Arbeitsort nicht einfach per Weisung geändert werden (§ 106 GewO).'
@@ -148,7 +148,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Krankheitstage gelten als genommener Urlaub, weil sie in den genehmigten Urlaubszeitraum fallen.',
-        'Die vier durch ärztliche Bescheinigung nachgewiesenen Krankheitstage werden nicht auf den Jahresurlaub angerechnet; den Urlaub darf Frau Hartwig aber nicht eigenmächtig um diese Tage verlängern.',
+        'Ärztlich nachgewiesene Krankheitstage werden nicht auf den Urlaub angerechnet.',
         'Krankheitstage im Urlaub werden nur dann nicht angerechnet, wenn die Erkrankung länger als eine Woche dauert.',
         'Für Krankheitstage im Urlaub braucht Frau Hartwig keine ärztliche Bescheinigung.',
         'Die Arbeitgeberin darf für die Krankheitstage das Urlaubsentgelt vom nächsten Gehalt abziehen.'
@@ -164,7 +164,7 @@
       optionen: [
         'Entscheidend ist allein die Bezeichnung im Vertrag; als „freier Mitarbeiter“ ist Herr Velić selbstständig.',
         'Herr Velić ist selbstständig, sobald er ein Gewerbe anmeldet und Rechnungen schreibt.',
-        'Herr Velić ist Arbeitnehmer, weil er weisungsgebunden und in die Arbeitsorganisation eingegliedert arbeitet; die Bezeichnung als freier Mitarbeiter ändert daran nichts.',
+        'Er ist Arbeitnehmer, weil er weisungsgebunden und in die Arbeitsorganisation eingegliedert ist.',
         'Scheinselbstständigkeit gibt es nur in der Bauwirtschaft.',
         'Als freier Mitarbeiter darf Herr Velić höchstens 20 Stunden pro Woche arbeiten.'
       ],
@@ -179,7 +179,7 @@
       optionen: [
         'Ab 26 °C haben alle Beschäftigten gesetzlich hitzefrei.',
         'Die Raumtemperatur im Büro darf höchstens 22 °C betragen; bei höheren Werten muss die Arbeit eingestellt werden.',
-        'Bei mehr als 30 °C muss die Arbeitgeberin wirksame Maßnahmen ergreifen, z. B. Sonnenschutz, Lüften in den frühen Morgenstunden, Gleitzeit, gelockerte Kleiderregeln oder Getränke.',
+        'Bei mehr als 30 °C muss die Arbeitgeberin wirksame Maßnahmen ergreifen, z. B. Sonnenschutz oder Getränke.',
         'Für Raumtemperaturen gibt es keine Vorgaben; sie werden ausschließlich im Tarifvertrag geregelt.',
         'Die Beschäftigten müssen Ventilatoren auf eigene Kosten anschaffen.'
       ],
@@ -192,7 +192,7 @@
       frage: 'Welche der folgenden Aussagen zur Prüfung ortsveränderlicher elektrischer Geräte trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Arbeitgeberin muss dafür sorgen, dass die Geräte in regelmäßigen Abständen von einer Elektrofachkraft oder unter deren Leitung und Aufsicht geprüft werden; die Prüffristen legt sie anhand der Gefährdungsbeurteilung fest.',
+        'Die Geräte müssen regelmäßig von einer Elektrofachkraft geprüft werden.',
         'Elektrische Geräte müssen erst geprüft werden, wenn mit ihnen ein Unfall passiert ist.',
         'Privat mitgebrachte Geräte dürfen ohne Prüfung benutzt werden, weil die Arbeitgeberin für sie nicht verantwortlich ist.',
         'Die Prüfung darf jeder Beschäftigte auch ohne elektrotechnische Kenntnisse durchführen.',
@@ -210,7 +210,7 @@
         'Ein Anspruch auf Stillzeit besteht nur in den ersten sechs Wochen nach der Entbindung.',
         'Die Stillzeit wird auf die gesetzlichen Ruhepausen angerechnet.',
         'Frau Schreiber muss die Stillzeit am Ende des Arbeitstages nacharbeiten.',
-        'Frau Schreiber ist in den ersten zwölf Monaten nach der Entbindung auf ihr Verlangen für die zum Stillen erforderliche Zeit freizustellen, mindestens zweimal täglich für eine halbe Stunde oder einmal täglich für eine Stunde, ohne dass ihr Entgelt gemindert wird.',
+        'Sie ist in den ersten zwölf Monaten für die Stillzeit freizustellen, ohne Entgeltminderung.',
         'Für die Stillzeit braucht Frau Schreiber die Zustimmung des Betriebsrats.'
       ],
       loesung: 4,
@@ -226,7 +226,7 @@
         'Für die Gründung ist ein Mindestkapital von 25.000,00 EUR erforderlich.',
         'Partner können auch Gewerbetreibende wie ein IT-Händler sein.',
         'Die Partnerinnen haften für Verbindlichkeiten der Gesellschaft überhaupt nicht persönlich.',
-        'Sie steht nur Angehörigen freier Berufe offen; für Fehler bei der Berufsausübung haftet neben der Gesellschaft grundsätzlich nur die Partnerin persönlich, die mit dem Auftrag befasst war.'
+        'Sie steht nur Angehörigen freier Berufe offen, für Fehler haftet nur die befasste Partnerin.'
       ],
       loesung: 5,
       erklaerung: 'In der Partnerschaftsgesellschaft schließen sich Angehörige freier Berufe, z. B. Steuerberater, Ärzte oder Architekten, zur Ausübung ihrer Berufe zusammen; sie übt kein Handelsgewerbe aus, Partner können grundsätzlich nur natürliche Personen sein (§ 1 PartGG). Sie wird in das Partnerschaftsregister beim Amtsgericht eingetragen (§ 4 PartGG) und braucht kein Mindestkapital. Für Verbindlichkeiten haften die Partner neben dem Gesellschaftsvermögen als Gesamtschuldner; für berufliche Fehler haftet jedoch nur der Partner, der mit dem Auftrag befasst war (§ 8 Abs. 1, 2 PartGG). Mit einer Berufshaftpflichtversicherung ist auch eine PartG mbB möglich (§ 8 Abs. 4 PartGG).'
@@ -246,7 +246,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die betriebliche Altersversorgung ist für alle Arbeitnehmer gesetzlich vorgeschrieben und wird allein vom Arbeitgeber finanziert.',
-        'Die Altersvorsorge stützt sich auf gesetzliche Rentenversicherung, betriebliche Altersversorgung und private Vorsorge; Herr Szymański kann verlangen, dass ein Teil seines Gehalts für eine betriebliche Altersversorgung verwendet wird (Entgeltumwandlung).',
+        'Die Altersvorsorge stützt sich auf drei Säulen: gesetzliche Rente, betriebliche Altersversorgung und private Vorsorge.',
         'Eine Entgeltumwandlung ist nur möglich, wenn der Arbeitgeber tarifgebunden ist.',
         'Private Vorsorge, z. B. eine private Rentenversicherung, ist Teil der gesetzlichen Rentenversicherung.',
         'Wer eine betriebliche Altersversorgung abschließt, scheidet aus der gesetzlichen Rentenversicherung aus.'
@@ -263,7 +263,7 @@
         'Herr Kamps muss für die Betreuung seiner Tochter Urlaub nehmen.',
         'Die Arbeitgeberin muss das Gehalt nach dem Entgeltfortzahlungsgesetz bis zu sechs Wochen weiterzahlen.',
         'Einen Anspruch auf Freistellung zur Betreuung eines kranken Kindes haben nur Mütter.',
-        'Herr Kamps hat Anspruch auf Freistellung von der Arbeit und erhält für diese Tage Kinderkrankengeld von seiner Krankenkasse, weil seine Tochter jünger als zwölf Jahre ist und ein ärztliches Zeugnis vorliegt.',
+        'Er hat Anspruch auf Freistellung und Kinderkrankengeld von der Krankenkasse.',
         'Das Kinderkrankengeld zahlt die Pflegekasse der Tochter.'
       ],
       loesung: 4,
@@ -291,7 +291,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       einleitung: 'Beim Refurbishing …',
       optionen: [
-        'werden gebrauchte Geräte geprüft, gereinigt, repariert und mit sicher gelöschten Datenträgern wieder verkauft, sodass sie länger genutzt und Ressourcen geschont werden.',
+        'werden gebrauchte Geräte geprüft, gereinigt und repariert, um sie länger zu nutzen.',
         'werden Altgeräte zerkleinert, um daraus Metalle und Kunststoffe als Rohstoffe zurückzugewinnen.',
         'werden Altgeräte in einem Kraftwerk zur Energiegewinnung verbrannt.',
         'werden Neugeräte in einer Verpackung aus Recyclingkarton ausgeliefert.',
@@ -310,7 +310,7 @@
         'Tarifverträge werden von der Industrie- und Handelskammer für ihre Mitgliedsunternehmen abgeschlossen.',
         'Tarifverträge treten erst in Kraft, wenn der Bundestag ihnen zugestimmt hat.',
         'Tarifverträge werden zwischen Betriebsrat und Arbeitgeber abgeschlossen.',
-        'Löhne und Arbeitsbedingungen handeln Gewerkschaften und Arbeitgeberverbände oder einzelne Arbeitgeber eigenverantwortlich ohne staatliche Einmischung aus (Tarifautonomie); der Staat setzt nur Mindeststandards wie den gesetzlichen Mindestlohn.'
+        'Gewerkschaften und Arbeitgeber handeln Löhne eigenverantwortlich aus (Tarifautonomie).'
       ],
       loesung: 5,
       erklaerung: 'Die Tarifautonomie folgt aus der Koalitionsfreiheit (Art. 9 Abs. 3 GG): Gewerkschaften und Arbeitgeberverbände bzw. einzelne Arbeitgeber regeln Löhne und Arbeitsbedingungen in Tarifverträgen selbst (§§ 1, 2 TVG). Der Staat greift nicht in die Verhandlungen ein, setzt aber gesetzliche Mindeststandards, z. B. Mindestlohn, Mindesturlaub oder Höchstarbeitszeit. Betriebsrat und Arbeitgeber schließen Betriebsvereinbarungen, keine Tarifverträge (§ 77 BetrVG).'
@@ -356,7 +356,7 @@
         'Für ein international besetztes Entwicklerteam, das auf Englisch arbeitet, werden nur „deutsche Muttersprachler“ gesucht.',
         'Frauen werden für den Serverraum grundsätzlich nicht eingestellt, weil dort gelegentlich schwere Geräte getragen werden.',
         'Bewerberinnen mit Kopftuch werden abgelehnt, weil sie Kundenkontakt hätten.',
-        'Für die IT-Betreuung eines Frauenhauses, das Männer zum Schutz der Bewohnerinnen nicht betreten dürfen, wird ausschließlich eine Technikerin eingesetzt.'
+        'Für ein Frauenhaus, das Männer nicht betreten dürfen, wird nur eine Technikerin eingesetzt.'
       ],
       loesung: 5,
       erklaerung: '§ 8 Abs. 1 AGG: Eine unterschiedliche Behandlung wegen eines in § 1 AGG genannten Grundes ist zulässig, wenn dieser Grund wegen der Art der Tätigkeit oder der Bedingungen ihrer Ausübung eine wesentliche und entscheidende berufliche Anforderung darstellt, der Zweck rechtmäßig und die Anforderung angemessen ist. Das trifft zu, wenn Männer ein Frauenhaus zum Schutz der Bewohnerinnen nicht betreten dürfen. Ein junges Team, Kundenwünsche oder pauschale Annahmen über die körperliche Belastbarkeit rechtfertigen dagegen keine Benachteiligung wegen des Alters, der ethnischen Herkunft, der Religion oder des Geschlechts (§§ 1, 7 AGG); das Merkmal „Muttersprachler“ knüpft an die ethnische Herkunft an.'
@@ -389,7 +389,7 @@
       optionen: [
         'CSR ist die gesetzliche Pflicht aller Unternehmen, einen Teil ihres Gewinns zu spenden.',
         'CSR ist ein anderes Wort für Gewinnmaximierung.',
-        'CSR ist die freiwillige Übernahme gesellschaftlicher Verantwortung für ökologische und soziale Belange, die über die gesetzlichen Pflichten hinausgeht.',
+        'CSR ist die freiwillige Übernahme gesellschaftlicher Verantwortung über die gesetzlichen Pflichten hinaus.',
         'CSR ist ein Tarifvertrag über soziale Leistungen für Beschäftigte.',
         'CSR bedeutet, dass ein Unternehmen nur noch gemeinnützige Ziele verfolgen darf.'
       ],
@@ -402,7 +402,7 @@
       frage: 'Welche der folgenden Aussagen trifft nach dem Jugendarbeitsschutzgesetz zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Herr Schaefer darf an beiden Tagen nicht beschäftigt werden, weil die gesetzlichen Ausnahmen vom Verbot der Sonn- und Feiertagsarbeit für einen IT-Dienstleister nicht gelten.',
+        'Er darf an beiden Tagen nicht beschäftigt werden, die Ausnahmen gelten für einen IT-Dienstleister nicht.',
         'Herr Schaefer darf an beiden Tagen arbeiten, wenn er dafür in der folgenden Woche zwei freie Tage erhält.',
         'Herr Schaefer darf an beiden Tagen arbeiten, wenn seine Eltern schriftlich zustimmen.',
         'Herr Schaefer darf arbeiten, weil er sich freiwillig gemeldet hat.',
@@ -482,7 +482,7 @@
         'Mit dem Bildungsgutschein wird ausschließlich ein Hochschulstudium finanziert.',
         'Die Kosten aus dem Bildungsgutschein muss er nach Abschluss der Weiterbildung zurückzahlen.',
         'Den Bildungsgutschein erhält jeder Arbeitnehmer automatisch nach fünf Jahren Betriebszugehörigkeit.',
-        'Die Agentur für Arbeit oder das Jobcenter kann die Weiterbildungskosten mit einem Bildungsgutschein übernehmen, wenn die Weiterbildung für die berufliche Eingliederung notwendig ist und Bildungsträger und Maßnahme zugelassen sind.'
+        'Die Agentur für Arbeit kann die Kosten mit einem Bildungsgutschein übernehmen.'
       ],
       loesung: 5,
       erklaerung: 'Nach § 81 SGB III können Arbeitnehmer bei beruflicher Weiterbildung durch Übernahme der Weiterbildungskosten gefördert werden, wenn die Weiterbildung notwendig ist, um sie bei Arbeitslosigkeit beruflich einzugliedern oder eine drohende Arbeitslosigkeit abzuwenden, vorher eine Beratung stattgefunden hat und Maßnahme und Träger zugelassen sind (§§ 176 ff. SGB III, AZAV). Die Agentur für Arbeit bescheinigt die Voraussetzungen mit einem Bildungsgutschein (§ 81 Abs. 4 SGB III); für Leistungsberechtigte der Grundsicherung ist das Jobcenter zuständig (§ 16 SGB II). Die Förderung ist ein Zuschuss und muss nicht zurückgezahlt werden.'

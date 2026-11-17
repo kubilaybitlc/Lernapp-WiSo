@@ -30,7 +30,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Unterkunft darf vollständig angerechnet werden, auch wenn Herrn Wendt danach keine Vergütung mehr ausgezahlt wird.',
-        'Die Unterkunft darf höchstens mit dem amtlichen Sachbezugswert und insgesamt nur bis zu 75 % der Bruttovergütung angerechnet werden.',
+        'Sie darf höchstens mit dem Sachbezugswert und bis zu 75 % der Bruttovergütung angerechnet werden.',
         'Sachleistungen dürfen auf die Ausbildungsvergütung grundsätzlich nicht angerechnet werden.',
         'Die Anrechnung ist nur mit Zustimmung der Industrie- und Handelskammer zulässig.',
         'Die Unterkunft darf höchstens bis zu 25 % der Bruttovergütung angerechnet werden.'
@@ -47,7 +47,7 @@
         'Ohne Berufsausbildungsvertrag ist eine Zulassung zur Abschlussprüfung grundsätzlich ausgeschlossen.',
         'Er muss mindestens die doppelte Ausbildungsdauer, also sechs Jahre, in dem Beruf tätig gewesen sein.',
         'Über seine Zulassung entscheidet allein die Hanseklick Webdesign KG als Arbeitgeberin.',
-        'Er kann zugelassen werden, wenn er nachweist, dass er mindestens das Eineinhalbfache der vorgeschriebenen Ausbildungsdauer, hier viereinhalb Jahre, in dem Beruf tätig gewesen ist.',
+        'Er kann zugelassen werden, wenn er mindestens das Eineinhalbfache der Ausbildungsdauer tätig war.',
         'Er muss vor der Prüfung zunächst die Zwischenprüfung bei der Berufsschule bestehen.'
       ],
       loesung: 4,
@@ -59,7 +59,7 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Auszubildenden dürfen nur Aufgaben übertragen werden, die dem Ausbildungszweck dienen; zu diesen privaten Diensten ist Herr Petersen nicht verpflichtet.',
+        'Auszubildenden dürfen nur Aufgaben übertragen werden, die dem Ausbildungszweck dienen.',
         'Herr Petersen muss alle Weisungen der Komplementärin befolgen, weil sie persönlich haftende Gesellschafterin ist.',
         'Private Hilfstätigkeiten sind zulässig, solange sie höchstens zehn Prozent der Ausbildungszeit ausmachen.',
         'Die Aufgaben sind zulässig, wenn Herr Petersen dafür eine zusätzliche Vergütung erhält.',
@@ -76,7 +76,7 @@
       optionen: [
         'Es liegt keine Versetzung vor, weil Frau Carstens weiterhin am selben Ort arbeitet.',
         'Der Betriebsrat muss erst nach dem Wechsel informiert werden.',
-        'Es liegt eine Versetzung vor, weil ihr ein anderer Arbeitsbereich voraussichtlich länger als einen Monat zugewiesen wird; der Betriebsrat muss vorher zustimmen und kann die Zustimmung nur aus den gesetzlich genannten Gründen verweigern.',
+        'Es liegt eine Versetzung vor, weil ein anderer Arbeitsbereich länger als einen Monat zugewiesen wird.',
         'Eine Versetzung liegt nur vor, wenn sich das Gehalt von Frau Carstens ändert.',
         'Stimmt Frau Carstens dem Wechsel zu, ist die Zustimmung des Betriebsrats nicht mehr erforderlich.'
       ],
@@ -93,7 +93,7 @@
         'Der Betriebsrat darf im Rahmen der Mitbestimmung die Dauer des gesetzlichen Mindesturlaubs verkürzen.',
         'Alle Beschäftigten müssen ihren Urlaub künftig beim Betriebsrat beantragen.',
         'Der Betriebsrat hat nur ein Mitbestimmungsrecht, wenn ein Tarifvertrag dies ausdrücklich vorsieht.',
-        'Allgemeine Urlaubsgrundsätze wie Betriebsferien und der Urlaubsplan unterliegen der Mitbestimmung des Betriebsrats; kommt keine Einigung zustande, entscheidet die Einigungsstelle.'
+        'Allgemeine Urlaubsgrundsätze wie Betriebsferien unterliegen der Mitbestimmung des Betriebsrats.'
       ],
       loesung: 5,
       erklaerung: '§ 87 Abs. 1 Nr. 5 BetrVG: Der Betriebsrat hat mitzubestimmen bei der Aufstellung allgemeiner Urlaubsgrundsätze und des Urlaubsplans sowie bei der Festsetzung der zeitlichen Lage des Urlaubs für einzelne Arbeitnehmer, wenn kein Einverständnis erzielt wird. Dazu gehört auch die Einführung von Betriebsferien. Ohne Einigung entscheidet die Einigungsstelle (§ 87 Abs. 2 BetrVG). Die Dauer des gesetzlichen Mindesturlaubs (§ 3 BUrlG) können Arbeitgeber und Betriebsrat nicht verkürzen.'
@@ -105,7 +105,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Frau Ahrens darf an der Sitzung nur als Zuhörerin teilnehmen; ein Stimmrecht hat die JAV nie.',
-        'Frau Ahrens darf an der Sitzung teilnehmen und hat bei diesem Beschluss Stimmrecht, weil er überwiegend die Auszubildenden betrifft.',
+        'Frau Ahrens darf teilnehmen und hat Stimmrecht, weil der Beschluss überwiegend die Auszubildenden betrifft.',
         'Frau Ahrens darf nur teilnehmen, wenn die Geschäftsleitung zustimmt.',
         'Über Regelungen für Auszubildende entscheidet die JAV allein anstelle des Betriebsrats.',
         'Frau Ahrens darf an Betriebsratssitzungen nur außerhalb ihrer Ausbildungszeit teilnehmen.'
@@ -122,7 +122,7 @@
         'Ein Arbeitsvertrag kann auch mündlich wirksam abgeschlossen werden.',
         'Eine Kündigung über einen Messenger-Dienst ist wirksam, sobald der Empfänger die Nachricht gelesen hat.',
         'Eine Kündigung per E-Mail mit eingescannter Unterschrift erfüllt die gesetzliche Schriftform.',
-        'Die Kündigung eines Arbeitsverhältnisses muss schriftlich mit eigenhändiger Unterschrift erklärt werden; die elektronische Form ist ausgeschlossen.',
+        'Die Kündigung muss schriftlich mit eigenhändiger Unterschrift erklärt werden.',
         'Ein Arbeitsvertrag ist nur wirksam, wenn er notariell beurkundet wird.',
         'Eine mündliche Kündigung ist wirksam, wenn dabei Zeugen anwesend sind.'
       ],
@@ -138,7 +138,7 @@
         'Die Arbeitsverhältnisse enden mit dem Verkauf automatisch.',
         'Die Baltic Server GmbH darf die Gehälter der übernommenen Beschäftigten sofort einseitig kürzen.',
         'Die Beschäftigten müssen mit der Baltic Server GmbH neue Arbeitsverträge mit einer neuen Probezeit abschließen.',
-        'Die Baltic Server GmbH tritt in die Rechte und Pflichten aus den bestehenden Arbeitsverhältnissen ein; eine Kündigung wegen des Betriebsübergangs ist unwirksam.',
+        'Die Käuferin tritt in die bestehenden Arbeitsverhältnisse ein, eine Kündigung wegen des Übergangs ist unwirksam.',
         'Die Beschäftigten können dem Übergang ihres Arbeitsverhältnisses zeitlich unbegrenzt widersprechen.'
       ],
       loesung: 4,
@@ -174,7 +174,7 @@
       frage: 'Welche der folgenden Aussagen zu Flucht- und Rettungswegen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Fluchtwege müssen ständig freigehalten werden, und Notausgänge müssen sich, solange Beschäftigte im Gebäude sind, von innen jederzeit ohne besondere Hilfsmittel öffnen lassen.',
+        'Fluchtwege müssen ständig freigehalten werden, Notausgänge sich jederzeit ohne Hilfsmittel öffnen lassen.',
         'Kartons dürfen im Fluchtweg stehen, wenn ein Durchgang von etwa 40 Zentimetern frei bleibt.',
         'Der Notausgang darf tagsüber abgeschlossen bleiben, wenn bekannt ist, wer den Schlüssel hat.',
         'Fluchtwege müssen nur bei angekündigten Kontrollen der Aufsichtsbehörde frei sein.',
@@ -228,7 +228,7 @@
         'Für die Gründung einer eG ist ein Mindestkapital von 50.000,00 EUR vorgeschrieben.',
         'Die Mitglieder haften für die Schulden der eG stets unbeschränkt mit ihrem Privatvermögen.',
         'Die eG wird in Abteilung A des Handelsregisters eingetragen.',
-        'Zweck der eG ist die Förderung des Erwerbs oder der Wirtschaft ihrer Mitglieder; in der Generalversammlung hat grundsätzlich jedes Mitglied eine Stimme.'
+        'Zweck der eG ist die Förderung ihrer Mitglieder, jedes Mitglied hat eine Stimme.'
       ],
       loesung: 5,
       erklaerung: '§ 1 Abs. 1 GenG: Genossenschaften bezwecken, den Erwerb oder die Wirtschaft ihrer Mitglieder durch gemeinschaftlichen Geschäftsbetrieb zu fördern. Jedes Mitglied hat grundsätzlich eine Stimme, unabhängig von seinen Geschäftsanteilen (§ 43 Abs. 3 GenG). Für die Gründung sind mindestens drei Mitglieder nötig (§ 4 GenG), ein Mindestkapital gibt es nicht. Den Gläubigern haftet nur das Vermögen der Genossenschaft (§ 2 GenG); ob Mitglieder Nachschüsse leisten müssen, regelt die Satzung. Eingetragen wird die eG im Genossenschaftsregister.'
@@ -259,7 +259,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Kurzarbeitergeld zahlt die Krankenkasse der Beschäftigten.',
-        'Bei einem erheblichen, vorübergehenden Arbeitsausfall zahlt die Agentur für Arbeit Kurzarbeitergeld; es beträgt 60 % bzw. mit Kind 67 % der Nettoentgeltdifferenz.',
+        'Bei erheblichem Arbeitsausfall zahlt die Agentur für Arbeit Kurzarbeitergeld.',
         'Kurzarbeitergeld ersetzt den ausgefallenen Bruttolohn vollständig.',
         'Kurzarbeitergeld wird nur gezahlt, wenn der Arbeitgeber bereits Insolvenz angemeldet hat.',
         'Die Beschäftigten müssen das Kurzarbeitergeld später an die Agentur für Arbeit zurückzahlen.'
@@ -292,7 +292,7 @@
       optionen: [
         'ist das EU-Bio-Logo für Lebensmittel aus ökologischem Landbau.',
         'bestätigt als CE-Kennzeichnung, dass ein Produkt die Sicherheitsanforderungen der EU erfüllt.',
-        'ist das Umweltzeichen der EU („EU Ecolabel“) für Produkte und Dienstleistungen, die über ihren gesamten Lebensweg geringere Umweltauswirkungen haben als vergleichbare Produkte.',
+        'ist das Umweltzeichen der EU („EU Ecolabel”) für besonders umweltfreundliche Produkte.',
         'zeigt die Energieeffizienzklasse eines Produkts an.',
         'weist darauf hin, dass die Verpackung über ein duales System entsorgt wird.'
       ],
@@ -305,7 +305,7 @@
       frage: 'Welche der folgenden Vorgehensweisen entspricht dem Grundsatz „Vermeiden vor Verringern vor Kompensieren“?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Vorgehensweise in das Kästchen ein.',
       optionen: [
-        'Zuerst Emissionen vermeiden, z. B. Bahn statt Inlandsflug zu Kundenterminen, dann unvermeidbare Emissionen verringern, z. B. durch Ökostrom und sparsame Geräte, und nur den Rest durch Klimaschutzprojekte ausgleichen.',
+        'Zuerst Emissionen vermeiden, dann verringern und nur den Rest kompensieren.',
         'Zuerst kompensieren, weil der Kauf von Zertifikaten am schnellsten wirkt.',
         'Kompensation ersetzt die Vermeidung vollständig; wer genug Zertifikate kauft, muss nichts ändern.',
         'Nur Emissionen verringern; der Ausgleich über Klimaschutzprojekte ist in Deutschland verboten.',
@@ -323,7 +323,7 @@
         'Eine Betriebsvereinbarung darf tarifliche Entgelte jederzeit unterschreiten, auch ohne Regelung im Tarifvertrag.',
         'Klauseln, die Abweichungen vom Tarifvertrag erlauben, sind nach dem Tarifvertragsgesetz verboten.',
         'Die Kürzung kann nur einzeln mit jedem Beschäftigten im Arbeitsvertrag vereinbart werden.',
-        'Es handelt sich um eine Öffnungsklausel; nur weil der Tarifvertrag sie ausdrücklich enthält, darf eine Betriebsvereinbarung hier zum Nachteil der Beschäftigten vom Tarifvertrag abweichen.',
+        'Es handelt sich um eine Öffnungsklausel, die eine Abweichung per Betriebsvereinbarung erlaubt.',
         'Durch die Klausel darf die Geschäftsleitung die Sonderzahlung ohne Beteiligung des Betriebsrats beliebig kürzen.'
       ],
       loesung: 4,
@@ -339,7 +339,7 @@
         'Die Urabstimmung ist im Tarifvertragsgesetz zwingend vorgeschrieben.',
         'Die Urabstimmung wird vom Arbeitgeberverband durchgeführt.',
         'Ein unbefristeter Streik darf bereits beginnen, wenn 25 % der Mitglieder zustimmen.',
-        'In der Urabstimmung entscheiden die Gewerkschaftsmitglieder geheim über einen unbefristeten Streik; nach den Satzungen vieler Gewerkschaften ist dafür eine qualifizierte Mehrheit, häufig 75 %, erforderlich.'
+        'Die Gewerkschaftsmitglieder entscheiden geheim, häufig ist eine Mehrheit von 75 % erforderlich.'
       ],
       loesung: 5,
       erklaerung: 'Die Urabstimmung ist nicht gesetzlich geregelt, sondern in den Satzungen der Gewerkschaften. Stimmberechtigt sind die Mitglieder im betroffenen Tarifgebiet. Für einen unbefristeten Streik verlangen viele Satzungen eine Zustimmung von 75 %; für die Annahme eines Verhandlungsergebnisses und damit das Ende des Streiks genügen häufig 25 %. Grundlage des Streikrechts ist die Koalitionsfreiheit (Art. 9 Abs. 3 GG).'
@@ -368,7 +368,7 @@
       optionen: [
         'Das Programm ist eine unzulässige Benachteiligung der Männer und deshalb verboten.',
         'Das Programm ist nur zulässig, wenn alle männlichen Beschäftigten schriftlich zustimmen.',
-        'Das Programm ist zulässig, weil geeignete und angemessene Maßnahmen erlaubt sind, um bestehende Nachteile wegen des Geschlechts zu verhindern oder auszugleichen.',
+        'Das Programm ist als positive Maßnahme nach § 5 AGG zulässig.',
         'Fördermaßnahmen für bestimmte Gruppen sind nur in Behörden zulässig.',
         'Das AGG verbietet ausnahmslos jede Unterscheidung nach dem Geschlecht.'
       ],
@@ -382,7 +382,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Leitungsspanne gibt die Zahl aller Beschäftigten eines Unternehmens an.',
-        'Die Leitungsspanne gibt an, wie viele Stellen einer Instanz direkt unterstellt sind; werden zusätzliche Gruppenleitungen eingerichtet, sinkt sie, und die Zahl der Hierarchieebenen steigt.',
+        'Sie gibt an, wie viele Stellen einer Instanz direkt unterstellt sind.',
         'Je größer die Leitungsspanne, desto mehr Hierarchieebenen hat ein Unternehmen.',
         'Die Leitungsspanne ist gesetzlich auf höchstens zehn Personen begrenzt.',
         'Die Leitungsspanne bezeichnet die Zeit, die eine Führungskraft für Leitungsaufgaben aufwendet.'
@@ -396,7 +396,7 @@
       frage: 'Welche der folgenden Aussagen zur Liquidität trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Liquidität bedeutet, jederzeit die fälligen Zahlungsverpflichtungen erfüllen zu können; sie ist ein Formalziel, dessen Verfehlung zur Zahlungsunfähigkeit und damit zur Insolvenz führen kann.',
+        'Liquidität bedeutet, fällige Zahlungsverpflichtungen jederzeit erfüllen zu können.',
         'Liquidität ist das Verhältnis des Gewinns zum Eigenkapital.',
         'Ein Unternehmen mit hohem Gewinn ist immer zahlungsfähig.',
         'Liquidität ist ein Sachziel, weil sie die Leistungen des Unternehmens beschreibt.',
@@ -414,7 +414,7 @@
         'Er darf alle sechs Ferienwochen arbeiten, wenn seine Eltern schriftlich zustimmen.',
         'Schülerinnen und Schüler unter 18 Jahren dürfen in den Ferien grundsätzlich nicht beschäftigt werden.',
         'Für Ferienjobs gilt das Jugendarbeitsschutzgesetz nicht.',
-        'Er darf in den Schulferien höchstens vier Wochen im Kalenderjahr beschäftigt werden; dabei gelten die Schutzvorschriften für Jugendliche, z. B. höchstens acht Stunden täglich.',
+        'Er darf in den Schulferien höchstens vier Wochen im Kalenderjahr beschäftigt werden.',
         'Er darf unbegrenzt beschäftigt werden, solange er nicht mehr als 40 Stunden in der Woche arbeitet.'
       ],
       loesung: 4,
@@ -454,7 +454,7 @@
         'Außenwirtschaftliches Gleichgewicht bedeutet, dass Importe verboten werden.',
         'Das Ziel betrifft ausschließlich den Wechselkurs zwischen Euro und US-Dollar.',
         'Das außenwirtschaftliche Gleichgewicht gehört nicht zu den Zielen des Stabilitäts- und Wachstumsgesetzes.',
-        'Außenwirtschaftliches Gleichgewicht ist ein Ziel des Stabilitäts- und Wachstumsgesetzes; dauerhaft hohe Exportüberschüsse gelten als Ungleichgewicht, weil ihnen Defizite anderer Länder gegenüberstehen und die Abhängigkeit von der Auslandsnachfrage steigt.'
+        'Es ist ein Ziel des Stabilitätsgesetzes, hohe Exportüberschüsse gelten als Ungleichgewicht.'
       ],
       loesung: 5,
       erklaerung: '§ 1 StabG verpflichtet Bund und Länder, gleichzeitig zur Stabilität des Preisniveaus, zu einem hohen Beschäftigungsstand und zum außenwirtschaftlichen Gleichgewicht bei stetigem und angemessenem Wirtschaftswachstum beizutragen (magisches Viereck). Außenwirtschaftliches Gleichgewicht bedeutet einen weitgehend ausgeglichenen Austausch mit dem Ausland. Dauerhafte Überschüsse machen eine Volkswirtschaft anfällig für Einbrüche der Auslandsnachfrage und führen zu Ungleichgewichten bei den Handelspartnern.'
@@ -482,7 +482,7 @@
       optionen: [
         'Vermögenswirksame Leistungen werden bar mit dem Gehalt ausgezahlt und sind frei verfügbar.',
         'Vermögenswirksame Leistungen sind immer steuer- und sozialversicherungsfrei.',
-        'Der Arbeitgeber überweist die vermögenswirksamen Leistungen direkt auf einen Anlagevertrag, z. B. einen Bausparvertrag; hält Frau Rasmussen die Einkommensgrenzen ein, fördert der Staat die Anlage mit der Arbeitnehmer-Sparzulage.',
+        'Der Arbeitgeber überweist sie direkt auf einen Anlagevertrag, z. B. einen Bausparvertrag.',
         'Jeder Arbeitgeber ist gesetzlich verpflichtet, vermögenswirksame Leistungen zu zahlen.',
         'Die Arbeitnehmer-Sparzulage zahlt der Arbeitgeber zusätzlich zum Gehalt.'
       ],

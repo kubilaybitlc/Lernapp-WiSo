@@ -34,7 +34,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Eintragung beantragt Frau Haddad selbst bei der Berufsschule, sobald der Unterricht begonnen hat.',
-        'Die Mainblick Software AG muss die Eintragung unverzüglich nach Abschluss des Vertrags bei der BITLC beantragen und eine Kopie der Vertragsniederschrift beifügen.',
+        'Die Mainblick Software AG muss die Eintragung unverzüglich bei der BITLC beantragen.',
         'Eine Eintragung ist nur erforderlich, wenn die Auszubildende minderjährig ist.',
         'Die Eintragung erfolgt erst, wenn Teil 1 der Abschlussprüfung bestanden ist.',
         'Über die Eintragung entscheidet die Agentur für Arbeit.'
@@ -66,7 +66,7 @@
         'Die Kündigung ist jederzeit möglich, weil es für Kündigungen aus wichtigem Grund keine Frist gibt.',
         'Die Kündigung kann nur mündlich in Anwesenheit der Eltern ausgesprochen werden.',
         'Nach Ablauf der Probezeit kann der Ausbildungsbetrieb überhaupt nicht mehr kündigen.',
-        'Die Kündigung muss innerhalb von zwei Wochen, nachdem die Tatsachen bekannt geworden sind, schriftlich und unter Angabe der Kündigungsgründe erklärt werden.',
+        'Sie muss innerhalb von zwei Wochen schriftlich unter Angabe der Gründe erklärt werden.',
         'Vor der Kündigung muss die BITLC zustimmen.'
       ],
       loesung: 4,
@@ -79,7 +79,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die ordentliche Kündigung ist ohne Weiteres zulässig, weil Herr Ostermann kein Betriebsratsmitglied mehr ist.',
-        'Eine ordentliche Kündigung ist bis zum Ablauf eines Jahres nach dem Ende seiner Amtszeit grundsätzlich unzulässig; möglich bleibt eine außerordentliche Kündigung aus wichtigem Grund.',
+        'Eine ordentliche Kündigung ist bis ein Jahr nach Ende der Amtszeit unzulässig.',
         'Ehemalige Betriebsratsmitglieder sind lebenslang unkündbar.',
         'Die ordentliche Kündigung ist zulässig, wenn der Betriebsrat ihr zustimmt.',
         'Der besondere Kündigungsschutz gilt nur für den Vorsitzenden des Betriebsrats.'
@@ -97,7 +97,7 @@
         'Der Betriebsrat hat kein Beteiligungsrecht, weil die Arbeitszeit im Arbeitsvertrag geregelt ist.',
         'Der Betriebsrat ist anzuhören, seine Meinung ist aber nicht bindend.',
         'Die Überstunden dürfen nur angeordnet werden, wenn die BITLC zustimmt.',
-        'Der Betriebsrat hat ein Mitbestimmungsrecht; ohne seine Zustimmung oder einen Spruch der Einigungsstelle dürfen die Überstunden nicht angeordnet werden.'
+        'Der Betriebsrat hat ein Mitbestimmungsrecht bei der Anordnung von Überstunden.'
       ],
       loesung: 5,
       erklaerung: 'Bei der vorübergehenden Verlängerung oder Verkürzung der betriebsüblichen Arbeitszeit, also bei Überstunden und Kurzarbeit, hat der Betriebsrat mitzubestimmen (§ 87 Abs. 1 Nr. 3 BetrVG). Kommt keine Einigung zustande, entscheidet die Einigungsstelle; ihr Spruch ersetzt die Einigung zwischen Arbeitgeber und Betriebsrat (§ 87 Abs. 2 BetrVG). Unabhängig davon sind die Höchstgrenzen des Arbeitszeitgesetzes einzuhalten (§ 3 ArbZG).'
@@ -108,7 +108,7 @@
       frage: 'Welche der folgenden Aussagen zu ihrem Beschwerderecht nach dem Betriebsverfassungsgesetz trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Sie kann sich bei der zuständigen Stelle des Betriebs beschweren und dazu ein Betriebsratsmitglied hinzuziehen; sie kann die Beschwerde auch beim Betriebsrat einreichen, der dann beim Arbeitgeber auf Abhilfe hinwirkt.',
+        'Sie kann sich beim Arbeitgeber beschweren und ein Betriebsratsmitglied hinzuziehen.',
         'Eine Beschwerde ist nur schriftlich über einen Rechtsanwalt zulässig.',
         'Wegen der Beschwerde darf der Arbeitgeber ihr eine Abmahnung erteilen.',
         'Beschwerden sind nur zulässig, wenn mindestens drei Beschäftigte betroffen sind.',
@@ -125,7 +125,7 @@
       optionen: [
         'Ein Aufhebungsvertrag kann mündlich oder per E-Mail wirksam geschlossen werden.',
         'Vor Abschluss eines Aufhebungsvertrags muss der Betriebsrat angehört werden, sonst ist der Vertrag unwirksam.',
-        'Mit einem Aufhebungsvertrag beenden Arbeitgeber und Arbeitnehmer das Arbeitsverhältnis einvernehmlich zu einem vereinbarten Zeitpunkt; Kündigungsfristen müssen nicht eingehalten werden, der Vertrag bedarf aber der Schriftform.',
+        'Mit einem Aufhebungsvertrag beenden beide Seiten das Arbeitsverhältnis einvernehmlich, er bedarf der Schriftform.',
         'Ein Aufhebungsvertrag kann vom Arbeitnehmer innerhalb von drei Monaten ohne Angabe von Gründen widerrufen werden.',
         'Nach einem Aufhebungsvertrag besteht immer ein gesetzlicher Anspruch auf eine Abfindung.'
       ],
@@ -152,7 +152,7 @@
       frage: 'Welche der folgenden Aussagen zum Weisungsrecht des Arbeitgebers trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Arbeitgeber darf Inhalt, Ort und Zeit der Arbeitsleistung nach billigem Ermessen näher bestimmen, soweit diese nicht durch Arbeitsvertrag, Betriebsvereinbarung, Tarifvertrag oder Gesetz festgelegt sind.',
+        'Der Arbeitgeber darf Inhalt, Ort und Zeit der Arbeit nach billigem Ermessen bestimmen.',
         'Der Arbeitgeber darf jede beliebige Tätigkeit zuweisen, auch wenn sie geringer bezahlt wird als die vertraglich vereinbarte.',
         'Weisungen zum Arbeitsort sind grundsätzlich unzulässig; der Arbeitsort kann nur durch eine Änderungskündigung geändert werden.',
         'Weisungen sind nur wirksam, wenn sie schriftlich erteilt und vom Betriebsrat genehmigt wurden.',
@@ -185,7 +185,7 @@
         'Herr Lindqvist ist zur Teilnahme verpflichtet; lehnt er das BEM ab, kann ihm fristlos gekündigt werden.',
         'Ein BEM ist nur für schwerbehinderte Beschäftigte vorgesehen.',
         'Das BEM wird ausschließlich von der Krankenkasse durchgeführt.',
-        'Die Mainblick Software AG muss Herrn Lindqvist ein BEM anbieten, um die Arbeitsunfähigkeit zu überwinden und erneuter Arbeitsunfähigkeit vorzubeugen; die Teilnahme ist für ihn freiwillig.',
+        'Der Arbeitgeber muss ihm ein BEM anbieten, die Teilnahme ist freiwillig.',
         'Ein BEM ist erst nach einer ununterbrochenen Arbeitsunfähigkeit von einem Jahr vorgeschrieben.'
       ],
       loesung: 4,
@@ -250,7 +250,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Ehemann und Tochter müssen sich jeweils freiwillig versichern und eigene Beiträge zahlen.',
-        'Ehemann und Tochter sind über Frau Wróbel beitragsfrei familienversichert, solange sie kein eigenes Einkommen oberhalb der gesetzlichen Grenze haben.',
+        'Ehemann und Tochter sind beitragsfrei familienversichert.',
         'Nur die Tochter ist mitversichert; Ehepartner sind von der Familienversicherung ausgeschlossen.',
         'Für jedes mitversicherte Familienmitglied erhöht sich der Beitragssatz von Frau Wróbel um einen Prozentpunkt.',
         'Die Familienversicherung gilt nur in der Pflegeversicherung, nicht in der Krankenversicherung.'
@@ -268,7 +268,7 @@
         'Er erhält sofort Arbeitslosengeld in voller Höhe.',
         'Er muss das Arbeitslosengeld später an die Agentur für Arbeit zurückzahlen.',
         'Er erhält Arbeitslosengeld erst nach einer Wartezeit von zwei Jahren.',
-        'In der Regel tritt eine Sperrzeit von zwölf Wochen ein; in dieser Zeit ruht der Anspruch, und die Anspruchsdauer verkürzt sich.'
+        'In der Regel tritt eine Sperrzeit von zwölf Wochen ein, die Anspruchsdauer verkürzt sich.'
       ],
       loesung: 5,
       erklaerung: 'Löst ein Arbeitsloser sein Beschäftigungsverhältnis ohne wichtigen Grund selbst, tritt eine Sperrzeit wegen Arbeitsaufgabe ein (§ 159 Abs. 1 Satz 2 Nr. 1 SGB III); sie dauert in der Regel zwölf Wochen (§ 159 Abs. 3 SGB III). Während der Sperrzeit ruht der Anspruch auf Arbeitslosengeld. Die Anspruchsdauer mindert sich um die Tage der Sperrzeit, bei einer Sperrzeit von zwölf Wochen mindestens um ein Viertel der Anspruchsdauer (§ 148 Abs. 1 Nr. 4 SGB III).'
@@ -280,7 +280,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Batterien und Akkus dürfen in kleinen Mengen über den Restmüll entsorgt werden.',
-        'Altbatterien und Akkus sind getrennt vom Restmüll zu sammeln und an Rücknahmestellen zurückzugeben, z. B. im Handel, der Gerätebatterien unentgeltlich zurücknehmen muss.',
+        'Altbatterien und Akkus sind getrennt zu sammeln und an Rücknahmestellen zurückzugeben.',
         'Nur Autobatterien unterliegen einer Rücknahmepflicht.',
         'Akkus müssen vor der Entsorgung geöffnet und entleert werden.',
         'Die Rückgabe von Altbatterien ist für Endnutzer kostenpflichtig.'
@@ -310,7 +310,7 @@
       frage: 'Welche der folgenden Aussagen zur Organisation der großen deutschen Gewerkschaften trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die DGB-Gewerkschaften sind nach dem Industrieverbandsprinzip organisiert: Eine Gewerkschaft vertritt grundsätzlich alle Beschäftigten einer Branche bzw. eines Betriebs, unabhängig von ihrem Beruf.',
+        'Die DGB-Gewerkschaften sind nach dem Industrieverbandsprinzip organisiert: eine Gewerkschaft je Branche.',
         'Für jeden Beruf gibt es genau eine Gewerkschaft, die ausschließlich diesen Beruf vertritt.',
         'Der Deutsche Gewerkschaftsbund (DGB) schließt als Dachverband selbst alle Tarifverträge in Deutschland ab.',
         'Gewerkschaften sind staatliche Behörden, die vom Bundesministerium für Arbeit und Soziales geleitet werden.',
@@ -328,7 +328,7 @@
         'Der Schlichter wird vom Bundesarbeitsgericht bestimmt und entscheidet durch Urteil.',
         'Während der Schlichtung soll gestreikt werden, um den Druck auf die Arbeitgeber zu erhöhen.',
         'Ein Schlichtungsergebnis gilt automatisch für alle Arbeitnehmer in Deutschland.',
-        'Eine neutrale Schlichtungsperson erarbeitet einen Einigungsvorschlag; er wird nur verbindlich, wenn beide Tarifparteien ihn annehmen oder dies vorher vereinbart haben.',
+        'Eine neutrale Person erarbeitet einen Einigungsvorschlag, der nur bei Annahme beider Seiten gilt.',
         'Eine Schlichtung ist nur zulässig, wenn der Betriebsrat sie beantragt.'
       ],
       loesung: 4,
@@ -360,7 +360,7 @@
         'Diversity Management bedeutet, dass Stellen nur noch an Bewerberinnen und Bewerber aus dem Ausland vergeben werden.',
         'Mit der Unterzeichnung entfallen für das Unternehmen die Pflichten aus dem Allgemeinen Gleichbehandlungsgesetz.',
         'Die Charta der Vielfalt richtet sich nur an Unternehmen mit mehr als 1.000 Beschäftigten.',
-        'Mit der Unterzeichnung verpflichtet sich das Unternehmen freiwillig, ein wertschätzendes Arbeitsumfeld zu schaffen, in dem Vielfalt, z. B. nach Alter, Geschlecht, Herkunft, Religion, Behinderung oder sexueller Orientierung, anerkannt und gefördert wird.'
+        'Das Unternehmen verpflichtet sich freiwillig, Vielfalt im Arbeitsumfeld anzuerkennen und zu fördern.'
       ],
       loesung: 5,
       erklaerung: 'Die Charta der Vielfalt ist eine freiwillige Selbstverpflichtung von Unternehmen und Institutionen, getragen vom Verein Charta der Vielfalt e. V.; unterzeichnen können Organisationen jeder Größe. Diversity Management will die Vielfalt der Beschäftigten wertschätzen und als Chance nutzen. Die gesetzlichen Pflichten aus dem AGG, etwa das Benachteiligungsverbot (§ 7 AGG) und die Schutzpflichten des Arbeitgebers (§ 12 AGG), gelten unabhängig davon weiter.'
@@ -375,7 +375,7 @@
         'Sie ersetzt den Vorstand bei allen Entscheidungen.',
         'Sie ist immer mehreren Vorgesetzten gleichzeitig unterstellt.',
         'Sie wird ausschließlich mit externen Beratern besetzt.',
-        'Sie berät und unterstützt die Leitungsstelle, der sie zugeordnet ist, hat aber grundsätzlich keine Weisungsbefugnis gegenüber den Linienstellen.'
+        'Sie berät die Leitungsstelle, hat aber keine Weisungsbefugnis.'
       ],
       loesung: 5,
       erklaerung: 'Im Stabliniensystem wird das Einliniensystem um Stabsstellen ergänzt. Stäbe bereiten Entscheidungen fachlich vor und beraten die Leitung, entscheiden aber nicht selbst und haben keine Weisungsbefugnis gegenüber der Linie. Vorteile sind die Entlastung der Leitung und Spezialwissen, Nachteile mögliche Konflikte zwischen Stab und Linie sowie Einfluss ohne Verantwortung. Es handelt sich um ein Modell der Organisationslehre ohne Rechtsgrundlage.'
@@ -386,7 +386,7 @@
       frage: 'Welche der folgenden Aussagen zur Zielhierarchie trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Unterziele werden aus dem Oberziel abgeleitet und sind Mittel zu dessen Erreichung, z. B. „Senkung der Kosten für Cloud-Server um 5 %“.',
+        'Unterziele werden aus dem Oberziel abgeleitet und sind Mittel zu dessen Erreichung.',
         'Ober- und Unterziele stehen grundsätzlich in einem Zielkonflikt.',
         'Unterziele legen die Abteilungen unabhängig vom Oberziel fest.',
         'Das Oberziel eines Unternehmens ist immer ein soziales Ziel.',
@@ -403,7 +403,7 @@
       optionen: [
         'Der Plan ist zulässig, weil die Arbeitszeit acht Stunden nicht überschreitet.',
         'Der Plan ist zulässig, weil Pausen bei Jugendlichen nicht berücksichtigt werden.',
-        'Der Plan ist unzulässig, weil die Schichtzeit (Arbeitszeit einschließlich der Ruhepausen) bei Jugendlichen grundsätzlich zehn Stunden nicht überschreiten darf.',
+        'Der Plan ist unzulässig, weil die Schichtzeit bei Jugendlichen zehn Stunden nicht überschreiten darf.',
         'Der Plan ist unzulässig, weil Jugendliche nur bis 18:00 Uhr beschäftigt werden dürfen.',
         'Der Plan ist zulässig, wenn die Eltern schriftlich zustimmen.'
       ],
@@ -445,7 +445,7 @@
       frage: 'Welche der folgenden Folgen ist für eine anhaltende Deflation typisch?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Folge in das Kästchen ein.',
       optionen: [
-        'Verbraucher und Unternehmen halten sich mit Käufen und Investitionen zurück, weil sie weiter sinkende Preise erwarten; Umsätze, Gewinne und Beschäftigung können sinken.',
+        'Verbraucher und Unternehmen halten Käufe zurück, weil sie weiter sinkende Preise erwarten.',
         'Die Kaufkraft des Geldes sinkt.',
         'Die Nachfrage steigt stark an, weil alle Haushalte sofort kaufen wollen.',
         'Schuldner werden entlastet, weil der reale Wert ihrer Schulden sinkt.',
@@ -463,7 +463,7 @@
         'Beide müssen ein Gewerbe beim Gewerbeamt anmelden.',
         'Frau Sommerfeld muss ein Gewerbe anmelden, Herr Lenz nicht, weil er nur online verkauft.',
         'Keiner von beiden muss seine Tätigkeit bei einer Behörde anmelden.',
-        'Herr Lenz muss ein Gewerbe beim Gewerbeamt anmelden; Frau Sommerfeld übt eine freiberufliche unterrichtende Tätigkeit aus, muss kein Gewerbe anmelden und teilt die Aufnahme ihrer Tätigkeit dem Finanzamt mit.',
+        'Herr Lenz meldet ein Gewerbe an, Frau Sommerfeld meldet sich als Freiberuflerin beim Finanzamt.',
         'Beide müssen sich ausschließlich bei der Berufsgenossenschaft anmelden.'
       ],
       loesung: 4,

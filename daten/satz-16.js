@@ -34,7 +34,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Beide haben als Auszubildende Anspruch auf mindestens 30 Werktage Urlaub.',
-        'Herr Gerlach hat Anspruch auf mindestens 25 Werktage nach dem Jugendarbeitsschutzgesetz, Frau Sander auf mindestens 24 Werktage nach dem Bundesurlaubsgesetz.',
+        'Herr Gerlach hat Anspruch auf mindestens 25 Werktage, Frau Sander auf mindestens 24 Werktage.',
         'Herr Gerlach hat nur Anspruch auf 24 Werktage, weil er im März 2027 volljährig wird.',
         'Frau Sander hat als Auszubildende keinen gesetzlichen Urlaubsanspruch, sondern nur den im Ausbildungsvertrag vereinbarten.',
         'Beide erwerben ihren Urlaubsanspruch erst nach einer Wartezeit von zwölf Monaten.'
@@ -63,7 +63,7 @@
       frage: 'Welche der folgenden Aussagen zur Zwischenprüfung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Zwischenprüfung dient der Ermittlung des Ausbildungsstandes; die Teilnahme ist Voraussetzung für die Zulassung zur Abschlussprüfung, ihr Ergebnis zählt aber nicht für das Abschlussergebnis.',
+        'Die Zwischenprüfung dient der Ermittlung des Ausbildungsstandes und ist Voraussetzung für die Zulassung zur Abschlussprüfung.',
         'Wer die Zwischenprüfung nicht besteht, wird nicht zur Abschlussprüfung zugelassen.',
         'Das Ergebnis der Zwischenprüfung geht mit 20 % in das Gesamtergebnis der Abschlussprüfung ein.',
         'Die Teilnahme an der Zwischenprüfung ist freiwillig.',
@@ -125,7 +125,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Das Wettbewerbsverbot ist wirksam, weil Herr Hiller den Nachtrag freiwillig unterschreibt.',
-        'Ein nachvertragliches Wettbewerbsverbot ist nur verbindlich, wenn es schriftlich vereinbart wird und der Arbeitgeber für seine Dauer eine Karenzentschädigung von mindestens der Hälfte der zuletzt bezogenen vertragsmäßigen Leistungen zahlt; es darf höchstens zwei Jahre dauern.',
+        'Ein nachvertragliches Wettbewerbsverbot erfordert Schriftform und eine Karenzentschädigung von mindestens 50 % der letzten Bezüge; es darf höchstens zwei Jahre dauern.',
         'Ein Wettbewerbsverbot nach dem Ende des Arbeitsverhältnisses gilt für alle Arbeitnehmer automatisch für drei Jahre.',
         'Die Karenzentschädigung für ein Wettbewerbsverbot zahlt die Agentur für Arbeit.',
         'Nachvertragliche Wettbewerbsverbote sind in Deutschland grundsätzlich verboten.'
@@ -139,7 +139,7 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Durch die dreimalige vorbehaltlose Zahlung ist eine betriebliche Übung entstanden; die Beschäftigten haben einen Anspruch, den die GmbH nicht einseitig streichen kann.',
+        'Durch die dreimalige vorbehaltlose Zahlung ist eine betriebliche Übung mit vertraglichem Anspruch entstanden.',
         'Ein Anspruch besteht nicht, weil das Weihnachtsgeld nicht im Arbeitsvertrag steht.',
         'Ein Anspruch entsteht erst nach einer zehnjährigen vorbehaltlosen Zahlung.',
         'Das Weihnachtsgeld steht nur den Gewerkschaftsmitgliedern zu.',
@@ -157,7 +157,7 @@
         'Eine Rückkehr zur Vollzeit ist nach der Teilzeit nur möglich, wenn gerade eine Vollzeitstelle frei ist.',
         'Brückenteilzeit gibt es nur für Beschäftigte, die Kinder betreuen oder Angehörige pflegen.',
         'Die Verringerung darf höchstens sechs Monate dauern.',
-        'Frau Pfeiffer kann die Verringerung für einen im Voraus bestimmten Zeitraum von mindestens einem und höchstens fünf Jahren verlangen; danach kehrt sie zu ihrer ursprünglichen Arbeitszeit zurück.',
+        'Frau Pfeiffer kann die Verringerung für mindestens ein und höchstens fünf Jahre verlangen und kehrt danach zur Vollzeit zurück.',
         'Ein Anspruch besteht nicht, weil die Harzer Bitwerk GmbH weniger als 200 Arbeitnehmer beschäftigt.'
       ],
       loesung: 4,
@@ -194,7 +194,7 @@
       optionen: [
         'Die Beurteilung ist erst erforderlich, wenn eine Mitarbeiterin ihre Schwangerschaft mitteilt.',
         'Sobald eine Mitarbeiterin schwanger ist, muss sie in jedem Fall sofort von der Arbeit freigestellt werden.',
-        'Der Arbeitgeber muss für jede Tätigkeit vorab beurteilen, welche Gefährdungen für schwangere oder stillende Frauen bestehen könnten, auch wenn derzeit keine Schwangere beschäftigt ist.',
+        'Der Arbeitgeber muss für jede Tätigkeit vorab beurteilen, welche Gefährdungen für Schwangere oder Stillende bestehen könnten.',
         'Die Gefährdungsbeurteilung zum Mutterschutz erstellt ausschließlich die Frauenärztin der Beschäftigten.',
         'Eine Gefährdungsbeurteilung zum Mutterschutz ist nur in Produktionsbetrieben vorgeschrieben.'
       ],
@@ -226,7 +226,7 @@
         'Der Vertrag wird erst wirksam, wenn die Gesellschafterversammlung ihn genehmigt hat.',
         'Verträge einer GmbH muss immer zusätzlich ein Prokurist unterschreiben.',
         'Der Vertrag ist wirksam, wenn der Betriebsrat ihm zustimmt.',
-        'Ohne abweichende Regelung im Gesellschaftsvertrag vertreten mehrere Geschäftsführer die GmbH nur gemeinschaftlich; Frau Wedekind kann den Vertrag nicht allein wirksam abschließen, Herr Brecht muss mitwirken oder zustimmen.'
+        'Ohne abweichende Regelung im Gesellschaftsvertrag gilt Gesamtvertretung; Frau Wedekind kann den Vertrag nicht allein abschließen.'
       ],
       loesung: 5,
       erklaerung: '§ 35 Abs. 2 Satz 1 GmbHG: Sind mehrere Geschäftsführer bestellt, sind sie alle nur gemeinschaftlich zur Vertretung der Gesellschaft befugt, es sei denn, der Gesellschaftsvertrag bestimmt etwas anderes (Gesamtvertretung). Handelt ein Geschäftsführer allein, ist der Vertrag schwebend unwirksam und wird wirksam, wenn der andere Geschäftsführer ihn genehmigt (§ 177 BGB). Der Gesellschaftsvertrag kann Einzelvertretung vorsehen; sie wird dann im Handelsregister eingetragen. Prokuristen, Betriebsrat oder Gesellschafterversammlung müssen bei der Vertretung nach außen nicht mitwirken.'
@@ -277,7 +277,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       einleitung: 'Der CO₂-Fußabdruck gibt …',
       optionen: [
-        '… die Menge aller Treibhausgase an, die durch die Tätigkeit des Unternehmens direkt und indirekt entstehen, umgerechnet in CO₂-Äquivalente.',
+        '… die Menge aller direkt und indirekt verursachten Treibhausgase in CO₂-Äquivalenten an.',
         '… ausschließlich die Menge an Heizöl an, die im Bürogebäude verbraucht wird.',
         '… die Zahl der Bäume an, die das Unternehmen gepflanzt hat.',
         '… die Höhe der Steuern an, die das Unternehmen für Umweltschäden zahlt.',
@@ -295,7 +295,7 @@
         'Die Agenda 2030 ist ein Gesetz der Europäischen Union, das Unternehmen bei Verstößen mit Bußgeldern belegt.',
         'Die Agenda 2030 richtet sich ausschließlich an Entwicklungsländer.',
         'Die Agenda 2030 enthält nur Ziele zum Klimaschutz.',
-        'Die Vereinten Nationen haben 2015 mit der Agenda 2030 17 Ziele für nachhaltige Entwicklung beschlossen, die ökologische, soziale und wirtschaftliche Ziele verbinden und für alle Staaten gelten.',
+        'Die Vereinten Nationen haben 2015 mit der Agenda 2030 17 Ziele für nachhaltige Entwicklung beschlossen, die für alle Staaten gelten.',
         'Die Agenda 2030 wurde von der Bundesregierung allein für den öffentlichen Nahverkehr beschlossen.'
       ],
       loesung: 4,
@@ -323,7 +323,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Der Verein kann Tarifverträge abschließen, weil jede Vereinigung von Arbeitnehmern tariffähig ist.',
-        'Der Verein ist keine tariffähige Gewerkschaft, weil eine Gewerkschaft u. a. vom Arbeitgeber unabhängig (gegnerfrei) und überbetrieblich organisiert sein muss.',
+        'Der Verein ist keine tariffähige Gewerkschaft, weil eine Gewerkschaft gegnerfrei und überbetrieblich organisiert sein muss.',
         'Der Verein wird tariffähig, sobald er im Vereinsregister eingetragen ist.',
         'Der Verein kann Tarifverträge abschließen, wenn der Betriebsrat zustimmt.',
         'Gewerkschaften müssen mindestens 100.000 Mitglieder haben, um Tarifverträge abschließen zu dürfen.'
@@ -337,7 +337,7 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Bedürfnisse der Menschen sind nahezu unbegrenzt, die Güter zu ihrer Befriedigung aber knapp; knappe Güter wie die Rechenleistung haben deshalb einen Preis und müssen bewirtschaftet werden.',
+        'Knappe Güter wie die Rechenleistung haben einen Preis und müssen bewirtschaftet werden.',
         'Rechenleistung ist ein freies Gut, weil sie digital bereitgestellt wird.',
         'Luft zum Atmen ist ein wirtschaftliches Gut, weil sie lebensnotwendig ist.',
         'Knappheit gibt es nur bei Rohstoffen, nicht bei Dienstleistungen.',
@@ -370,7 +370,7 @@
       optionen: [
         'Der KVP ist eine einmalige, umfassende Umstrukturierung des Unternehmens durch externe Berater.',
         'Am KVP beteiligen sich nur die Geschäftsführung und die Bereichsleitungen.',
-        'Beim KVP werden Abläufe in vielen kleinen Schritten unter Beteiligung aller Beschäftigten ständig verbessert, z. B. nach dem Plan-Do-Check-Act-Zyklus.',
+        'Beim KVP werden Abläufe in vielen kleinen Schritten ständig verbessert, z. B. nach dem PDCA-Zyklus.',
         'Der KVP ist abgeschlossen, sobald das Unternehmen ein Qualitätszertifikat erhalten hat.',
         'Der KVP wird nur eingesetzt, wenn sich Kunden beschweren.'
       ],
@@ -401,7 +401,7 @@
         'Überhaupt nicht, weil gefährliche Arbeiten für Jugendliche ausnahmslos verboten sind.',
         'Wenn seine Eltern schriftlich zustimmen.',
         'Wenn er schriftlich erklärt, dass er die Arbeiten auf eigene Gefahr ausführt.',
-        'Wenn dies zur Erreichung seines Ausbildungsziels erforderlich ist und sein Schutz durch die Aufsicht eines Fachkundigen gewährleistet ist.',
+        'Wenn dies zur Erreichung seines Ausbildungsziels erforderlich ist und ein Fachkundiger die Aufsicht führt.',
         'Wenn er für diese Arbeiten eine Gefahrenzulage erhält.'
       ],
       loesung: 4,
@@ -473,7 +473,7 @@
       frage: 'Welche der folgenden Aussagen beschreibt die Situation und das richtige Verhalten zutreffend?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Es handelt sich um Social Engineering; Frau Vogt gibt weder Passwort noch Bestätigungscode heraus, beendet das Gespräch und meldet den Vorfall der IT-Sicherheit.',
+        'Es handelt sich um Social Engineering; Frau Vogt gibt keine Daten heraus und meldet den Vorfall.',
         'Es handelt sich um einen normalen Supportanruf; Frau Vogt nennt ihr Passwort, behält den Bestätigungscode aber für sich.',
         'Es handelt sich um einen Brute-Force-Angriff; Frau Vogt muss nichts unternehmen, weil die Zwei-Faktor-Authentisierung sie in jedem Fall schützt.',
         'Es handelt sich um Ransomware; Frau Vogt schaltet ihren Rechner aus und zahlt das geforderte Lösegeld.',

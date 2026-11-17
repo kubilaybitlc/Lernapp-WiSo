@@ -93,7 +93,7 @@
       frage: 'Welche der folgenden Aussagen zum Nichtbestehen der Abschlussprüfung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Auf Verlangen der oder des Auszubildenden verlängert sich das Berufsausbildungsverhältnis bis zur nächstmöglichen Wiederholungsprüfung, höchstens um ein Jahr; die Abschlussprüfung kann zweimal wiederholt werden.',
+        'Auf Verlangen verlängert sich das Ausbildungsverhältnis bis zur nächsten Wiederholungsprüfung, höchstens um ein Jahr.',
         'Die Abschlussprüfung kann nur ein einziges Mal wiederholt werden.',
         'Das Berufsausbildungsverhältnis endet trotz Nichtbestehens immer mit dem vereinbarten Ende der Ausbildungszeit; eine Verlängerung ist ausgeschlossen.',
         'Über eine Verlängerung entscheidet allein der Ausbildungsbetrieb nach eigenem Ermessen.',
@@ -110,7 +110,7 @@
       optionen: [
         'Teil 1 ist eine Zwischenprüfung, deren Ergebnis nicht in die Gesamtnote eingeht.',
         'Teil 1 kann bei einem schlechten Ergebnis vor Teil 2 eigenständig wiederholt werden.',
-        'Das Ergebnis von Teil 1 geht mit dem in der Ausbildungsordnung festgelegten Anteil in das Gesamtergebnis der Abschlussprüfung ein.',
+        'Das Ergebnis von Teil 1 geht anteilig in das Gesamtergebnis der Abschlussprüfung ein.',
         'Nach dem Bestehen von Teil 1 endet das Berufsausbildungsverhältnis.',
         'Wer in Teil 1 ein mangelhaftes Ergebnis erzielt, darf an Teil 2 nicht teilnehmen.'
       ],
@@ -126,7 +126,7 @@
         'Da Frau Schubert volljährig ist, muss sie nach dem Unterricht am Montag in den Betrieb zurückkehren.',
         'Der Montag wird nur mit der reinen Unterrichtszeit von 4,5 Stunden auf die Ausbildungszeit angerechnet.',
         'Die Berufsschulzeit am Montag muss Frau Schubert im Betrieb nacharbeiten.',
-        'Frau Schubert ist am Montag für den gesamten Tag freizustellen; der Tag wird mit der durchschnittlichen täglichen Ausbildungszeit von acht Stunden angerechnet.',
+        'Frau Schubert ist am Montag für den gesamten Tag freizustellen.',
         'Frau Schubert ist am Montag und am Mittwoch jeweils für den gesamten Tag freizustellen.'
       ],
       loesung: 4,
@@ -142,7 +142,7 @@
         'Die Berufsschulwoche wird nur mit den tatsächlichen 27 Unterrichtsstunden angerechnet.',
         'Er muss am Samstag dieser Woche im Betrieb arbeiten, um die Ausbildungszeit auszugleichen.',
         'Blockunterricht wird nicht auf die Arbeitszeit angerechnet.',
-        'Die Berufsschulwoche wird mit der durchschnittlichen wöchentlichen Arbeitszeit auf die Arbeitszeit angerechnet; zulässig sind lediglich zusätzliche betriebliche Ausbildungsveranstaltungen von bis zu zwei Stunden wöchentlich.'
+        'Die Berufsschulwoche wird mit der durchschnittlichen wöchentlichen Arbeitszeit angerechnet.'
       ],
       loesung: 5,
       erklaerung: '§ 9 Abs. 1 Satz 2 Nr. 3 JArbSchG: In Berufsschulwochen mit planmäßigem Blockunterricht von mindestens 25 Stunden an mindestens fünf Tagen dürfen Jugendliche nicht beschäftigt werden; zusätzliche betriebliche Ausbildungsveranstaltungen bis zu zwei Stunden wöchentlich sind zulässig. Die Woche wird mit der durchschnittlichen wöchentlichen Arbeitszeit auf die Arbeitszeit angerechnet (§ 9 Abs. 2 Nr. 2 JArbSchG), bei einer 40-Stunden-Woche also mit 40 Stunden.'
@@ -154,7 +154,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Eine Nachuntersuchung ist nur erforderlich, wenn Herr Petzold im ersten Jahr häufig krank war.',
-        'Ein Jahr nach Aufnahme der Beschäftigung muss sich der Arbeitgeber eine Bescheinigung über die erste Nachuntersuchung vorlegen lassen; liegt sie 14 Monate nach Beschäftigungsbeginn nicht vor, darf Herr Petzold bis zur Vorlage nicht weiterbeschäftigt werden.',
+        'Ein Jahr nach Beschäftigungsbeginn muss der Arbeitgeber die Bescheinigung der ersten Nachuntersuchung vorlegen lassen.',
         'Die Kosten der Nachuntersuchung muss der Ausbildungsbetrieb tragen.',
         'Die Nachuntersuchung findet erst bei der Anmeldung zur Abschlussprüfung statt.',
         'Nach der Erstuntersuchung sind keine weiteren ärztlichen Untersuchungen vorgesehen.'
@@ -191,7 +191,7 @@
       frage: 'Welche der folgenden Aussagen zur Amtszeit und zur Wahl des Betriebsrats trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die regelmäßige Amtszeit des Betriebsrats beträgt vier Jahre; die nächsten regelmäßigen Betriebsratswahlen finden in der Zeit vom 1. März bis 31. Mai 2030 statt.',
+        'Die regelmäßige Amtszeit des Betriebsrats beträgt vier Jahre.',
         'Der Betriebsrat wird jedes Jahr neu gewählt.',
         'Die Amtszeit des Betriebsrats beträgt wie die der Jugend- und Auszubildendenvertretung zwei Jahre.',
         'Die Geschäftsleitung bestimmt den Zeitpunkt der nächsten Betriebsratswahl.',
@@ -209,7 +209,7 @@
         'Die Forderung ist zulässig, weil die OHG über ihre Innung tarifgebunden ist.',
         'Die Forderung ist zulässig, wenn Herr Sommer dafür ein höheres Gehalt erhält.',
         'Die Erklärung ist wirksam, weil Herr Sommer sie freiwillig unterschreibt.',
-        'Die Abrede ist nichtig, weil sie die durch das Grundgesetz geschützte Koalitionsfreiheit einschränkt; Herr Sommer darf frei entscheiden, ob er einer Gewerkschaft beitritt.',
+        'Die Abrede ist nichtig, weil sie die durch das Grundgesetz geschützte Koalitionsfreiheit einschränkt.',
         'Beschäftigte von Handwerksbetrieben dürfen grundsätzlich keiner Gewerkschaft angehören.'
       ],
       loesung: 4,
@@ -239,7 +239,7 @@
         'Das Kündigungsschutzgesetz ist nicht anzuwenden, weil im Betrieb nicht mehr als 50 Arbeitnehmer beschäftigt sind.',
         'Eine betriebsbedingte Kündigung ist nach dem Kündigungsschutzgesetz grundsätzlich ausgeschlossen.',
         'Der Arbeitgeber darf frei wählen, welchem der beiden er kündigt, wenn er eine Abfindung zahlt.',
-        'Das Kündigungsschutzgesetz ist anzuwenden; die Kündigung ist nur sozial gerechtfertigt, wenn bei der Auswahl Betriebszugehörigkeit, Lebensalter, Unterhaltspflichten und eine Schwerbehinderung ausreichend berücksichtigt werden.',
+        'Das Kündigungsschutzgesetz ist anzuwenden und verlangt bei der Auswahl eine Sozialauswahl.',
         'Bei der Auswahl ist vorrangig dem Netzwerktechniker mit der längeren Betriebszugehörigkeit zu kündigen.'
       ],
       loesung: 4,
@@ -292,7 +292,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Der Unfall muss nur angezeigt werden, wenn Herr Weidner länger als sechs Wochen arbeitsunfähig ist.',
-        'Der Betrieb muss den Unfall innerhalb von drei Tagen, nachdem er davon Kenntnis erlangt hat, der Berufsgenossenschaft anzeigen, weil Herr Weidner mehr als drei Tage arbeitsunfähig ist.',
+        'Der Betrieb muss den Unfall innerhalb von drei Tagen der Berufsgenossenschaft anzeigen.',
         'Die Unfallanzeige erstattet Herr Weidner selbst bei seiner Krankenkasse.',
         'Der Unfall ist der Polizei zu melden, die dann die Berufsgenossenschaft informiert.',
         'Eine Unfallanzeige ist nicht nötig, weil sich der Unfall beim Kunden und nicht im eigenen Betrieb ereignet hat.'
@@ -325,7 +325,7 @@
         'Die Kosten dürfen je zur Hälfte auf den Arbeitgeber und die Beschäftigten verteilt werden.',
         'Das Tragen der Schutzausrüstung ist freiwillig, auch wenn der Arbeitgeber es anordnet.',
         'Die Berufsgenossenschaft stellt allen Beschäftigten die Schutzausrüstung kostenlos zur Verfügung.',
-        'Der Arbeitgeber muss die erforderliche Schutzausrüstung kostenlos bereitstellen; die Kosten darf er den Beschäftigten nicht auferlegen.'
+        'Der Arbeitgeber muss die erforderliche Schutzausrüstung kostenlos bereitstellen.'
       ],
       loesung: 5,
       erklaerung: 'Kosten für Maßnahmen des Arbeitsschutzes darf der Arbeitgeber nicht den Beschäftigten auferlegen (§ 3 Abs. 3 ArbSchG). Ergibt die Gefährdungsbeurteilung, dass persönliche Schutzausrüstung nötig ist, muss er geeignete Schutzausrüstung auswählen und in ordnungsgemäßem Zustand bereitstellen (§ 2 PSA-Benutzungsverordnung). Die Beschäftigten sind verpflichtet, die bereitgestellte Schutzausrüstung bestimmungsgemäß zu verwenden (§ 15 Abs. 2 ArbSchG).'
@@ -340,7 +340,7 @@
         'Er darf kein Vermögen über 15.000,00 EUR besitzen.',
         'Er muss sich bei der Agentur für Arbeit arbeitslos melden.',
         'Er muss mindestens 24 Monate bei demselben Arbeitgeber beschäftigt gewesen sein.',
-        'Er muss innerhalb der letzten 30 Monate mindestens zwölf Monate versicherungspflichtig beschäftigt gewesen sein (Anwartschaftszeit).',
+        'Er muss die Anwartschaftszeit erfüllen: mindestens zwölf Monate versicherungspflichtig in den letzten 30 Monaten.',
         'Er muss eine Bescheinigung seiner Krankenkasse über seine Arbeitsfähigkeit vorlegen.'
       ],
       loesung: [3, 5],
@@ -360,7 +360,7 @@
       frage: 'Welche der folgenden Aussagen zu den Gesellschaftern der OHG trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Jeder Gesellschafter haftet unbeschränkt, unmittelbar und gesamtschuldnerisch; zur Geschäftsführung sind alle Gesellschafter berechtigt und verpflichtet.',
+        'Jeder Gesellschafter haftet unbeschränkt, unmittelbar und gesamtschuldnerisch.',
         'Die Gesellschafter haften nur bis zur Höhe ihrer Einlage.',
         'Der Lieferant muss zuerst die OHG verklagen, bevor er sich an einen Gesellschafter wenden darf.',
         'Die Geschäftsführung liegt bei einem von den Gesellschaftern bestellten Geschäftsführer, der selbst kein Gesellschafter sein darf.',
@@ -379,7 +379,7 @@
         'Die Firma darf frei erfunden sein, auch wenn sie über die Art des Geschäfts irreführt.',
         'Mit „Firma“ ist nach dem HGB das Betriebsgebäude des Unternehmens gemeint.',
         'Die Firma einer OHG muss die Vor- und Nachnamen aller Gesellschafter enthalten.',
-        'Die Firma muss einen Rechtsformzusatz enthalten, bei der OHG z. B. „offene Handelsgesellschaft“ oder „OHG“.',
+        'Die Firma muss einen Rechtsformzusatz enthalten, z. B. „OHG”.',
         'Eine neue Firma darf auch dann eingetragen werden, wenn am selben Ort bereits ein Unternehmen mit genau dieser Firma eingetragen ist.'
       ],
       loesung: [1, 5],
@@ -402,7 +402,7 @@
         'Die OHG muss nichts unternehmen, weil das AGG nur vor Benachteiligungen durch den Arbeitgeber schützt.',
         'Die OHG muss dem Wunsch des Kunden folgen und Frau Doğan dauerhaft von allen Kundeneinsätzen abziehen.',
         'Frau Doğan muss das Kopftuch bei Kundeneinsätzen ablegen, weil der Kunde dies verlangt.',
-        'Die OHG muss geeignete, erforderliche und angemessene Maßnahmen ergreifen, um Frau Doğan vor der Benachteiligung durch den Kunden zu schützen.',
+        'Die OHG muss Maßnahmen ergreifen, um Frau Doğan vor der Benachteiligung zu schützen.',
         'Frau Doğan kann sich nur an die Polizei wenden, weil der Kunde kein Beschäftigter der OHG ist.'
       ],
       loesung: 4,
@@ -431,7 +431,7 @@
       optionen: [
         'Die Ablauforganisation legt fest, welche Stellen und Abteilungen es im Betrieb gibt.',
         'Ein Organigramm stellt den zeitlichen Ablauf eines Arbeitsprozesses dar.',
-        'Die Stellenbeschreibung ist ein Instrument der Aufbauorganisation und enthält u. a. Ziel, Aufgaben, Befugnisse sowie die Über- und Unterstellung einer Stelle.',
+        'Die Stellenbeschreibung ist ein Instrument der Aufbauorganisation.',
         'Stellenbeschreibungen sind für alle Betriebe gesetzlich vorgeschrieben.',
         'Die Aufbauorganisation regelt Reihenfolge und Dauer der einzelnen Arbeitsschritte.'
       ],
@@ -468,7 +468,7 @@
         'Metallreste dürfen auf dem Betriebsgelände vergraben werden, weil sie ungefährlich sind.',
         'Für die Entsorgung ist ausschließlich der Hersteller der Kabel verantwortlich.',
         'Die getrennte Sammlung ist freiwillig und wird mit einer Steuerermäßigung belohnt.',
-        'Die Abfälle müssen grundsätzlich nach Fraktionen wie Papier und Pappe, Kunststoffe und Metalle getrennt gesammelt werden; die Getrennthaltung ist zu dokumentieren.'
+        'Die Abfälle müssen nach Fraktionen wie Papier, Kunststoffe und Metalle getrennt gesammelt werden.'
       ],
       loesung: 5,
       erklaerung: 'Nach § 3 Abs. 1 der Gewerbeabfallverordnung (GewAbfV) müssen Erzeuger und Besitzer gewerblicher Siedlungsabfälle u. a. Papier, Pappe und Karton, Glas, Kunststoffe, Metalle, Holz, Textilien und Bioabfälle getrennt sammeln und vorrangig der Vorbereitung zur Wiederverwendung oder dem Recycling zuführen. Die Erfüllung dieser Pflichten ist zu dokumentieren (§ 3 Abs. 3 GewAbfV). Grundlage ist das Kreislaufwirtschaftsgesetz (KrWG).'
@@ -479,7 +479,7 @@
       frage: 'Welche der folgenden Aussagen zu EMAS trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'EMAS ist ein freiwilliges Umweltmanagementsystem der EU; das Unternehmen veröffentlicht eine Umwelterklärung, die von einem unabhängigen Umweltgutachter geprüft wird.',
+        'EMAS ist ein freiwilliges Umweltmanagementsystem der EU.',
         'EMAS ist ein gesetzlich vorgeschriebenes Umweltzeichen für alle Elektrogeräte.',
         'Mit der EMAS-Registrierung entfallen alle gesetzlichen Umweltvorschriften für das Unternehmen.',
         'EMAS kennzeichnet Produkte aus fairem Handel.',

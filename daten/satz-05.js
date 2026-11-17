@@ -80,7 +80,7 @@
       optionen: [
         'Die vier Ziele lassen sich jederzeit gleichzeitig und vollständig erreichen, weil sie sich nicht gegenseitig beeinflussen.',
         'Zu den vier Zielen gehören eine gerechte Einkommens- und Vermögensverteilung und der Schutz der Umwelt.',
-        'Eine Politik, die die Arbeitslosigkeit senkt, kann die Stabilität des Preisniveaus gefährden, weil die steigende Nachfrage die Preise erhöhen kann.',
+        'Eine Politik, die die Arbeitslosigkeit senkt, kann die Stabilität des Preisniveaus gefährden.',
         'Die Ziele sind im Grundgesetz abschließend festgelegt und für jedes Unternehmen verbindlich.',
         'Ein Ziel ist ein möglichst hoher Überschuss im Außenhandel, also deutlich mehr Exporte als Importe.'
       ],
@@ -95,7 +95,7 @@
       einleitung: 'Compliance bedeutet, dass …',
       optionen: [
         'das Unternehmen ausschließlich das Ziel der Gewinnmaximierung verfolgt.',
-        'das Unternehmen und seine Beschäftigten Gesetze, Vorschriften und selbst gesetzte Regeln wie einen Verhaltenskodex einhalten.',
+        'das Unternehmen und seine Beschäftigten Gesetze, Vorschriften und interne Regeln einhalten.',
         'alle Kunden den Allgemeinen Geschäftsbedingungen schriftlich zustimmen müssen.',
         'der Betriebsrat allen unternehmerischen Entscheidungen zustimmen muss.',
         'das Unternehmen freiwillig auf jede Form von Werbung verzichtet.'
@@ -109,7 +109,7 @@
       frage: 'Welche der folgenden Aussagen zur Verkürzung der Ausbildungszeit trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die BITLC kürzt die Ausbildungsdauer auf gemeinsamen Antrag von Auszubildender und Ausbildendem, wenn zu erwarten ist, dass das Ausbildungsziel in der gekürzten Zeit erreicht wird.',
+        'Die BITLC kürzt die Ausbildungsdauer auf gemeinsamen Antrag von Auszubildender und Ausbildendem.',
         'Der Ausbildungsbetrieb kann die Ausbildungszeit allein durch eine Mitteilung an die Berufsschule verkürzen.',
         'Eine Verkürzung ist nur möglich, wenn die Auszubildende das 25. Lebensjahr vollendet hat.',
         'Mit dem Abitur verkürzt sich die Ausbildungszeit automatisch um ein Jahr, ein Antrag ist nicht nötig.',
@@ -125,7 +125,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Eine Teilzeitberufsausbildung ist nur möglich, wenn die Auszubildende ein Kind unter drei Jahren betreut.',
-        'Die tägliche oder wöchentliche Ausbildungszeit darf um höchstens 50 Prozent gekürzt werden; die Ausbildungsdauer verlängert sich entsprechend, höchstens auf das Eineinhalbfache der regulären Dauer.',
+        'Die tägliche oder wöchentliche Ausbildungszeit darf um höchstens 50 Prozent gekürzt werden.',
         'Die Ausbildungsdauer bleibt bei einer Teilzeitberufsausbildung immer unverändert bei drei Jahren.',
         'Die Teilzeit muss nicht im Ausbildungsvertrag vereinbart werden, eine mündliche Absprache mit der Berufsschule genügt.',
         'Bei einer Teilzeitberufsausbildung entfällt der Anspruch auf Ausbildungsvergütung.'
@@ -156,7 +156,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Der Plan ist unzulässig, weil Jugendliche an keinem Tag länger als acht Stunden beschäftigt werden dürfen.',
-        'Der Plan ist zulässig, weil die Arbeitszeit am Freitag verkürzt ist und Herr Engelke an den übrigen Werktagen höchstens 8,5 Stunden und insgesamt 40 Stunden in der Woche arbeitet.',
+        'Der Plan ist zulässig, weil die Arbeitszeit am Freitag verkürzt ist und die Woche 40 Stunden nicht überschreitet.',
         'Herr Engelke dürfte an einzelnen Tagen sogar bis zu zehn Stunden arbeiten, wenn die Woche insgesamt 40 Stunden nicht überschreitet.',
         'Der Plan ist zulässig, Herr Engelke dürfte aber auch montags bis freitags jeweils neun Stunden arbeiten, also 45 Stunden in der Woche.',
         'Der Plan ist nur zulässig, wenn die Eltern von Herrn Engelke schriftlich zustimmen.'
@@ -204,7 +204,7 @@
       einleitung: 'Eine Betriebsvereinbarung …',
       optionen: [
         'wird zwischen der Gewerkschaft und dem Arbeitgeberverband abgeschlossen.',
-        'wird von Arbeitgeber und Betriebsrat gemeinsam beschlossen, schriftlich niedergelegt und von beiden unterzeichnet; sie gilt unmittelbar und zwingend für die Arbeitnehmer des Betriebs.',
+        'wird von Arbeitgeber und Betriebsrat gemeinsam beschlossen und schriftlich niedergelegt.',
         'gilt nur für die Arbeitnehmer, die sie einzeln unterschrieben haben.',
         'darf Arbeitsentgelte regeln, die üblicherweise durch Tarifvertrag geregelt werden, auch wenn der Tarifvertrag dies nicht zulässt.',
         'kann vom Arbeitgeber jederzeit fristlos und einseitig aufgehoben werden.'
@@ -219,7 +219,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Herr Jansen hat einen unmittelbaren Anspruch aus dem Tarifvertrag, weil sein Arbeitgeber tarifgebunden ist.',
-        'Tarifgebunden sind die Mitglieder der Tarifvertragsparteien; ohne Gewerkschaftsmitgliedschaft kann Herr Jansen das Tarifentgelt nur verlangen, wenn sein Arbeitsvertrag auf den Tarifvertrag verweist oder dieser für allgemeinverbindlich erklärt wurde.',
+        'Tarifgebunden sind die Mitglieder der Tarifvertragsparteien, nicht alle Arbeitnehmer eines Betriebs.',
         'Ein Tarifvertrag gilt für alle Arbeitnehmer in Deutschland, sobald er unterschrieben ist.',
         'Tritt die Weserbyte Solutions AG aus dem Arbeitgeberverband aus, endet ihre Tarifbindung am Tag des Austritts.',
         'Gewerkschaftsmitglieder dürfen im Arbeitsvertrag keine günstigeren Bedingungen als im Tarifvertrag vereinbaren.'
@@ -234,7 +234,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Allgemeinverbindlicherklärung spricht die Gewerkschaft allein aus.',
-        'Durch die Allgemeinverbindlicherklärung gilt der Tarifvertrag in seinem Geltungsbereich auch für bisher nicht tarifgebundene Arbeitgeber und Arbeitnehmer; die Reinigungsfirma muss ihn daher anwenden.',
+        'Durch die Allgemeinverbindlicherklärung gilt der Tarifvertrag auch für bisher nicht tarifgebundene Arbeitgeber und Arbeitnehmer.',
         'Ein allgemeinverbindlicher Tarifvertrag gilt für alle Branchen, also auch für die Beschäftigten der Weserbyte Solutions AG.',
         'Über die Allgemeinverbindlicherklärung entscheidet das Bundesarbeitsgericht auf Antrag eines einzelnen Arbeitnehmers.',
         'Nach der Allgemeinverbindlicherklärung müssen alle Beschäftigten der Branche in die Gewerkschaft eintreten.'
@@ -250,7 +250,7 @@
       einleitung: 'Mit der Abmahnung …',
       optionen: [
         'endet das Arbeitsverhältnis mit sofortiger Wirkung.',
-        'beanstandet der Arbeitgeber ein konkret bezeichnetes Fehlverhalten und droht für den Wiederholungsfall arbeitsrechtliche Folgen bis zur Kündigung an.',
+        'beanstandet der Arbeitgeber ein konkretes Fehlverhalten und droht für den Wiederholungsfall Konsequenzen bis zur Kündigung an.',
         'darf der Arbeitgeber das Gehalt für die nächsten drei Monate kürzen.',
         'muss der Betriebsrat vorher zustimmen, sonst ist sie unwirksam.',
         'ist eine spätere Kündigung wegen gleichartiger Pflichtverletzungen ausgeschlossen.'
@@ -283,7 +283,7 @@
         'Der Resturlaub verfällt am 31.12.2026 ersatzlos, weil Urlaub immer im laufenden Kalenderjahr genommen werden muss.',
         'Frau Meyerdierks kann den Resturlaub beliebig lange ansparen und in einem späteren Jahr am Stück nehmen.',
         'Die Weserbyte Solutions AG muss die acht Urlaubstage mit dem Dezembergehalt auszahlen.',
-        'Der Resturlaub wird auf das Jahr 2027 übertragen und muss in den ersten drei Kalendermonaten, also bis zum 31.03.2027, gewährt und genommen werden.',
+        'Der Resturlaub wird auf 2027 übertragen und muss bis zum 31.03.2027 genommen werden.',
         'Über die Übertragung des Resturlaubs entscheidet allein der Betriebsrat.'
       ],
       loesung: 4,
@@ -317,7 +317,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Aktionäre haften für die Schulden der AG unbeschränkt mit ihrem Privatvermögen.',
-        'Das Mindestgrundkapital beträgt 50.000,00 EUR; den Gläubigern haftet nur das Gesellschaftsvermögen.',
+        'Das Mindestgrundkapital beträgt 50.000,00 EUR.',
         'Die AG wird in Abteilung A des Handelsregisters eingetragen.',
         'Eine AG kann nur von mindestens fünf Gründern errichtet werden.',
         'Die Aktien einer AG müssen an der Börse gehandelt werden.'
@@ -332,7 +332,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Durch die Eingliederung unter die Holding verlieren alle Tochtergesellschaften ihre rechtliche Selbstständigkeit.',
-        'Die Holding und die von ihr einheitlich geleiteten Tochtergesellschaften bilden einen Konzern; die Übernahme des Wettbewerbers muss beim Bundeskartellamt angemeldet werden, wenn die gesetzlichen Umsatzschwellen überschritten sind.',
+        'Die Holding und die von ihr einheitlich geleiteten Tochtergesellschaften bilden einen Konzern.',
         'Eine Holding ist ein Zusammenschluss, bei dem die beteiligten Unternehmen lediglich ihre Preise absprechen.',
         'Unternehmensübernahmen sind in Deutschland grundsätzlich verboten.',
         'Für die Fusionskontrolle ist die Industrie- und Handelskammer zuständig.'
@@ -355,7 +355,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Den Zuschlag tragen Arbeitgeber und Arbeitnehmer je zur Hälfte.',
-        'Den Zuschlag trägt Herr Rademacher allein; er wird von kinderlosen Mitgliedern ab Vollendung des 23. Lebensjahres erhoben.',
+        'Den Zuschlag trägt Herr Rademacher allein.',
         'Der Zuschlag wird nur von Rentnerinnen und Rentnern erhoben.',
         'Den Zuschlag trägt allein der Arbeitgeber.',
         'Der Zuschlag fällt erst ab Vollendung des 40. Lebensjahres an.'
@@ -378,7 +378,7 @@
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Merkmal in das Kästchen ein.',
       optionen: [
         'Alle Anforderungen werden zu Projektbeginn vollständig festgelegt und danach nicht mehr verändert.',
-        'Das Produkt wird in kurzen, sich wiederholenden Zeitabschnitten (Sprints) schrittweise entwickelt; Rückmeldungen des Kunden fließen laufend ein.',
+        'Das Produkt wird in kurzen, sich wiederholenden Zeitabschnitten (Sprints) schrittweise entwickelt.',
         'Jede Entscheidung im Projekt trifft ausschließlich der Vorstand.',
         'Das Ergebnis wird erst am Projektende einmalig an den Kunden ausgeliefert.',
         'Das Team arbeitet ohne Abstimmung; regelmäßige Besprechungen sind nicht vorgesehen.'
@@ -394,7 +394,7 @@
       optionen: [
         'Der Kunde hat ein Recht auf Auskunft, ob und welche personenbezogenen Daten über ihn verarbeitet werden.',
         'Die Auskunft darf erst nach Zahlung einer Bearbeitungsgebühr von 50,00 EUR erteilt werden.',
-        'Die Weserbyte Solutions AG muss die Daten unverzüglich löschen, weil sie für den ursprünglichen Zweck nicht mehr notwendig sind und keine Aufbewahrungspflicht entgegensteht.',
+        'Die Weserbyte Solutions AG muss die Daten unverzüglich löschen, weil keine Aufbewahrungspflicht mehr besteht.',
         'Ein Recht auf Löschung besteht nur, wenn der Kunde einen Rechtsanwalt beauftragt.',
         'Die Weserbyte Solutions AG muss auf das Auskunftsersuchen erst innerhalb eines Jahres reagieren.',
         'Die Rechte aus der DSGVO gelten nur für Kunden mit einem laufenden Vertrag.'
@@ -409,7 +409,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Frau Thielking hat einen Anspruch darauf, eingestellt zu werden.',
-        'Frau Thielking kann eine angemessene Entschädigung von höchstens drei Monatsgehältern verlangen; sie muss den Anspruch innerhalb von zwei Monaten nach Zugang der Ablehnung schriftlich geltend machen.',
+        'Frau Thielking kann eine angemessene Entschädigung von höchstens drei Monatsgehältern verlangen.',
         'Ansprüche nach dem AGG können nur innerhalb einer Woche mündlich geltend gemacht werden.',
         'Eine Entschädigung ist ausgeschlossen, weil eine Benachteiligung wegen des Alters im AGG nicht geregelt ist.',
         'Frau Thielking muss beweisen, dass der Arbeitgeber sie absichtlich benachteiligen wollte; Indizien reichen nicht aus.'
@@ -426,7 +426,7 @@
         'Ein Systemadministrator meldet seinem Vorgesetzten sofort ein beschädigtes Stromkabel im Serverraum.',
         'Eine Auszubildende folgt bei einem Probealarm den gekennzeichneten Fluchtwegen zum Sammelplatz.',
         'Eine Mitarbeiterin weist die Fachkraft für Arbeitssicherheit auf eine defekte Notbeleuchtung im Treppenhaus hin.',
-        'Ein Techniker trägt beim Transport schwerer Serverhardware im Lager entgegen der Unterweisung nicht die ihm zur Verfügung gestellten Sicherheitsschuhe.',
+        'Ein Techniker trägt beim Transport schwerer Serverhardware entgegen der Unterweisung keine Sicherheitsschuhe.',
         'Ein Mitarbeiter nimmt an der jährlichen Unterweisung teil und befolgt die Hinweise.'
       ],
       loesung: 4,
@@ -459,7 +459,7 @@
       optionen: [
         'Elternzeit können nur Mütter nehmen.',
         'Die Elternzeit muss vom Arbeitgeber genehmigt werden, der sie ohne Angabe von Gründen ablehnen kann.',
-        'Ab dem Verlangen der Elternzeit, frühestens acht Wochen vor ihrem Beginn, und während der Elternzeit darf der Arbeitgeber grundsätzlich nicht kündigen.',
+        'Ab dem Verlangen der Elternzeit und während der Elternzeit darf der Arbeitgeber grundsätzlich nicht kündigen.',
         'Während der Elternzeit ist jede Teilzeitarbeit verboten.',
         'Der Anspruch auf Elternzeit besteht nur bis zum ersten Geburtstag des Kindes.'
       ],
@@ -473,7 +473,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Altgeräte dürfen über den Restmüll entsorgt werden, wenn sie vorher zerlegt werden.',
-        'Altgeräte sind getrennt vom unsortierten Siedlungsabfall zu erfassen; darauf weist das Symbol der durchgestrichenen Mülltonne auf den Geräten hin.',
+        'Altgeräte sind getrennt vom unsortierten Siedlungsabfall zu erfassen.',
         'Für gewerblich genutzte Geräte gilt das ElektroG nicht.',
         'Die Geräte müssen an den Hersteller zurückgeschickt werden, jede andere Entsorgung ist verboten.',
         'Akkus und Batterien müssen bei der Entsorgung in den Geräten verbleiben.'
@@ -490,7 +490,7 @@
       optionen: [
         'ist ein freiwilliges Umweltzeichen, das vom Umweltbundesamt unter dem Namen „Blauer Engel“ vergeben wird.',
         'bestätigt, dass der Monitor die Sicherheitsanforderungen der EU erfüllt.',
-        'ordnet die Geräte in Energieeffizienzklassen von A (sehr effizient) bis G ein und gibt u. a. den Energieverbrauch an; für Bildschirme ist es vorgeschrieben.',
+        'ordnet die Geräte in Energieeffizienzklassen von A bis G ein und gibt den Energieverbrauch an.',
         'zeigt an, dass die Rohstoffe des Monitors aus fairem Handel stammen.',
         'gibt ausschließlich den Anteil recycelter Kunststoffe im Gehäuse an.'
       ],

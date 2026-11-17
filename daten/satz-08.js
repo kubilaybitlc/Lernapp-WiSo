@@ -82,7 +82,7 @@
         'Die Kommanditisten Dr. Falkenstein und Herr Brenner haften unbeschränkt mit ihrem Privatvermögen.',
         'Herr Hollerbach haftet als Geschäftsführer der Komplementär-GmbH persönlich und unbeschränkt für alle Schulden der KG.',
         'Die GmbH & Co. KG ist eine Kapitalgesellschaft, deren Gesellschafter grundsätzlich nicht haften.',
-        'Die Verwaltungs-GmbH haftet als Komplementärin unbeschränkt, aber nur mit ihrem Gesellschaftsvermögen; keine natürliche Person haftet unbeschränkt.',
+        'Die Verwaltungs-GmbH haftet als Komplementärin unbeschränkt, aber nur mit ihrem Gesellschaftsvermögen.',
         'Die Haftung der Kommanditisten ist auch dann ausgeschlossen, wenn sie ihre Einlage noch nicht geleistet haben.'
       ],
       loesung: 4,
@@ -96,7 +96,7 @@
       optionen: [
         'Jeder Kommanditist ist allein zur Vertretung der KG berechtigt.',
         'Die Kommanditisten führen die Geschäfte gemeinsam, die Verwaltungs-GmbH übernimmt nur die Haftung.',
-        'Die Verwaltungs-GmbH führt als Komplementärin die Geschäfte und vertritt die KG, handelnd durch ihren Geschäftsführer Herrn Hollerbach; die Kommanditisten sind davon ausgeschlossen.',
+        'Die Verwaltungs-GmbH führt als Komplementärin die Geschäfte und vertritt die KG durch ihren Geschäftsführer.',
         'Herr Hollerbach darf die KG nur vertreten, wenn alle Kommanditisten jedem einzelnen Vertrag schriftlich zustimmen.',
         'Die KG wird nach außen durch die Gesellschafterversammlung vertreten, an der alle Gesellschafter teilnehmen.'
       ],
@@ -127,7 +127,7 @@
         'Für die Zeit der Krankheit erhält er keine Vergütung, weil er in dieser Zeit nicht ausgebildet wird.',
         'Die Vergütung wird nur für die ersten drei Krankheitstage fortgezahlt.',
         'Statt der Vergütung erhält er vom ersten Krankheitstag an Krankengeld von seiner Krankenkasse.',
-        'Er erhält seine Vergütung bis zur Dauer von sechs Wochen weiter; auch für die Freistellung zur Berufsschule und zu Prüfungen ist sie fortzuzahlen.',
+        'Er erhält seine Vergütung bis zur Dauer von sechs Wochen weiter.',
         'Die Vergütung wird fortgezahlt, für die Krankheitstage aber um die Hälfte gekürzt.'
       ],
       loesung: 4,
@@ -140,7 +140,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Erstuntersuchung ist nur bei körperlich schweren Tätigkeiten vorgeschrieben.',
-        'Herr Wendler darf nur beschäftigt werden, wenn er innerhalb der letzten 14 Monate ärztlich untersucht wurde und dem Arbeitgeber eine Bescheinigung darüber vorliegt.',
+        'Herr Wendler darf nur beschäftigt werden, wenn eine ärztliche Bescheinigung vorliegt.',
         'Die Erstuntersuchung kann bis zum Ende der Probezeit nachgeholt werden.',
         'Die Kosten der Untersuchung muss der Jugendliche selbst tragen.',
         'Die Untersuchung entfällt, wenn die Eltern den Ausbildungsvertrag unterschrieben haben.'
@@ -158,7 +158,7 @@
         'Einbau von Servern im Akkord, also mit einer Vergütung je eingebautem Server',
         'Dokumentation von Netzwerkänderungen im Ticketsystem',
         'Teilnahme an einer internen Schulung zur Netzwerktechnik',
-        'Regelmäßiges Tragen von 40 kg schweren USV-Batterien, das seine körperliche Leistungsfähigkeit übersteigt',
+        'Regelmäßiges Tragen von 40 kg schweren USV-Batterien, das seine Leistungsfähigkeit übersteigt',
         'Telefonische Unterstützung im Kundensupport während der regulären Arbeitszeit'
       ],
       loesung: [2, 5],
@@ -173,7 +173,7 @@
         'Das Ausbildungszeugnis wird von der BITLC zusammen mit dem Prüfungszeugnis ausgestellt.',
         'Ein Ausbildungszeugnis erhalten nur Auszubildende, die die Abschlussprüfung nicht bestanden haben.',
         'Das Ausbildungszeugnis muss Angaben über die Krankheitstage während der Ausbildung enthalten.',
-        'Der Ausbildungsbetrieb muss ein Zeugnis über Art, Dauer und Ziel der Ausbildung sowie die erworbenen Fertigkeiten ausstellen; auf Verlangen sind auch Angaben über Verhalten und Leistung aufzunehmen.',
+        'Der Ausbildungsbetrieb muss ein Zeugnis über Art, Dauer und Ziel der Ausbildung ausstellen.',
         'Der Ausbildungsbetrieb muss ein Zeugnis nur ausstellen, wenn die Auszubildende dafür eine Gebühr zahlt.'
       ],
       loesung: 4,
@@ -216,7 +216,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Herr Kessler darf seine Personalakte nur mit vorheriger Zustimmung der Geschäftsführung einsehen.',
-        'Herr Kessler hat das Recht, seine Personalakte einzusehen; er kann dabei ein Mitglied des Betriebsrats hinzuziehen und verlangen, dass seine Erklärungen zum Inhalt der Akte beigefügt werden.',
+        'Herr Kessler hat das Recht, seine Personalakte einzusehen und ein Betriebsratsmitglied hinzuzuziehen.',
         'Die Einsicht in die Personalakte ist nur über einen Rechtsanwalt möglich.',
         'Die Personalakte darf höchstens einmal im Kalenderjahr eingesehen werden.',
         'Ein Recht auf Einsicht besteht erst nach dem Ausscheiden aus dem Unternehmen.'
@@ -234,7 +234,7 @@
         'Die Einigungsstelle besteht ausschließlich aus Vertretern der Gewerkschaft.',
         'Den Vorsitzenden der Einigungsstelle bestimmt allein der Arbeitgeber.',
         'Der Spruch der Einigungsstelle ist auch in Fragen der Arbeitszeit nur eine unverbindliche Empfehlung.',
-        'Sie besteht aus gleich vielen Beisitzern von Arbeitgeber und Betriebsrat sowie einem unparteiischen Vorsitzenden; ihr Spruch ersetzt hier die fehlende Einigung.'
+        'Sie besteht aus gleich vielen Beisitzern von Arbeitgeber und Betriebsrat sowie einem unparteiischen Vorsitzenden.'
       ],
       loesung: 5,
       erklaerung: '§ 76 BetrVG: Die Einigungsstelle besteht aus der gleichen Anzahl von Beisitzern, die Arbeitgeber und Betriebsrat bestellen, und einem unparteiischen Vorsitzenden, auf den sich beide Seiten einigen müssen; kommt keine Einigung zustande, bestellt ihn das Arbeitsgericht. Die Lage der Arbeitszeit und damit Schichtpläne unterliegen der Mitbestimmung (§ 87 Abs. 1 Nr. 2 BetrVG). Einigen sich die Betriebsparteien nicht, entscheidet die Einigungsstelle verbindlich (§ 87 Abs. 2 BetrVG).'
@@ -321,7 +321,7 @@
         'Jede Nebentätigkeit ist Arbeitnehmern grundsätzlich verboten.',
         'Die Tätigkeit ist erlaubt, solange er sie nur in seiner Freizeit ausübt.',
         'Ein Wettbewerbsverbot gilt nur für Auszubildende, nicht für Angestellte.',
-        'Während des Arbeitsverhältnisses darf er ohne Einwilligung des Arbeitgebers keine Konkurrenztätigkeit im Geschäftszweig des Arbeitgebers ausüben.',
+        'Ohne Einwilligung des Arbeitgebers darf er keine Konkurrenztätigkeit ausüben.',
         'Ohne besondere Vereinbarung gilt das Wettbewerbsverbot automatisch noch zwei Jahre nach dem Ende des Arbeitsverhältnisses.'
       ],
       loesung: 4,
@@ -335,7 +335,7 @@
       optionen: [
         'Sie muss die Belästigungen hinnehmen, bis das Arbeitsgericht über ihre Beschwerde entschieden hat.',
         'Sie darf den Kollegen selbst abmahnen.',
-        'Sie darf ihre Tätigkeit ohne Verlust des Arbeitsentgelts einstellen, soweit dies zu ihrem Schutz erforderlich ist.',
+        'Sie darf die Arbeit ohne Gehaltsverlust einstellen, soweit dies zu ihrem Schutz erforderlich ist.',
         'Sie darf ihre Tätigkeit zwar einstellen, verliert für diese Zeit aber ihren Anspruch auf Arbeitsentgelt.',
         'Das AGG schützt nur vor Benachteiligungen durch den Arbeitgeber, nicht durch Kollegen.'
       ],
@@ -350,7 +350,7 @@
       optionen: [
         'Er trägt anstelle des Arbeitgebers die alleinige Verantwortung für den Arbeitsschutz.',
         'Er ist gegenüber allen Beschäftigten weisungsbefugt und darf Abmahnungen aussprechen.',
-        'Er unterstützt den Arbeitgeber bei der Unfallverhütung, z. B. indem er auf Gefahren aufmerksam macht und auf die Benutzung von Schutzausrüstungen achtet.',
+        'Er unterstützt den Arbeitgeber bei der Unfallverhütung und macht auf Gefahren aufmerksam.',
         'Er wird von der Berufsgenossenschaft angestellt und bezahlt.',
         'Ein Sicherheitsbeauftragter muss erst in Unternehmen mit mehr als 500 Beschäftigten bestellt werden.'
       ],
@@ -364,7 +364,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Er besteht ausschließlich aus Mitgliedern des Betriebsrats.',
-        'Er tritt mindestens einmal vierteljährlich zusammen und berät Anliegen des Arbeitsschutzes und der Unfallverhütung.',
+        'Er tritt mindestens vierteljährlich zusammen und berät Anliegen des Arbeitsschutzes.',
         'Er muss erst in Betrieben mit mehr als 500 Beschäftigten gebildet werden.',
         'Er verhängt Bußgelder gegen Beschäftigte, die Sicherheitsvorschriften missachten.',
         'Er wird von der Gewerkschaft einberufen und tagt einmal jährlich.'
@@ -396,7 +396,7 @@
         'Die Renten werden ausschließlich aus der Gewerbesteuer der Gemeinden bezahlt.',
         'Die Beiträge zur Rentenversicherung trägt allein der Arbeitgeber.',
         'Alle Rentnerinnen und Rentner erhalten unabhängig von ihren Beiträgen eine Rente in gleicher Höhe.',
-        'Die Beiträge der heute Beschäftigten werden unmittelbar für die Renten der heutigen Rentnerinnen und Rentner verwendet.'
+        'Die Beiträge der heutigen Beschäftigten finanzieren unmittelbar die Renten der heutigen Rentner.'
       ],
       loesung: 5,
       erklaerung: 'Die gesetzliche Rentenversicherung wird im Umlageverfahren finanziert: Die Ausgaben eines Kalenderjahres werden durch die Einnahmen desselben Jahres gedeckt (§ 153 Abs. 1 SGB VI), ergänzt durch Bundeszuschüsse. Die heutige Erwerbsgeneration finanziert die Renten der älteren Generation und wird später selbst von der nachfolgenden Generation versorgt (Generationenvertrag). Beim Kapitaldeckungsverfahren, z. B. einer privaten Rentenversicherung, wird dagegen für jeden Versicherten Kapital angespart. Die Beiträge tragen Arbeitgeber und Arbeitnehmer je zur Hälfte (§ 168 Abs. 1 Nr. 1 SGB VI), die Rentenhöhe richtet sich nach den gezahlten Beiträgen.'
@@ -409,7 +409,7 @@
       optionen: [
         'Frau Albrecht muss die Krankenkasse wählen, die ihr Arbeitgeber vorgibt.',
         'Die zuständige Krankenkasse wird nach dem Wohnort bestimmt; eine Wahl ist nicht möglich.',
-        'Frau Albrecht kann ihre Krankenkasse grundsätzlich frei wählen; an die gewählte Krankenkasse ist sie in der Regel mindestens zwölf Monate gebunden.',
+        'Frau Albrecht kann ihre Krankenkasse grundsätzlich frei wählen.',
         'Ein Wechsel der Krankenkasse ist nur beim Wechsel des Arbeitgebers erlaubt.',
         'Über die Wahl der Krankenkasse entscheidet der Betriebsrat einheitlich für alle Beschäftigten.'
       ],
@@ -445,7 +445,7 @@
       frage: 'Welche der folgenden Maßnahmen dienen in erster Linie der Verfügbarkeit der Daten?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Maßnahmen in die Kästchen ein.',
       optionen: [
-        'Tägliche Datensicherung (Backup) mit einer Kopie in einem räumlich getrennten zweiten Rechenzentrum',
+        'Tägliche Datensicherung mit einer Kopie in einem räumlich getrennten Rechenzentrum',
         'Verschlüsselung der E-Mails an Kunden',
         'Pseudonymisierung der Kundendaten in Testsystemen',
         'Unterbrechungsfreie Stromversorgung (USV) und Notstromaggregat für die Serverräume',
@@ -464,7 +464,7 @@
         'Ein bereits vorab angekreuztes Kästchen auf der Website genügt als Einwilligung.',
         'Eine einmal erteilte Einwilligung kann nicht mehr zurückgenommen werden.',
         'Ein Widerruf macht auch alle bisherigen Newsletter-Versendungen rückwirkend rechtswidrig.',
-        'Die Einwilligung kann jederzeit widerrufen werden; der Widerruf muss so einfach sein wie die Erteilung.',
+        'Die Einwilligung kann jederzeit widerrufen werden.',
         'Das Unternehmen muss nicht nachweisen können, dass eine Einwilligung vorliegt.'
       ],
       loesung: 4,
