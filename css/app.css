@@ -247,7 +247,7 @@ table.daten th { text-align: left; }
 table.daten td:not(:first-child) { text-align: center; }
 
 /* Aufgaben */
-.aufgabe { padding: 1rem 0 1.2rem; border-bottom: 1px solid var(--linie); scroll-margin-top: 4.5rem; }
+.aufgabe { padding: 1rem 0 1.2rem; border-bottom: 1px solid var(--linie); scroll-margin-top: 4.5rem; font-size: 14px; }
 .aufgabe h3 { margin: 0 0 .5rem; font-size: 1.1rem; }
 .aufgabe .frage { margin-top: .6rem; }
 .aufgabe .anweisung { border-top: 1px solid var(--linie); border-bottom: 1px solid var(--linie); padding: .5rem 0; margin: .6rem 0; }
