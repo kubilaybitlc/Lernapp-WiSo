@@ -96,7 +96,7 @@
       einleitung: 'Das Berufsausbildungsverhältnis …',
       optionen: [
         'endet ausnahmslos mit dem im Ausbildungsvertrag vereinbarten Zeitpunkt.',
-        'endet bei Bestehen der Abschlussprüfung vor Ablauf der Ausbildungszeit mit der Bekanntgabe des Prüfungsergebnisses durch den Prüfungsausschuss.',
+        'endet bei vorzeitigem Bestehen der Abschlussprüfung mit Bekanntgabe des Ergebnisses.',
         'verlängert sich bei Nichtbestehen der Abschlussprüfung automatisch um ein volles Jahr.',
         'geht nach bestandener Prüfung stets unmittelbar in ein unbefristetes Arbeitsverhältnis über.',
         'kann von der oder dem Auszubildenden nach der Probezeit jederzeit fristlos gekündigt werden.'
@@ -111,7 +111,7 @@
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Pflichten in die Kästchen ein.',
       optionen: [
         'Die für die Ausbildung erforderlichen Ausbildungsmittel kostenlos zur Verfügung stellen',
-        'Die im Rahmen der Ausbildung übertragenen Aufgaben sorgfältig ausführen und den Weisungen folgen',
+        'Übertragene Aufgaben sorgfältig ausführen und den Weisungen folgen',
         'Den schriftlichen oder elektronischen Ausbildungsnachweis (Berichtsheft) führen',
         'Für die Teilnahme am Berufsschulunterricht und an Prüfungen freistellen',
         'Eine angemessene Ausbildungsvergütung zahlen',
@@ -134,7 +134,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Regelung in das Kästchen ein.',
       optionen: [
         'Er darf an einzelnen Tagen bis zu zehn Stunden beschäftigt werden, wenn die 40-Stunden-Woche eingehalten wird.',
-        'Er darf höchstens acht Stunden täglich und 40 Stunden wöchentlich beschäftigt werden und grundsätzlich nicht nach 20 Uhr.',
+        'Höchstens acht Stunden täglich, 40 Stunden wöchentlich und nicht nach 20 Uhr.',
         'Er darf regelmäßig bis 23 Uhr arbeiten, wenn er dafür einen Freizeitausgleich erhält.',
         'Für ihn gilt wie für Erwachsene eine werktägliche Höchstarbeitszeit von acht, verlängerbar auf zehn Stunden.',
         'Er darf bis zu 48 Stunden wöchentlich beschäftigt werden.'
@@ -149,7 +149,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aufgabe in das Kästchen ein.',
       optionen: [
         'Er bestimmt die Höhe der Löhne und Gehälter eigenständig.',
-        'Er überwacht, dass die zugunsten der Arbeitnehmer geltenden Gesetze, Tarifverträge und Betriebsvereinbarungen eingehalten werden.',
+        'Er überwacht die Einhaltung von Gesetzen, Tarifverträgen und Betriebsvereinbarungen.',
         'Er entscheidet allein über Einstellungen und Entlassungen.',
         'Er legt die Verkaufspreise für die Produkte des Unternehmens fest.',
         'Er führt die laufenden Geschäfte des Unternehmens.'
@@ -163,7 +163,7 @@
       frage: 'Welche der folgenden Aussagen zur Beteiligung des Betriebsrats bei der Einstellung trifft nach § 99 BetrVG zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Betriebsrat muss der Einstellung vorher zustimmen und kann die Zustimmung nur aus den im Gesetz genannten Gründen verweigern.',
+        'Der Betriebsrat muss vorher zustimmen und kann nur aus gesetzlichen Gründen verweigern.',
         'Der Betriebsrat kann die Einstellung ohne Angabe von Gründen dauerhaft verhindern.',
         'Einstellungen gehören allein zu den Aufgaben des Betriebsrats.',
         'Der Betriebsrat muss über erfolgte Einstellungen nur nachträglich informiert werden, ein Zustimmungsrecht hat er nicht.',
@@ -219,7 +219,7 @@
       einleitung: 'Das qualifizierte Arbeitszeugnis …',
       optionen: [
         'enthält ausschließlich Angaben zu Art und Dauer der Beschäftigung.',
-        'enthält zusätzlich zu Art und Dauer der Tätigkeit eine Bewertung von Leistung und Verhalten und muss wohlwollend formuliert sein.',
+        'bewertet zusätzlich Leistung und Verhalten und muss wohlwollend formuliert sein.',
         'darf absichtlich schlechter formuliert werden, um den Arbeitnehmer an einem Wechsel zu hindern.',
         'wird nur auf Verlangen des Arbeitgebers ausgestellt.',
         'muss zwingend den Kündigungsgrund enthalten.'
@@ -235,7 +235,7 @@
       einleitung: 'Ein Verbotszeichen ist …',
       optionen: [
         'dreieckig mit gelbem Grund und schwarzem Rand.',
-        'rund mit weißem Grund, rotem Rand und einem roten diagonalen Balken.',
+        'rund mit weißem Grund, rotem Rand und rotem Querbalken.',
         'rund mit blauem Grund und weißem Symbol.',
         'quadratisch mit grünem Grund und weißem Symbol.',
         'quadratisch mit rotem Grund und weißem Symbol.'
@@ -249,7 +249,7 @@
       frage: 'Welche der folgenden Aussagen zur Arbeitsschutzorganisation trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Berufsgenossenschaft ist Träger der gesetzlichen Unfallversicherung und erlässt Vorschriften zur Unfallverhütung.',
+        'Die Berufsgenossenschaft trägt die Unfallversicherung und erlässt Unfallverhütungsvorschriften.',
         'Die Fachkraft für Arbeitssicherheit zahlt die Beiträge zur Unfallversicherung.',
         'Der Betriebsarzt ist für die strafrechtliche Verfolgung von Arbeitsunfällen zuständig.',
         'Für die Sicherheit am Arbeitsplatz ist allein der einzelne Mitarbeiter verantwortlich, nicht der Arbeitgeber.',
@@ -264,7 +264,7 @@
       frage: 'Welche der folgenden Aussagen zur Ersten Hilfe im Betrieb trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Arbeitgeber muss eine ausreichende Zahl von Beschäftigten zu Ersthelfern ausbilden lassen und für Erste-Hilfe-Material sorgen.',
+        'Der Arbeitgeber muss Ersthelfer ausbilden lassen und Erste-Hilfe-Material bereitstellen.',
         'Erste Hilfe ist allein Aufgabe des öffentlichen Rettungsdienstes; der Betrieb trifft keine Vorkehrungen.',
         'Die Kosten der Ersthelfer-Ausbildung tragen die Beschäftigten selbst.',
         'Ein Verbandkasten ist nur in Betrieben mit mehr als 100 Beschäftigten vorgeschrieben.',
@@ -280,7 +280,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Beiträge tragen Arbeitgeber und Arbeitnehmer je zur Hälfte.',
-        'Auch ein Unfall auf dem direkten Weg zur Arbeit (Wegeunfall) ist versichert; Träger ist die Berufsgenossenschaft und die Beiträge trägt allein der Arbeitgeber.',
+        'Wegeunfälle sind versichert, die Beiträge trägt allein der Arbeitgeber.',
         'Träger der gesetzlichen Unfallversicherung ist die Krankenkasse.',
         'Versichert sind nur Unfälle, die in der Mittagspause außerhalb des Betriebs geschehen.',
         'Die Beiträge zur Unfallversicherung trägt allein der Arbeitnehmer.'
@@ -303,7 +303,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Alle Gesellschafter haften nur bis zur Höhe ihrer Einlage.',
-        'Der Kommanditist haftet nur bis zur Höhe seiner im Handelsregister eingetragenen Einlage, der Komplementär haftet unbeschränkt.',
+        'Der Kommanditist haftet nur mit seiner Einlage, der Komplementär unbeschränkt.',
         'Der Kommanditist haftet unbeschränkt, der Komplementär nur mit seiner Einlage.',
         'Die KG ist eine Kapitalgesellschaft mit einem Mindestkapital von 25.000,00 EUR.',
         'Zur Geschäftsführung ist allein der Kommanditist berechtigt.'
@@ -334,7 +334,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Vorgehensweise in das Kästchen ein.',
       optionen: [
         'Die Stelle wird ausschließlich an Bewerber unter 35 Jahren vergeben.',
-        'Die Auswahl der Bewerberinnen und Bewerber erfolgt ausschließlich anhand ihrer fachlichen Qualifikation und Eignung.',
+        'Die Auswahl erfolgt ausschließlich nach fachlicher Qualifikation und Eignung.',
         'In der Stellenanzeige wird gezielt nur eine „junge, deutsche Mitarbeiterin“ gesucht.',
         'Bewerber werden nach ihrer Religionszugehörigkeit vorsortiert.',
         'Schwerbehinderte Bewerber werden grundsätzlich nicht zum Vorstellungsgespräch eingeladen.'
@@ -364,7 +364,7 @@
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Merkmal in das Kästchen ein.',
       optionen: [
         'Jede Stelle ist genau einer übergeordneten Instanz unterstellt (Einheit der Auftragserteilung).',
-        'Jede Stelle ist zwei Vorgesetzten unterstellt, z. B. einem Fach- und einem Projektvorgesetzten (Mehrfachunterstellung).',
+        'Jede Stelle ist zwei Vorgesetzten unterstellt (Mehrfachunterstellung).',
         'Es gibt keine Hierarchieebenen; alle Mitarbeiter sind gleichgestellt.',
         'Stabsstellen haben umfassende Weisungsbefugnis gegenüber den Linienstellen.',
         'Die Leitung wird vollständig an externe Dienstleister übertragen.'
@@ -398,7 +398,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Mehrere Unternehmen verlieren ihre rechtliche Selbstständigkeit und bilden ein einziges neues Unternehmen.',
-        'Rechtlich selbstständig bleibende Unternehmen stimmen ihr Marktverhalten ab (z. B. Preise), was grundsätzlich verboten ist.',
+        'Rechtlich selbstständige Unternehmen stimmen ihr Marktverhalten ab, was grundsätzlich verboten ist.',
         'Ein Unternehmen wird von einem anderen vollständig aufgekauft und aufgelöst.',
         'Mehrere rechtlich selbstständige Unternehmen werden unter einheitlicher Leitung zusammengefasst.',
         'Ein Einzelunternehmen wird in eine GmbH umgewandelt.'
@@ -436,7 +436,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Reaktion in das Kästchen ein.',
       optionen: [
         'Er klickt auf den Link und gibt seine Zugangsdaten ein, weil die Nachricht dringend wirkt.',
-        'Er klickt weder auf den Link noch gibt er Daten ein, sondern löscht die E-Mail bzw. meldet sie der IT-Abteilung.',
+        'Er klickt nicht auf den Link und meldet die E-Mail der IT-Abteilung.',
         'Er leitet die E-Mail an alle Kollegen weiter, damit diese ebenfalls ihre Daten bestätigen.',
         'Er antwortet mit seinen Zugangsdaten direkt auf die E-Mail.',
         'Er deaktiviert den Virenschutz, um den Link gefahrlos öffnen zu können.'
@@ -451,7 +451,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Es garantiert die Einhaltung europäischer Sicherheitsvorschriften.',
-        'Es kennzeichnet besonders umweltfreundliche und ressourcenschonende Produkte und Dienstleistungen.',
+        'Es kennzeichnet besonders umweltfreundliche Produkte und Dienstleistungen.',
         'Es weist auf fair gehandelte Rohstoffe aus Entwicklungsländern hin.',
         'Es bestätigt, dass ein Lebensmittel aus kontrolliert biologischem Anbau stammt.',
         'Es zeigt an, dass ein Produkt elektrische Geräte enthält, die nicht in den Hausmüll gehören.'
@@ -465,7 +465,7 @@
       frage: 'Welche der folgenden Aussagen zum Verpackungsgesetz trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Wer mit Ware befüllte Verpackungen an private Endverbraucher in Verkehr bringt, muss sich im Verpackungsregister registrieren und an einem dualen System beteiligen.',
+        'Wer Verpackungen an Endverbraucher vertreibt, muss sich registrieren und an einem dualen System beteiligen.',
         'Verkaufsverpackungen dürfen ausschließlich über den Restmüll entsorgt werden.',
         'Das Verpackungsgesetz gilt nur für Elektrogeräte.',
         'Die Rücknahme und Verwertung von Verpackungen ist allein Aufgabe der Kommunen.',

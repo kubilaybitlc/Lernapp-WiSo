@@ -52,7 +52,7 @@
       frage: 'Welche der folgenden Aussagen zu einem Schadensersatzanspruch von Herrn Stölzle trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Herr Stölzle kann Schadensersatz verlangen, weil die Alpenblick Systemhaus GmbH den Grund für die Auflösung zu vertreten hat; er muss den Anspruch innerhalb von drei Monaten nach Beendigung des Ausbildungsverhältnisses geltend machen.',
+        'Herr Stölzle kann Schadensersatz verlangen, da der Betrieb den Grund für die Auflösung zu vertreten hat.',
         'Schadensersatzansprüche sind bei Berufsausbildungsverhältnissen gesetzlich ausgeschlossen.',
         'Ein Schadensersatzanspruch besteht nur, wenn das Ausbildungsverhältnis während der Probezeit gelöst wird.',
         'Herr Stölzle kann seinen Anspruch innerhalb von drei Jahren nach Ende des Ausbildungsverhältnisses geltend machen.',
@@ -68,7 +68,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Der Ausbildungsbetrieb muss in der Probezeit eine Kündigungsfrist von vier Wochen einhalten.',
-        'Während der Probezeit kann das Berufsausbildungsverhältnis von beiden Seiten jederzeit ohne Einhalten einer Kündigungsfrist gekündigt werden; die Kündigung muss schriftlich erfolgen.',
+        'Während der Probezeit kann von beiden Seiten jederzeit ohne Kündigungsfrist gekündigt werden.',
         'Eine Kündigung in der Probezeit ist nur wirksam, wenn die BITLC zustimmt.',
         'Die Probezeit hätte im Ausbildungsvertrag auch auf sechs Monate festgelegt werden können.',
         'Nach Ablauf der Probezeit kann der Ausbildungsbetrieb ordentlich mit einer Frist von vier Wochen kündigen.'
@@ -107,7 +107,7 @@
         'Der Betriebsrat bleibt bei sieben Mitgliedern, weil sich seine Größe nach der ersten Wahl richtet.',
         'Der Betriebsrat besteht aus elf Mitgliedern; zwei Mitglieder sind freizustellen.',
         'Der Betriebsrat besteht aus neun Mitgliedern, die alle vollständig von ihrer beruflichen Tätigkeit freizustellen sind.',
-        'Der Betriebsrat besteht aus neun Mitgliedern; mindestens ein Mitglied ist ganz von seiner beruflichen Tätigkeit freizustellen.',
+        'Der Betriebsrat besteht aus neun Mitgliedern, davon ist mindestens eines freizustellen.',
         'Die Zahl der Betriebsratsmitglieder legt die Geschäftsführung nach dem Bedarf des Unternehmens fest.'
       ],
       loesung: 4,
@@ -119,7 +119,7 @@
       frage: 'Welche Rechtsfolge hat das Vorgehen der Geschäftsführung?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Rechtsfolge in das Kästchen ein.',
       optionen: [
-        'Die Kündigung ist unwirksam, weil der Betriebsrat vor jeder Kündigung unter Mitteilung der Gründe anzuhören ist.',
+        'Die Kündigung ist unwirksam, weil der Betriebsrat vorher anzuhören ist.',
         'Die Kündigung ist wirksam, wenn die Geschäftsführung den Betriebsrat innerhalb einer Woche nachträglich informiert.',
         'Die Kündigung ist wirksam, weil der Betriebsrat nur vor außerordentlichen Kündigungen zu hören ist.',
         'Die Kündigung ist nur dann unwirksam, wenn Herr Wiedemann Mitglied des Betriebsrats ist.',
@@ -136,7 +136,7 @@
       optionen: [
         'Herr Wetzel erhält für seine Betriebsratstätigkeit eine zusätzliche Vergütung vom Arbeitgeber.',
         'Die Zeit der Betriebsratssitzungen muss Herr Wetzel unbezahlt nacharbeiten.',
-        'Herr Wetzel führt sein Amt als unentgeltliches Ehrenamt; für die erforderliche Betriebsratstätigkeit ist er ohne Minderung seines Arbeitsentgelts von der Arbeit zu befreien.',
+        'Herr Wetzel führt sein Amt als Ehrenamt und wird dafür ohne Lohnminderung freigestellt.',
         'Für die Sitzungszeit zahlt die Gewerkschaft Herrn Wetzel sein Gehalt.',
         'Die Kosten der Betriebsratsarbeit, z. B. für Räume und Fachliteratur, werden durch Beiträge der Beschäftigten finanziert.'
       ],
@@ -173,7 +173,7 @@
         'Wegen der Teilnahme am Streik darf die Alpenblick Systemhaus GmbH Herrn Wörle fristlos kündigen.',
         'Für die Streiktage zahlt die Bundesagentur für Arbeit Arbeitslosengeld.',
         'Herr Wörle muss die Streiktage nachträglich als Urlaub nehmen.',
-        'Für die Streiktage entfällt sein Anspruch auf Arbeitsentgelt; als Gewerkschaftsmitglied erhält er in der Regel eine Streikunterstützung (Streikgeld) von seiner Gewerkschaft.'
+        'Sein Entgeltanspruch entfällt, als Gewerkschaftsmitglied erhält er Streikgeld.'
       ],
       loesung: 5,
       erklaerung: 'Das Streikrecht folgt aus der Koalitionsfreiheit (Art. 9 Abs. 3 GG). Während eines rechtmäßigen Streiks ruhen die Hauptpflichten aus dem Arbeitsverhältnis: Die Streikenden müssen nicht arbeiten, der Arbeitgeber muss für diese Zeit kein Entgelt zahlen. Das Arbeitsverhältnis bleibt bestehen, die Teilnahme an einem rechtmäßigen Streik ist kein Kündigungsgrund. Gewerkschaftsmitglieder erhalten nach der Satzung ihrer Gewerkschaft Streikgeld. Die Bundesagentur für Arbeit muss im Arbeitskampf neutral bleiben; ein Anspruch auf Arbeitslosengeld ruht (§ 160 SGB III).'
@@ -188,7 +188,7 @@
         'Der Vertrag darf ohne sachlichen Grund höchstens für die Dauer von sechs Monaten befristet werden.',
         'Nach Ablauf der Befristung hat Herr Stadler automatisch Anspruch auf einen unbefristeten Arbeitsvertrag.',
         'Der befristete Vertrag kann beliebig oft verlängert werden, solange Herr Stadler zustimmt.',
-        'Der Vertrag darf ohne sachlichen Grund bis zur Dauer von zwei Jahren befristet werden; bis zu dieser Gesamtdauer ist eine höchstens dreimalige Verlängerung zulässig.'
+        'Der Vertrag darf ohne sachlichen Grund bis zu zwei Jahren befristet und höchstens dreimal verlängert werden.'
       ],
       loesung: 5,
       erklaerung: '§ 14 Abs. 2 TzBfG: Ohne sachlichen Grund ist eine Befristung bis zur Dauer von zwei Jahren zulässig, innerhalb dieser Zeit ist sie höchstens dreimal verlängerbar. Sie ist nicht zulässig, wenn mit demselben Arbeitgeber bereits zuvor ein Arbeitsverhältnis bestanden hat. Die Befristung bedarf zu ihrer Wirksamkeit der Schriftform (§ 14 Abs. 4 TzBfG). Einen Anspruch auf Entfristung gibt es nicht.'
@@ -218,7 +218,7 @@
         'Ein Anspruch auf Teilzeit besteht nur, wenn Frau Fäßler Kinder unter zwölf Jahren betreut.',
         'Die Alpenblick Systemhaus GmbH kann den Wunsch ohne Angabe von Gründen ablehnen.',
         'Eine Verringerung der Arbeitszeit ist nur mit Zustimmung des Betriebsrats und der BITLC möglich.',
-        'Frau Fäßler muss die Verringerung spätestens drei Monate vor dem gewünschten Beginn in Textform verlangen; der Arbeitgeber darf nur ablehnen, wenn betriebliche Gründe entgegenstehen.',
+        'Die Verringerung ist drei Monate vorher in Textform zu verlangen, Ablehnung nur aus betrieblichen Gründen.',
         'Ein Anspruch auf Teilzeit besteht erst nach einer Betriebszugehörigkeit von zehn Jahren.'
       ],
       loesung: 4,
@@ -248,7 +248,7 @@
         'Die Gefährdungsbeurteilung wird von der Berufsgenossenschaft für jeden Betrieb erstellt.',
         'Eine Gefährdungsbeurteilung ist erst in Betrieben mit mehr als 20 Beschäftigten vorgeschrieben.',
         'Für reine Büroarbeitsplätze ist keine Gefährdungsbeurteilung erforderlich.',
-        'Der Arbeitgeber muss die Gefährdungen an den Arbeitsplätzen einschließlich psychischer Belastungen beurteilen, die erforderlichen Schutzmaßnahmen festlegen und das Ergebnis dokumentieren.',
+        'Der Arbeitgeber muss alle Gefährdungen einschließlich psychischer Belastungen beurteilen und dokumentieren.',
         'Die Gefährdungsbeurteilung wird einmalig bei der Gründung des Unternehmens erstellt und danach nicht mehr angepasst.'
       ],
       loesung: 4,
@@ -265,7 +265,7 @@
         'Die Arbeit am Bildschirm wird regelmäßig durch Pausen oder andere Tätigkeiten unterbrochen.',
         'Tastatur und Bildschirm der Desktop-Arbeitsplätze sind fest miteinander verbunden.',
         'Alle Beschäftigten erhalten unabhängig von einer Untersuchung eine Bildschirmbrille auf Kosten des Arbeitgebers.',
-        'Den Beschäftigten wird eine arbeitsmedizinische Vorsorge zur Untersuchung der Augen und des Sehvermögens angeboten.'
+        'Den Beschäftigten wird eine arbeitsmedizinische Vorsorge für die Augen angeboten.'
       ],
       loesung: [3, 6],
       erklaerung: 'Nach Anhang Nr. 6 der Arbeitsstättenverordnung (ArbStättV) ist Bildschirmarbeit regelmäßig durch Pausen oder andere Tätigkeiten zu unterbrechen; Blendungen und Spiegelungen sind zu vermeiden (Blickrichtung parallel zum Fenster), und die Tastatur muss vom Bildschirm getrennt sein. Bei Tätigkeiten an Bildschirmgeräten ist eine Angebotsvorsorge anzubieten (§ 5 ArbMedVV mit Anhang Teil 4). Eine spezielle Sehhilfe stellt der Arbeitgeber nur, wenn die Untersuchung ergibt, dass sie notwendig ist. Eine feste Stundengrenze gibt es nicht.'
@@ -280,7 +280,7 @@
         'Die Schutzfrist vor der Entbindung beträgt acht Wochen.',
         'Der Arbeitgeber darf Frau Kögel während der Schwangerschaft ordentlich kündigen, wenn er eine Frist von drei Monaten einhält.',
         'Während der Schutzfrist erhält Frau Kögel keine finanziellen Leistungen.',
-        'In den letzten sechs Wochen vor der Entbindung darf Frau Kögel nur beschäftigt werden, wenn sie sich ausdrücklich dazu bereit erklärt; diese Erklärung kann sie jederzeit widerrufen.'
+        'Sechs Wochen vor der Entbindung darf sie nur auf eigenen ausdrücklichen Wunsch beschäftigt werden.'
       ],
       loesung: 5,
       erklaerung: '§ 3 Abs. 1 MuSchG: In den letzten sechs Wochen vor der Entbindung darf eine Schwangere nur beschäftigt werden, wenn sie sich ausdrücklich dazu bereit erklärt; die Erklärung ist jederzeit widerruflich. Nach der Entbindung gilt dagegen ein Beschäftigungsverbot von acht Wochen (§ 3 Abs. 2 MuSchG). Während der Schutzfristen erhält sie Mutterschaftsgeld und einen Arbeitgeberzuschuss (§§ 19, 20 MuSchG). Während der Schwangerschaft ist eine Kündigung grundsätzlich unzulässig (§ 17 MuSchG).'
@@ -315,7 +315,7 @@
       optionen: [
         'Frau Hefele zahlt aus ihrem Verdienst die vollen Beiträge zur Kranken-, Pflege- und Arbeitslosenversicherung.',
         'Für Minijobs müssen keine Meldungen an die Sozialversicherung abgegeben werden.',
-        'Die Alpenblick Systemhaus GmbH zahlt Pauschalbeiträge zur Kranken- und Rentenversicherung; Frau Hefele ist rentenversicherungspflichtig, kann sich aber auf Antrag davon befreien lassen.',
+        'Der Arbeitgeber zahlt Pauschalbeiträge, Frau Hefele kann sich von der Rentenversicherungspflicht befreien lassen.',
         'Minijobber haben keinen Anspruch auf bezahlten Urlaub.',
         'Ein Minijob ist grundsätzlich nur für höchstens drei Monate im Kalenderjahr zulässig.'
       ],
@@ -343,7 +343,7 @@
       frage: 'Welche der folgenden Aussagen zu den Organen der Alpenblick Systemhaus GmbH trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Frau Allgaier vertritt die GmbH gerichtlich und außergerichtlich; über ihre Bestellung und Abberufung entscheidet die Gesellschafterversammlung.',
+        'Frau Allgaier vertritt die GmbH nach außen, die Gesellschafterversammlung bestellt und beruft sie ab.',
         'Die GmbH wird nach außen von allen Gesellschaftern gemeinsam vertreten.',
         'Wegen ihrer 190 Arbeitnehmer muss die GmbH einen Aufsichtsrat bilden, der die Geschäftsführerin bestellt.',
         'Geschäftsführerin einer GmbH kann nur sein, wer selbst Gesellschafterin ist.',
@@ -361,7 +361,7 @@
         'Die Beschränkung auf Verträge bis 50.000,00 EUR ist auch gegenüber Kunden und Lieferanten wirksam.',
         'Die Prokura entsteht stillschweigend, wenn Herr Kustermann regelmäßig Verträge für das Unternehmen abschließt.',
         'Herr Kustermann darf seine Prokura auf einen Mitarbeiter seiner Abteilung übertragen.',
-        'Die Prokura muss ausdrücklich erteilt und zur Eintragung in das Handelsregister angemeldet werden; Herr Kustermann zeichnet mit dem Zusatz „ppa.“.',
+        'Die Prokura wird ausdrücklich erteilt, ins Handelsregister eingetragen und mit „ppa.” gezeichnet.',
         'Die Prokura kann nur zusammen mit dem Arbeitsvertrag gekündigt werden.'
       ],
       loesung: 4,

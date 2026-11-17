@@ -205,10 +205,10 @@
       frage: 'Welche der folgenden Aussagen trifft auf diesen Fall zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Frau Yilmaz kann nach Ablauf der Probezeit nur noch aus wichtigem Grund fristlos kündigen.',
-        'Frau Yilmaz kann jederzeit mündlich und ohne Einhaltung einer Frist kündigen.',
+        'Frau Yilmaz kann nach der Probezeit nur noch aus wichtigem Grund fristlos kündigen.',
+        'Frau Yilmaz kann jederzeit mündlich und ohne Frist kündigen.',
         'Die Kündigung ist nur mit Zustimmung der Industrie- und Handelskammer wirksam.',
-        'Frau Yilmaz kann mit einer Frist von vier Wochen kündigen. Die Kündigung muss schriftlich unter Angabe des Kündigungsgrundes erfolgen.',
+        'Frau Yilmaz kann schriftlich mit vier Wochen Frist unter Angabe des Grundes kündigen.',
         'Frau Yilmaz muss die Ausbildung bis zum Ende des laufenden Ausbildungsjahres fortsetzen.'
       ],
       loesung: 4,
@@ -235,7 +235,7 @@
       frage: 'Bei welcher der folgenden Maßnahmen hat der Betriebsrat ein Mitbestimmungsrecht nach dem Betriebsverfassungsgesetz?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Maßnahme in das Kästchen ein.',
       optionen: [
-        'Einführung einer Software, mit der Verhalten und Leistung der Mitarbeitenden überwacht werden können',
+        'Einführung einer Software zur Verhaltens- und Leistungsüberwachung',
         'Festlegung der Stundensätze für Kundenprojekte',
         'Kauf neuer Server für das Rechenzentrum',
         'Auswahl eines neuen Steuerberaters für das Unternehmen',
@@ -429,7 +429,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Haftung der Gesellschafter ist auf ihre Kapitaleinlage beschränkt.',
-        'Die Gesellschafter haften für die Verbindlichkeiten der OHG unbeschränkt, also auch mit ihrem Privatvermögen.',
+        'Die Gesellschafter haften unbeschränkt, auch mit ihrem Privatvermögen.',
         'Die OHG ist eine Kapitalgesellschaft und muss einen Aufsichtsrat bilden.',
         'Für die Gründung ist ein Mindestkapital von 25.000,00 EUR vorgeschrieben.',
         'Eine OHG muss mindestens drei Gesellschafter haben.'
@@ -454,7 +454,7 @@
         'Die DSGVO gilt nur für Behörden, nicht für private Unternehmen.',
         'Personenbezogene Daten dürfen unbegrenzt gespeichert werden, wenn sie verschlüsselt sind.',
         'Betroffene Personen haben kein Recht auf Auskunft über ihre gespeicherten Daten.',
-        'Personenbezogene Daten dürfen nur verarbeitet werden, wenn eine Rechtsgrundlage besteht, zum Beispiel eine Einwilligung oder ein Vertrag.',
+        'Personenbezogene Daten dürfen nur bei Vorliegen einer Rechtsgrundlage verarbeitet werden.',
         'Ein Datenschutzbeauftragter muss erst ab 250 Beschäftigten benannt werden.'
       ],
       loesung: 4,
@@ -490,7 +490,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Maßnahme in das Kästchen ein.',
       optionen: [
         'Umstellung der Stromversorgung auf Ökostrom',
-        'Einführung flexibler Arbeitszeitmodelle zur besseren Vereinbarkeit von Familie und Beruf',
+        'Einführung flexibler Arbeitszeitmodelle für Beschäftigte mit Kindern',
         'Senkung der Lagerkosten durch einen höheren Lagerumschlag',
         'Einbau einer Wärmepumpe im Bürogebäude',
         'Erhöhung der Eigenkapitalquote durch Gewinnrücklagen'

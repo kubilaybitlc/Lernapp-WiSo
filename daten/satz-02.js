@@ -96,7 +96,7 @@
       frage: 'Welche der folgenden Pflichten trifft nach dem Berufsbildungsgesetz den Ausbildungsbetrieb?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Pflicht in das Kästchen ein.',
       optionen: [
-        'Kostenlose Bereitstellung der Ausbildungsmittel, z. B. Werkzeuge und Fachliteratur',
+        'Kostenlose Bereitstellung der Ausbildungsmittel',
         'Führen des schriftlichen oder elektronischen Ausbildungsnachweises',
         'Teilnahme am Berufsschulunterricht',
         'Wahrung von Betriebs- und Geschäftsgeheimnissen',
@@ -161,7 +161,7 @@
       einleitung: 'Zur Wahl in den Betriebsrat …',
       optionen: [
         'muss sie das 16. Lebensjahr vollendet haben.',
-        'muss sie das 18. Lebensjahr vollendet haben und seit mindestens sechs Monaten dem Betrieb angehören.',
+        'muss sie mindestens 18 Jahre alt sein und dem Betrieb seit sechs Monaten angehören.',
         'muss sie ihre Ausbildung abgeschlossen haben.',
         'muss sie Mitglied einer Gewerkschaft sein.',
         'muss sie in Vollzeit beschäftigt sein.'
@@ -238,7 +238,7 @@
       optionen: [
         'Er gilt ab dem ersten Arbeitstag.',
         'Er gilt nur für Beschäftigte über 50 Jahre.',
-        'Er gilt, wenn das Arbeitsverhältnis länger als sechs Monate besteht und im Betrieb in der Regel mehr als zehn Arbeitnehmer beschäftigt sind.',
+        'Er gilt nach sechs Monaten Betriebszugehörigkeit in Betrieben mit mehr als zehn Arbeitnehmern.',
         'Er gilt erst nach fünf Jahren Betriebszugehörigkeit.',
         'Er gilt nur für Mitglieder des Betriebsrats.'
       ],
@@ -317,7 +317,7 @@
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Zeitpunkt in das Kästchen ein.',
       optionen: [
         'Nur einmalig bei der Einstellung',
-        'Bei Aufnahme der Tätigkeit und danach regelmäßig, mindestens einmal jährlich',
+        'Bei Aufnahme der Tätigkeit und danach mindestens jährlich',
         'Nur nach einem Arbeitsunfall',
         'Nur auf ausdrücklichen Wunsch der Beschäftigten',
         'Es besteht keine Unterweisungspflicht'
@@ -331,7 +331,7 @@
       frage: 'Was bedeutet die Beitragsbemessungsgrenze?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Bis zu diesem Einkommen werden Beiträge erhoben; für den darüber liegenden Einkommensteil fallen keine weiteren Beiträge an.',
+        'Einkommen wird nur bis zu dieser Grenze mit Beiträgen belastet.',
         'Unterhalb dieser Grenze besteht keine Versicherungspflicht.',
         'Oberhalb dieser Grenze verdoppelt sich der Beitragssatz.',
         'Sie legt die Höhe der späteren Rente fest.',
@@ -353,7 +353,7 @@
       frage: 'Welche der folgenden Aussagen zum Stammkapital der GmbH trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Es beträgt mindestens 25.000,00 EUR, davon müssen bei der Gründung mindestens 12.500,00 EUR eingezahlt sein.',
+        'Mindestens 25.000,00 EUR, bei Gründung mindestens 12.500,00 EUR einzuzahlen.',
         'Es beträgt mindestens 50.000,00 EUR.',
         'Ein Mindestkapital ist nicht vorgeschrieben.',
         'Es muss stets vollständig und ausschließlich in bar eingezahlt werden.',
@@ -367,7 +367,7 @@
       frage: 'Welche der folgenden Aussagen zur Unternehmergesellschaft (haftungsbeschränkt) – UG – trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Sie kann mit einem Stammkapital ab 1,00 EUR gegründet werden und muss einen Teil des Jahresgewinns als Rücklage ansparen.',
+        'Sie kann ab 1,00 EUR gegründet werden und muss Gewinnanteile als Rücklage bilden.',
         'Sie haftet unbeschränkt mit dem Privatvermögen der Gesellschafter.',
         'Sie wird nicht in das Handelsregister eingetragen.',
         'Sie ist eine Personengesellschaft.',
@@ -404,7 +404,7 @@
       frage: 'In welchen der folgenden Fälle wurde gegen das AGG **verstoßen**?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Fällen in die Kästchen ein.',
       optionen: [
-        'In einer Stellenanzeige wird ein „junges, dynamisches Team“ beschrieben und ausdrücklich nur Bewerber unter 30 Jahren gesucht.',
+        'In einer Stellenanzeige werden ausdrücklich nur Bewerber unter 30 Jahren gesucht.',
         'Eine Bewerbung wird abgelehnt, weil der geforderte Berufsabschluss fehlt.',
         'Eine Bewerberin wird allein wegen ihres Kopftuchs und ihrer Religion abgelehnt.',
         'Im gesamten Bürogebäude gilt für alle Beschäftigten ein Rauchverbot.',
@@ -478,7 +478,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       einleitung: 'Das Verursacherprinzip bedeutet, dass …',
       optionen: [
-        'die Kosten für die Vermeidung und Beseitigung von Umweltbelastungen derjenige trägt, der sie verursacht hat.',
+        'der Verursacher die Kosten für Umweltbelastungen trägt.',
         'der Staat sämtliche Umweltkosten übernimmt.',
         'die Allgemeinheit die Kosten für Umweltschäden trägt.',
         'Umweltschäden grundsätzlich nicht ersetzt werden müssen.',
