@@ -383,3 +383,48 @@ button.option:focus-visible { outline: 3px solid #7fa7dc; outline-offset: 1px; }
 @media (max-width: 520px) {
   .kacheln { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* ---------- SQL-Training ---------- */
+
+.sql-code {
+  font-family: "Cascadia Code", "Fira Code", "Consolas", "Monaco", monospace;
+  font-size: .9em;
+  background: #f0f2f5;
+  padding: .15em .4em;
+  border-radius: 3px;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+.optionen.code-optionen li { align-items: stretch; }
+.optionen.code-optionen .sql-code { display: block; line-height: 1.5; }
+
+.sql-eingabe {
+  width: 100%;
+  min-height: 4em;
+  font-family: "Cascadia Code", "Fira Code", "Consolas", "Monaco", monospace;
+  font-size: .95rem;
+  line-height: 1.45;
+  resize: vertical;
+  padding: .5em .6em;
+  border: 2px solid var(--rahmen);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--text);
+}
+
+.sql-feld { flex-direction: column; align-items: stretch; }
+.sql-eingabe.richtig { border-color: var(--ok); background: var(--ok-hell); }
+.sql-eingabe.falsch { border-color: var(--nok); background: var(--nok-hell); }
+
+.rueckmeldung .sql-code.loesung {
+  display: block;
+  margin-top: .3em;
+  padding: .4em .6em;
+  font-weight: 600;
+  background: rgba(255, 255, 255, .5);
+}
+
+.schema-tabelle { font-size: .88rem; }
+.schema-tabelle th { background: var(--akzent); color: #fff; padding: .3em .6em; }
+.schema-tabelle td { padding: .25em .6em; border-bottom: 1px solid var(--linie); font-family: "Cascadia Code", "Fira Code", "Consolas", monospace; font-size: .9em; }

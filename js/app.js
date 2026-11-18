@@ -5,6 +5,7 @@
   const B = window.WISO_BEWERTUNG;
   const SAETZE = window.WISO_SAETZE || [];
   const EIGENE_IHK_SAETZE = window.WISO_IHK_SAETZE || [];
+  const SQL_SAETZE = window.WISO_SQL_SAETZE || [];
   const THEMEN = window.WISO_THEMEN || {};
   const BILDER = window.WISO_BILDER || {};
   const PRUEFUNGSDAUER_MIN = 60;
@@ -51,7 +52,8 @@
 
   // Zwei Bereiche: 'ki' = KI-erstellte Sätze aus daten/satz-*.js; 'BITLC' = mit dem Dozenten erstellte Sätze aus
   // daten/BITLC-satz-*.js plus Originalaufgaben, die jemand privat aus einer eigenen Datei einliest
-  let bereich = speicher.lesen(S_BEREICH, 'ki') === 'BITLC' ? 'BITLC' : 'ki';
+  var gespeicherterBereich = speicher.lesen(S_BEREICH, 'ki');
+  let bereich = gespeicherterBereich === 'BITLC' ? 'BITLC' : gespeicherterBereich === 'sql' ? 'sql' : 'ki';
   let IMPORT_SAETZE = [];
   let ihkInfo = null;
   let gewaehlteThemen = null; // zuletzt angehakte Themen für Zufallsfragen, null = alle
@@ -74,10 +76,11 @@
   }
 
   function satzById(id) {
-    return SAETZE.concat(EIGENE_IHK_SAETZE, IMPORT_SAETZE).find(s => s.id === id);
+    return SAETZE.concat(EIGENE_IHK_SAETZE, IMPORT_SAETZE, SQL_SAETZE).find(s => s.id === id);
   }
 
   function saetzeImBereich() {
+    if (bereich === 'sql') return SQL_SAETZE;
     return bereich === 'BITLC' ? EIGENE_IHK_SAETZE.concat(IMPORT_SAETZE) : SAETZE;
   }
 
@@ -99,8 +102,14 @@
     return String(id || '').startsWith('BITLC-');
   }
 
+  function istSqlId(id) {
+    return String(id || '').startsWith('sql-');
+  }
+
   function ergebnisBereich(e) {
-    return istIhkId(e.auswahl ? (e.auswahl[0] || {}).satzId : e.satzId) ? 'BITLC' : 'ki';
+    var id = e.auswahl ? (e.auswahl[0] || {}).satzId : e.satzId;
+    if (istSqlId(id)) return 'sql';
+    return istIhkId(id) ? 'BITLC' : 'ki';
   }
 
   function aufgabeById(satz, nr) {
@@ -253,10 +262,12 @@
       .filter(x => x.a)
       .map((x, i) => Object.assign({}, x.a, { nr: i + 1, herkunft: { satzId: x.q.satzId, nr: x.q.nr } }));
     const BITLC = istIhkId((auswahl[0] || {}).satzId);
+    const SQL = istSqlId((auswahl[0] || {}).satzId);
+    var bereichText = BITLC ? ' (BITLC-Fragen)' : SQL ? ' (SQL)' : '';
     return {
       id,
-      titel: (id === ZUFALL_ID ? 'Zufalls-Prüfung' : 'Schwächen-Prüfung') + (BITLC ? ' (BITLC-Fragen)' : ''),
-      untertitel: BITLC ? 'Aufgaben aus deinen BITLC-Fragen' : 'Aufgaben aus allen Sätzen',
+      titel: (id === ZUFALL_ID ? 'Zufalls-Prüfung' : 'Schwächen-Prüfung') + bereichText,
+      untertitel: BITLC ? 'Aufgaben aus deinen BITLC-Fragen' : SQL ? 'SQL-Aufgaben aus allen Sätzen' : 'Aufgaben aus allen Sätzen',
       virtuell: true,
       auswahl,
       themen: themen || null,
@@ -443,12 +454,17 @@
     return a.typ === 'einfach' || a.typ === 'mehrfach';
   }
 
+  function istSql(a) {
+    return a.typ === 'sql';
+  }
+
   // Bei Auswahlaufgaben lässt sich jede Antwort anklicken; die Ziffer landet im Lösungskästchen.
   // Nach dem Prüfen werden richtige Antworten grün und falsch gewählte rot markiert.
   function renderOptionen(a, antwort, ergebnis) {
     const liste = a.optionen;
     if (!liste || !liste.length) return '';
     const mitBild = liste.some(o => typeof o === 'object' && o.bild);
+    const mitCode = a.codeOptionen;
     const auswahl = istAuswahl(a);
     const gewaehlt = (antwort || []).filter(Boolean).map(String);
     const richtige = auswahl ? [].concat(a.loesung).map(String) : [];
@@ -456,7 +472,8 @@
       const ziffer = String(i + 1);
       const text = typeof o === 'string' ? o : (o.text || '');
       const bild = typeof o === 'object' && o.bild ? `<span class="bild">${BILDER[o.bild] || ''}</span>` : '';
-      const inhalt = `<span class="ziffer">${ziffer}</span>${bild}${text ? `<span>${fmt(text)}</span>` : ''}`;
+      const textHtml = text ? (mitCode ? `<code class="sql-code">${esc(text)}</code>` : `<span>${fmt(text)}</span>`) : '';
+      const inhalt = `<span class="ziffer">${ziffer}</span>${bild}${textHtml}`;
       if (!auswahl) return `<li>${inhalt}</li>`;
       const an = gewaehlt.includes(ziffer);
       if (ergebnis) {
@@ -465,7 +482,7 @@
       }
       return `<li><button type="button" class="option${an ? ' gewaehlt' : ''}" data-aktion="option" data-nr="${a.nr}" data-ziffer="${ziffer}" aria-pressed="${an}">${inhalt}</button></li>`;
     }).join('');
-    const klassen = `optionen${mitBild ? ' bilder' : ''}${auswahl ? ' auswahl' : ''}`;
+    const klassen = `optionen${mitBild ? ' bilder' : ''}${mitCode ? ' code-optionen' : ''}${auswahl ? ' auswahl' : ''}`;
     return `${a.optionenTitel ? `<p class="untertitel">${esc(a.optionenTitel)}</p>` : ''}<ol class="${klassen}">${eintraege}</ol>`;
   }
 
@@ -477,6 +494,15 @@
 
   function renderKaestchen(a, antwort, ergebnis) {
     const werte = antwort || [];
+
+    if (a.typ === 'sql') {
+      const status = ergebnis ? (ergebnis.details[0] ? ' richtig' : ' falsch') : '';
+      return `<div class="loesungsfeld sql-feld"><span class="hinweis">SQL-Abfrage</span>` +
+        `<textarea class="kasten sql-eingabe${status}" data-nr="${a.nr}" data-i="0" rows="3" ` +
+        `placeholder="SELECT ..." autocomplete="off" spellcheck="false" ` +
+        `aria-label="SQL-Lösung ${a.nr}. Aufgabe"${ergebnis ? ' readonly' : ''}>${esc(werte[0] || '')}</textarea></div>`;
+    }
+
     const mitBuchstaben = B.mitTeilen(a);
     const breit = a.typ === 'zahl' || a.typ === 'datum';
     const platzhalter = a.typ === 'datum' ? 'TT.MM.JJJJ' : (a.nachkommastellen ? '0,' + '0'.repeat(a.nachkommastellen) : '0');
@@ -501,7 +527,10 @@
   function renderRueckmeldung(a, ergebnis) {
     const klasse = ergebnis.anteil === 1 ? 'ok' : ergebnis.anteil > 0 ? 'teil' : 'nok';
     const titel = ergebnis.anteil === 1 ? 'Richtig' : ergebnis.anteil > 0 ? `Teilweise richtig (${ergebnis.richtig} von ${ergebnis.gesamt})` : (ergebnis.leer ? 'Nicht bearbeitet' : 'Falsch');
-    return `<div class="rueckmeldung ${klasse}"><p><strong>${titel}</strong> · Lösung: <span class="loesung">${esc(B.loesungText(a))}</span></p>${a.erklaerung ? absaetze(a.erklaerung) : ''}</div>`;
+    const loesungHtml = a.typ === 'sql'
+      ? `<code class="sql-code loesung">${esc(B.loesungText(a))}</code>`
+      : `<span class="loesung">${esc(B.loesungText(a))}</span>`;
+    return `<div class="rueckmeldung ${klasse}"><p><strong>${titel}</strong> · Lösung: ${loesungHtml}</p>${a.erklaerung ? absaetze(a.erklaerung) : ''}</div>`;
   }
 
   function renderAufgabe(satz, a, opt) {
@@ -622,9 +651,9 @@
       `<button class="bereich${bereich === wert ? ' aktiv' : ''}" data-aktion="bereich" data-bereich="${wert}" aria-pressed="${bereich === wert}">${text}</button>`;
     return `
       <header class="kopf">
-        <h1>WiSo-Trainer</h1>
-        <p>Abschlussprüfung Teil 2 · IT-Berufe · Wirtschafts- und Sozialkunde</p>
-        <nav class="bereiche" aria-label="Fragenbereich">${knopf('BITLC', 'BITLC-Fragen')}${knopf('ki', 'BITLC-KI-Fragen')}</nav>
+        <h1>${bereich === 'sql' ? 'SQL-Trainer' : 'WiSo-Trainer'}</h1>
+        <p>${bereich === 'sql' ? 'SQL-Abfragen üben · IT-Berufe' : 'Abschlussprüfung Teil 2 · IT-Berufe · Wirtschafts- und Sozialkunde'}</p>
+        <nav class="bereiche" aria-label="Fragenbereich">${knopf('BITLC', 'BITLC-Fragen')}${knopf('ki', 'BITLC-KI-Fragen')}${knopf('sql', 'SQL-Training')}</nav>
       </header>`;
   }
 
@@ -732,7 +761,9 @@
         ${renderLernstand(stand)}
         <section class="karte">
           <h2>Zufallsfragen</h2>
-          <p class="klein">${VIRTUELL_ANZAHL} zufällig gezogene Aufgaben aus allen Sätzen – als Prüfung (${PRUEFUNGSDAUER_MIN} Minuten, Bewertung wie bei der BITLC) oder zum Üben mit sofortiger Lösung. Du kannst auch nur bestimmte Themen auswählen.</p>
+          <p class="klein">${bereich === 'sql'
+            ? 'Zufällig gezogene SQL-Aufgaben aus allen Sätzen – als Prüfung oder zum Üben mit sofortiger Lösung.'
+            : VIRTUELL_ANZAHL + ' zufällig gezogene Aufgaben aus allen Sätzen – als Prüfung (' + PRUEFUNGSDAUER_MIN + ' Minuten, Bewertung wie bei der BITLC) oder zum Üben mit sofortiger Lösung. Du kannst auch nur bestimmte Themen auswählen.'}</p>
           <div class="knoepfe">
             <button class="btn primaer" data-aktion="zufall-pruefung">Zufalls-Prüfung starten</button>
             <button class="btn" data-aktion="zufall-ueben">Zufalls-Übung starten</button>
@@ -751,7 +782,7 @@
         </section>` : `
         <section class="karte">
           <h2>Aufgabensätze</h2>
-          <p>${bereich === 'BITLC' ? 'Hier erscheinen die Aufgabensätze, die du mit deinem Dozenten erstellst. Noch ist keiner eingebaut.' : 'Keine Aufgabensätze gefunden.'}</p>
+          <p>${bereich === 'BITLC' ? 'Hier erscheinen die Aufgabensätze, die du mit deinem Dozenten erstellst. Noch ist keiner eingebaut.' : bereich === 'sql' ? 'Noch keine SQL-Übungssätze vorhanden.' : 'Keine Aufgabensätze gefunden.'}</p>
         </section>`}
         ${ergebnisseHtml}
         ${bereich === 'BITLC' ? (IMPORT_SAETZE.length ? renderIhkDatei() : renderIhkImport()) : ''}
@@ -1208,6 +1239,13 @@
     const i = Number(el.dataset.i);
     const a = aufgabeById(zustand.satz, nr);
 
+    if (el.classList.contains('sql-eingabe')) {
+      const werte = zustand.antworten[nr] || (zustand.antworten[nr] = []);
+      werte[i] = el.value;
+      if (zustand.modus === 'pruefung') { sichereLaufend(); aktualisiereBogen(); }
+      return;
+    }
+
     if (el.classList.contains('breit')) {
       el.value = el.value.replace(a.typ === 'datum' ? /[^\d.]/g : /[^\d.,-]/g, '');
     } else {
@@ -1264,7 +1302,7 @@
         ansichtStart();
         break;
       case 'bereich':
-        bereich = d.bereich === 'BITLC' ? 'BITLC' : 'ki';
+        bereich = d.bereich === 'BITLC' ? 'BITLC' : d.bereich === 'sql' ? 'sql' : 'ki';
         gewaehlteThemen = null;
         speicher.schreiben(S_BEREICH, bereich);
         ansichtStart();

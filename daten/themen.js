@@ -21,5 +21,15 @@ window.WISO_THEMEN = {
   'zusammenschluesse': 'Unternehmenszusammenschlüsse', // 0,5
   'datenschutz': 'Datenschutz und IT-Sicherheit', // 0,5
   'unternehmensgruendung': 'Unternehmensgründung', // 0,4
-  'entgelt': 'Entgelt und Lohnabrechnung' // 0,4
+  'entgelt': 'Entgelt und Lohnabrechnung', // 0,4
+
+  // SQL-Training
+  'sql-select': 'SELECT-Grundlagen',
+  'sql-where': 'Filterbedingungen (WHERE)',
+  'sql-sortierung': 'Sortierung und Eingrenzung',
+  'sql-aggregat': 'Aggregatfunktionen',
+  'sql-gruppierung': 'Gruppierung (GROUP BY / HAVING)',
+  'sql-join': 'Tabellenverknüpfungen (JOIN)',
+  'sql-dml': 'Datenmanipulation (INSERT, UPDATE, DELETE)',
+  'sql-unterabfragen': 'Unterabfragen (Subqueries)'
 };

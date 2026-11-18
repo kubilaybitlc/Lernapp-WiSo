@@ -21,6 +21,7 @@
       case 'zuordnung':
       case 'reihenfolge': return aufgabe.items.length;
       case 'zahl': return Array.isArray(aufgabe.loesung) ? aufgabe.loesung.length : 1;
+      case 'sql': return 1;
       default: return 1;
     }
   }
@@ -32,6 +33,12 @@
 
   function bewertungsart(aufgabe) {
     return aufgabe.bewertung || (kaestchenAnzahl(aufgabe) > 1 ? 'teil' : 'global');
+  }
+
+  function normalisiereSql(sql) {
+    if (!sql) return '';
+    return String(sql).trim().replace(/;+\s*$/, '').replace(/\s+/g, ' ').toLowerCase()
+      .replace(/"([^"]*)"/g, function (_, v) { return "'" + v + "'"; });
   }
 
   // Akzeptiert "20.000,00", "20000", "20000,5", "20 000,00 EUR"
@@ -96,6 +103,12 @@
       case 'datum':
         details = [leseDatum(werte[0]) === aufgabe.loesung];
         break;
+      case 'sql': {
+        var eingabe = normalisiereSql(werte[0]);
+        var varianten = [aufgabe.loesung].concat(aufgabe.loesungVarianten || []).map(normalisiereSql);
+        details = [varianten.some(function (v) { return v === eingabe; })];
+        break;
+      }
       default:
         throw new Error('Unbekannter Aufgabentyp: ' + aufgabe.typ);
     }
@@ -141,6 +154,7 @@
         return werte.length > 1 ? werte.map((w, i) => 'abcdefghij'[i] + ') ' + w).join('  ') : werte[0];
       }
       case 'datum': return aufgabe.loesung;
+      case 'sql': return aufgabe.loesung;
       default: return '';
     }
   }
@@ -161,6 +175,7 @@
     bewertungsart,
     leseZahl,
     leseDatum,
+    normalisiereSql,
     formatZahl,
     istLeer,
     pruefeAufgabe,
