@@ -6,6 +6,7 @@
   const SAETZE = window.WISO_SAETZE || [];
   const EIGENE_IHK_SAETZE = window.WISO_IHK_SAETZE || [];
   const SQL_SAETZE = window.WISO_SQL_SAETZE || [];
+  const IT_SAETZE = window.WISO_IT_SAETZE || [];
   const THEMEN = window.WISO_THEMEN || {};
   const BILDER = window.WISO_BILDER || {};
   const PRUEFUNGSDAUER_MIN = 60;
@@ -53,7 +54,7 @@
   // Zwei Bereiche: 'ki' = KI-erstellte Sätze aus daten/satz-*.js; 'BITLC' = mit dem Dozenten erstellte Sätze aus
   // daten/BITLC-satz-*.js plus Originalaufgaben, die jemand privat aus einer eigenen Datei einliest
   var gespeicherterBereich = speicher.lesen(S_BEREICH, 'ki');
-  let bereich = gespeicherterBereich === 'BITLC' ? 'BITLC' : gespeicherterBereich === 'sql' ? 'sql' : 'ki';
+  let bereich = gespeicherterBereich === 'BITLC' ? 'BITLC' : gespeicherterBereich === 'it' ? 'it' : gespeicherterBereich === 'sql' ? 'sql' : 'ki';
   let IMPORT_SAETZE = [];
   let ihkInfo = null;
   let gewaehlteThemen = null; // zuletzt angehakte Themen für Zufallsfragen, null = alle
@@ -76,10 +77,11 @@
   }
 
   function satzById(id) {
-    return SAETZE.concat(EIGENE_IHK_SAETZE, IMPORT_SAETZE, SQL_SAETZE).find(s => s.id === id);
+    return SAETZE.concat(EIGENE_IHK_SAETZE, IMPORT_SAETZE, SQL_SAETZE, IT_SAETZE).find(s => s.id === id);
   }
 
   function saetzeImBereich() {
+    if (bereich === 'it') return IT_SAETZE;
     if (bereich === 'sql') return SQL_SAETZE;
     return bereich === 'BITLC' ? EIGENE_IHK_SAETZE.concat(IMPORT_SAETZE) : SAETZE;
   }
@@ -106,8 +108,13 @@
     return String(id || '').startsWith('sql-');
   }
 
+  function istItId(id) {
+    return String(id || '').startsWith('it-');
+  }
+
   function ergebnisBereich(e) {
     var id = e.auswahl ? (e.auswahl[0] || {}).satzId : e.satzId;
+    if (istItId(id)) return 'it';
     if (istSqlId(id)) return 'sql';
     return istIhkId(id) ? 'BITLC' : 'ki';
   }
@@ -263,11 +270,12 @@
       .map((x, i) => Object.assign({}, x.a, { nr: i + 1, herkunft: { satzId: x.q.satzId, nr: x.q.nr } }));
     const BITLC = istIhkId((auswahl[0] || {}).satzId);
     const SQL = istSqlId((auswahl[0] || {}).satzId);
-    var bereichText = BITLC ? ' (BITLC-Fragen)' : SQL ? ' (SQL)' : '';
+    const IT = istItId((auswahl[0] || {}).satzId);
+    var bereichText = BITLC ? ' (BITLC-Fragen)' : SQL ? ' (SQL)' : IT ? ' (IT-Theorie)' : '';
     return {
       id,
       titel: (id === ZUFALL_ID ? 'Zufalls-Prüfung' : 'Schwächen-Prüfung') + bereichText,
-      untertitel: BITLC ? 'Aufgaben aus deinen BITLC-Fragen' : SQL ? 'SQL-Aufgaben aus allen Sätzen' : 'Aufgaben aus allen Sätzen',
+      untertitel: BITLC ? 'Aufgaben aus deinen BITLC-Fragen' : SQL ? 'SQL-Aufgaben aus allen Sätzen' : IT ? 'IT-Theorie-Aufgaben aus allen Sätzen' : 'Aufgaben aus allen Sätzen',
       virtuell: true,
       auswahl,
       themen: themen || null,
@@ -651,9 +659,9 @@
       `<button class="bereich${bereich === wert ? ' aktiv' : ''}" data-aktion="bereich" data-bereich="${wert}" aria-pressed="${bereich === wert}">${text}</button>`;
     return `
       <header class="kopf">
-        <h1>${bereich === 'sql' ? 'SQL-Trainer' : 'WiSo-Trainer'}</h1>
-        <p>${bereich === 'sql' ? 'SQL-Abfragen üben · IT-Berufe' : 'Abschlussprüfung Teil 2 · IT-Berufe · Wirtschafts- und Sozialkunde'}</p>
-        <nav class="bereiche" aria-label="Fragenbereich">${knopf('BITLC', 'BITLC-Fragen')}${knopf('ki', 'BITLC-KI-Fragen')}${knopf('sql', 'SQL-Training')}</nav>
+        <h1>${bereich === 'sql' ? 'SQL-Trainer' : bereich === 'it' ? 'IT-Theorie-Trainer' : 'WiSo-Trainer'}</h1>
+        <p>${bereich === 'sql' ? 'SQL-Abfragen üben · IT-Berufe' : bereich === 'it' ? 'IT-Fachtheorie üben · Abschlussprüfung Teil 2' : 'Abschlussprüfung Teil 2 · IT-Berufe · Wirtschafts- und Sozialkunde'}</p>
+        <nav class="bereiche" aria-label="Fragenbereich">${knopf('BITLC', 'BITLC-Fragen')}${knopf('ki', 'BITLC-KI-Fragen')}${knopf('sql', 'SQL-Training')}${knopf('it', 'IT-Theorie')}</nav>
       </header>`;
   }
 
@@ -782,7 +790,7 @@
         </section>` : `
         <section class="karte">
           <h2>Aufgabensätze</h2>
-          <p>${bereich === 'BITLC' ? 'Hier erscheinen die Aufgabensätze, die du mit deinem Dozenten erstellst. Noch ist keiner eingebaut.' : bereich === 'sql' ? 'Noch keine SQL-Übungssätze vorhanden.' : 'Keine Aufgabensätze gefunden.'}</p>
+          <p>${bereich === 'BITLC' ? 'Hier erscheinen die Aufgabensätze, die du mit deinem Dozenten erstellst. Noch ist keiner eingebaut.' : bereich === 'it' ? 'Noch keine IT-Theorie-Übungssätze vorhanden.' : bereich === 'sql' ? 'Noch keine SQL-Übungssätze vorhanden.' : 'Keine Aufgabensätze gefunden.'}</p>
         </section>`}
         ${ergebnisseHtml}
         ${bereich === 'BITLC' ? (IMPORT_SAETZE.length ? renderIhkDatei() : renderIhkImport()) : ''}
@@ -1302,7 +1310,7 @@
         ansichtStart();
         break;
       case 'bereich':
-        bereich = d.bereich === 'BITLC' ? 'BITLC' : d.bereich === 'sql' ? 'sql' : 'ki';
+        bereich = d.bereich === 'BITLC' ? 'BITLC' : d.bereich === 'it' ? 'it' : d.bereich === 'sql' ? 'sql' : 'ki';
         gewaehlteThemen = null;
         speicher.schreiben(S_BEREICH, bereich);
         ansichtStart();

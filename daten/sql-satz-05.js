@@ -163,7 +163,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Abfrage in das Kästchen ein.',
       optionen: [
         'SELECT Vorname, Nachname, Name FROM Mitarbeiter, Abteilungen',
-        'SELECT Vorname, Nachname, Name FROM Mitarbeiter INNER JOIN Abteilungen ON Mitarbeiter.AbteilungNr = Abteilungen.AbteilungNr',
+        'SELECT m.Vorname, m.Nachname, a.Name FROM Mitarbeiter m INNER JOIN Abteilungen a ON m.AbteilungNr = a.AbteilungNr',
         'SELECT Vorname, Nachname, Name FROM Mitarbeiter LINK Abteilungen ON AbteilungNr',
         'SELECT Vorname, Nachname, Name FROM Mitarbeiter JOIN Abteilungen WHERE Mitarbeiter.AbteilungNr = Abteilungen.AbteilungNr',
         'SELECT Vorname, Nachname, Name FROM Mitarbeiter CONNECT Abteilungen USING AbteilungNr'
@@ -177,8 +177,9 @@
       nr: 7, thema: 'sql-join', typ: 'sql',
       text: 'Es sollen die Vornamen und Nachnamen aller Mitarbeiter zusammen mit der Beschreibung ihrer Aufgaben und der Bezeichnung des zugehörigen Projekts ausgegeben werden.',
       frage: 'Schreiben Sie die passende SQL-Abfrage mit INNER JOIN.',
-      loesung: 'SELECT Vorname, Nachname, Beschreibung, Bezeichnung FROM Mitarbeiter INNER JOIN Aufgaben ON Mitarbeiter.MitarbeiterNr = Aufgaben.MitarbeiterNr INNER JOIN Projekte ON Aufgaben.ProjektNr = Projekte.ProjektNr',
+      loesung: 'SELECT m.Vorname, m.Nachname, au.Beschreibung, p.Bezeichnung FROM Mitarbeiter m INNER JOIN Aufgaben au ON m.MitarbeiterNr = au.MitarbeiterNr INNER JOIN Projekte p ON au.ProjektNr = p.ProjektNr',
       loesungVarianten: [
+        'SELECT Vorname, Nachname, Beschreibung, Bezeichnung FROM Mitarbeiter INNER JOIN Aufgaben ON Mitarbeiter.MitarbeiterNr = Aufgaben.MitarbeiterNr INNER JOIN Projekte ON Aufgaben.ProjektNr = Projekte.ProjektNr',
         'SELECT m.Vorname, m.Nachname, a.Beschreibung, p.Bezeichnung FROM Mitarbeiter m INNER JOIN Aufgaben a ON m.MitarbeiterNr = a.MitarbeiterNr INNER JOIN Projekte p ON a.ProjektNr = p.ProjektNr',
         'SELECT Vorname, Nachname, Beschreibung, Bezeichnung FROM Mitarbeiter JOIN Aufgaben ON Mitarbeiter.MitarbeiterNr = Aufgaben.MitarbeiterNr JOIN Projekte ON Aufgaben.ProjektNr = Projekte.ProjektNr'
       ],
@@ -207,9 +208,9 @@
       nr: 9, thema: 'sql-gruppierung', typ: 'sql',
       text: 'Es soll für jeden Mitarbeiter, der Einträge in der Zeiterfassung hat, die Summe der gebuchten Stunden ermittelt werden. Ausgegeben werden Vorname, Nachname und die Stundensumme als „GesamtStunden", sortiert nach den meisten Stunden zuerst.',
       frage: 'Schreiben Sie die passende SQL-Abfrage.',
-      loesung: "SELECT Vorname, Nachname, SUM(Stunden) AS GesamtStunden FROM Mitarbeiter INNER JOIN Zeiterfassung ON Mitarbeiter.MitarbeiterNr = Zeiterfassung.MitarbeiterNr GROUP BY Vorname, Nachname ORDER BY GesamtStunden DESC",
+      loesung: "SELECT m.Vorname, m.Nachname, SUM(z.Stunden) AS GesamtStunden FROM Mitarbeiter m INNER JOIN Zeiterfassung z ON m.MitarbeiterNr = z.MitarbeiterNr GROUP BY m.Vorname, m.Nachname ORDER BY GesamtStunden DESC",
       loesungVarianten: [
-        "SELECT m.Vorname, m.Nachname, SUM(z.Stunden) AS GesamtStunden FROM Mitarbeiter m INNER JOIN Zeiterfassung z ON m.MitarbeiterNr = z.MitarbeiterNr GROUP BY m.Vorname, m.Nachname ORDER BY GesamtStunden DESC",
+        "SELECT Vorname, Nachname, SUM(Stunden) AS GesamtStunden FROM Mitarbeiter INNER JOIN Zeiterfassung ON Mitarbeiter.MitarbeiterNr = Zeiterfassung.MitarbeiterNr GROUP BY Vorname, Nachname ORDER BY GesamtStunden DESC",
         "SELECT Vorname, Nachname, SUM(Stunden) AS GesamtStunden FROM Mitarbeiter JOIN Zeiterfassung ON Mitarbeiter.MitarbeiterNr = Zeiterfassung.MitarbeiterNr GROUP BY Vorname, Nachname ORDER BY GesamtStunden DESC",
         "SELECT Vorname, Nachname, SUM(Stunden) AS GesamtStunden FROM Mitarbeiter INNER JOIN Zeiterfassung ON Mitarbeiter.MitarbeiterNr = Zeiterfassung.MitarbeiterNr GROUP BY Vorname, Nachname ORDER BY SUM(Stunden) DESC"
       ],
@@ -368,11 +369,13 @@
       nr: 20, thema: 'sql-join', typ: 'sql',
       text: 'Es sollen alle Mitarbeiter (Vorname, Nachname) angezeigt werden, denen keine Aufgabe zugeordnet ist. Dazu wird ein LEFT JOIN verwendet: Mitarbeiter ohne Treffer in der Tabelle „Aufgaben" haben dort NULL-Werte.',
       frage: 'Schreiben Sie die passende SQL-Abfrage.',
-      loesung: 'SELECT Vorname, Nachname FROM Mitarbeiter LEFT JOIN Aufgaben ON Mitarbeiter.MitarbeiterNr = Aufgaben.MitarbeiterNr WHERE Aufgaben.AufgabeNr IS NULL',
+      loesung: 'SELECT m.Vorname, m.Nachname FROM Mitarbeiter m LEFT JOIN Aufgaben au ON m.MitarbeiterNr = au.MitarbeiterNr WHERE au.AufgabeNr IS NULL',
       loesungVarianten: [
+        'SELECT Vorname, Nachname FROM Mitarbeiter LEFT JOIN Aufgaben ON Mitarbeiter.MitarbeiterNr = Aufgaben.MitarbeiterNr WHERE Aufgaben.AufgabeNr IS NULL',
         'SELECT m.Vorname, m.Nachname FROM Mitarbeiter m LEFT JOIN Aufgaben a ON m.MitarbeiterNr = a.MitarbeiterNr WHERE a.AufgabeNr IS NULL',
         'SELECT Vorname, Nachname FROM Mitarbeiter LEFT JOIN Aufgaben ON Mitarbeiter.MitarbeiterNr = Aufgaben.MitarbeiterNr WHERE Aufgaben.MitarbeiterNr IS NULL',
-        'SELECT m.Vorname, m.Nachname FROM Mitarbeiter m LEFT JOIN Aufgaben a ON m.MitarbeiterNr = a.MitarbeiterNr WHERE a.MitarbeiterNr IS NULL'
+        'SELECT m.Vorname, m.Nachname FROM Mitarbeiter m LEFT JOIN Aufgaben a ON m.MitarbeiterNr = a.MitarbeiterNr WHERE a.MitarbeiterNr IS NULL',
+        'SELECT m.Vorname, m.Nachname FROM Mitarbeiter m LEFT JOIN Aufgaben au ON m.MitarbeiterNr = au.MitarbeiterNr WHERE au.MitarbeiterNr IS NULL'
       ],
       erklaerung: 'LEFT JOIN gibt alle Zeilen der linken Tabelle (Mitarbeiter) zurück – auch wenn es keinen passenden Eintrag in der rechten Tabelle (Aufgaben) gibt. Für Mitarbeiter ohne Aufgabe stehen dort NULL-Werte, die mit IS NULL gefiltert werden.'
     }

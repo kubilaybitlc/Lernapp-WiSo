@@ -176,10 +176,11 @@
       nr: 6, thema: 'sql-erweitert', typ: 'sql',
       text: 'Es soll eine View namens „KursUebersicht" erstellt werden, die für jeden Kurs die Bezeichnung und den vollständigen Namen des Trainers (Vorname, Nachname) anzeigt.',
       frage: 'Schreiben Sie die passende SQL-Anweisung.',
-      loesung: "CREATE VIEW KursUebersicht AS SELECT Kurse.Bezeichnung, Trainer.Vorname, Trainer.Nachname FROM Kurse INNER JOIN Trainer ON Kurse.TrainerNr = Trainer.TrainerNr",
+      loesung: "CREATE VIEW KursUebersicht AS SELECT k.Bezeichnung, t.Vorname, t.Nachname FROM Kurse k INNER JOIN Trainer t ON k.TrainerNr = t.TrainerNr",
       loesungVarianten: [
-        "CREATE VIEW KursUebersicht AS SELECT k.Bezeichnung, t.Vorname, t.Nachname FROM Kurse k INNER JOIN Trainer t ON k.TrainerNr = t.TrainerNr",
-        "CREATE VIEW KursUebersicht AS SELECT Kurse.Bezeichnung, Trainer.Vorname, Trainer.Nachname FROM Kurse JOIN Trainer ON Kurse.TrainerNr = Trainer.TrainerNr"
+        "CREATE VIEW KursUebersicht AS SELECT Kurse.Bezeichnung, Trainer.Vorname, Trainer.Nachname FROM Kurse INNER JOIN Trainer ON Kurse.TrainerNr = Trainer.TrainerNr",
+        "CREATE VIEW KursUebersicht AS SELECT Kurse.Bezeichnung, Trainer.Vorname, Trainer.Nachname FROM Kurse JOIN Trainer ON Kurse.TrainerNr = Trainer.TrainerNr",
+        "CREATE VIEW KursUebersicht AS SELECT k.Bezeichnung, t.Vorname, t.Nachname FROM Kurse k JOIN Trainer t ON k.TrainerNr = t.TrainerNr"
       ],
       erklaerung: 'CREATE VIEW Name AS SELECT ... definiert eine View. Die Abfrage hinter AS kann beliebig komplex sein, einschließlich JOINs. Danach kann man mit SELECT * FROM KursUebersicht auf die View zugreifen wie auf eine Tabelle.'
     },
@@ -204,9 +205,9 @@
       nr: 8, thema: 'sql-unterabfragen', typ: 'sql',
       text: 'Es sollen Vorname und Nachname aller Mitglieder angezeigt werden, die mindestens eine Buchung haben. Verwenden Sie EXISTS.',
       frage: 'Schreiben Sie die passende SQL-Abfrage.',
-      loesung: "SELECT Vorname, Nachname FROM Mitglieder WHERE EXISTS (SELECT 1 FROM Buchungen WHERE Buchungen.MitgliedNr = Mitglieder.MitgliedNr)",
+      loesung: "SELECT Vorname, Nachname FROM Mitglieder m WHERE EXISTS (SELECT 1 FROM Buchungen b WHERE b.MitgliedNr = m.MitgliedNr)",
       loesungVarianten: [
-        "SELECT Vorname, Nachname FROM Mitglieder m WHERE EXISTS (SELECT 1 FROM Buchungen b WHERE b.MitgliedNr = m.MitgliedNr)",
+        "SELECT Vorname, Nachname FROM Mitglieder WHERE EXISTS (SELECT 1 FROM Buchungen WHERE Buchungen.MitgliedNr = Mitglieder.MitgliedNr)",
         "SELECT Vorname, Nachname FROM Mitglieder WHERE EXISTS (SELECT * FROM Buchungen WHERE Buchungen.MitgliedNr = Mitglieder.MitgliedNr)",
         "SELECT Vorname, Nachname FROM Mitglieder m WHERE EXISTS (SELECT * FROM Buchungen b WHERE b.MitgliedNr = m.MitgliedNr)"
       ],
@@ -220,7 +221,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Abfrage in das Kästchen ein.',
       optionen: [
         'SELECT * FROM Mitglieder WHERE MitgliedNr NOT IN Buchungen',
-        'SELECT * FROM Mitglieder WHERE NOT EXISTS (SELECT 1 FROM Buchungen WHERE Buchungen.MitgliedNr = Mitglieder.MitgliedNr)',
+        'SELECT * FROM Mitglieder m WHERE NOT EXISTS (SELECT 1 FROM Buchungen b WHERE b.MitgliedNr = m.MitgliedNr)',
         'SELECT * FROM Mitglieder WHERE Buchungen IS NULL',
         'SELECT * FROM Mitglieder WHERE COUNT(Buchungen) = 0',
         'SELECT * FROM Mitglieder EXCEPT Buchungen'
@@ -233,10 +234,11 @@
       nr: 10, thema: 'sql-unterabfragen', typ: 'sql',
       text: 'Es sollen alle Kurse angezeigt werden, die mehr Buchungen haben als der Durchschnitt aller Kurse. Ausgegeben werden sollen die Bezeichnung und die Anzahl der Buchungen.',
       frage: 'Schreiben Sie die passende SQL-Abfrage.',
-      loesung: "SELECT Kurse.Bezeichnung, COUNT(*) AS Anzahl FROM Kurse INNER JOIN Buchungen ON Kurse.KursNr = Buchungen.KursNr GROUP BY Kurse.Bezeichnung HAVING COUNT(*) > (SELECT AVG(cnt) FROM (SELECT COUNT(*) AS cnt FROM Buchungen GROUP BY KursNr) AS sub)",
+      loesung: "SELECT k.Bezeichnung, COUNT(*) AS Anzahl FROM Kurse k INNER JOIN Buchungen b ON k.KursNr = b.KursNr GROUP BY k.Bezeichnung HAVING COUNT(*) > (SELECT AVG(cnt) FROM (SELECT COUNT(*) AS cnt FROM Buchungen GROUP BY KursNr) AS sub)",
       loesungVarianten: [
-        "SELECT k.Bezeichnung, COUNT(*) AS Anzahl FROM Kurse k INNER JOIN Buchungen b ON k.KursNr = b.KursNr GROUP BY k.Bezeichnung HAVING COUNT(*) > (SELECT AVG(cnt) FROM (SELECT COUNT(*) AS cnt FROM Buchungen GROUP BY KursNr) AS sub)",
-        "SELECT k.Bezeichnung, COUNT(*) AS Anzahl FROM Kurse k JOIN Buchungen b ON k.KursNr = b.KursNr GROUP BY k.Bezeichnung HAVING COUNT(*) > (SELECT AVG(cnt) FROM (SELECT COUNT(*) AS cnt FROM Buchungen GROUP BY KursNr) sub)"
+        "SELECT Kurse.Bezeichnung, COUNT(*) AS Anzahl FROM Kurse INNER JOIN Buchungen ON Kurse.KursNr = Buchungen.KursNr GROUP BY Kurse.Bezeichnung HAVING COUNT(*) > (SELECT AVG(cnt) FROM (SELECT COUNT(*) AS cnt FROM Buchungen GROUP BY KursNr) AS sub)",
+        "SELECT k.Bezeichnung, COUNT(*) AS Anzahl FROM Kurse k JOIN Buchungen b ON k.KursNr = b.KursNr GROUP BY k.Bezeichnung HAVING COUNT(*) > (SELECT AVG(cnt) FROM (SELECT COUNT(*) AS cnt FROM Buchungen GROUP BY KursNr) sub)",
+        "SELECT k.Bezeichnung, COUNT(*) AS Anzahl FROM Kurse k JOIN Buchungen b ON k.KursNr = b.KursNr GROUP BY k.Bezeichnung HAVING COUNT(*) > (SELECT AVG(cnt) FROM (SELECT COUNT(*) AS cnt FROM Buchungen GROUP BY KursNr) AS sub)"
       ],
       erklaerung: 'Hier wird in der HAVING-Klausel eine Unterabfrage verwendet, die den Durchschnitt der Buchungen je Kurs berechnet. Die innere Unterabfrage zählt zunächst die Buchungen pro Kurs, die äußere bildet daraus den Durchschnitt.'
     },
@@ -317,9 +319,9 @@
       nr: 16, thema: 'sql-gruppierung', typ: 'sql',
       text: 'Es sollen alle Kurse angezeigt werden, die weniger als 3 Buchungen haben. Ausgegeben werden sollen die Bezeichnung des Kurses und die Anzahl der Buchungen.',
       frage: 'Schreiben Sie die passende SQL-Abfrage.',
-      loesung: "SELECT Kurse.Bezeichnung, COUNT(*) AS Anzahl FROM Kurse INNER JOIN Buchungen ON Kurse.KursNr = Buchungen.KursNr GROUP BY Kurse.Bezeichnung HAVING COUNT(*) < 3",
+      loesung: "SELECT k.Bezeichnung, COUNT(*) AS Anzahl FROM Kurse k INNER JOIN Buchungen b ON k.KursNr = b.KursNr GROUP BY k.Bezeichnung HAVING COUNT(*) < 3",
       loesungVarianten: [
-        "SELECT k.Bezeichnung, COUNT(*) AS Anzahl FROM Kurse k INNER JOIN Buchungen b ON k.KursNr = b.KursNr GROUP BY k.Bezeichnung HAVING COUNT(*) < 3",
+        "SELECT Kurse.Bezeichnung, COUNT(*) AS Anzahl FROM Kurse INNER JOIN Buchungen ON Kurse.KursNr = Buchungen.KursNr GROUP BY Kurse.Bezeichnung HAVING COUNT(*) < 3",
         "SELECT k.Bezeichnung, COUNT(*) AS Anzahl FROM Kurse k JOIN Buchungen b ON k.KursNr = b.KursNr GROUP BY k.Bezeichnung HAVING COUNT(*) < 3"
       ],
       erklaerung: 'Der JOIN verknüpft Kurse und Buchungen. GROUP BY fasst die Zeilen nach Kursbezeichnung zusammen, COUNT(*) zählt die Buchungen. HAVING filtert die Gruppen mit weniger als 3 Buchungen. WHERE könnte hier nicht verwendet werden, da es Aggregatfunktionen nicht auswertet.'

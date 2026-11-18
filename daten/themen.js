@@ -33,5 +33,15 @@ window.WISO_THEMEN = {
   'sql-dml': 'Datenmanipulation (INSERT, UPDATE, DELETE)',
   'sql-unterabfragen': 'Unterabfragen (Subqueries)',
   'sql-ddl': 'Datendefinition (CREATE, ALTER, DROP)',
-  'sql-erweitert': 'Erweiterte Abfragen (UNION, CASE, Views)'
+  'sql-erweitert': 'Erweiterte Abfragen (UNION, CASE, Views)',
+
+  // IT-Theorie
+  'oop': 'Objektorientierte Programmierung (OOP)',
+  'pseudocode': 'Pseudocode und Kontrollstrukturen',
+  'programmierung': 'Programmiergrundlagen',
+  'softwareentwicklung': 'Softwareentwicklung und Vorgehensmodelle',
+  'verschluesselung': 'Verschlüsselung und IT-Sicherheit',
+  'netzwerk': 'Netzwerktechnik und Protokolle',
+  'zahlensysteme': 'Zahlensysteme und Datendarstellung',
+  'it-systeme': 'IT-Systeme und Betriebssysteme'
 };

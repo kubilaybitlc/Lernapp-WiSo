@@ -240,10 +240,11 @@
       nr: 14, thema: 'sql-join', typ: 'sql',
       text: 'Es sollen die Vornamen und Nachnamen aller Mitarbeiter zusammen mit der Bezeichnung ihrer Projekte ausgegeben werden. Dazu werden die Tabellen „Mitarbeiter", „Projektzuordnung" und „Projekte" über INNER JOIN verknüpft.',
       frage: 'Schreiben Sie die passende SQL-Abfrage.',
-      loesung: 'SELECT Vorname, Nachname, Bezeichnung FROM Mitarbeiter INNER JOIN Projektzuordnung ON Mitarbeiter.MitarbeiterNr = Projektzuordnung.MitarbeiterNr INNER JOIN Projekte ON Projektzuordnung.ProjektNr = Projekte.ProjektNr',
+      loesung: 'SELECT m.Vorname, m.Nachname, p.Bezeichnung FROM Mitarbeiter m INNER JOIN Projektzuordnung pz ON m.MitarbeiterNr = pz.MitarbeiterNr INNER JOIN Projekte p ON pz.ProjektNr = p.ProjektNr',
       loesungVarianten: [
-        'SELECT m.Vorname, m.Nachname, p.Bezeichnung FROM Mitarbeiter m INNER JOIN Projektzuordnung pz ON m.MitarbeiterNr = pz.MitarbeiterNr INNER JOIN Projekte p ON pz.ProjektNr = p.ProjektNr',
-        'SELECT Vorname, Nachname, Bezeichnung FROM Mitarbeiter JOIN Projektzuordnung ON Mitarbeiter.MitarbeiterNr = Projektzuordnung.MitarbeiterNr JOIN Projekte ON Projektzuordnung.ProjektNr = Projekte.ProjektNr'
+        'SELECT Vorname, Nachname, Bezeichnung FROM Mitarbeiter INNER JOIN Projektzuordnung ON Mitarbeiter.MitarbeiterNr = Projektzuordnung.MitarbeiterNr INNER JOIN Projekte ON Projektzuordnung.ProjektNr = Projekte.ProjektNr',
+        'SELECT Vorname, Nachname, Bezeichnung FROM Mitarbeiter JOIN Projektzuordnung ON Mitarbeiter.MitarbeiterNr = Projektzuordnung.MitarbeiterNr JOIN Projekte ON Projektzuordnung.ProjektNr = Projekte.ProjektNr',
+        'SELECT m.Vorname, m.Nachname, p.Bezeichnung FROM Mitarbeiter m JOIN Projektzuordnung pz ON m.MitarbeiterNr = pz.MitarbeiterNr JOIN Projekte p ON pz.ProjektNr = p.ProjektNr'
       ],
       erklaerung: 'Für die Verknüpfung von drei Tabellen werden zwei JOINs benötigt. Die ON-Klausel gibt jeweils die Verbindungsspalte an. INNER JOIN kann auch als JOIN abgekürzt werden.'
     },
@@ -322,10 +323,11 @@
       nr: 20, thema: 'sql-join', typ: 'sql',
       text: 'Es sollen die Firmennamen aller Kunden zusammen mit der Summe ihrer Auftragsbeträge angezeigt werden. Kunden ohne Aufträge sollen nicht erscheinen. Die Summe soll als „Gesamtbetrag" angezeigt und absteigend sortiert werden.',
       frage: 'Schreiben Sie die passende SQL-Abfrage.',
-      loesung: "SELECT Firmenname, SUM(Betrag) AS Gesamtbetrag FROM Kunden INNER JOIN Auftraege ON Kunden.KundenNr = Auftraege.KundenNr GROUP BY Firmenname ORDER BY Gesamtbetrag DESC",
+      loesung: "SELECT k.Firmenname, SUM(a.Betrag) AS Gesamtbetrag FROM Kunden k INNER JOIN Auftraege a ON k.KundenNr = a.KundenNr GROUP BY k.Firmenname ORDER BY Gesamtbetrag DESC",
       loesungVarianten: [
-        "SELECT k.Firmenname, SUM(a.Betrag) AS Gesamtbetrag FROM Kunden k INNER JOIN Auftraege a ON k.KundenNr = a.KundenNr GROUP BY k.Firmenname ORDER BY Gesamtbetrag DESC",
+        "SELECT Firmenname, SUM(Betrag) AS Gesamtbetrag FROM Kunden INNER JOIN Auftraege ON Kunden.KundenNr = Auftraege.KundenNr GROUP BY Firmenname ORDER BY Gesamtbetrag DESC",
         "SELECT Firmenname, SUM(Betrag) AS Gesamtbetrag FROM Kunden JOIN Auftraege ON Kunden.KundenNr = Auftraege.KundenNr GROUP BY Firmenname ORDER BY Gesamtbetrag DESC",
+        "SELECT k.Firmenname, SUM(a.Betrag) AS Gesamtbetrag FROM Kunden k JOIN Auftraege a ON k.KundenNr = a.KundenNr GROUP BY k.Firmenname ORDER BY Gesamtbetrag DESC",
         "SELECT Firmenname, SUM(Betrag) AS Gesamtbetrag FROM Kunden INNER JOIN Auftraege ON Kunden.KundenNr = Auftraege.KundenNr GROUP BY Firmenname ORDER BY SUM(Betrag) DESC"
       ],
       erklaerung: 'Diese Abfrage kombiniert JOIN (Tabellenverknüpfung), Aggregatfunktion SUM() (Summenbildung), GROUP BY (Gruppierung nach Kunde) und ORDER BY DESC (absteigende Sortierung). Das Alias „Gesamtbetrag" kann in ORDER BY verwendet werden.'

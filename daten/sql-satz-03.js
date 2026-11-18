@@ -291,15 +291,15 @@
     // --- JOIN ---
     {
       nr: 16, thema: 'sql-join', typ: 'einfach', codeOptionen: true,
-      text: 'Es sollen die Buchtitel zusammen mit dem Nachnamen des jeweiligen Autors angezeigt werden.',
-      frage: 'Welche ON-Klausel verknüpft die Tabellen „Buecher" und „Autoren" korrekt?',
+      text: 'Es sollen die Buchtitel zusammen mit dem Nachnamen des jeweiligen Autors angezeigt werden. Die Tabellen werden mit Aliasnamen abgekürzt: Buecher b, Autoren a.',
+      frage: 'Welche ON-Klausel verknüpft die Tabellen korrekt?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Klausel in das Kästchen ein.',
       optionen: [
-        'ON Buecher.BuchNr = Autoren.AutorNr',
-        'ON Buecher.AutorNr = Autoren.AutorNr',
-        'ON Buecher.Titel = Autoren.Nachname',
-        'ON Buecher.GenreNr = Autoren.AutorNr',
-        'ON Buecher.ISBN = Autoren.AutorNr'
+        'ON b.BuchNr = a.AutorNr',
+        'ON b.AutorNr = a.AutorNr',
+        'ON b.Titel = a.Nachname',
+        'ON b.GenreNr = a.AutorNr',
+        'ON b.ISBN = a.AutorNr'
       ],
       loesung: 2,
       erklaerung: 'Die Verknüpfung erfolgt über die gemeinsame Spalte AutorNr: In der Tabelle Buecher ist sie Fremdschlüssel, in Autoren Primärschlüssel. Nur so werden die richtigen Autoren den richtigen Büchern zugeordnet.'
@@ -308,10 +308,11 @@
       nr: 17, thema: 'sql-join', typ: 'sql',
       text: 'Es sollen die Titel aller Bücher angezeigt werden, die noch nie ausgeliehen wurden. Dazu werden „Buecher" und „Ausleihen" mit einem LEFT JOIN verknüpft.',
       frage: 'Schreiben Sie die passende SQL-Abfrage.',
-      loesung: 'SELECT Titel FROM Buecher LEFT JOIN Ausleihen ON Buecher.BuchNr = Ausleihen.BuchNr WHERE Ausleihen.AusleihNr IS NULL',
+      loesung: 'SELECT b.Titel FROM Buecher b LEFT JOIN Ausleihen a ON b.BuchNr = a.BuchNr WHERE a.AusleihNr IS NULL',
       loesungVarianten: [
-        'SELECT b.Titel FROM Buecher b LEFT JOIN Ausleihen a ON b.BuchNr = a.BuchNr WHERE a.AusleihNr IS NULL',
-        'SELECT Titel FROM Buecher LEFT JOIN Ausleihen ON Buecher.BuchNr = Ausleihen.BuchNr WHERE Ausleihen.BuchNr IS NULL'
+        'SELECT Titel FROM Buecher LEFT JOIN Ausleihen ON Buecher.BuchNr = Ausleihen.BuchNr WHERE Ausleihen.AusleihNr IS NULL',
+        'SELECT Titel FROM Buecher LEFT JOIN Ausleihen ON Buecher.BuchNr = Ausleihen.BuchNr WHERE Ausleihen.BuchNr IS NULL',
+        'SELECT b.Titel FROM Buecher b LEFT JOIN Ausleihen a ON b.BuchNr = a.BuchNr WHERE a.BuchNr IS NULL'
       ],
       erklaerung: 'LEFT JOIN liefert alle Zeilen der linken Tabelle (Buecher), auch wenn kein passender Datensatz in Ausleihen existiert. In dem Fall sind die Spalten aus Ausleihen NULL. Mit WHERE ... IS NULL werden genau diese Bücher ohne Ausleihe gefiltert.'
     },
@@ -336,10 +337,11 @@
       nr: 19, thema: 'sql-aggregat', typ: 'sql',
       text: 'Für jedes Genre soll die Anzahl der Bücher ermittelt werden. Ausgegeben werden sollen die Genre-Bezeichnung und die Anzahl (als „AnzahlBuecher").',
       frage: 'Schreiben Sie die passende SQL-Abfrage.',
-      loesung: 'SELECT Bezeichnung, COUNT(*) AS AnzahlBuecher FROM Genres INNER JOIN Buecher ON Genres.GenreNr = Buecher.GenreNr GROUP BY Bezeichnung',
+      loesung: 'SELECT g.Bezeichnung, COUNT(*) AS AnzahlBuecher FROM Genres g INNER JOIN Buecher b ON g.GenreNr = b.GenreNr GROUP BY g.Bezeichnung',
       loesungVarianten: [
-        'SELECT g.Bezeichnung, COUNT(*) AS AnzahlBuecher FROM Genres g INNER JOIN Buecher b ON g.GenreNr = b.GenreNr GROUP BY g.Bezeichnung',
-        'SELECT Bezeichnung, COUNT(*) AS AnzahlBuecher FROM Genres JOIN Buecher ON Genres.GenreNr = Buecher.GenreNr GROUP BY Bezeichnung'
+        'SELECT Bezeichnung, COUNT(*) AS AnzahlBuecher FROM Genres INNER JOIN Buecher ON Genres.GenreNr = Buecher.GenreNr GROUP BY Bezeichnung',
+        'SELECT Bezeichnung, COUNT(*) AS AnzahlBuecher FROM Genres JOIN Buecher ON Genres.GenreNr = Buecher.GenreNr GROUP BY Bezeichnung',
+        'SELECT g.Bezeichnung, COUNT(*) AS AnzahlBuecher FROM Genres g JOIN Buecher b ON g.GenreNr = b.GenreNr GROUP BY g.Bezeichnung'
       ],
       erklaerung: 'Um die Genre-Bezeichnung statt der GenreNr anzuzeigen, wird Genres mit Buecher verknüpft. GROUP BY Bezeichnung fasst alle Bücher desselben Genres zusammen, COUNT(*) zählt die Treffer je Gruppe.'
     },

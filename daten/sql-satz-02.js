@@ -252,10 +252,11 @@
       nr: 13, thema: 'sql-join', typ: 'sql',
       text: 'Es sollen die Bezeichnung und der Preis aller Produkte zusammen mit dem Namen ihrer Kategorie angezeigt werden. Produkte ohne Kategorie sollen nicht erscheinen.',
       frage: 'Schreiben Sie die passende SQL-Abfrage.',
-      loesung: "SELECT Bezeichnung, Preis, Name FROM Produkte INNER JOIN Kategorien ON Produkte.KategorieNr = Kategorien.KategorieNr",
+      loesung: "SELECT p.Bezeichnung, p.Preis, k.Name FROM Produkte p INNER JOIN Kategorien k ON p.KategorieNr = k.KategorieNr",
       loesungVarianten: [
-        "SELECT p.Bezeichnung, p.Preis, k.Name FROM Produkte p INNER JOIN Kategorien k ON p.KategorieNr = k.KategorieNr",
-        "SELECT Bezeichnung, Preis, Name FROM Produkte JOIN Kategorien ON Produkte.KategorieNr = Kategorien.KategorieNr"
+        "SELECT Bezeichnung, Preis, Name FROM Produkte INNER JOIN Kategorien ON Produkte.KategorieNr = Kategorien.KategorieNr",
+        "SELECT Bezeichnung, Preis, Name FROM Produkte JOIN Kategorien ON Produkte.KategorieNr = Kategorien.KategorieNr",
+        "SELECT p.Bezeichnung, p.Preis, k.Name FROM Produkte p JOIN Kategorien k ON p.KategorieNr = k.KategorieNr"
       ],
       erklaerung: 'INNER JOIN verknüpft zwei Tabellen über die gemeinsame Spalte KategorieNr. Nur Zeilen mit Übereinstimmung in beiden Tabellen werden zurückgegeben – Produkte ohne zugewiesene Kategorie (NULL) erscheinen nicht.'
     },
@@ -267,7 +268,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Abfrage in das Kästchen ein.',
       optionen: [
         'SELECT BestellNr, Bestelldatum, Bezeichnung FROM Bestellungen, Bestellpositionen, Produkte',
-        'SELECT BestellNr, Bestelldatum, Bezeichnung FROM Bestellungen INNER JOIN Bestellpositionen ON Bestellungen.BestellNr = Bestellpositionen.BestellNr INNER JOIN Produkte ON Bestellpositionen.ProduktNr = Produkte.ProduktNr',
+        'SELECT b.BestellNr, b.Bestelldatum, p.Bezeichnung FROM Bestellungen b INNER JOIN Bestellpositionen bp ON b.BestellNr = bp.BestellNr INNER JOIN Produkte p ON bp.ProduktNr = p.ProduktNr',
         'SELECT BestellNr, Bestelldatum, Bezeichnung FROM Bestellungen INNER JOIN Bestellpositionen AND Produkte',
         'SELECT BestellNr, Bestelldatum, Bezeichnung FROM Bestellungen LINK Bestellpositionen LINK Produkte',
         'SELECT BestellNr, Bestelldatum, Bezeichnung FROM Bestellungen INNER JOIN (Bestellpositionen, Produkte)'
@@ -333,7 +334,7 @@
       frage: 'Welche SQL-Abfrage ist korrekt?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Abfrage in das Kästchen ein.',
       optionen: [
-        'SELECT * FROM Kunden WHERE EXISTS (SELECT 1 FROM Bestellungen WHERE Bestellungen.KundenNr = Kunden.KundenNr)',
+        'SELECT * FROM Kunden ku WHERE EXISTS (SELECT 1 FROM Bestellungen b WHERE b.KundenNr = ku.KundenNr)',
         'SELECT * FROM Kunden WHERE EXISTS Bestellungen',
         'SELECT * FROM Kunden WHERE EXISTS (SELECT * FROM Bestellungen)',
         'SELECT * FROM Kunden WHERE HAS (SELECT 1 FROM Bestellungen WHERE KundenNr = Kunden.KundenNr)',
