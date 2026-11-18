@@ -35,10 +35,36 @@
     return aufgabe.bewertung || (kaestchenAnzahl(aufgabe) > 1 ? 'teil' : 'global');
   }
 
+  const KEIN_ALIAS = /^(on|where|inner|left|right|full|cross|natural|outer|join|group|order|having|union|intersect|except|limit|offset|fetch|using|set|values)$/;
+
+  // Tabellen-Aliase durch den Tabellennamen ersetzen, damit „Kunden k … k.Firmenname“, „Kunden AS kd … kd.Firmenname“
+  // und „Kunden … Kunden.Firmenname“ gleich bewertet werden. Bei Self-Joins (Tabelle mehrfach) bleiben die Aliase stehen.
+  function aliaseAufloesen(sql) {
+    const aliase = {};
+    const anzahl = {};
+    const muster = /\b(from|join) ([a-zäöüß_][\wäöüß]*)(?: as)? ([a-zäöüß_][\wäöüß]*)\b(?!\()/g;
+    let m;
+    while ((m = muster.exec(sql))) {
+      if (KEIN_ALIAS.test(m[3])) continue;
+      aliase[m[3]] = m[2];
+      anzahl[m[2]] = (anzahl[m[2]] || 0) + 1;
+    }
+    Object.keys(aliase).forEach(function (alias) {
+      const tabelle = aliase[alias];
+      if (anzahl[tabelle] > 1 || alias === tabelle) return;
+      sql = sql
+        .replace(new RegExp('\\b(from|join) ' + tabelle + '(?: as)? ' + alias + '\\b', 'g'), '$1 ' + tabelle)
+        .replace(new RegExp('(^|[^\\wäöüß.])' + alias + '\\.', 'g'), '$1' + tabelle + '.');
+    });
+    return sql;
+  }
+
   function normalisiereSql(sql) {
     if (!sql) return '';
-    return String(sql).trim().replace(/;+\s*$/, '').replace(/\s+/g, ' ').toLowerCase()
-      .replace(/"([^"]*)"/g, function (_, v) { return "'" + v + "'"; });
+    const s = String(sql).trim().replace(/;+\s*$/, '').replace(/\s+/g, ' ').toLowerCase()
+      .replace(/"([^"]*)"/g, function (_, v) { return "'" + v + "'"; })
+      .replace(/\s*([,()=<>!])\s*/g, '$1');
+    return aliaseAufloesen(s);
   }
 
   // Akzeptiert "20.000,00", "20000", "20000,5", "20 000,00 EUR"

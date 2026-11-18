@@ -123,8 +123,25 @@
     return satz.aufgaben.find(a => a.nr === nr);
   }
 
-  function situationFuer(satz, nr) {
-    return (satz.situationen || []).find(s => nr >= s.von && nr <= s.bis);
+  function situationenFuer(satz, nr) {
+    return (satz.situationen || []).filter(s => nr >= s.von && nr <= s.bis);
+  }
+
+  function situationsSchluessel(satz, liste) {
+    return liste.length ? satz.id + ':' + liste.map(s => satz.situationen.indexOf(s)).join(',') : '';
+  }
+
+  // Situationen mit Tabellen zur Aufgabe a (bei der Schwächen-Prüfung aus dem Herkunftssatz), sonst null
+  function tabellenZurAufgabe(satz, a) {
+    const quellSatz = a.herkunft ? satzById(a.herkunft.satzId) : satz;
+    if (!quellSatz) return null;
+    const liste = situationenFuer(quellSatz, a.herkunft ? a.herkunft.nr : a.nr);
+    if (!liste.some(s => s.tabelle)) return null;
+    return { satz: quellSatz, liste, schluessel: situationsSchluessel(quellSatz, liste) };
+  }
+
+  function satzHatTabellen(satz) {
+    return satz.aufgaben.some(a => tabellenZurAufgabe(satz, a));
   }
 
   // Ursprung einer Aufgabe: bei der Schwächen-Prüfung ist sie neu nummeriert und merkt sich Satz und Nummer
@@ -442,16 +459,86 @@
   }
 
   // nummern: neue Aufgabennummern in der Schwächen-Prüfung, sonst gelten die Nummern des Satzes
-  function renderSituation(sit, nummern) {
-    const titel = nummern ? situationsTitel(nummern[0], nummern[nummern.length - 1]) : (sit.titel || situationsTitel(sit.von, sit.bis));
-    return `<div class="situation"><h4>${esc(titel)}</h4>${absaetze(sit.text)}${sit.tabelle ? renderTabelle(sit.tabelle) : ''}</div>`;
+  // Alle Situationen eines Aufgabenbereichs in einem Block. titel === false: ohne Überschrift (Tabellen-Leiste)
+  function renderSituationen(liste, nummern, titel) {
+    if (titel === undefined) {
+      const erste = liste[0];
+      titel = nummern ? situationsTitel(nummern[0], nummern[nummern.length - 1])
+        : (liste.length === 1 && erste.titel) || situationsTitel(erste.von, erste.bis);
+    }
+    const teile = liste.map((sit, i) =>
+      `${i > 0 && sit.titel ? `<h5>${esc(sit.titel)}</h5>` : ''}${absaetze(sit.text)}${sit.tabelle ? renderTabelle(sit.tabelle) : ''}`).join('');
+    const mitTabelle = liste.some(s => s.tabelle);
+    return `<div class="situation${mitTabelle ? ' hat-tabelle' : ''}">${titel ? `<h4>${esc(titel)}</h4>` : ''}${teile}</div>`;
   }
 
   function renderTabelle(t) {
     const kopf = t.kopf.map(z => `<th>${esc(z)}</th>`).join('');
-    const zeilen = t.zeilen.map(r => `<tr>${r.map(z => `<td>${esc(z)}</td>`).join('')}</tr>`).join('');
-    return `<div class="tabelle-rahmen"><table class="daten"><thead><tr>${kopf}</tr></thead><tbody>${zeilen}</tbody></table></div>`;
+    const zeilen = t.zeilen.length
+      ? t.zeilen.map(r => `<tr>${r.map(z => `<td>${esc(z)}</td>`).join('')}</tr>`).join('')
+      : `<tr><td class="leer" colspan="${t.kopf.length}">(noch keine Datensätze)</td></tr>`;
+    const name = t.name ? `<caption>Tabelle <strong>${esc(t.name)}</strong></caption>` : '';
+    return `<div class="tabelle-rahmen"><table class="daten">${name}<thead><tr>${kopf}</tr></thead><tbody>${zeilen}</tbody></table></div>`;
   }
+
+  function tabellenNamen(liste) {
+    return liste.filter(s => s.tabelle && s.tabelle.name).map(s => s.tabelle.name);
+  }
+
+  // Leiste mit den Tabellen der aktuellen Aufgabe: auf breiten Bildschirmen mitlaufend links, auf schmalen als Blatt von unten
+  function renderTabellenLeiste() {
+    return `
+      <aside class="tabellen-leiste" id="tabellen-leiste" aria-label="Tabellen zur Aufgabe">
+        <div class="tabellen-leiste-kopf">
+          <h2 id="tabellen-titel">Tabellen</h2>
+          <button class="btn schliessen" data-aktion="tabellen-zu" aria-label="Tabellen schließen">✕</button>
+        </div>
+        <div id="tabellen-inhalt"></div>
+      </aside>
+      <button class="tabellen-knopf" id="tabellen-knopf" data-aktion="tabellen-auf" hidden>▦ Tabellen</button>`;
+  }
+
+  function aktuelleAufgabe() {
+    const { satz } = zustand;
+    if (!satz) return null;
+    if (zustand.ansicht === 'uebung') return aufgabeById(satz, zustand.liste[zustand.index].nr);
+    const kopf = document.querySelector('.pruef-kopf');
+    const grenze = (kopf ? kopf.getBoundingClientRect().bottom : 0) + 24;
+    const abschnitte = app.querySelectorAll('.aufgabe');
+    let el = abschnitte[abschnitte.length - 1];
+    for (const s of abschnitte) {
+      if (s.getBoundingClientRect().bottom > grenze) { el = s; break; }
+    }
+    return el ? aufgabeById(satz, Number(el.id.replace('aufgabe-', ''))) : null;
+  }
+
+  function aktualisiereTabellen() {
+    const leiste = document.getElementById('tabellen-leiste');
+    if (!leiste) return;
+    const a = aktuelleAufgabe();
+    const t = a && tabellenZurAufgabe(zustand.satz, a);
+    const schluessel = t ? t.schluessel : '';
+    document.getElementById('tabellen-knopf').hidden = !t;
+    if (leiste.dataset.schluessel === schluessel) return;
+    leiste.dataset.schluessel = schluessel;
+    document.getElementById('tabellen-titel').textContent = t && zustand.satz.virtuell ? `Tabellen · ${t.satz.titel}` : 'Tabellen';
+    document.getElementById('tabellen-inhalt').innerHTML = t
+      ? renderSituationen(t.liste, null, false)
+      : '<p class="klein">Zu dieser Aufgabe gehören keine Tabellen.</p>';
+    leiste.scrollTop = 0;
+    if (!t) leiste.classList.remove('offen');
+  }
+
+  let tabellenRahmen = 0;
+  window.addEventListener('scroll', () => {
+    if (tabellenRahmen || !document.getElementById('tabellen-leiste')) return;
+    tabellenRahmen = requestAnimationFrame(() => { tabellenRahmen = 0; aktualisiereTabellen(); });
+  }, { passive: true });
+
+  document.addEventListener('keydown', e => {
+    const leiste = document.getElementById('tabellen-leiste');
+    if (e.key === 'Escape' && leiste && leiste.classList.contains('offen')) leiste.classList.remove('offen');
+  });
 
   function renderKasten(k) {
     const liste = k.liste ? `<ol class="kasten-liste">${k.liste.map(p => `<li>${fmt(p)}</li>`).join('')}</ol>` : '';
@@ -543,8 +630,16 @@
 
   function renderAufgabe(satz, a, opt) {
     const o = opt || {};
-    const sit = o.mitSituation ? situationFuer(satz, a.nr) : null;
-    return `${sit ? renderSituation(sit) : ''}
+    const liste = o.mitSituation ? situationenFuer(satz, a.nr) : [];
+    let situation = '';
+    if (liste.some(s => s.tabelle)) {
+      // Tabellen stehen in der Tabellen-Leiste; auf schmalen Bildschirmen öffnet dieser Knopf sie
+      const namen = tabellenNamen(liste);
+      situation = `<button class="tabellen-hinweis" data-aktion="tabellen-auf">▦ Tabellen anzeigen${namen.length ? ': ' + esc(namen.join(', ')) : ''}</button>`;
+    } else if (liste.length) {
+      situation = renderSituationen(liste);
+    }
+    return `${situation}
       <section class="aufgabe" id="aufgabe-${a.nr}">
         <h3>${a.nr}. Aufgabe</h3>
         ${absaetze(a.text)}
@@ -573,26 +668,28 @@
   // Bei der Schwächen-Prüfung steht vor jedem Herkunftssatz dessen Ausgangssituation.
   function renderBogen(satz, antworten, mitErgebnis) {
     let html = satz.virtuell ? '' : renderAusgangssituation(satz);
-    let letzteSituation = null;
+    let letzterSchluessel = '';
     let letzteHerkunft = null;
     for (const a of satz.aufgaben) {
-      let sit;
+      let schluessel;
       if (a.herkunft) {
         const herkunft = satzById(a.herkunft.satzId);
         if (herkunft !== letzteHerkunft) html += renderHerkunft(herkunft);
         letzteHerkunft = herkunft;
-        sit = situationFuer(herkunft, a.herkunft.nr);
-        if (sit && sit !== letzteSituation) {
+        const liste = situationenFuer(herkunft, a.herkunft.nr);
+        schluessel = situationsSchluessel(herkunft, liste);
+        if (liste.length && schluessel !== letzterSchluessel) {
           const nummern = satz.aufgaben
-            .filter(x => x.herkunft.satzId === a.herkunft.satzId && x.herkunft.nr >= sit.von && x.herkunft.nr <= sit.bis)
+            .filter(x => x.herkunft.satzId === a.herkunft.satzId && liste.some(s => x.herkunft.nr >= s.von && x.herkunft.nr <= s.bis))
             .map(x => x.nr);
-          html += renderSituation(sit, nummern);
+          html += renderSituationen(liste, nummern);
         }
       } else {
-        sit = situationFuer(satz, a.nr);
-        if (sit && sit !== letzteSituation) html += renderSituation(sit);
+        const liste = situationenFuer(satz, a.nr);
+        schluessel = situationsSchluessel(satz, liste);
+        if (liste.length && schluessel !== letzterSchluessel) html += renderSituationen(liste);
       }
-      letzteSituation = sit;
+      letzterSchluessel = schluessel;
       const antwort = antworten[a.nr];
       html += renderAufgabe(satz, a, { antwort, ergebnis: mitErgebnis ? B.pruefeAufgabe(a, antwort) : null });
     }
@@ -942,8 +1039,10 @@
   function ansichtPruefung() {
     const { satz, antworten } = zustand;
     const bogen = satz.aufgaben.map(a => `<li><button data-aktion="springe" data-nr="${a.nr}" id="bogen-${a.nr}">${a.nr}</button></li>`).join('');
+    const mitTabellen = satzHatTabellen(satz);
     zeige(`
-      <div class="pruef-layout">
+      <div class="pruef-layout${mitTabellen ? ' mit-tabellen' : ''}">
+        ${mitTabellen ? renderTabellenLeiste() : ''}
         <header class="pruef-kopf">
           <button class="btn" data-aktion="start" title="Die Zeit läuft weiter">← Start</button>
           <span class="titel">${esc(satz.titel)} · WiSo</span>
@@ -961,6 +1060,7 @@
         </aside>
       </div>`);
     aktualisiereBogen();
+    aktualisiereTabellen();
     starteTimer();
   }
 
@@ -1095,14 +1195,17 @@
   function ansichtLoesungen() {
     const { satz, ergebnis } = zustand;
     zustand.ansicht = 'loesungen';
+    const mitTabellen = satzHatTabellen(satz);
     zeige(`
-      <div class="pruef-layout ohne-bogen">
+      <div class="pruef-layout ohne-bogen${mitTabellen ? ' mit-tabellen' : ''}">
+        ${mitTabellen ? renderTabellenLeiste() : ''}
         <header class="pruef-kopf">
           <button class="btn" data-aktion="zur-auswertung">← Auswertung</button>
           <span class="titel">${esc(satz.titel)} · Lösungen und Erklärungen</span>
         </header>
         <main class="papier aufgabenheft">${renderBogen(satz, ergebnis.antworten, true)}</main>
       </div>`);
+    aktualisiereTabellen();
   }
 
   // ---------- Üben ----------
@@ -1123,8 +1226,10 @@
     const ergebnis = zustand.geprueft ? B.pruefeAufgabe(a, zustand.antworten[a.nr]) : null;
     const fortschritt = Math.round(100 * index / liste.length);
 
+    const mitTabellen = !!tabellenZurAufgabe(satz, a);
     zeige(`
-      <div class="pruef-layout ohne-bogen">
+      <div class="pruef-layout ohne-bogen${mitTabellen ? ' mit-tabellen' : ''}">
+        ${mitTabellen ? renderTabellenLeiste() : ''}
         <header class="pruef-kopf">
           <button class="btn" data-aktion="start">← Start</button>
           <span class="titel">${esc(zustand.titel)} · ${index + 1} von ${liste.length}</span>
@@ -1136,6 +1241,7 @@
           ${ergebnis ? `<div class="aktionen"><button class="btn primaer" data-aktion="weiter" id="weiter">${index + 1 < liste.length ? 'Nächste Aufgabe' : 'Abschließen'}</button><span class="klein">oder Enter</span></div>` : ''}
         </main>
       </div>`);
+    aktualisiereTabellen();
 
     const ziel = ergebnis ? document.getElementById('weiter') : app.querySelector('input.kasten');
     if (ziel) ziel.focus({ preventScroll: true });
@@ -1387,6 +1493,16 @@
       case 'abgeben':
         abgeben(false);
         break;
+      case 'tabellen-auf': {
+        const leiste = document.getElementById('tabellen-leiste');
+        if (leiste) leiste.classList.add('offen');
+        break;
+      }
+      case 'tabellen-zu': {
+        const leiste = document.getElementById('tabellen-leiste');
+        if (leiste) leiste.classList.remove('offen');
+        break;
+      }
       case 'springe': {
         const ziel = document.getElementById('aufgabe-' + d.nr);
         if (ziel) {

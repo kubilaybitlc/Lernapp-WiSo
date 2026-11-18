@@ -8,35 +8,25 @@
 
   situationen: [
     {
-      von: 1, bis: 10,
-      text: 'Die Datenbank enthält folgende Tabellen mit Beispieldaten:',
+      von: 1, bis: 20,
+      text: 'Die Datenbank des FitTrack Sportstudios enthält folgende Tabellen (Auszug):',
       tabelle: {
-        kopf: ['Tabelle', 'Spalten'],
-        zeilen: [
-          ['Mitglieder', 'MitgliedNr, Vorname, Nachname, Geburtsdatum, Tarif, Beitrag, Eintrittsdatum'],
-          ['Kurse', 'KursNr, Bezeichnung, TrainerNr, MaxTeilnehmer, Wochentag, Uhrzeit'],
-          ['Trainer', 'TrainerNr, Vorname, Nachname, Spezialgebiet, Stundenlohn']
-        ]
-      }
-    },
-    {
-      titel: 'Beispieldaten Mitglieder',
-      von: 1, bis: 10,
-      tabelle: {
+        name: 'Mitglieder',
         kopf: ['MitgliedNr', 'Vorname', 'Nachname', 'Geburtsdatum', 'Tarif', 'Beitrag', 'Eintrittsdatum'],
         zeilen: [
           ['201', 'Lena', 'Kraft', '1990-05-12', 'Premium', '49.90', '2022-01-15'],
           ['202', 'Moritz', 'Stein', '1985-11-03', 'Basis', '29.90', '2023-03-01'],
           ['203', 'Sophie', 'Winter', '1998-07-22', 'VIP', '79.90', '2021-06-10'],
           ['204', 'Jonas', 'Berger', '2001-02-14', 'Basis', '29.90', '2024-01-20'],
-          ['205', 'Nina', 'Scholz', '1993-09-30', 'Premium', '49.90', '2022-08-01']
+          ['205', 'Nina', 'Scholz', '1993-09-30', 'Premium', '49.90', '2022-08-01'],
+          ['206', 'Paul', 'Hartmann', '1979-04-18', 'VIP', '79.90', '2024-05-01']
         ]
       }
     },
     {
-      titel: 'Beispieldaten Kurse und Trainer',
-      von: 1, bis: 10,
+      von: 1, bis: 20,
       tabelle: {
+        name: 'Kurse',
         kopf: ['KursNr', 'Bezeichnung', 'TrainerNr', 'MaxTeilnehmer', 'Wochentag', 'Uhrzeit'],
         zeilen: [
           ['301', 'Yoga Grundkurs', '401', '15', 'Montag', '09:00'],
@@ -48,9 +38,9 @@
       }
     },
     {
-      titel: 'Beispieldaten Trainer',
-      von: 1, bis: 10,
+      von: 1, bis: 20,
       tabelle: {
+        name: 'Trainer',
         kopf: ['TrainerNr', 'Vorname', 'Nachname', 'Spezialgebiet', 'Stundenlohn'],
         zeilen: [
           ['401', 'Marie', 'Lang', 'Yoga', '35.00'],
@@ -60,20 +50,9 @@
       }
     },
     {
-      von: 11, bis: 20,
-      text: 'Zusätzlich enthält die Datenbank die Tabellen „Buchungen" und „Mitgliedschaften":',
+      von: 1, bis: 20,
       tabelle: {
-        kopf: ['Tabelle', 'Spalten'],
-        zeilen: [
-          ['Buchungen', 'BuchungNr, MitgliedNr, KursNr, Datum'],
-          ['Mitgliedschaften', 'MitgliedNr, Tarif, GueltigVon, GueltigBis']
-        ]
-      }
-    },
-    {
-      titel: 'Beispieldaten Buchungen',
-      von: 11, bis: 20,
-      tabelle: {
+        name: 'Buchungen',
         kopf: ['BuchungNr', 'MitgliedNr', 'KursNr', 'Datum'],
         zeilen: [
           ['501', '201', '301', '2025-09-02'],
@@ -81,20 +60,26 @@
           ['503', '203', '302', '2025-09-03'],
           ['504', '205', '304', '2025-09-05'],
           ['505', '203', '301', '2025-09-09'],
-          ['506', '201', '305', '2025-09-12']
+          ['506', '201', '305', '2025-09-12'],
+          ['507', '205', '301', '2025-09-16'],
+          ['508', '206', '302', '2025-10-01'],
+          ['509', '206', '304', '2025-10-02'],
+          ['510', '201', '301', '2025-10-06']
         ]
       }
     },
     {
-      titel: 'Beispieldaten Mitgliedschaften',
-      von: 11, bis: 20,
+      von: 1, bis: 20,
       tabelle: {
+        name: 'Mitgliedschaften',
         kopf: ['MitgliedNr', 'Tarif', 'GueltigVon', 'GueltigBis'],
         zeilen: [
           ['201', 'Premium', '2022-01-15', '2026-01-14'],
           ['202', 'Basis', '2023-03-01', 'NULL'],
           ['203', 'VIP', '2021-06-10', '2025-12-31'],
-          ['204', 'Basis', '2024-01-20', 'NULL']
+          ['204', 'Basis', '2024-01-20', 'NULL'],
+          ['205', 'Premium', '2022-08-01', 'NULL'],
+          ['206', 'VIP', '2024-05-01', '2026-04-30']
         ]
       }
     }

@@ -428,3 +428,80 @@ button.option:focus-visible { outline: 3px solid #7fa7dc; outline-offset: 1px; }
 .schema-tabelle { font-size: .88rem; }
 .schema-tabelle th { background: var(--akzent); color: #fff; padding: .3em .6em; }
 .schema-tabelle td { padding: .25em .6em; border-bottom: 1px solid var(--linie); font-family: "Cascadia Code", "Fira Code", "Consolas", monospace; font-size: .9em; }
+
+/* ---------- Tabellen zur Aufgabe ---------- */
+
+table.daten caption { caption-side: top; text-align: left; padding: .2rem 0 .3rem; font-size: .95rem; }
+table.daten td.leer { text-align: left; color: var(--text-leise); font-style: italic; }
+.situation h5 { margin: 1rem 0 .3rem; font-size: .95rem; }
+.situation .tabelle-rahmen + p { margin-top: 1rem; }
+.situation .tabelle-rahmen { margin-bottom: .8rem; }
+.situation .tabelle-rahmen:last-child { margin-bottom: 0; }
+
+.tabellen-leiste, .tabellen-knopf { display: none; }
+.tabellen-leiste-kopf { display: flex; align-items: center; justify-content: space-between; gap: .5rem; margin-bottom: .6rem; }
+.tabellen-leiste-kopf h2 { font-size: 1rem; margin: 0; }
+.tabellen-leiste .situation { margin: 0; padding: 0; border: 0; }
+.tabellen-leiste table.daten { font-size: .85rem; }
+.tabellen-leiste table.daten th, .tabellen-leiste table.daten td { padding: .25em .5em; white-space: nowrap; }
+
+.tabellen-hinweis {
+  display: none;
+  width: 100%; margin: .4rem 0 .6rem; padding: .6rem .8rem;
+  font: inherit; font-size: .95rem; text-align: left; color: var(--akzent);
+  background: var(--akzent-hell); border: 1px solid var(--akzent); border-radius: var(--radius);
+  cursor: pointer;
+}
+
+/* Breit: Tabellen laufen links neben den Aufgaben mit */
+@media (min-width: 1100px) {
+  .pruef-layout.mit-tabellen {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr) 200px;
+    grid-template-areas: "kopf kopf kopf" "tabellen heft bogen";
+    max-width: 1700px;
+  }
+  .pruef-layout.mit-tabellen.ohne-bogen {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+    grid-template-areas: "kopf kopf" "tabellen heft";
+    max-width: 1600px;
+  }
+  .pruef-layout.mit-tabellen .papier { max-width: none; }
+  .mit-tabellen .tabellen-leiste {
+    display: block;
+    grid-area: tabellen;
+    position: sticky; top: 4.2rem; align-self: start;
+    max-height: calc(100vh - 5.2rem); overflow: auto;
+    margin-top: 1rem; padding: 1rem 1.1rem;
+    background: var(--papier); box-shadow: 0 1px 4px rgba(0, 0, 0, .12);
+  }
+  .tabellen-leiste .schliessen { display: none; }
+  .mit-tabellen .papier .situation.hat-tabelle { display: none; }
+}
+
+/* Schmal: Tabellen über einen Knopf als Blatt von unten öffnen */
+@media (max-width: 1099.98px) {
+  .mit-tabellen .tabellen-hinweis { display: block; }
+  .mit-tabellen .tabellen-leiste {
+    display: block;
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+    max-height: 78vh; overflow: auto;
+    padding: 1rem;
+    background: var(--papier);
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, .25);
+    transform: translateY(105%); visibility: hidden;
+    transition: transform .2s ease, visibility .2s;
+  }
+  .mit-tabellen .tabellen-leiste.offen { transform: none; visibility: visible; }
+  .mit-tabellen .tabellen-leiste-kopf { position: sticky; top: -1rem; margin: -1rem -1rem .6rem; padding: .8rem 1rem; background: var(--papier); border-bottom: 1px solid var(--linie); }
+  .mit-tabellen .tabellen-knopf:not([hidden]) {
+    display: inline-flex; align-items: center;
+    position: fixed; right: 1rem; bottom: 1rem; z-index: 15;
+    padding: .7rem 1rem;
+    font: inherit; font-weight: 600; color: #fff;
+    background: var(--akzent); border: 0; border-radius: 99px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .3);
+    cursor: pointer;
+  }
+  .mit-tabellen .papier { padding-bottom: 4.5rem; }
+}

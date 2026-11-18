@@ -8,9 +8,10 @@
 
   situationen: [
     {
-      von: 1, bis: 10,
-      text: 'Die Datenbank enthält die Tabellen „Produkte" und „Kategorien" mit folgenden Spalten und Beispieldaten:',
+      von: 1, bis: 20,
+      text: 'Die Datenbank der MegaShop Online-Handel GmbH enthält folgende Tabellen (Auszug):',
       tabelle: {
+        name: 'Produkte',
         kopf: ['ProduktNr', 'Bezeichnung', 'KategorieNr', 'Preis', 'Lagerbestand'],
         zeilen: [
           ['1001', 'USB-C-Kabel 2 m', '10', '8.99', '350'],
@@ -23,10 +24,9 @@
       }
     },
     {
-      von: 1, bis: 10,
-      titel: 'Tabelle „Kategorien"',
-      text: '',
+      von: 1, bis: 20,
       tabelle: {
+        name: 'Kategorien',
         kopf: ['KategorieNr', 'Name'],
         zeilen: [
           ['10', 'Computer-Zubehör'],
@@ -37,9 +37,9 @@
       }
     },
     {
-      von: 11, bis: 20,
-      text: 'Die Datenbank enthält außerdem die Tabellen „Kunden", „Bestellungen" und „Bestellpositionen":',
+      von: 1, bis: 20,
       tabelle: {
+        name: 'Kunden',
         kopf: ['KundenNr', 'Vorname', 'Nachname', 'Email', 'Ort', 'Registrierung'],
         zeilen: [
           ['201', 'Laura', 'Meier', 'l.meier@mail.de', 'Berlin', '2024-01-15'],
@@ -51,10 +51,9 @@
       }
     },
     {
-      von: 11, bis: 20,
-      titel: 'Tabelle „Bestellungen"',
-      text: '',
+      von: 1, bis: 20,
       tabelle: {
+        name: 'Bestellungen',
         kopf: ['BestellNr', 'KundenNr', 'Bestelldatum', 'Versandkosten'],
         zeilen: [
           ['5001', '201', '2025-01-10', '4.99'],
@@ -66,10 +65,9 @@
       }
     },
     {
-      von: 11, bis: 20,
-      titel: 'Tabelle „Bestellpositionen"',
-      text: '',
+      von: 1, bis: 20,
       tabelle: {
+        name: 'Bestellpositionen',
         kopf: ['BestellNr', 'ProduktNr', 'Menge', 'Einzelpreis'],
         zeilen: [
           ['5001', '1001', '2', '8.99'],

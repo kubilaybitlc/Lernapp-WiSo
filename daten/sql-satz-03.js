@@ -8,38 +8,39 @@
 
   situationen: [
     {
-      von: 1, bis: 8,
-      text: 'Die Datenbank enthält folgende Tabellen mit Beispieldaten:',
+      von: 1, bis: 20,
+      text: 'Die Datenbank der Stadtbibliothek Nordpark enthält folgende Tabellen (Auszug):',
       tabelle: {
+        name: 'Buecher',
         kopf: ['BuchNr', 'Titel', 'AutorNr', 'GenreNr', 'ISBN', 'Erscheinungsjahr', 'Verfuegbar'],
         zeilen: [
           ['1', 'Der Prozess', '10', '1', '978-3-596-90042-5', '1925', '1'],
-          ['2', 'Die Vermessung der Welt', '11', '1', '978-3-499-24100-0', '2005', '1'],
-          ['3', 'Tintenherz', '12', '2', '978-3-7915-0465-1', '2003', '0'],
+          ['2', 'Die Vermessung der Welt', '11', '1', '978-3-499-24100-0', '2005', '0'],
+          ['3', 'Tintenherz', '12', '2', '978-3-7915-0465-1', '2003', '1'],
           ['4', 'Das Parfum', '13', '1', '978-3-257-22800-7', '1985', '1'],
-          ['5', 'Momo', '14', '2', '978-3-522-20231-5', '1973', '0']
+          ['5', 'Emil und die Detektive', '14', '2', '978-3-7915-3013-1', 'NULL', '0']
         ]
       }
     },
     {
-      von: 1, bis: 8,
-      titel: 'Tabelle „Autoren"',
-      text: '',
+      von: 1, bis: 20,
       tabelle: {
+        name: 'Autoren',
         kopf: ['AutorNr', 'Vorname', 'Nachname', 'Land'],
         zeilen: [
           ['10', 'Franz', 'Kafka', 'Österreich'],
           ['11', 'Daniel', 'Kehlmann', 'Deutschland'],
           ['12', 'Cornelia', 'Funke', 'Deutschland'],
-          ['13', 'Patrick', 'Süskind', 'Deutschland']
+          ['13', 'Patrick', 'Süskind', 'Deutschland'],
+          ['14', 'Erich', 'Kästner', 'Deutschland'],
+          ['15', 'Wolfgang', 'Herrndorf', 'Deutschland']
         ]
       }
     },
     {
-      von: 1, bis: 8,
-      titel: 'Tabelle „Genres"',
-      text: '',
+      von: 1, bis: 20,
       tabelle: {
+        name: 'Genres',
         kopf: ['GenreNr', 'Bezeichnung'],
         zeilen: [
           ['1', 'Roman'],
@@ -49,9 +50,9 @@
       }
     },
     {
-      von: 9, bis: 14,
-      text: 'Die Datenbank enthält außerdem die Tabellen „Mitglieder" und „Ausleihen":',
+      von: 1, bis: 20,
       tabelle: {
+        name: 'Mitglieder',
         kopf: ['MitgliedNr', 'Vorname', 'Nachname', 'Geburtsdatum', 'Eintrittsdatum', 'Aktiv'],
         zeilen: [
           ['201', 'Lena', 'Koch', '1990-04-12', '2020-01-15', '1'],
@@ -62,23 +63,32 @@
       }
     },
     {
-      von: 9, bis: 14,
-      titel: 'Tabelle „Ausleihen"',
-      text: '',
+      von: 1, bis: 20,
       tabelle: {
+        name: 'Ausleihen',
         kopf: ['AusleihNr', 'MitgliedNr', 'BuchNr', 'Ausleihdatum', 'Rueckgabedatum'],
         zeilen: [
           ['301', '201', '3', '2024-10-01', '2024-10-15'],
-          ['302', '202', '1', '2024-10-05', '2024-10-20'],
+          ['302', '202', '4', '2024-10-05', '2024-10-20'],
           ['303', '201', '5', '2024-11-01', 'NULL'],
           ['304', '204', '2', '2024-11-03', 'NULL'],
-          ['305', '202', '4', '2024-09-10', '2024-09-25']
+          ['305', '202', '4', '2024-09-10', '2024-09-25'],
+          ['306', '203', '3', '2024-08-12', '2024-08-30']
         ]
       }
     },
     {
-      von: 15, bis: 20,
-      text: 'Die Bibliothek erweitert ihre Datenbank um neue Tabellen und Spalten, um Räume für Lesungen und Veranstaltungen zu verwalten.'
+      von: 1, bis: 20,
+      tabelle: {
+        name: 'AltBestand',
+        kopf: ['BuchNr', 'Titel', 'Erscheinungsjahr', 'Aussonderungsdatum'],
+        zeilen: [
+          ['901', 'Telefonbuch Nordpark 1998', '1998', '2015-03-01'],
+          ['902', 'Computer-Lexikon', '1995', '2016-07-12'],
+          ['903', 'Reiseführer Berlin', '2001', '2018-01-20'],
+          ['904', 'Fahrplan Stadtbus', '2005', '2019-05-15']
+        ]
+      }
     }
   ],
 

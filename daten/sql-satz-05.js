@@ -8,9 +8,10 @@
 
   situationen: [
     {
-      von: 1, bis: 7,
-      text: 'Die Datenbank enthält die Tabellen „Mitarbeiter" und „Abteilungen" mit folgenden Beispieldaten:',
+      von: 1, bis: 20,
+      text: 'Die Datenbank der CloudTech GmbH enthält folgende Tabellen (Auszug):',
       tabelle: {
+        name: 'Mitarbeiter',
         kopf: ['MitarbeiterNr', 'Vorname', 'Nachname', 'AbteilungNr', 'Position', 'Gehalt', 'Eintrittsdatum'],
         zeilen: [
           ['301', 'Lena', 'Richter', '10', 'Entwicklerin', '5400.00', '2019-04-01'],
@@ -23,10 +24,9 @@
       }
     },
     {
-      titel: 'Tabelle „Abteilungen"',
-      von: 1, bis: 7,
-      text: '',
+      von: 1, bis: 20,
       tabelle: {
+        name: 'Abteilungen',
         kopf: ['AbteilungNr', 'Name', 'Standort', 'Leiter'],
         zeilen: [
           ['10', 'Entwicklung', 'Berlin', 'Richter'],
@@ -37,9 +37,9 @@
       }
     },
     {
-      von: 8, bis: 14,
-      text: 'Zusätzlich werden die Tabellen „Projekte" und „Aufgaben" verwendet:',
+      von: 1, bis: 20,
       tabelle: {
+        name: 'Projekte',
         kopf: ['ProjektNr', 'Bezeichnung', 'Kunde', 'Budget', 'Startdatum', 'Status'],
         zeilen: [
           ['P100', 'Kundenportal', 'Stadtwerke Köln', '120000.00', '2024-01-15', 'Aktiv'],
@@ -51,10 +51,9 @@
       }
     },
     {
-      titel: 'Tabelle „Aufgaben"',
-      von: 8, bis: 14,
-      text: '',
+      von: 1, bis: 20,
       tabelle: {
+        name: 'Aufgaben',
         kopf: ['AufgabeNr', 'ProjektNr', 'MitarbeiterNr', 'Beschreibung', 'Stunden', 'Erledigt'],
         zeilen: [
           ['A1', 'P100', '301', 'Backend-Entwicklung', '120', '0'],
@@ -66,9 +65,9 @@
       }
     },
     {
-      von: 15, bis: 20,
-      text: 'Die Tabelle „Zeiterfassung" enthält die gebuchten Arbeitsstunden der Mitarbeiter:',
+      von: 1, bis: 20,
       tabelle: {
+        name: 'Zeiterfassung',
         kopf: ['ErfassungNr', 'MitarbeiterNr', 'ProjektNr', 'Datum', 'Stunden', 'Taetigkeit'],
         zeilen: [
           ['Z1', '301', 'P100', '2024-10-07', '8.0', 'Backend-Programmierung'],

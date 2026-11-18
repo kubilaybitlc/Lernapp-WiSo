@@ -8,9 +8,10 @@
 
   situationen: [
     {
-      von: 1, bis: 8,
-      text: 'Die Datenbank enthält eine Tabelle „Mitarbeiter" mit folgenden Spalten und Beispieldaten:',
+      von: 1, bis: 20,
+      text: 'Die Datenbank der TechNova Solutions GmbH enthält folgende Tabellen (Auszug):',
       tabelle: {
+        name: 'Mitarbeiter',
         kopf: ['MitarbeiterNr', 'Vorname', 'Nachname', 'Abteilung', 'Gehalt', 'Eintrittsdatum'],
         zeilen: [
           ['101', 'Anna', 'Müller', 'Entwicklung', '4800.00', '2019-03-15'],
@@ -24,27 +25,61 @@
       }
     },
     {
-      von: 9, bis: 14,
-      text: 'Neben der Tabelle „Mitarbeiter" enthält die Datenbank eine Tabelle „Projekte" und eine Zuordnungstabelle „Projektzuordnung":',
+      von: 1, bis: 20,
       tabelle: {
-        kopf: ['Tabelle', 'Spalten'],
+        name: 'Projekte',
+        kopf: ['ProjektNr', 'Bezeichnung', 'Startdatum', 'Budget'],
         zeilen: [
-          ['Projekte', 'ProjektNr, Bezeichnung, Startdatum, Budget'],
-          ['Projektzuordnung', 'MitarbeiterNr, ProjektNr, Stunden'],
-          ['Mitarbeiter', '(wie oben)']
+          ['1', 'Kundenportal Relaunch', '2024-02-01', '85000.00'],
+          ['2', 'CRM-Einführung', '2024-05-15', '42000.00'],
+          ['3', 'Helpdesk-Automatisierung', '2024-09-01', '23000.00'],
+          ['4', 'Cloud-Migration', '2025-01-10', '120000.00'],
+          ['5', 'Intranet-App', '2025-06-01', '18000.00']
         ]
       }
     },
     {
-      von: 15, bis: 20,
-      text: 'Die Datenbank wird um zwei weitere Tabellen ergänzt:',
+      von: 1, bis: 20,
       tabelle: {
-        kopf: ['Tabelle', 'Spalten'],
+        name: 'Projektzuordnung',
+        kopf: ['MitarbeiterNr', 'ProjektNr', 'Stunden'],
         zeilen: [
-          ['Kunden', 'KundenNr, Firmenname, Ort, Branche'],
-          ['Auftraege', 'AuftragNr, KundenNr, Bezeichnung, Datum, Betrag'],
-          ['Mitarbeiter', '(wie oben)'],
-          ['Projekte', '(wie oben)']
+          ['101', '1', '120'],
+          ['103', '1', '80'],
+          ['102', '2', '60'],
+          ['105', '2', '40'],
+          ['104', '3', '30'],
+          ['106', '3', '90'],
+          ['103', '4', '50']
+        ]
+      }
+    },
+    {
+      von: 1, bis: 20,
+      tabelle: {
+        name: 'Kunden',
+        kopf: ['KundenNr', 'Firmenname', 'Ort', 'Branche'],
+        zeilen: [
+          ['401', 'WebSolutions Nord GmbH', 'Hamburg', 'IT-Dienstleistungen'],
+          ['402', 'Bäckerei Hansen KG', 'Kiel', 'Lebensmittel'],
+          ['403', 'Autohaus Becker GmbH', 'Bremen', 'Handel'],
+          ['404', 'Logistik Petersen AG', 'Hannover', 'Logistik'],
+          ['405', 'Praxis Dr. Yilmaz', 'Lübeck', 'Gesundheit']
+        ]
+      }
+    },
+    {
+      von: 1, bis: 20,
+      tabelle: {
+        name: 'Auftraege',
+        kopf: ['AuftragNr', 'KundenNr', 'Bezeichnung', 'Datum', 'Betrag'],
+        zeilen: [
+          ['7001', '401', 'Webshop-Anbindung', '2025-01-14', '12500.00'],
+          ['7002', '403', 'Netzwerkinstallation', '2025-02-03', '8400.00'],
+          ['7003', '401', 'Wartungsvertrag 2025', '2025-02-20', '3600.00'],
+          ['7004', '404', 'Lagerverwaltungssoftware', '2025-03-11', '24800.00'],
+          ['7005', '403', 'Firewall-Upgrade', '2025-04-02', '2150.00'],
+          ['7006', '402', 'Kassensystem', '2025-04-28', '5900.00']
         ]
       }
     }
@@ -282,9 +317,9 @@
     },
     {
       nr: 17, thema: 'sql-dml', typ: 'sql',
-      text: 'Alle Aufträge des Kunden mit der KundenNr 501 sollen aus der Tabelle „Auftraege" gelöscht werden.',
+      text: 'Alle Aufträge des Kunden mit der KundenNr 403 sollen aus der Tabelle „Auftraege" gelöscht werden.',
       frage: 'Schreiben Sie die passende SQL-Anweisung.',
-      loesung: 'DELETE FROM Auftraege WHERE KundenNr = 501',
+      loesung: 'DELETE FROM Auftraege WHERE KundenNr = 403',
       erklaerung: 'DELETE FROM Tabelle WHERE Bedingung löscht alle Zeilen, die die Bedingung erfüllen. Ohne WHERE würden alle Zeilen gelöscht.'
     },
 
