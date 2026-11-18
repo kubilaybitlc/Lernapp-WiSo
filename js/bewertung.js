@@ -51,7 +51,8 @@
     }
     Object.keys(aliase).forEach(function (alias) {
       const tabelle = aliase[alias];
-      if (anzahl[tabelle] > 1 || alias === tabelle) return;
+      // Mischt die Eingabe Alias und Tabellennamen (in SQL ein Fehler), bleibt sie unverändert und wird nicht gleichgesetzt
+      if (anzahl[tabelle] > 1 || alias === tabelle || new RegExp('(^|[^\\wäöüß.])' + tabelle + '\\.').test(sql)) return;
       sql = sql
         .replace(new RegExp('\\b(from|join) ' + tabelle + '(?: as)? ' + alias + '\\b', 'g'), '$1 ' + tabelle)
         .replace(new RegExp('(^|[^\\wäöüß.])' + alias + '\\.', 'g'), '$1' + tabelle + '.');
@@ -59,12 +60,12 @@
     return sql;
   }
 
+  // Schlüsselwörter und Namen ohne Rücksicht auf Groß-/Kleinschreibung, Texte in '…' aber unverändert (wie in Standard-SQL)
   function normalisiereSql(sql) {
     if (!sql) return '';
-    const s = String(sql).trim().replace(/;+\s*$/, '').replace(/\s+/g, ' ').toLowerCase()
-      .replace(/"([^"]*)"/g, function (_, v) { return "'" + v + "'"; })
-      .replace(/\s*([,()=<>!])\s*/g, '$1');
-    return aliaseAufloesen(s);
+    const teile = String(sql).trim().replace(/;+\s*$/, '').split(/('(?:[^']|'')*')/);
+    const s = teile.map((t, i) => (i % 2 ? t : t.replace(/\s+/g, ' ').toLowerCase().replace(/\s*([,()=<>!])\s*/g, '$1'))).join('');
+    return aliaseAufloesen(s.trim());
   }
 
   // Akzeptiert "20.000,00", "20000", "20000,5", "20 000,00 EUR"
@@ -99,6 +100,7 @@
     const werte = antwort || [];
     const n = kaestchenAnzahl(aufgabe);
     let details;
+    let hinweis = null;
 
     switch (aufgabe.typ) {
       case 'einfach':
@@ -130,9 +132,18 @@
         details = [leseDatum(werte[0]) === aufgabe.loesung];
         break;
       case 'sql': {
-        var eingabe = normalisiereSql(werte[0]);
-        var varianten = [aufgabe.loesung].concat(aufgabe.loesungVarianten || []).map(normalisiereSql);
-        details = [varianten.some(function (v) { return v === eingabe; })];
+        const text = String(werte[0] || '').trim();
+        const varianten = [aufgabe.loesung].concat(aufgabe.loesungVarianten || []).map(normalisiereSql);
+        let ok = !!text && varianten.includes(normalisiereSql(text));
+        // Anders formuliert? Dann beide Anweisungen auf den Tabellen ausführen und das Ergebnis vergleichen
+        if (!ok && text && aufgabe.datenbank && window.WISO_SQL) {
+          const v = window.WISO_SQL.vergleiche(aufgabe.loesung, text, aufgabe.datenbank);
+          if (v) {
+            if (v.gleich !== null) ok = v.gleich;
+            hinweis = v.gleich ? 'Anders formuliert als die Musterlösung, bewirkt aber dasselbe.' : v.hinweis;
+          }
+        }
+        details = [ok];
         break;
       }
       default:
@@ -142,7 +153,7 @@
     const richtig = details.filter(Boolean).length;
     const art = bewertungsart(aufgabe);
     const anteil = art === 'teil' ? richtig / n : (richtig === n ? 1 : 0);
-    return { details, richtig, gesamt: n, anteil, art, leer: istLeer(werte) };
+    return { details, richtig, gesamt: n, anteil, art, leer: istLeer(werte), hinweis };
   }
 
   function note(punkte) {

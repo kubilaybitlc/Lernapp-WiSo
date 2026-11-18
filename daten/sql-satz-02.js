@@ -105,14 +105,14 @@
       frage: 'Welche WHERE-Bedingung ist korrekt?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Bedingung in das Kästchen ein.',
       optionen: [
-        'WHERE KategorieNr != 10',
-        'WHERE NOT KategorieNr = 10',
+        'WHERE KategorieNr =! 10',
+        'WHERE KategorieNr NOT = 10',
         'WHERE KategorieNr <> 10',
         'WHERE EXCLUDE KategorieNr = 10',
         'WHERE KategorieNr NOT 10'
       ],
       loesung: 3,
-      erklaerung: 'In Standard-SQL ist <> der Ungleichheitsoperator. != funktioniert in vielen Datenbanksystemen ebenfalls, ist aber nicht Teil des SQL-Standards. NOT KategorieNr = 10 wäre syntaktisch korrekt als NOT (KategorieNr = 10), ohne Klammern ist es missverständlich. EXCLUDE existiert nicht als Operator.'
+      erklaerung: 'In Standard-SQL ist <> der Ungleichheitsoperator. =!, NOT = und NOT ohne Vergleich gibt es nicht, EXCLUDE ist kein Operator. (Das in manchen Datenbanksystemen erlaubte != gehört nicht zum SQL-Standard.) Gleichwertig wäre WHERE NOT (KategorieNr = 10).'
     },
     // 3 – WHERE mit IN
     {
@@ -181,13 +181,13 @@
       loesung: 2,
       erklaerung: 'Mehrere Sortierkriterien werden durch Komma getrennt. Das erste Kriterium hat Vorrang. DESC = absteigend, ASC = aufsteigend (Standard). AND ist ein logischer Operator, kein Trennzeichen für Sortierkriterien.'
     },
-    // 8 – TOP / LIMIT
+    // 8 – WHERE und ORDER BY
     {
       nr: 8, thema: 'sql-sortierung', typ: 'sql',
-      text: 'Es sollen nur die 5 teuersten Produkte angezeigt werden (Bezeichnung und Preis, absteigend nach Preis sortiert).',
-      frage: 'Schreiben Sie die passende SQL-Abfrage. Verwenden Sie SELECT TOP.',
-      loesung: 'SELECT TOP 5 Bezeichnung, Preis FROM Produkte ORDER BY Preis DESC',
-      erklaerung: 'SELECT TOP n begrenzt die Ergebnismenge auf die ersten n Zeilen. In Kombination mit ORDER BY DESC werden die höchsten Werte zuerst sortiert und dann die obersten 5 zurückgegeben. In MySQL wird stattdessen LIMIT 5 am Ende der Abfrage verwendet.'
+      text: 'Es sollen die Bezeichnung und der Preis aller lieferbaren Produkte (Lagerbestand größer als 0) angezeigt werden, absteigend nach Preis sortiert (teuerstes Produkt zuerst).',
+      frage: 'Schreiben Sie die passende SQL-Abfrage.',
+      loesung: 'SELECT Bezeichnung, Preis FROM Produkte WHERE Lagerbestand > 0 ORDER BY Preis DESC',
+      erklaerung: 'WHERE wählt die lieferbaren Produkte aus, ORDER BY … DESC sortiert absteigend. Die Reihenfolge der Klauseln ist fest: SELECT – FROM – WHERE – GROUP BY – HAVING – ORDER BY.'
     },
     // 9 – COUNT mit WHERE
     {

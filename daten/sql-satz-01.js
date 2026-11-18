@@ -180,13 +180,13 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Abfrage in das Kästchen ein.',
       optionen: [
         'SELECT Abteilung FROM Mitarbeiter',
-        'SELECT UNIQUE Abteilung FROM Mitarbeiter',
+        'SELECT SINGLE Abteilung FROM Mitarbeiter',
         'SELECT DISTINCT Abteilung FROM Mitarbeiter',
         'SELECT DIFFERENT Abteilung FROM Mitarbeiter',
-        'SELECT Abteilung FROM Mitarbeiter GROUP BY 1'
+        'SELECT Abteilung FROM Mitarbeiter ORDER BY Abteilung'
       ],
       loesung: 3,
-      erklaerung: 'DISTINCT entfernt doppelte Zeilen aus dem Ergebnis. UNIQUE und DIFFERENT sind keine SQL-Schlüsselwörter für diesen Zweck. Ohne DISTINCT würden alle Zeilen erscheinen, auch wenn der Abteilungsname mehrfach vorkommt.'
+      erklaerung: 'DISTINCT entfernt doppelte Zeilen aus dem Ergebnis. SINGLE und DIFFERENT gibt es in SQL nicht. ORDER BY sortiert nur, entfernt aber keine Doppelungen – ohne DISTINCT erscheint jede Abteilung so oft, wie sie vorkommt. (Dasselbe Ergebnis wie mit DISTINCT liefert übrigens auch GROUP BY Abteilung.)'
     },
 
     // --- Aggregatfunktionen ---

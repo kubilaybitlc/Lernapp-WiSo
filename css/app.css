@@ -429,6 +429,9 @@ button.option:focus-visible { outline: 3px solid #7fa7dc; outline-offset: 1px; }
 .schema-tabelle th { background: var(--akzent); color: #fff; padding: .3em .6em; }
 .schema-tabelle td { padding: .25em .6em; border-bottom: 1px solid var(--linie); font-family: "Cascadia Code", "Fira Code", "Consolas", monospace; font-size: .9em; }
 
+.rueckmeldung .sql-hinweis { font-style: italic; }
+.kasten.sql-eingabe { text-align: left; font-weight: 400; }
+
 /* ---------- Tabellen zur Aufgabe ---------- */
 
 table.daten caption { caption-side: top; text-align: left; padding: .2rem 0 .3rem; font-size: .95rem; }

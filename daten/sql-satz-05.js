@@ -168,7 +168,7 @@
         'SELECT Vorname, Nachname, Name FROM Mitarbeiter CONNECT Abteilungen USING AbteilungNr'
       ],
       loesung: 2,
-      erklaerung: 'INNER JOIN ... ON verknüpft zwei Tabellen über eine gemeinsame Spalte. Ohne ON-Klausel (Option 1) entsteht ein kartesisches Produkt. LINK und CONNECT existieren nicht. Option 4 verwendet WHERE statt ON, was bei manchen DBMS funktioniert, aber nicht dem Standard-JOIN-Syntax entspricht.'
+      erklaerung: 'INNER JOIN ... ON verknüpft zwei Tabellen über eine gemeinsame Spalte. Ohne ON-Klausel (Option 1) entsteht ein kartesisches Produkt. LINK und CONNECT existieren nicht. Bei Option 4 fehlt nach JOIN die ON-Klausel – das ist in Standard-SQL ein Syntaxfehler, auch wenn einzelne Datenbanksysteme es zulassen.'
     },
 
     // 7 – Drei-Tabellen-JOIN

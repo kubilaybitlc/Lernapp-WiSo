@@ -12,6 +12,16 @@
   const PRUEFUNGSDAUER_MIN = 60;
   const BUCHSTABEN = 'abcdefghij';
 
+  // SQL-Aufgaben bekommen die Tabellen ihrer Situationen, damit Antworten durch Ausführen geprüft werden können
+  [].concat(SAETZE, EIGENE_IHK_SAETZE, SQL_SAETZE, IT_SAETZE).forEach(satz => {
+    satz.aufgaben.forEach(a => {
+      if (a.typ !== 'sql') return;
+      a.datenbank = (satz.situationen || [])
+        .filter(s => s.tabelle && s.tabelle.name && a.nr >= s.von && a.nr <= s.bis)
+        .map(s => s.tabelle);
+    });
+  });
+
   const S_NAME = 'wiso.name';
   const S_LAUFEND = 'wiso.laufend';
   const S_ERGEBNISSE = 'wiso.ergebnisse';
@@ -625,7 +635,8 @@
     const loesungHtml = a.typ === 'sql'
       ? `<code class="sql-code loesung">${esc(B.loesungText(a))}</code>`
       : `<span class="loesung">${esc(B.loesungText(a))}</span>`;
-    return `<div class="rueckmeldung ${klasse}"><p><strong>${titel}</strong> · Lösung: ${loesungHtml}</p>${a.erklaerung ? absaetze(a.erklaerung) : ''}</div>`;
+    const hinweis = ergebnis.hinweis && !ergebnis.leer ? `<p class="sql-hinweis">${esc(ergebnis.hinweis)}</p>` : '';
+    return `<div class="rueckmeldung ${klasse}"><p><strong>${titel}</strong> · Lösung: ${loesungHtml}</p>${hinweis}${a.erklaerung ? absaetze(a.erklaerung) : ''}</div>`;
   }
 
   function renderAufgabe(satz, a, opt) {

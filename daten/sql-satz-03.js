@@ -270,7 +270,7 @@
         "WHERE ISNULL(Rueckgabedatum)"
       ],
       loesung: 2,
-      erklaerung: 'NULL ist ein spezieller Wert in SQL, der „kein Wert vorhanden" bedeutet. Man prüft mit IS NULL (nicht mit = NULL), weil ein Vergleich mit = bei NULL immer UNKNOWN liefert, nicht TRUE.'
+      erklaerung: 'NULL ist ein spezieller Wert in SQL, der „kein Wert vorhanden" bedeutet. Man prüft mit IS NULL (nicht mit = NULL), weil ein Vergleich mit = bei NULL immer UNKNOWN liefert, nicht TRUE. == gibt es in SQL nicht, und ISNULL() ist keine Standard-SQL-Funktion (sie existiert nur in einzelnen Datenbanksystemen, dort mit unterschiedlicher Bedeutung).'
     },
     {
       nr: 14, thema: 'sql-where', typ: 'sql',
