@@ -31,5 +31,7 @@ window.WISO_THEMEN = {
   'sql-gruppierung': 'Gruppierung (GROUP BY / HAVING)',
   'sql-join': 'Tabellenverknüpfungen (JOIN)',
   'sql-dml': 'Datenmanipulation (INSERT, UPDATE, DELETE)',
-  'sql-unterabfragen': 'Unterabfragen (Subqueries)'
+  'sql-unterabfragen': 'Unterabfragen (Subqueries)',
+  'sql-ddl': 'Datendefinition (CREATE, ALTER, DROP)',
+  'sql-erweitert': 'Erweiterte Abfragen (UNION, CASE, Views)'
 };
