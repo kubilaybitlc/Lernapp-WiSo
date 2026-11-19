@@ -130,7 +130,7 @@
       text: 'Analysieren Sie den folgenden Pseudocode:',
       kasten: {
         titel: 'Pseudocode',
-        absaetze: [
+        code: [
           'x ← 0',
           'FÜR i ← 1 BIS 5',
           '    x ← x + i',
@@ -148,7 +148,7 @@
       text: 'Analysieren Sie den folgenden Pseudocode:',
       kasten: {
         titel: 'Pseudocode',
-        absaetze: [
+        code: [
           'zahl ← 7',
           'WENN zahl MOD 2 = 0 DANN',
           '    AUSGABE "gerade"',
@@ -174,7 +174,7 @@
       text: 'Analysieren Sie den folgenden Pseudocode:',
       kasten: {
         titel: 'Pseudocode',
-        absaetze: [
+        code: [
           'a ← 10',
           'b ← 3',
           'SOLANGE a > b',
@@ -193,7 +193,7 @@
       text: 'Analysieren Sie den folgenden Pseudocode:',
       kasten: {
         titel: 'Pseudocode',
-        absaetze: [
+        code: [
           'i ← 1',
           'WIEDERHOLE',
           '    AUSGABE i',
@@ -218,7 +218,7 @@
       text: 'Analysieren Sie den folgenden Pseudocode:',
       kasten: {
         titel: 'Pseudocode',
-        absaetze: [
+        code: [
           'ergebnis ← 1',
           'FÜR i ← 1 BIS 4',
           '    ergebnis ← ergebnis * i',
@@ -249,7 +249,7 @@
 
     // --- Algorithmen / Datenstrukturen (13–18) ---
     {
-      nr: 13, thema: 'programmierung', typ: 'zuordnung',
+      nr: 13, thema: 'datenstrukturen', typ: 'zuordnung',
       text: 'Im Team werden verschiedene Datenstrukturen und ihre typischen Einsatzbereiche besprochen.',
       frage: 'Welche Datenstruktur passt zur jeweiligen Beschreibung?',
       anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Datenstruktur in das Kästchen ein.',
@@ -313,7 +313,7 @@
       erklaerung: 'Bubblesort vergleicht benachbarte Elemente und tauscht sie bei falscher Reihenfolge. Durchlauf 1: [5,3,8,1] → [3,5,8,1] → [3,5,8,1] → [3,5,1,8]. Durchlauf 2: [3,5,1,8] → [3,5,1,8] → [3,1,5,8]. Durchlauf 3: [3,1,5,8] → [1,3,5,8]. Nach jedem Durchlauf „blubbert" das nächstgrößte Element an seine endgültige Position.'
     },
     {
-      nr: 17, thema: 'programmierung', typ: 'einfach',
+      nr: 17, thema: 'datenstrukturen', typ: 'einfach',
       text: 'Für eine Anwendung muss die passende Datenstruktur gewählt werden. Die Anforderung lautet: Daten sollen über einen eindeutigen Schlüssel (z. B. eine Kundennummer) in durchschnittlich konstanter Zeit gefunden werden.',
       frage: 'Welche Datenstruktur ist für diese Anforderung am besten geeignet?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Datenstruktur in das Kästchen ein.',
@@ -328,7 +328,7 @@
       erklaerung: 'Eine Hashtabelle (HashMap/Dictionary) speichert Schlüssel-Wert-Paare und ermöglicht den Zugriff über eine Hashfunktion in durchschnittlich O(1). Der Schlüssel wird durch die Hashfunktion auf einen Index im Array abgebildet. Bei Kollisionen kann die Zugriffszeit im Worst Case auf O(n) steigen.'
     },
     {
-      nr: 18, thema: 'programmierung', typ: 'mehrfach',
+      nr: 18, thema: 'datenstrukturen', typ: 'mehrfach',
       text: 'Ein Entwickler steht vor der Wahl zwischen einem Array und einer verketteten Liste.',
       frage: 'Bei welchen der folgenden Operationen ist ein Array einer einfach verketteten Liste überlegen?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Operationen in die Kästchen ein.',
@@ -345,7 +345,7 @@
 
     // --- Softwareentwicklung (19–25) ---
     {
-      nr: 19, thema: 'softwareentwicklung', typ: 'einfach',
+      nr: 19, thema: 'vorgehensmodelle', typ: 'einfach',
       text: 'Die Geschäftsführung möchte auf ein agiles Vorgehensmodell umstellen, bei dem in Zyklen von zwei bis vier Wochen ein funktionsfähiges Produktinkrement geliefert wird.',
       frage: 'Welches Vorgehensmodell wird beschrieben?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Vorgehensmodell in das Kästchen ein.',
@@ -411,7 +411,7 @@
       erklaerung: 'Beim Black-Box-Test (funktionaler Test) wird die Software nur anhand der Spezifikation geprüft, ohne den internen Aufbau zu kennen. Im Gegensatz dazu berücksichtigt der White-Box-Test (struktureller Test) die interne Struktur des Codes, z. B. Anweisungs- und Zweigüberdeckung.'
     },
     {
-      nr: 23, thema: 'softwareentwicklung', typ: 'reihenfolge',
+      nr: 23, thema: 'vorgehensmodelle', typ: 'reihenfolge',
       text: 'Ein neues Softwareprojekt soll nach dem klassischen Wasserfallmodell durchgeführt werden.',
       frage: 'Bringen Sie die Phasen des Wasserfallmodells in die richtige Reihenfolge.',
       anweisung: 'Tragen Sie für die erste Phase die Ziffer 1, für die zweite Phase die Ziffer 2 usw. in die entsprechenden Kästchen ein.',
@@ -426,7 +426,7 @@
       erklaerung: 'Das Wasserfallmodell durchläuft die Phasen streng sequenziell: 1. Anforderungsanalyse, 2. Entwurf (Design), 3. Implementierung, 4. Test (Verifikation), 5. Wartung (Betrieb). Ein Rücksprung in eine frühere Phase ist im klassischen Modell nicht vorgesehen, was als wesentlicher Nachteil gilt.'
     },
     {
-      nr: 24, thema: 'softwareentwicklung', typ: 'einfach',
+      nr: 24, thema: 'entwurfsmuster', typ: 'einfach',
       text: 'Bei der Entwicklung der Kundenverwaltung soll ein Entwurfsmuster verwendet werden, das sicherstellt, dass von einer Klasse „Datenbankverbindung" nur genau ein Objekt existiert.',
       frage: 'Welches Entwurfsmuster (Design Pattern) wird beschrieben?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Entwurfsmuster in das Kästchen ein.',

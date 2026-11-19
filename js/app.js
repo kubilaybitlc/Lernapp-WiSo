@@ -552,7 +552,9 @@
 
   function renderKasten(k) {
     const liste = k.liste ? `<ol class="kasten-liste">${k.liste.map(p => `<li>${fmt(p)}</li>`).join('')}</ol>` : '';
-    return `<div class="kasten-info"><h4>${esc(k.titel)}</h4>${absaetze(k.absaetze)}${liste}</div>`;
+    // `code` (Zeilen) für Pseudocode, JSON und XML: Festbreitenschrift, Einrückung bleibt erhalten
+    const code = k.code ? `<pre class="sql-code kasten-code">${esc([].concat(k.code).join('\n'))}</pre>` : '';
+    return `<div class="kasten-info"><h4>${esc(k.titel)}</h4>${absaetze(k.absaetze)}${code}${liste}</div>`;
   }
 
   function istAuswahl(a) {

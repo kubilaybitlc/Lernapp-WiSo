@@ -75,7 +75,7 @@ Aufgabentypen (`typ`):
 | `datum` | TT.MM.JJJJ | `'28.02.2027'` | global |
 
 Mit `bewertung: 'teil'` oder `'global'` lässt sich die Bewertung je Aufgabe überschreiben.
-Weitere Felder: `text`, `kasten` (z. B. Gesetzesauszug), `frage`, `anweisung`, `einleitung`, `optionen`, `optionenTitel`, `items`, `itemsTitel`, `erklaerung`. `**fett**` hebt Wörter wie „**nicht**“ hervor.
+Weitere Felder: `text`, `kasten` (z. B. Gesetzesauszug; mit `code: [Zeilen]` für Pseudocode, JSON oder XML in Festbreitenschrift), `frage`, `anweisung`, `einleitung`, `optionen`, `optionenTitel`, `items`, `itemsTitel`, `erklaerung`. `**fett**` hebt Wörter wie „**nicht**“ hervor.
 
 ## Urheberrecht
 

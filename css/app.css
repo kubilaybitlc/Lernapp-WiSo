@@ -396,6 +396,8 @@ button.option:focus-visible { outline: 3px solid #7fa7dc; outline-offset: 1px; }
   white-space: pre-wrap;
 }
 
+.kasten-code { display: block; margin: .3rem 0 0; padding: .5em .7em; line-height: 1.5; }
+
 .optionen.code-optionen li { align-items: stretch; }
 .optionen.code-optionen .sql-code { display: block; line-height: 1.5; }
 
