@@ -317,16 +317,21 @@
       erklaerung: 'CASE WHEN ... THEN ... ELSE ... END ist der Standard-SQL-Ausdruck für bedingte Werte. Die Bedingungen werden der Reihe nach geprüft; die erste zutreffende liefert das Ergebnis. IF/THEN, SWITCH und DECODE (Oracle-spezifisch) gehören nicht zum Searched-CASE-Standard.'
     },
 
-    // 17 – UNION
+    // 17 – Redundanz in Projekte und Abteilungen
     {
-      nr: 17, thema: 'sql-erweitert', typ: 'sql',
-      text: 'Es soll eine Liste aller Standorte aus der Tabelle „Abteilungen" und aller Kundenorte (Spalte Kunde) aus der Tabelle „Projekte" erstellt werden – ohne doppelte Einträge. Die Ergebnisspalte soll „Ort" heißen.',
-      frage: 'Schreiben Sie die passende SQL-Abfrage.',
-      loesung: "SELECT Standort AS Ort FROM Abteilungen UNION SELECT Kunde AS Ort FROM Projekte",
-      loesungVarianten: [
-        "SELECT Standort AS Ort FROM Abteilungen UNION DISTINCT SELECT Kunde AS Ort FROM Projekte"
+      nr: 17, thema: 'db-normalisierung', typ: 'mehrfach',
+      text: 'In der Tabelle „Projekte“ ist der Kunde als Text gespeichert, „Stadtwerke Köln“ steht dort zweimal. In der Tabelle „Abteilungen“ ist der Leiter nur mit seinem Nachnamen eingetragen.',
+      frage: 'Welche Aussagen zu diesem Datenbankentwurf treffen zu?',
+      anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Aussagen in die Kästchen ein.',
+      optionen: [
+        'Ändert die Stadtwerke Köln ihren Namen und wird nur eine Zeile in „Projekte“ angepasst, sind die Daten inkonsistent (Änderungsanomalie).',
+        'Die Kundennamen sollten in eine eigene Tabelle „Kunden“ ausgelagert und in „Projekte“ nur über eine KundenNr als Fremdschlüssel referenziert werden.',
+        'Der Leiter einer Abteilung ist eindeutig bestimmt, weil Nachnamen in einem Unternehmen nicht doppelt vorkommen können.',
+        'Redundante Kundennamen beschleunigen jede Abfrage und sind deshalb immer erwünscht.',
+        'Wird das Projekt P104 gelöscht, bleibt der Kunde „BioMarkt Heller“ weiterhin in der Datenbank gespeichert.'
       ],
-      erklaerung: 'UNION kombiniert die Ergebnisse zweier SELECT-Abfragen und entfernt dabei doppelte Zeilen automatisch. Beide SELECT-Abfragen müssen die gleiche Anzahl Spalten mit kompatiblen Datentypen haben. UNION ALL würde Duplikate beibehalten.'
+      loesung: [1, 2],
+      erklaerung: 'Steht derselbe Kunde in mehreren Zeilen, müssen bei einer Änderung alle Zeilen angepasst werden, sonst entstehen Widersprüche (Änderungsanomalie). Abhilfe ist eine Tabelle Kunden (KundenNr, Name, …) mit der KundenNr als Fremdschlüssel in „Projekte“. Aussage 3 ist falsch: Nachnamen sind nicht eindeutig, der Leiter sollte über die MitarbeiterNr als Fremdschlüssel eingetragen werden. Aussage 5 ist falsch: „BioMarkt Heller“ kommt nur in P104 vor, mit dem Löschen des Projekts gingen auch die Kundendaten verloren (Löschanomalie).'
     },
 
     // 18 – LIKE mit Muster

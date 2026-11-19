@@ -86,32 +86,29 @@
   ],
 
   aufgaben: [
-    // 1 – UNION vs UNION ALL
+    // 1 – Transitive Abhängigkeit erkennen
     {
-      nr: 1, thema: 'sql-erweitert', typ: 'einfach', codeOptionen: true,
-      text: 'Zwei SELECT-Abfragen sollen mit UNION kombiniert werden. Beide Abfragen liefern teilweise gleiche Zeilen.',
-      frage: 'Welche Aussage über den Unterschied zwischen UNION und UNION ALL ist korrekt?',
+      nr: 1, thema: 'db-normalisierung', typ: 'einfach',
+      text: 'In der Tabelle „Mitglieder“ (Primärschlüssel MitgliedNr) ist bei jedem Mitglied neben dem Tarif auch der monatliche Beitrag gespeichert. Der Beitrag ergibt sich allein aus dem Tarif.',
+      frage: 'Welche Aussage zur Tabelle „Mitglieder“ trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'UNION entfernt doppelte Zeilen, UNION ALL behält alle Zeilen einschließlich Duplikate',
-        'UNION ALL entfernt doppelte Zeilen, UNION behält alle Zeilen einschließlich Duplikate',
-        'UNION und UNION ALL liefern immer dasselbe Ergebnis',
-        'UNION verbindet Spalten, UNION ALL verbindet Zeilen',
-        'UNION ALL kann nur mit zwei Tabellen verwendet werden'
+        'Die Tabelle verletzt die 1. Normalform, weil die Spalte Beitrag Dezimalzahlen enthält.',
+        'Der Beitrag hängt nur über den Tarif von der MitgliedNr ab (transitive Abhängigkeit); die Tabelle verletzt die 3. Normalform.',
+        'Die Tabelle verletzt die 2. Normalform, weil der Beitrag nur von einem Teil des Primärschlüssels abhängt.',
+        'Die Tabelle ist redundanzfrei, weil jedes Mitglied nur einmal vorkommt.',
+        'Die Spalte Beitrag muss als Fremdschlüssel auf die Tabelle „Mitgliedschaften“ verweisen.'
       ],
-      loesung: 1,
-      erklaerung: 'UNION kombiniert die Ergebnisse zweier SELECT-Abfragen und entfernt dabei Duplikate. UNION ALL behält alle Zeilen, auch doppelte, und ist dadurch schneller, weil kein Duplikat-Check stattfindet.'
+      loesung: 2,
+      erklaerung: 'Es gilt MitgliedNr → Tarif und Tarif → Beitrag. Der Beitrag ist also transitiv vom Primärschlüssel abhängig, das verletzt die 3. Normalform. Folge: Der Beitrag je Tarif steht mehrfach in der Tabelle (Redundanz, z. B. 29,90 bei Stein und Berger). Lösung: eigene Tabelle Tarife (Tarif, Beitrag), in „Mitglieder“ bleibt nur der Tarif als Fremdschlüssel. Die 2. Normalform ist erfüllt, weil der Primärschlüssel nur aus einer Spalte besteht. Die 1. Normalform betrifft atomare Werte, nicht den Datentyp.'
     },
-    // 2 – UNION schreiben
+    // 2 – Änderungsanomalie vermeiden (UPDATE)
     {
-      nr: 2, thema: 'sql-erweitert', typ: 'sql',
-      text: 'Es soll eine gemeinsame Namensliste aller Trainer und aller Mitglieder erstellt werden. Die Liste soll die Spalten Vorname und Nachname enthalten, ohne doppelte Einträge.',
-      frage: 'Schreiben Sie die passende SQL-Abfrage.',
-      loesung: 'SELECT Vorname, Nachname FROM Trainer UNION SELECT Vorname, Nachname FROM Mitglieder',
-      loesungVarianten: [
-        'SELECT Vorname, Nachname FROM Mitglieder UNION SELECT Vorname, Nachname FROM Trainer'
-      ],
-      erklaerung: 'UNION kombiniert die Ergebnisse beider SELECT-Abfragen und entfernt Duplikate. Die Spaltenanzahl und die Datentypen beider Abfragen müssen übereinstimmen.'
+      nr: 2, thema: 'db-normalisierung', typ: 'sql',
+      text: 'Bis die Tabelle „Mitglieder“ normalisiert ist, wird der Beitrag weiterhin dort gespeichert. Der Beitrag des Tarifs Premium steigt auf 54,90 EUR. Damit keine Änderungsanomalie entsteht, muss der neue Beitrag bei allen Mitgliedern mit diesem Tarif gespeichert werden.',
+      frage: 'Schreiben Sie die passende SQL-Anweisung.',
+      loesung: "UPDATE Mitglieder SET Beitrag = 54.90 WHERE Tarif = 'Premium'",
+      erklaerung: 'Weil der Beitrag redundant bei jedem Mitglied steht, müssen alle Zeilen mit dem Tarif Premium geändert werden (hier Kraft und Scholz). Würde nur eine Zeile geändert, hätte derselbe Tarif zwei verschiedene Beiträge: Die Daten wären inkonsistent (Änderungsanomalie). Nach der Normalisierung mit einer Tabelle Tarife müsste nur noch eine einzige Zeile geändert werden.'
     },
     // 3 – CASE WHEN Syntax
     {
@@ -209,10 +206,10 @@
         'SELECT * FROM Mitglieder m WHERE NOT EXISTS (SELECT 1 FROM Buchungen b WHERE b.MitgliedNr = m.MitgliedNr)',
         'SELECT * FROM Mitglieder WHERE Buchungen IS NULL',
         'SELECT * FROM Mitglieder WHERE COUNT(Buchungen) = 0',
-        'SELECT * FROM Mitglieder EXCEPT Buchungen'
+        'SELECT * FROM Mitglieder WHERE MitgliedNr <> Buchungen.MitgliedNr'
       ],
       loesung: 2,
-      erklaerung: 'NOT EXISTS prüft, ob die korrelierte Unterabfrage keine Zeile liefert. Option 1 ist syntaktisch falsch (IN braucht eine Unterabfrage oder Werteliste). Option 3 prüft keine andere Tabelle. COUNT kann nicht direkt in WHERE stehen. EXCEPT vergleicht Ergebnismengen mit gleicher Struktur, nicht unterschiedliche Tabellen.'
+      erklaerung: 'NOT EXISTS prüft, ob die korrelierte Unterabfrage keine Zeile liefert. Option 1 ist syntaktisch falsch (IN braucht eine Unterabfrage oder Werteliste). Option 3 prüft keine andere Tabelle. COUNT kann nicht direkt in WHERE stehen. In Option 5 ist die Tabelle Buchungen gar nicht in FROM angegeben, ihre Spalten können deshalb nicht verwendet werden.'
     },
     // 10 – Korrelierte Unterabfrage schreiben
     {
@@ -237,7 +234,7 @@
         'Eine Tabelle wird mit einer exakten Kopie von sich selbst verknüpft, um Duplikate zu finden',
         'Eine Tabelle wird mit sich selbst verknüpft, indem sie über Aliase wie zwei verschiedene Tabellen behandelt wird',
         'Eine Abfrage wird automatisch wiederholt, bis keine neuen Ergebnisse mehr entstehen',
-        'Zwei identische Abfragen werden mit UNION verbunden',
+        'Zwei verschiedene Tabellen werden über Primär- und Fremdschlüssel verknüpft',
         'Eine View wird auf Basis derselben Tabelle erstellt'
       ],
       loesung: 2,

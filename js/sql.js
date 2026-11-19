@@ -144,16 +144,12 @@
       return a;
     }
 
-    // SELECT … [UNION …] [ORDER BY …] [LIMIT …]
+    // SELECT … [ORDER BY …] [OFFSET …] [FETCH …]
     function abfrage() {
-      let koerper = kern();
-      while (istWort('union', 'intersect', 'except', 'minus')) {
-        if (jetzt().k === 'minus') throw new SqlFehler(STD + 'MINUS gibt es nur in Oracle – in Standard-SQL heißt es EXCEPT.');
-        const art = jetzt().k;
-        p++;
-        let alle = false;
-        if (vielleicht('all')) alle = true; else vielleicht('distinct');
-        koerper = { art: 'mengenop', op: art, alle, links: koerper, rechts: kern() };
+      const koerper = kern();
+      // Mengenoperationen kommen in den IHK-Prüfungen nicht vor
+      if (istWort('union', 'intersect', 'except', 'minus')) {
+        throw new SqlFehler('Nicht im IHK-SQL: ' + jetzt().k.toUpperCase() + ' wird in der Prüfung nicht verwendet. Formuliere die Abfrage mit JOIN, IN/EXISTS oder OR.');
       }
       let sortierung = null;
       if (vielleicht('order')) {
@@ -1224,23 +1220,9 @@
 
   function werteKoerper(k, db, aussen) {
     if (k.art === 'select') return werteSelect(k, db, aussen);
-    if (k.art === 'klammer') {
-      const e = werteAbfrage(k.abfrage, db, aussen);
-      return { spalten: e.spalten, explizit: e.explizit, eintraege: e.zeilen.map(w => ({ werte: w, ktx: null })) };
-    }
-    const l = werteKoerper(k.links, db, aussen), r = werteKoerper(k.rechts, db, aussen);
-    if (l.spalten.length !== r.spalten.length) {
-      throw new SqlFehler('Bei ' + k.op.toUpperCase() + ' müssen beide Abfragen gleich viele Spalten liefern (' + l.spalten.length + ' und ' + r.spalten.length + ').');
-    }
-    const lw = l.eintraege.map(e => e.werte), rw = r.eintraege.map(e => e.werte);
-    let zeilen;
-    const einmalig = (liste) => { const g = new Set(); return liste.filter(w => { const s = zeilenSchluessel(w); if (g.has(s)) return false; g.add(s); return true; }); };
-    if (k.op === 'union') zeilen = k.alle ? lw.concat(rw) : einmalig(lw.concat(rw));
-    else {
-      const rs = new Set(rw.map(zeilenSchluessel));
-      zeilen = einmalig(lw).filter(w => (k.op === 'intersect') === rs.has(zeilenSchluessel(w)));
-    }
-    return { spalten: l.spalten, explizit: l.explizit, eintraege: zeilen.map(w => ({ werte: w, ktx: null })) };
+    // Geklammerte Abfrage
+    const e = werteAbfrage(k.abfrage, db, aussen);
+    return { spalten: e.spalten, explizit: e.explizit, eintraege: e.zeilen.map(w => ({ werte: w, ktx: null })) };
   }
 
   function werteAbfrage(q, db, aussen) {
@@ -1263,7 +1245,7 @@
           const i = labels.indexOf(a.name.toLowerCase());
           if (i >= 0 && labels.lastIndexOf(a.name.toLowerCase()) === i && (!e.ktx || k.explizit[i] || !e.ktx.bindungen.some(b => b.spalten.includes(a.name.toLowerCase())))) return e.werte[i];
         }
-        if (!e.ktx) throw new SqlFehler('Nach UNION kann nur über die Namen oder Nummern der Ergebnisspalten sortiert werden.');
+        if (!e.ktx) throw new SqlFehler('Nach einer geklammerten Abfrage kann nur über die Namen oder Nummern der Ergebnisspalten sortiert werden.');
         return werte(a, e.ktx);
       }));
       const index = eintraege.map((_, i) => i);

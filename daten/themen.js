@@ -33,7 +33,9 @@ window.WISO_THEMEN = {
   'sql-dml': 'Datenmanipulation (INSERT, UPDATE, DELETE)',
   'sql-unterabfragen': 'Unterabfragen (Subqueries)',
   'sql-ddl': 'Datendefinition (CREATE, ALTER, DROP)',
-  'sql-erweitert': 'Erweiterte Abfragen (UNION, CASE, Views)',
+  'sql-erweitert': 'Erweiterte Abfragen (CASE, Views)',
+  'db-normalisierung': 'Redundanz, Anomalien und Normalisierung',
+  'db-modell': 'Schlüssel und referentielle Integrität',
 
   // IT-Theorie
   'oop': 'Objektorientierte Programmierung (OOP)',
