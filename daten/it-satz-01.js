@@ -31,13 +31,13 @@
       nr: 1, thema: 'oop', typ: 'einfach',
       text: 'Die Klasse „Kunde" soll die Attribute kundenNr, name und adresse enthalten. Der direkte Zugriff auf die Attribute von außen soll verhindert werden; stattdessen sollen öffentliche Methoden den kontrollierten Zugriff ermöglichen.',
       frage: 'Welches Prinzip der objektorientierten Programmierung wird hier angewendet?',
-      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
+      anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Prinzip in das Kästchen ein.',
       optionen: [
-        'Vererbung – die Attribute werden aus einer Oberklasse übernommen.',
-        'Polymorphie – die Methoden verhalten sich je nach Kontext unterschiedlich.',
-        'Kapselung – die Attribute werden als privat deklariert und über Getter-/Setter-Methoden zugänglich gemacht.',
-        'Abstraktion – die Klasse wird als abstrakt deklariert und kann nicht instanziiert werden.',
-        'Komposition – die Klasse „Kunde" enthält Objekte anderer Klassen als Bestandteile.'
+        'Vererbung',
+        'Polymorphie',
+        'Kapselung',
+        'Abstraktion',
+        'Komposition'
       ],
       loesung: 3,
       erklaerung: 'Kapselung (Encapsulation) bedeutet, dass die internen Daten eines Objekts vor dem direkten Zugriff von außen geschützt werden. Die Attribute werden als privat (private) deklariert und der Zugriff erfolgt über öffentliche Getter- und Setter-Methoden. So kann die Klasse kontrollieren, welche Werte gesetzt werden (z. B. Validierung).'
@@ -46,13 +46,13 @@
       nr: 2, thema: 'oop', typ: 'einfach',
       text: '„Privatkunde" und „Geschaeftskunde" erben von „Kunde". Beide Unterklassen überschreiben die Methode berechneRabatt(): Ein Privatkunde erhält 5 % Rabatt, ein Geschäftskunde 15 %. In einer Liste vom Typ „Kunde" befinden sich sowohl Privat- als auch Geschäftskunden. Beim Durchlaufen der Liste wird für jedes Objekt berechneRabatt() aufgerufen.',
       frage: 'Welches OOP-Prinzip sorgt dafür, dass zur Laufzeit die jeweils passende Methode aufgerufen wird?',
-      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
+      anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Prinzip in das Kästchen ein.',
       optionen: [
-        'Kapselung – die Methode ist nur innerhalb der jeweiligen Klasse sichtbar.',
-        'Polymorphie – die aufgerufene Methode wird erst zur Laufzeit anhand des tatsächlichen Objekttyps bestimmt.',
-        'Abstraktion – die Methode existiert nur als Platzhalter ohne Implementierung.',
-        'Vererbung – die Methode wird unverändert aus der Oberklasse übernommen.',
-        'Komposition – die Methode wird an ein eingebettetes Objekt delegiert.'
+        'Kapselung',
+        'Polymorphie',
+        'Abstraktion',
+        'Vererbung',
+        'Komposition'
       ],
       loesung: 2,
       erklaerung: 'Polymorphie (griech. Vielgestaltigkeit) ermöglicht, dass eine Methode in verschiedenen Unterklassen unterschiedlich implementiert wird. Beim Aufruf über eine Referenz vom Typ der Oberklasse wird zur Laufzeit (dynamische Bindung/Late Binding) die Methode des tatsächlichen Objekttyps ausgeführt.'
@@ -84,14 +84,14 @@
       frage: 'Wie wird diese Beziehung in der objektorientierten Modellierung bezeichnet?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Bezeichnung in das Kästchen ein.',
       optionen: [
-        'Vererbung – „Adresse" erbt von „Kunde".',
-        'Assoziation – „Kunde" kennt „Adresse", beide existieren unabhängig voneinander.',
-        'Aggregation – „Kunde" enthält „Adresse", die Adresse kann ohne den Kunden weiterexistieren.',
-        'Komposition – „Kunde" enthält „Adresse", die Adresse existiert nicht ohne den Kunden.',
-        'Implementierung – „Kunde" implementiert die Schnittstelle „Adresse".'
+        'Vererbung',
+        'Assoziation',
+        'Aggregation',
+        'Komposition',
+        'Implementierung'
       ],
       loesung: 4,
-      erklaerung: 'Komposition ist eine starke Form der Aggregation: Das Teilelement (Adresse) ist existenzabhängig vom Ganzen (Kunde). Wird das Kundenobjekt gelöscht, wird auch das Adressobjekt gelöscht. In UML wird die Komposition durch eine ausgefüllte Raute dargestellt.'
+      erklaerung: 'Komposition ist eine starke Form der Aggregation: Das Teilelement (Adresse) ist existenzabhängig vom Ganzen (Kunde). Wird das Kundenobjekt gelöscht, wird auch das Adressobjekt gelöscht. In UML wird die Komposition durch eine ausgefüllte Raute dargestellt. Bei der Aggregation (leere Raute) kann das Teil ohne das Ganze weiterexistieren, bei der einfachen Assoziation kennen sich die Objekte nur und bestehen unabhängig voneinander.'
     },
     {
       nr: 5, thema: 'oop', typ: 'mehrfach',
@@ -100,7 +100,7 @@
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Aussagen in die Kästchen ein.',
       optionen: [
         'Von einer abstrakten Klasse können direkt Objekte erzeugt werden.',
-        'Eine abstrakte Klasse kann abstrakte Methoden enthalten, die in Unterklassen implementiert werden müssen.',
+        'Eine abstrakte Klasse kann abstrakte, in Unterklassen zu implementierende Methoden enthalten.',
         'Abstrakte Klassen dürfen keine konkreten (implementierten) Methoden enthalten.',
         'Eine abstrakte Klasse kann als gemeinsame Basis für Unterklassen dienen und gemeinsame Attribute definieren.',
         'Abstrakte Klassen können nicht vererbt werden.'
@@ -116,7 +116,7 @@
       optionen: [
         'Ein Interface kann Attribute mit Standardwerten und fertig implementierte Methoden enthalten.',
         'Eine Klasse kann nur ein einziges Interface implementieren.',
-        'Ein Interface definiert Methodensignaturen, die von implementierenden Klassen bereitgestellt werden müssen.',
+        'Ein Interface definiert Methodensignaturen für die implementierenden Klassen.',
         'Interfaces werden nur zur Dokumentation verwendet und haben keinen Einfluss auf den Programmcode.',
         'Interfaces ersetzen die Vererbung vollständig und machen Oberklassen überflüssig.'
       ],
@@ -163,7 +163,7 @@
         '"gerade"',
         '"ungerade"',
         '"7"',
-        'Es erfolgt keine Ausgabe, weil die Bedingung einen Fehler verursacht.',
+        'Es erfolgt keine Ausgabe (Fehler in der Bedingung).',
         '"gerade" und "ungerade" nacheinander'
       ],
       loesung: 2,
@@ -255,19 +255,19 @@
       anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Datenstruktur in das Kästchen ein.',
       optionenTitel: 'Datenstrukturen',
       optionen: [
-        'Array (Feld)',
-        'Stack (Stapel)',
-        'Queue (Warteschlange)',
+        'Array',
+        'Stack',
+        'Queue',
         'Verkettete Liste'
       ],
       itemsTitel: 'Beschreibungen',
       items: [
-        { text: 'Elemente werden nach dem Prinzip „First In – First Out" verarbeitet, z. B. Druckaufträge in einer Druckerwarteschlange.', loesung: 3 },
+        { text: 'Elemente werden nach dem Prinzip „First In – First Out" verarbeitet, z. B. Druckaufträge, die ein Drucker nacheinander abarbeitet.', loesung: 3 },
         { text: 'Elemente werden nach dem Prinzip „Last In – First Out" verarbeitet, z. B. der Zurück-Button im Browser.', loesung: 2 },
         { text: 'Elemente werden über einen ganzzahligen Index direkt angesprochen; die Größe steht bei der Erzeugung fest.', loesung: 1 },
         { text: 'Jedes Element verweist auf das nächste; das Einfügen und Löschen an beliebiger Stelle ist effizient.', loesung: 4 }
       ],
-      erklaerung: 'Stack (LIFO): der Zurück-Button speichert Seiten auf einem Stapel. Queue (FIFO): Druckaufträge werden in Reihenfolge abgearbeitet. Array: feste Größe, Direktzugriff über Index in O(1). Verkettete Liste: dynamische Größe, Einfügen/Löschen in O(1) an bekannter Position, aber Suche in O(n).'
+      erklaerung: 'Stack (Stapel, LIFO): der Zurück-Button speichert Seiten auf einem Stapel. Queue (Warteschlange, FIFO): Druckaufträge werden in Reihenfolge abgearbeitet. Array (Feld): feste Größe, Direktzugriff über Index in O(1). Verkettete Liste: dynamische Größe, Einfügen/Löschen in O(1) an bekannter Position, aber Suche in O(n).'
     },
     {
       nr: 14, thema: 'programmierung', typ: 'einfach',
@@ -306,9 +306,9 @@
       anweisung: 'Tragen Sie für den ersten Zustand die Ziffer 1, für den zweiten Zustand die Ziffer 2 usw. in die entsprechenden Kästchen ein.',
       itemsTitel: 'Array-Zustände nach Durchlauf',
       items: [
-        { text: '[1, 3, 5, 8] – das Array ist vollständig sortiert', loesung: 3 },
-        { text: '[3, 5, 1, 8] – das größte Element steht am Ende', loesung: 1 },
-        { text: '[3, 1, 5, 8] – die zwei größten Elemente stehen am Ende', loesung: 2 }
+        { text: '[1, 3, 5, 8]', loesung: 3 },
+        { text: '[3, 5, 1, 8]', loesung: 1 },
+        { text: '[3, 1, 5, 8]', loesung: 2 }
       ],
       erklaerung: 'Bubblesort vergleicht benachbarte Elemente und tauscht sie bei falscher Reihenfolge. Durchlauf 1: [5,3,8,1] → [3,5,8,1] → [3,5,8,1] → [3,5,1,8]. Durchlauf 2: [3,5,1,8] → [3,5,1,8] → [3,1,5,8]. Durchlauf 3: [3,1,5,8] → [1,3,5,8]. Nach jedem Durchlauf „blubbert" das nächstgrößte Element an seine endgültige Position.'
     },
@@ -318,14 +318,14 @@
       frage: 'Welche Datenstruktur ist für diese Anforderung am besten geeignet?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Datenstruktur in das Kästchen ein.',
       optionen: [
-        'Sortiertes Array – Suche in O(log n)',
-        'Einfach verkettete Liste – Suche in O(n)',
-        'Hashtabelle (HashMap) – Suche im Durchschnitt in O(1)',
-        'Binärer Suchbaum – Suche in O(log n)',
-        'Stack – Zugriff nur auf das oberste Element'
+        'Sortiertes Array',
+        'Einfach verkettete Liste',
+        'Hashtabelle',
+        'Binärer Suchbaum',
+        'Stack'
       ],
       loesung: 3,
-      erklaerung: 'Eine Hashtabelle (HashMap/Dictionary) speichert Schlüssel-Wert-Paare und ermöglicht den Zugriff über eine Hashfunktion in durchschnittlich O(1). Der Schlüssel wird durch die Hashfunktion auf einen Index im Array abgebildet. Bei Kollisionen kann die Zugriffszeit im Worst Case auf O(n) steigen.'
+      erklaerung: 'Eine Hashtabelle (HashMap/Dictionary) speichert Schlüssel-Wert-Paare und ermöglicht den Zugriff über eine Hashfunktion in durchschnittlich O(1). Der Schlüssel wird durch die Hashfunktion auf einen Index im Array abgebildet. Bei Kollisionen kann die Zugriffszeit im Worst Case auf O(n) steigen. Zum Vergleich: Suche im sortierten Array und im ausgeglichenen binären Suchbaum in O(log n), in der verketteten Liste in O(n); ein Stack erlaubt nur den Zugriff auf das oberste Element.'
     },
     {
       nr: 18, thema: 'datenstrukturen', typ: 'mehrfach',
@@ -337,7 +337,7 @@
         'Zugriff auf ein Element an einer bestimmten Position (Index)',
         'Löschen eines Elements aus der Mitte der Datenstruktur',
         'Zugriff auf das letzte Element über den Index',
-        'Einfügen eines Elements an einer beliebigen Stelle, wenn die Position bereits bekannt ist'
+        'Einfügen eines Elements an einer beliebigen, bereits bekannten Stelle'
       ],
       loesung: [2, 4],
       erklaerung: 'Arrays ermöglichen den Direktzugriff über den Index in O(1) – sowohl auf beliebige als auch auf das letzte Element. Verkettete Listen müssen für den Zugriff auf ein Element an Position n alle vorherigen Elemente durchlaufen (O(n)). Dafür ist das Einfügen und Löschen an bekannter Position in verketteten Listen effizienter (O(1) bei bekanntem Vorgänger).'
@@ -401,14 +401,14 @@
       frage: 'Wie wird dieses Testverfahren bezeichnet?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Bezeichnung in das Kästchen ein.',
       optionen: [
-        'White-Box-Test – der interne Code wird analysiert.',
-        'Black-Box-Test – die Funktion wird nur anhand ihrer Ein- und Ausgaben getestet.',
-        'Regressionstest – es wird geprüft, ob bestehende Funktionen nach einer Änderung noch korrekt arbeiten.',
-        'Lasttest – es wird geprüft, wie sich das System unter hoher Belastung verhält.',
-        'Code-Review – der Quellcode wird von einem anderen Entwickler überprüft.'
+        'White-Box-Test',
+        'Black-Box-Test',
+        'Regressionstest',
+        'Lasttest',
+        'Code-Review'
       ],
       loesung: 2,
-      erklaerung: 'Beim Black-Box-Test (funktionaler Test) wird die Software nur anhand der Spezifikation geprüft, ohne den internen Aufbau zu kennen. Im Gegensatz dazu berücksichtigt der White-Box-Test (struktureller Test) die interne Struktur des Codes, z. B. Anweisungs- und Zweigüberdeckung.'
+      erklaerung: 'Beim Black-Box-Test (funktionaler Test) wird die Software nur anhand der Spezifikation geprüft, ohne den internen Aufbau zu kennen. Im Gegensatz dazu berücksichtigt der White-Box-Test (struktureller Test) die interne Struktur des Codes, z. B. Anweisungs- und Zweigüberdeckung. Ein Regressionstest prüft nach einer Änderung, ob bestehende Funktionen weiterhin korrekt arbeiten; ein Lasttest prüft das Verhalten unter hoher Belastung; beim Code-Review liest ein anderer Entwickler den Quellcode.'
     },
     {
       nr: 23, thema: 'vorgehensmodelle', typ: 'reihenfolge',
@@ -417,13 +417,13 @@
       anweisung: 'Tragen Sie für die erste Phase die Ziffer 1, für die zweite Phase die Ziffer 2 usw. in die entsprechenden Kästchen ein.',
       itemsTitel: 'Phasen',
       items: [
-        { text: 'Implementierung – das System wird programmiert', loesung: 3 },
-        { text: 'Anforderungsanalyse – die Anforderungen an das System werden erfasst und dokumentiert', loesung: 1 },
-        { text: 'Wartung – das System wird im Betrieb gepflegt und weiterentwickelt', loesung: 5 },
-        { text: 'Test – das System wird gegen die Anforderungen geprüft', loesung: 4 },
-        { text: 'Entwurf – die Architektur und das Design des Systems werden festgelegt', loesung: 2 }
+        { text: 'Implementierung', loesung: 3 },
+        { text: 'Anforderungsanalyse', loesung: 1 },
+        { text: 'Wartung', loesung: 5 },
+        { text: 'Test', loesung: 4 },
+        { text: 'Entwurf', loesung: 2 }
       ],
-      erklaerung: 'Das Wasserfallmodell durchläuft die Phasen streng sequenziell: 1. Anforderungsanalyse, 2. Entwurf (Design), 3. Implementierung, 4. Test (Verifikation), 5. Wartung (Betrieb). Ein Rücksprung in eine frühere Phase ist im klassischen Modell nicht vorgesehen, was als wesentlicher Nachteil gilt.'
+      erklaerung: 'Das Wasserfallmodell durchläuft die Phasen streng sequenziell: 1. Anforderungsanalyse (Anforderungen an das System erfassen und dokumentieren), 2. Entwurf (Architektur und Design festlegen), 3. Implementierung (Programmierung), 4. Test (Prüfung gegen die Anforderungen), 5. Wartung (Pflege und Weiterentwicklung im Betrieb). Ein Rücksprung in eine frühere Phase ist im klassischen Modell nicht vorgesehen, was als wesentlicher Nachteil gilt.'
     },
     {
       nr: 24, thema: 'entwurfsmuster', typ: 'einfach',
@@ -431,14 +431,14 @@
       frage: 'Welches Entwurfsmuster (Design Pattern) wird beschrieben?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Entwurfsmuster in das Kästchen ein.',
       optionen: [
-        'Observer (Beobachter)',
-        'Singleton (Einzelstück)',
-        'Factory (Fabrik)',
+        'Observer',
+        'Singleton',
+        'Factory',
         'Adapter',
-        'Strategy (Strategie)'
+        'Strategy'
       ],
       loesung: 2,
-      erklaerung: 'Das Singleton-Muster stellt sicher, dass von einer Klasse nur genau eine Instanz existiert und bietet einen globalen Zugriffspunkt darauf. Typischer Einsatz: Datenbankverbindungen, Konfigurationsmanager, Logger. Der Konstruktor wird als privat deklariert und der Zugriff erfolgt über eine statische Methode.'
+      erklaerung: 'Das Singleton-Muster (Einzelstück) stellt sicher, dass von einer Klasse nur genau eine Instanz existiert und bietet einen globalen Zugriffspunkt darauf. Typischer Einsatz: Datenbankverbindungen, Konfigurationsmanager, Logger. Der Konstruktor wird als privat deklariert und der Zugriff erfolgt über eine statische Methode.'
     },
     {
       nr: 25, thema: 'softwareentwicklung', typ: 'einfach',

@@ -123,7 +123,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Bis zu diesem Betrag werden Rentenbeiträge erhoben.',
-        'Wer darüber verdient, kann sich privat krankenversichern.',
+        'Darüber ist eine private Krankenversicherung möglich.',
         'Darüber wird kein Arbeitslosengeld gezahlt.',
         'Darüber entfällt die Lohnsteuer.',
         'Bis dahin zahlt der Arbeitgeber alle Beiträge.'
@@ -222,7 +222,7 @@
       optionen: [
         'Eine Woche',
         'Zwei Wochen',
-        'Drei Wochen nach Zugang der Kündigung',
+        'Drei Wochen',
         'Ein Monat',
         'Drei Monate'
       ],
@@ -264,8 +264,8 @@
       optionenTitel: 'Zuordnungen',
       optionen: [
         'Informationsrecht',
-        'Mitwirkungsrecht (Beratung/Anhörung/Widerspruch)',
-        'Echtes Mitbestimmungsrecht (Zustimmung nötig)'
+        'Mitwirkungsrecht',
+        'Echtes Mitbestimmungsrecht'
       ],
       itemsTitel: 'Sachverhalte',
       items: [
@@ -274,7 +274,7 @@
         { text: 'Ordentliche Kündigung eines Mitarbeiters', loesung: 2 },
         { text: 'Regelung der Pausenzeiten', loesung: 3 }
       ],
-      erklaerung: '§ 87 BetrVG (echte Mitbestimmung): z. B. Zeiterfassung (technische Überwachung) und Pausenregelung – ohne Zustimmung des BR darf der AG nicht handeln. § 90 BetrVG (Informationsrecht): bei Bauvorhaben muss der AG den BR nur unterrichten. § 102 BetrVG (Mitwirkung): vor jeder ordentlichen Kündigung muss der BR angehört werden, kann aber nur widersprechen, nicht verhindern.'
+      erklaerung: '§ 87 BetrVG (echte Mitbestimmung): z. B. Zeiterfassung (technische Überwachung) und Pausenregelung – ohne Zustimmung des BR darf der AG nicht handeln. § 90 BetrVG (Informationsrecht): bei Bauvorhaben muss der AG den BR nur unterrichten. § 102 BetrVG (Mitwirkung): vor jeder ordentlichen Kündigung muss der BR angehört werden, kann aber nur widersprechen, nicht verhindern. Mitwirkungsrechte umfassen Beratung, Anhörung und Widerspruch.'
     },
     {
       nr: 21, thema: 'mitbestimmung', typ: 'einfach',
@@ -296,7 +296,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Ein Gremium der BITLC',
-        'Ein Ausschuss, der in Unternehmen mit mehr als 100 Arbeitnehmern wirtschaftliche Angelegenheiten mit dem Unternehmer berät',
+        'Ein Ausschuss zur Beratung wirtschaftlicher Angelegenheiten in Unternehmen mit mehr als 100 Arbeitnehmern',
         'Die Tarifkommission der Gewerkschaft',
         'Der Aufsichtsrat einer GmbH',
         'Ein Schlichtungsgremium bei Tarifkonflikten'
@@ -310,7 +310,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Ein unbefristeter Streik nach Urabstimmung',
-        'Ein kurzer Streik während laufender Verhandlungen nach Ende der Friedenspflicht, um Druck aufzubauen',
+        'Ein kurzer Streik als Druckmittel während laufender Verhandlungen nach Ende der Friedenspflicht',
         'Ein Streik ohne Gewerkschaft',
         'Eine Aussperrung durch den Arbeitgeber',
         'Ein Streik während der Laufzeit des Tarifvertrags'
@@ -325,12 +325,12 @@
       optionen: [
         'Mindestens 25 %',
         'Mehr als 50 %',
-        'Mindestens 75 % der abstimmenden Mitglieder',
+        'Mindestens 75 %',
         '100 %',
         'Keine Urabstimmung nötig'
       ],
       loesung: 3,
-      erklaerung: 'Die Urabstimmung ist eine Abstimmung unter allen Gewerkschaftsmitgliedern im betroffenen Tarifgebiet. Nach den Satzungen der meisten Gewerkschaften sind mindestens 75 % Zustimmung nötig, um zum unbefristeten Erzwingungsstreik aufzurufen. Zur Beendigung des Streiks und Annahme eines Verhandlungsergebnisses reichen meist 25 %. Die Urabstimmung ist gesetzlich nicht geregelt, sondern folgt der jeweiligen Gewerkschaftssatzung.'
+      erklaerung: 'Die Urabstimmung ist eine Abstimmung unter allen Gewerkschaftsmitgliedern im betroffenen Tarifgebiet. Nach den Satzungen der meisten Gewerkschaften sind mindestens 75 % Zustimmung der abstimmenden Mitglieder nötig, um zum unbefristeten Erzwingungsstreik aufzurufen. Zur Beendigung des Streiks und Annahme eines Verhandlungsergebnisses reichen meist 25 %. Die Urabstimmung ist gesetzlich nicht geregelt, sondern folgt der jeweiligen Gewerkschaftssatzung.'
     },
     {
       nr: 25, thema: 'tarifrecht', typ: 'einfach',
@@ -338,7 +338,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Für alle Arbeitnehmer in Deutschland',
-        'Für Mitglieder der Gewerkschaft, deren Arbeitgeber tarifgebunden ist',
+        'Für Gewerkschaftsmitglieder bei einem tarifgebundenen Arbeitgeber',
         'Nur für Auszubildende',
         'Nur für leitende Angestellte',
         'Für alle Arbeitnehmer der Branche'
@@ -374,7 +374,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Eine Personengesellschaft ohne Haftungsbeschränkung',
-        'Eine Variante der GmbH, die schon mit 1 € Stammkapital gegründet werden kann und 25 % des Gewinns zurücklegen muss',
+        'Eine Variante der GmbH mit Stammkapital ab 1 € und Pflichtrücklage von 25 % des Gewinns',
         'Eine Unterform der AG',
         'Ein eingetragener Verein',
         'Eine Genossenschaft'
@@ -449,7 +449,7 @@
       frage: 'Was beschreibt der Begriff „Inflation“?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'Ein anhaltender Anstieg des allgemeinen Preisniveaus – die Kaufkraft des Geldes sinkt',
+        'Ein anhaltender Anstieg des allgemeinen Preisniveaus',
         'Ein Rückgang des Preisniveaus',
         'Ein Anstieg der Arbeitslosigkeit',
         'Ein Rückgang des BIP',
@@ -506,7 +506,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Nur Name und Adresse',
-        'Alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen',
+        'Alle Informationen über eine identifizierte oder identifizierbare natürliche Person',
         'Nur Gesundheitsdaten',
         'Nur Daten von Kunden, nicht von Mitarbeitern',
         'Nur Daten in Papierform'
@@ -520,7 +520,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Ab 5 Mitarbeitern',
-        'Wenn mindestens 20 Personen ständig mit der automatisierten Verarbeitung personenbezogener Daten beschäftigt sind',
+        'Ab 20 ständig mit der automatisierten Verarbeitung personenbezogener Daten beschäftigten Personen',
         'Ab 100 Mitarbeitern',
         'Nur bei Aktiengesellschaften',
         'Nie, das ist freiwillig'
@@ -534,7 +534,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         '24 Stunden',
-        '72 Stunden nach Bekanntwerden',
+        '72 Stunden',
         'Eine Woche',
         'Ein Monat',
         'Keine Meldepflicht'
@@ -582,7 +582,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Lohnsteuer',
-        'Solidaritätszuschlag (falls fällig)',
+        'Solidaritätszuschlag (ggf.)',
         'Kirchensteuer (bei Mitgliedschaft)',
         'Sozialversicherungsbeiträge',
         'Vermögenswirksame Leistungen'

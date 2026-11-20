@@ -33,11 +33,11 @@
       frage: 'Welche der folgenden Aussagen zum Verhalten von Herrn Feltes trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Das Verhalten ist zulässig, weil Auszubildende nur an die Weisungen ihrer Ausbilderin gebunden sind.',
+        'Wegen der alleinigen Bindung an die Weisungen der Ausbilderin ist das Verhalten zulässig.',
         'Herr Feltes verletzt seine Pflicht zur Verschwiegenheit über Betriebs- und Geschäftsgeheimnisse.',
         'Die Pflicht zur Verschwiegenheit gilt erst nach bestandener Abschlussprüfung.',
         'Zur Verschwiegenheit sind nur die Gesellschafter der OHG verpflichtet, nicht die Beschäftigten.',
-        'Das Verhalten ist zulässig, weil das Forum nur von Privatpersonen genutzt wird.'
+        'In einem nur von Privatpersonen genutzten Forum ist das Verhalten zulässig.'
       ],
       loesung: 2,
       erklaerung: 'Auszubildende sind verpflichtet, über Betriebs- und Geschäftsgeheimnisse Stillschweigen zu wahren (§ 13 Satz 2 Nr. 6 BBiG). Die Pflicht gilt vom ersten Tag der Ausbildung an und auch für Geheimnisse von Kunden, die der Betrieb anvertraut bekommt. Verstöße können eine Abmahnung und in schweren Fällen eine Kündigung aus wichtigem Grund rechtfertigen (§ 22 Abs. 2 Nr. 1 BBiG). Bei Kundendaten ist zusätzlich der Datenschutz nach der DSGVO verletzt.'
@@ -48,9 +48,9 @@
       frage: 'Welche der folgenden Aussagen trifft nach dem Berufsbildungsgesetz zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Frau Junk muss Fachbuch und Lizenz selbst bezahlen, weil sie die Prüfung für sich selbst ablegt.',
+        'Frau Junk muss Fachbuch und Lizenz als Prüfungsteilnehmerin selbst bezahlen.',
         'Die Kosten werden zwischen Frau Junk und der Mosel Digital OHG je zur Hälfte geteilt.',
-        'Die OHG muss Fachbuch und Lizenz nur bezahlen, wenn Frau Junk minderjährig ist.',
+        'Die OHG muss Fachbuch und Lizenz nur bei minderjährigen Auszubildenden bezahlen.',
         'Die OHG muss Ausbildungsmittel wie Fachliteratur und Software kostenlos zur Verfügung stellen.',
         'Die Kosten trägt die Industrie- und Handelskammer als zuständige Stelle.'
       ],
@@ -63,10 +63,10 @@
       frage: 'Welche der folgenden Aussagen zu einer Kündigung des Berufsausbildungsverhältnisses trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Nach der Probezeit kann nur aus wichtigem Grund fristlos gekündigt werden; zuvor ist eine Abmahnung erforderlich.',
+        'Nach der Probezeit kann nur aus wichtigem Grund und nach vorheriger Abmahnung fristlos gekündigt werden.',
         'Nach der Probezeit kann die OHG jederzeit ordentlich mit einer Frist von vier Wochen kündigen.',
         'Nach der Probezeit ist eine Kündigung durch den Ausbildungsbetrieb in jedem Fall ausgeschlossen.',
-        'Die Kündigung ist wirksam, wenn Herr Lehnen sie Herrn Molitor mündlich mitteilt.',
+        'Die Kündigung ist bereits mit einer mündlichen Mitteilung an Herrn Molitor wirksam.',
         'Die Kündigung bedarf der Zustimmung der Berufsschule.'
       ],
       loesung: 1,
@@ -78,12 +78,12 @@
       frage: 'Welche der folgenden Rechte hat der Betriebsrat bei der betrieblichen Berufsbildung?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Rechten in die Kästchen ein.',
       optionen: [
-        'Er kann verlangen, dass der Arbeitgeber den Berufsbildungsbedarf ermittelt und mit ihm Fragen der Berufsbildung berät.',
-        'Er entscheidet allein, welche Beschäftigten an der Schulung teilnehmen.',
+        'Er kann vom Arbeitgeber die Ermittlung des Berufsbildungsbedarfs und die Beratung von Fragen der Berufsbildung verlangen.',
+        'Er entscheidet allein über die Teilnahme der Beschäftigten an der Schulung.',
         'Er hat bei der Durchführung von Maßnahmen der betrieblichen Berufsbildung mitzubestimmen.',
         'Er legt die Inhalte der Abschlussprüfungen der Auszubildenden fest.',
         'Er muss die Kosten der Schulungen aus eigenen Mitteln tragen.',
-        'Er hat kein Beteiligungsrecht, weil Schulungen eine rein unternehmerische Entscheidung sind.'
+        'Er hat bei Schulungen als rein unternehmerischer Entscheidung kein Beteiligungsrecht.'
       ],
       loesung: [1, 3],
       erklaerung: 'Auf Verlangen des Betriebsrats hat der Arbeitgeber den Berufsbildungsbedarf zu ermitteln und mit ihm Fragen der Berufsbildung zu beraten (§ 96 Abs. 1 BetrVG). Bei der Durchführung betrieblicher Bildungsmaßnahmen hat der Betriebsrat mitzubestimmen (§ 98 Abs. 1 BetrVG). Er kann Vorschläge für die Teilnahme machen; einigen sich Arbeitgeber und Betriebsrat nicht, entscheidet die Einigungsstelle (§ 98 Abs. 3 und 4 BetrVG). Ob eine Schulung stattfindet und wer sie bezahlt, entscheidet der Arbeitgeber. Die Abschlussprüfungen nimmt die BITLC ab.'
@@ -94,11 +94,11 @@
       frage: 'Welche der folgenden Aussagen trifft nach dem Betriebsverfassungsgesetz zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Betriebsratssitzungen sind öffentlich; alle Beschäftigten dürfen als Zuhörer teilnehmen.',
-        'Betriebsratssitzungen finden grundsätzlich nach Feierabend statt, damit die Arbeit nicht gestört wird.',
+        'Betriebsratssitzungen sind öffentlich und stehen allen Beschäftigten als Zuhörern offen.',
+        'Betriebsratssitzungen finden zur Vermeidung von Störungen der Arbeit grundsätzlich nach Feierabend statt.',
         'Betriebsratssitzungen sind nicht öffentlich und finden während der Arbeitszeit statt.',
         'Für den Besuch der Sprechstunde des Betriebsrats muss der Kollege Urlaub nehmen.',
-        'Ob Zuhörer an einer Betriebsratssitzung teilnehmen dürfen, entscheiden die Gesellschafter.'
+        'Über die Teilnahme von Zuhörern an einer Betriebsratssitzung entscheiden die Gesellschafter.'
       ],
       loesung: 3,
       erklaerung: 'Die Sitzungen des Betriebsrats finden in der Regel während der Arbeitszeit statt; der Arbeitgeber ist vorher zu verständigen, die Sitzungen sind nicht öffentlich (§ 30 BetrVG). Der Betriebsrat kann Sprechstunden während der Arbeitszeit einrichten (§ 39 Abs. 1 BetrVG). Versäumte Arbeitszeit für den Besuch der Sprechstunde oder eine sonstige Inanspruchnahme des Betriebsrats berechtigt nicht zur Minderung des Arbeitsentgelts (§ 39 Abs. 3 BetrVG).'
@@ -109,9 +109,9 @@
       frage: 'Welche der folgenden Aussagen zur Beteiligung des Betriebsrats an dieser Personalplanung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Betriebsrat muss jeder einzelnen Planungsentscheidung zustimmen, sonst ist sie unwirksam.',
-        'Die Personalplanung ist allein Sache der Gesellschafter; der Betriebsrat erfährt davon erst bei den Einstellungen.',
-        'Der Betriebsrat legt fest, wie viele Stellen geschaffen werden.',
+        'Jede einzelne Planungsentscheidung ist nur mit Zustimmung des Betriebsrats wirksam.',
+        'Der Betriebsrat erfährt von der Personalplanung der Gesellschafter erst bei den Einstellungen.',
+        'Der Betriebsrat legt die Zahl der neuen Stellen fest.',
         'Eine Unterrichtung des Betriebsrats ist erst in Unternehmen mit mehr als 500 Arbeitnehmern vorgeschrieben.',
         'Der Arbeitgeber muss den Betriebsrat rechtzeitig über die Personalplanung unterrichten und mit ihm beraten.'
       ],
@@ -128,7 +128,7 @@
         'Eine Kündigung ist frühestens nach sechs Wochen Arbeitsunfähigkeit erlaubt.',
         'Eine Kündigung während der Krankheit ist nur mit Zustimmung der Krankenkasse zulässig.',
         'Mit dem Zugang einer Kündigung während der Krankheit endet die Entgeltfortzahlung sofort.',
-        'Auch während einer Arbeitsunfähigkeit kann gekündigt werden; es gelten die üblichen Fristen und der Kündigungsschutz.'
+        'Auch während einer Arbeitsunfähigkeit kann nach den üblichen Regeln zu Fristen und Kündigungsschutz gekündigt werden.'
       ],
       loesung: 5,
       erklaerung: 'Ein gesetzliches Kündigungsverbot während einer Krankheit gibt es nicht. Es gelten die Kündigungsfristen (§ 622 BGB) und, bei mehr als zehn Arbeitnehmern und einem Arbeitsverhältnis von mehr als sechs Monaten, der Kündigungsschutz: Die Kündigung muss sozial gerechtfertigt sein (§§ 1, 23 KSchG). Eine krankheitsbedingte Kündigung setzt unter anderem eine negative Gesundheitsprognose voraus. Kündigt der Arbeitgeber aus Anlass der Arbeitsunfähigkeit, bleibt der Anspruch auf Entgeltfortzahlung bestehen (§ 8 Abs. 1 EFZG).'
@@ -140,10 +140,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Rückzahlungsvereinbarungen für Fortbildungskosten sind in Arbeitsverhältnissen grundsätzlich verboten.',
-        'Eine Rückzahlungsklausel ist zulässig, wenn die Bindungsdauer angemessen ist und sich der Betrag zeitanteilig verringert.',
-        'Die OHG darf die Rückzahlung für jeden Fall der Beendigung vereinbaren, auch wenn sie selbst betriebsbedingt kündigt.',
-        'Herr Kees muss die Kosten immer vollständig zurückzahlen, egal wann er kündigt.',
-        'Eine Rückzahlungspflicht entsteht kraft Gesetzes, auch wenn nichts vereinbart wurde.'
+        'Eine Rückzahlungsklausel ist bei angemessener Bindungsdauer und zeitanteiliger Verringerung des Betrags zulässig.',
+        'Die OHG darf die Rückzahlung für jeden Fall der Beendigung vereinbaren, auch für ihre eigene betriebsbedingte Kündigung.',
+        'Herr Kees muss die Kosten unabhängig vom Zeitpunkt seiner Kündigung immer vollständig zurückzahlen.',
+        'Eine Rückzahlungspflicht entsteht kraft Gesetzes auch ohne Vereinbarung.'
       ],
       loesung: 2,
       erklaerung: 'Nach der Rechtsprechung des Bundesarbeitsgerichts sind Rückzahlungsklauseln in Arbeitsverträgen nur wirksam, wenn sie Arbeitnehmer nicht unangemessen benachteiligen (§ 307 BGB): Die Fortbildung muss ihnen einen geldwerten Vorteil bringen, die Bindungsdauer muss im Verhältnis zur Dauer der Fortbildung angemessen sein (z. B. bei bis zu einem Jahr Fortbildung eine Bindung von bis zu drei Jahren), der Betrag muss sich zeitanteilig mindern, und bei einer vom Arbeitgeber veranlassten Beendigung darf keine Rückzahlung verlangt werden. Ohne Vereinbarung besteht keine Rückzahlungspflicht. In Ausbildungsverhältnissen sind solche Klauseln nichtig (§ 12 BBiG).'
@@ -154,9 +154,9 @@
       frage: 'Welche der folgenden Aussagen zur Vergütung für diesen Tag trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Herr Fuchs erhält keine Vergütung, weil er nicht gearbeitet hat; er muss für diesen Tag Urlaub nehmen.',
-        'Herr Fuchs behält seinen Vergütungsanspruch, weil er ohne eigenes Verschulden für kurze Zeit verhindert ist.',
-        'Herr Fuchs erhält die Vergütung nur, wenn seine Krankenkasse sie erstattet.',
+        'Herr Fuchs erhält ohne Arbeitsleistung keine Vergütung und muss für diesen Tag Urlaub nehmen.',
+        'Herr Fuchs behält wegen der kurzen, unverschuldeten Verhinderung seinen Vergütungsanspruch.',
+        'Herr Fuchs erhält die Vergütung nur bei Erstattung durch seine Krankenkasse.',
         'Herr Fuchs muss den Tag in der folgenden Woche unbezahlt nacharbeiten.',
         'Eine bezahlte Freistellung gibt es ausschließlich bei Krankheit.'
       ],
@@ -169,11 +169,11 @@
       frage: 'Welche der folgenden Aussagen trifft nach dem Mutterschutzgesetz zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Frau Bauer darf zehn Stunden täglich arbeiten, wenn sie schriftlich zustimmt.',
+        'Mit ihrer schriftlichen Zustimmung darf Frau Bauer zehn Stunden täglich arbeiten.',
         'Ein Verbot der Mehrarbeit gilt nur für Schwangere unter 18 Jahren.',
         'Frau Bauer darf nicht mehr als achteinhalb Stunden täglich oder 90 Stunden in der Doppelwoche beschäftigt werden.',
         'Das Mutterschutzgesetz gilt erst ab dem sechsten Schwangerschaftsmonat.',
-        'Mehrarbeit ist zulässig, wenn sie später durch Freizeit ausgeglichen wird.'
+        'Mehrarbeit ist bei späterem Ausgleich durch Freizeit zulässig.'
       ],
       loesung: 3,
       erklaerung: 'Eine schwangere oder stillende Frau, die 18 Jahre oder älter ist, darf nicht mit einer Arbeit beschäftigt werden, die über achteinhalb Stunden täglich oder über 90 Stunden in der Doppelwoche hinausgeht; bei unter 18-Jährigen gelten acht Stunden täglich und 80 Stunden in der Doppelwoche (§ 4 Abs. 1 MuSchG). Nach Beendigung der täglichen Arbeitszeit ist eine ununterbrochene Ruhezeit von mindestens elf Stunden zu gewähren (§ 4 Abs. 2 MuSchG). Das Gesetz gilt ab Beginn der Schwangerschaft; eine Zustimmung der Frau hebt das Mehrarbeitsverbot nicht auf.'
@@ -184,10 +184,10 @@
       frage: 'Welche der folgenden Aussagen zu Frau Wirtz als Ersthelferin trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Eine Fortbildung ist nicht nötig, die einmalige Ausbildung gilt für das gesamte Arbeitsleben.',
+        'Die einmalige Ausbildung gilt ohne Fortbildung für das gesamte Arbeitsleben.',
         'Frau Wirtz muss die Fortbildung in ihrer Freizeit und auf eigene Kosten besuchen.',
         'Eine Fortbildung ist nur alle zehn Jahre vorgeschrieben.',
-        'Frau Wirtz soll alle zwei Jahre fortgebildet werden; die Kosten trägt der Unfallversicherungsträger.',
+        'Frau Wirtz soll alle zwei Jahre auf Kosten des Unfallversicherungsträgers fortgebildet werden.',
         'Ersthelfer müssen erst in Betrieben mit mehr als 500 Beschäftigten bestellt werden.'
       ],
       loesung: 4,
@@ -215,9 +215,9 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Mit dem Ausscheiden endet seine Haftung für alle Verbindlichkeiten der OHG sofort.',
-        'Er haftet nach dem Ausscheiden auch für alle neuen Verträge, die die OHG später abschließt.',
+        'Er haftet nach dem Ausscheiden auch für alle späteren neuen Verträge der OHG.',
         'Er haftet nur noch bis zur Höhe seiner früheren Kapitaleinlage.',
-        'Für die bis zu seinem Ausscheiden begründeten Verbindlichkeiten haftet er noch fünf Jahre weiter (Nachhaftung).',
+        'Für die bis zu seinem Ausscheiden begründeten Verbindlichkeiten haftet er noch fünf Jahre weiter.',
         'Für die Leasingraten haften ausschließlich Frau Kirsten und Frau Bungert als Gesellschafterinnen.'
       ],
       loesung: 4,
@@ -230,10 +230,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Der Geschäftsführer muss ohne schuldhaftes Zögern, spätestens drei Wochen nach Eintritt der Zahlungsunfähigkeit, einen Insolvenzantrag stellen.',
-        'Der Insolvenzantrag ist freiwillig; der Geschäftsführer darf beliebig lange abwarten.',
+        'Der Geschäftsführer darf mit dem freiwilligen Insolvenzantrag beliebig lange abwarten.',
         'Den Insolvenzantrag muss die Industrie- und Handelskammer stellen.',
-        'Weil die Gesellschafter einer GmbH mit ihrem Privatvermögen haften, ist ein Insolvenzantrag nicht nötig.',
-        'Die Pflicht zum Insolvenzantrag entsteht erst, wenn alle Gläubiger zustimmen.'
+        'Wegen der Haftung der GmbH-Gesellschafter mit ihrem Privatvermögen ist ein Insolvenzantrag nicht nötig.',
+        'Die Pflicht zum Insolvenzantrag entsteht erst mit der Zustimmung aller Gläubiger.'
       ],
       loesung: 1,
       erklaerung: 'Wird eine juristische Person wie die GmbH zahlungsunfähig oder überschuldet, müssen die Mitglieder des Vertretungsorgans ohne schuldhaftes Zögern einen Insolvenzantrag stellen, spätestens drei Wochen nach Eintritt der Zahlungsunfähigkeit und sechs Wochen nach Eintritt der Überschuldung (§ 15a Abs. 1 InsO). Wer den Antrag nicht oder nicht rechtzeitig stellt, macht sich strafbar (Insolvenzverschleppung, § 15a Abs. 4 InsO). Auch Gläubiger können einen Antrag stellen (§ 14 InsO). Die Gesellschafter einer GmbH haften nicht mit ihrem Privatvermögen (§ 13 Abs. 2 GmbHG).'
@@ -247,7 +247,7 @@
         'Frau Haubrich muss sich selbst bei allen Sozialversicherungsträgern anmelden.',
         'Eine Anmeldung ist erst nach Ablauf der Probezeit erforderlich.',
         'Die Anmeldung erfolgt schriftlich beim Finanzamt.',
-        'Die OHG muss nur die Rentenversicherung informieren; die übrigen Träger erhalten keine Meldung.',
+        'Die OHG muss nur die Rentenversicherung informieren, nicht die übrigen Träger.',
         'Die OHG meldet Frau Haubrich elektronisch bei ihrer Krankenkasse an, spätestens sechs Wochen nach Beschäftigungsbeginn.'
       ],
       loesung: 5,
@@ -259,9 +259,9 @@
       frage: 'Welche der folgenden Aussagen zur sozialen Pflegeversicherung treffen zu?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Aussagen in die Kästchen ein.',
       optionen: [
-        'Pflegebedürftige werden in fünf Pflegegrade eingestuft; maßgeblich ist, wie stark ihre Selbstständigkeit beeinträchtigt ist.',
+        'Pflegebedürftige werden nach der Schwere der Beeinträchtigung ihrer Selbstständigkeit in fünf Pflegegrade eingestuft.',
         'Leistungen gibt es nur bei vollstationärer Pflege in einem Pflegeheim.',
-        'Wer zu Hause, z. B. von Angehörigen, gepflegt wird, kann ab Pflegegrad 2 Pflegegeld erhalten.',
+        'Bei häuslicher Pflege, z. B. durch Angehörige, gibt es ab Pflegegrad 2 Pflegegeld.',
         'Die Pflegeversicherung übernimmt immer sämtliche Pflegekosten in voller Höhe.',
         'Den Antrag auf Leistungen stellt der Arbeitgeber bei der Berufsgenossenschaft.',
         'Träger der Pflegeversicherung ist die Deutsche Rentenversicherung.'
@@ -271,19 +271,19 @@
     },
     {
       nr: 17, thema: 'umweltschutz', typ: 'mehrfach',
-      text: 'Die Mosel Digital OHG schafft 30 neue Notebooks an. Der Einkäufer Marco Thielen soll die Angebote nicht nur nach dem Kaufpreis vergleichen, sondern nach den Kosten und Umweltwirkungen über den gesamten Lebenszyklus.',
+      text: 'Die Mosel Digital OHG schafft 30 neue Notebooks an. Der Einkäufer Marco Thielen soll die Angebote nach den Kosten und Umweltwirkungen über den gesamten Lebenszyklus vergleichen.',
       frage: 'Welche der folgenden Kriterien gehören zu einer nachhaltigen Beschaffung, die die Lebenszykluskosten berücksichtigt?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Kriterien in die Kästchen ein.',
       optionen: [
         'Ausschließlich der niedrigste Kaufpreis',
         'Stromverbrauch während der gesamten Nutzungsdauer',
-        'Eine möglichst kurze Garantiezeit, damit schneller neue Geräte gekauft werden können',
+        'Eine möglichst kurze Garantiezeit für einen schnelleren Neukauf von Geräten',
         'Reparierbarkeit, Verfügbarkeit von Ersatzteilen und Rücknahme der Geräte am Ende der Nutzung',
-        'Die Farbe des Gehäuses',
+        'Eine möglichst kurze Lieferzeit',
         'Lieferung in möglichst großen Einwegverpackungen'
       ],
       loesung: [2, 4],
-      erklaerung: 'Die Lebenszykluskosten umfassen neben dem Kaufpreis die Kosten der Nutzung (z. B. Energie, Wartung, Reparatur) und der Entsorgung. Nachhaltige Beschaffung berücksichtigt außerdem die Umweltwirkungen: Ein geringer Stromverbrauch, eine lange Nutzungsdauer durch Reparierbarkeit und Ersatzteile sowie die Rücknahme und Verwertung der Altgeräte schonen Ressourcen. Das entspricht der Abfallhierarchie des Kreislaufwirtschaftsgesetzes, nach der Vermeidung und Wiederverwendung Vorrang haben (§ 6 KrWG).'
+      erklaerung: 'Die Lebenszykluskosten umfassen neben dem Kaufpreis die Kosten der Nutzung (z. B. Energie, Wartung, Reparatur) und der Entsorgung. Nachhaltige Beschaffung berücksichtigt außerdem die Umweltwirkungen: Ein geringer Stromverbrauch, eine lange Nutzungsdauer durch Reparierbarkeit und Ersatzteile sowie die Rücknahme und Verwertung der Altgeräte schonen Ressourcen. Das entspricht der Abfallhierarchie des Kreislaufwirtschaftsgesetzes, nach der Vermeidung und Wiederverwendung Vorrang haben (§ 6 KrWG). Die Lieferzeit ist zwar ein übliches Beschaffungskriterium, sagt aber nichts über Lebenszykluskosten oder Umweltwirkungen aus.'
     },
     {
       nr: 18, thema: 'umweltschutz', typ: 'einfach',
@@ -291,9 +291,9 @@
       frage: 'Welche der folgenden Aussagen zu dieser Maßnahme trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Maßnahme ist ökologisch sinnvoll, aber wirtschaftlich nachteilig, weil Videokonferenzen grundsätzlich teurer sind als Dienstreisen.',
-        'Die Maßnahme senkt die CO2-Emissionen und zugleich Reisekosten und Reisezeit; ökologisches und ökonomisches Ziel ergänzen sich.',
-        'Die Maßnahme hat keine Umweltwirkung, weil auch Videokonferenzen Strom verbrauchen.',
+        'Die Maßnahme ist ökologisch sinnvoll, aber wegen höherer Kosten von Videokonferenzen wirtschaftlich nachteilig.',
+        'Die Maßnahme senkt CO2-Emissionen, Reisekosten und Reisezeit und dient so ökologischen und ökonomischen Zielen zugleich.',
+        'Die Maßnahme hat wegen des Stromverbrauchs von Videokonferenzen keine Umweltwirkung.',
         'Die Maßnahme ist ausschließlich aus sozialen Gründen sinnvoll.',
         'Zwischen Umweltschutz und Kostensenkung besteht hier ein Zielkonflikt.'
       ],
@@ -308,7 +308,7 @@
       optionenTitel: 'Geltungsbereich',
       optionen: [
         'Räumlicher Geltungsbereich',
-        'Fachlicher (betrieblicher) Geltungsbereich',
+        'Fachlicher Geltungsbereich',
         'Persönlicher Geltungsbereich',
         'Zeitlicher Geltungsbereich'
       ],
@@ -342,11 +342,11 @@
       frage: 'Welche der folgenden Wirkungen ist auf diesem Markt zu erwarten?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Wirkung in das Kästchen ein.',
       optionen: [
-        'Die Angebotskurve verschiebt sich nach rechts; der Gleichgewichtspreis sinkt und die abgesetzte Menge steigt.',
-        'Die Nachfragekurve verschiebt sich nach rechts; Preis und Menge steigen.',
-        'Die Angebotskurve verschiebt sich nach links; der Gleichgewichtspreis steigt.',
-        'Der Gleichgewichtspreis steigt, die abgesetzte Menge sinkt.',
-        'Preis und Menge bleiben unverändert, weil sich die Nachfrage nicht ändert.'
+        'Rechtsverschiebung der Angebotskurve mit sinkendem Gleichgewichtspreis und steigender Absatzmenge',
+        'Rechtsverschiebung der Nachfragekurve mit steigendem Gleichgewichtspreis und steigender Absatzmenge',
+        'Linksverschiebung der Angebotskurve mit steigendem Gleichgewichtspreis',
+        'Steigender Gleichgewichtspreis bei sinkender Absatzmenge',
+        'Unveränderter Gleichgewichtspreis und unveränderte Absatzmenge wegen der gleichbleibenden Nachfrage'
       ],
       loesung: 1,
       erklaerung: 'Sinkende Kosten führen dazu, dass die Anbieter bei jedem Preis mehr anbieten: Die Angebotskurve verschiebt sich nach rechts. Bei unveränderter Nachfrage stellt sich ein neues Gleichgewicht mit einem niedrigeren Preis und einer höheren abgesetzten Menge ein (Preisbildung im Marktmodell). Eine Verschiebung der Nachfragekurve würde z. B. durch höhere Einkommen oder geänderte Wünsche der Kunden ausgelöst.'
@@ -357,10 +357,10 @@
       frage: 'Welche der folgenden Aussagen zur Beweislast trifft nach dem Allgemeinen Gleichbehandlungsgesetz (AGG) zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Herr Thewes muss die Benachteiligung vollständig beweisen; Indizien reichen nicht aus.',
-        'Die OHG muss beweisen, dass Herr Thewes ungeeignet ist, sonst muss sie ihn einstellen.',
+        'Herr Thewes muss die Benachteiligung über bloße Indizien hinaus vollständig beweisen.',
+        'Ohne Beweis der fehlenden Eignung von Herrn Thewes muss die OHG ihn einstellen.',
         'Bei Streitigkeiten nach dem AGG gibt es keine Regeln zur Beweislast.',
-        'Herr Thewes muss Indizien für eine Altersdiskriminierung vorbringen; die OHG muss dann das Gegenteil beweisen.',
+        'Bei Indizien für eine Altersdiskriminierung muss die OHG das Fehlen einer Benachteiligung beweisen.',
         'Die Beweislast trägt immer das Arbeitsgericht.'
       ],
       loesung: 4,
@@ -408,8 +408,8 @@
       optionen: [
         'Leichte körperliche Strafen sind bei Auszubildenden zu Erziehungszwecken erlaubt.',
         'Für den Schutz von Herrn Kremer sind allein seine Eltern zuständig.',
-        'Der Arbeitgeber muss erst eingreifen, wenn Herr Kremer Strafanzeige erstattet.',
-        'Wer Jugendliche beschäftigt, darf sie nicht körperlich züchtigen und muss sie vor Misshandlung schützen.',
+        'Der Arbeitgeber muss erst nach einer Strafanzeige von Herrn Kremer eingreifen.',
+        'Der Arbeitgeber darf Jugendliche nicht körperlich züchtigen und muss sie vor Misshandlung schützen.',
         'Das Jugendarbeitsschutzgesetz schützt Jugendliche nur während des Berufsschulunterrichts.'
       ],
       loesung: 4,
@@ -419,16 +419,16 @@
       nr: 26, thema: 'rechtsquellen', typ: 'einfach',
       text: 'Der Webdesigner Kai Rausch hat gegen seine Kündigung vor dem Arbeitsgericht Trier geklagt und sich dabei von einer Rechtsanwältin vertreten lassen. Er gewinnt den Prozess in der ersten Instanz.',
       frage: 'Wer trägt die Kosten seiner Rechtsanwältin?',
-      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'Die Mosel Digital OHG, weil sie den Prozess verloren hat',
-        'Die Staatskasse, weil Arbeitsgerichtsverfahren kostenlos sind',
+        'Die Mosel Digital OHG',
+        'Die Staatskasse',
         'Die Industrie- und Handelskammer',
         'Herr Rausch und die Mosel Digital OHG je zur Hälfte',
-        'Herr Rausch selbst, weil im ersten Rechtszug vor dem Arbeitsgericht keine Anwaltskosten erstattet werden'
+        'Herr Rausch selbst'
       ],
       loesung: 5,
-      erklaerung: 'Im Urteilsverfahren des ersten Rechtszugs vor dem Arbeitsgericht hat die obsiegende Partei keinen Anspruch auf Erstattung der Kosten für die Zuziehung eines Prozessbevollmächtigten (§ 12a Abs. 1 Satz 1 ArbGG). Jede Partei trägt ihre Anwaltskosten also selbst; darauf muss die Anwältin vor Abschluss der Vereinbarung hinweisen. Die Gerichtskosten trägt dagegen grundsätzlich die unterlegene Partei. Viele Beschäftigte nutzen den Rechtsschutz ihrer Gewerkschaft oder eine Rechtsschutzversicherung.'
+      erklaerung: 'Im Urteilsverfahren des ersten Rechtszugs vor dem Arbeitsgericht hat die obsiegende Partei keinen Anspruch auf Erstattung der Kosten für die Zuziehung eines Prozessbevollmächtigten (§ 12a Abs. 1 Satz 1 ArbGG). Jede Partei trägt ihre Anwaltskosten also selbst; darauf muss die Anwältin vor Abschluss der Vereinbarung hinweisen. Die Gerichtskosten trägt dagegen grundsätzlich die unterlegene Partei. Die Staatskasse übernimmt Anwaltskosten nur bei bewilligter Prozesskostenhilfe (§ 11a ArbGG). Viele Beschäftigte nutzen den Rechtsschutz ihrer Gewerkschaft oder eine Rechtsschutzversicherung.'
     },
     {
       nr: 27, thema: 'kennzahlen', typ: 'zahl',
@@ -445,7 +445,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die EZB muss Weisungen der Bundesregierung befolgen.',
-        'Vorrangiges Ziel der EZB ist die Preisstabilität; sie ist von Weisungen der Regierungen unabhängig.',
+        'Die EZB verfolgt unabhängig von Weisungen der Regierungen vorrangig das Ziel der Preisstabilität.',
         'Die EZB legt die Höhe der Einkommensteuer fest.',
         'Hauptziel der EZB ist ein möglichst hoher Wechselkurs des Euro.',
         'Die EZB darf den Mitgliedstaaten direkt Kredite für Straßenbauprojekte gewähren.'
@@ -459,11 +459,11 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die OHG muss die Einhaltung der Datenschutzgrundsätze nachweisen können; bei Verstößen drohen hohe Geldbußen.',
+        'Die OHG muss die Einhaltung der Datenschutzgrundsätze nachweisen können und riskiert bei Verstößen hohe Geldbußen.',
         'Bußgelder nach der DSGVO dürfen nur gegen Konzerne mit mehr als 1.000 Beschäftigten verhängt werden.',
-        'Die Aufsichtsbehörde darf nur tätig werden, wenn sich eine betroffene Person beschwert.',
+        'Die Aufsichtsbehörde darf nur auf Beschwerde einer betroffenen Person tätig werden.',
         'Die DSGVO sieht für Unternehmen keine Bußgelder vor, sondern nur Verwarnungen.',
-        'Die OHG muss nichts dokumentieren, weil die Aufsichtsbehörde einen Verstoß beweisen muss.'
+        'Die OHG muss wegen der Beweislast der Aufsichtsbehörde nichts dokumentieren.'
       ],
       loesung: 1,
       erklaerung: 'Der Verantwortliche ist für die Einhaltung der Grundsätze der Datenverarbeitung verantwortlich und muss sie nachweisen können (Rechenschaftspflicht, Art. 5 Abs. 2 DSGVO). Die Aufsichtsbehörde kann auch ohne Beschwerde Untersuchungen durchführen (Art. 58 Abs. 1 DSGVO). Bei Verstößen gegen die Grundsätze und die Rechtmäßigkeit der Verarbeitung (Art. 5, 6 DSGVO) drohen Geldbußen von bis zu 20 Mio. EUR oder bis zu 4 % des weltweiten Jahresumsatzes, je nachdem, welcher Betrag höher ist (Art. 83 Abs. 5 DSGVO).'
@@ -474,11 +474,11 @@
       frage: 'Welche der folgenden Aussagen zum DQR trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der DQR hat acht Niveaus; der Bachelor Professional steht auf Niveau 6 wie der Hochschul-Bachelor.',
+        'Der Bachelor Professional steht im achtstufigen DQR auf Niveau 6 wie der Hochschul-Bachelor.',
         'Der DQR gilt nur für Hochschulabschlüsse.',
         'Der Bachelor Professional ist im DQR niedriger eingeordnet als eine dreijährige Berufsausbildung.',
         'Der DQR ist ein Notensystem der BITLC für Abschlussprüfungen.',
-        'Eine Einordnung in den DQR gibt es nur für Abschlüsse, die im Ausland erworben wurden.'
+        'Eine Einordnung in den DQR gibt es nur für im Ausland erworbene Abschlüsse.'
       ],
       loesung: 1,
       erklaerung: 'Der Deutsche Qualifikationsrahmen ordnet Qualifikationen aus allen Bildungsbereichen acht Niveaus zu und ist mit dem Europäischen Qualifikationsrahmen (EQR) verknüpft. Eine dreijährige duale Berufsausbildung steht auf Niveau 4. Die drei Stufen der höherqualifizierenden Berufsbildung nach § 53a BBiG sind eingeordnet als Geprüfter Berufsspezialist (Niveau 5), Bachelor Professional (Niveau 6, gleichwertig mit dem Hochschul-Bachelor) und Master Professional (Niveau 7). So werden Abschlüsse national und europäisch vergleichbar.'

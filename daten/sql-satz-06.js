@@ -161,11 +161,11 @@
       frage: 'Welche Informationen gehen dadurch verloren?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Nur die Anmeldung, alle anderen Daten sind in weiteren Zeilen gespeichert.',
-        'Die Daten von Emma Wolf und der Bezahlstatus, das Seminar „IT-Sicherheit“ bleibt erhalten.',
+        'Nur die Anmeldung, keine weiteren Daten.',
+        'Die Daten von Emma Wolf und der Bezahlstatus, nicht aber das Seminar „IT-Sicherheit“.',
         'Die Daten von Emma Wolf, der Codehaus KG, des Seminars „IT-Sicherheit“ und des Dozenten Brandt.',
-        'Alle Seminare, die der Dozent Brandt hält, und alle Teilnehmer aus Bonn.',
-        'Es gehen keine Informationen verloren, weil SQL gelöschte Zeilen automatisch archiviert.'
+        'Alle Seminare des Dozenten Brandt und alle Teilnehmer aus Bonn.',
+        'Keine Informationen wegen der automatischen Archivierung gelöschter Zeilen durch SQL.'
       ],
       loesung: 3,
       erklaerung: 'Emma Wolf, die Codehaus KG (Bonn), das Seminar 13 „IT-Sicherheit“ (990,00 EUR) und der Dozent 3 Brandt kommen nur in dieser einen Zeile vor. Mit der Zeile verschwinden alle diese Informationen. Das ist eine Löschanomalie. In normalisierten Tabellen wird nur die Zeile in „Anmeldungen“ gelöscht, Seminar, Dozent und Firma bleiben erhalten.'
@@ -177,11 +177,11 @@
       frage: 'Warum reicht die TeilnehmerNr allein nicht als Primärschlüssel aus?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Begründung in das Kästchen ein.',
       optionen: [
-        'Weil ein Primärschlüssel immer aus mindestens zwei Spalten bestehen muss.',
-        'Weil ein Teilnehmer mehrere Seminare besuchen kann und die TeilnehmerNr deshalb mehrfach vorkommt.',
-        'Weil die TeilnehmerNr eine Zahl ist und Primärschlüssel aus Text bestehen müssen.',
-        'Weil die TeilnehmerNr NULL-Werte enthalten darf.',
-        'Weil die TeilnehmerNr bereits als Fremdschlüssel verwendet wird.'
+        'Ein Primärschlüssel muss immer aus mindestens zwei Spalten bestehen.',
+        'Die TeilnehmerNr kommt bei Teilnehmern mit mehreren Seminaren mehrfach vor.',
+        'Primärschlüssel müssen aus Text statt aus Zahlen bestehen.',
+        'Die TeilnehmerNr darf NULL-Werte enthalten.',
+        'Die TeilnehmerNr wird bereits als Fremdschlüssel verwendet.'
       ],
       loesung: 2,
       erklaerung: 'Ein Primärschlüssel muss jede Zeile eindeutig kennzeichnen und darf nicht NULL sein. Die TeilnehmerNr 1001 und 1003 kommen jeweils zweimal vor, weil diese Teilnehmer zwei Seminare gebucht haben. Erst die Kombination aus TeilnehmerNr und SeminarNr ist eindeutig (zusammengesetzter Primärschlüssel). Primärschlüssel können aus einer oder mehreren Spalten bestehen.'
@@ -193,10 +193,10 @@
       frage: 'In welcher Normalform befindet sich die Tabelle derzeit?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Sie ist nicht in der 1. Normalform, weil Werte wie „SQL-Grundlagen“ mehrfach vorkommen.',
+        'Sie ist wegen mehrfach vorkommender Werte wie „SQL-Grundlagen“ nicht in der 1. Normalform.',
         'Sie ist in der 1. Normalform, aber nicht in der 2. Normalform.',
         'Sie ist in der 2. Normalform, aber nicht in der 3. Normalform.',
-        'Sie ist in der 3. Normalform, weil sie einen Primärschlüssel besitzt.',
+        'Sie ist wegen ihres Primärschlüssels in der 3. Normalform.',
         'Normalformen gelten nur für Tabellen mit einspaltigem Primärschlüssel.'
       ],
       loesung: 2,
@@ -228,11 +228,11 @@
         'TeilnehmerNr → Name',
         '(TeilnehmerNr, SeminarNr) → Bezahlt',
         'SeminarNr → Preis',
-        'SeminarNr → DozentNr → Dozent',
+        'SeminarNr → Dozent',
         'TeilnehmerNr → Firma'
       ],
       loesung: 4,
-      erklaerung: 'Transitiv ist eine Abhängigkeit, wenn ein Nichtschlüsselattribut nur über ein anderes Nichtschlüsselattribut vom Schlüssel abhängt. Der Name des Dozenten hängt von der DozentNr ab, die wiederum von der SeminarNr abhängt. Ebenso transitiv ist TeilnehmerNr → Firma → Ort. Die übrigen Abhängigkeiten sind direkt.'
+      erklaerung: 'Transitiv ist eine Abhängigkeit, wenn ein Nichtschlüsselattribut nur über ein anderes Nichtschlüsselattribut vom Schlüssel abhängt. Der Name des Dozenten hängt von der DozentNr ab, die wiederum von der SeminarNr abhängt (SeminarNr → DozentNr → Dozent). Ebenso transitiv ist TeilnehmerNr → Firma → Ort. Die übrigen Abhängigkeiten sind direkt.'
     },
     // 9 – Anzahl Tabellen in 3NF
     {
@@ -286,11 +286,11 @@
       frage: 'Warum verletzt die Tabelle „KundenAlt“ die 1. Normalform?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Begründung in das Kästchen ein.',
       optionen: [
-        'Weil die KundenNr fortlaufend nummeriert ist.',
-        'Weil die Spalten Anschrift und Telefon nicht atomare Werte enthalten (z. B. Straße, PLZ und Ort in einem Feld, mehrere Telefonnummern in einem Feld).',
-        'Weil die Tabelle keinen Fremdschlüssel besitzt.',
-        'Weil die Firmennamen Rechtsformzusätze wie „GmbH“ enthalten.',
-        'Weil die Tabelle weniger als fünf Spalten hat.'
+        'Die KundenNr ist fortlaufend nummeriert.',
+        'Die Spalten Anschrift und Telefon enthalten nicht atomare Werte.',
+        'Die Tabelle besitzt keinen Fremdschlüssel.',
+        'Die Firmennamen enthalten Rechtsformzusätze wie „GmbH“.',
+        'Die Tabelle hat weniger als fünf Spalten.'
       ],
       loesung: 2,
       erklaerung: 'Die 1. NF verlangt atomare Werte. Anschrift enthält Straße, PLZ und Ort in einem Feld, Telefon teilweise mehrere Nummern. Lösung: Anschrift in Strasse, PLZ und Ort aufteilen und die Telefonnummern in eine eigene Tabelle (KundenNr, Telefon) auslagern, weil ein Kunde beliebig viele Nummern haben kann.'
@@ -303,7 +303,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Jeder Teilnehmer muss mindestens ein Seminar gebucht haben.',
-        'In „Anmeldungen“ kann nur eine TeilnehmerNr eingetragen werden, die in „Teilnehmer“ vorhanden ist.',
+        'In „Anmeldungen“ kann nur eine in „Teilnehmer“ vorhandene TeilnehmerNr eingetragen werden.',
         'Die TeilnehmerNr darf in „Anmeldungen“ nur einmal vorkommen.',
         'Die Namen der Teilnehmer werden automatisch in „Anmeldungen“ kopiert.',
         'Die Tabelle „Anmeldungen“ wird automatisch nach TeilnehmerNr sortiert.'
@@ -356,10 +356,10 @@
       frage: 'Wie reagiert das Datenbanksystem?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Dozent wird gelöscht, die Seminare 10 und 11 werden automatisch mitgelöscht.',
-        'Der Dozent wird gelöscht, in den Seminaren 10 und 11 wird die DozentNr auf NULL gesetzt.',
-        'Das Löschen wird abgewiesen, weil noch Seminare auf den Dozenten verweisen.',
-        'Der Dozent wird gelöscht, die Seminare 10 und 11 verweisen weiterhin auf DozentNr 1.',
+        'Der Dozent wird zusammen mit den Seminaren 10 und 11 gelöscht.',
+        'Der Dozent wird gelöscht und die DozentNr in den Seminaren 10 und 11 auf NULL gesetzt.',
+        'Das Löschen wird wegen der Verweise der Seminare 10 und 11 auf den Dozenten abgewiesen.',
+        'Der Dozent wird ohne Änderung an den Seminaren 10 und 11 gelöscht.',
         'Die gesamte Tabelle „Dozenten“ wird gelöscht.'
       ],
       loesung: 3,
@@ -373,7 +373,7 @@
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Aussagen in die Kästchen ein.',
       optionen: [
         'Redundanzen werden weitgehend vermieden.',
-        'Abfragen werden immer schneller, weil keine JOINs mehr nötig sind.',
+        'Abfragen werden durch den Wegfall von JOINs immer schneller.',
         'Einfüge-, Änderungs- und Löschanomalien werden vermieden.',
         'Fremdschlüssel werden nach der Normalisierung überflüssig.',
         'Die Anzahl der Tabellen verringert sich.'
@@ -388,11 +388,11 @@
       frage: 'Welche Aussage trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Kollege hat recht, jede Wiederholung eines Werts verstößt gegen die 1. Normalform.',
-        'Die Spalte ist sinnvoll, weil sie den Preis zum Zeitpunkt der Rechnung festhält; spätere Preisänderungen in „Seminare“ dürfen alte Rechnungen nicht verändern.',
-        'Die Spalte ist sinnvoll, weil Fremdschlüssel immer zusammen mit einer Kopie aller Spalten der referenzierten Tabelle gespeichert werden müssen.',
-        'Die Spalte ist überflüssig, weil Rechnungsbeträge in Datenbanken nicht gespeichert werden dürfen.',
-        'Die Spalte ist nur sinnvoll, wenn sie als Primärschlüssel verwendet wird.'
+        'Die Spalte verstößt als Wiederholung eines Werts gegen die 1. Normalform.',
+        'Die Spalte ist zum Festhalten des Preises am Rechnungsdatum sinnvoll.',
+        'Die Spalte ist wegen der Pflicht zur Kopie aller Spalten der referenzierten Tabelle sinnvoll.',
+        'Die Spalte ist wegen des Speicherverbots für Rechnungsbeträge in Datenbanken überflüssig.',
+        'Die Spalte ist nur als Primärschlüssel sinnvoll.'
       ],
       loesung: 2,
       erklaerung: 'Seminare.Preis ist der aktuelle Preis, Rechnungspositionen.Preis der Preis zum Rechnungsdatum. Das sind fachlich zwei verschiedene Informationen. Würde nur auf Seminare verwiesen, würde eine Preiserhöhung nachträglich alle alten Rechnungen verändern. Solche bewusst gespeicherten Werte sind keine schädliche Redundanz.'

@@ -27,10 +27,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Der gesamte Vertrag ist nichtig.',
-        'Die betroffene Vereinbarung ist nichtig, der restliche Vertrag bleibt gültig.',
-        'Der Vertrag ist gültig, wenn die BITLC einverstanden ist.',
-        'Gültig, wenn die Auszubildende ausdrücklich zustimmt',
-        'Gültig, wenn die Eltern zustimmen'
+        'Nur die betroffene Vereinbarung ist nichtig.',
+        'Der Vertrag ist mit Einverständnis der BITLC gültig.',
+        'Gültig mit ausdrücklicher Zustimmung der Auszubildenden',
+        'Gültig mit Zustimmung der Eltern'
       ],
       loesung: 2,
       erklaerung: '§ 12 Abs. 1 BBiG: Vereinbarungen, die gegen das BBiG verstoßen, sind nichtig – aber nur die betroffene Klausel, nicht der gesamte Vertrag (Teilnichtigkeit). Der Ausbildungsvertrag bleibt im Übrigen wirksam.'
@@ -148,10 +148,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Sechs Wochen nach der Entbindung',
-        'Acht Wochen nach der Entbindung – vorher Beschäftigungsverbot',
+        'Acht Wochen nach der Entbindung',
         'Zwölf Wochen nach der Entbindung',
         'Sofort mit ärztlicher Bescheinigung',
-        'Sofort, wenn der Arbeitgeber es erlaubt'
+        'Sofort mit Erlaubnis des Arbeitgebers'
       ],
       loesung: 2,
       erklaerung: '§ 3 Abs. 2 MuSchG: Nach der Entbindung gilt ein absolutes Beschäftigungsverbot von 8 Wochen (12 Wochen bei Früh-/Mehrlingsgeburten oder Behinderung). In dieser Zeit darf die Mutter auch auf eigenen Wunsch nicht arbeiten – weder eine ärztliche Bescheinigung noch die Erlaubnis des Arbeitgebers ändert daran etwas. Vor der Geburt gilt ein 6-wöchiges Beschäftigungsverbot, auf das die Mutter freiwillig verzichten kann.'
@@ -241,7 +241,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'ist kostenpflichtig.',
-        'unterstützt dabei, Qualifikationen und Kompetenzen bei Bewerbungen europaweit verständlich darzustellen.',
+        'unterstützt die europaweit verständliche Darstellung von Qualifikationen und Kompetenzen bei Bewerbungen.',
         'beglaubigt Auslandsabschnitte.',
         'ist für eine Auslandsausbildung verpflichtend.',
         'zertifiziert Fremdsprachkenntnisse.'
@@ -355,7 +355,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'gliedert einen Arbeitsschritt an die Byte GmbH aus.',
-        'gliedert die Hardware-Beschaffung in Teilprozesse, die mehrere Arbeitskräfte ausführen.',
+        'gliedert die Hardware-Beschaffung in Teilprozesse für mehrere Arbeitskräfte.',
         'lässt ein Produkt aus extern hergestellten Komponenten montieren.',
         'organisiert eine Supply Chain mit Lieferanten und Kunden.',
         'schließt eine Filiale.'

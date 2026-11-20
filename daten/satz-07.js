@@ -44,11 +44,11 @@
       frage: 'Welche der folgenden Aussagen zur Preisbildung auf diesem Markt trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Gleichgewichtspreis liegt bei 250,00 EUR, weil die Nachfrage dort größer ist als das Angebot.',
+        'Der Gleichgewichtspreis liegt wegen des dortigen Nachfrageüberhangs bei 250,00 EUR.',
         'Bei einem Preis von 350,00 EUR besteht ein Nachfrageüberhang.',
-        'Der Gleichgewichtspreis liegt bei 300,00 EUR; zu diesem Preis werden 600 Plätze verkauft.',
+        'Der Gleichgewichtspreis liegt bei 300,00 EUR mit 600 verkauften Plätzen.',
         'Bei einem Preis von 200,00 EUR werden 900 Plätze verkauft.',
-        'Der Gleichgewichtspreis liegt bei 400,00 EUR, weil die Anbieter dort die größte Menge anbieten.'
+        'Der Gleichgewichtspreis liegt wegen der dort größten Angebotsmenge bei 400,00 EUR.'
       ],
       loesung: 3,
       erklaerung: 'Marktmodell (Preisbildung bei vollständiger Konkurrenz): Der Gleichgewichtspreis ist der Preis, bei dem angebotene und nachgefragte Menge übereinstimmen, hier 300,00 EUR mit 600 Plätzen. Bei diesem Preis wird die größtmögliche Menge umgesetzt. Unterhalb des Gleichgewichtspreises entsteht ein Nachfrageüberhang (bei 200,00 EUR werden nur die 300 angebotenen Plätze verkauft), oberhalb ein Angebotsüberhang (bei 350,00 EUR).'
@@ -59,14 +59,14 @@
       frage: 'Welche der folgenden Aussagen zur Entwicklung der Einkommen der Beschäftigten trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Das Nominaleinkommen sinkt, das Realeinkommen steigt.',
+        'Das Nominaleinkommen sinkt bei steigendem Realeinkommen.',
         'Nominal- und Realeinkommen steigen jeweils um 2,0 %.',
-        'Das Nominaleinkommen steigt, die Kaufkraft der Einkommen (Realeinkommen) sinkt jedoch.',
-        'Das Realeinkommen steigt um 5,0 %, weil Gehaltserhöhung und Inflationsrate addiert werden.',
+        'Das Nominaleinkommen steigt bei sinkendem Realeinkommen.',
+        'Das Realeinkommen steigt um 5,0 %.',
         'Die Inflationsrate hat keinen Einfluss auf das Realeinkommen.'
       ],
       loesung: 3,
-      erklaerung: 'Das Nominaleinkommen ist der Geldbetrag, das Realeinkommen gibt an, wie viele Güter man dafür kaufen kann (Kaufkraft). Vereinfacht gilt: Veränderung des Realeinkommens ≈ Gehaltserhöhung – Inflationsrate = 2,0 % – 3,0 % = –1,0 %. Die Inflationsrate wird vom Statistischen Bundesamt über den Verbraucherpreisindex gemessen. Preisniveaustabilität ist ein Ziel des Stabilitäts- und Wachstumsgesetzes (§ 1 StabG).'
+      erklaerung: 'Das Nominaleinkommen ist der Geldbetrag, das Realeinkommen gibt an, wie viele Güter man dafür kaufen kann (Kaufkraft). Vereinfacht gilt: Veränderung des Realeinkommens ≈ Gehaltserhöhung – Inflationsrate = 2,0 % – 3,0 % = –1,0 %. Gehaltserhöhung und Inflationsrate werden also nicht addiert. Die Inflationsrate wird vom Statistischen Bundesamt über den Verbraucherpreisindex gemessen. Preisniveaustabilität ist ein Ziel des Stabilitäts- und Wachstumsgesetzes (§ 1 StabG).'
     },
     {
       nr: 3, thema: 'unternehmensziele', typ: 'einfach',
@@ -213,7 +213,7 @@
         'muss für die Zulassung zur Abschlussprüfung nicht vorgelegt werden.',
         'wird schriftlich oder elektronisch geführt und von den Ausbildenden regelmäßig durchgesehen.',
         'wird ausschließlich von der Berufsschule geführt und benotet.',
-        'muss nur geführt werden, solange die Auszubildende minderjährig ist.'
+        'muss nur bis zur Volljährigkeit der Auszubildenden geführt werden.'
       ],
       loesung: 3,
       erklaerung: 'Auszubildende sind verpflichtet, einen schriftlichen oder elektronischen Ausbildungsnachweis zu führen (§ 13 Satz 2 Nr. 7 BBiG). Die Ausbildenden müssen sie dazu anhalten, den Nachweis regelmäßig durchsehen und Gelegenheit geben, ihn am Arbeitsplatz zu führen (§ 14 Abs. 2 BBiG). Der vorgelegte Ausbildungsnachweis ist Voraussetzung für die Zulassung zur Abschlussprüfung (§ 43 Abs. 1 Nr. 2 BBiG).'
@@ -224,9 +224,9 @@
       frage: 'Welche der folgenden Aussagen trifft nach dem Jugendarbeitsschutzgesetz zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Frau Okafor darf am Samstag arbeiten, wenn ihre Eltern schriftlich zustimmen.',
-        'Frau Okafor darf am Samstag arbeiten, wenn sie dafür einen Zuschlag von 25 % erhält.',
-        'Frau Okafor darf an bis zu sechs Tagen in der Woche beschäftigt werden, solange sie insgesamt nicht mehr als 48 Stunden arbeitet.',
+        'Frau Okafor darf am Samstag mit schriftlicher Zustimmung ihrer Eltern arbeiten.',
+        'Frau Okafor darf am Samstag gegen einen Zuschlag von 25 % arbeiten.',
+        'Frau Okafor darf an bis zu sechs Tagen in der Woche mit insgesamt höchstens 48 Stunden beschäftigt werden.',
         'Frau Okafor darf nur an fünf Tagen in der Woche und grundsätzlich nicht an Samstagen beschäftigt werden.',
         'Für Auszubildende über 15 Jahren gelten bei der Samstagsarbeit dieselben Regeln wie für Erwachsene.'
       ],
@@ -241,9 +241,9 @@
       einleitung: 'Die regelmäßige Betriebsversammlung …',
       optionen: [
         'findet einmal in jedem Kalendervierteljahr statt.',
-        'ist öffentlich, sodass auch Kunden und Presse teilnehmen dürfen.',
+        'ist öffentlich und steht auch Kunden und Presse offen.',
         'findet grundsätzlich außerhalb der Arbeitszeit und ohne Vergütung statt.',
-        'wird von der Geschäftsführung geleitet; der Betriebsrat darf nur zuhören.',
+        'wird von der Geschäftsführung ohne Rederecht des Betriebsrats geleitet.',
         'kann für die Geschäftsführung verbindliche Weisungen beschließen.'
       ],
       loesung: 1,
@@ -255,8 +255,8 @@
       frage: 'Welche der folgenden Aussagen zur Beteiligung des Betriebsrats trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Betriebsrat muss erst informiert werden, wenn die Kündigungen bereits ausgesprochen sind.',
-        'Die Schließung einer Abteilung ist eine rein unternehmerische Entscheidung, bei der der Betriebsrat keinerlei Beteiligungsrechte hat.',
+        'Der Betriebsrat muss erst nach dem Ausspruch der Kündigungen informiert werden.',
+        'Die Schließung einer Abteilung ist eine rein unternehmerische Entscheidung ohne Beteiligungsrechte des Betriebsrats.',
         'Die Geschäftsführung muss den Betriebsrat rechtzeitig und umfassend unterrichten und über einen Interessenausgleich beraten.',
         'Der Betriebsrat kann die Schließung der Abteilung durch seinen Widerspruch endgültig verhindern.',
         'Über die Schließung entscheiden die betroffenen Beschäftigten in einer geheimen Abstimmung.'
@@ -287,8 +287,8 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Der Mindestlohn gilt nicht für Aushilfen mit einem Minijob.',
-        'Studierende, die ein in ihrer Studienordnung vorgeschriebenes Pflichtpraktikum absolvieren, haben Anspruch auf den Mindestlohn.',
-        'Der Mindestlohn gilt nur in Unternehmen, die an einen Tarifvertrag gebunden sind.',
+        'Studierende in einem von der Studienordnung vorgeschriebenen Pflichtpraktikum haben Anspruch auf den Mindestlohn.',
+        'Der Mindestlohn gilt nur in tarifgebundenen Unternehmen.',
         'Arbeitgeber und Arbeitnehmer können im Arbeitsvertrag wirksam einen niedrigeren Stundenlohn vereinbaren.',
         'Auszubildende haben keinen Anspruch auf den gesetzlichen Mindestlohn.'
       ],
@@ -330,11 +330,11 @@
       frage: 'Welche der folgenden Aussagen zur Haftung von Herrn Lindner trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Herr Lindner muss den Schaden immer in voller Höhe ersetzen, weil er das Gerät beschädigt hat.',
+        'Als Verursacher muss Herr Lindner den Schaden immer in voller Höhe ersetzen.',
         'Herr Lindner und die Spreetakt Software UG tragen jeden Schaden stets je zur Hälfte.',
         'Die Haftung richtet sich allein nach der Höhe seines Monatsgehalts.',
         'Bei leichtester Fahrlässigkeit haftet Herr Lindner nicht.',
-        'Herr Lindner muss beweisen, dass ihn kein Verschulden trifft, sonst haftet er voll.'
+        'Ohne Beweis seines fehlenden Verschuldens haftet Herr Lindner voll.'
       ],
       loesung: 4,
       erklaerung: 'Für Schäden, die Arbeitnehmer bei betrieblich veranlassten Tätigkeiten verursachen, gelten nach der Rechtsprechung des Bundesarbeitsgerichts die Grundsätze des innerbetrieblichen Schadensausgleichs: Bei leichtester Fahrlässigkeit haftet der Arbeitnehmer nicht, bei mittlerer Fahrlässigkeit wird der Schaden nach den Umständen des Einzelfalls zwischen Arbeitgeber und Arbeitnehmer aufgeteilt, bei grober Fahrlässigkeit und Vorsatz haftet der Arbeitnehmer in der Regel voll. Abweichend von § 280 Abs. 1 Satz 2 BGB muss der Arbeitgeber das Verschulden des Arbeitnehmers beweisen (§ 619a BGB).'
@@ -345,11 +345,11 @@
       frage: 'Welche der folgenden Regelungen entsprechen dem Arbeitszeitgesetz?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Regelungen in die Kästchen ein.',
       optionen: [
-        'Die werktägliche Arbeitszeit darf dauerhaft zwölf Stunden betragen, wenn die Beschäftigten zustimmen.',
+        'Mit Zustimmung der Beschäftigten darf die werktägliche Arbeitszeit dauerhaft zwölf Stunden betragen.',
         'Bei einer Arbeitszeit von mehr als sechs bis zu neun Stunden ist die Arbeit durch Ruhepausen von insgesamt mindestens 30 Minuten zu unterbrechen.',
         'Nach Beendigung der täglichen Arbeitszeit ist eine ununterbrochene Ruhezeit von mindestens elf Stunden einzuhalten.',
-        'Die Ruhepause darf an das Ende der Arbeitszeit gelegt werden, damit die Beschäftigten früher gehen können.',
-        'Die Arbeitszeit darf auf zehn Stunden werktäglich verlängert werden, auch wenn sie im Durchschnitt von sechs Monaten nicht auf acht Stunden ausgeglichen wird.',
+        'Die Ruhepause darf für einen früheren Feierabend an das Ende der Arbeitszeit gelegt werden.',
+        'Die Arbeitszeit darf auch ohne späteren Zeitausgleich auf zehn Stunden werktäglich verlängert werden.',
         'Länger als vier Stunden hintereinander dürfen Erwachsene nicht ohne Ruhepause beschäftigt werden.'
       ],
       loesung: [2, 3],
@@ -361,8 +361,8 @@
       frage: 'Welche der folgenden Aussagen zum Telearbeitsplatz nach der Arbeitsstättenverordnung (ArbStättV) trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Ein Telearbeitsplatz liegt bereits vor, wenn Beschäftigte gelegentlich unterwegs mit dem Notebook arbeiten.',
-        'Für einen Telearbeitsplatz gelten keinerlei Arbeitsschutzvorschriften, weil er sich in der Privatwohnung befindet.',
+        'Ein Telearbeitsplatz liegt bereits bei gelegentlicher Arbeit unterwegs mit dem Notebook vor.',
+        'Für einen Telearbeitsplatz in der Privatwohnung gelten keinerlei Arbeitsschutzvorschriften.',
         'Ein Telearbeitsplatz ist ein vom Arbeitgeber fest eingerichteter Bildschirmarbeitsplatz im Privatbereich.',
         'Die Einrichtung und Ausstattung des Telearbeitsplatzes muss Frau Kraus selbst bezahlen.',
         'Ein Telearbeitsplatz darf nur mit Genehmigung der Berufsgenossenschaft eingerichtet werden.'
@@ -393,9 +393,9 @@
       optionen: [
         'Die Spreetakt Software UG zahlt sein Arbeitsentgelt für die gesamten zehn Wochen weiter.',
         'Die Spreetakt Software UG zahlt sein Arbeitsentgelt bis zu sechs Wochen weiter.',
-        'Weil es ein Freizeitunfall ist, zahlt die Berufsgenossenschaft vom ersten Tag an Verletztengeld.',
-        'In den ersten sechs Wochen zahlt die Krankenkasse Krankengeld, danach setzt der Arbeitgeber das Gehalt fort.',
-        'Herr Neumann erhält während der Arbeitsunfähigkeit keinerlei Leistungen, weil sich der Unfall in der Freizeit ereignet hat.'
+        'Die Berufsgenossenschaft zahlt nach dem Freizeitunfall vom ersten Tag an Verletztengeld.',
+        'Nach sechs Wochen Krankengeld der Krankenkasse zahlt der Arbeitgeber das Gehalt weiter.',
+        'Wegen des Unfalls in der Freizeit erhält Herr Neumann während der Arbeitsunfähigkeit keinerlei Leistungen.'
       ],
       loesung: 2,
       erklaerung: 'Bei unverschuldeter Arbeitsunfähigkeit zahlt der Arbeitgeber das Arbeitsentgelt bis zur Dauer von sechs Wochen weiter (§ 3 Abs. 1 EFZG); das gilt auch nach Freizeitunfällen. Danach zahlt die gesetzliche Krankenkasse Krankengeld (§ 44 SGB V) in Höhe von 70 % des regelmäßigen Bruttoentgelts, höchstens 90 % des Nettoentgelts (§ 47 SGB V). Die Berufsgenossenschaft ist nur bei Arbeits- und Wegeunfällen zuständig.'
@@ -406,10 +406,10 @@
       frage: 'Welche der folgenden Aussagen zur Sozialversicherung von Herrn Krüger trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Er bleibt in der gesetzlichen Krankenversicherung pflichtversichert, weil dort alle Arbeitnehmer unabhängig vom Einkommen pflichtversichert sind.',
+        'Er bleibt wie alle Arbeitnehmer unabhängig vom Einkommen in der gesetzlichen Krankenversicherung pflichtversichert.',
         'Er wird in der Krankenversicherung versicherungsfrei und kann sich freiwillig gesetzlich oder privat versichern.',
         'Er wird auch in der gesetzlichen Rentenversicherung versicherungsfrei.',
-        'Er muss sich gegen Arbeitslosigkeit privat versichern, weil er aus der Arbeitslosenversicherung ausscheidet.',
+        'Er scheidet aus der Arbeitslosenversicherung aus und muss sich privat gegen Arbeitslosigkeit versichern.',
         'Er darf überhaupt keine Krankenversicherung mehr abschließen.'
       ],
       loesung: 2,
@@ -430,9 +430,9 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Sie kann sich bei der zuständigen Stelle des Betriebs beschweren.',
-        'Eine Beschwerde ist nur zulässig, wenn mindestens drei Kolleginnen und Kollegen sie unterschreiben.',
+        'Eine Beschwerde ist nur mit den Unterschriften von mindestens drei Kolleginnen und Kollegen zulässig.',
         'Wegen der Beschwerde darf der Arbeitgeber sie abmahnen.',
-        'Sie muss zuerst beim Arbeitsgericht klagen, bevor sie sich im Betrieb beschweren darf.',
+        'Sie darf sich erst nach einer Klage beim Arbeitsgericht im Betrieb beschweren.',
         'Das AGG schützt nur bei der Einstellung, nicht im bestehenden Arbeitsverhältnis.'
       ],
       loesung: 1,
@@ -459,11 +459,11 @@
       frage: 'Innerhalb welcher Frist muss die Spreetakt Software UG diese Verletzung des Schutzes personenbezogener Daten grundsätzlich der zuständigen Aufsichtsbehörde melden?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Frist in das Kästchen ein.',
       optionen: [
-        'Unverzüglich und möglichst binnen 72 Stunden, nachdem ihr die Verletzung bekannt wurde',
+        'Unverzüglich und möglichst binnen 72 Stunden nach Bekanntwerden der Verletzung',
         'Innerhalb von 14 Tagen nach dem Verlust',
         'Innerhalb eines Monats nach dem Verlust',
         'Nur auf Nachfrage der Aufsichtsbehörde',
-        'Erst wenn bei einem Kunden ein Schaden nachgewiesen ist'
+        'Erst nach dem Nachweis eines Schadens bei einem Kunden'
       ],
       loesung: 1,
       erklaerung: 'Eine Verletzung des Schutzes personenbezogener Daten ist unverzüglich und möglichst binnen 72 Stunden, nachdem sie dem Verantwortlichen bekannt wurde, der zuständigen Aufsichtsbehörde zu melden, es sei denn, sie führt voraussichtlich nicht zu einem Risiko für die Betroffenen; eine spätere Meldung ist zu begründen (Art. 33 Abs. 1 DSGVO). Bei voraussichtlich hohem Risiko sind auch die betroffenen Personen zu benachrichtigen (Art. 34 DSGVO). Eine Verschlüsselung der Festplatte hätte das Risiko erheblich gesenkt (Art. 32 DSGVO).'
@@ -492,7 +492,7 @@
         'Virtualisierung und Zusammenlegung von Servern',
         'Austausch funktionsfähiger Notebooks jedes Jahr gegen neue Modelle',
         'Aktivierung von Energiesparfunktionen und automatischem Standby',
-        'Betrieb aller Testserver rund um die Uhr, obwohl sie nur tagsüber genutzt werden',
+        'Betrieb aller nur tagsüber genutzten Testserver rund um die Uhr',
         'Kauf energieeffizienter Geräte mit langer Ersatzteilversorgung',
         'Weiterverwendung oder Aufbereitung ausgemusterter Geräte'
       ],

@@ -33,7 +33,7 @@
       frage: 'Welcher der folgenden Produktionsfaktoren ist ein Betriebsmittel?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Produktionsfaktor in das Kästchen ein.',
       optionen: [
-        'Das Speziallötzinn, das bei der Reparatur von Platinen verbraucht wird',
+        'Das bei der Reparatur von Platinen verbrauchte Speziallötzinn',
         'Der Serverschrank im Rechenzentrum',
         'Die Arbeitsleistung der Servicetechnikerin',
         'Das von den Gesellschaftern eingezahlte Stammkapital',
@@ -133,9 +133,9 @@
       frage: 'Welche der folgenden Regelungen des Jugendarbeitsschutzgesetzes gilt für Herrn Ayhan?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Regelung in das Kästchen ein.',
       optionen: [
-        'Er darf an einzelnen Tagen bis zu zehn Stunden beschäftigt werden, wenn die 40-Stunden-Woche eingehalten wird.',
-        'Höchstens acht Stunden täglich, 40 Stunden wöchentlich und nicht nach 20 Uhr.',
-        'Er darf regelmäßig bis 23 Uhr arbeiten, wenn er dafür einen Freizeitausgleich erhält.',
+        'Bei Einhaltung der 40-Stunden-Woche darf er an einzelnen Tagen bis zu zehn Stunden beschäftigt werden.',
+        'Er darf höchstens acht Stunden täglich, 40 Stunden wöchentlich und nicht nach 20 Uhr beschäftigt werden.',
+        'Mit einem Freizeitausgleich darf er regelmäßig bis 23 Uhr arbeiten.',
         'Für ihn gilt wie für Erwachsene eine werktägliche Höchstarbeitszeit von acht, verlängerbar auf zehn Stunden.',
         'Er darf bis zu 48 Stunden wöchentlich beschäftigt werden.'
       ],
@@ -166,7 +166,7 @@
         'Der Betriebsrat muss vorher zustimmen und kann nur aus gesetzlichen Gründen verweigern.',
         'Der Betriebsrat kann die Einstellung ohne Angabe von Gründen dauerhaft verhindern.',
         'Einstellungen gehören allein zu den Aufgaben des Betriebsrats.',
-        'Der Betriebsrat muss über erfolgte Einstellungen nur nachträglich informiert werden, ein Zustimmungsrecht hat er nicht.',
+        'Der Betriebsrat wird ohne Zustimmungsrecht nur nachträglich über erfolgte Einstellungen informiert.',
         'Die Zustimmung des Betriebsrats ist nur bei der Einstellung von Führungskräften erforderlich.'
       ],
       loesung: 1,
@@ -220,7 +220,7 @@
       optionen: [
         'enthält ausschließlich Angaben zu Art und Dauer der Beschäftigung.',
         'bewertet zusätzlich Leistung und Verhalten und muss wohlwollend formuliert sein.',
-        'darf absichtlich schlechter formuliert werden, um den Arbeitnehmer an einem Wechsel zu hindern.',
+        'darf zur Verhinderung eines Wechsels absichtlich schlechter formuliert werden.',
         'wird nur auf Verlangen des Arbeitgebers ausgestellt.',
         'muss zwingend den Kündigungsgrund enthalten.'
       ],
@@ -265,7 +265,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Der Arbeitgeber muss Ersthelfer ausbilden lassen und Erste-Hilfe-Material bereitstellen.',
-        'Erste Hilfe ist allein Aufgabe des öffentlichen Rettungsdienstes; der Betrieb trifft keine Vorkehrungen.',
+        'Erste Hilfe ist allein Aufgabe des öffentlichen Rettungsdienstes, nicht des Betriebs.',
         'Die Kosten der Ersthelfer-Ausbildung tragen die Beschäftigten selbst.',
         'Ein Verbandkasten ist nur in Betrieben mit mehr als 100 Beschäftigten vorgeschrieben.',
         'Jeder Arbeitsunfall muss unabhängig von seiner Schwere sofort der Staatsanwaltschaft gemeldet werden.'
@@ -282,7 +282,7 @@
         'Die Beiträge tragen Arbeitgeber und Arbeitnehmer je zur Hälfte.',
         'Wegeunfälle sind versichert, die Beiträge trägt allein der Arbeitgeber.',
         'Träger der gesetzlichen Unfallversicherung ist die Krankenkasse.',
-        'Versichert sind nur Unfälle, die in der Mittagspause außerhalb des Betriebs geschehen.',
+        'Versichert sind nur Unfälle in der Mittagspause außerhalb des Betriebs.',
         'Die Beiträge zur Unfallversicherung trägt allein der Arbeitnehmer.'
       ],
       loesung: 2,
@@ -365,7 +365,7 @@
       optionen: [
         'Jede Stelle ist genau einer übergeordneten Instanz unterstellt (Einheit der Auftragserteilung).',
         'Jede Stelle ist zwei Vorgesetzten unterstellt (Mehrfachunterstellung).',
-        'Es gibt keine Hierarchieebenen; alle Mitarbeiter sind gleichgestellt.',
+        'Alle Mitarbeiter sind ohne Hierarchieebenen gleichgestellt.',
         'Stabsstellen haben umfassende Weisungsbefugnis gegenüber den Linienstellen.',
         'Die Leitung wird vollständig an externe Dienstleister übertragen.'
       ],
@@ -398,13 +398,13 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Mehrere Unternehmen verlieren ihre rechtliche Selbstständigkeit und bilden ein einziges neues Unternehmen.',
-        'Rechtlich selbstständige Unternehmen stimmen ihr Marktverhalten ab, was grundsätzlich verboten ist.',
+        'Rechtlich selbstständige Unternehmen treffen grundsätzlich verbotene Absprachen über ihr Marktverhalten.',
         'Ein Unternehmen wird von einem anderen vollständig aufgekauft und aufgelöst.',
         'Mehrere rechtlich selbstständige Unternehmen werden unter einheitlicher Leitung zusammengefasst.',
-        'Ein Einzelunternehmen wird in eine GmbH umgewandelt.'
+        'Zwei Unternehmen gründen für ein Projekt ein gemeinsames Tochterunternehmen.'
       ],
       loesung: 2,
-      erklaerung: 'Beim Kartell bleiben die Unternehmen rechtlich und wirtschaftlich selbstständig, stimmen aber ihr Marktverhalten ab; solche Absprachen sind nach dem GWB und dem EU-Recht grundsätzlich verboten. Beim Konzern bleiben die Unternehmen rechtlich selbstständig, stehen aber unter einheitlicher Leitung. Bei der Fusion verschmelzen Unternehmen zu einer Einheit.'
+      erklaerung: 'Beim Kartell bleiben die Unternehmen rechtlich und wirtschaftlich selbstständig, stimmen aber ihr Marktverhalten ab; solche Absprachen sind nach dem GWB und dem EU-Recht grundsätzlich verboten. Beim Konzern bleiben die Unternehmen rechtlich selbstständig, stehen aber unter einheitlicher Leitung. Bei der Fusion verschmelzen Unternehmen zu einer Einheit. Ein gemeinsames Tochterunternehmen für ein Projekt ist ein Joint Venture.'
     },
     {
       nr: 26, thema: 'unternehmensgruendung', typ: 'einfach',
@@ -435,11 +435,11 @@
       frage: 'Welche der folgenden Reaktionen ist richtig?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Reaktion in das Kästchen ein.',
       optionen: [
-        'Er klickt auf den Link und gibt seine Zugangsdaten ein, weil die Nachricht dringend wirkt.',
+        'Er klickt wegen der Dringlichkeit auf den Link und gibt seine Zugangsdaten ein.',
         'Er klickt nicht auf den Link und meldet die E-Mail der IT-Abteilung.',
-        'Er leitet die E-Mail an alle Kollegen weiter, damit diese ebenfalls ihre Daten bestätigen.',
+        'Er leitet die E-Mail zur Bestätigung der Daten an alle Kollegen weiter.',
         'Er antwortet mit seinen Zugangsdaten direkt auf die E-Mail.',
-        'Er deaktiviert den Virenschutz, um den Link gefahrlos öffnen zu können.'
+        'Er deaktiviert vor dem Öffnen des Links den Virenschutz.'
       ],
       loesung: 2,
       erklaerung: 'Es handelt sich um eine typische Phishing-Mail. Richtiges Verhalten: keine Links anklicken, keine Zugangsdaten preisgeben, die Nachricht löschen oder der IT-Abteilung melden. Seriöse Banken fordern niemals per E-Mail zur Eingabe von Zugangsdaten auf. Zu angemessenen technischen und organisatorischen Sicherheitsmaßnahmen ist das Unternehmen auch nach Art. 32 DSGVO verpflichtet.'
@@ -453,8 +453,8 @@
         'Es garantiert die Einhaltung europäischer Sicherheitsvorschriften.',
         'Es kennzeichnet besonders umweltfreundliche Produkte und Dienstleistungen.',
         'Es weist auf fair gehandelte Rohstoffe aus Entwicklungsländern hin.',
-        'Es bestätigt, dass ein Lebensmittel aus kontrolliert biologischem Anbau stammt.',
-        'Es zeigt an, dass ein Produkt elektrische Geräte enthält, die nicht in den Hausmüll gehören.'
+        'Es bestätigt die Herkunft eines Lebensmittels aus kontrolliert biologischem Anbau.',
+        'Es weist auf das Verbot der Entsorgung von Elektrogeräten im Hausmüll hin.'
       ],
       loesung: 2,
       erklaerung: 'Der Blaue Engel ist das älteste Umweltzeichen Deutschlands und kennzeichnet besonders umweltfreundliche Produkte und Dienstleistungen (z. B. geringer Energieverbrauch, recyclingfähig). Das CE-Zeichen steht für die Einhaltung von EU-Sicherheitsanforderungen, das Fairtrade-Siegel für fairen Handel, das Bio-Siegel für ökologischen Landbau.'
@@ -465,7 +465,7 @@
       frage: 'Welche der folgenden Aussagen zum Verpackungsgesetz trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Wer Verpackungen an Endverbraucher vertreibt, muss sich registrieren und an einem dualen System beteiligen.',
+        'Vertreiber von Verpackungen an Endverbraucher müssen sich registrieren und an einem dualen System beteiligen.',
         'Verkaufsverpackungen dürfen ausschließlich über den Restmüll entsorgt werden.',
         'Das Verpackungsgesetz gilt nur für Elektrogeräte.',
         'Die Rücknahme und Verwertung von Verpackungen ist allein Aufgabe der Kommunen.',

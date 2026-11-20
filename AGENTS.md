@@ -18,6 +18,10 @@ Hinweise für KI-Agenten und Mitwirkende am WiSo-Trainer. Bedienung und Datenfor
 - Themenauswahl und Gewichtung nach [docs/themenkatalog.md](docs/themenkatalog.md) (Spalte „Ø/Bogen“). Themenschlüssel stehen in `daten/themen.js`.
 - Typen-Verteilung je Satz ungefähr wie bei der BITLC: etwa 22 Einfachauswahl, 3 „zwei zutreffende“, 2 Zuordnungen, 1–2 Rechenaufgaben, höchstens 1 Datum, gelegentlich 1 Reihenfolge. Keine Kontierung.
 - Feste Anweisungsformeln aus Abschnitt 3.1 des Themenkatalogs verwenden, Verneinungen und „**zwei**“ fett (`**…**`).
+- **Antwortoptionen** (gilt für alle Bereiche):
+  - **Die Lösung steht nicht in der Option.** Wird nach einem Begriff gefragt, steht dort nur der Begriff: keine angehängte Erklärung („Begriff – Erklärung“, „Begriff (Erklärung)“, „Begriff: Erklärung“), keine ausgeschriebene Abkürzung und keine Übersetzung, die die Beschreibung aus der Frage wiederholt. Erläuterungen zu richtigen und falschen Optionen gehören in die `erklaerung`.
+  - **Keine Nebensätze.** Eine Option ist ein Begriff, eine Wortgruppe oder ein kurzer Hauptsatz. Keine Begründungen und Zusätze mit „weil“, „dass“, „wenn“, „da“, „sodass“, „damit“ und keine Relativsätze.
+  - **Keine überflüssigen Optionen.** Jede falsche Option muss ernsthaft in Frage kommen. Der Aufgabentext darf die Auswahl nicht schon eingrenzen: Steht dort „es soll zwischen TCP und UDP gewählt werden“, sind ICMP, FTP und HTTP als Optionen überflüssig. Die Kandidaten deshalb nicht im Text nennen und nur gleichartige Alternativen anbieten.
 - Jede Aufgabe bekommt eine `erklaerung` mit Rechtsgrundlage. Werte, die sich jährlich ändern (Beitragssätze, Grenzen), immer im Aufgabentext angeben.
 - Neuer Satz: Datei `daten/satz-XX.js` bzw. `daten/BITLC-satz-XX.js`, Skript-Zeile in `index.html` und Pfad in der Liste `DATEIEN` in `sw.js` ergänzen.
 

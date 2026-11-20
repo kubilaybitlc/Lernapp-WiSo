@@ -131,7 +131,7 @@
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Antworten in die Kästchen ein.',
       optionen: [
         'In der Probezeit kann nur mit vier Wochen Frist gekündigt werden.',
-        'Eine Auszubildende kann nach der Probezeit kündigen, wenn sie einen anderen Beruf erlernen will.',
+        'Eine Auszubildende kann nach der Probezeit zum Erlernen eines anderen Berufs kündigen.',
         'Eine Weiterbeschäftigung kann schon im Ausbildungsvertrag festgelegt werden.',
         'Das Ausbildungsverhältnis endet erst mit Ablauf der Ausbildungszeit, auch bei vorher bestandener Prüfung.',
         'Der Betrieb muss bei Beendigung auf Wunsch ein qualifiziertes Zeugnis ausstellen.',

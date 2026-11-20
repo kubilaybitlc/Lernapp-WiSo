@@ -41,9 +41,9 @@
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Antworten in die Kästchen ein.',
       optionen: [
         'In der Probezeit kann nur mit vier Wochen Frist gekündigt werden.',
-        'Eine Auszubildende kann nach der Probezeit kündigen, wenn sie eine Ausbildung in einem anderen Beruf beginnen will.',
+        'Eine Auszubildende kann nach der Probezeit für den Wechsel in einen anderen Ausbildungsberuf kündigen.',
         'Vereinbarung einer Entschädigung für die Ausbildung an den Betrieb',
-        'Das Ausbildungsverhältnis endet mit Ablauf der Ausbildungszeit, auch wenn die Prüfung vorher bestanden wird.',
+        'Das Ausbildungsverhältnis endet mit Ablauf der Ausbildungszeit, auch bei vorher bestandener Prüfung.',
         'Der Betrieb muss bei Beendigung auf Wunsch ein Zeugnis ausstellen.',
         'Der Betrieb muss am Tag nach der Prüfung einen unbefristeten Vertrag anbieten.'
       ],
@@ -201,7 +201,7 @@
       frage: 'Welche Aussage zu einem unbefristeten Streik ist zutreffend?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'Er ist möglich, wenn der DGB-Bundesvorstand aufruft, auch ohne nötige Stimmen in der Urabstimmung.',
+        'Er ist auf Aufruf des DGB-Bundesvorstands auch ohne nötige Stimmen in der Urabstimmung möglich.',
         'Er muss vom Arbeitsministerium genehmigt werden.',
         'Er ist nur vor dem Auslaufen eines Tarifvertrags möglich.',
         'Tarifverhandlungen werden immer von unbefristeten Streiks begleitet.',

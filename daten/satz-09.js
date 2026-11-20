@@ -45,7 +45,7 @@
       frage: 'Welche der folgenden Aussagen zum Abschluss des Berufsausbildungsvertrags trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Herr Hentschel kann den Vertrag ohne Zustimmung seiner Eltern abschließen, weil er bereits 16 Jahre alt ist.',
+        'Mit 16 Jahren kann Herr Hentschel den Vertrag ohne Zustimmung seiner Eltern abschließen.',
         'Für den Vertrag ist die Zustimmung der gesetzlichen Vertreter erforderlich.',
         'Ein mündlich geschlossener Berufsausbildungsvertrag ist in jedem Fall unwirksam.',
         'Die Vertragsniederschrift muss erst nach dem Ende der Probezeit erstellt werden.',
@@ -60,10 +60,10 @@
       frage: 'Welche der folgenden Aussagen zum Montag trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Frau Ullrich muss für den Montag einen Tag Urlaub nehmen, wenn sie sich vorbereiten möchte.',
-        'Eine Freistellung am Montag steht nur Auszubildenden zu, die noch nicht 18 Jahre alt sind.',
+        'Für die Vorbereitung am Montag muss Frau Ullrich einen Tag Urlaub nehmen.',
+        'Eine Freistellung am Montag steht nur Auszubildenden unter 18 Jahren zu.',
         'Frau Ullrich ist am Montag nur bis 12:00 Uhr freizustellen.',
-        'Frau Ullrich ist am Montag freizustellen, die Vergütung wird fortgezahlt.',
+        'Frau Ullrich ist am Montag unter Fortzahlung der Vergütung freizustellen.',
         'Frau Ullrich ist in der gesamten Woche vor der Prüfung freizustellen.'
       ],
       loesung: 4,
@@ -91,10 +91,10 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Ein Betriebsrat kann gewählt werden, weil mindestens fünf Wahlberechtigte beschäftigt sind, davon drei wählbar.',
+        'Ein Betriebsrat kann ab fünf wahlberechtigten, davon drei wählbaren Arbeitnehmern gewählt werden.',
         'Ein Betriebsrat kann erst ab 20 Arbeitnehmern gewählt werden.',
-        'Ein Betriebsrat darf nur gewählt werden, wenn die Geschäftsführung der Wahl zustimmt.',
-        'Ein Betriebsrat ist nur zulässig, wenn mindestens ein Beschäftigter Mitglied einer Gewerkschaft ist.',
+        'Ein Betriebsrat darf nur mit Zustimmung der Geschäftsführung gewählt werden.',
+        'Ein Betriebsrat ist nur mit mindestens einem Gewerkschaftsmitglied in der Belegschaft zulässig.',
         'Betriebsräte gibt es nur in Aktiengesellschaften.'
       ],
       loesung: 1,
@@ -107,9 +107,9 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Der Betriebsrat muss nur nachträglich über die Einführung informiert werden.',
-        'Der Betriebsrat ist lediglich anzuhören; seine Meinung ist für die Geschäftsführung nicht bindend.',
-        'Der Betriebsrat hat ein Mitbestimmungsrecht, weil eine Kleiderordnung die betriebliche Ordnung betrifft.',
-        'Der Betriebsrat hat kein Beteiligungsrecht, weil die Geschäftsführung über das Erscheinungsbild des Unternehmens allein entscheidet.',
+        'Der Betriebsrat hat lediglich ein unverbindliches Anhörungsrecht.',
+        'Der Betriebsrat hat bei der Kleiderordnung als Frage der betrieblichen Ordnung ein Mitbestimmungsrecht.',
+        'Der Betriebsrat hat beim Erscheinungsbild des Unternehmens kein Beteiligungsrecht.',
         'Der Betriebsrat entscheidet allein über die Einführung der Dienstkleidung.'
       ],
       loesung: 3,
@@ -121,11 +121,11 @@
       frage: 'Welche der folgenden Aussagen trifft nach dem Betriebsverfassungsgesetz zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Frau Kaden hat keinen Anspruch auf Weiterbeschäftigung, weil kein Auszubildender übernommen werden muss.',
+        'Frau Kaden hat wie alle Auszubildenden keinen Anspruch auf Weiterbeschäftigung.',
         'Frau Kaden wird automatisch für sechs Monate befristet weiterbeschäftigt.',
-        'Frau Kaden kann nur weiterbeschäftigt werden, wenn die BITLC zustimmt.',
-        'Frau Kaden hat nur dann einen Anspruch, wenn sie die Abschlussprüfung mit der Note „gut“ besteht.',
-        'Verlangt sie schriftlich ihre Weiterbeschäftigung, gilt ein unbefristetes Arbeitsverhältnis als begründet.'
+        'Frau Kaden kann nur mit Zustimmung der BITLC weiterbeschäftigt werden.',
+        'Frau Kaden hat nur bei einer Abschlussprüfung mit der Note „gut“ einen Anspruch.',
+        'Auf ihr schriftliches Verlangen gilt ein unbefristetes Arbeitsverhältnis als begründet.'
       ],
       loesung: 5,
       erklaerung: '§ 78a BetrVG schützt Auszubildende, die Mitglied der JAV oder des Betriebsrats sind. Will der Arbeitgeber sie nicht übernehmen, muss er dies drei Monate vor Ende der Ausbildung schriftlich mitteilen (Abs. 1). Verlangt die oder der Auszubildende innerhalb der letzten drei Monate vor Beendigung schriftlich die Weiterbeschäftigung, gilt ein unbefristetes Arbeitsverhältnis als begründet (Abs. 2). Der Arbeitgeber kann sich davon nur durch eine Entscheidung des Arbeitsgerichts lösen, wenn ihm die Weiterbeschäftigung nicht zugemutet werden kann (Abs. 4).'
@@ -154,8 +154,8 @@
         'Er muss dem Arbeitgeber die Arbeitsunfähigkeit und deren voraussichtliche Dauer unverzüglich mitteilen.',
         'Er muss die Arbeitsunfähigkeit erst nach seiner Genesung mitteilen.',
         'Er muss dem Arbeitgeber die ärztliche Diagnose nennen.',
-        'Dauert die Arbeitsunfähigkeit länger als drei Kalendertage, muss er sie am nächsten Arbeitstag ärztlich feststellen lassen.',
-        'Er muss die Krankmeldung erst am Ende der Woche abgeben, wenn feststeht, wie lange er fehlt.',
+        'Eine Arbeitsunfähigkeit von mehr als drei Kalendertagen muss er am darauffolgenden Arbeitstag ärztlich feststellen lassen.',
+        'Er muss die Krankmeldung erst nach Klärung der Fehldauer am Ende der Woche abgeben.',
         'Während der Arbeitsunfähigkeit darf er seine Wohnung grundsätzlich nicht verlassen.'
       ],
       loesung: [1, 4],
@@ -186,7 +186,7 @@
         'Kohlendioxidlöscher (CO₂-Löscher)',
         'Fettbrandlöscher der Brandklasse F',
         'Metallbrandlöscher der Brandklasse D',
-        'Kein Löschmittel, weil Brände im Serverraum nur von der Feuerwehr gelöscht werden dürfen'
+        'Kein Löschmittel, Brandbekämpfung im Serverraum nur durch die Feuerwehr'
       ],
       loesung: 2,
       erklaerung: 'Brände werden nach DIN EN 2 in Brandklassen eingeteilt: A (feste Stoffe), B (flüssige Stoffe), C (Gase), D (Metalle) und F (Speiseöle und -fette). Für Brände an elektrischen Anlagen eignen sich CO₂-Löscher, weil Kohlendioxid den elektrischen Strom nicht leitet und rückstandsfrei löscht. Wasser im Vollstrahl ist wegen der Stromschlaggefahr ungeeignet. Entstehungsbrände dürfen und sollen Beschäftigte ohne Eigengefährdung bekämpfen; der Arbeitgeber muss dafür geeignete Feuerlöscher bereitstellen (§ 10 ArbSchG, ASR A2.2).'
@@ -201,7 +201,7 @@
         'Kleine Verletzungen müssen nicht dokumentiert werden.',
         'Der Vorfall muss der Polizei gemeldet werden.',
         'Jede Erste-Hilfe-Leistung muss dokumentiert werden, z. B. im Verbandbuch.',
-        'Eine Dokumentation ist nur erforderlich, wenn der Auszubildende anschließend arbeitsunfähig ist.'
+        'Eine Dokumentation ist nur bei anschließender Arbeitsunfähigkeit des Auszubildenden erforderlich.'
       ],
       loesung: 4,
       erklaerung: 'Nach § 24 Abs. 6 DGUV Vorschrift 1 muss jede Erste-Hilfe-Leistung dokumentiert werden, z. B. im Verbandbuch, und die Aufzeichnungen sind fünf Jahre aufzubewahren. So lässt sich später nachweisen, dass eine Verletzung bei der Arbeit entstanden ist, falls Folgen auftreten. Eine Unfallanzeige an die Berufsgenossenschaft ist erst nötig, wenn die verletzte Person mehr als drei Tage arbeitsunfähig ist (§ 193 Abs. 1 SGB VII).'
@@ -212,11 +212,11 @@
       frage: 'Welche der folgenden Aussagen trifft nach dem Mutterschutzgesetz zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Einsatz ist unzulässig, weil Schwangere nicht zwischen 20 und 6 Uhr arbeiten dürfen.',
-        'Der Einsatz ist zulässig, wenn Frau Böhme ausdrücklich zustimmt.',
-        'Der Einsatz ist zulässig, wenn Frau Böhme einen Nachtzuschlag erhält.',
+        'Der Einsatz ist wegen des Beschäftigungsverbots zwischen 20 und 6 Uhr unzulässig.',
+        'Der Einsatz ist mit ausdrücklicher Zustimmung von Frau Böhme zulässig.',
+        'Der Einsatz ist mit einem Nachtzuschlag für Frau Böhme zulässig.',
         'Nachtarbeit ist bis zum Ende des sechsten Schwangerschaftsmonats ohne Einschränkung erlaubt.',
-        'Lehnt Frau Böhme den Einsatz ab, darf der Arbeitgeber ihr kündigen.'
+        'Bei einer Ablehnung des Einsatzes darf der Arbeitgeber Frau Böhme kündigen.'
       ],
       loesung: 1,
       erklaerung: '§ 5 Abs. 1 MuSchG: Der Arbeitgeber darf eine schwangere Frau nicht zwischen 20 Uhr und 6 Uhr beschäftigen. Eine Beschäftigung bis 22 Uhr ist nur ausnahmsweise möglich, wenn die Frau sich ausdrücklich bereit erklärt, nach ärztlichem Zeugnis nichts dagegen spricht und die Aufsichtsbehörde den Antrag genehmigt (§ 28 MuSchG). Eine Beschäftigung nach 22 Uhr kann die Aufsichtsbehörde nur in besonders begründeten Einzelfällen bewilligen (§ 29 Abs. 3 Satz 2 Nr. 1 MuSchG); ein Einsatz bis 2 Uhr ist daher grundsätzlich ausgeschlossen. Während der Schwangerschaft besteht zudem ein Kündigungsverbot (§ 17 MuSchG).'
@@ -229,9 +229,9 @@
       optionen: [
         'Für die Gründung einer GbR ist ein Mindestkapital von 25.000,00 EUR erforderlich.',
         'Die Gesellschafter haften nur bis zur Höhe ihrer Einlage.',
-        'Die GbR muss in das Handelsregister eingetragen werden, sonst ist sie unwirksam.',
+        'Ohne Eintragung in das Handelsregister ist die GbR unwirksam.',
         'Die GbR ist eine Kapitalgesellschaft.',
-        'Die Gesellschafter haften persönlich und gesamtschuldnerisch, die Eintragung ist freiwillig.'
+        'Die Gesellschafter haften auch ohne Registereintragung persönlich und gesamtschuldnerisch.'
       ],
       loesung: 5,
       erklaerung: 'Seit dem Gesetz zur Modernisierung des Personengesellschaftsrechts (MoPeG, 2024) haften die Gesellschafter einer GbR für deren Verbindlichkeiten den Gläubigern als Gesamtschuldner persönlich und unbeschränkt (§ 721 BGB). Die Gesellschafter können die GbR in das Gesellschaftsregister eintragen lassen (§ 707 BGB); sie heißt dann eingetragene GbR (eGbR). Nötig ist die Eintragung z. B., wenn die GbR ein Grundstück erwerben will. Ein Mindestkapital gibt es nicht; die GbR ist eine Personengesellschaft.'
@@ -279,9 +279,9 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Der Kollege muss Herrn Tietze den gesamten Personenschaden einschließlich Schmerzensgeld aus eigener Tasche ersetzen.',
-        'Die gesetzliche Unfallversicherung erbringt die Leistungen, Kollege und Arbeitgeber haften nur bei Vorsatz.',
-        'Da ein Kollege den Unfall verursacht hat, besteht kein Schutz durch die gesetzliche Unfallversicherung.',
-        'Der Arbeitgeber muss in jedem Fall Schmerzensgeld zahlen, weil der Unfall im Betrieb geschehen ist.',
+        'Neben den Leistungen der gesetzlichen Unfallversicherung haften Kollege und Arbeitgeber nur bei Vorsatz.',
+        'Wegen der Verursachung durch einen Kollegen besteht kein Schutz durch die gesetzliche Unfallversicherung.',
+        'Bei einem Unfall im Betrieb muss der Arbeitgeber in jedem Fall Schmerzensgeld zahlen.',
         'Die Kosten trägt allein die private Haftpflichtversicherung von Herrn Tietze.'
       ],
       loesung: 2,
@@ -295,13 +295,13 @@
       einleitung: 'Das Zeichen „TCO Certified“ …',
       optionen: [
         'ist ein gesetzlich vorgeschriebenes Kennzeichen für alle in der EU verkauften Bildschirme.',
-        'bestätigt nur, dass der Monitor die elektrischen Sicherheitsvorschriften der EU einhält.',
-        'kennzeichnet Lebensmittel aus ökologischem Landbau.',
-        'zeigt an, dass der Monitor ausschließlich aus recyceltem Kunststoff besteht.',
+        'bestätigt nur die Einhaltung der elektrischen Sicherheitsvorschriften der EU.',
+        'bescheinigt besonders niedrige Gesamtbetriebskosten des Monitors.',
+        'kennzeichnet ausschließlich aus recyceltem Kunststoff hergestellte Monitore.',
         'ist ein freiwilliges Nachhaltigkeitszertifikat für IT-Produkte.'
       ],
       loesung: 5,
-      erklaerung: '„TCO Certified“ ist ein internationales, freiwilliges Nachhaltigkeitszertifikat für IT-Produkte wie Monitore, Notebooks und Smartphones. Geprüft werden Umweltaspekte (z. B. Energieverbrauch, gefährliche Stoffe, Lebensdauer), Ergonomie und soziale Verantwortung in der Lieferkette. Das CE-Zeichen bestätigt dagegen die Einhaltung von EU-Anforderungen, z. B. an die Produktsicherheit; verpflichtend ist für Bildschirme auch das EU-Energielabel. Nachhaltige Beschaffung unterstützt die Ziele des Kreislaufwirtschaftsgesetzes (§ 1 KrWG).'
+      erklaerung: '„TCO Certified“ ist ein internationales, freiwilliges Nachhaltigkeitszertifikat für IT-Produkte wie Monitore, Notebooks und Smartphones. Geprüft werden Umweltaspekte (z. B. Energieverbrauch, gefährliche Stoffe, Lebensdauer), Ergonomie und soziale Verantwortung in der Lieferkette. Mit den Gesamtbetriebskosten („Total Cost of Ownership“) hat das Zeichen nichts zu tun; die Abkürzung steht für den schwedischen Gewerkschaftsdachverband TCO. Das CE-Zeichen bestätigt dagegen die Einhaltung von EU-Anforderungen, z. B. an die Produktsicherheit; verpflichtend ist für Bildschirme auch das EU-Energielabel. Nachhaltige Beschaffung unterstützt die Ziele des Kreislaufwirtschaftsgesetzes (§ 1 KrWG).'
     },
     {
       nr: 18, thema: 'umweltschutz', typ: 'einfach',
@@ -309,8 +309,8 @@
       frage: 'Welche der folgenden Aussagen trifft nach dem Bundes-Immissionsschutzgesetz zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die von den Rückkühlern ausgehenden Geräusche sind Emissionen, die bei den Anwohnern ankommenden Geräusche sind Immissionen.',
-        'Die von den Rückkühlern ausgehenden Geräusche sind Immissionen, die bei den Anwohnern ankommenden Geräusche sind Emissionen.',
+        'Die Geräusche sind an den Rückkühlern Emissionen und bei den Anwohnern Immissionen.',
+        'Die Geräusche sind an den Rückkühlern Immissionen und bei den Anwohnern Emissionen.',
         'Geräusche sind keine Umwelteinwirkungen im Sinne des Bundes-Immissionsschutzgesetzes.',
         'Das Bundes-Immissionsschutzgesetz gilt nur für Industrieanlagen, nicht für Klimaanlagen von Bürogebäuden.',
         'Emissionen und Immissionen bezeichnen dasselbe.'
@@ -339,11 +339,11 @@
       frage: 'Welche der folgenden Aussagen zu diesem Warnstreik trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Warnstreik ist rechtswidrig, weil während laufender Verhandlungen nicht gestreikt werden darf.',
+        'Der Warnstreik ist wegen der noch laufenden Verhandlungen rechtswidrig.',
         'Der Warnstreik ist erst nach einer gescheiterten Schlichtung zulässig.',
-        'Der Warnstreik ist zulässig, weil die Friedenspflicht mit dem Ablauf des Tarifvertrags geendet hat.',
+        'Der Warnstreik ist nach dem Ende der Friedenspflicht mit Ablauf des Tarifvertrags zulässig.',
         'Für die Dauer des Warnstreiks muss der Arbeitgeber das Entgelt weiterzahlen.',
-        'An einem Warnstreik dürfen nur Beschäftigte teilnehmen, die nicht Gewerkschaftsmitglied sind.'
+        'An einem Warnstreik dürfen nur Beschäftigte ohne Gewerkschaftsmitgliedschaft teilnehmen.'
       ],
       loesung: 3,
       erklaerung: 'Warnstreiks sind kurze, befristete Arbeitsniederlegungen, mit denen die Gewerkschaft während laufender Verhandlungen Druck aufbaut. Sie sind zulässig, sobald die Friedenspflicht des abgelaufenen Tarifvertrags endet. Das Streikrecht folgt aus der Koalitionsfreiheit (Art. 9 Abs. 3 GG); eine Urabstimmung ist gesetzlich nicht vorgeschrieben und wird nach den Satzungen der Gewerkschaften meist erst vor unbefristeten Streiks durchgeführt. Für die Streikzeit entfällt der Entgeltanspruch der Streikenden.'
@@ -355,9 +355,9 @@
       anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Betriebsart in das Kästchen ein. Eine Betriebsart kann mehreren Betrieben zugeordnet werden.',
       optionenTitel: 'Betriebsarten',
       optionen: [
-        'Erwerbswirtschaftlicher Betrieb (Ziel: Gewinnerzielung)',
-        'Gemeinwirtschaftlicher Betrieb (Ziel: Deckung eines öffentlichen Bedarfs, meist kostendeckend oder bezuschusst)',
-        'Genossenschaftlicher Betrieb (Ziel: Förderung der Mitglieder)'
+        'Erwerbswirtschaftlicher Betrieb',
+        'Gemeinwirtschaftlicher Betrieb',
+        'Genossenschaftlicher Betrieb'
       ],
       itemsTitel: 'Betriebe',
       items: [
@@ -420,11 +420,11 @@
       frage: 'Welche der folgenden Aussagen trifft nach dem Jugendarbeitsschutzgesetz zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Jugendlicher ist, wer 14, aber noch nicht 21 Jahre alt ist.',
+        'Jugendliche sind Personen von 14 bis unter 21 Jahren.',
         'Das Jugendarbeitsschutzgesetz gilt nur für Auszubildende, nicht für Ferienjobs.',
         'Für 17-Jährige gelten dieselben Regeln wie für Erwachsene.',
-        'Kind ist, wer noch nicht 12 Jahre alt ist.',
-        'Kind ist, wer noch nicht 15 Jahre alt ist; Jugendlicher, wer 15 bis unter 18 ist.'
+        'Kinder sind Personen unter 12 Jahren.',
+        'Kinder sind Personen unter 15 Jahren, Jugendliche Personen von 15 bis unter 18 Jahren.'
       ],
       loesung: 5,
       erklaerung: '§ 2 JArbSchG: Kind ist, wer noch nicht 15 Jahre alt ist (Abs. 1), Jugendlicher, wer 15, aber noch nicht 18 Jahre alt ist (Abs. 2). Auf Jugendliche, die der Vollzeitschulpflicht unterliegen, finden die für Kinder geltenden Vorschriften Anwendung (Abs. 3). Das Gesetz gilt für alle Beschäftigungen von Personen unter 18 Jahren, also auch für Ferienjobs (§ 1 JArbSchG). Die Beschäftigung von Kindern ist grundsätzlich verboten (§ 5 JArbSchG).'
@@ -462,10 +462,10 @@
         'Hochkonjunktur (Boom)',
         'Abschwung',
         'Tiefstand (Depression)',
-        'Überhitzung mit stark steigenden Preisen'
+        'Überhitzung'
       ],
       loesung: 4,
-      erklaerung: 'Die Wirtschaftsleistung schrumpft nur noch leicht, Arbeitslosigkeit und Unterauslastung sind hoch, Preise und Zinsen sehr niedrig: Die Wirtschaft befindet sich in der Talsohle. Merkmale des Tiefstands (Depression): kaum noch schrumpfende oder stagnierende Wirtschaftsleistung, hohe Arbeitslosigkeit, stark unterausgelastete Kapazitäten, kaum noch steigende Preise, sehr niedrige Zinsen und pessimistische Erwartungen. Im Abschwung lassen Wachstum und Auslastung erst nach, die Preise steigen meist noch. Die Konjunkturentwicklung ist Grundlage der Wirtschaftspolitik nach dem Stabilitäts- und Wachstumsgesetz (§ 1 StabG).'
+      erklaerung: 'Die Wirtschaftsleistung schrumpft nur noch leicht, Arbeitslosigkeit und Unterauslastung sind hoch, Preise und Zinsen sehr niedrig: Die Wirtschaft befindet sich in der Talsohle. Merkmale des Tiefstands (Depression): kaum noch schrumpfende oder stagnierende Wirtschaftsleistung, hohe Arbeitslosigkeit, stark unterausgelastete Kapazitäten, kaum noch steigende Preise, sehr niedrige Zinsen und pessimistische Erwartungen. Im Abschwung lassen Wachstum und Auslastung erst nach, die Preise steigen meist noch. Eine Überhitzung mit stark steigenden Preisen gehört zur Hochkonjunktur. Die Konjunkturentwicklung ist Grundlage der Wirtschaftspolitik nach dem Stabilitäts- und Wachstumsgesetz (§ 1 StabG).'
     },
     {
       nr: 29, thema: 'datenschutz', typ: 'einfach',
@@ -490,7 +490,7 @@
       optionen: [
         'Mit dem Europass kann sie ihre Qualifikationen europaweit verständlich darstellen.',
         'Der Europass ersetzt den Reisepass bei Reisen innerhalb der EU.',
-        'Der Europass ist eine Arbeitserlaubnis, ohne die Frau Kunze in Österreich nicht arbeiten darf.',
+        'Der Europass ist eine für die Arbeit in Österreich vorgeschriebene Arbeitserlaubnis.',
         'Mit dem Europass werden alle ausländischen Abschlüsse automatisch als gleichwertig anerkannt.',
         'Den Europass erhalten nur Studierende an Hochschulen.'
       ],

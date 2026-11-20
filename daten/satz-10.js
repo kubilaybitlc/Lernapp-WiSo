@@ -33,10 +33,10 @@
       frage: 'Welche der folgenden Aussagen zur Eintragung in das Verzeichnis der Berufsausbildungsverhältnisse trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Eintragung beantragt Frau Haddad selbst bei der Berufsschule, sobald der Unterricht begonnen hat.',
+        'Die Eintragung beantragt Frau Haddad selbst nach Unterrichtsbeginn bei der Berufsschule.',
         'Die Mainblick Software AG muss die Eintragung unverzüglich bei der BITLC beantragen.',
-        'Eine Eintragung ist nur erforderlich, wenn die Auszubildende minderjährig ist.',
-        'Die Eintragung erfolgt erst, wenn Teil 1 der Abschlussprüfung bestanden ist.',
+        'Eine Eintragung ist nur bei minderjährigen Auszubildenden erforderlich.',
+        'Die Eintragung erfolgt erst nach bestandenem Teil 1 der Abschlussprüfung.',
         'Über die Eintragung entscheidet die Agentur für Arbeit.'
       ],
       loesung: 2,
@@ -49,13 +49,13 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Angabe in das Kästchen ein.',
       optionen: [
         'Die Ausbildungsdauer',
-        'Das Ausbildungsberufsbild mit den zu vermittelnden Fertigkeiten, Kenntnissen und Fähigkeiten',
-        'Die Höhe der Ausbildungsvergütung im ersten Ausbildungsjahr',
-        'Der Ausbildungsrahmenplan als Anleitung zur sachlichen und zeitlichen Gliederung der Ausbildung',
+        'Das Ausbildungsberufsbild',
+        'Die Höhe der Ausbildungsvergütung',
+        'Der Ausbildungsrahmenplan',
         'Die Prüfungsanforderungen'
       ],
       loesung: 3,
-      erklaerung: 'Die Ausbildungsordnung ist eine Rechtsverordnung des Bundes (§ 4 BBiG). Nach § 5 Abs. 1 BBiG legt sie mindestens fest: die Bezeichnung des Ausbildungsberufs, die Ausbildungsdauer (nicht mehr als drei und nicht weniger als zwei Jahre), das Ausbildungsberufsbild, den Ausbildungsrahmenplan und die Prüfungsanforderungen. Die Höhe der Vergütung wird im Ausbildungsvertrag oder Tarifvertrag geregelt (§§ 11, 17 BBiG).'
+      erklaerung: 'Die Ausbildungsordnung ist eine Rechtsverordnung des Bundes (§ 4 BBiG). Nach § 5 Abs. 1 BBiG legt sie mindestens fest: die Bezeichnung des Ausbildungsberufs, die Ausbildungsdauer (nicht mehr als drei und nicht weniger als zwei Jahre), das Ausbildungsberufsbild (die zu vermittelnden Fertigkeiten, Kenntnisse und Fähigkeiten), den Ausbildungsrahmenplan (Anleitung zur sachlichen und zeitlichen Gliederung der Ausbildung) und die Prüfungsanforderungen. Die Höhe der Vergütung wird im Ausbildungsvertrag oder Tarifvertrag geregelt (§§ 11, 17 BBiG).'
     },
     {
       nr: 3, thema: 'ausbildung', typ: 'einfach',
@@ -63,7 +63,7 @@
       frage: 'Welche der folgenden Aussagen zu dieser Kündigung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Kündigung ist jederzeit möglich, weil es für Kündigungen aus wichtigem Grund keine Frist gibt.',
+        'Die Kündigung aus wichtigem Grund ist zeitlich unbegrenzt möglich.',
         'Die Kündigung kann nur mündlich in Anwesenheit der Eltern ausgesprochen werden.',
         'Nach Ablauf der Probezeit kann der Ausbildungsbetrieb überhaupt nicht mehr kündigen.',
         'Sie muss innerhalb von zwei Wochen schriftlich unter Angabe der Gründe erklärt werden.',
@@ -78,10 +78,10 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die ordentliche Kündigung ist ohne Weiteres zulässig, weil Herr Ostermann kein Betriebsratsmitglied mehr ist.',
+        'Nach dem Ende der Mitgliedschaft im Betriebsrat ist die ordentliche Kündigung ohne Weiteres zulässig.',
         'Eine ordentliche Kündigung ist bis ein Jahr nach Ende der Amtszeit unzulässig.',
         'Ehemalige Betriebsratsmitglieder sind lebenslang unkündbar.',
-        'Die ordentliche Kündigung ist zulässig, wenn der Betriebsrat ihr zustimmt.',
+        'Die ordentliche Kündigung ist mit Zustimmung des Betriebsrats zulässig.',
         'Der besondere Kündigungsschutz gilt nur für den Vorsitzenden des Betriebsrats.'
       ],
       loesung: 2,
@@ -94,9 +94,9 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Der Betriebsrat muss nach Einführung der Überstunden lediglich informiert werden.',
-        'Der Betriebsrat hat kein Beteiligungsrecht, weil die Arbeitszeit im Arbeitsvertrag geregelt ist.',
-        'Der Betriebsrat ist anzuhören, seine Meinung ist aber nicht bindend.',
-        'Die Überstunden dürfen nur angeordnet werden, wenn die BITLC zustimmt.',
+        'Der Betriebsrat hat wegen der Regelung der Arbeitszeit im Arbeitsvertrag kein Beteiligungsrecht.',
+        'Der Betriebsrat hat lediglich ein unverbindliches Anhörungsrecht.',
+        'Die Überstunden dürfen nur mit Zustimmung der BITLC angeordnet werden.',
         'Der Betriebsrat hat ein Mitbestimmungsrecht bei der Anordnung von Überstunden.'
       ],
       loesung: 5,
@@ -111,7 +111,7 @@
         'Sie kann sich beim Arbeitgeber beschweren und ein Betriebsratsmitglied hinzuziehen.',
         'Eine Beschwerde ist nur schriftlich über einen Rechtsanwalt zulässig.',
         'Wegen der Beschwerde darf der Arbeitgeber ihr eine Abmahnung erteilen.',
-        'Beschwerden sind nur zulässig, wenn mindestens drei Beschäftigte betroffen sind.',
+        'Beschwerden sind nur bei mindestens drei betroffenen Beschäftigten zulässig.',
         'Über jede Beschwerde entscheidet das Arbeitsgericht.'
       ],
       loesung: 1,
@@ -124,8 +124,8 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Ein Aufhebungsvertrag kann mündlich oder per E-Mail wirksam geschlossen werden.',
-        'Vor Abschluss eines Aufhebungsvertrags muss der Betriebsrat angehört werden, sonst ist der Vertrag unwirksam.',
-        'Mit einem Aufhebungsvertrag beenden beide Seiten das Arbeitsverhältnis einvernehmlich, er bedarf der Schriftform.',
+        'Ohne vorherige Anhörung des Betriebsrats ist ein Aufhebungsvertrag unwirksam.',
+        'Ein Aufhebungsvertrag beendet das Arbeitsverhältnis einvernehmlich und bedarf der Schriftform.',
         'Ein Aufhebungsvertrag kann vom Arbeitnehmer innerhalb von drei Monaten ohne Angabe von Gründen widerrufen werden.',
         'Nach einem Aufhebungsvertrag besteht immer ein gesetzlicher Anspruch auf eine Abfindung.'
       ],
@@ -153,9 +153,9 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Der Arbeitgeber darf Inhalt, Ort und Zeit der Arbeit nach billigem Ermessen bestimmen.',
-        'Der Arbeitgeber darf jede beliebige Tätigkeit zuweisen, auch wenn sie geringer bezahlt wird als die vertraglich vereinbarte.',
-        'Weisungen zum Arbeitsort sind grundsätzlich unzulässig; der Arbeitsort kann nur durch eine Änderungskündigung geändert werden.',
-        'Weisungen sind nur wirksam, wenn sie schriftlich erteilt und vom Betriebsrat genehmigt wurden.',
+        'Der Arbeitgeber darf jede beliebige Tätigkeit zuweisen, auch eine geringer bezahlte.',
+        'Der Arbeitsort kann grundsätzlich nur durch eine Änderungskündigung geändert werden.',
+        'Weisungen sind nur in Schriftform und mit Genehmigung des Betriebsrats wirksam.',
         'Das Weisungsrecht gilt nur gegenüber Auszubildenden, nicht gegenüber Fachkräften.'
       ],
       loesung: 1,
@@ -182,10 +182,10 @@
       frage: 'Welche der folgenden Aussagen zum betrieblichen Eingliederungsmanagement (BEM) trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Herr Lindqvist ist zur Teilnahme verpflichtet; lehnt er das BEM ab, kann ihm fristlos gekündigt werden.',
+        'Bei Ablehnung des verpflichtenden BEM kann Herrn Lindqvist fristlos gekündigt werden.',
         'Ein BEM ist nur für schwerbehinderte Beschäftigte vorgesehen.',
         'Das BEM wird ausschließlich von der Krankenkasse durchgeführt.',
-        'Der Arbeitgeber muss ihm ein BEM anbieten, die Teilnahme ist freiwillig.',
+        'Der Arbeitgeber muss ihm ein BEM mit freiwilliger Teilnahme anbieten.',
         'Ein BEM ist erst nach einer ununterbrochenen Arbeitsunfähigkeit von einem Jahr vorgeschrieben.'
       ],
       loesung: 4,
@@ -213,10 +213,10 @@
       frage: 'Welche der folgenden Aussagen zur Haftung für diese Bestellung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Vor der Eintragung kann im Namen der Gesellschaft überhaupt kein Vertrag geschlossen werden; die Bestellung ist nichtig.',
-        'Für die Bestellung haftet nur das eingezahlte Stammkapital; eine persönliche Haftung ist ausgeschlossen.',
-        'Herr Brosowski haftet persönlich, weil er vor der Eintragung im Namen der Gesellschaft gehandelt hat.',
-        'Für alle Verträge vor der Eintragung haftet der Notar, der den Gesellschaftsvertrag beurkundet hat.',
+        'Die Bestellung im Namen der Gesellschaft vor deren Eintragung ist nichtig.',
+        'Für die Bestellung haftet ausschließlich das eingezahlte Stammkapital.',
+        'Wegen seines Handelns im Namen der Gesellschaft vor der Eintragung haftet Herr Brosowski persönlich.',
+        'Für alle Verträge vor der Eintragung haftet der beurkundende Notar.',
         'Die Mainblick Software AG haftet als Gesellschafterin auch nach der Eintragung unbeschränkt für alle Schulden der GmbH.'
       ],
       loesung: 3,
@@ -251,7 +251,7 @@
       optionen: [
         'Ehemann und Tochter müssen sich jeweils freiwillig versichern und eigene Beiträge zahlen.',
         'Ehemann und Tochter sind beitragsfrei familienversichert.',
-        'Nur die Tochter ist mitversichert; Ehepartner sind von der Familienversicherung ausgeschlossen.',
+        'Die Familienversicherung gilt nur für Kinder, nicht für Ehepartner.',
         'Für jedes mitversicherte Familienmitglied erhöht sich der Beitragssatz von Frau Wróbel um einen Prozentpunkt.',
         'Die Familienversicherung gilt nur in der Pflegeversicherung, nicht in der Krankenversicherung.'
       ],
@@ -264,11 +264,11 @@
       frage: 'Welche Folge hat die Eigenkündigung für seinen Anspruch auf Arbeitslosengeld?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Folge in das Kästchen ein.',
       optionen: [
-        'Er erhält kein Arbeitslosengeld, weil es nur nach einer Kündigung durch den Arbeitgeber gezahlt wird.',
+        'Ohne Kündigung durch den Arbeitgeber erhält er kein Arbeitslosengeld.',
         'Er erhält sofort Arbeitslosengeld in voller Höhe.',
         'Er muss das Arbeitslosengeld später an die Agentur für Arbeit zurückzahlen.',
         'Er erhält Arbeitslosengeld erst nach einer Wartezeit von zwei Jahren.',
-        'In der Regel tritt eine Sperrzeit von zwölf Wochen ein, die Anspruchsdauer verkürzt sich.'
+        'In der Regel tritt eine Sperrzeit von zwölf Wochen mit verkürzter Anspruchsdauer ein.'
       ],
       loesung: 5,
       erklaerung: 'Löst ein Arbeitsloser sein Beschäftigungsverhältnis ohne wichtigen Grund selbst, tritt eine Sperrzeit wegen Arbeitsaufgabe ein (§ 159 Abs. 1 Satz 2 Nr. 1 SGB III); sie dauert in der Regel zwölf Wochen (§ 159 Abs. 3 SGB III). Während der Sperrzeit ruht der Anspruch auf Arbeitslosengeld. Die Anspruchsdauer mindert sich um die Tage der Sperrzeit, bei einer Sperrzeit von zwölf Wochen mindestens um ein Viertel der Anspruchsdauer (§ 148 Abs. 1 Nr. 4 SGB III).'
@@ -310,14 +310,14 @@
       frage: 'Welche der folgenden Aussagen zur Organisation der großen deutschen Gewerkschaften trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die DGB-Gewerkschaften sind nach dem Industrieverbandsprinzip organisiert: eine Gewerkschaft je Branche.',
-        'Für jeden Beruf gibt es genau eine Gewerkschaft, die ausschließlich diesen Beruf vertritt.',
+        'Die DGB-Gewerkschaften sind nach dem Industrieverbandsprinzip organisiert.',
+        'Für jeden Beruf gibt es genau eine ausschließlich für ihn zuständige Gewerkschaft.',
         'Der Deutsche Gewerkschaftsbund (DGB) schließt als Dachverband selbst alle Tarifverträge in Deutschland ab.',
-        'Gewerkschaften sind staatliche Behörden, die vom Bundesministerium für Arbeit und Soziales geleitet werden.',
+        'Gewerkschaften sind staatliche Behörden unter Leitung des Bundesministeriums für Arbeit und Soziales.',
         'Jeder Arbeitnehmer muss Mitglied der für seinen Betrieb zuständigen Gewerkschaft werden.'
       ],
       loesung: 1,
-      erklaerung: 'Die Gewerkschaften im Deutschen Gewerkschaftsbund folgen dem Industrieverbandsprinzip („ein Betrieb, eine Gewerkschaft“), z. B. ver.di für Dienstleistungen oder die IG Metall für die Metall- und Elektroindustrie. Daneben gibt es einzelne Berufsgewerkschaften, etwa für Lokführer oder Ärzte. Der DGB ist der Dachverband und vertritt die Interessen politisch; Tarifverträge schließen in der Regel die Einzelgewerkschaften. Gewerkschaften sind freie, vom Staat unabhängige Vereinigungen, die Mitgliedschaft ist freiwillig (Koalitionsfreiheit, Art. 9 Abs. 3 GG).'
+      erklaerung: 'Die Gewerkschaften im Deutschen Gewerkschaftsbund folgen dem Industrieverbandsprinzip („ein Betrieb, eine Gewerkschaft“), z. B. ver.di für Dienstleistungen oder die IG Metall für die Metall- und Elektroindustrie. Zuständig ist also eine Gewerkschaft je Branche, unabhängig vom Beruf der einzelnen Beschäftigten. Daneben gibt es einzelne Berufsgewerkschaften, etwa für Lokführer oder Ärzte. Der DGB ist der Dachverband und vertritt die Interessen politisch; Tarifverträge schließen in der Regel die Einzelgewerkschaften. Gewerkschaften sind freie, vom Staat unabhängige Vereinigungen, die Mitgliedschaft ist freiwillig (Koalitionsfreiheit, Art. 9 Abs. 3 GG).'
     },
     {
       nr: 20, thema: 'tarifrecht', typ: 'einfach',
@@ -326,10 +326,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Der Schlichter wird vom Bundesarbeitsgericht bestimmt und entscheidet durch Urteil.',
-        'Während der Schlichtung soll gestreikt werden, um den Druck auf die Arbeitgeber zu erhöhen.',
+        'Während der Schlichtung soll zur Erhöhung des Drucks auf die Arbeitgeber gestreikt werden.',
         'Ein Schlichtungsergebnis gilt automatisch für alle Arbeitnehmer in Deutschland.',
-        'Eine neutrale Person erarbeitet einen Einigungsvorschlag, der nur bei Annahme beider Seiten gilt.',
-        'Eine Schlichtung ist nur zulässig, wenn der Betriebsrat sie beantragt.'
+        'Der Einigungsvorschlag einer neutralen Person gilt nur bei Annahme durch beide Seiten.',
+        'Eine Schlichtung ist nur auf Antrag des Betriebsrats zulässig.'
       ],
       loesung: 4,
       erklaerung: 'Die Schlichtung beruht auf freiwilligen Schlichtungsvereinbarungen der Tarifparteien; eine staatliche Zwangsschlichtung gibt es wegen der Tarifautonomie (Art. 9 Abs. 3 GG) nicht. Ein unparteiischer Schlichter, oft gemeinsam mit Beisitzern beider Seiten, legt einen Einigungsvorschlag vor. Nehmen beide Seiten ihn an, wird er Grundlage des neuen Tarifvertrags. Während des Schlichtungsverfahrens gilt nach den üblichen Vereinbarungen Friedenspflicht; scheitert die Schlichtung, kann die Gewerkschaft eine Urabstimmung über einen Streik durchführen.'
@@ -356,11 +356,11 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Charta der Vielfalt ist ein Gesetz, dessen Verletzung mit einem Bußgeld geahndet wird.',
-        'Diversity Management bedeutet, dass Stellen nur noch an Bewerberinnen und Bewerber aus dem Ausland vergeben werden.',
+        'Die Charta der Vielfalt ist ein Gesetz mit Bußgeldern bei Verstößen.',
+        'Diversity Management bedeutet die Vergabe von Stellen nur noch an Bewerberinnen und Bewerber aus dem Ausland.',
         'Mit der Unterzeichnung entfallen für das Unternehmen die Pflichten aus dem Allgemeinen Gleichbehandlungsgesetz.',
         'Die Charta der Vielfalt richtet sich nur an Unternehmen mit mehr als 1.000 Beschäftigten.',
-        'Das Unternehmen verpflichtet sich freiwillig, Vielfalt im Arbeitsumfeld anzuerkennen und zu fördern.'
+        'Das Unternehmen verpflichtet sich freiwillig zur Anerkennung und Förderung von Vielfalt im Arbeitsumfeld.'
       ],
       loesung: 5,
       erklaerung: 'Die Charta der Vielfalt ist eine freiwillige Selbstverpflichtung von Unternehmen und Institutionen, getragen vom Verein Charta der Vielfalt e. V.; unterzeichnen können Organisationen jeder Größe. Diversity Management will die Vielfalt der Beschäftigten wertschätzen und als Chance nutzen. Die gesetzlichen Pflichten aus dem AGG, etwa das Benachteiligungsverbot (§ 7 AGG) und die Schutzpflichten des Arbeitgebers (§ 12 AGG), gelten unabhängig davon weiter.'
@@ -375,7 +375,7 @@
         'Sie ersetzt den Vorstand bei allen Entscheidungen.',
         'Sie ist immer mehreren Vorgesetzten gleichzeitig unterstellt.',
         'Sie wird ausschließlich mit externen Beratern besetzt.',
-        'Sie berät die Leitungsstelle, hat aber keine Weisungsbefugnis.'
+        'Sie berät die Leitungsstelle ohne eigene Weisungsbefugnis.'
       ],
       loesung: 5,
       erklaerung: 'Im Stabliniensystem wird das Einliniensystem um Stabsstellen ergänzt. Stäbe bereiten Entscheidungen fachlich vor und beraten die Leitung, entscheiden aber nicht selbst und haben keine Weisungsbefugnis gegenüber der Linie. Vorteile sind die Entlastung der Leitung und Spezialwissen, Nachteile mögliche Konflikte zwischen Stab und Linie sowie Einfluss ohne Verantwortung. Es handelt sich um ein Modell der Organisationslehre ohne Rechtsgrundlage.'
@@ -401,11 +401,11 @@
       frage: 'Welche der folgenden Aussagen trifft nach dem Jugendarbeitsschutzgesetz zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Plan ist zulässig, weil die Arbeitszeit acht Stunden nicht überschreitet.',
-        'Der Plan ist zulässig, weil Pausen bei Jugendlichen nicht berücksichtigt werden.',
-        'Der Plan ist unzulässig, weil die Schichtzeit bei Jugendlichen zehn Stunden nicht überschreiten darf.',
-        'Der Plan ist unzulässig, weil Jugendliche nur bis 18:00 Uhr beschäftigt werden dürfen.',
-        'Der Plan ist zulässig, wenn die Eltern schriftlich zustimmen.'
+        'Wegen der Arbeitszeit von höchstens acht Stunden ist der Plan zulässig.',
+        'Wegen der fehlenden Anrechnung von Pausen bei Jugendlichen ist der Plan zulässig.',
+        'Wegen der Schichtzeit von mehr als zehn Stunden ist der Plan unzulässig.',
+        'Wegen des Arbeitsendes nach 18:00 Uhr ist der Plan unzulässig.',
+        'Mit schriftlicher Zustimmung der Eltern ist der Plan zulässig.'
       ],
       loesung: 3,
       erklaerung: 'Schichtzeit ist die tägliche Arbeitszeit unter Hinzurechnung der Ruhepausen (§ 4 Abs. 2 JArbSchG). Sie darf bei Jugendlichen grundsätzlich zehn Stunden nicht überschreiten (§ 12 JArbSchG); hier beträgt sie elf Stunden. Höhere Grenzen gelten nur für einzelne Branchen wie Gaststätten oder Landwirtschaft. Ein Arbeitsende um 20:00 Uhr wäre zulässig (§ 14 Abs. 1 JArbSchG), und acht Stunden Arbeit mit mindestens 60 Minuten Pause entsprechen den §§ 8 und 11 JArbSchG.'
@@ -445,10 +445,10 @@
       frage: 'Welche der folgenden Folgen ist für eine anhaltende Deflation typisch?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Folge in das Kästchen ein.',
       optionen: [
-        'Verbraucher und Unternehmen halten Käufe zurück, weil sie weiter sinkende Preise erwarten.',
+        'Verbraucher und Unternehmen halten Käufe in Erwartung weiter sinkender Preise zurück.',
         'Die Kaufkraft des Geldes sinkt.',
-        'Die Nachfrage steigt stark an, weil alle Haushalte sofort kaufen wollen.',
-        'Schuldner werden entlastet, weil der reale Wert ihrer Schulden sinkt.',
+        'Die Nachfrage steigt wegen sofortiger Käufe aller Haushalte stark an.',
+        'Schuldner werden durch den sinkenden realen Wert ihrer Schulden entlastet.',
         'Die Europäische Zentralbank erhöht in einer Deflation typischerweise die Leitzinsen.'
       ],
       loesung: 1,
@@ -461,7 +461,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Beide müssen ein Gewerbe beim Gewerbeamt anmelden.',
-        'Frau Sommerfeld muss ein Gewerbe anmelden, Herr Lenz nicht, weil er nur online verkauft.',
+        'Frau Sommerfeld muss ein Gewerbe anmelden, Herr Lenz als reiner Onlinehändler nicht.',
         'Keiner von beiden muss seine Tätigkeit bei einer Behörde anmelden.',
         'Herr Lenz meldet ein Gewerbe an, Frau Sommerfeld meldet sich als Freiberuflerin beim Finanzamt.',
         'Beide müssen sich ausschließlich bei der Berufsgenossenschaft anmelden.'

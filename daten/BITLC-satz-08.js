@@ -12,10 +12,10 @@
       frage: 'Die Sachs-IT GmbH schließt mit dem 25-jährigen Harry Petry einen Einzelarbeitsvertrag. Welche Aussage ist zutreffend? Ein Einzelarbeitsvertrag …',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'kann nur geschlossen werden, wenn kein gültiger Tarifvertrag vorliegt.',
+        'kann nur ohne gültigen Tarifvertrag geschlossen werden.',
         'kann nur mit Zustimmung der Gewerkschaft geschlossen werden.',
         'ist ohne Urlaubsregelung ungültig.',
-        'ist auch gültig, wenn das vereinbarte Entgelt über dem tarifvertraglichen liegt.',
+        'ist auch bei einem vereinbarten Entgelt über dem Tarifentgelt gültig.',
         'darf für höchstens zwei Jahre geschlossen werden.'
       ],
       loesung: 4,
@@ -38,9 +38,9 @@
     },
     {
       nr: 3, thema: 'ausbildung', typ: 'zahl',
-      frage: 'Henry Witting (17) ist Azubi in einem IT-Betrieb (kein Schichtbetrieb, keine Gastronomie). § 14 JArbSchG: Jugendliche dürfen nur von 6 bis 20 Uhr beschäftigt werden (Ausnahmen für über 16-Jährige: Gaststätten bis 22 Uhr, Mehrschichtbetriebe bis 23 Uhr, Landwirtschaft ab 5 Uhr, Bäckereien ab 5 Uhr). Zu welcher Uhrzeit könnte er frühestens seinen Dienst beginnen? (hh:mm)',
-      anweisung: 'Tragen Sie das Ergebnis in die Kästchen ein.',
-      loesung: '06:00',
+      frage: 'Henry Witting (17) ist Azubi in einem IT-Betrieb (kein Schichtbetrieb, keine Gastronomie). § 14 JArbSchG: Jugendliche dürfen nur von 6 bis 20 Uhr beschäftigt werden (Ausnahmen für über 16-Jährige: Gaststätten bis 22 Uhr, Mehrschichtbetriebe bis 23 Uhr, Landwirtschaft ab 5 Uhr, Bäckereien ab 5 Uhr). Zu welcher vollen Stunde könnte er frühestens seinen Dienst beginnen?',
+      anweisung: 'Tragen Sie die Uhrzeit (volle Stunde) in das Kästchen ein.',
+      loesung: 6,
       einheit: 'Uhr',
       erklaerung: '§ 14 JArbSchG: Jugendliche dürfen grundsätzlich nur zwischen 6:00 und 20:00 Uhr beschäftigt werden. Die genannten Ausnahmen (Gaststätten bis 22 Uhr, Schichtbetriebe bis 23 Uhr, Landwirtschaft/Bäckereien ab 5 Uhr) gelten nicht für einen normalen IT-Betrieb → frühestens 6:00 Uhr.'
     },
@@ -85,11 +85,11 @@
       frage: 'Einem Mitarbeiter wurde ohne Anhörung des Betriebsrates gekündigt. Was entspricht dem BetrVG? Die Kündigung …',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'ist wirksam, weil eine Zustimmung des Betriebsrates nicht vorgeschrieben ist.',
-        'ist wirksam, weil eine Anhörung nicht vorgeschrieben ist.',
-        'ist unwirksam, weil eine Anhörung des Betriebsrates zwingend vorgeschrieben ist.',
+        'ist wegen der nicht vorgeschriebenen Zustimmung des Betriebsrates wirksam.',
+        'ist wegen der nicht vorgeschriebenen Anhörung wirksam.',
+        'ist wegen der zwingend vorgeschriebenen Anhörung des Betriebsrates unwirksam.',
         'ist durch nachträgliche Anhörung wirksam geworden.',
-        'ist unwirksam, wenn das Arbeitsgericht nicht beteiligt wurde.'
+        'ist ohne Beteiligung des Arbeitsgerichts unwirksam.'
       ],
       loesung: 3,
       erklaerung: '§ 102 Abs. 1 BetrVG: Vor jeder Kündigung muss der Betriebsrat angehört werden – sonst ist die Kündigung unwirksam. Wichtig: Der Betriebsrat muss angehört, aber nicht zugestimmt werden (Anhörung ≠ Zustimmung). Eine nachträgliche Anhörung heilt den Mangel nicht. Das Arbeitsgericht muss nicht an der Kündigung beteiligt werden, kann aber im Kündigungsschutzprozess angerufen werden.'
@@ -99,11 +99,11 @@
       frage: 'Die 17-jährige Pamela Bommering (Ausbildung seit 01.01.2021) kündigt am 12.03.2022 schriftlich zum 15.04.2022, weil sie einen anderen Beruf erlernen will. Sie unterschreibt selbst. Hat sie wirksam gekündigt?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'Ja, weil das Schreiben rechtzeitig übergeben wurde.',
-        'Ja, weil sie schriftlich gekündigt und einen Grund angegeben hat.',
-        'Ja, weil sie sich noch in der Probezeit befindet.',
-        'Nein, weil die Unterschrift der Erziehungsberechtigten als gesetzliche Vertreter fehlt.',
-        'Nein, weil die Kündigungsfrist von vier Wochen nicht eingehalten wurde.'
+        'Ja, wegen der rechtzeitigen Übergabe des Schreibens.',
+        'Ja, wegen der schriftlichen Kündigung mit Angabe eines Grundes.',
+        'Ja, wegen der noch laufenden Probezeit.',
+        'Nein, wegen der fehlenden Unterschrift der Erziehungsberechtigten als gesetzliche Vertreter.',
+        'Nein, wegen der nicht eingehaltenen Kündigungsfrist von vier Wochen.'
       ],
       loesung: 4,
       erklaerung: '§§ 107, 111 BGB: Minderjährige sind beschränkt geschäftsfähig. Eine Kündigung ist ein einseitiges Rechtsgeschäft und bedarf der Einwilligung der gesetzlichen Vertreter – ohne deren Unterschrift ist sie unwirksam. Die 4-Wochen-Frist nach § 22 Abs. 2 BBiG wäre hier eingehalten (12.03. → 15.04.), aber die fehlende Zustimmung der Eltern macht die Kündigung dennoch nichtig.'
@@ -141,7 +141,7 @@
       frage: 'Welche Aussage zur JAV ist zutreffend?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        '„Eine Liste von drei Vorgesetzten, die Ihre Wahl unterstützen, reicht für die Aufstellung.“',
+        '„Eine Liste von drei Ihre Wahl unterstützenden Vorgesetzten reicht für die Aufstellung.“',
         '„Eine strafrechtliche Verurteilung ist für die Wahl nicht relevant.“',
         '„Als Auszubildende/-r unter 25 sind Sie wahlberechtigt und auch wählbar.“',
         '„Bei 20 Wahlberechtigten können Sie leicht eins der vier JAV-Mitglieder werden.“',
@@ -214,7 +214,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Der Europass ist ein kostenpflichtiger Dienst.',
-        'Der Europass unterstützt dabei, Qualifikationen und Kompetenzen bei Bewerbungen europaweit verständlich darzustellen.',
+        'Der Europass unterstützt die europaweit verständliche Darstellung von Qualifikationen und Kompetenzen bei Bewerbungen.',
         'Der Europass beglaubigt Auslandsabschnitte im „Europass-Mobilität“.',
         'Der „Europass-Mobilität“ ist für eine Ausbildung im Ausland verpflichtend.',
         'Der Europass zertifiziert Fremdsprachenkenntnisse.'
@@ -334,7 +334,7 @@
       frage: 'Was trifft auf die Informationspflicht über Unfallverhütungsvorschriften zu? Das Unternehmen muss …',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'schriftlich informieren, dass die Vorschriften bei der Berufsgenossenschaft einsehbar sind.',
+        'schriftlich über die Einsehbarkeit der Vorschriften bei der Berufsgenossenschaft informieren.',
         'einmalig mündlich, z. B. im Vorstellungsgespräch, informieren.',
         'die Vorschriften im Intranet zum Download bereitstellen.',
         'die Unfallverhütungsvorschriften im Betrieb gut sichtbar aushängen.',
@@ -377,10 +377,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Kosten für Umweltschäden werden auf die Solidargemeinschaft verteilt.',
-        'Kosten für die Beseitigung von Umweltschäden tragen diejenigen, die sie verursacht haben.',
+        'Kosten für die Beseitigung von Umweltschäden tragen deren Verursacher.',
         'Es sollen Waren mit leicht entsorgbarer Verpackung vertrieben werden.',
         'Abfallentsorgung ist wichtiger als Abfallvermeidung.',
-        'Es wird ausreichend Verpackung eingesetzt, damit die Ware nicht beschädigt wird.'
+        'Zum Schutz der Ware vor Beschädigung wird ausreichend Verpackung eingesetzt.'
       ],
       loesung: 2,
       erklaerung: 'Das Verursacherprinzip besagt: Wer Umweltschäden verursacht, muss die Kosten für deren Beseitigung tragen. Es ist ein Grundprinzip der deutschen Umweltpolitik und im Umwelthaftungsgesetz verankert. Das Gegenstück ist das Gemeinlastprinzip (Kosten werden auf die Allgemeinheit verteilt).'

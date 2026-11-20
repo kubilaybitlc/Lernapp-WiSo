@@ -57,7 +57,7 @@
         'Der Ausbildungsberater ist ein Beschäftigter der Agentur für Arbeit und vermittelt freie Ausbildungsplätze.',
         'Der Besuch ist nur mit vorheriger Zustimmung des Betriebsrats zulässig.',
         'Der Ausbildungsberater überwacht die Ausbildung für die BITLC und berät Betriebe sowie Auszubildende.',
-        'Der Ausbildungsberater darf den Ausbildungsvertrag eigenmächtig kündigen, wenn er Mängel feststellt.',
+        'Der Ausbildungsberater darf den Ausbildungsvertrag bei festgestellten Mängeln eigenmächtig kündigen.',
         'Der Ausbildungsberater ist Mitglied des Prüfungsausschusses und nimmt bei seinem Besuch die Zwischenprüfung ab.'
       ],
       loesung: 3,
@@ -69,11 +69,11 @@
       frage: 'Welche der folgenden Aussagen zu dieser Kündigung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Kündigung ist wirksam, weil Messenger-Nachrichten heute der Schriftform gleichgestellt sind.',
-        'Die Kündigung ist wirksam, weil nach der Probezeit jederzeit ohne Angabe von Gründen gekündigt werden kann.',
-        'Die Kündigung ist wirksam, sobald Frau Sutter die Nachricht gelesen hat.',
-        'Die Kündigung ist unwirksam, weil die Schriftform und die Angabe der Gründe fehlen.',
-        'Die Kündigung ist unwirksam, weil Auszubildenden nach der Probezeit überhaupt nicht mehr gekündigt werden kann.'
+        'Die Kündigung ist wegen der Gleichstellung von Messenger-Nachrichten mit der Schriftform wirksam.',
+        'Die Kündigung ist nach der Probezeit jederzeit ohne Angabe von Gründen wirksam.',
+        'Die Kündigung ist mit dem Lesen der Nachricht durch Frau Sutter wirksam.',
+        'Die Kündigung ist wegen fehlender Schriftform und fehlender Angabe der Gründe unwirksam.',
+        'Die Kündigung ist wegen der Unkündbarkeit von Auszubildenden nach der Probezeit unwirksam.'
       ],
       loesung: 4,
       erklaerung: '§ 22 Abs. 3 BBiG: Die Kündigung muss schriftlich und nach der Probezeit unter Angabe der Kündigungsgründe erfolgen. Schriftlich heißt mit eigenhändiger Unterschrift (§ 126 BGB); eine Messenger-Nachricht wahrt diese Form nicht, die Kündigung ist nichtig (§ 125 BGB). Nach der Probezeit kann der Ausbildungsbetrieb nur aus wichtigem Grund ohne Einhalten einer Frist kündigen (§ 22 Abs. 2 Nr. 1 BBiG); wiederholtes unentschuldigtes Fehlen trotz Abmahnung kann ein solcher Grund sein. Die Kündigung muss dann innerhalb von zwei Wochen nach Bekanntwerden der Gründe zugehen (§ 22 Abs. 4 BBiG).'
@@ -84,8 +84,8 @@
       frage: 'Welche der folgenden Aussagen zur Beteiligung des Betriebsrats trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Betriebsrat muss über den Fragebogen nur informiert werden; die Personalabteilung entscheidet allein über den Inhalt.',
-        'Personalfragebogen bedürfen der Zustimmung des Betriebsrats; kommt keine Einigung zustande, entscheidet die Einigungsstelle.',
+        'Der Betriebsrat muss über den Fragebogen nur informiert werden.',
+        'Personalfragebogen bedürfen der Zustimmung des Betriebsrats.',
         'Der Betriebsrat darf den Fragebogen allein entwerfen und allen Bewerbern verbindlich vorschreiben.',
         'Über den Inhalt des Fragebogens entscheidet die Industrie- und Handelskammer.',
         'Ein Bewerberfragebogen ist in Betrieben mit Betriebsrat grundsätzlich verboten.'
@@ -115,11 +115,11 @@
       frage: 'Welche der folgenden Aussagen zum Gesamtbetriebsrat trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Ein Gesamtbetriebsrat wird nur gebildet, wenn die Geschäftsführung zustimmt.',
+        'Ein Gesamtbetriebsrat wird nur mit Zustimmung der Geschäftsführung gebildet.',
         'Der Gesamtbetriebsrat wird von allen Beschäftigten des Unternehmens in einer gemeinsamen Wahl gewählt.',
         'Der Gesamtbetriebsrat ist den einzelnen Betriebsräten übergeordnet und kann ihnen Weisungen erteilen.',
-        'Der Gesamtbetriebsrat ersetzt die Betriebsräte in Freiburg und Karlsruhe, die danach aufgelöst werden.',
-        'Ein Gesamtbetriebsrat ist zu errichten; er ist für unternehmensweite Angelegenheiten zuständig.'
+        'Der Gesamtbetriebsrat ersetzt die Betriebsräte in Freiburg und Karlsruhe.',
+        'Für unternehmensweite Angelegenheiten ist ein Gesamtbetriebsrat zu errichten.'
       ],
       loesung: 5,
       erklaerung: '§ 47 Abs. 1 BetrVG: Bestehen in einem Unternehmen mehrere Betriebsräte, ist ein Gesamtbetriebsrat zu errichten. Jeder Betriebsrat mit bis zu drei Mitgliedern entsendet eines, jeder Betriebsrat mit mehr als drei Mitgliedern zwei seiner Mitglieder (§ 47 Abs. 2 BetrVG). Der Gesamtbetriebsrat ist zuständig für Angelegenheiten, die das Gesamtunternehmen oder mehrere Betriebe betreffen und nicht durch die einzelnen Betriebsräte innerhalb ihrer Betriebe geregelt werden können; er ist den Betriebsräten nicht übergeordnet (§ 50 Abs. 1 BetrVG).'
@@ -130,7 +130,7 @@
       frage: 'Welche der folgenden Aussagen zur Fortzahlung seines Arbeitsentgelts trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Anspruch auf Entgeltfortzahlung entsteht erst nach vierwöchiger Wartezeit; vorher erhält er Krankengeld.',
+        'Vor Ablauf der vierwöchigen Wartezeit erhält er statt Entgeltfortzahlung Krankengeld.',
         'Die Feldberg Datentechnik GmbH muss das Entgelt vom ersten Tag des Arbeitsverhältnisses an für bis zu sechs Wochen fortzahlen.',
         'Herr Ketterer erhält für die zehn Tage weder Entgelt noch Krankengeld.',
         'Die Feldberg Datentechnik GmbH darf das Arbeitsverhältnis wegen der Erkrankung fristlos kündigen.',
@@ -161,8 +161,8 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Frau Vögele muss für die Organisation der Pflege ihren Jahresurlaub einsetzen.',
-        'Frau Vögele darf der Arbeit nur fernbleiben, wenn das Unternehmen mehr als 250 Beschäftigte hat und der Betriebsrat zustimmt.',
-        'Frau Vögele darf bis zu zehn Arbeitstage der Arbeit fernbleiben, um die Pflege zu organisieren.',
+        'Frau Vögele darf der Arbeit nur in Unternehmen mit mehr als 250 Beschäftigten und mit Zustimmung des Betriebsrats fernbleiben.',
+        'Frau Vögele darf zur Organisation der Pflege bis zu zehn Arbeitstage der Arbeit fernbleiben.',
         'Frau Vögele hat sofort Anspruch auf eine bezahlte Freistellung von sechs Monaten.',
         'Die Feldberg Datentechnik GmbH darf ihr wegen der Pflegesituation fristlos kündigen.'
       ],
@@ -176,8 +176,8 @@
       anweisung: 'Tragen Sie die Ziffer vor dem jeweils zutreffenden Träger in das Kästchen ein.',
       optionenTitel: 'Träger des Arbeitsschutzes',
       optionen: [
-        'Staatliche Arbeitsschutzbehörde des Landes (z. B. Gewerbeaufsicht)',
-        'Unfallversicherungsträger (Berufsgenossenschaft)'
+        'Gewerbeaufsicht',
+        'Berufsgenossenschaft'
       ],
       itemsTitel: 'Aussagen',
       items: [
@@ -186,7 +186,7 @@
         { text: 'Erbringt nach einem Arbeitsunfall Leistungen zur Heilbehandlung und Rehabilitation.', loesung: 2 },
         { text: 'Wird von den Ländern getragen und setzt Gesetze und Verordnungen des Staates durch.', loesung: 1 }
       ],
-      erklaerung: 'Der Arbeitsschutz in Deutschland ist dual organisiert. Die Überwachung des Arbeitsschutzes nach dem Arbeitsschutzgesetz ist staatliche Aufgabe der Länder (§ 21 Abs. 1 ArbSchG); die zuständige Behörde kann die erforderlichen Maßnahmen anordnen (§ 22 Abs. 3 ArbSchG). Die Unfallversicherungsträger, für Unternehmen die Berufsgenossenschaften, erlassen Unfallverhütungsvorschriften (§ 15 SGB VII), überwachen und beraten durch Aufsichtspersonen (§ 17 SGB VII) und erbringen nach Arbeitsunfällen Heilbehandlung, Rehabilitation und Geldleistungen (§ 26 SGB VII). Sie werden allein durch Beiträge der Arbeitgeber finanziert.'
+      erklaerung: 'Der Arbeitsschutz in Deutschland ist dual organisiert. Die Überwachung des Arbeitsschutzes nach dem Arbeitsschutzgesetz ist staatliche Aufgabe der Länder (§ 21 Abs. 1 ArbSchG); die zuständige Behörde kann die erforderlichen Maßnahmen anordnen (§ 22 Abs. 3 ArbSchG). Diese staatliche Arbeitsschutzbehörde heißt je nach Land z. B. Gewerbeaufsicht oder Amt für Arbeitsschutz. Die Unfallversicherungsträger, für Unternehmen die Berufsgenossenschaften, erlassen Unfallverhütungsvorschriften (§ 15 SGB VII), überwachen und beraten durch Aufsichtspersonen (§ 17 SGB VII) und erbringen nach Arbeitsunfällen Heilbehandlung, Rehabilitation und Geldleistungen (§ 26 SGB VII). Sie werden allein durch Beiträge der Arbeitgeber finanziert.'
     },
     {
       nr: 11, thema: 'arbeitsschutz', typ: 'zahl',
@@ -202,11 +202,11 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Herr Faller darf arbeiten, solange er selbst erklärt, dass er sich fit fühlt.',
-        'Der Vorgesetzte darf Herrn Faller mit dieser Arbeit nicht beschäftigen, weil er erkennbar nicht in der Lage ist, sie ohne Gefahr für sich oder andere auszuführen.',
+        'Für den Arbeitseinsatz genügt die eigene Einschätzung von Herrn Faller als arbeitsfähig.',
+        'Wegen der erkennbaren Gefährdung darf der Vorgesetzte Herrn Faller mit dieser Arbeit nicht beschäftigen.',
         'Alkohol am Arbeitsplatz ist erst ab einem Blutalkoholwert von 1,1 Promille verboten.',
-        'Der Vorgesetzte muss sofort die Polizei rufen, die über den Arbeitseinsatz entscheidet.',
-        'Herr Faller darf weiterarbeiten, weil er den Alkohol in seiner Freizeit getrunken hat.'
+        'Der Vorgesetzte muss sofort die Polizei zur Entscheidung über den Arbeitseinsatz rufen.',
+        'Alkoholkonsum in der Freizeit steht dem Arbeitseinsatz von Herrn Faller nicht entgegen.'
       ],
       loesung: 2,
       erklaerung: 'Versicherte dürfen sich durch Alkohol, Drogen oder andere berauschende Mittel nicht in einen Zustand versetzen, durch den sie sich selbst oder andere gefährden können (§ 15 Abs. 2 DGUV Vorschrift 1). Der Unternehmer darf Versicherte, die erkennbar nicht in der Lage sind, eine Arbeit ohne Gefahr für sich oder andere auszuführen, mit dieser Arbeit nicht beschäftigen (§ 7 Abs. 2 DGUV Vorschrift 1). Eine allgemeine Promillegrenze für die Arbeit gibt es nicht; viele Betriebe regeln den Umgang mit Alkohol in einer Betriebsvereinbarung (§ 87 Abs. 1 Nr. 1 BetrVG). Ein Unfall, der wesentlich auf Alkohol beruht, kann den Schutz der gesetzlichen Unfallversicherung gefährden.'
@@ -217,14 +217,14 @@
       frage: 'Welche der folgenden Rechtsformen erfüllt ihre Anforderungen?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Rechtsform in das Kästchen ein.',
       optionen: [
-        'Offene Handelsgesellschaft (OHG)',
-        'Gesellschaft bürgerlichen Rechts (GbR)',
-        'Gesellschaft mit beschränkter Haftung (GmbH) mit dem gesetzlichen Mindeststammkapital',
-        'Aktiengesellschaft (AG)',
-        'Unternehmergesellschaft (haftungsbeschränkt)'
+        'OHG',
+        'GbR',
+        'GmbH',
+        'AG',
+        'UG'
       ],
       loesung: 5,
-      erklaerung: 'Bei OHG und GbR haften die Gesellschafter persönlich und unbeschränkt (§ 126 HGB, § 721 BGB). GmbH und AG haften nur mit dem Gesellschaftsvermögen, verlangen aber ein Mindestkapital von 25.000,00 EUR (§ 5 Abs. 1 GmbHG) bzw. 50.000,00 EUR (§ 7 AktG), das die Gründer nicht aufbringen können. Die Unternehmergesellschaft (haftungsbeschränkt) ist eine Variante der GmbH, die mit einem Stammkapital ab 1 EUR gegründet werden kann; das Stammkapital muss vor der Anmeldung voll eingezahlt sein, und ein Viertel des Jahresüberschusses ist in eine gesetzliche Rücklage einzustellen (§ 5a GmbHG).'
+      erklaerung: 'Bei der offenen Handelsgesellschaft (OHG) und der Gesellschaft bürgerlichen Rechts (GbR) haften die Gesellschafter persönlich und unbeschränkt (§ 126 HGB, § 721 BGB). Die Gesellschaft mit beschränkter Haftung (GmbH) und die Aktiengesellschaft (AG) haften nur mit dem Gesellschaftsvermögen, verlangen aber ein Mindestkapital von 25.000,00 EUR (§ 5 Abs. 1 GmbHG) bzw. 50.000,00 EUR (§ 7 AktG), das die Gründer nicht aufbringen können. Die Unternehmergesellschaft (haftungsbeschränkt), kurz UG, ist eine Variante der GmbH, die mit einem Stammkapital ab 1 EUR gegründet werden kann; das Stammkapital muss vor der Anmeldung voll eingezahlt sein, und ein Viertel des Jahresüberschusses ist in eine gesetzliche Rücklage einzustellen (§ 5a GmbHG).'
     },
     {
       nr: 14, thema: 'rechtsformen', typ: 'einfach',
@@ -249,7 +249,7 @@
       optionen: [
         'Die Rente zahlt die Feldberg Datentechnik GmbH aus den Arbeitgeberbeiträgen.',
         'Alle Versicherten können ab dem 60. Geburtstag ohne Abschläge in Rente gehen.',
-        'Eine Altersrente erhalten nur Versicherte, die zusätzlich privat vorgesorgt haben.',
+        'Eine Altersrente erhalten nur Versicherte mit zusätzlicher privater Vorsorge.',
         'Frau Riesterer erreicht die Regelaltersgrenze mit Vollendung des 67. Lebensjahres.',
         'Renten wegen Erwerbsminderung zahlt die Berufsgenossenschaft.'
       ],
@@ -310,7 +310,7 @@
         'Tarifverträge bedürfen der Schriftform und müssen im Betrieb bekannt gemacht werden.',
         'Ein Tarifvertrag kann mündlich zwischen Gewerkschaft und Arbeitgeberverband vereinbart werden.',
         'Tarifverträge sind vertraulich und dürfen den Beschäftigten nicht zugänglich gemacht werden.',
-        'Einsicht in den Tarifvertrag erhalten nur Beschäftigte, die länger als zehn Jahre im Betrieb sind.',
+        'Einsicht in den Tarifvertrag erhalten nur Beschäftigte mit mehr als zehn Jahren Betriebszugehörigkeit.',
         'Tarifverträge werden vom Betriebsrat mit der Geschäftsführung abgeschlossen.'
       ],
       loesung: 1,
@@ -326,7 +326,7 @@
         'Durch die Aussperrung werden die Arbeitsverhältnisse der Ausgesperrten automatisch beendet.',
         'Die Ausgesperrten erhalten während der Aussperrung ihr volles Gehalt vom Arbeitgeber.',
         'Eine Aussperrung darf sich ausschließlich gegen Gewerkschaftsmitglieder richten.',
-        'Bei einer Aussperrung ruhen die Arbeitsverhältnisse und es wird kein Entgelt gezahlt.'
+        'Bei einer Aussperrung ruhen die Arbeitsverhältnisse ohne Anspruch auf Entgelt.'
       ],
       loesung: 5,
       erklaerung: 'Die Aussperrung ist das Kampfmittel der Arbeitgeberseite; sie ist durch die Koalitionsfreiheit geschützt (Art. 9 Abs. 3 GG). Nach der Rechtsprechung des Bundesarbeitsgerichts ist sie als Abwehraussperrung gegen Teil- oder Schwerpunktstreiks zulässig, muss aber verhältnismäßig sein. Sie beendet die Arbeitsverhältnisse nicht, sondern lässt sie ruhen: Arbeitspflicht und Entgeltanspruch entfallen, nach dem Arbeitskampf wird die Arbeit fortgesetzt. Eine Aussperrung, die gezielt nur Gewerkschaftsmitglieder trifft, ist unzulässig, weil sie die Koalitionsfreiheit verletzt.'
@@ -368,9 +368,9 @@
       frage: 'Welche der folgenden Aussagen zu diesem Vorhaben trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Es handelt sich um eine Daueraufgabe ohne festen Endtermin, die eine Abteilung allein erledigt.',
+        'Es handelt sich um eine Daueraufgabe einer einzelnen Abteilung ohne festen Endtermin.',
         'Es handelt sich um ein Projekt mit klarem Ziel, festem Zeitrahmen und eigener Organisation.',
-        'Projekte werden ausschließlich im Einliniensystem geführt; eine Projektleitung gibt es nicht.',
+        'Projekte werden ausschließlich im Einliniensystem ohne Projektleitung geführt.',
         'Die Planung eines Projekts beginnt erst nach Abschluss der Umsetzung.',
         'Für Projekte gelten die Vorschriften der Ausbildungsordnung.'
       ],
@@ -383,10 +383,10 @@
       frage: 'Welche der folgenden Aussagen zu diesem Ziel trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Es handelt sich um ein ökonomisches Marktziel, das den Anteil am Gesamtumsatz des Marktes angibt.',
-        'Es handelt sich um ein soziales Ziel, weil es die Beschäftigten betrifft.',
+        'Es handelt sich um ein ökonomisches Marktziel zum Anteil am Gesamtumsatz des Marktes.',
+        'Es handelt sich um ein soziales Ziel zugunsten der Beschäftigten.',
         'Der Marktanteil ergibt sich aus dem Gewinn geteilt durch das Eigenkapital.',
-        'Das Ziel ist nicht operational, weil Zielausmaß und Zeitraum fehlen.',
+        'Das Ziel ist wegen fehlender Angaben zu Ausmaß und Zeitraum nicht operational.',
         'Ein Marktanteilsziel ist für Kapitalgesellschaften gesetzlich vorgeschrieben.'
       ],
       loesung: 1,
@@ -398,11 +398,11 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Das ist zulässig, weil Jugendliche ab 6:00 Uhr beschäftigt werden dürfen.',
-        'Das ist zulässig, wenn Herr Bühler dafür am Freitag eine Stunde früher gehen darf.',
-        'Das ist zulässig, weil die Beschäftigung vor der Schule nur eine Stunde dauert.',
-        'Das ist unzulässig, weil Herr Bühler vor einem vor 9:00 Uhr beginnenden Unterricht nicht beschäftigt werden darf.',
-        'Das ist nur zulässig, wenn die Berufsschule zustimmt.'
+        'Das ist wegen der erlaubten Beschäftigung Jugendlicher ab 6:00 Uhr zulässig.',
+        'Das ist bei einem um eine Stunde früheren Arbeitsende am Freitag zulässig.',
+        'Das ist wegen der Dauer von nur einer Stunde vor der Schule zulässig.',
+        'Das ist wegen des Unterrichtsbeginns vor 9:00 Uhr unzulässig.',
+        'Das ist nur mit Zustimmung der Berufsschule zulässig.'
       ],
       loesung: 4,
       erklaerung: '§ 9 Abs. 1 Satz 2 Nr. 1 JArbSchG: Jugendliche dürfen vor einem vor 9 Uhr beginnenden Unterricht nicht beschäftigt werden. Seit 2020 gilt das nach § 15 Abs. 1 Satz 2 Nr. 1 BBiG für alle Auszubildenden, auch volljährige. Die allgemeine Regel, dass Jugendliche ab 6 Uhr beschäftigt werden dürfen (§ 14 Abs. 1 JArbSchG), tritt dahinter zurück. Die Unterrichtszeit einschließlich der Pausen wird auf die Arbeitszeit angerechnet (§ 9 Abs. 2 Nr. 3 JArbSchG).'
@@ -417,7 +417,7 @@
         'Das Arbeitsgericht entscheidet ohne mündliche Verhandlung allein nach Aktenlage.',
         'Über die Klage entscheidet in erster Instanz der Betriebsrat.',
         'Die Kammer des Arbeitsgerichts besteht aus drei Berufsrichtern.',
-        'Das Verfahren beginnt mit einer Güteverhandlung; scheitert sie, entscheidet die Kammer mit einem Berufsrichter und zwei ehrenamtlichen Richtern.'
+        'Nach einer gescheiterten Güteverhandlung entscheidet die Kammer mit einem Berufsrichter und zwei ehrenamtlichen Richtern.'
       ],
       loesung: 5,
       erklaerung: 'Die mündliche Verhandlung beginnt mit einer Güteverhandlung vor der oder dem Vorsitzenden mit dem Ziel einer gütlichen Einigung, z. B. durch einen Vergleich (§ 54 ArbGG). Scheitert sie, verhandelt die Kammer, die mit einem Berufsrichter als Vorsitzendem und je einem ehrenamtlichen Richter aus Kreisen der Arbeitnehmer und der Arbeitgeber besetzt ist (§ 16 Abs. 2 ArbGG). Vor dem Arbeitsgericht können die Parteien den Rechtsstreit selbst führen oder sich z. B. durch ihre Gewerkschaft vertreten lassen (§ 11 Abs. 1, 2 ArbGG); vor dem Landesarbeitsgericht und dem Bundesarbeitsgericht müssen sie sich vertreten lassen (§ 11 Abs. 4 ArbGG).'
@@ -444,10 +444,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Inflationsrate wird von der Europäischen Zentralbank anhand der Aktienkurse berechnet.',
-        'Das Statistische Bundesamt misst die Preisentwicklung eines Warenkorbs; die jährliche Veränderung ist die Inflationsrate.',
-        'Die Inflationsrate gibt an, um wie viel Prozent die Löhne gestiegen sind.',
+        'Das Statistische Bundesamt ermittelt die Inflationsrate aus der jährlichen Preisveränderung eines Warenkorbs.',
+        'Die Inflationsrate gibt den prozentualen Anstieg der Löhne an.',
         'In den Warenkorb gehen nur Lebensmittel ein.',
-        'Eine Inflationsrate von 2,4 % bedeutet, dass die Kaufkraft des Geldes um 2,4 % gestiegen ist.'
+        'Eine Inflationsrate von 2,4 % bedeutet einen Anstieg der Kaufkraft des Geldes um 2,4 %.'
       ],
       loesung: 2,
       erklaerung: 'Das Statistische Bundesamt berechnet monatlich den Verbraucherpreisindex (VPI). Grundlage ist ein Warenkorb mit rund 650 Güterarten, z. B. Nahrungsmittel, Mieten, Energie, Kleidung und Dienstleistungen, gewichtet nach ihrem Anteil an den Ausgaben der privaten Haushalte (Wägungsschema). Die prozentuale Veränderung gegenüber dem Vorjahresmonat ist die Inflationsrate; steigen die Preise, sinkt die Kaufkraft des Geldes. Preisniveaustabilität ist ein Ziel nach § 1 StabG; die EZB strebt mittelfristig eine Inflationsrate von 2 % an.'
@@ -474,11 +474,11 @@
       frage: 'Welche der folgenden Aussagen zur Gründungsfinanzierung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die KfW zahlt jedem Gründer auf Antrag einen Zuschuss, der nicht zurückgezahlt werden muss.',
+        'Die KfW zahlt jedem Gründer auf Antrag einen nicht rückzahlbaren Zuschuss.',
         'Den Gründungszuschuss der Agentur für Arbeit erhält jeder Gründer, auch ohne Anspruch auf Arbeitslosengeld.',
         'Banken vergeben Gründungskredite grundsätzlich ohne Businessplan und ohne Sicherheiten.',
-        'Förderkredite der KfW werden über die Hausbank beantragt; Eigenkapital und Businessplan verbessern die Aussichten.',
-        'Kredite müssen nicht zurückgezahlt werden, wenn die Gründung scheitert.'
+        'Förderkredite der KfW werden über die Hausbank beantragt.',
+        'Bei einem Scheitern der Gründung müssen Kredite nicht zurückgezahlt werden.'
       ],
       loesung: 4,
       erklaerung: 'Gründungen werden meist aus Eigenkapital und Fremdkapital finanziert. Förderkredite der KfW werden nach dem Hausbankprinzip über die eigene Bank beantragt; sie bieten oft günstige Zinsen und tilgungsfreie Anlaufjahre, müssen aber zurückgezahlt werden. Den Gründungszuschuss der Agentur für Arbeit können nur Arbeitslose mit einem Restanspruch auf Arbeitslosengeld erhalten; die Tragfähigkeit der Gründung muss eine fachkundige Stelle bestätigen (§ 93 SGB III). Banken prüfen Businessplan, Eigenkapitalanteil und Sicherheiten. Kredite sind auch bei einem Scheitern zurückzuzahlen.'

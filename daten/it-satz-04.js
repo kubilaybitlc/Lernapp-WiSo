@@ -18,6 +18,10 @@
     {
       von: 14, bis: 25,
       text: 'Für die interne Verarbeitung der Sendungsdaten wählt das Team passende Datenstrukturen aus. In einer Schulung für die Auszubildenden werden Stack, Queue, verkettete Liste, Baum und Hashtabelle besprochen.'
+    },
+    {
+      von: 26, bis: 30,
+      text: 'Die Schnittstelle wird für einen Großkunden erweitert. Er soll Sendungen gefiltert abrufen, sich mit einem Zugangstoken anmelden und Daten aus seinem Lagersystem als XML übergeben können.'
     }
   ],
 
@@ -29,9 +33,9 @@
       frage: 'Welche Aussage beschreibt die Zustandslosigkeit einer REST-Schnittstelle?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Server speichert nach der Anmeldung eine Sitzung, auf die sich alle weiteren Anfragen beziehen.',
+        'Der Server speichert nach der Anmeldung eine Sitzung für alle weiteren Anfragen.',
         'Der Server liefert auf jede Anfrage dieselbe Antwort, unabhängig von der angefragten Ressource.',
-        'Jede Anfrage enthält alle Angaben, die der Server zu ihrer Verarbeitung benötigt.',
+        'Jede Anfrage enthält alle zu ihrer Verarbeitung nötigen Angaben.',
         'Die Daten der Ressourcen werden nicht dauerhaft in einer Datenbank gespeichert.',
         'Client und Server halten die Verbindung nach der ersten Anfrage dauerhaft offen.'
       ],
@@ -95,35 +99,35 @@
       frage: 'Welche Aussagen zu den HTTP-Methoden treffen zu?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Aussagen in die Kästchen ein.',
       optionen: [
-        'POST ist idempotent: Zweimaliges Senden legt die Ressource nur einmal an.',
-        'GET ist eine sichere Methode: Der Zustand der Ressource wird nicht verändert.',
+        'POST ist idempotent.',
+        'GET ist eine sichere Methode.',
         'DELETE überträgt im Nachrichtenrumpf die neue Fassung der Ressource.',
         'GET überträgt die Nutzdaten grundsätzlich im Nachrichtenrumpf (Body).',
-        'PUT ist idempotent: Mehrfaches Senden führt zum selben Zustand wie einmaliges Senden.'
+        'PUT ist idempotent.'
       ],
       loesung: [2, 5],
       erklaerung: 'Sicher (safe) heißt: Die Methode ändert nichts auf dem Server (GET, HEAD). Idempotent heißt: Mehrfaches Ausführen derselben Anfrage führt zum selben Zustand wie einmaliges Ausführen (GET, PUT, DELETE). POST ist nicht idempotent – zwei gleiche Anfragen legen zwei Ressourcen an. GET-Anfragen übergeben ihre Parameter in der Adresse (Pfad oder Query-String), nicht im Body.'
     },
     {
       nr: 6, thema: 'schnittstellen', typ: 'zuordnung',
-      text: 'Der Server beantwortet jede Anfrage mit einem dreistelligen HTTP-Statuscode. Die erste Ziffer gibt die Klasse des Statuscodes an.',
+      text: 'Der Server beantwortet jede Anfrage mit einem dreistelligen HTTP-Statuscode. Die Statuscodes sind in Klassen eingeteilt.',
       frage: 'Welche der folgenden Klassen sind den nachstehenden Statuscodes zuzuordnen?',
       anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Klasse in das Kästchen ein.',
       optionenTitel: 'Klassen',
       optionen: [
-        '2xx – Erfolg',
-        '3xx – Umleitung',
-        '4xx – Fehler des Clients',
-        '5xx – Fehler des Servers'
+        'Erfolg',
+        'Umleitung',
+        'Fehler des Clients',
+        'Fehler des Servers'
       ],
       itemsTitel: 'Statuscodes',
       items: [
-        { text: '404 Not Found', loesung: 3 },
-        { text: '503 Service Unavailable', loesung: 4 },
-        { text: '204 No Content', loesung: 1 },
-        { text: '301 Moved Permanently', loesung: 2 }
+        { text: '404', loesung: 3 },
+        { text: '503', loesung: 4 },
+        { text: '204', loesung: 1 },
+        { text: '301', loesung: 2 }
       ],
-      erklaerung: '2xx: Die Anfrage war erfolgreich (200 OK, 201 Created, 204 No Content). 3xx: Der Client muss einer Umleitung folgen (301 Moved Permanently, 302 Found). 4xx: Der Fehler liegt in der Anfrage des Clients (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found). 5xx: Der Server konnte eine gültige Anfrage nicht verarbeiten (500 Internal Server Error, 503 Service Unavailable). 1xx sind reine Informationsmeldungen.'
+      erklaerung: 'Die erste Ziffer gibt die Klasse an. 2xx: Die Anfrage war erfolgreich (200 OK, 201 Created, 204 No Content). 3xx: Der Client muss einer Umleitung folgen (301 Moved Permanently, 302 Found). 4xx: Der Fehler liegt in der Anfrage des Clients (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found). 5xx: Der Server konnte eine gültige Anfrage nicht verarbeiten (500 Internal Server Error, 503 Service Unavailable). 1xx sind reine Informationsmeldungen.'
     },
     {
       nr: 7, thema: 'schnittstellen', typ: 'einfach',
@@ -131,14 +135,14 @@
       frage: 'Welcher Statuscode ist für diesen Fall vorgesehen?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Statuscode in das Kästchen ein.',
       optionen: [
-        '200 OK',
-        '201 Created',
-        '204 No Content',
-        '302 Found',
-        '409 Conflict'
+        '200',
+        '201',
+        '204',
+        '302',
+        '409'
       ],
       loesung: 2,
-      erklaerung: '201 Created bestätigt, dass durch die Anfrage eine neue Ressource angelegt wurde; ihre Adresse steht üblicherweise im Header „Location“. 200 OK steht allgemein für eine erfolgreiche Anfrage (z. B. GET), 204 No Content für Erfolg ohne Inhalt in der Antwort (z. B. nach DELETE). 302 leitet um, 409 meldet einen Konflikt mit dem aktuellen Zustand der Ressource.'
+      erklaerung: '201 Created bestätigt, dass durch die Anfrage eine neue Ressource angelegt wurde; ihre Adresse steht üblicherweise im Header „Location“. 200 OK steht allgemein für eine erfolgreiche Anfrage (z. B. GET), 204 No Content für Erfolg ohne Inhalt in der Antwort (z. B. nach DELETE). 302 Found leitet um, 409 Conflict meldet einen Konflikt mit dem aktuellen Zustand der Ressource.'
     },
     {
       nr: 8, thema: 'schnittstellen', typ: 'einfach',
@@ -146,14 +150,14 @@
       frage: 'Welcher Statuscode ist für diesen Fall vorgesehen?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Statuscode in das Kästchen ein.',
       optionen: [
-        '403 Forbidden',
-        '401 Unauthorized',
-        '400 Bad Request',
-        '404 Not Found',
-        '500 Internal Server Error'
+        '403',
+        '401',
+        '400',
+        '404',
+        '500'
       ],
       loesung: 1,
-      erklaerung: '403 Forbidden: Der Server hat den Client erkannt, verweigert aber den Zugriff, weil die Berechtigung fehlt (Autorisierung). 401 Unauthorized bedeutet dagegen, dass die Anmeldung fehlt oder ungültig ist (Authentifizierung). 400 meldet eine fehlerhaft aufgebaute Anfrage, 404 eine nicht vorhandene Ressource, 500 einen Fehler im Server.'
+      erklaerung: '403 Forbidden: Der Server hat den Client erkannt, verweigert aber den Zugriff, weil die Berechtigung fehlt (Autorisierung). 401 Unauthorized bedeutet dagegen, dass die Anmeldung fehlt oder ungültig ist (Authentifizierung). 400 Bad Request meldet eine fehlerhaft aufgebaute Anfrage, 404 Not Found eine nicht vorhandene Ressource, 500 Internal Server Error einen Fehler im Server.'
     },
 
     // --- JSON und XML (9–13) ---
@@ -264,7 +268,7 @@
       optionen: [
         '„nr“ ist ein Kindelement von „sendung“.',
         '„status“ ist ein Attribut mit dem Wert „zugestellt“.',
-        'Das Dokument ist nicht wohlgeformt, weil „paket“ kein End-Tag besitzt.',
+        'Das Dokument ist wegen des fehlenden End-Tags von „paket“ nicht wohlgeformt.',
         '„pakete“ ist das Wurzelelement und enthält drei Kindelemente.',
         '„sendung“ ist das Wurzelelement, „gewicht“ ein Attribut von „paket“.'
       ],
@@ -317,7 +321,7 @@
         '"B"',
         '"C"',
         '"D"',
-        'Keine Ausgabe, weil die Queue leer ist'
+        'Keine Ausgabe (leere Queue)'
       ],
       loesung: 3,
       erklaerung: 'Eine Queue arbeitet nach dem FIFO-Prinzip (First In – First Out). Nach den drei enqueue-Aufrufen steht A vorn (A, B, C). Das erste dequeue entnimmt A, enqueue("D") hängt D hinten an (B, C, D). Das zweite dequeue entnimmt B, das dritte liefert C; in der Queue bleibt D zurück.'
@@ -329,10 +333,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aufgabe in das Kästchen ein.',
       optionen: [
         'Statusmeldungen in der Reihenfolge ihres Eingangs abarbeiten',
-        'Kunden über ihre Kundennummer finden, ohne alle Einträge zu durchsuchen',
+        'Kunden über ihre Kundennummer ohne Durchsuchen aller Einträge finden',
         'Die Ordnerstruktur eines Dateisystems mit Unterordnern abbilden',
-        'Prüfen, ob in einem Ausdruck jede geöffnete Klammer passend geschlossen wird',
-        'Messwerte speichern, die über ihre Position direkt angesprochen werden'
+        'Das passende Schließen jeder geöffneten Klammer in einem Ausdruck prüfen',
+        'Messwerte mit direktem Zugriff über ihre Position speichern'
       ],
       loesung: 4,
       erklaerung: 'Bei der Klammerprüfung wird jede öffnende Klammer auf den Stack gelegt; bei einer schließenden Klammer wird die oberste entnommen und verglichen. Die zuletzt geöffnete Klammer muss zuerst geschlossen werden – genau das LIFO-Prinzip. Weitere typische Einsätze: Rückgängig-Funktion und der Aufrufstapel von Funktionen. Zu den anderen Aufgaben passen Queue (1), Hashtabelle (2), Baum (3) und Array (5).'
@@ -444,14 +448,14 @@
     {
       nr: 24, thema: 'datenstrukturen', typ: 'einfach',
       text: 'In derselben Hashtabelle (h(k) = k MOD 11) liefern die Sendungsnummern 4711 und 4722 denselben Index 3.',
-      frage: 'Wie wird diese Situation bezeichnet und wie kann sie behandelt werden?',
-      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
+      frage: 'Wie wird diese Situation bezeichnet?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Bezeichnung in das Kästchen ein.',
       optionen: [
-        'Überlauf: Die Tabelle wird geleert und neu aufgebaut.',
-        'Redundanz: Der zweite Eintrag überschreibt den ersten.',
-        'Kollision: Jeder Platz verweist auf eine Liste, in der beide Einträge stehen.',
-        'Deadlock: Einer der beiden Einträge wird verworfen.',
-        'Rekursion: Die Hashfunktion ruft sich selbst erneut auf.'
+        'Überlauf',
+        'Redundanz',
+        'Kollision',
+        'Deadlock',
+        'Rekursion'
       ],
       loesung: 3,
       erklaerung: 'Bilden zwei verschiedene Schlüssel auf denselben Index ab, spricht man von einer Kollision (4722 MOD 11 = 3, denn 429 × 11 = 4719). Üblich sind zwei Verfahren: Verkettung – jeder Tabellenplatz verweist auf eine Liste aller Einträge mit diesem Index – oder offene Adressierung, bei der nach einer festen Regel der nächste freie Platz gesucht wird (Sondieren). Viele Kollisionen verlangsamen den Zugriff, im ungünstigsten Fall auf O(n).'
@@ -470,6 +474,93 @@
       ],
       loesung: [1, 4],
       erklaerung: 'Stack: push und pop arbeiten am selben Ende (LIFO). Queue: Entnommen wird das zuerst eingefügte Element (FIFO). Verkettete Liste: Um das k-te Element zu erreichen, müssen die Vorgänger durchlaufen werden, O(n). Ausgeglichener binärer Suchbaum: Jeder Vergleich halbiert den Suchbereich, O(log n). Hashtabelle: Der Platz ergibt sich aus der Hashfunktion, die Einträge liegen in keiner sortierten Reihenfolge vor.'
+    },
+
+    // --- Erweiterung der Schnittstelle (26–30) ---
+    {
+      nr: 26, thema: 'schnittstellen', typ: 'einfach',
+      text: 'Das Lagersystem des Großkunden kann nur XML verarbeiten. Es fordert die Sendungsdaten bei jedem Aufruf ausdrücklich im XML-Format an.',
+      frage: 'Mit welchem Header teilt der Client dem Server das gewünschte Format der Antwort mit?',
+      anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Header in das Kästchen ein.',
+      optionen: [
+        'Content-Type',
+        'Accept',
+        'Authorization',
+        'User-Agent',
+        'Location'
+      ],
+      loesung: 2,
+      erklaerung: 'Mit dem Anfrage-Header Accept nennt der Client die Medientypen, die er als Antwort verarbeiten kann, hier Accept: application/xml. Der Server antwortet dann mit Content-Type: application/xml; kann er das Format nicht liefern, antwortet er mit 406 Not Acceptable (RFC 9110). Content-Type beschreibt dagegen das Format der mitgesendeten Daten, Authorization überträgt Zugangsdaten, User-Agent nennt das Clientprogramm, Location steht in Antworten und verweist auf eine Ressource.'
+    },
+    {
+      nr: 27, thema: 'schnittstellen', typ: 'einfach', codeOptionen: true,
+      text: 'Der Großkunde möchte alle Sendungen abrufen, die den Status „zugestellt“ haben.',
+      frage: 'Welcher Aufruf entspricht den REST-Konventionen?',
+      anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Aufruf in das Kästchen ein.',
+      optionen: [
+        'POST /sendungen/filter/zugestellt',
+        'DELETE /sendungen?status=zugestellt',
+        'GET /sendungen?status=zugestellt',
+        'GET /holeZugestellteSendungen',
+        'PUT /sendungen/status/zugestellt'
+      ],
+      loesung: 3,
+      erklaerung: 'Gefiltert wird eine Sammlung über Parameter im Query-String: GET /sendungen?status=zugestellt. Die Ressource bleibt /sendungen, der Parameter schränkt nur die Auswahl ein; mehrere Filter werden mit & verbunden (z. B. ?status=zugestellt&ort=Neuss). POST und PUT verändern Daten, DELETE würde die gefilterten Sendungen löschen. Verben wie „hole…“ gehören nicht in den Pfad.'
+    },
+    {
+      nr: 28, thema: 'schnittstellen', typ: 'einfach',
+      text: 'Für den Zugriff auf die Schnittstelle erhält der Großkunde ein Zugangstoken. Es soll bei jeder Anfrage mitgesendet werden.',
+      frage: 'Wo wird das Zugangstoken bei einer Anfrage üblicherweise übertragen?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
+      optionen: [
+        'Im Pfad der URL',
+        'Im Query-String der URL',
+        'Im Header „Accept“',
+        'Im Header „Authorization“',
+        'Im Header „Content-Type“'
+      ],
+      loesung: 4,
+      erklaerung: 'Zugangstoken werden im Header Authorization übertragen, meist in der Form „Authorization: Bearer ‹Token›“ (RFC 6750). Bestandteile der URL landen dagegen in Server-Protokollen, im Browserverlauf und in Weiterleitungen und sind deshalb für geheime Werte ungeeignet. Fehlt das Token oder ist es ungültig, antwortet der Server mit 401 Unauthorized. Die Verbindung muss zusätzlich per HTTPS verschlüsselt sein.'
+    },
+    {
+      nr: 29, thema: 'schnittstellen', typ: 'einfach',
+      text: 'Laut XML-Schema (XSD) des Großkunden muss das Element „gewicht“ eine Dezimalzahl enthalten. Das Lagersystem liefert folgendes Dokument:',
+      kasten: {
+        titel: 'XML-Dokument',
+        code: [
+          '<?xml version="1.0" encoding="UTF-8"?>',
+          '<sendung nr="4790">',
+          '  <empfaenger>Möbelhaus Klein</empfaenger>',
+          '  <gewicht>zwölf</gewicht>',
+          '</sendung>'
+        ]
+      },
+      frage: 'Welche Aussage zu diesem Dokument trifft zu?',
+      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
+      optionen: [
+        'Es ist weder wohlgeformt noch gültig.',
+        'Es ist wohlgeformt, aber nicht gültig.',
+        'Es ist gültig, aber nicht wohlgeformt.',
+        'Es ist wohlgeformt und gültig.',
+        'Der Umlaut in „Möbelhaus“ verletzt die Wohlgeformtheit.'
+      ],
+      loesung: 2,
+      erklaerung: 'Wohlgeformt ist ein Dokument, wenn es die Syntaxregeln von XML einhält: ein Wurzelelement, korrekt verschachtelte und geschlossene Elemente, Attributwerte in Anführungszeichen. Das ist hier der Fall; Umlaute sind in UTF-8 erlaubt. Gültig (valide) ist es erst, wenn es zusätzlich den Regeln einer DTD oder eines XML-Schemas entspricht. Das Schema verlangt eine Dezimalzahl, „zwölf“ ist aber Text. Ein gültiges Dokument ist immer auch wohlgeformt.'
+    },
+    {
+      nr: 30, thema: 'schnittstellen', typ: 'reihenfolge',
+      text: 'Das Lagersystem ruft GET /sendungen mit seinem Zugangstoken auf.',
+      frage: 'Bringen Sie die folgenden Schritte dieses Aufrufs in die richtige Reihenfolge.',
+      anweisung: 'Tragen Sie für den ersten Schritt die Ziffer 1, für den zweiten Schritt die Ziffer 2 usw. in die entsprechenden Kästchen ein.',
+      itemsTitel: 'Schritte',
+      items: [
+        { text: 'Der Server prüft das Zugangstoken.', loesung: 3 },
+        { text: 'Der Client erstellt die Anfrage mit Methode, Pfad und Headern.', loesung: 1 },
+        { text: 'Der Client wertet den Statuscode aus und liest die Daten der Antwort.', loesung: 5 },
+        { text: 'Der Client sendet die Anfrage über eine HTTPS-Verbindung an den Server.', loesung: 2 },
+        { text: 'Der Server liest die Sendungen aus der Datenbank und erstellt die Antwort.', loesung: 4 }
+      ],
+      erklaerung: 'Der Client baut die Anfrage aus Methode (GET), Pfad (/sendungen) und Headern (u. a. Authorization, Accept) auf und sendet sie über eine verschlüsselte HTTPS-Verbindung. Der Server prüft zuerst die Berechtigung; ohne gültiges Token bricht er mit 401 ab. Erst danach liest er die Daten und erstellt die Antwort mit Statuscode, Headern und Rumpf. Der Client prüft den Statuscode, bevor er die Daten verarbeitet.'
     }
   ]
 });

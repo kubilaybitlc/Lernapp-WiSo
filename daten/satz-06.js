@@ -33,7 +33,7 @@
       frage: 'Welcher der folgenden Geldströme fließt im erweiterten Wirtschaftskreislauf vom Staat zu den Unternehmen?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Geldstrom in das Kästchen ein.',
       optionen: [
-        'Transferzahlungen wie Kindergeld oder Wohngeld',
+        'Transferzahlungen',
         'Steuern und Abgaben',
         'Subventionen',
         'Konsumausgaben',
@@ -48,10 +48,10 @@
       frage: 'Welches der folgenden Güter ist ein Investitionsgut (Produktionsgut)?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Gut in das Kästchen ein.',
       optionen: [
-        'Der Fernseher, den eine Familie für ihr Wohnzimmer kauft',
-        'Die Lebensmittel, die ein Privathaushalt im Supermarkt einkauft',
-        'Das Sonnenlicht, das durch die Fenster in die Werkstatt fällt',
-        'Das Kabelmessgerät, das die OHG für die Prüfung der verlegten Netzwerke anschafft',
+        'Der von einer Familie für ihr Wohnzimmer gekaufte Fernseher',
+        'Die von einem Privathaushalt im Supermarkt eingekauften Lebensmittel',
+        'Das durch die Fenster in die Werkstatt fallende Sonnenlicht',
+        'Das von der OHG für die Prüfung der verlegten Netzwerke angeschaffte Kabelmessgerät',
         'Die Beratung durch einen Steuerberater bei der privaten Einkommensteuererklärung'
       ],
       loesung: 4,
@@ -60,7 +60,7 @@
     {
       nr: 3, thema: 'konjunktur', typ: 'einfach',
       text: 'Die Inflationsrate im Euroraum liegt seit mehreren Monaten deutlich über dem Ziel der Europäischen Zentralbank (EZB) von 2 %. Herr Hartmann befürchtet weiter steigende Einkaufspreise für Netzwerkkomponenten.',
-      frage: 'Welche der folgenden geldpolitischen Maßnahmen der EZB ist geeignet, die Inflation zu dämpfen?',
+      frage: 'Welche der folgenden wirtschaftspolitischen Maßnahmen ist geeignet, die Inflation zu dämpfen?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Maßnahme in das Kästchen ein.',
       optionen: [
         'Senkung der Leitzinsen',
@@ -70,7 +70,7 @@
         'Senkung der Einkommensteuer'
       ],
       loesung: 2,
-      erklaerung: 'Vorrangiges Ziel der EZB ist die Preisstabilität (Art. 127 Abs. 1 AEUV). Erhöht die EZB die Leitzinsen, verteuern sich Kredite; Investitionen und Konsum gehen zurück, die Nachfrage sinkt und der Preisauftrieb lässt nach. Leitzinssenkungen und Anleihekäufe wirken expansiv und würden die Inflation eher verstärken. Staatsausgaben und Steuern sind Mittel der Fiskalpolitik, nicht der EZB.'
+      erklaerung: 'Vorrangiges Ziel der EZB ist die Preisstabilität (Art. 127 Abs. 1 AEUV). Erhöht die EZB die Leitzinsen, verteuern sich Kredite; Investitionen und Konsum gehen zurück, die Nachfrage sinkt und der Preisauftrieb lässt nach. Leitzinssenkungen und Anleihekäufe wirken expansiv und würden die Inflation eher verstärken. Staatsausgaben und Steuern sind Mittel der Fiskalpolitik, nicht der EZB; höhere Staatsausgaben und niedrigere Steuern erhöhen zudem die Nachfrage und wirken eher preistreibend.'
     },
     {
       nr: 4, thema: 'unternehmensziele', typ: 'einfach',
@@ -95,9 +95,9 @@
       optionen: [
         'Auf Verlangen verlängert sich das Ausbildungsverhältnis bis zur nächsten Wiederholungsprüfung, höchstens um ein Jahr.',
         'Die Abschlussprüfung kann nur ein einziges Mal wiederholt werden.',
-        'Das Berufsausbildungsverhältnis endet trotz Nichtbestehens immer mit dem vereinbarten Ende der Ausbildungszeit; eine Verlängerung ist ausgeschlossen.',
+        'Das Berufsausbildungsverhältnis endet trotz Nichtbestehens immer mit dem vereinbarten Ende der Ausbildungszeit.',
         'Über eine Verlängerung entscheidet allein der Ausbildungsbetrieb nach eigenem Ermessen.',
-        'Wer die Abschlussprüfung nicht besteht, muss die gesamte Ausbildung von Beginn an wiederholen.'
+        'Nach dem Nichtbestehen muss die gesamte Ausbildung von Beginn an wiederholt werden.'
       ],
       loesung: 1,
       erklaerung: '§ 21 Abs. 3 BBiG: Bestehen Auszubildende die Abschlussprüfung nicht, verlängert sich das Berufsausbildungsverhältnis auf ihr Verlangen bis zur nächstmöglichen Wiederholungsprüfung, höchstens um ein Jahr. Das Verlangen ist eine einseitige Erklärung der Auszubildenden; der Ausbildungsbetrieb kann die Verlängerung nicht ablehnen. Die Abschlussprüfung kann im Fall des Nichtbestehens zweimal wiederholt werden (§ 37 Abs. 1 Satz 2 BBiG).'
@@ -108,11 +108,11 @@
       frage: 'Welche der folgenden Aussagen zur gestreckten Abschlussprüfung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Teil 1 ist eine Zwischenprüfung, deren Ergebnis nicht in die Gesamtnote eingeht.',
+        'Teil 1 ist eine Zwischenprüfung ohne Einfluss auf die Gesamtnote.',
         'Teil 1 kann bei einem schlechten Ergebnis vor Teil 2 eigenständig wiederholt werden.',
         'Das Ergebnis von Teil 1 geht anteilig in das Gesamtergebnis der Abschlussprüfung ein.',
         'Nach dem Bestehen von Teil 1 endet das Berufsausbildungsverhältnis.',
-        'Wer in Teil 1 ein mangelhaftes Ergebnis erzielt, darf an Teil 2 nicht teilnehmen.'
+        'Mit einem mangelhaften Ergebnis in Teil 1 ist die Teilnahme an Teil 2 ausgeschlossen.'
       ],
       loesung: 3,
       erklaerung: 'Die Ausbildungsordnung kann vorsehen, dass die Abschlussprüfung in zwei zeitlich auseinanderfallenden Teilen durchgeführt wird (§ 5 Abs. 2 Nr. 2 BBiG). Teil 1 ist keine Zwischenprüfung: Sein Ergebnis geht mit dem festgelegten Anteil in das Gesamtergebnis ein (bei den IT-Berufen 20 %). Teil 1 ist nicht eigenständig wiederholbar (§ 37 Abs. 1 Satz 3 BBiG); auch nach einem schlechten Ergebnis in Teil 1 wird Teil 2 abgelegt.'
@@ -123,7 +123,7 @@
       frage: 'Welche der folgenden Aussagen zum Montag trifft nach § 15 BBiG zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Da Frau Schubert volljährig ist, muss sie nach dem Unterricht am Montag in den Betrieb zurückkehren.',
+        'Wegen ihrer Volljährigkeit muss Frau Schubert nach dem Unterricht am Montag in den Betrieb zurückkehren.',
         'Der Montag wird nur mit der reinen Unterrichtszeit von 4,5 Stunden auf die Ausbildungszeit angerechnet.',
         'Die Berufsschulzeit am Montag muss Frau Schubert im Betrieb nacharbeiten.',
         'Frau Schubert ist am Montag für den gesamten Tag freizustellen.',
@@ -138,9 +138,9 @@
       frage: 'Welche der folgenden Aussagen zur Beschäftigung von Herrn Petzold in dieser Woche trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Er darf nach dem Unterricht täglich noch so lange im Betrieb beschäftigt werden, bis 40 Wochenstunden erreicht sind.',
+        'Er darf nach dem Unterricht täglich noch bis zum Erreichen von 40 Wochenstunden im Betrieb beschäftigt werden.',
         'Die Berufsschulwoche wird nur mit den tatsächlichen 27 Unterrichtsstunden angerechnet.',
-        'Er muss am Samstag dieser Woche im Betrieb arbeiten, um die Ausbildungszeit auszugleichen.',
+        'Er muss am Samstag dieser Woche zum Ausgleich der Ausbildungszeit im Betrieb arbeiten.',
         'Blockunterricht wird nicht auf die Arbeitszeit angerechnet.',
         'Die Berufsschulwoche wird mit der durchschnittlichen wöchentlichen Arbeitszeit angerechnet.'
       ],
@@ -153,7 +153,7 @@
       frage: 'Welche der folgenden Aussagen zur ersten Nachuntersuchung nach dem Jugendarbeitsschutzgesetz trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Eine Nachuntersuchung ist nur erforderlich, wenn Herr Petzold im ersten Jahr häufig krank war.',
+        'Eine Nachuntersuchung ist nur bei häufiger Krankheit von Herrn Petzold im ersten Jahr erforderlich.',
         'Ein Jahr nach Beschäftigungsbeginn muss der Arbeitgeber die Bescheinigung der ersten Nachuntersuchung vorlegen lassen.',
         'Die Kosten der Nachuntersuchung muss der Ausbildungsbetrieb tragen.',
         'Die Nachuntersuchung findet erst bei der Anmeldung zur Abschlussprüfung statt.',
@@ -195,7 +195,7 @@
         'Der Betriebsrat wird jedes Jahr neu gewählt.',
         'Die Amtszeit des Betriebsrats beträgt wie die der Jugend- und Auszubildendenvertretung zwei Jahre.',
         'Die Geschäftsleitung bestimmt den Zeitpunkt der nächsten Betriebsratswahl.',
-        'Der Betriebsrat bleibt im Amt, bis alle seine Mitglieder aus dem Betrieb ausgeschieden sind.'
+        'Der Betriebsrat bleibt bis zum Ausscheiden aller seiner Mitglieder aus dem Betrieb im Amt.'
       ],
       loesung: 1,
       erklaerung: '§ 21 BetrVG: Die regelmäßige Amtszeit des Betriebsrats beträgt vier Jahre. Die regelmäßigen Betriebsratswahlen finden alle vier Jahre in der Zeit vom 1. März bis 31. Mai statt (§ 13 Abs. 1 BetrVG), nach 2026 also wieder 2030. Die Jugend- und Auszubildendenvertretung wird dagegen für zwei Jahre gewählt (§ 64 BetrVG). In Betrieben mit in der Regel fünf bis 100 wahlberechtigten Arbeitnehmern, wie hier mit 38, wird der Betriebsrat im vereinfachten Wahlverfahren gewählt (§ 14a BetrVG).'
@@ -206,10 +206,10 @@
       frage: 'Welche der folgenden Aussagen zu dieser Forderung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Forderung ist zulässig, weil die OHG über ihre Innung tarifgebunden ist.',
-        'Die Forderung ist zulässig, wenn Herr Sommer dafür ein höheres Gehalt erhält.',
-        'Die Erklärung ist wirksam, weil Herr Sommer sie freiwillig unterschreibt.',
-        'Die Abrede ist nichtig, weil sie die durch das Grundgesetz geschützte Koalitionsfreiheit einschränkt.',
+        'Die Forderung ist wegen der Tarifbindung der OHG über ihre Innung zulässig.',
+        'Die Forderung ist bei Zahlung eines höheren Gehalts an Herrn Sommer zulässig.',
+        'Die Erklärung ist wegen der freiwilligen Unterschrift von Herrn Sommer wirksam.',
+        'Die Abrede ist wegen der Einschränkung der Koalitionsfreiheit nichtig.',
         'Beschäftigte von Handwerksbetrieben dürfen grundsätzlich keiner Gewerkschaft angehören.'
       ],
       loesung: 4,
@@ -225,7 +225,7 @@
         'Es gelten ausschließlich die Regelungen des Arbeitsvertrags, also 3.650,00 EUR und 28 Urlaubstage.',
         'Es gelten 3.650,00 EUR aus dem Arbeitsvertrag und 30 Urlaubstage aus dem Tarifvertrag.',
         'Es gelten 3.480,00 EUR aus dem Tarifvertrag und 28 Urlaubstage aus dem Arbeitsvertrag.',
-        'Der Arbeitsvertrag ist insgesamt nichtig, weil er vom Tarifvertrag abweicht.'
+        'Der Arbeitsvertrag ist wegen der Abweichung vom Tarifvertrag insgesamt nichtig.'
       ],
       loesung: 3,
       erklaerung: 'Bei beiderseitiger Tarifbindung gelten die Tarifnormen unmittelbar und zwingend (§ 4 Abs. 1 TVG). Abweichende Vereinbarungen sind nur zulässig, wenn sie den Arbeitnehmer begünstigen (Günstigkeitsprinzip, § 4 Abs. 3 TVG). Entgelt und Urlaub werden getrennt verglichen: Das höhere vertragliche Entgelt bleibt bestehen, beim Urlaub gilt der günstigere Tarifanspruch von 30 Tagen. Der Arbeitsvertrag bleibt im Übrigen wirksam.'
@@ -236,9 +236,9 @@
       frage: 'Welche der folgenden Aussagen zur geplanten Kündigung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Das Kündigungsschutzgesetz ist nicht anzuwenden, weil im Betrieb nicht mehr als 50 Arbeitnehmer beschäftigt sind.',
+        'Wegen der Betriebsgröße von nicht mehr als 50 Arbeitnehmern ist das Kündigungsschutzgesetz nicht anzuwenden.',
         'Eine betriebsbedingte Kündigung ist nach dem Kündigungsschutzgesetz grundsätzlich ausgeschlossen.',
-        'Der Arbeitgeber darf frei wählen, welchem der beiden er kündigt, wenn er eine Abfindung zahlt.',
+        'Gegen Zahlung einer Abfindung darf der Arbeitgeber frei zwischen den beiden wählen.',
         'Das Kündigungsschutzgesetz ist anzuwenden und verlangt bei der Auswahl eine Sozialauswahl.',
         'Bei der Auswahl ist vorrangig dem Netzwerktechniker mit der längeren Betriebszugehörigkeit zu kündigen.'
       ],
@@ -251,10 +251,10 @@
       frage: 'Welche der folgenden Ansprüche hat der Servicetechniker?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Ansprüchen in die Kästchen ein.',
       optionen: [
-        'Anspruch auf eine Abfindung von einem Monatsgehalt je Beschäftigungsjahr, der bei jeder Kündigung automatisch entsteht',
+        'Anspruch auf eine gesetzliche Abfindung von einem Monatsgehalt je Beschäftigungsjahr',
         'Anspruch auf Abgeltung der acht Urlaubstage in Geld',
         'Anspruch auf das doppelte Gehalt im letzten Monat der Kündigungsfrist',
-        'Anspruch auf angemessene Freistellung von der Arbeit, um sich bei anderen Arbeitgebern vorzustellen',
+        'Anspruch auf angemessene Freistellung von der Arbeit für die Stellensuche',
         'Anspruch auf Weiterbeschäftigung bis zum Rentenbeginn',
         'Anspruch auf Fortzahlung des Gehalts für drei Monate nach dem Ende des Arbeitsverhältnisses'
       ],
@@ -291,11 +291,11 @@
       frage: 'Welche der folgenden Aussagen zur Unfallanzeige trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Unfall muss nur angezeigt werden, wenn Herr Weidner länger als sechs Wochen arbeitsunfähig ist.',
+        'Der Unfall muss nur bei einer Arbeitsunfähigkeit von mehr als sechs Wochen angezeigt werden.',
         'Der Betrieb muss den Unfall innerhalb von drei Tagen der Berufsgenossenschaft anzeigen.',
         'Die Unfallanzeige erstattet Herr Weidner selbst bei seiner Krankenkasse.',
-        'Der Unfall ist der Polizei zu melden, die dann die Berufsgenossenschaft informiert.',
-        'Eine Unfallanzeige ist nicht nötig, weil sich der Unfall beim Kunden und nicht im eigenen Betrieb ereignet hat.'
+        'Der Unfall ist der Polizei zur Weiterleitung an die Berufsgenossenschaft zu melden.',
+        'Für einen Unfall beim Kunden außerhalb des eigenen Betriebs ist keine Unfallanzeige nötig.'
       ],
       loesung: 2,
       erklaerung: '§ 193 Abs. 1 SGB VII: Unternehmer haben Unfälle von Versicherten dem Unfallversicherungsträger (hier der Berufsgenossenschaft) anzuzeigen, wenn Versicherte getötet oder so verletzt sind, dass sie mehr als drei Tage arbeitsunfähig werden. Die Anzeige ist binnen drei Tagen zu erstatten, nachdem der Unternehmer vom Unfall Kenntnis erlangt hat (§ 193 Abs. 4 SGB VII); der Betriebsrat unterzeichnet sie mit (§ 193 Abs. 5 SGB VII). Auch ein Unfall beim Kunden ist ein Arbeitsunfall, weil er bei der versicherten Tätigkeit geschieht (§ 8 Abs. 1 SGB VII).'
@@ -307,7 +307,7 @@
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Unfall in das Kästchen ein.',
       optionen: [
         'Herr Weidner stürzt auf dem direkten Weg von seiner Wohnung zur Arbeit mit dem Fahrrad.',
-        'Herr Weidner verletzt sich bei der von der Geschäftsleitung veranstalteten Weihnachtsfeier, zu der alle Beschäftigten eingeladen sind.',
+        'Herr Weidner verletzt sich bei der von der Geschäftsleitung veranstalteten Weihnachtsfeier für alle Beschäftigten.',
         'Herr Weidner verletzt sich am Samstag beim privaten Umzug eines Freundes.',
         'Herr Weidner knickt beim Tragen einer Kabeltrommel im Lager um.',
         'Ein Auszubildender stürzt auf dem direkten Weg von der Berufsschule in den Betrieb.'
@@ -321,9 +321,9 @@
       frage: 'Welche der folgenden Aussagen zur persönlichen Schutzausrüstung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Beschäftigten müssen die Schutzausrüstung selbst kaufen, weil sie sie auch privat nutzen könnten.',
+        'Wegen der möglichen privaten Nutzung müssen die Beschäftigten die Schutzausrüstung selbst kaufen.',
         'Die Kosten dürfen je zur Hälfte auf den Arbeitgeber und die Beschäftigten verteilt werden.',
-        'Das Tragen der Schutzausrüstung ist freiwillig, auch wenn der Arbeitgeber es anordnet.',
+        'Das Tragen der Schutzausrüstung ist trotz einer Anordnung des Arbeitgebers freiwillig.',
         'Die Berufsgenossenschaft stellt allen Beschäftigten die Schutzausrüstung kostenlos zur Verfügung.',
         'Der Arbeitgeber muss die erforderliche Schutzausrüstung kostenlos bereitstellen.'
       ],
@@ -340,7 +340,7 @@
         'Er darf kein Vermögen über 15.000,00 EUR besitzen.',
         'Er muss sich bei der Agentur für Arbeit arbeitslos melden.',
         'Er muss mindestens 24 Monate bei demselben Arbeitgeber beschäftigt gewesen sein.',
-        'Er muss die Anwartschaftszeit erfüllen: mindestens zwölf Monate versicherungspflichtig in den letzten 30 Monaten.',
+        'Er muss in den letzten 30 Monaten mindestens zwölf Monate versicherungspflichtig gewesen sein.',
         'Er muss eine Bescheinigung seiner Krankenkasse über seine Arbeitsfähigkeit vorlegen.'
       ],
       loesung: [3, 5],
@@ -362,8 +362,8 @@
       optionen: [
         'Jeder Gesellschafter haftet unbeschränkt, unmittelbar und gesamtschuldnerisch.',
         'Die Gesellschafter haften nur bis zur Höhe ihrer Einlage.',
-        'Der Lieferant muss zuerst die OHG verklagen, bevor er sich an einen Gesellschafter wenden darf.',
-        'Die Geschäftsführung liegt bei einem von den Gesellschaftern bestellten Geschäftsführer, der selbst kein Gesellschafter sein darf.',
+        'Der Lieferant darf sich erst nach einer Klage gegen die OHG an einen Gesellschafter wenden.',
+        'Die Geschäftsführung liegt bei einem von den Gesellschaftern bestellten Nichtgesellschafter.',
         'Die OHG benötigt ein Mindestkapital von 25.000,00 EUR.'
       ],
       loesung: 1,
@@ -375,12 +375,12 @@
       frage: 'Welche der folgenden Aussagen zur Firma treffen zu?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Aussagen in die Kästchen ein.',
       optionen: [
-        'Die Firma ist der Name, unter dem ein Kaufmann seine Geschäfte betreibt und die Unterschrift abgibt.',
-        'Die Firma darf frei erfunden sein, auch wenn sie über die Art des Geschäfts irreführt.',
+        'Die Firma ist der Handelsname eines Kaufmanns für seine Geschäfte und seine Unterschrift.',
+        'Eine frei erfundene Firma darf auch über die Art des Geschäfts irreführen.',
         'Mit „Firma“ ist nach dem HGB das Betriebsgebäude des Unternehmens gemeint.',
         'Die Firma einer OHG muss die Vor- und Nachnamen aller Gesellschafter enthalten.',
         'Die Firma muss einen Rechtsformzusatz enthalten, z. B. „OHG”.',
-        'Eine neue Firma darf auch dann eingetragen werden, wenn am selben Ort bereits ein Unternehmen mit genau dieser Firma eingetragen ist.'
+        'Eine neue Firma darf trotz einer gleichlautenden eingetragenen Firma am selben Ort eingetragen werden.'
       ],
       loesung: [1, 5],
       erklaerung: '§ 17 Abs. 1 HGB: Die Firma eines Kaufmanns ist der Name, unter dem er seine Geschäfte betreibt und die Unterschrift abgibt. Sie muss zur Kennzeichnung geeignet sein, Unterscheidungskraft besitzen und darf nicht irreführen (§ 18 HGB). Bei einer OHG muss sie die Bezeichnung „offene Handelsgesellschaft“ oder eine allgemein verständliche Abkürzung wie „OHG“ enthalten (§ 19 Abs. 1 Nr. 2 HGB). Personen-, Sach- und Fantasiefirmen sind zulässig, die Namen aller Gesellschafter müssen nicht enthalten sein. Jede neue Firma muss sich von den am selben Ort bereits eingetragenen Firmen deutlich unterscheiden (§ 30 Abs. 1 HGB).'
@@ -399,11 +399,11 @@
       frage: 'Welche der folgenden Aussagen zu den Pflichten der Hartmann & Söhne Netzwerktechnik OHG trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die OHG muss nichts unternehmen, weil das AGG nur vor Benachteiligungen durch den Arbeitgeber schützt.',
+        'Bei Benachteiligungen durch Kunden statt durch den Arbeitgeber muss die OHG nichts unternehmen.',
         'Die OHG muss dem Wunsch des Kunden folgen und Frau Doğan dauerhaft von allen Kundeneinsätzen abziehen.',
-        'Frau Doğan muss das Kopftuch bei Kundeneinsätzen ablegen, weil der Kunde dies verlangt.',
-        'Die OHG muss Maßnahmen ergreifen, um Frau Doğan vor der Benachteiligung zu schützen.',
-        'Frau Doğan kann sich nur an die Polizei wenden, weil der Kunde kein Beschäftigter der OHG ist.'
+        'Frau Doğan muss das Kopftuch auf Verlangen des Kunden bei Kundeneinsätzen ablegen.',
+        'Die OHG muss Maßnahmen zum Schutz von Frau Doğan vor der Benachteiligung ergreifen.',
+        'Gegen das Verhalten eines Kunden kann sich Frau Doğan nur an die Polizei wenden.'
       ],
       loesung: 4,
       erklaerung: 'Das AGG schützt vor Benachteiligungen wegen der Religion (§ 1 AGG); abwertende Äußerungen können eine Belästigung sein (§ 3 Abs. 3 AGG). Werden Beschäftigte bei der Ausübung ihrer Tätigkeit durch Dritte, z. B. Kunden, benachteiligt, muss der Arbeitgeber im Einzelfall geeignete, erforderliche und angemessene Maßnahmen zum Schutz der Beschäftigten ergreifen (§ 12 Abs. 4 AGG), etwa ein klärendes Gespräch mit dem Kunden oder notfalls die Beendigung der Geschäftsbeziehung. Den Kundenwunsch einfach umzusetzen, wäre selbst eine verbotene Benachteiligung (§ 7 AGG).'
@@ -429,7 +429,7 @@
       frage: 'Welche der folgenden Aussagen zur Organisation trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Ablauforganisation legt fest, welche Stellen und Abteilungen es im Betrieb gibt.',
+        'Die Ablauforganisation legt die Stellen und Abteilungen des Betriebs fest.',
         'Ein Organigramm stellt den zeitlichen Ablauf eines Arbeitsprozesses dar.',
         'Die Stellenbeschreibung ist ein Instrument der Aufbauorganisation.',
         'Stellenbeschreibungen sind für alle Betriebe gesetzlich vorgeschrieben.',
@@ -465,7 +465,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Gewerbliche Abfälle dürfen grundsätzlich gemeinsam im Restmüllcontainer entsorgt werden.',
-        'Metallreste dürfen auf dem Betriebsgelände vergraben werden, weil sie ungefährlich sind.',
+        'Metallreste dürfen als ungefährliche Abfälle auf dem Betriebsgelände vergraben werden.',
         'Für die Entsorgung ist ausschließlich der Hersteller der Kabel verantwortlich.',
         'Die getrennte Sammlung ist freiwillig und wird mit einer Steuerermäßigung belohnt.',
         'Die Abfälle müssen nach Fraktionen wie Papier, Kunststoffe und Metalle getrennt gesammelt werden.'

@@ -78,9 +78,9 @@
       frage: 'Welche der folgenden Aussagen zum magischen Viereck trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die vier Ziele lassen sich jederzeit gleichzeitig und vollständig erreichen, weil sie sich nicht gegenseitig beeinflussen.',
+        'Die vier voneinander unabhängigen Ziele lassen sich jederzeit gleichzeitig und vollständig erreichen.',
         'Zu den vier Zielen gehören eine gerechte Einkommens- und Vermögensverteilung und der Schutz der Umwelt.',
-        'Eine Politik, die die Arbeitslosigkeit senkt, kann die Stabilität des Preisniveaus gefährden.',
+        'Eine Politik zur Senkung der Arbeitslosigkeit kann die Stabilität des Preisniveaus gefährden.',
         'Die Ziele sind im Grundgesetz abschließend festgelegt und für jedes Unternehmen verbindlich.',
         'Ein Ziel ist ein möglichst hoher Überschuss im Außenhandel, also deutlich mehr Exporte als Importe.'
       ],
@@ -92,13 +92,13 @@
       text: 'Die Weserbyte Solutions AG hat eine Compliance-Beauftragte eingestellt und für alle Beschäftigten einen Verhaltenskodex eingeführt.',
       frage: 'Welche der folgenden Aussagen beschreibt Compliance zutreffend?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
-      einleitung: 'Compliance bedeutet, dass …',
+      einleitung: 'Compliance bedeutet …',
       optionen: [
-        'das Unternehmen ausschließlich das Ziel der Gewinnmaximierung verfolgt.',
-        'das Unternehmen und seine Beschäftigten Gesetze, Vorschriften und interne Regeln einhalten.',
-        'alle Kunden den Allgemeinen Geschäftsbedingungen schriftlich zustimmen müssen.',
-        'der Betriebsrat allen unternehmerischen Entscheidungen zustimmen muss.',
-        'das Unternehmen freiwillig auf jede Form von Werbung verzichtet.'
+        'die ausschließliche Ausrichtung des Unternehmens auf Gewinnmaximierung.',
+        'die Einhaltung von Gesetzen, Vorschriften und internen Regeln durch Unternehmen und Beschäftigte.',
+        'die schriftliche Zustimmung aller Kunden zu den Allgemeinen Geschäftsbedingungen.',
+        'die Zustimmung des Betriebsrats zu allen unternehmerischen Entscheidungen.',
+        'den freiwilligen Verzicht des Unternehmens auf jede Form von Werbung.'
       ],
       loesung: 2,
       erklaerung: 'Compliance (Regeltreue) bedeutet die Einhaltung von Gesetzen, Richtlinien und internen Regeln, etwa gegen Korruption, Kartellabsprachen oder Datenschutzverstöße. Der Vorstand einer AG muss dafür im Rahmen seiner Sorgfaltspflicht sorgen (§§ 91 Abs. 2, 93 Abs. 1 AktG). Verletzt die Leitung ihre Aufsichtspflicht, drohen Bußgelder nach § 130 OWiG.'
@@ -111,8 +111,8 @@
       optionen: [
         'Die BITLC kürzt die Ausbildungsdauer auf gemeinsamen Antrag von Auszubildender und Ausbildendem.',
         'Der Ausbildungsbetrieb kann die Ausbildungszeit allein durch eine Mitteilung an die Berufsschule verkürzen.',
-        'Eine Verkürzung ist nur möglich, wenn die Auszubildende das 25. Lebensjahr vollendet hat.',
-        'Mit dem Abitur verkürzt sich die Ausbildungszeit automatisch um ein Jahr, ein Antrag ist nicht nötig.',
+        'Eine Verkürzung ist erst nach Vollendung des 25. Lebensjahres der Auszubildenden möglich.',
+        'Mit dem Abitur verkürzt sich die Ausbildungszeit automatisch und ohne Antrag um ein Jahr.',
         'Über die Verkürzung entscheidet die Berufsschule anhand der Noten des ersten Halbjahres.'
       ],
       loesung: 1,
@@ -124,10 +124,10 @@
       frage: 'Welche der folgenden Aussagen zur Teilzeitberufsausbildung nach § 7a BBiG trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Eine Teilzeitberufsausbildung ist nur möglich, wenn die Auszubildende ein Kind unter drei Jahren betreut.',
+        'Eine Teilzeitberufsausbildung ist nur bei Betreuung eines Kindes unter drei Jahren möglich.',
         'Die tägliche oder wöchentliche Ausbildungszeit darf um höchstens 50 Prozent gekürzt werden.',
         'Die Ausbildungsdauer bleibt bei einer Teilzeitberufsausbildung immer unverändert bei drei Jahren.',
-        'Die Teilzeit muss nicht im Ausbildungsvertrag vereinbart werden, eine mündliche Absprache mit der Berufsschule genügt.',
+        'Für die Teilzeit genügt statt einer Vereinbarung im Ausbildungsvertrag eine mündliche Absprache mit der Berufsschule.',
         'Bei einer Teilzeitberufsausbildung entfällt der Anspruch auf Ausbildungsvergütung.'
       ],
       loesung: 2,
@@ -139,9 +139,9 @@
       frage: 'Welche der folgenden Aussagen zur Ausbildungsvergütung entsprechen dem Berufsbildungsgesetz?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Aussagen in die Kästchen ein.',
       optionen: [
-        'Die Vergütung wird nur für Tage gezahlt, an denen die Auszubildenden im Betrieb anwesend sind; Berufsschultage werden nicht bezahlt.',
+        'Die Vergütung wird nur für Anwesenheitstage im Betrieb gezahlt, nicht für Berufsschultage.',
         'Die Vergütung muss mit fortschreitender Berufsausbildung, mindestens jährlich, ansteigen.',
-        'Die Vergütung darf gekürzt werden, wenn die Noten in der Berufsschule schlecht sind.',
+        'Die Vergütung darf bei schlechten Noten in der Berufsschule gekürzt werden.',
         'Die Vergütung für den laufenden Kalendermonat ist spätestens am letzten Arbeitstag des Monats zu zahlen.',
         'Eine Beschäftigung über die vereinbarte regelmäßige tägliche Ausbildungszeit hinaus ist mit der Vergütung bereits abgegolten.',
         'Die Vergütung wird erst nach dem Ende der Probezeit gezahlt.'
@@ -155,11 +155,11 @@
       frage: 'Welche der folgenden Aussagen zu diesem Arbeitszeitplan trifft nach dem Jugendarbeitsschutzgesetz zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Plan ist unzulässig, weil Jugendliche an keinem Tag länger als acht Stunden beschäftigt werden dürfen.',
-        'Der Plan ist zulässig, weil die Arbeitszeit am Freitag verkürzt ist und die Woche 40 Stunden nicht überschreitet.',
-        'Herr Engelke dürfte an einzelnen Tagen sogar bis zu zehn Stunden arbeiten, wenn die Woche insgesamt 40 Stunden nicht überschreitet.',
-        'Der Plan ist zulässig, Herr Engelke dürfte aber auch montags bis freitags jeweils neun Stunden arbeiten, also 45 Stunden in der Woche.',
-        'Der Plan ist nur zulässig, wenn die Eltern von Herrn Engelke schriftlich zustimmen.'
+        'Der Plan ist wegen der Überschreitung von acht Stunden an einzelnen Tagen unzulässig.',
+        'Der Plan ist wegen der Verkürzung am Freitag und der Einhaltung der 40-Stunden-Woche zulässig.',
+        'Bei Einhaltung der 40-Stunden-Woche dürfte Herr Engelke an einzelnen Tagen sogar bis zu zehn Stunden arbeiten.',
+        'Der Plan ist ebenso zulässig wie fünf Arbeitstage mit je neun Stunden, also 45 Wochenstunden.',
+        'Der Plan ist nur mit schriftlicher Zustimmung der Eltern von Herrn Engelke zulässig.'
       ],
       loesung: 2,
       erklaerung: '§ 8 Abs. 1 JArbSchG: Jugendliche dürfen nicht mehr als acht Stunden täglich und nicht mehr als 40 Stunden wöchentlich beschäftigt werden. § 8 Abs. 2a JArbSchG: Ist die Arbeitszeit an einzelnen Werktagen auf weniger als acht Stunden verkürzt, dürfen Jugendliche an den übrigen Werktagen derselben Woche achteinhalb Stunden beschäftigt werden. Hier: 4 × 8,5 Stunden + 6 Stunden = 40 Stunden. Zehn Stunden täglich und mehr als 40 Wochenstunden sind für Jugendliche nicht zulässig; eine Zustimmung der Eltern ändert daran nichts.'
@@ -171,11 +171,11 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       einleitung: 'Frau Hinrichs ist …',
       optionen: [
-        'nicht wählbar, weil sie das 25. Lebensjahr bereits vollendet hat.',
-        'wählbar, weil Auszubildende unabhängig von ihrem Alter in die JAV gewählt werden können.',
-        'nicht wählbar, weil sie noch keine sechs Monate im Betrieb beschäftigt ist.',
-        'nicht wählbar, weil nur Auszubildende im ersten Ausbildungsjahr kandidieren dürfen.',
-        'wählbar, weil in die JAV alle Beschäftigten unabhängig von Alter und Ausbildung gewählt werden können.'
+        'wegen der Vollendung des 25. Lebensjahres nicht wählbar.',
+        'als Auszubildende unabhängig von ihrem Alter wählbar.',
+        'wegen ihrer Betriebszugehörigkeit von unter sechs Monaten nicht wählbar.',
+        'als Auszubildende im ersten Ausbildungsjahr nicht wählbar.',
+        'wie alle Beschäftigten unabhängig von Alter und Ausbildung wählbar.'
       ],
       loesung: 2,
       erklaerung: '§ 61 Abs. 2 BetrVG: In die JAV wählbar sind Arbeitnehmer des Betriebs, die das 25. Lebensjahr noch nicht vollendet haben, sowie alle zu ihrer Berufsausbildung Beschäftigten; die Altersgrenze für Auszubildende ist 2021 entfallen. Eine Mindestbeschäftigungsdauer wie bei der Betriebsratswahl (sechs Monate, § 8 BetrVG) gibt es für die JAV nicht. Mitglieder des Betriebsrats können nicht zugleich in die JAV gewählt werden.'
@@ -189,9 +189,9 @@
         'Der 16-jährige Auszubildende Jonas Petersen',
         'Die Vorstandsvorsitzende Dr. Henrike Lüders',
         'Der 15-jährige Schülerpraktikant Ben Schröder',
-        'Der Leiharbeitnehmer Marek Nowicki, der seit vier Monaten im Betrieb eingesetzt ist und bis zum Jahresende bleiben soll',
-        'Der Prokurist Frank Meinders, der als leitender Angestellter selbstständig über Einstellungen und Entlassungen entscheidet',
-        'Ein freiberuflicher Grafikdesigner, der gelegentlich Aufträge auf Honorarbasis erledigt'
+        'Der Leiharbeitnehmer Marek Nowicki, seit vier Monaten und noch bis zum Jahresende im Betrieb eingesetzt',
+        'Der Prokurist Frank Meinders, leitender Angestellter mit selbstständiger Entscheidung über Einstellungen und Entlassungen',
+        'Ein freiberuflicher Grafikdesigner mit gelegentlichen Aufträgen auf Honorarbasis'
       ],
       loesung: [1, 4],
       erklaerung: '§ 7 BetrVG: Wahlberechtigt sind alle Arbeitnehmer des Betriebs ab Vollendung des 16. Lebensjahres, also auch Auszubildende, sowie Leiharbeitnehmer, die länger als drei Monate im Betrieb eingesetzt werden. Vorstandsmitglieder einer AG gelten nicht als Arbeitnehmer (§ 5 Abs. 2 Nr. 1 BetrVG), leitende Angestellte sind ausgenommen (§ 5 Abs. 3 BetrVG). Der Praktikant ist jünger als 16, der Freiberufler ist kein Arbeitnehmer.'
@@ -205,8 +205,8 @@
       optionen: [
         'wird zwischen der Gewerkschaft und dem Arbeitgeberverband abgeschlossen.',
         'wird von Arbeitgeber und Betriebsrat gemeinsam beschlossen und schriftlich niedergelegt.',
-        'gilt nur für die Arbeitnehmer, die sie einzeln unterschrieben haben.',
-        'darf Arbeitsentgelte regeln, die üblicherweise durch Tarifvertrag geregelt werden, auch wenn der Tarifvertrag dies nicht zulässt.',
+        'gilt nur für die Arbeitnehmer mit eigener Unterschrift unter der Vereinbarung.',
+        'darf üblicherweise tariflich geregelte Arbeitsentgelte auch ohne Öffnungsklausel im Tarifvertrag regeln.',
         'kann vom Arbeitgeber jederzeit fristlos und einseitig aufgehoben werden.'
       ],
       loesung: 2,
@@ -218,10 +218,10 @@
       frage: 'Welche der folgenden Aussagen zur Tarifbindung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Herr Jansen hat einen unmittelbaren Anspruch aus dem Tarifvertrag, weil sein Arbeitgeber tarifgebunden ist.',
+        'Herr Jansen hat wegen der Tarifbindung seines Arbeitgebers einen unmittelbaren Anspruch aus dem Tarifvertrag.',
         'Tarifgebunden sind die Mitglieder der Tarifvertragsparteien, nicht alle Arbeitnehmer eines Betriebs.',
-        'Ein Tarifvertrag gilt für alle Arbeitnehmer in Deutschland, sobald er unterschrieben ist.',
-        'Tritt die Weserbyte Solutions AG aus dem Arbeitgeberverband aus, endet ihre Tarifbindung am Tag des Austritts.',
+        'Ein Tarifvertrag gilt ab der Unterzeichnung für alle Arbeitnehmer in Deutschland.',
+        'Die Tarifbindung der Weserbyte Solutions AG endet bei einem Verbandsaustritt am Tag des Austritts.',
         'Gewerkschaftsmitglieder dürfen im Arbeitsvertrag keine günstigeren Bedingungen als im Tarifvertrag vereinbaren.'
       ],
       loesung: 2,
@@ -252,7 +252,7 @@
         'endet das Arbeitsverhältnis mit sofortiger Wirkung.',
         'beanstandet der Arbeitgeber ein konkretes Fehlverhalten und droht für den Wiederholungsfall Konsequenzen bis zur Kündigung an.',
         'darf der Arbeitgeber das Gehalt für die nächsten drei Monate kürzen.',
-        'muss der Betriebsrat vorher zustimmen, sonst ist sie unwirksam.',
+        'muss der Arbeitgeber bis zur Zustimmung des Betriebsrats warten.',
         'ist eine spätere Kündigung wegen gleichartiger Pflichtverletzungen ausgeschlossen.'
       ],
       loesung: 2,
@@ -280,7 +280,7 @@
       frage: 'Welche der folgenden Aussagen zum Resturlaub von Frau Meyerdierks trifft nach dem Bundesurlaubsgesetz zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Resturlaub verfällt am 31.12.2026 ersatzlos, weil Urlaub immer im laufenden Kalenderjahr genommen werden muss.',
+        'Der Resturlaub verfällt wegen der Bindung an das laufende Kalenderjahr am 31.12.2026 ersatzlos.',
         'Frau Meyerdierks kann den Resturlaub beliebig lange ansparen und in einem späteren Jahr am Stück nehmen.',
         'Die Weserbyte Solutions AG muss die acht Urlaubstage mit dem Dezembergehalt auszahlen.',
         'Der Resturlaub wird auf 2027 übertragen und muss bis zum 31.03.2027 genommen werden.',
@@ -333,7 +333,7 @@
       optionen: [
         'Durch die Eingliederung unter die Holding verlieren alle Tochtergesellschaften ihre rechtliche Selbstständigkeit.',
         'Die Holding und die von ihr einheitlich geleiteten Tochtergesellschaften bilden einen Konzern.',
-        'Eine Holding ist ein Zusammenschluss, bei dem die beteiligten Unternehmen lediglich ihre Preise absprechen.',
+        'Eine Holding ist ein Zusammenschluss von Unternehmen zur bloßen Absprache ihrer Preise.',
         'Unternehmensübernahmen sind in Deutschland grundsätzlich verboten.',
         'Für die Fusionskontrolle ist die Industrie- und Handelskammer zuständig.'
       ],
@@ -381,7 +381,7 @@
         'Das Produkt wird in kurzen, sich wiederholenden Zeitabschnitten (Sprints) schrittweise entwickelt.',
         'Jede Entscheidung im Projekt trifft ausschließlich der Vorstand.',
         'Das Ergebnis wird erst am Projektende einmalig an den Kunden ausgeliefert.',
-        'Das Team arbeitet ohne Abstimmung; regelmäßige Besprechungen sind nicht vorgesehen.'
+        'Das Team arbeitet ohne Abstimmung und ohne regelmäßige Besprechungen.'
       ],
       loesung: 2,
       erklaerung: 'Agiles Projektmanagement (z. B. Scrum) arbeitet iterativ: In kurzen Sprints entstehen nutzbare Teilergebnisse, Anforderungen werden laufend mit dem Kunden angepasst, das Team stimmt sich täglich ab (Daily Scrum). Eine gesetzliche Regelung gibt es dafür nicht; Grundlage sind das Agile Manifest und der Scrum Guide. Vollständige Planung zu Beginn und Auslieferung erst am Ende kennzeichnen das klassische Wasserfallmodell.'
@@ -392,10 +392,10 @@
       frage: 'Welche der folgenden Aussagen zu den Rechten des Kunden nach der DSGVO treffen zu?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Aussagen in die Kästchen ein.',
       optionen: [
-        'Der Kunde hat ein Recht auf Auskunft, ob und welche personenbezogenen Daten über ihn verarbeitet werden.',
+        'Der Kunde hat ein Recht auf Auskunft über die Verarbeitung seiner personenbezogenen Daten.',
         'Die Auskunft darf erst nach Zahlung einer Bearbeitungsgebühr von 50,00 EUR erteilt werden.',
-        'Die Weserbyte Solutions AG muss die Daten unverzüglich löschen, weil keine Aufbewahrungspflicht mehr besteht.',
-        'Ein Recht auf Löschung besteht nur, wenn der Kunde einen Rechtsanwalt beauftragt.',
+        'Die Weserbyte Solutions AG muss die Daten mangels Aufbewahrungspflicht unverzüglich löschen.',
+        'Ein Recht auf Löschung besteht nur bei Beauftragung eines Rechtsanwalts.',
         'Die Weserbyte Solutions AG muss auf das Auskunftsersuchen erst innerhalb eines Jahres reagieren.',
         'Die Rechte aus der DSGVO gelten nur für Kunden mit einem laufenden Vertrag.'
       ],
@@ -408,11 +408,11 @@
       frage: 'Welche der folgenden Aussagen zu den Ansprüchen von Frau Thielking nach dem AGG trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Frau Thielking hat einen Anspruch darauf, eingestellt zu werden.',
+        'Frau Thielking hat einen Anspruch auf Einstellung.',
         'Frau Thielking kann eine angemessene Entschädigung von höchstens drei Monatsgehältern verlangen.',
         'Ansprüche nach dem AGG können nur innerhalb einer Woche mündlich geltend gemacht werden.',
-        'Eine Entschädigung ist ausgeschlossen, weil eine Benachteiligung wegen des Alters im AGG nicht geregelt ist.',
-        'Frau Thielking muss beweisen, dass der Arbeitgeber sie absichtlich benachteiligen wollte; Indizien reichen nicht aus.'
+        'Eine Entschädigung ist mangels Regelung der Altersbenachteiligung im AGG ausgeschlossen.',
+        'Frau Thielking muss die Benachteiligungsabsicht des Arbeitgebers trotz vorliegender Indizien voll beweisen.'
       ],
       loesung: 2,
       erklaerung: 'Das Alter ist ein geschütztes Merkmal (§ 1 AGG). § 15 Abs. 2 AGG: Bei einer Nichteinstellung darf die Entschädigung drei Monatsgehälter nicht übersteigen, wenn die Person auch bei benachteiligungsfreier Auswahl nicht eingestellt worden wäre. § 15 Abs. 4 AGG: schriftliche Geltendmachung innerhalb von zwei Monaten ab Zugang der Ablehnung; die Klage muss innerhalb von drei Monaten danach erhoben werden (§ 61b ArbGG). Ein Einstellungsanspruch besteht nicht (§ 15 Abs. 6 AGG). Indizien genügen, dann muss der Arbeitgeber das Gegenteil beweisen (§ 22 AGG).'
@@ -458,7 +458,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Elternzeit können nur Mütter nehmen.',
-        'Die Elternzeit muss vom Arbeitgeber genehmigt werden, der sie ohne Angabe von Gründen ablehnen kann.',
+        'Der Arbeitgeber muss die Elternzeit genehmigen und kann sie ohne Angabe von Gründen ablehnen.',
         'Ab dem Verlangen der Elternzeit und während der Elternzeit darf der Arbeitgeber grundsätzlich nicht kündigen.',
         'Während der Elternzeit ist jede Teilzeitarbeit verboten.',
         'Der Anspruch auf Elternzeit besteht nur bis zum ersten Geburtstag des Kindes.'
@@ -472,10 +472,10 @@
       frage: 'Welche der folgenden Aussagen zur Entsorgung der Altgeräte trifft nach dem Elektro- und Elektronikgerätegesetz (ElektroG) zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Altgeräte dürfen über den Restmüll entsorgt werden, wenn sie vorher zerlegt werden.',
+        'Nach vorheriger Zerlegung dürfen die Altgeräte über den Restmüll entsorgt werden.',
         'Altgeräte sind getrennt vom unsortierten Siedlungsabfall zu erfassen.',
         'Für gewerblich genutzte Geräte gilt das ElektroG nicht.',
-        'Die Geräte müssen an den Hersteller zurückgeschickt werden, jede andere Entsorgung ist verboten.',
+        'Die Geräte dürfen ausschließlich durch Rücksendung an den Hersteller entsorgt werden.',
         'Akkus und Batterien müssen bei der Entsorgung in den Geräten verbleiben.'
       ],
       loesung: 2,
@@ -488,10 +488,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       einleitung: 'Das EU-Energielabel …',
       optionen: [
-        'ist ein freiwilliges Umweltzeichen, das vom Umweltbundesamt unter dem Namen „Blauer Engel“ vergeben wird.',
-        'bestätigt, dass der Monitor die Sicherheitsanforderungen der EU erfüllt.',
+        'ist ein freiwilliges, vom Umweltbundesamt als „Blauer Engel“ vergebenes Umweltzeichen.',
+        'bestätigt die Erfüllung der EU-Sicherheitsanforderungen durch den Monitor.',
         'ordnet die Geräte in Energieeffizienzklassen von A bis G ein und gibt den Energieverbrauch an.',
-        'zeigt an, dass die Rohstoffe des Monitors aus fairem Handel stammen.',
+        'zeigt die Herkunft der Rohstoffe des Monitors aus fairem Handel an.',
         'gibt ausschließlich den Anteil recycelter Kunststoffe im Gehäuse an.'
       ],
       loesung: 3,

@@ -324,11 +324,11 @@
       frage: 'Welche Aussagen zu diesem Datenbankentwurf treffen zu?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Aussagen in die Kästchen ein.',
       optionen: [
-        'Ändert die Stadtwerke Köln ihren Namen und wird nur eine Zeile in „Projekte“ angepasst, sind die Daten inkonsistent (Änderungsanomalie).',
+        'Eine Namensänderung der Stadtwerke Köln in nur einer Zeile von „Projekte“ macht die Daten inkonsistent.',
         'Die Kundennamen sollten in eine eigene Tabelle „Kunden“ ausgelagert und in „Projekte“ nur über eine KundenNr als Fremdschlüssel referenziert werden.',
-        'Der Leiter einer Abteilung ist eindeutig bestimmt, weil Nachnamen in einem Unternehmen nicht doppelt vorkommen können.',
+        'Der Leiter einer Abteilung ist durch seinen Nachnamen eindeutig bestimmt.',
         'Redundante Kundennamen beschleunigen jede Abfrage und sind deshalb immer erwünscht.',
-        'Wird das Projekt P104 gelöscht, bleibt der Kunde „BioMarkt Heller“ weiterhin in der Datenbank gespeichert.'
+        'Nach dem Löschen des Projekts P104 bleibt der Kunde „BioMarkt Heller“ weiterhin in der Datenbank gespeichert.'
       ],
       loesung: [1, 2],
       erklaerung: 'Steht derselbe Kunde in mehreren Zeilen, müssen bei einer Änderung alle Zeilen angepasst werden, sonst entstehen Widersprüche (Änderungsanomalie). Abhilfe ist eine Tabelle Kunden (KundenNr, Name, …) mit der KundenNr als Fremdschlüssel in „Projekte“. Aussage 3 ist falsch: Nachnamen sind nicht eindeutig, der Leiter sollte über die MitarbeiterNr als Fremdschlüssel eingetragen werden. Aussage 5 ist falsch: „BioMarkt Heller“ kommt nur in P104 vor, mit dem Löschen des Projekts gingen auch die Kundendaten verloren (Löschanomalie).'

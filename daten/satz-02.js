@@ -42,7 +42,7 @@
     {
       nr: 2, thema: 'wirtschaft-grundlagen', typ: 'einfach',
       text: 'Auf dem Markt für eine bestimmte Standardsoftware übersteigt das Angebot dauerhaft die Nachfrage.',
-      frage: 'Welche Entwicklung des Preises ist bei diesem Angebotsüberschuss zu erwarten?',
+      frage: 'Welche der folgenden Aussagen trifft auf diesen Markt mit Angebotsüberschuss zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Der Preis sinkt.',
@@ -128,10 +128,10 @@
       optionen: [
         'Dauer der Probezeit',
         'Höhe der Ausbildungsvergütung',
-        'Name der Klassenlehrkraft der Berufsschule',
-        'Lieblingsprogrammiersprache der oder des Auszubildenden',
+        'Termin der Abschlussprüfung',
+        'Zusage der Übernahme nach der Ausbildung',
         'Religionszugehörigkeit der oder des Auszubildenden',
-        'Bankverbindung des Ausbildungsbetriebs'
+        'Anzahl der Berufsschultage pro Woche'
       ],
       loesung: [1, 2],
       erklaerung: '§ 11 BBiG schreibt u. a. die Dauer der Probezeit und die Höhe der Vergütung als Mindestinhalte der Vertragsniederschrift vor. Die übrigen Angaben gehören nicht dazu.'
@@ -209,12 +209,12 @@
       optionen: [
         'sind Streiks um die bereits geregelten Inhalte unzulässig.',
         'darf jederzeit um höhere Löhne gestreikt werden.',
-        'ist jede Neueinstellung verboten.',
-        'dürfen keine Überstunden geleistet werden.',
-        'ruhen alle Arbeitsverhältnisse.'
+        'sind nur Aussperrungen durch die Arbeitgeber unzulässig.',
+        'sind Streiks mit Zustimmung des Betriebsrats zulässig.',
+        'sind Warnstreiks ohne Einschränkung zulässig.'
       ],
       loesung: 1,
-      erklaerung: 'Die Friedenspflicht verbietet während der Laufzeit eines Tarifvertrags Arbeitskämpfe über die bereits geregelten Gegenstände. Erst nach Ablauf bzw. Kündigung des Tarifvertrags ist ein Streik wieder zulässig.'
+      erklaerung: 'Die Friedenspflicht verbietet während der Laufzeit eines Tarifvertrags Arbeitskämpfe über die bereits geregelten Gegenstände. Sie bindet beide Tarifparteien und gilt auch für Warnstreiks; der Betriebsrat kann keinen Streik erlauben. Erst nach Ablauf bzw. Kündigung des Tarifvertrags ist ein Streik wieder zulässig.'
     },
     {
       nr: 13, thema: 'tarifrecht', typ: 'einfach',
@@ -224,8 +224,8 @@
         'Die Höhe der monatlichen Löhne und Gehälter',
         'Arbeitszeit, Urlaubsdauer und Kündigungsfristen',
         'Eine einmalige Sonderzahlung für das laufende Jahr',
-        'Die Verkaufspreise der Produkte',
-        'Die Höhe der Dividende für die Gesellschafter'
+        'Die Höhe der Ausbildungsvergütungen',
+        'Die prozentuale Erhöhung der Entgelte'
       ],
       loesung: 2,
       erklaerung: 'Der Manteltarifvertrag regelt die allgemeinen, langfristigen Arbeitsbedingungen wie Arbeitszeit, Urlaub und Kündigungsfristen. Die Entgelthöhe steht im Entgelt- oder Lohntarifvertrag, der kürzere Laufzeiten hat.'
@@ -255,7 +255,7 @@
         'Personenbedingte Kündigung',
         'Verhaltensbedingte Kündigung',
         'Änderungskündigung',
-        'Aufhebungsvertrag'
+        'Krankheitsbedingte Kündigung'
       ],
       loesung: 3,
       erklaerung: 'Wiederholtes, vorwerfbares Fehlverhalten trotz Abmahnung begründet eine verhaltensbedingte Kündigung. Personenbedingt wäre z. B. dauernde Krankheit, betriebsbedingt der Wegfall des Arbeitsplatzes.'
@@ -320,7 +320,7 @@
         'Bei Aufnahme der Tätigkeit und danach mindestens jährlich',
         'Nur nach einem Arbeitsunfall',
         'Nur auf ausdrücklichen Wunsch der Beschäftigten',
-        'Es besteht keine Unterweisungspflicht'
+        'Erst nach Ablauf der Probezeit'
       ],
       loesung: 2,
       erklaerung: '§ 12 ArbSchG: Die Unterweisung muss bei Aufnahme der Tätigkeit und danach in regelmäßigen Abständen (üblicherweise mindestens jährlich) erfolgen.'
@@ -405,7 +405,7 @@
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Fällen in die Kästchen ein.',
       optionen: [
         'In einer Stellenanzeige werden ausdrücklich nur Bewerber unter 30 Jahren gesucht.',
-        'Eine Bewerbung wird abgelehnt, weil der geforderte Berufsabschluss fehlt.',
+        'Eine Bewerbung wird wegen des fehlenden Berufsabschlusses abgelehnt.',
         'Eine Bewerberin wird allein wegen ihres Kopftuchs und ihrer Religion abgelehnt.',
         'Im gesamten Bürogebäude gilt für alle Beschäftigten ein Rauchverbot.',
         'Einem schwerbehinderten Mitarbeiter wird ein barrierefreier Arbeitsplatz eingerichtet.',
@@ -421,11 +421,11 @@
       anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Rechtsquelle in das Kästchen ein.',
       optionenTitel: 'Rechtsquellen',
       optionen: [
-        'Berufsbildungsgesetz (BBiG)',
-        'Betriebsverfassungsgesetz (BetrVG)',
-        'Bürgerliches Gesetzbuch (BGB)',
-        'Handelsgesetzbuch (HGB)',
-        'Bundesurlaubsgesetz (BUrlG)'
+        'BBiG',
+        'BetrVG',
+        'BGB',
+        'HGB',
+        'BUrlG'
       ],
       itemsTitel: 'Sachverhalte',
       items: [
@@ -434,7 +434,7 @@
         { text: 'Eintragung eines Kaufmanns in das Handelsregister', loesung: 4 },
         { text: 'Inhalt und Beendigung des Berufsausbildungsvertrags', loesung: 1 }
       ],
-      erklaerung: 'Der gesetzliche Mindesturlaub steht im BUrlG, die Betriebsratswahl im BetrVG, das Handelsregister im HGB und der Ausbildungsvertrag im BBiG. Das BGB regelt hier keinen der Sachverhalte unmittelbar.'
+      erklaerung: 'Der gesetzliche Mindesturlaub steht im Bundesurlaubsgesetz (BUrlG), die Betriebsratswahl im Betriebsverfassungsgesetz (BetrVG), das Handelsregister im Handelsgesetzbuch (HGB) und der Ausbildungsvertrag im Berufsbildungsgesetz (BBiG). Das Bürgerliche Gesetzbuch (BGB) regelt hier keinen der Sachverhalte unmittelbar.'
     },
     {
       nr: 28, thema: 'organisation', typ: 'zuordnung',
@@ -467,7 +467,7 @@
         'Beseitigung der Abfälle auf einer Deponie',
         'Energetische Verwertung durch Verbrennung',
         'Stoffliche Verwertung (Recycling)',
-        'Export der Abfälle ins Ausland'
+        'Vorbereitung zur Wiederverwendung'
       ],
       loesung: 1,
       erklaerung: '§ 6 KrWG legt die Abfallhierarchie fest: 1. Vermeidung, 2. Vorbereitung zur Wiederverwendung, 3. Recycling, 4. sonstige Verwertung (z. B. energetisch), 5. Beseitigung. An erster Stelle steht die Vermeidung.'
@@ -476,13 +476,13 @@
       nr: 30, thema: 'umweltschutz', typ: 'einfach',
       frage: 'Was besagt das Verursacherprinzip im Umweltschutz?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
-      einleitung: 'Das Verursacherprinzip bedeutet, dass …',
+      einleitung: 'Nach dem Verursacherprinzip …',
       optionen: [
-        'der Verursacher die Kosten für Umweltbelastungen trägt.',
-        'der Staat sämtliche Umweltkosten übernimmt.',
-        'die Allgemeinheit die Kosten für Umweltschäden trägt.',
-        'Umweltschäden grundsätzlich nicht ersetzt werden müssen.',
-        'ausschließlich Privatpersonen für Umweltschäden haften.'
+        'trägt der Urheber einer Umweltbelastung deren Kosten.',
+        'übernimmt der Staat sämtliche Umweltkosten.',
+        'trägt die Allgemeinheit die Kosten für Umweltschäden.',
+        'müssen Umweltschäden grundsätzlich nicht ersetzt werden.',
+        'haften ausschließlich Privatpersonen für Umweltschäden.'
       ],
       loesung: 1,
       erklaerung: 'Nach dem Verursacherprinzip trägt derjenige die Kosten für Vermeidung und Beseitigung von Umweltbelastungen, der sie verursacht hat. Gegenstück ist das Gemeinlastprinzip, bei dem die Allgemeinheit die Kosten trägt.'

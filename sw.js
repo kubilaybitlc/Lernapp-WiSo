@@ -1,6 +1,6 @@
 // Offline-Cache für die installierte App.
 // Zuerst aus dem Netz laden, damit neue Aufgabensätze sofort ankommen; ohne Verbindung aus dem Cache.
-const CACHE = 'wiso-trainer-v26';
+const CACHE = 'wiso-trainer-v27';
 const NETZ_TIMEOUT_MS = 4000;
 
 // Beim Installieren vorab speichern. Neue Aufgabensätze hier ergänzen, damit sie auch ohne vorherigen Online-Start offline da sind.
@@ -51,6 +51,9 @@ const DATEIEN = [
   'daten/it-satz-02.js',
   'daten/it-satz-03.js',
   'daten/it-satz-04.js',
+  'daten/it-satz-05.js',
+  'daten/it-satz-06.js',
+  'daten/it-satz-07.js',
   'bilder/2021W-13.jpg',
   'bilder/2022S-23.jpg',
   'bilder/2022W-26.jpg',

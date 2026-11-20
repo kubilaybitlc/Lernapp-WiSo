@@ -93,10 +93,10 @@
       frage: 'Welche Aussage zur Tabelle „Mitglieder“ trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Tabelle verletzt die 1. Normalform, weil die Spalte Beitrag Dezimalzahlen enthält.',
-        'Der Beitrag hängt nur über den Tarif von der MitgliedNr ab (transitive Abhängigkeit); die Tabelle verletzt die 3. Normalform.',
-        'Die Tabelle verletzt die 2. Normalform, weil der Beitrag nur von einem Teil des Primärschlüssels abhängt.',
-        'Die Tabelle ist redundanzfrei, weil jedes Mitglied nur einmal vorkommt.',
+        'Die Tabelle verletzt wegen der Dezimalzahlen in der Spalte Beitrag die 1. Normalform.',
+        'Die Tabelle verletzt wegen der Abhängigkeit des Beitrags vom Tarif die 3. Normalform.',
+        'Die Tabelle verletzt wegen der Abhängigkeit des Beitrags von einem Teil des Primärschlüssels die 2. Normalform.',
+        'Die Tabelle ist dank der eindeutigen MitgliedNr redundanzfrei.',
         'Die Spalte Beitrag muss als Fremdschlüssel auf die Tabelle „Mitgliedschaften“ verweisen.'
       ],
       loesung: 2,
@@ -140,12 +140,12 @@
     // 5 – CREATE VIEW
     {
       nr: 5, thema: 'sql-erweitert', typ: 'einfach', codeOptionen: true,
-      text: 'Die Studioleitung möchte häufig verwendete Abfragen als View speichern.',
+      text: 'Die Studioleitung möchte für häufig benötigte Auswertungen Views einsetzen.',
       frage: 'Was bewirkt der Befehl CREATE VIEW?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Beschreibung in das Kästchen ein.',
       optionen: [
         'Er erstellt eine neue Tabelle mit einer Kopie der Daten',
-        'Er speichert eine SELECT-Abfrage als virtuelle Tabelle, die bei jedem Zugriff neu ausgeführt wird',
+        'Er speichert eine bei jedem Zugriff neu ausgeführte SELECT-Abfrage als virtuelle Tabelle',
         'Er erstellt einen Index für schnellere Abfragen',
         'Er exportiert Daten in eine externe Datei',
         'Er sperrt eine Tabelle für Schreibzugriffe'
@@ -174,7 +174,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'IN und EXISTS liefern immer ein identisches Ergebnis und unterscheiden sich nur in der Schreibweise',
-        'EXISTS prüft, ob die Unterabfrage mindestens eine Zeile liefert, und bricht dann ab; IN vergleicht einen Wert mit einer Liste',
+        'EXISTS prüft die Unterabfrage auf mindestens eine Zeile, IN vergleicht einen Wert mit einer Liste',
         'EXISTS kann nur mit einer einzigen Tabelle verwendet werden',
         'IN ist immer schneller als EXISTS',
         'EXISTS liefert die gefundenen Zeilen zurück, IN liefert nur TRUE oder FALSE'
@@ -227,13 +227,13 @@
     // 11 – Self-Join Konzept
     {
       nr: 11, thema: 'sql-join', typ: 'einfach', codeOptionen: true,
-      text: 'In bestimmten Fällen muss eine Tabelle mit sich selbst verknüpft werden.',
-      frage: 'Welche Beschreibung trifft auf einen Self-Join (Selbstverknüpfung) zu?',
+      text: 'Für eine Auswertung der Mitgliederdaten soll ein Self-Join verwendet werden.',
+      frage: 'Welche Beschreibung trifft auf einen Self-Join zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Beschreibung in das Kästchen ein.',
       optionen: [
-        'Eine Tabelle wird mit einer exakten Kopie von sich selbst verknüpft, um Duplikate zu finden',
-        'Eine Tabelle wird mit sich selbst verknüpft, indem sie über Aliase wie zwei verschiedene Tabellen behandelt wird',
-        'Eine Abfrage wird automatisch wiederholt, bis keine neuen Ergebnisse mehr entstehen',
+        'Eine Tabelle wird zur Suche nach Duplikaten mit einer exakten Kopie von sich selbst verknüpft',
+        'Eine Tabelle wird über Aliase wie zwei verschiedene Tabellen mit sich selbst verknüpft',
+        'Eine Abfrage wird automatisch bis zum Ausbleiben neuer Ergebnisse wiederholt',
         'Zwei verschiedene Tabellen werden über Primär- und Fremdschlüssel verknüpft',
         'Eine View wird auf Basis derselben Tabelle erstellt'
       ],
@@ -343,11 +343,11 @@
       frage: 'Was bewirkt die Funktion COALESCE(GueltigBis, \'unbefristet\')?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Beschreibung in das Kästchen ein.',
       optionen: [
-        'Sie löscht alle Zeilen, in denen GueltigBis NULL ist',
-        'Sie gibt den Wert von GueltigBis zurück, oder „unbefristet", wenn GueltigBis NULL ist',
+        'Sie löscht alle Zeilen mit NULL in GueltigBis',
+        'Sie gibt den Wert von GueltigBis zurück, bei NULL stattdessen „unbefristet"',
         'Sie wandelt alle Datumswerte in den Text „unbefristet" um',
         'Sie ersetzt alle Werte in der Spalte dauerhaft durch „unbefristet"',
-        'Sie prüft, ob der Text „unbefristet" in der Spalte vorkommt'
+        'Sie sucht den Text „unbefristet" in der Spalte'
       ],
       loesung: 2,
       erklaerung: 'COALESCE gibt den ersten Wert aus der Parameterliste zurück, der nicht NULL ist. Ist GueltigBis gefüllt, wird dessen Wert zurückgegeben. Ist er NULL, wird der Ersatzwert „unbefristet" ausgegeben. Die Spalte selbst wird dadurch nicht verändert.'

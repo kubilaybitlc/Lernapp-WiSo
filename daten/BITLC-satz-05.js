@@ -55,7 +55,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Eigene Azubis können nur befristet übernommen werden.',
-        'Das Arbeitsverhältnis endet nach einem Jahr, ohne dass es einer Kündigung bedarf.',
+        'Das Arbeitsverhältnis endet nach einem Jahr ohne Kündigung.',
         'Befristung nur mit Zustimmung der Agentur für Arbeit',
         'Befristung mindestens zwei Jahre',
         'Befristung nur mit Zustimmung des Betriebsrats'
@@ -114,8 +114,8 @@
         'Sie gibt die Mindestrente an.',
         'Auf den Teil des Bruttolohns über der Beitragsbemessungsgrenze wird kein Rentenversicherungsbeitrag erhoben.',
         'Darüber besteht keine Versicherungspflicht mehr.',
-        'Wer darüber verdient, scheidet aus der gesetzlichen RV aus.',
-        'Wer darüber verdient, hat keinen Anspruch auf Erwerbsminderungsrente.'
+        'Versicherte mit einem Verdienst über der Grenze scheiden aus der gesetzlichen RV aus.',
+        'Versicherte mit einem Verdienst über der Grenze haben keinen Anspruch auf Erwerbsminderungsrente.'
       ],
       loesung: 2,
       erklaerung: 'Die Beitragsbemessungsgrenze (BBG) ist die Obergrenze, bis zu der das Einkommen für die Beitragsberechnung herangezogen wird. Auf den Teil darüber werden keine Beiträge erhoben. Achtung: Die BBG befreit nicht von der Versicherungspflicht! Die Versicherungspflichtgrenze (nur KV/PV) ist etwas anderes.'
@@ -140,7 +140,7 @@
       frage: 'Welche Aussage zur Arbeitssicherheit trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'Mitbestimmung ist ausgeschlossen, weil das ArbSchG alles regelt.',
+        'Mitbestimmung ist wegen der umfassenden Regelung im ArbSchG ausgeschlossen.',
         'Arbeitsschutzbestimmungen sind kein zwingendes Recht.',
         'Ein Unternehmen mit mehr als 20 Beschäftigten muss einen Arbeitsschutzausschuss einrichten.',
         'Ergonomie ist eine freiwillige Leistung.',
@@ -300,7 +300,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Vereinbarung eines Mindestpreises',
-        'Vereinbarung einheitlicher Abmessungen und Ausführungsformen (Normen- und Typenkartell)',
+        'Vereinbarung einheitlicher Abmessungen und Ausführungsformen',
         'Aufteilung der Absatzgebiete',
         'Festlegung von Produktionsquoten',
         'Vereinbarung eines Höchstpreises'
@@ -356,10 +356,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'verlangt individuelle Vorsorge jeder Generation.',
-        'sieht vor, dass jeder seine Beiträge erstattet bekommt.',
-        'gilt nur für Arbeitnehmer, die vor 2023 eingezahlt haben.',
-        'regelt, dass mit den Einzahlungen der aktiven Arbeitnehmer die Renten der Rentenempfänger bestritten werden.',
-        'besagt, dass sich die Sozialversicherungszweige gegenseitig finanzieren.'
+        'sieht für jeden die Erstattung seiner Beiträge vor.',
+        'gilt nur für Arbeitnehmer mit Einzahlungen vor 2023.',
+        'regelt die Finanzierung der laufenden Renten aus den Einzahlungen der aktiven Arbeitnehmer.',
+        'beruht auf der gegenseitigen Finanzierung der Sozialversicherungszweige.'
       ],
       loesung: 4,
       erklaerung: 'Der Generationenvertrag basiert auf dem Umlageverfahren: Die Beiträge der aktuell Erwerbstätigen werden direkt zur Finanzierung der aktuellen Renten verwendet – nicht angespart. Jede Generation finanziert also die vorherige. Problem: Demografischer Wandel (weniger Beitragszahler, mehr Rentner) belastet das System.'
@@ -380,7 +380,7 @@
     },
     {
       nr: 28, thema: 'arbeitsschutz', typ: 'einfach',
-      frage: 'Welche Bedeutung hat das rote Brandschutzschild mit aufgerollter Schlauchtrommel und Flamme (siehe Bild)?',
+      frage: 'Welche Bedeutung hat das rote Schild mit aufgerollter Schlauchtrommel und Flamme (siehe Bild)?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Feuerwehrnoteingang mit Schlauchanschluss',
@@ -416,7 +416,7 @@
         'Umweltschutz wird Teil der Lehrpläne.',
         'Abfalltrennung ist wichtiger als Abfallvermeidung.',
         'Abfallentsorgung ist wichtiger als Abfallvermeidung.',
-        'Die Kosten für die Beseitigung von Umweltschäden tragen diejenigen, die sie verursacht haben.',
+        'Die Kosten für die Beseitigung von Umweltschäden tragen deren Verursacher.',
         'Die Kosten werden auf alle Einwohner verteilt.'
       ],
       loesung: 4,

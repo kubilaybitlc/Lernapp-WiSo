@@ -62,11 +62,11 @@
       frage: 'Welche Personengruppe ist nach BetrVG in den Betriebsrat wählbar (passives Wahlrecht)?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'Alle Wahlberechtigten, die über 16 Jahre alt sind.',
+        'Alle Wahlberechtigten über 16 Jahre',
         'Alle Betriebsangehörigen',
-        'Alle Wahlberechtigten, die das 18. Lebensjahr vollendet haben und mindestens sechs Monate im Betrieb beschäftigt sind.',
-        'Alle Wahlberechtigten ab 21 Jahren, die seit einem Monat im Betrieb sind.',
-        'Alle Wahlberechtigten, die dem Betrieb seit mindestens sechs Wochen angehören.'
+        'Alle Wahlberechtigten ab 18 Jahren mit mindestens sechs Monaten Betriebszugehörigkeit',
+        'Alle Wahlberechtigten ab 21 Jahren mit einem Monat Betriebszugehörigkeit',
+        'Alle Wahlberechtigten mit mindestens sechs Wochen Betriebszugehörigkeit'
       ],
       loesung: 3,
       erklaerung: '§ 8 BetrVG: Wählbar (passives Wahlrecht) sind alle wahlberechtigten Arbeitnehmer, die das 18. Lebensjahr vollendet haben und dem Betrieb mindestens 6 Monate angehören. Aktives Wahlrecht (wählen dürfen) hat man bereits ab 16 Jahren (§ 7 BetrVG).'
@@ -79,7 +79,7 @@
         'sind in den Betrieben für die Schlichtung zwischen Arbeitnehmern und Arbeitgebern zuständig.',
         'handeln mit den Arbeitgeberverbänden auch Betriebsvereinbarungen aus.',
         'können bei Streitigkeiten den organisierten Arbeitnehmern Rechtsbeistand leisten.',
-        'haben die Aufgabe, die Betriebsratswahlen zu kontrollieren.',
+        'haben die Betriebsratswahlen zu kontrollieren.',
         'haben bei Tarifverhandlungen für die Belange aller Arbeitnehmer einzutreten.'
       ],
       loesung: 3,
@@ -103,14 +103,14 @@
     },
     {
       nr: 8, thema: 'tarifrecht', typ: 'einfach',
-      frage: 'Wann ist eine Änderung tariflich festgelegter Arbeitsbedingungen zulässig? Die Änderung ist zulässig, wenn …',
+      frage: 'Wann ist eine Änderung tariflich festgelegter Arbeitsbedingungen zulässig? Zulässig ist eine Änderung …',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'sie zugunsten der Arbeitnehmer erfolgt.',
-        'die Berufsgenossenschaft zustimmt.',
-        'die Landesregierung zustimmt.',
-        'sie zugunsten des Unternehmens erfolgt.',
-        'sie von der Bundesagentur für Arbeit genehmigt wird.'
+        'zugunsten der Arbeitnehmer.',
+        'mit Zustimmung der Berufsgenossenschaft.',
+        'mit Zustimmung der Landesregierung.',
+        'zugunsten des Unternehmens.',
+        'mit Genehmigung der Bundesagentur für Arbeit.'
       ],
       loesung: 1,
       erklaerung: 'Günstigkeitsprinzip (§ 4 Abs. 3 TVG): Abweichungen vom Tarifvertrag nur zugunsten der Arbeitnehmer.'
@@ -123,11 +123,11 @@
         'Arbeitgeberverband und BITLC',
         'BITLC und Betriebsrat',
         'Betriebsrat und Arbeitsagentur',
-        'Betriebsrat und zuständige BITLC',
+        'Betriebsrat und zuständige Gewerkschaft',
         'Geschäftsleitung und Betriebsrat'
       ],
       loesung: 5,
-      erklaerung: '§ 77 BetrVG: Betriebsvereinbarungen schließen Arbeitgeber (Geschäftsleitung) und Betriebsrat.'
+      erklaerung: '§ 77 BetrVG: Betriebsvereinbarungen schließen Arbeitgeber (Geschäftsleitung) und Betriebsrat. Gewerkschaften schließen Tarifverträge, keine Betriebsvereinbarungen.'
     },
     {
       nr: 10, thema: 'ausbildung', typ: 'zuordnung',
@@ -158,7 +158,7 @@
         'Das passive Wahlrecht endet mit Vollendung des 18. Lebensjahres.',
         'Das Mindestalter für das aktive Wahlrecht beträgt 16 Jahre.',
         'Das aktive Wahlrecht endet immer mit Vollendung des 18. Lebensjahres.',
-        'Eine JAV kann nur gewählt werden, wenn bereits ein Betriebsrat besteht.'
+        'Eine JAV kann nur bei bestehendem Betriebsrat gewählt werden.'
       ],
       loesung: 5,
       erklaerung: 'JAV setzt einen Betriebsrat voraus. Amtszeit 2 Jahre; wählen dürfen AN unter 18 und Azubis unter 25; wählbar sind AN unter 25.'
@@ -226,11 +226,11 @@
       frage: 'Welche Aussage beschreibt und begründet die Marktformen korrekt?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'Bei Medikamentenabrechnungen liegt ein Polypol vor, da viele Nachfrager auftreten.',
-        'Der Markt für Steuerabrechnungen ist ein Polypol, da viele Anbieter auf viele Nachfrager treffen.',
-        'Der Markt für Steuerabrechnungen ist ein Nachfrageoligopol, da nur zwei Gruppen von Nachfragern auftreten.',
-        'Bei Medikamentenabrechnungen liegt ein Angebotsmonopol vor, da es nur wenige Anbieter gibt.',
-        'Es liegt ein Quasi-Monopol vor, da es nur vier Anbieter für Steuerabrechnungen gibt.'
+        'Bei Medikamentenabrechnungen liegt wegen vieler Nachfrager ein Polypol vor.',
+        'Der Markt für Steuerabrechnungen ist wegen vieler Anbieter und vieler Nachfrager ein Polypol.',
+        'Der Markt für Steuerabrechnungen ist wegen nur zweier Nachfragergruppen ein Nachfrageoligopol.',
+        'Bei Medikamentenabrechnungen liegt wegen nur weniger Anbieter ein Angebotsmonopol vor.',
+        'Wegen nur vier Anbietern für Steuerabrechnungen liegt ein Quasi-Monopol vor.'
       ],
       loesung: 2,
       erklaerung: 'Polypol = viele Anbieter treffen auf viele Nachfrager (z. B. Steuerabrechnungen). Wenige Anbieter + viele Nachfrager = Angebotsoligopol (z. B. Medikamentenabrechnungen). Nur ein Anbieter = Monopol.'
@@ -304,7 +304,7 @@
       optionen: [
         'Die Eintragung ins Handelsregister muss nicht zwangsläufig beantragt werden.',
         'Der Name des neuen Unternehmens könnte auch „EcoTec GmbH“ lauten.',
-        'Die Geschäftsführung muss durch eine außenstehende Person erfolgen, Gesellschafter dürfen nicht Geschäftsführer sein.',
+        'Die Geschäftsführung muss durch eine außenstehende Person erfolgen.',
         'Die Einlagen übersteigen das gesetzlich geforderte Mindestkapital.',
         'Der Gesellschaftsvertrag kann auch mündlich abgeschlossen werden.'
       ],
@@ -386,7 +386,7 @@
       frage: 'Welche zwei Maßnahmen müssen im Brandfall sofort ergriffen werden?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Antworten in die Kästchen ein.',
       optionen: [
-        'Alle Fenster öffnen, damit der Rauch abziehen kann',
+        'Alle Fenster für den Rauchabzug öffnen',
         'Den Notruf absetzen',
         'Den Sicherheitsbeauftragten informieren',
         'Den Vorgesetzten informieren',
@@ -418,7 +418,7 @@
       optionen: [
         'Das AGG gilt nicht für Auszubildende.',
         'Bei Verstoß haben Betroffene keinen Anspruch auf Schadenersatz.',
-        'Das AGG regelt, dass Benachteiligungen wegen Geschlecht, Religion oder Weltanschauung unzulässig sind.',
+        'Das AGG verbietet Benachteiligungen wegen Geschlecht, Religion oder Weltanschauung.',
         'Stellenausschreibungen müssen nicht geschlechtsneutral sein.',
         'Die Benachteiligungsverbote gelten nicht für Aufstieg und Arbeitsbedingungen.'
       ],
@@ -431,8 +431,8 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Sie verfügen über hervorragende Kenntnisse in Webprogrammierung.',
-        'Sie passen in unser junges dynamisches Team, wenn Sie jünger als 30 Jahre sind.',
-        'Sie sind mobil und bereit, mehrtägige Geschäftsreisen zu unternehmen.',
+        'Sie sind jünger als 30 Jahre und passen in unser junges dynamisches Team.',
+        'Sie sind mobil und zu mehrtägigen Geschäftsreisen bereit.',
         'Sie sind an flexible Arbeitszeiten gewöhnt.',
         'Sie beherrschen Englisch verhandlungssicher.'
       ],

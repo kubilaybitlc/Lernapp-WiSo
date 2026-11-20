@@ -100,10 +100,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Ja, jeder AN ist sofort wählbar.',
-        'Ja, weil sie volljährig ist.',
-        'Ja, weil sie eine abgeschlossene Ausbildung hat.',
-        'Nein, weil sie noch keine sechs Monate beschäftigt ist.',
-        'Nein, weil sie kein Gewerkschaftsmitglied ist.'
+        'Ja, wegen ihrer Volljährigkeit.',
+        'Ja, wegen ihrer abgeschlossenen Ausbildung.',
+        'Nein, wegen weniger als sechs Monaten Beschäftigung.',
+        'Nein, wegen fehlender Gewerkschaftsmitgliedschaft.'
       ],
       loesung: 4,
       erklaerung: '§ 8 BetrVG: Wählbar (passives Wahlrecht) sind wahlberechtigte Arbeitnehmer, die mindestens 18 Jahre alt sind und dem Betrieb mindestens 6 Monate angehören. Frau Medstein ist erst 2 Monate beschäftigt → nicht wählbar, obwohl sie volljährig ist. Gewerkschaftsmitgliedschaft ist keine Voraussetzung.'
@@ -295,7 +295,7 @@
       frage: 'Welche Aussage trifft auf Kartelle zu? Kartelle …',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'sind Absprachen auf gleicher Produktionsstufe, um durch Wettbewerbsbeschränkung wirtschaftlich stärker zu sein.',
+        'sind Absprachen auf gleicher Produktionsstufe zur wirtschaftlichen Stärkung durch Wettbewerbsbeschränkung.',
         'schaffen günstigere Preise durch bessere Produktionsbedingungen.',
         'sorgen für eine Sanierung durch innerbetriebliche Neuorganisation.',
         'sorgen für eine völlige Haftungsbeschränkung.',
@@ -365,7 +365,7 @@
         'Übernahme der Reha-Kosten nach einem Wegeunfall',
         'Finanzielle Unterstützung zum Lebensunterhalt bei Arbeitsunfähigkeit wegen eines Arbeitsunfalls',
         'Finanzielle Unterstützung bei Pflegebedürftigkeit nach einem Arbeitsunfall',
-        'Rente bei dauerhaftem Gesundheitsschaden mit mindestens 20 % Minderung der Erwerbsfähigkeit'
+        'Laufende Zahlung bei dauerhaftem Gesundheitsschaden mit mindestens 20 % Minderung der Erwerbsfähigkeit'
       ],
       itemsTitel: 'Sachverhalte',
       items: [

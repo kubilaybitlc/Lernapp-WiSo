@@ -36,10 +36,10 @@
       frage: 'Welche der folgenden Aussagen zum Auslandsaufenthalt trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Ein Auslandsaufenthalt ist während der Berufsausbildung nicht zulässig; er ist erst nach der Abschlussprüfung möglich.',
+        'Ein Auslandsaufenthalt ist erst nach der Abschlussprüfung zulässig.',
         'Für die Zeit im Ausland muss das Berufsausbildungsverhältnis aufgelöst und danach neu abgeschlossen werden.',
-        'Teile der Ausbildung dürfen im Ausland stattfinden, wenn dies dem Ausbildungsziel dient.',
-        'Die Zeit im Ausland wird nicht auf die Ausbildungsdauer angerechnet, sodass sich die Ausbildung um drei Monate verlängert.',
+        'Dem Ausbildungsziel dienende Teile der Ausbildung dürfen im Ausland stattfinden.',
+        'Die Ausbildung verlängert sich um die drei Monate im Ausland.',
         'Während des Auslandsaufenthalts entfällt der Anspruch auf Ausbildungsvergütung.'
       ],
       loesung: 3,
@@ -87,10 +87,10 @@
       frage: 'Welche der folgenden Aussagen zur Seminarteilnahme trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Herr Lüttgen muss für das Seminar Urlaub nehmen, weil es außerhalb des Betriebs stattfindet.',
-        'Er ist unter Fortzahlung des Entgelts freizustellen, die Seminarkosten trägt der Arbeitgeber.',
-        'Die Seminarkosten muss die Gewerkschaft tragen, in der Herr Lüttgen Mitglied ist.',
-        'Ein Seminarbesuch ist nur mit ausdrücklicher Zustimmung der Inhaberin zulässig, die sie ohne Begründung verweigern kann.',
+        'Für das Seminar außerhalb des Betriebs muss Herr Lüttgen Urlaub nehmen.',
+        'Der Arbeitgeber muss ihn unter Fortzahlung des Entgelts freistellen und die Seminarkosten tragen.',
+        'Die Seminarkosten muss die Gewerkschaft von Herrn Lüttgen tragen.',
+        'Ein Seminarbesuch erfordert die ausdrückliche, ohne Begründung verweigerbare Zustimmung der Inhaberin.',
         'Die Seminarkosten werden in Raten vom Gehalt des Betriebsratsmitglieds einbehalten.'
       ],
       loesung: 2,
@@ -102,10 +102,10 @@
       frage: 'Welche der folgenden Aussagen trifft nach dem Betriebsverfassungsgesetz zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Betriebsrat darf selbst bestimmen, welcher Bewerber die Stelle erhält.',
+        'Der Betriebsrat darf den Bewerber für die Stelle selbst auswählen.',
         'Interne Bewerber müssen bei gleicher Eignung immer den Vorzug vor externen Bewerbern erhalten.',
         'Eine innerbetriebliche Ausschreibung kann der Betriebsrat nur für Ausbildungsplätze verlangen.',
-        'Die Stelle muss intern ausgeschrieben werden, sonst kann der Betriebsrat die Zustimmung verweigern.',
+        'Ohne interne Ausschreibung kann der Betriebsrat die Zustimmung zur Einstellung verweigern.',
         'Nach dem Verlangen des Betriebsrats ist eine Stellenanzeige außerhalb des Betriebs verboten.'
       ],
       loesung: 4,
@@ -117,9 +117,9 @@
       frage: 'Welche der folgenden Aussagen zum Verhältnis zwischen Arbeitgeberin und Betriebsrat trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Arbeitgeberin und Betriebsrat arbeiten vertrauensvoll zusammen, Arbeitskampf ist unzulässig.',
-        'Der Betriebsrat darf zur Arbeitsniederlegung aufrufen, wenn die Mehrheit der Beschäftigten zustimmt.',
-        'Der Betriebsrat darf streiken, sobald die Arbeitgeberin einen Vorschlag des Betriebsrats ablehnt.',
+        'Arbeitgeberin und Betriebsrat müssen vertrauensvoll und ohne Arbeitskampfmaßnahmen zusammenarbeiten.',
+        'Mit Zustimmung der Mehrheit der Beschäftigten darf der Betriebsrat zur Arbeitsniederlegung aufrufen.',
+        'Nach der Ablehnung eines seiner Vorschläge durch die Arbeitgeberin darf der Betriebsrat streiken.',
         'Die Arbeitgeberin darf dem Betriebsrat im Gegenzug Sitzungen während der Arbeitszeit verbieten.',
         'Meinungsverschiedenheiten zwischen Arbeitgeberin und Betriebsrat entscheidet die Industrie- und Handelskammer verbindlich.'
       ],
@@ -132,9 +132,9 @@
       frage: 'Welche der folgenden Aussagen zu dieser Änderungskündigung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Herr Ebert muss das Angebot annehmen, weil die Arbeitgeberin den Arbeitsort jederzeit einseitig festlegen kann.',
+        'Wegen des freien Weisungsrechts der Arbeitgeberin zum Arbeitsort muss Herr Ebert das Angebot annehmen.',
         'Eine Änderungskündigung ist ohne Einhaltung einer Kündigungsfrist wirksam.',
-        'Lehnt Herr Ebert das Angebot ab, arbeitet er automatisch zu den bisherigen Bedingungen in Bochum weiter.',
+        'Nach einer Ablehnung des Angebots arbeitet Herr Ebert automatisch zu den bisherigen Bedingungen in Bochum weiter.',
         'Eine Änderungskündigung ist nur gegenüber Auszubildenden zulässig.',
         'Er kann das Angebot unter Vorbehalt annehmen und die soziale Rechtfertigung gerichtlich prüfen lassen.'
       ],
@@ -147,9 +147,9 @@
       frage: 'Welche der folgenden Aussagen trifft nach dem Bundesurlaubsgesetz zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Krankheitstage gelten als genommener Urlaub, weil sie in den genehmigten Urlaubszeitraum fallen.',
+        'Die Krankheitstage im genehmigten Urlaubszeitraum gelten als genommener Urlaub.',
         'Ärztlich nachgewiesene Krankheitstage werden nicht auf den Urlaub angerechnet.',
-        'Krankheitstage im Urlaub werden nur dann nicht angerechnet, wenn die Erkrankung länger als eine Woche dauert.',
+        'Krankheitstage im Urlaub werden nur bei einer Erkrankung von mehr als einer Woche nicht angerechnet.',
         'Für Krankheitstage im Urlaub braucht Frau Hartwig keine ärztliche Bescheinigung.',
         'Die Arbeitgeberin darf für die Krankheitstage das Urlaubsentgelt vom nächsten Gehalt abziehen.'
       ],
@@ -162,9 +162,9 @@
       frage: 'Welche der folgenden Aussagen zur Beschäftigung von Herrn Velić trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Entscheidend ist allein die Bezeichnung im Vertrag; als „freier Mitarbeiter“ ist Herr Velić selbstständig.',
-        'Herr Velić ist selbstständig, sobald er ein Gewerbe anmeldet und Rechnungen schreibt.',
-        'Er ist Arbeitnehmer, weil er weisungsgebunden und in die Arbeitsorganisation eingegliedert ist.',
+        'Allein wegen der Bezeichnung „freier Mitarbeiter“ im Vertrag ist Herr Velić selbstständig.',
+        'Mit Gewerbeanmeldung und eigenen Rechnungen ist Herr Velić selbstständig.',
+        'Wegen seiner Weisungsgebundenheit und Eingliederung in die Arbeitsorganisation ist Herr Velić Arbeitnehmer.',
         'Scheinselbstständigkeit gibt es nur in der Bauwirtschaft.',
         'Als freier Mitarbeiter darf Herr Velić höchstens 20 Stunden pro Woche arbeiten.'
       ],
@@ -178,9 +178,9 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Ab 26 °C haben alle Beschäftigten gesetzlich hitzefrei.',
-        'Die Raumtemperatur im Büro darf höchstens 22 °C betragen; bei höheren Werten muss die Arbeit eingestellt werden.',
+        'Bei einer Raumtemperatur von mehr als 22 °C im Büro muss die Arbeit eingestellt werden.',
         'Bei mehr als 30 °C muss die Arbeitgeberin wirksame Maßnahmen ergreifen, z. B. Sonnenschutz oder Getränke.',
-        'Für Raumtemperaturen gibt es keine Vorgaben; sie werden ausschließlich im Tarifvertrag geregelt.',
+        'Vorgaben für Raumtemperaturen finden sich ausschließlich im Tarifvertrag.',
         'Die Beschäftigten müssen Ventilatoren auf eigene Kosten anschaffen.'
       ],
       loesung: 3,
@@ -193,8 +193,8 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Geräte müssen regelmäßig von einer Elektrofachkraft geprüft werden.',
-        'Elektrische Geräte müssen erst geprüft werden, wenn mit ihnen ein Unfall passiert ist.',
-        'Privat mitgebrachte Geräte dürfen ohne Prüfung benutzt werden, weil die Arbeitgeberin für sie nicht verantwortlich ist.',
+        'Elektrische Geräte müssen erst nach einem Unfall geprüft werden.',
+        'Privat mitgebrachte Geräte dürfen mangels Verantwortung der Arbeitgeberin ohne Prüfung benutzt werden.',
         'Die Prüfung darf jeder Beschäftigte auch ohne elektrotechnische Kenntnisse durchführen.',
         'Die Prüfung ist nur in Betrieben mit mehr als 50 Beschäftigten vorgeschrieben.'
       ],
@@ -210,7 +210,7 @@
         'Ein Anspruch auf Stillzeit besteht nur in den ersten sechs Wochen nach der Entbindung.',
         'Die Stillzeit wird auf die gesetzlichen Ruhepausen angerechnet.',
         'Frau Schreiber muss die Stillzeit am Ende des Arbeitstages nacharbeiten.',
-        'Sie ist in den ersten zwölf Monaten für die Stillzeit freizustellen, ohne Entgeltminderung.',
+        'Sie ist in den ersten zwölf Monaten ohne Entgeltminderung für die Stillzeit freizustellen.',
         'Für die Stillzeit braucht Frau Schreiber die Zustimmung des Betriebsrats.'
       ],
       loesung: 4,
@@ -226,7 +226,7 @@
         'Für die Gründung ist ein Mindestkapital von 25.000,00 EUR erforderlich.',
         'Partner können auch Gewerbetreibende wie ein IT-Händler sein.',
         'Die Partnerinnen haften für Verbindlichkeiten der Gesellschaft überhaupt nicht persönlich.',
-        'Sie steht nur Angehörigen freier Berufe offen, für Fehler haftet nur die befasste Partnerin.'
+        'Sie steht nur Angehörigen freier Berufe offen.'
       ],
       loesung: 5,
       erklaerung: 'In der Partnerschaftsgesellschaft schließen sich Angehörige freier Berufe, z. B. Steuerberater, Ärzte oder Architekten, zur Ausübung ihrer Berufe zusammen; sie übt kein Handelsgewerbe aus, Partner können grundsätzlich nur natürliche Personen sein (§ 1 PartGG). Sie wird in das Partnerschaftsregister beim Amtsgericht eingetragen (§ 4 PartGG) und braucht kein Mindestkapital. Für Verbindlichkeiten haften die Partner neben dem Gesellschaftsvermögen als Gesamtschuldner; für berufliche Fehler haftet jedoch nur der Partner, der mit dem Auftrag befasst war (§ 8 Abs. 1, 2 PartGG). Mit einer Berufshaftpflichtversicherung ist auch eine PartG mbB möglich (§ 8 Abs. 4 PartGG).'
@@ -247,9 +247,9 @@
       optionen: [
         'Die betriebliche Altersversorgung ist für alle Arbeitnehmer gesetzlich vorgeschrieben und wird allein vom Arbeitgeber finanziert.',
         'Die Altersvorsorge stützt sich auf drei Säulen: gesetzliche Rente, betriebliche Altersversorgung und private Vorsorge.',
-        'Eine Entgeltumwandlung ist nur möglich, wenn der Arbeitgeber tarifgebunden ist.',
+        'Eine Entgeltumwandlung ist nur bei tarifgebundenen Arbeitgebern möglich.',
         'Private Vorsorge, z. B. eine private Rentenversicherung, ist Teil der gesetzlichen Rentenversicherung.',
-        'Wer eine betriebliche Altersversorgung abschließt, scheidet aus der gesetzlichen Rentenversicherung aus.'
+        'Der Abschluss einer betrieblichen Altersversorgung beendet die Pflichtversicherung in der gesetzlichen Rentenversicherung.'
       ],
       loesung: 2,
       erklaerung: 'Die Altersvorsorge in Deutschland beruht auf drei Säulen: gesetzliche Rentenversicherung (SGB VI), betriebliche Altersversorgung (BetrAVG) und private Vorsorge. Nach § 1a BetrAVG können Arbeitnehmer verlangen, dass von ihren künftigen Entgeltansprüchen bis zu 4 % der Beitragsbemessungsgrenze der Rentenversicherung für ihre betriebliche Altersversorgung verwendet werden (2026: 4 % von 101.400,00 EUR = 4.056,00 EUR im Jahr). Spart der Arbeitgeber dadurch Sozialversicherungsbeiträge, muss er grundsätzlich 15 % des umgewandelten Betrags zusätzlich einzahlen (§ 1a Abs. 1a BetrAVG). Die Pflichtversicherung in der gesetzlichen Rentenversicherung bleibt bestehen.'
@@ -291,8 +291,8 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       einleitung: 'Beim Refurbishing …',
       optionen: [
-        'werden gebrauchte Geräte geprüft, gereinigt und repariert, um sie länger zu nutzen.',
-        'werden Altgeräte zerkleinert, um daraus Metalle und Kunststoffe als Rohstoffe zurückzugewinnen.',
+        'werden gebrauchte Geräte für eine längere Nutzung geprüft, gereinigt und repariert.',
+        'werden Altgeräte zur Rückgewinnung von Metallen und Kunststoffen als Rohstoffe zerkleinert.',
         'werden Altgeräte in einem Kraftwerk zur Energiegewinnung verbrannt.',
         'werden Neugeräte in einer Verpackung aus Recyclingkarton ausgeliefert.',
         'werden Geräte nur gemietet statt gekauft und bleiben Eigentum des Herstellers.'
@@ -308,9 +308,9 @@
       optionen: [
         'Die Gehälter aller Branchen legt das Bundesministerium für Arbeit und Soziales jährlich fest.',
         'Tarifverträge werden von der Industrie- und Handelskammer für ihre Mitgliedsunternehmen abgeschlossen.',
-        'Tarifverträge treten erst in Kraft, wenn der Bundestag ihnen zugestimmt hat.',
+        'Tarifverträge treten erst mit Zustimmung des Bundestags in Kraft.',
         'Tarifverträge werden zwischen Betriebsrat und Arbeitgeber abgeschlossen.',
-        'Gewerkschaften und Arbeitgeber handeln Löhne eigenverantwortlich aus (Tarifautonomie).'
+        'Gewerkschaften und Arbeitgeber handeln Löhne eigenverantwortlich aus.'
       ],
       loesung: 5,
       erklaerung: 'Die Tarifautonomie folgt aus der Koalitionsfreiheit (Art. 9 Abs. 3 GG): Gewerkschaften und Arbeitgeberverbände bzw. einzelne Arbeitgeber regeln Löhne und Arbeitsbedingungen in Tarifverträgen selbst (§§ 1, 2 TVG). Der Staat greift nicht in die Verhandlungen ein, setzt aber gesetzliche Mindeststandards, z. B. Mindestlohn, Mindesturlaub oder Höchstarbeitszeit. Betriebsrat und Arbeitgeber schließen Betriebsvereinbarungen, keine Tarifverträge (§ 77 BetrVG).'
@@ -323,8 +323,8 @@
       optionen: [
         'Alle Beschäftigten der Stadtverwaltung dürfen streiken, auch die Beamten.',
         'Die Tarifbeschäftigten dürfen sich am Streik beteiligen, die Beamten dagegen nicht.',
-        'Im öffentlichen Dienst ist jeder Streik verboten, weil der Staat Arbeitgeber ist.',
-        'Beamte dürfen streiken, wenn sie Mitglied der Gewerkschaft sind.',
+        'Wegen der Arbeitgeberstellung des Staates ist im öffentlichen Dienst jeder Streik verboten.',
+        'Beamte dürfen als Mitglieder der Gewerkschaft streiken.',
         'Der Streik braucht die Zustimmung des Oberbürgermeisters.'
       ],
       loesung: 2,
@@ -339,12 +339,12 @@
         'Das Verbot von Preisabsprachen durch das Kartellrecht',
         'Die gesetzliche Sozialversicherung mit Versicherungspflicht für Arbeitnehmer',
         'Die Eintragung von Kaufleuten in das Handelsregister',
-        'Die Gewerbefreiheit, nach der grundsätzlich jeder ein Gewerbe betreiben darf',
-        'Die Grundsicherung für Arbeitsuchende, die ein menschenwürdiges Existenzminimum sichert',
+        'Die Gewerbefreiheit nach der Gewerbeordnung',
+        'Die Grundsicherung für Arbeitsuchende',
         'Die Privatisierung staatlicher Unternehmen'
       ],
       loesung: [2, 5],
-      erklaerung: 'Nach Art. 20 Abs. 1 GG ist die Bundesrepublik ein „sozialer Bundesstaat“. Der Staat muss für soziale Sicherheit und sozialen Ausgleich sorgen, z. B. durch die Sozialversicherung und die Grundsicherung für Arbeitsuchende (SGB II), die das Existenzminimum sichert. Kartellverbot und Gewerbefreiheit sichern den Wettbewerb und die wirtschaftliche Freiheit, das Handelsregister dient der Information im Handelsverkehr, Privatisierungen verringern den Einfluss des Staates. Die soziale Marktwirtschaft verbindet freien Wettbewerb mit sozialem Ausgleich.'
+      erklaerung: 'Nach Art. 20 Abs. 1 GG ist die Bundesrepublik ein „sozialer Bundesstaat“. Der Staat muss für soziale Sicherheit und sozialen Ausgleich sorgen, z. B. durch die Sozialversicherung und die Grundsicherung für Arbeitsuchende (SGB II), die ein menschenwürdiges Existenzminimum sichert. Kartellverbot und Gewerbefreiheit (grundsätzlich darf jeder ein Gewerbe betreiben, § 1 GewO) sichern den Wettbewerb und die wirtschaftliche Freiheit,das Handelsregister dient der Information im Handelsverkehr, Privatisierungen verringern den Einfluss des Staates. Die soziale Marktwirtschaft verbindet freien Wettbewerb mit sozialem Ausgleich.'
     },
     {
       nr: 22, thema: 'gleichbehandlung', typ: 'einfach',
@@ -352,11 +352,11 @@
       frage: 'In welchem der folgenden Fälle ist eine unterschiedliche Behandlung nach dem Allgemeinen Gleichbehandlungsgesetz (AGG) zulässig?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Fall in das Kästchen ein.',
       optionen: [
-        'Für die Hotline werden nur Bewerberinnen und Bewerber unter 35 Jahren eingeladen, weil das Team jung ist.',
-        'Für ein international besetztes Entwicklerteam, das auf Englisch arbeitet, werden nur „deutsche Muttersprachler“ gesucht.',
-        'Frauen werden für den Serverraum grundsätzlich nicht eingestellt, weil dort gelegentlich schwere Geräte getragen werden.',
-        'Bewerberinnen mit Kopftuch werden abgelehnt, weil sie Kundenkontakt hätten.',
-        'Für ein Frauenhaus, das Männer nicht betreten dürfen, wird nur eine Technikerin eingesetzt.'
+        'Wegen des jungen Teams werden für die Hotline nur Bewerberinnen und Bewerber unter 35 Jahren eingeladen.',
+        'Für ein international besetztes, auf Englisch arbeitendes Entwicklerteam werden nur „deutsche Muttersprachler“ gesucht.',
+        'Wegen gelegentlich zu tragender schwerer Geräte werden Frauen für den Serverraum grundsätzlich nicht eingestellt.',
+        'Wegen des Kundenkontakts werden Bewerberinnen mit Kopftuch abgelehnt.',
+        'Für ein Frauenhaus mit Zutrittsverbot für Männer wird nur eine Technikerin eingesetzt.'
       ],
       loesung: 5,
       erklaerung: '§ 8 Abs. 1 AGG: Eine unterschiedliche Behandlung wegen eines in § 1 AGG genannten Grundes ist zulässig, wenn dieser Grund wegen der Art der Tätigkeit oder der Bedingungen ihrer Ausübung eine wesentliche und entscheidende berufliche Anforderung darstellt, der Zweck rechtmäßig und die Anforderung angemessen ist. Das trifft zu, wenn Männer ein Frauenhaus zum Schutz der Bewohnerinnen nicht betreten dürfen. Ein junges Team, Kundenwünsche oder pauschale Annahmen über die körperliche Belastbarkeit rechtfertigen dagegen keine Benachteiligung wegen des Alters, der ethnischen Herkunft, der Religion oder des Geschlechts (§§ 1, 7 AGG); das Merkmal „Muttersprachler“ knüpft an die ethnische Herkunft an.'
@@ -387,11 +387,11 @@
       frage: 'Welche der folgenden Aussagen beschreibt Corporate Social Responsibility zutreffend?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'CSR ist die gesetzliche Pflicht aller Unternehmen, einen Teil ihres Gewinns zu spenden.',
+        'CSR ist die gesetzliche Pflicht aller Unternehmen zur Spende eines Teils ihres Gewinns.',
         'CSR ist ein anderes Wort für Gewinnmaximierung.',
         'CSR ist die freiwillige Übernahme gesellschaftlicher Verantwortung über die gesetzlichen Pflichten hinaus.',
         'CSR ist ein Tarifvertrag über soziale Leistungen für Beschäftigte.',
-        'CSR bedeutet, dass ein Unternehmen nur noch gemeinnützige Ziele verfolgen darf.'
+        'CSR ist die Beschränkung eines Unternehmens auf ausschließlich gemeinnützige Ziele.'
       ],
       loesung: 3,
       erklaerung: 'Corporate Social Responsibility (unternehmerische Gesellschaftsverantwortung) umfasst freiwillige Beiträge zu einer nachhaltigen Entwicklung in den Bereichen Umwelt und Soziales, die über die gesetzlichen Anforderungen hinausgehen. Sie ergänzt ökonomische Ziele um ökologische und soziale Ziele und kann das Image sowie die Bindung von Beschäftigten und Kunden stärken. Eine allgemeine Rechtspflicht zu CSR-Maßnahmen gibt es nicht; große Unternehmen haben allerdings Berichtspflichten zur Nachhaltigkeit.'
@@ -402,10 +402,10 @@
       frage: 'Welche der folgenden Aussagen trifft nach dem Jugendarbeitsschutzgesetz zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Er darf an beiden Tagen nicht beschäftigt werden, die Ausnahmen gelten für einen IT-Dienstleister nicht.',
-        'Herr Schaefer darf an beiden Tagen arbeiten, wenn er dafür in der folgenden Woche zwei freie Tage erhält.',
-        'Herr Schaefer darf an beiden Tagen arbeiten, wenn seine Eltern schriftlich zustimmen.',
-        'Herr Schaefer darf arbeiten, weil er sich freiwillig gemeldet hat.',
+        'Mangels Ausnahme für IT-Dienstleister darf Herr Schaefer an keinem der beiden Tage beschäftigt werden.',
+        'Bei einem Ausgleich durch zwei freie Tage in der folgenden Woche darf Herr Schaefer an beiden Tagen arbeiten.',
+        'Mit schriftlicher Zustimmung seiner Eltern darf Herr Schaefer an beiden Tagen arbeiten.',
+        'Wegen seiner freiwilligen Meldung darf Herr Schaefer an beiden Tagen arbeiten.',
         'Herr Schaefer darf am Sonntag nicht, am Feiertag aber mit einem Zuschlag von 100 % arbeiten.'
       ],
       loesung: 1,
@@ -432,11 +432,11 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Das Kanzleiprojekt ist wirtschaftlicher, weil es die höheren Erträge erzielt hat.',
-        'Beide Projekte sind gleich wirtschaftlich, weil beide einen Gewinn erzielt haben.',
-        'Die Wirtschaftlichkeit berechnet man als Differenz von Erträgen und Aufwendungen; das Kanzleiprojekt liegt daher vorn.',
-        'Das Praxisprojekt ist mit einer Wirtschaftlichkeit von 1,40 wirtschaftlicher als das Kanzleiprojekt mit 1,20, obwohl es den geringeren Gewinn erbracht hat.',
-        'Das Praxisprojekt ist unwirtschaftlich, weil seine Wirtschaftlichkeit über 1 liegt.'
+        'Das Kanzleiprojekt ist wegen der höheren Erträge wirtschaftlicher.',
+        'Beide Projekte sind wegen des jeweils erzielten Gewinns gleich wirtschaftlich.',
+        'Das Kanzleiprojekt ist wegen der höheren Differenz von Erträgen und Aufwendungen wirtschaftlicher.',
+        'Das Praxisprojekt ist trotz des geringeren Gewinns wirtschaftlicher.',
+        'Das Praxisprojekt ist wegen seiner Wirtschaftlichkeit von über 1 unwirtschaftlich.'
       ],
       loesung: 4,
       erklaerung: 'Wirtschaftlichkeit = Erträge ÷ Aufwendungen. Kanzlei: 30.000,00 ÷ 25.000,00 = 1,20; Praxis: 14.000,00 ÷ 10.000,00 = 1,40. Je höher der Wert, desto wirtschaftlicher wurde gearbeitet; ein Wert über 1 bedeutet, dass die Erträge die Aufwendungen übersteigen. Der Gewinn (Erträge − Aufwendungen) ist beim Kanzleiprojekt mit 5.000,00 EUR zwar höher als beim Praxisprojekt mit 4.000,00 EUR, sagt aber nichts über das Verhältnis von Ertrag und Aufwand aus.'
@@ -463,11 +463,11 @@
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Maßnahmen in die Kästchen ein.',
       optionen: [
         'Den gesamten Datenverkehr verschlüsselt über das VPN der Ruhrkontor übertragen',
-        'Die Dateifreigabe des Notebooks aktivieren, damit Kollegen schneller auf Dateien zugreifen können',
-        'Die Firewall des Notebooks abschalten, um Verbindungsprobleme zu vermeiden',
+        'Die Dateifreigabe des Notebooks für einen schnelleren Dateizugriff der Kollegen aktivieren',
+        'Die Firewall des Notebooks zur Vermeidung von Verbindungsproblemen abschalten',
         'Die automatische Verbindung mit offenen WLAN-Netzen deaktivieren und stattdessen den mobilen Hotspot des Diensthandys nutzen',
         'Die Zugangsdaten der Arztpraxis auf einem Notizzettel am Notebook befestigen',
-        'Die Fernwartung über eine unverschlüsselte Verbindung starten, weil das schneller geht'
+        'Die Fernwartung aus Zeitgründen über eine unverschlüsselte Verbindung starten'
       ],
       loesung: [1, 4],
       erklaerung: 'In offenen WLANs können Dritte den Datenverkehr mitlesen oder manipulieren, z. B. über gefälschte Hotspots. Ein VPN baut einen verschlüsselten Tunnel zum Firmennetz auf; ein eigener mobiler Hotspot vermeidet das fremde Netz. Aktivierte Freigaben, eine abgeschaltete Firewall, notierte Passwörter und unverschlüsselte Verbindungen erhöhen dagegen das Risiko. Nach Art. 32 DSGVO sind geeignete technische und organisatorische Maßnahmen zu treffen, um die Vertraulichkeit und Integrität der Daten zu gewährleisten; Patientendaten sind besonders schutzbedürftig.'

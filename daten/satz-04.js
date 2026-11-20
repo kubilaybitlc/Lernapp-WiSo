@@ -40,8 +40,8 @@
         'Die Probezeit beträgt drei Monate.',
         'Frau Bader erhält 30 Werktage Urlaub im Kalenderjahr.',
         'Die Ausbildungsvergütung liegt in jedem Ausbildungsjahr über der gesetzlichen Mindestvergütung.',
-        'Bricht Frau Bader die Ausbildung vorzeitig ab, muss sie die Kosten für ihre Ausbildung, z. B. Lehrgangs- und Prüfungsgebühren, an die Alpenblick Systemhaus GmbH erstatten.',
-        'Frau Bader und die Alpenblick Systemhaus GmbH dürfen in den letzten sechs Monaten der Ausbildung vereinbaren, dass Frau Bader nach der Prüfung in ein Arbeitsverhältnis übernommen wird.'
+        'Bei vorzeitigem Abbruch erstattet Frau Bader dem Betrieb Ausbildungskosten wie Lehrgangs- und Prüfungsgebühren.',
+        'In den letzten sechs Monaten der Ausbildung dürfen beide Seiten die Übernahme in ein Arbeitsverhältnis vereinbaren.'
       ],
       loesung: 4,
       erklaerung: '§ 12 Abs. 2 Nr. 1 BBiG: Nichtig ist eine Vereinbarung über die Verpflichtung Auszubildender, für die Berufsausbildung eine Entschädigung zu zahlen; ebenso nichtig sind Vertragsstrafen sowie der Ausschluss oder die Pauschalierung von Schadensersatz (§ 12 Abs. 2 Nr. 2 bis 4 BBiG). Die Kosten der Ausbildung trägt der Ausbildungsbetrieb. Eine Probezeit von einem bis vier Monaten ist zulässig (§ 20 BBiG). Eine Vereinbarung über die Weiterarbeit nach der Ausbildung ist erlaubt, wenn sie innerhalb der letzten sechs Monate des Ausbildungsverhältnisses getroffen wird (§ 12 Abs. 1 Satz 2 BBiG).'
@@ -52,11 +52,11 @@
       frage: 'Welche der folgenden Aussagen zu einem Schadensersatzanspruch von Herrn Stölzle trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Herr Stölzle kann Schadensersatz verlangen, da der Betrieb den Grund für die Auflösung zu vertreten hat.',
+        'Herr Stölzle kann wegen des vom Betrieb zu vertretenden Auflösungsgrundes Schadensersatz verlangen.',
         'Schadensersatzansprüche sind bei Berufsausbildungsverhältnissen gesetzlich ausgeschlossen.',
-        'Ein Schadensersatzanspruch besteht nur, wenn das Ausbildungsverhältnis während der Probezeit gelöst wird.',
+        'Ein Schadensersatzanspruch besteht nur bei Lösung des Ausbildungsverhältnisses während der Probezeit.',
         'Herr Stölzle kann seinen Anspruch innerhalb von drei Jahren nach Ende des Ausbildungsverhältnisses geltend machen.',
-        'Schadensersatz kann nur die Alpenblick Systemhaus GmbH verlangen, weil Herr Stölzle selbst gekündigt hat.'
+        'Wegen der Eigenkündigung von Herrn Stölzle kann nur die Alpenblick Systemhaus GmbH Schadensersatz verlangen.'
       ],
       loesung: 1,
       erklaerung: '§ 23 Abs. 1 BBiG: Wird das Berufsausbildungsverhältnis nach der Probezeit vorzeitig gelöst, können Ausbildende oder Auszubildende Schadensersatz verlangen, wenn die andere Seite den Grund für die Auflösung zu vertreten hat; das gilt nicht bei einer Kündigung wegen Aufgabe der Ausbildung oder Berufswechsels. Der Anspruch erlischt, wenn er nicht innerhalb von drei Monaten nach Beendigung geltend gemacht wird (§ 23 Abs. 2 BBiG). Auszubildenden dürfen nur Aufgaben übertragen werden, die dem Ausbildungszweck dienen (§ 14 Abs. 3 BBiG); der wiederholte Verstoß ist ein wichtiger Grund für eine fristlose Kündigung (§ 22 Abs. 2 Nr. 1 BBiG).'
@@ -69,7 +69,7 @@
       optionen: [
         'Der Ausbildungsbetrieb muss in der Probezeit eine Kündigungsfrist von vier Wochen einhalten.',
         'Während der Probezeit kann von beiden Seiten jederzeit ohne Kündigungsfrist gekündigt werden.',
-        'Eine Kündigung in der Probezeit ist nur wirksam, wenn die BITLC zustimmt.',
+        'Eine Kündigung in der Probezeit ist nur mit Zustimmung der BITLC wirksam.',
         'Die Probezeit hätte im Ausbildungsvertrag auch auf sechs Monate festgelegt werden können.',
         'Nach Ablauf der Probezeit kann der Ausbildungsbetrieb ordentlich mit einer Frist von vier Wochen kündigen.'
       ],
@@ -104,10 +104,10 @@
       frage: 'Welche der folgenden Aussagen zum Betriebsrat nach der nächsten regelmäßigen Wahl trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Betriebsrat bleibt bei sieben Mitgliedern, weil sich seine Größe nach der ersten Wahl richtet.',
-        'Der Betriebsrat besteht aus elf Mitgliedern; zwei Mitglieder sind freizustellen.',
-        'Der Betriebsrat besteht aus neun Mitgliedern, die alle vollständig von ihrer beruflichen Tätigkeit freizustellen sind.',
-        'Der Betriebsrat besteht aus neun Mitgliedern, davon ist mindestens eines freizustellen.',
+        'Der Betriebsrat behält seine bei der ersten Wahl festgelegte Größe von sieben Mitgliedern.',
+        'Der Betriebsrat besteht aus elf Mitgliedern mit zwei Freistellungen.',
+        'Der Betriebsrat besteht aus neun Mitgliedern mit vollständiger Freistellung aller Mitglieder.',
+        'Der Betriebsrat besteht aus neun Mitgliedern mit mindestens einer Freistellung.',
         'Die Zahl der Betriebsratsmitglieder legt die Geschäftsführung nach dem Bedarf des Unternehmens fest.'
       ],
       loesung: 4,
@@ -119,10 +119,10 @@
       frage: 'Welche Rechtsfolge hat das Vorgehen der Geschäftsführung?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Rechtsfolge in das Kästchen ein.',
       optionen: [
-        'Die Kündigung ist unwirksam, weil der Betriebsrat vorher anzuhören ist.',
-        'Die Kündigung ist wirksam, wenn die Geschäftsführung den Betriebsrat innerhalb einer Woche nachträglich informiert.',
-        'Die Kündigung ist wirksam, weil der Betriebsrat nur vor außerordentlichen Kündigungen zu hören ist.',
-        'Die Kündigung ist nur dann unwirksam, wenn Herr Wiedemann Mitglied des Betriebsrats ist.',
+        'Die Kündigung ist wegen der fehlenden vorherigen Anhörung des Betriebsrats unwirksam.',
+        'Die Kündigung ist bei nachträglicher Information des Betriebsrats innerhalb einer Woche wirksam.',
+        'Die Kündigung ist als ordentliche Kündigung auch ohne Anhörung des Betriebsrats wirksam.',
+        'Die Kündigung ist nur bei einer Mitgliedschaft von Herrn Wiedemann im Betriebsrat unwirksam.',
         'Die Kündigung wird automatisch in eine Abmahnung umgedeutet.'
       ],
       loesung: 1,
@@ -173,7 +173,7 @@
         'Wegen der Teilnahme am Streik darf die Alpenblick Systemhaus GmbH Herrn Wörle fristlos kündigen.',
         'Für die Streiktage zahlt die Bundesagentur für Arbeit Arbeitslosengeld.',
         'Herr Wörle muss die Streiktage nachträglich als Urlaub nehmen.',
-        'Sein Entgeltanspruch entfällt, als Gewerkschaftsmitglied erhält er Streikgeld.'
+        'Statt des Entgelts erhält er als Gewerkschaftsmitglied Streikgeld.'
       ],
       loesung: 5,
       erklaerung: 'Das Streikrecht folgt aus der Koalitionsfreiheit (Art. 9 Abs. 3 GG). Während eines rechtmäßigen Streiks ruhen die Hauptpflichten aus dem Arbeitsverhältnis: Die Streikenden müssen nicht arbeiten, der Arbeitgeber muss für diese Zeit kein Entgelt zahlen. Das Arbeitsverhältnis bleibt bestehen, die Teilnahme an einem rechtmäßigen Streik ist kein Kündigungsgrund. Gewerkschaftsmitglieder erhalten nach der Satzung ihrer Gewerkschaft Streikgeld. Die Bundesagentur für Arbeit muss im Arbeitskampf neutral bleiben; ein Anspruch auf Arbeitslosengeld ruht (§ 160 SGB III).'
@@ -184,10 +184,10 @@
       frage: 'Welche der folgenden Aussagen zur sachgrundlosen Befristung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Befristung kann mündlich vereinbart werden, wenn beide Seiten einverstanden sind.',
+        'Die Befristung kann im beiderseitigen Einverständnis mündlich vereinbart werden.',
         'Der Vertrag darf ohne sachlichen Grund höchstens für die Dauer von sechs Monaten befristet werden.',
         'Nach Ablauf der Befristung hat Herr Stadler automatisch Anspruch auf einen unbefristeten Arbeitsvertrag.',
-        'Der befristete Vertrag kann beliebig oft verlängert werden, solange Herr Stadler zustimmt.',
+        'Der befristete Vertrag kann mit Zustimmung von Herrn Stadler beliebig oft verlängert werden.',
         'Der Vertrag darf ohne sachlichen Grund bis zu zwei Jahren befristet und höchstens dreimal verlängert werden.'
       ],
       loesung: 5,
@@ -215,10 +215,10 @@
       frage: 'Welche der folgenden Aussagen zu ihrem Anspruch auf Verringerung der Arbeitszeit nach dem Teilzeit- und Befristungsgesetz (TzBfG) trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Ein Anspruch auf Teilzeit besteht nur, wenn Frau Fäßler Kinder unter zwölf Jahren betreut.',
+        'Ein Anspruch auf Teilzeit besteht nur bei Betreuung von Kindern unter zwölf Jahren.',
         'Die Alpenblick Systemhaus GmbH kann den Wunsch ohne Angabe von Gründen ablehnen.',
         'Eine Verringerung der Arbeitszeit ist nur mit Zustimmung des Betriebsrats und der BITLC möglich.',
-        'Die Verringerung ist drei Monate vorher in Textform zu verlangen, Ablehnung nur aus betrieblichen Gründen.',
+        'Die Verringerung ist drei Monate vorher in Textform zu verlangen und nur aus betrieblichen Gründen ablehnbar.',
         'Ein Anspruch auf Teilzeit besteht erst nach einer Betriebszugehörigkeit von zehn Jahren.'
       ],
       loesung: 4,
@@ -260,8 +260,8 @@
       frage: 'Welche der folgenden Maßnahmen entsprechen den Vorgaben für Bildschirmarbeitsplätze?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Maßnahmen in die Kästchen ein.',
       optionen: [
-        'Die Bildschirme werden so aufgestellt, dass die Beschäftigten direkt auf ein Fenster blicken.',
-        'Die tägliche Bildschirmarbeit wird auf höchstens vier Stunden begrenzt, weil das Gesetz dies vorschreibt.',
+        'Die Bildschirme werden mit Blickrichtung der Beschäftigten direkt auf ein Fenster aufgestellt.',
+        'Die tägliche Bildschirmarbeit wird auf die gesetzliche Höchstdauer von vier Stunden begrenzt.',
         'Die Arbeit am Bildschirm wird regelmäßig durch Pausen oder andere Tätigkeiten unterbrochen.',
         'Tastatur und Bildschirm der Desktop-Arbeitsplätze sind fest miteinander verbunden.',
         'Alle Beschäftigten erhalten unabhängig von einer Untersuchung eine Bildschirmbrille auf Kosten des Arbeitgebers.',
@@ -276,9 +276,9 @@
       frage: 'Welche der folgenden Aussagen zur Schutzfrist vor der Entbindung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'In den letzten sechs Wochen vor der Entbindung besteht ein absolutes Beschäftigungsverbot, auf das Frau Kögel nicht verzichten kann.',
+        'In den letzten sechs Wochen vor der Entbindung besteht ein absolutes Beschäftigungsverbot ohne Verzichtsmöglichkeit.',
         'Die Schutzfrist vor der Entbindung beträgt acht Wochen.',
-        'Der Arbeitgeber darf Frau Kögel während der Schwangerschaft ordentlich kündigen, wenn er eine Frist von drei Monaten einhält.',
+        'Der Arbeitgeber darf Frau Kögel während der Schwangerschaft mit einer Frist von drei Monaten ordentlich kündigen.',
         'Während der Schutzfrist erhält Frau Kögel keine finanziellen Leistungen.',
         'Sechs Wochen vor der Entbindung darf sie nur auf eigenen ausdrücklichen Wunsch beschäftigt werden.'
       ],
@@ -343,10 +343,10 @@
       frage: 'Welche der folgenden Aussagen zu den Organen der Alpenblick Systemhaus GmbH trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Frau Allgaier vertritt die GmbH nach außen, die Gesellschafterversammlung bestellt und beruft sie ab.',
+        'Frau Allgaier vertritt die GmbH nach außen und wird von der Gesellschafterversammlung bestellt und abberufen.',
         'Die GmbH wird nach außen von allen Gesellschaftern gemeinsam vertreten.',
-        'Wegen ihrer 190 Arbeitnehmer muss die GmbH einen Aufsichtsrat bilden, der die Geschäftsführerin bestellt.',
-        'Geschäftsführerin einer GmbH kann nur sein, wer selbst Gesellschafterin ist.',
+        'Wegen ihrer 190 Arbeitnehmer muss die GmbH einen Aufsichtsrat zur Bestellung der Geschäftsführerin bilden.',
+        'Geschäftsführerin einer GmbH kann nur eine Gesellschafterin sein.',
         'Über die Verwendung des Jahresgewinns der GmbH beschließt die Hauptversammlung der Aktionäre.'
       ],
       loesung: 1,
@@ -359,9 +359,9 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Beschränkung auf Verträge bis 50.000,00 EUR ist auch gegenüber Kunden und Lieferanten wirksam.',
-        'Die Prokura entsteht stillschweigend, wenn Herr Kustermann regelmäßig Verträge für das Unternehmen abschließt.',
+        'Die Prokura entsteht stillschweigend durch regelmäßige Vertragsabschlüsse von Herrn Kustermann für das Unternehmen.',
         'Herr Kustermann darf seine Prokura auf einen Mitarbeiter seiner Abteilung übertragen.',
-        'Die Prokura wird ausdrücklich erteilt, ins Handelsregister eingetragen und mit „ppa.” gezeichnet.',
+        'Die Prokura wird ausdrücklich erteilt, ins Handelsregister eingetragen und mit „ppa.“ gezeichnet.',
         'Die Prokura kann nur zusammen mit dem Arbeitsvertrag gekündigt werden.'
       ],
       loesung: 4,
@@ -457,12 +457,12 @@
       frage: 'Welche der folgenden Vorgehensweisen entsprechen den Grundsätzen für die Verarbeitung personenbezogener Daten nach Art. 5 DSGVO?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Vorgehensweisen in die Kästchen ein.',
       optionen: [
-        'Im Bewerbungsformular werden nur die Angaben abgefragt, die für die Besetzung der Stelle erforderlich sind.',
+        'Im Bewerbungsformular werden nur die für die Besetzung der Stelle erforderlichen Angaben abgefragt.',
         'Kundendaten aus dem Support werden ohne Einwilligung an ein Partnerunternehmen für Werbezwecke weitergegeben.',
         'Personaldaten ausgeschiedener Beschäftigter werden vorsorglich unbegrenzt aufbewahrt.',
         'Unterlagen abgelehnter Bewerberinnen und Bewerber werden nach Ablauf der festgelegten Aufbewahrungsfrist gelöscht.',
         'Für die Anmeldung zum Newsletter sind Geburtsdatum und Familienstand Pflichtangaben.',
-        'Krankmeldungen der Beschäftigten werden in einem Ordner abgelegt, auf den alle Beschäftigten zugreifen können.'
+        'Krankmeldungen der Beschäftigten werden in einem für alle Beschäftigten zugänglichen Ordner abgelegt.'
       ],
       loesung: [1, 4],
       erklaerung: 'Art. 5 Abs. 1 DSGVO nennt u. a. Rechtmäßigkeit und Transparenz, Zweckbindung, Datenminimierung (nur erforderliche Daten, Buchst. c), Richtigkeit, Speicherbegrenzung (Löschung, wenn die Daten nicht mehr benötigt werden, Buchst. e) sowie Integrität und Vertraulichkeit (Schutz vor unbefugtem Zugriff, Buchst. f). Die Weitergabe für Werbung ohne Rechtsgrundlage verletzt Rechtmäßigkeit und Zweckbindung, die unbegrenzte Aufbewahrung die Speicherbegrenzung, die Pflichtangaben im Newsletter die Datenminimierung und der offene Ordner mit Gesundheitsdaten die Vertraulichkeit.'
@@ -488,14 +488,14 @@
       frage: 'Welches Prinzip der Umweltpolitik liegt dieser Auflage zugrunde?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Prinzip in das Kästchen ein.',
       optionen: [
-        'Vorsorgeprinzip – Umweltschäden sollen durch vorausschauendes Handeln von vornherein vermieden werden.',
-        'Verursacherprinzip – wer einen Umweltschaden verursacht hat, muss für dessen Beseitigung aufkommen.',
-        'Gemeinlastprinzip – die Allgemeinheit trägt die Kosten des Umweltschutzes über Steuern.',
-        'Kooperationsprinzip – Staat, Wirtschaft und Gesellschaft lösen Umweltprobleme gemeinsam.',
-        'Maximalprinzip – mit gegebenen Mitteln soll ein möglichst großer Erfolg erzielt werden.'
+        'Vorsorgeprinzip',
+        'Verursacherprinzip',
+        'Gemeinlastprinzip',
+        'Kooperationsprinzip',
+        'Nachhaltigkeitsprinzip'
       ],
       loesung: 1,
-      erklaerung: 'Nach dem Vorsorgeprinzip sollen Umweltbelastungen schon im Vorfeld vermieden werden, bevor ein Schaden entsteht, hier durch Auffangwannen vor der Inbetriebnahme (Anforderungen an Anlagen mit wassergefährdenden Stoffen, § 62 WHG). Das Prinzip folgt aus dem Staatsziel Umweltschutz (Art. 20a GG) und ist in Art. 191 Abs. 2 AEUV ausdrücklich genannt. Das Verursacherprinzip betrifft die Kostentragung für verursachte Schäden, das Gemeinlastprinzip die Finanzierung durch die Allgemeinheit.'
+      erklaerung: 'Nach dem Vorsorgeprinzip sollen Umweltbelastungen schon im Vorfeld vermieden werden, bevor ein Schaden entsteht, hier durch Auffangwannen vor der Inbetriebnahme (Anforderungen an Anlagen mit wassergefährdenden Stoffen, § 62 WHG). Das Prinzip folgt aus dem Staatsziel Umweltschutz (Art. 20a GG) und ist in Art. 191 Abs. 2 AEUV ausdrücklich genannt. Das Verursacherprinzip betrifft die Kostentragung für verursachte Schäden, das Gemeinlastprinzip die Finanzierung durch die Allgemeinheit. Beim Kooperationsprinzip lösen Staat, Wirtschaft und Gesellschaft Umweltprobleme gemeinsam. Das Nachhaltigkeitsprinzip verlangt, natürliche Ressourcen nur in dem Maß zu nutzen, in dem sie sich erneuern; um die Abwehr einer konkreten Gefahr geht es dabei nicht.'
     }
   ]
 });

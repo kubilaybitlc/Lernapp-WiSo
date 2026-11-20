@@ -160,9 +160,9 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Nein, Minderjährige können nie Verträge schließen.',
-        'Ja, nach dem Taschengeldparagrafen, wenn er mit eigenen, ihm dafür überlassenen Mitteln bar bezahlt.',
+        'Ja, nach dem Taschengeldparagrafen bei Barzahlung mit eigenen, ihm dafür überlassenen Mitteln.',
         'Nur mit Zustimmung des Verkäufers',
-        'Erst wenn er 18 wird',
+        'Erst mit 18 Jahren',
         'Nur bei Ratenzahlung'
       ],
       loesung: 2,
@@ -190,7 +190,7 @@
       optionen: [
         'Einseitig empfangsbedürftig',
         'Einseitig nicht empfangsbedürftig',
-        'Zweiseitig (Vertrag)'
+        'Zweiseitig'
       ],
       itemsTitel: 'Sachverhalte',
       items: [
@@ -228,7 +228,7 @@
       optionen: [
         'Es gibt keinen Unterschied.',
         'Besitz = tatsächliche Herrschaft über eine Sache; Eigentum = rechtliche Herrschaft',
-        'Eigentum hat nur, wer die Sache bei sich trägt.',
+        'Eigentum hat man nur an mitgeführten Sachen.',
         'Besitz ist rechtlich, Eigentum tatsächlich.',
         'Mieter sind Eigentümer der Mietsache.'
       ],
@@ -241,7 +241,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Der Käufer wird sofort Eigentümer.',
-        'Der Verkäufer bleibt Eigentümer, bis der Kaufpreis vollständig bezahlt ist.',
+        'Der Verkäufer bleibt bis zur vollständigen Bezahlung des Kaufpreises Eigentümer.',
         'Der Käufer darf die Ware nicht benutzen.',
         'Die Ware darf nicht weiterverkauft werden.',
         'Der Kaufvertrag ist nichtig.'
@@ -277,7 +277,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Durch die Lieferung der Ware',
-        'Durch zwei übereinstimmende Willenserklärungen: Antrag und Annahme',
+        'Durch zwei übereinstimmende Willenserklärungen',
         'Nur durch einen schriftlichen Vertrag',
         'Durch die Zahlung',
         'Durch Eintrag ins Handelsregister'
@@ -358,7 +358,7 @@
       optionen: [
         'Rücktritt vom Vertrag',
         'Minderung des Kaufpreises',
-        'Nacherfüllung (Nachbesserung oder Ersatzlieferung)',
+        'Nacherfüllung',
         'Schadensersatz statt der Leistung',
         'Sofortige Kündigung'
       ],
@@ -372,7 +372,7 @@
       optionen: [
         '6 Monate',
         '1 Jahr',
-        '2 Jahre ab Ablieferung',
+        '2 Jahre',
         '3 Jahre',
         '5 Jahre'
       ],
@@ -414,7 +414,7 @@
       optionen: [
         '1 Jahr',
         '2 Jahre',
-        '3 Jahre, beginnend am Ende des Jahres der Entstehung',
+        '3 Jahre',
         '5 Jahre',
         '30 Jahre'
       ],
@@ -477,7 +477,7 @@
       optionen: [
         'Man wird sofort Eigentümer.',
         'Es ist immer billiger als ein Kauf.',
-        'Liquidität wird geschont, da keine hohe Einmalzahlung nötig ist.',
+        'Ohne hohe Einmalzahlung wird die Liquidität geschont.',
         'Der Leasinggeber trägt die Nutzungskosten.',
         'Es gibt keine laufenden Kosten.'
       ],
@@ -541,7 +541,7 @@
       optionen: [
         'Arbeitsgericht',
         'Sozialgericht',
-        'Amtsgericht als Insolvenzgericht',
+        'Amtsgericht',
         'Finanzgericht',
         'Verwaltungsgericht'
       ],
@@ -677,10 +677,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Nein, nie',
-        'Ja; für Erwachsene seit 2020 ebenfalls – ein Berufsschultag mit mehr als 5 Unterrichtsstunden zählt einmal pro Woche mit der durchschnittlichen täglichen Arbeitszeit',
+        'Ja; für Erwachsene seit 2020 ebenfalls',
         'Nur bei Jugendlichen unter 16',
         'Nur in der Probezeit',
-        'Nur wenn der Betriebsrat zustimmt'
+        'Nur mit Zustimmung des Betriebsrats'
       ],
       loesung: 2,
       erklaerung: '§ 15 BBiG (seit 2020 auch für volljährige Azubis): Ein Berufsschultag mit mehr als 5 Unterrichtsstunden (à 45 Min.) wird einmal pro Woche mit der durchschnittlichen täglichen Arbeitszeit angerechnet. Für Jugendliche gilt zusätzlich § 9 JArbSchG mit ähnlichen Regelungen.'
@@ -710,10 +710,10 @@
       frage: 'Was ist ein Höchstpreis als staatlicher Markteingriff?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'Ein Preis, der über dem Gleichgewichtspreis liegt und Anbieter schützt',
-        'Ein Preis unterhalb des Gleichgewichtspreises zum Schutz der Verbraucher – es entsteht ein Nachfrageüberhang',
+        'Ein Preis über dem Gleichgewichtspreis zum Schutz der Anbieter',
+        'Ein Preis unterhalb des Gleichgewichtspreises zum Schutz der Verbraucher',
         'Der Preis im Marktgleichgewicht',
-        'Ein Preis, den Kartelle festlegen',
+        'Ein von Kartellen festgelegter Preis',
         'Der Mindestlohn'
       ],
       loesung: 2,
@@ -725,7 +725,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Es gibt einen Angebotsüberhang.',
-        'Die angebotene Menge entspricht der nachgefragten Menge – der Markt wird geräumt.',
+        'Die angebotene Menge entspricht der nachgefragten Menge.',
         'Der Staat legt den Preis fest.',
         'Es gibt einen Nachfrageüberhang.',
         'Die Preise steigen ständig.'
@@ -784,11 +784,11 @@
       frage: 'Wer ist Kaufmann im Sinne des HGB (Ist-Kaufmann)?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'Jeder, der ein Gewerbe anmeldet',
-        'Wer ein Handelsgewerbe betreibt, das einen kaufmännisch eingerichteten Geschäftsbetrieb erfordert',
+        'Jede Person mit angemeldetem Gewerbe',
+        'Der Betreiber eines Handelsgewerbes mit erforderlichem kaufmännisch eingerichtetem Geschäftsbetrieb',
         'Nur Inhaber einer GmbH',
         'Jeder Freiberufler',
-        'Nur wer eine kaufmännische Ausbildung hat'
+        'Nur Personen mit kaufmännischer Ausbildung'
       ],
       loesung: 2,
       erklaerung: '§ 1 HGB: Kaufmann ist, wer ein Handelsgewerbe betreibt (Ist-Kaufmann). Entscheidend ist nicht die Ausbildung, sondern ob Art und Umfang einen kaufmännisch eingerichteten Geschäftsbetrieb erfordern. Kleingewerbetreibende können sich freiwillig ins Handelsregister eintragen lassen (Kann-Kaufmann, § 2 HGB). Freiberufler sind keine Kaufleute.'

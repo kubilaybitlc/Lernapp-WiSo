@@ -69,7 +69,7 @@
         'Sie gilt für die ganze Branche.',
         'Sie ist ein Vertrag mit jedem einzelnen Mitarbeiter.',
         'Sie schafft verbindliche Normen für alle genannten Mitarbeitergruppen des Unternehmens.',
-        'Besteht ein Tarifvertrag, sind weitere Regelungen per Betriebsvereinbarung ausgeschlossen.'
+        'Bei bestehendem Tarifvertrag sind weitere Regelungen per Betriebsvereinbarung ausgeschlossen.'
       ],
       loesung: 4,
       erklaerung: '§ 77 Abs. 4 BetrVG: Betriebsvereinbarungen gelten unmittelbar und zwingend für alle Arbeitnehmer des Betriebs – sie sind keine Empfehlung. Sie werden zwischen Arbeitgeber und Betriebsrat geschlossen (nicht Gewerkschaft). Sie gelten nur im Betrieb, nicht branchenweit. Wo ein Tarifvertrag greift, darf die Betriebsvereinbarung ergänzen, aber nicht verschlechtern.'
@@ -96,7 +96,7 @@
         'Deutsche Tarifverträge gelten in der gesamten EU.',
         'Sie sind nur Empfehlungen.',
         'Allgemeinverbindlich erklärte Tarifverträge gelten für alle Arbeitnehmer der Branche, unabhängig von der Gewerkschaftszugehörigkeit.',
-        'Während der Laufzeit sind Streiks erlaubt, wenn die Bundesagentur zustimmt.',
+        'Während der Laufzeit sind Streiks mit Zustimmung der Bundesagentur erlaubt.',
         'Haustarifverträge gelten für die gesamte Branche.'
       ],
       loesung: 3,
@@ -122,11 +122,11 @@
       frage: 'Welche Aussage über die Notwendigkeit einer privaten Altersvorsorge trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'Sie ist notwendig, weil die gesetzliche Rente voraussichtlich nicht ausreichen wird.',
-        'Der demografische Wandel sorgt für genug Beitragszahler, das Rentenniveau steigt.',
-        'Sie ist nicht sinnvoll, weil das Rentenniveau stetig steigt.',
-        'Sie lohnt sich nicht, weil jedem eine Betriebsrente zusteht.',
-        'Sie ist nur nötig, wenn die Inflation steigt.'
+        'Sie ist wegen der voraussichtlich nicht ausreichenden gesetzlichen Rente notwendig.',
+        'Der demografische Wandel sorgt für genug Beitragszahler und ein steigendes Rentenniveau.',
+        'Sie ist wegen des stetig steigenden Rentenniveaus nicht sinnvoll.',
+        'Sie lohnt sich wegen des allgemeinen Anspruchs auf eine Betriebsrente nicht.',
+        'Sie ist nur bei steigender Inflation nötig.'
       ],
       loesung: 1,
       erklaerung: 'Durch den demografischen Wandel kommen immer weniger Beitragszahler auf immer mehr Rentner (Generationenvertrag). Das gesetzliche Rentenniveau sinkt langfristig auf unter 50 % des letzten Nettogehalts – es entsteht eine Versorgungslücke. Private Vorsorge (z. B. Riester-Rente, betriebliche Altersvorsorge, Fondssparpläne) ist daher als Ergänzung empfohlen.'
@@ -155,7 +155,7 @@
         'Planungshilfen zur Urlaubsdauer der Auszubildenden',
         'Richtlinien zur Anpassung des Berufsschulunterrichts an den betrieblichen Ausbildungsplan',
         'Bestimmungen über die Dauer der überbetrieblichen Ausbildung',
-        'Bestimmungen über Kenntnisse, Fertigkeiten und Fähigkeiten, die zu vermitteln sind'
+        'Bestimmungen über die zu vermittelnden Kenntnisse, Fertigkeiten und Fähigkeiten'
       ],
       loesung: 5,
       erklaerung: '§ 5 BBiG: Die Ausbildungsordnung wird vom zuständigen Bundesministerium erlassen und enthält: Berufsbezeichnung, Ausbildungsdauer, Ausbildungsberufsbild (Fertigkeiten, Kenntnisse und Fähigkeiten), Ausbildungsrahmenplan und Prüfungsanforderungen. Vergütungshöhe und Urlaubsdauer regelt sie nicht – das steht im Tarifvertrag bzw. im BUrlG.'
@@ -213,11 +213,11 @@
       frage: 'Welche Aussage zu den Rechten und Pflichten des Ausbildungsbetriebs gegenüber der BITLC ist zutreffend? Der Betrieb hat …',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'das Recht, ohne Zustimmung der BITLC auszubilden.',
-        'die Pflicht, eine Verkürzung der Ausbildung von der BITLC genehmigen zu lassen.',
-        'die Pflicht, jede Fehlzeit sofort der BITLC zu melden.',
-        'die Pflicht, dem Schlichtungsausschuss jede Unstimmigkeit mitzuteilen.',
-        'das Recht, eine Verschiebung des Prüfungstermins zu verlangen.'
+        'das Recht zur Ausbildung ohne Zustimmung der BITLC.',
+        'die Pflicht zur Einholung einer Genehmigung der BITLC für eine Verkürzung der Ausbildung.',
+        'die Pflicht zur sofortigen Meldung jeder Fehlzeit an die BITLC.',
+        'die Pflicht zur Mitteilung jeder Unstimmigkeit an den Schlichtungsausschuss.',
+        'das Recht auf eine Verschiebung des Prüfungstermins.'
       ],
       loesung: 2,
       erklaerung: '§ 8 Abs. 1 BBiG: Die Ausbildungszeit kann auf gemeinsamen Antrag von Azubi und Betrieb verkürzt werden – entscheiden muss die zuständige Kammer (z. B. IHK). Ohne IHK-Zustimmung darf die Ausbildung also nicht eigenmächtig gekürzt werden. Voraussetzungen: z. B. höherer Schulabschluss, Vorausbildung oder überdurchschnittliche Leistungen.'
@@ -227,11 +227,11 @@
       frage: 'Frau Monion ist seit 01.01.2021 beschäftigt und wurde am 16.04.2021 18 Jahre alt. Im Mai 2021 wird der Betriebsrat gewählt (Wahlalter damals 18). Darf sie wählen?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'Nein, weil sie zu Jahresbeginn minderjährig war.',
-        'Nein, weil sie noch nicht lange genug beschäftigt ist.',
+        'Nein, wegen ihrer Minderjährigkeit zu Jahresbeginn.',
+        'Nein, wegen ihrer zu kurzen Beschäftigungsdauer.',
         'Ja, aber nur als Gewerkschaftsmitglied.',
-        'Ja, weil sie volljährig ist.',
-        'Ja, wenn die Geschäftsleitung einverstanden ist.'
+        'Ja, wegen ihrer Volljährigkeit.',
+        'Ja, mit Einverständnis der Geschäftsleitung.'
       ],
       loesung: 4,
       erklaerung: '§ 7 BetrVG: Aktives Wahlrecht (wählen dürfen) haben alle Arbeitnehmer ab dem Wahlalter, die dem Betrieb angehören – es gibt keine Mindestbeschäftigungsdauer. Maßgeblich ist das Alter am Wahltag: Frau Monion ist seit 16.04.2021 volljährig, bei der Wahl im Mai also wahlberechtigt. Gewerkschaftsmitgliedschaft oder Zustimmung des Arbeitgebers sind nicht nötig. (Seit 2021 liegt das aktive Wahlalter bei 16 Jahren.)'
@@ -348,7 +348,7 @@
       frage: 'Als festangestellte/-r Mitarbeiter/-in haben Sie ein erfolgreiches Programm entwickelt. Welche Aussage ist richtig?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'Sofern nicht anders geregelt, besitzen Sie das Urheberrecht und die Firma die Verwertungsrechte.',
+        'Ohne abweichende Regelung besitzen Sie das Urheberrecht und die Firma die Verwertungsrechte.',
         'Sie können die weitere Nutzung verbieten.',
         'Sie haben Anspruch auf Beteiligung an allen Verkaufserlösen.',
         'Sie haften persönlich für Schäden durch Programmfehler.',
@@ -363,7 +363,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Er ersetzt den Reisepass für Auszubildende.',
-        'Er ist ein einheitliches Dokument, das Qualifikationen und Kompetenzen europaweit verständlich darstellt.',
+        'Er stellt als einheitliches Dokument Qualifikationen und Kompetenzen europaweit verständlich dar.',
         'Kostenlos Bahn fahren in der EU',
         'Formlos Unternehmen in der EU gründen',
         'Kostenlose medizinische Versorgung in der EU'
@@ -418,11 +418,11 @@
       frage: 'Welche Aussage zur Nutzung öffentlicher, unverschlüsselter WLANs ist richtig?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'E-Mail kann immer genutzt werden, da alle Programme automatisch verschlüsseln.',
+        'E-Mail kann wegen der automatischen Verschlüsselung durch alle Programme immer genutzt werden.',
         'Im öffentlichen WLAN kann niemand mitlesen.',
         'Betreiber (z. B. Café) kümmern sich ausreichend um Sicherheit.',
         'Mithilfe einer VPN-Lösung kann man alles wie im abgesicherten Unternehmensnetz nutzen.',
-        'Ein öffentliches WLAN ist sicher, wenn man sich mit E-Mail-Adresse einloggt.'
+        'Ein öffentliches WLAN ist mit einem Login per E-Mail-Adresse sicher.'
       ],
       loesung: 4,
       erklaerung: 'In einem öffentlichen, unverschlüsselten WLAN können Dritte den Datenverkehr mitlesen (Man-in-the-Middle). Ein VPN (Virtual Private Network) baut einen verschlüsselten Tunnel auf – der gesamte Datenverkehr wird so geschützt wie im Firmennetz. Weder der Café-Betreiber noch andere Nutzer können die Daten entschlüsseln. Ohne VPN sollte man keine vertraulichen Daten über offene WLANs übertragen.'

@@ -13,7 +13,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'eine Berufsausbildung vorweisen.',
-        'sicherstellen, dass eine angemessene Anzahl von Mitarbeitern tätig ist.',
+        'eine angemessene Anzahl tätiger Mitarbeiter sicherstellen.',
         'fachlich und persönlich geeignet sein.',
         'persönlich die notwendigen Räume und Geräte besitzen.',
         'seit 2009 keinen Nachweis einer Ausbildereignungsprüfung mehr vorlegen.'
@@ -51,7 +51,7 @@
         'Befristete Arbeitsverhältnisse sind immer unzulässig.',
         'Eine Befristung ist höchstens für zwei Monate zulässig.',
         'Eine Befristung ohne sachlichen Grund ist auch über drei Jahre hinaus zulässig.',
-        'Die Befristung ist nur wirksam, wenn sie schriftlich vereinbart wurde.',
+        'Die Befristung ist nur mit schriftlicher Vereinbarung wirksam.',
         'Befristete Arbeitsverhältnisse sollen Arbeitssuchende schützen.'
       ],
       loesung: 4,
@@ -104,7 +104,7 @@
       frage: 'Welche Aussage zum Bundesurlaubsgesetz ist zutreffend?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'Erkrankt ein Arbeitnehmer im Urlaub, verfällt sein Urlaubsanspruch.',
+        'Bei Erkrankung eines Arbeitnehmers im Urlaub verfällt sein Urlaubsanspruch.',
         'Der volle Urlaubsanspruch besteht erst nach sechsmonatigem Bestehen des Arbeitsverhältnisses.',
         'Nicht genommener Urlaub kann bis zu sechs Monate ins nächste Jahr übertragen werden.',
         'Jeder Arbeitnehmer hat Anspruch auf 30 Werktage Urlaub.',
@@ -192,7 +192,7 @@
         'Die JAV wird gegenüber der Geschäftsleitung selbstständig tätig.',
         'Azubis bis 27 Jahre dürfen die JAV wählen.',
         'Nur in einem Betrieb mit Betriebsrat kann eine JAV gewählt werden.',
-        'Wer in die JAV gewählt wird, wird automatisch übernommen.'
+        'JAV-Mitglieder werden automatisch übernommen.'
       ],
       loesung: 4,
       erklaerung: '§ 60 BetrVG: Eine JAV kann nur gewählt werden, wenn ein Betriebsrat besteht – sie ist kein eigenständiges Organ. Wahlberechtigt sind AN unter 18 und Azubis unter 25 (ab 5 Wahlberechtigten). Die JAV vertritt Interessen gegenüber dem Betriebsrat, nicht direkt gegenüber der Geschäftsleitung.'
@@ -220,7 +220,7 @@
         'Bei geringfügig Beschäftigten zahlt der Arbeitgeber in der Regel alle Beiträge.',
         'Die Gemeinschaft sichert dem Einzelnen ein Tarifgehalt.',
         'Nur Arbeitgeber zahlen Sozialversicherungsbeiträge.',
-        'Wer sehr gut verdient, zahlt keine Sozialversicherungsbeiträge mehr.'
+        'Sehr gut Verdienende zahlen keine Sozialversicherungsbeiträge mehr.'
       ],
       loesung: 2,
       erklaerung: 'Bei geringfügiger Beschäftigung (Minijob) zahlt der Arbeitgeber pauschal Beiträge zur Kranken- und Rentenversicherung. Normalerweise teilen sich AG und AN die Beiträge hälftig. Auch Gutverdiener zahlen Beiträge – aber nur bis zur Beitragsbemessungsgrenze.'
@@ -245,7 +245,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
         'Nur leitende Angestellte sind versichert.',
-        'Wer bei einem Arbeitsunfall Erste Hilfe leistet, ist nicht versichert.',
+        'Ersthelfer bei einem Arbeitsunfall sind nicht versichert.',
         'Alle Versicherten sind direkt bei der Unfallversicherung versichert.',
         'Träger der gesetzlichen Unfallversicherung sind die Berufsgenossenschaften.',
         'Sie schützt auch bei Unfällen in der Freizeit.'
@@ -317,7 +317,7 @@
       optionen: [
         'Selbstständigkeit bedeutet heute kein großes finanzielles Risiko.',
         'Für den Erfolg sind Kenntnisse über den Markt und die Kundenwünsche wichtig.',
-        'Ausschlaggebend ist, dass höchstens durchschnittliche Kenntnisse vorhanden sind.',
+        'Ausschlaggebend sind höchstens durchschnittliche Kenntnisse.',
         'In der Gründungsphase kann man immer von gutem Verdienst ausgehen.',
         'Gründer sind automatisch über die Sozialversicherung abgesichert.'
       ],
@@ -332,7 +332,7 @@
         'Zur Kreditabsicherung muss er eine GmbH wählen.',
         'Die BITLC verlangt vor Gründung einen Qualifikationsnachweis.',
         'Die Eintragung als Ist-Kaufmann ins Handelsregister hat rein deklaratorische Wirkung.',
-        'Im ersten Jahr ist er von der Einkommensteuer befreit, wenn er Gewerbesteuer zahlt.',
+        'Bei Zahlung von Gewerbesteuer ist er im ersten Jahr von der Einkommensteuer befreit.',
         'Als Ist-Kaufmann braucht er keine Krankenversicherung.'
       ],
       loesung: 3,
@@ -343,9 +343,9 @@
       frage: 'Im Lager haben Verpackungsmaterialien Feuer gefangen. Welche Aktion sollte man auf KEINEN Fall durchführen?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Antwort in das Kästchen ein.',
       optionen: [
-        'Ein zweites Fenster öffnen, damit der Rauch besser abziehen kann',
+        'Ein zweites Fenster für einen besseren Rauchabzug öffnen',
         'Die Mitarbeitenden durch lautes Rufen warnen',
-        'Die Tür zum Lager schließen, wenn niemand mehr im Raum ist',
+        'Die Tür zum menschenleeren Lager schließen',
         'Den Brand über 112 melden',
         'Den nächsten Feuermelder betätigen'
       ],
@@ -399,8 +399,8 @@
       optionen: [
         'Sie verfügen über hervorragende Kenntnisse in JAVA.',
         'Sie beherrschen Englisch verhandlungssicher.',
-        'Sie sind bereit, längere Auslandsreisen zu unternehmen.',
-        'Sie passen in unser junges dynamisches Team, wenn Sie deutscher Herkunft sind.',
+        'Sie sind zu längeren Auslandsreisen bereit.',
+        'Sie sind deutscher Herkunft und passen in unser junges dynamisches Team.',
         'Sie können gelegentlich abends länger arbeiten.'
       ],
       loesung: 4,

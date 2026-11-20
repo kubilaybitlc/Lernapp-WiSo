@@ -34,9 +34,9 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       einleitung: 'Bedarf ist …',
       optionen: [
-        'jedes Gefühl eines Mangels, unabhängig davon, ob Geld zu seiner Beseitigung vorhanden ist.',
-        'die Menge an Gütern, die Anbieter zu einem bestimmten Preis auf dem Markt anbieten.',
-        'der Teil der Bedürfnisse, der mit Kaufkraft ausgestattet ist.',
+        'jedes Gefühl eines Mangels, unabhängig vom verfügbaren Geld.',
+        'die von Anbietern zu einem bestimmten Preis auf dem Markt angebotene Gütermenge.',
+        'der mit Kaufkraft ausgestattete Teil der Bedürfnisse.',
         'der am Markt tatsächlich geäußerte Kaufwunsch, z. B. durch eine Anfrage oder Bestellung.',
         'ausschließlich auf lebensnotwendige Güter wie Nahrung und Kleidung beschränkt.'
       ],
@@ -49,14 +49,14 @@
       frage: 'Welche der folgenden Aussagen zur Entwicklung des BIP trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Wirtschaft ist real um 8 % gewachsen, weil nominales Wachstum und Preissteigerung addiert werden.',
+        'Die Wirtschaft ist real um 8 % gewachsen.',
         'Das nominale BIP ist bereits um die Preissteigerungen bereinigt.',
         'Die Wirtschaft ist real um 4 % gewachsen.',
-        'Das reale BIP ist etwa gleich geblieben, weil der Anstieg allein auf höheren Preisen beruht.',
+        'Das reale BIP ist etwa gleich geblieben.',
         'Das reale BIP wird stets in den Preisen des laufenden Jahres berechnet.'
       ],
       loesung: 4,
-      erklaerung: 'Das BIP misst den Wert aller im Inland in einem Jahr hergestellten Waren und Dienstleistungen. Das nominale BIP wird in jeweiligen (aktuellen) Preisen berechnet, das reale BIP ist preisbereinigt. Steigen nominales BIP und Preisniveau gleich stark, hat sich die real erzeugte Gütermenge nicht verändert. Stetiges und angemessenes reales Wachstum ist ein Ziel des Stabilitätsgesetzes (§ 1 StabG).'
+      erklaerung: 'Das BIP misst den Wert aller im Inland in einem Jahr hergestellten Waren und Dienstleistungen. Das nominale BIP wird in jeweiligen (aktuellen) Preisen berechnet, das reale BIP ist preisbereinigt. Steigen nominales BIP und Preisniveau gleich stark, hat sich die real erzeugte Gütermenge nicht verändert: Der nominale Anstieg beruht allein auf höheren Preisen, nominales Wachstum und Preissteigerung werden nicht addiert. Stetiges und angemessenes reales Wachstum ist ein Ziel des Stabilitätsgesetzes (§ 1 StabG).'
     },
     {
       nr: 3, thema: 'konjunktur', typ: 'einfach',
@@ -81,24 +81,24 @@
       optionen: [
         'Die Kommanditisten Dr. Falkenstein und Herr Brenner haften unbeschränkt mit ihrem Privatvermögen.',
         'Herr Hollerbach haftet als Geschäftsführer der Komplementär-GmbH persönlich und unbeschränkt für alle Schulden der KG.',
-        'Die GmbH & Co. KG ist eine Kapitalgesellschaft, deren Gesellschafter grundsätzlich nicht haften.',
+        'Die GmbH & Co. KG ist eine Kapitalgesellschaft ohne Haftung ihrer Gesellschafter.',
         'Die Verwaltungs-GmbH haftet als Komplementärin unbeschränkt, aber nur mit ihrem Gesellschaftsvermögen.',
-        'Die Haftung der Kommanditisten ist auch dann ausgeschlossen, wenn sie ihre Einlage noch nicht geleistet haben.'
+        'Die Haftung der Kommanditisten ist auch vor der Leistung ihrer Einlage ausgeschlossen.'
       ],
       loesung: 4,
       erklaerung: 'Die GmbH & Co. KG ist eine Kommanditgesellschaft und damit eine Personengesellschaft (§ 161 Abs. 1 HGB). Ihre einzige Komplementärin ist eine GmbH, die zwar unbeschränkt haftet, als Kapitalgesellschaft aber nur mit ihrem Gesellschaftsvermögen (§ 13 Abs. 2 GmbHG). Die Kommanditisten haften bis zur Höhe ihrer Einlage; soweit die Einlage geleistet ist, ist die Haftung ausgeschlossen (§ 171 Abs. 1 HGB). Der Geschäftsführer der GmbH haftet nicht persönlich für die Schulden der Gesellschaft. Die Firma muss die Haftungsbeschränkung erkennen lassen (§ 19 Abs. 2 HGB).'
     },
     {
       nr: 5, thema: 'rechtsformen', typ: 'einfach',
-      text: 'Die Kommanditistin Dr. Miriam Falkenstein möchte im Namen der Bodensee DataCare GmbH & Co. KG einen mehrjährigen Rahmenvertrag mit einem Stromlieferanten unterschreiben. Geschäftsführer Stefan Hollerbach weist sie darauf hin, dass sie dazu nicht befugt ist.',
+      text: 'Die Kommanditistin Dr. Miriam Falkenstein möchte im Namen der Bodensee DataCare GmbH & Co. KG einen mehrjährigen Rahmenvertrag mit einem Stromlieferanten unterschreiben. Geschäftsführer Stefan Hollerbach prüft, wer die Gesellschaft dabei vertreten darf.',
       frage: 'Welche der folgenden Aussagen zu Geschäftsführung und Vertretung der GmbH & Co. KG trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Jeder Kommanditist ist allein zur Vertretung der KG berechtigt.',
-        'Die Kommanditisten führen die Geschäfte gemeinsam, die Verwaltungs-GmbH übernimmt nur die Haftung.',
+        'Die Kommanditisten führen die Geschäfte gemeinsam anstelle der nur haftenden Verwaltungs-GmbH.',
         'Die Verwaltungs-GmbH führt als Komplementärin die Geschäfte und vertritt die KG durch ihren Geschäftsführer.',
-        'Herr Hollerbach darf die KG nur vertreten, wenn alle Kommanditisten jedem einzelnen Vertrag schriftlich zustimmen.',
-        'Die KG wird nach außen durch die Gesellschafterversammlung vertreten, an der alle Gesellschafter teilnehmen.'
+        'Herr Hollerbach darf die KG nur mit schriftlicher Zustimmung aller Kommanditisten zu jedem einzelnen Vertrag vertreten.',
+        'Die KG wird nach außen durch die Versammlung aller Gesellschafter vertreten.'
       ],
       loesung: 3,
       erklaerung: 'Zur Geschäftsführung und Vertretung der KG ist der persönlich haftende Gesellschafter berufen (§§ 116, 124 HGB i. V. m. § 161 Abs. 2 HGB), bei der GmbH & Co. KG also die Komplementär-GmbH, die ihrerseits durch ihren Geschäftsführer handelt (§ 35 Abs. 1 GmbHG). Die Kommanditisten sind von der Geschäftsführung ausgeschlossen; außergewöhnlichen Geschäften können sie widersprechen (§ 164 HGB). Zur Vertretung der Gesellschaft sind sie nicht ermächtigt (§ 170 HGB); Vertretungsmacht können sie nur durch Prokura oder Vollmacht erhalten.'
@@ -124,11 +124,11 @@
       frage: 'Welche der folgenden Aussagen zur Fortzahlung der Ausbildungsvergütung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Für die Zeit der Krankheit erhält er keine Vergütung, weil er in dieser Zeit nicht ausgebildet wird.',
+        'Für die Zeit der Krankheit erhält er mangels Ausbildung keine Vergütung.',
         'Die Vergütung wird nur für die ersten drei Krankheitstage fortgezahlt.',
         'Statt der Vergütung erhält er vom ersten Krankheitstag an Krankengeld von seiner Krankenkasse.',
         'Er erhält seine Vergütung bis zur Dauer von sechs Wochen weiter.',
-        'Die Vergütung wird fortgezahlt, für die Krankheitstage aber um die Hälfte gekürzt.'
+        'Die Vergütung wird für die Krankheitstage nur zur Hälfte fortgezahlt.'
       ],
       loesung: 4,
       erklaerung: 'Auszubildende gelten als Arbeitnehmer im Sinne des Entgeltfortzahlungsgesetzes (§ 1 Abs. 2 EFZG). Bei unverschuldeter Arbeitsunfähigkeit infolge Krankheit wird die Vergütung daher bis zur Dauer von sechs Wochen fortgezahlt (§ 3 Abs. 1 EFZG); erst danach zahlt die Krankenkasse Krankengeld. Nach § 19 Abs. 1 BBiG ist die Vergütung außerdem für die Zeit der Freistellung zur Berufsschule und zu Prüfungen zu zahlen (Nr. 1) sowie bis zu sechs Wochen, wenn die Ausbildung ausfällt oder Auszubildende aus einem sonstigen in ihrer Person liegenden Grund unverschuldet verhindert sind (Nr. 2).'
@@ -140,10 +140,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Erstuntersuchung ist nur bei körperlich schweren Tätigkeiten vorgeschrieben.',
-        'Herr Wendler darf nur beschäftigt werden, wenn eine ärztliche Bescheinigung vorliegt.',
+        'Herr Wendler darf nur bei Vorliegen einer ärztlichen Bescheinigung beschäftigt werden.',
         'Die Erstuntersuchung kann bis zum Ende der Probezeit nachgeholt werden.',
         'Die Kosten der Untersuchung muss der Jugendliche selbst tragen.',
-        'Die Untersuchung entfällt, wenn die Eltern den Ausbildungsvertrag unterschrieben haben.'
+        'Die Untersuchung entfällt mit der Unterschrift der Eltern unter dem Ausbildungsvertrag.'
       ],
       loesung: 2,
       erklaerung: '§ 32 Abs. 1 JArbSchG: Jugendliche, die in das Berufsleben eintreten, dürfen nur beschäftigt werden, wenn sie innerhalb der letzten 14 Monate von einem Arzt untersucht worden sind (Erstuntersuchung) und dem Arbeitgeber eine ärztliche Bescheinigung darüber vorliegt. Ein Jahr nach Beschäftigungsbeginn ist eine erste Nachuntersuchung vorgeschrieben (§ 33 JArbSchG). Die Kosten der Untersuchungen trägt das Land (§ 44 JArbSchG).'
@@ -155,10 +155,10 @@
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Tätigkeiten in die Kästchen ein.',
       optionen: [
         'Einrichten neuer Arbeitsplatzrechner unter Anleitung eines Ausbilders',
-        'Einbau von Servern im Akkord, also mit einer Vergütung je eingebautem Server',
+        'Einbau von Servern im Akkord mit Vergütung je eingebautem Server',
         'Dokumentation von Netzwerkänderungen im Ticketsystem',
         'Teilnahme an einer internen Schulung zur Netzwerktechnik',
-        'Regelmäßiges Tragen von 40 kg schweren USV-Batterien, das seine Leistungsfähigkeit übersteigt',
+        'Regelmäßiges Tragen von 40 kg schweren USV-Batterien über seine Leistungsfähigkeit hinaus',
         'Telefonische Unterstützung im Kundensupport während der regulären Arbeitszeit'
       ],
       loesung: [2, 5],
@@ -171,10 +171,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Das Ausbildungszeugnis wird von der BITLC zusammen mit dem Prüfungszeugnis ausgestellt.',
-        'Ein Ausbildungszeugnis erhalten nur Auszubildende, die die Abschlussprüfung nicht bestanden haben.',
+        'Ein Ausbildungszeugnis erhalten nur Auszubildende ohne bestandene Abschlussprüfung.',
         'Das Ausbildungszeugnis muss Angaben über die Krankheitstage während der Ausbildung enthalten.',
         'Der Ausbildungsbetrieb muss ein Zeugnis über Art, Dauer und Ziel der Ausbildung ausstellen.',
-        'Der Ausbildungsbetrieb muss ein Zeugnis nur ausstellen, wenn die Auszubildende dafür eine Gebühr zahlt.'
+        'Der Ausbildungsbetrieb muss ein Zeugnis nur gegen eine Gebühr der Auszubildenden ausstellen.'
       ],
       loesung: 4,
       erklaerung: '§ 16 BBiG: Der Ausbildende muss bei Beendigung des Berufsausbildungsverhältnisses ein schriftliches Zeugnis ausstellen. Es enthält Art, Dauer und Ziel der Berufsausbildung sowie die erworbenen beruflichen Fertigkeiten, Kenntnisse und Fähigkeiten (einfaches Zeugnis); auf Verlangen der Auszubildenden auch Angaben über Verhalten und Leistung (qualifiziertes Zeugnis). Davon zu unterscheiden ist das Prüfungszeugnis, das die BITLC ausstellt (§ 37 Abs. 2 BBiG).'
@@ -189,7 +189,7 @@
         'Es entsteht ein befristetes Arbeitsverhältnis für die Dauer von sechs Monaten.',
         'Das Berufsausbildungsverhältnis verlängert sich automatisch bis zum Ende des Kalenderjahres.',
         'Frau Kaya gilt als Praktikantin und hat keinen Anspruch auf Vergütung.',
-        'Ein Arbeitsverhältnis entsteht erst, wenn ein schriftlicher Arbeitsvertrag unterschrieben ist.'
+        'Ein Arbeitsverhältnis entsteht erst mit der Unterzeichnung eines schriftlichen Arbeitsvertrags.'
       ],
       loesung: 1,
       erklaerung: '§ 24 BBiG: Werden Auszubildende im Anschluss an das Berufsausbildungsverhältnis beschäftigt, ohne dass hierüber ausdrücklich etwas vereinbart worden ist, so gilt ein Arbeitsverhältnis auf unbestimmte Zeit als begründet. Das Ausbildungsverhältnis endete bereits mit der Bekanntgabe des Prüfungsergebnisses (§ 21 Abs. 2 BBiG). Ein Arbeitsvertrag kann auch mündlich oder durch schlüssiges Verhalten zustande kommen.'
@@ -216,7 +216,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Herr Kessler darf seine Personalakte nur mit vorheriger Zustimmung der Geschäftsführung einsehen.',
-        'Herr Kessler hat das Recht, seine Personalakte einzusehen und ein Betriebsratsmitglied hinzuzuziehen.',
+        'Herr Kessler darf seine Personalakte einsehen und dazu ein Betriebsratsmitglied hinzuziehen.',
         'Die Einsicht in die Personalakte ist nur über einen Rechtsanwalt möglich.',
         'Die Personalakte darf höchstens einmal im Kalenderjahr eingesehen werden.',
         'Ein Recht auf Einsicht besteht erst nach dem Ausscheiden aus dem Unternehmen.'
@@ -230,7 +230,7 @@
       frage: 'Welche der folgenden Aussagen zur Einigungsstelle trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Einigungsstelle ist eine Kammer des Arbeitsgerichts, die durch Urteil entscheidet.',
+        'Die Einigungsstelle ist eine durch Urteil entscheidende Kammer des Arbeitsgerichts.',
         'Die Einigungsstelle besteht ausschließlich aus Vertretern der Gewerkschaft.',
         'Den Vorsitzenden der Einigungsstelle bestimmt allein der Arbeitgeber.',
         'Der Spruch der Einigungsstelle ist auch in Fragen der Arbeitszeit nur eine unverbindliche Empfehlung.',
@@ -265,11 +265,11 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Mit dem Ablauf des Tarifvertrags entfallen alle tariflichen Ansprüche sofort; es gelten nur noch die gesetzlichen Mindestregelungen.',
-        'Die Rechtsnormen des abgelaufenen Tarifvertrags gelten weiter, bis sie durch eine andere Abmachung ersetzt werden.',
+        'Mit dem Ablauf des Tarifvertrags gelten sofort nur noch die gesetzlichen Mindestregelungen.',
+        'Die Rechtsnormen des abgelaufenen Tarifvertrags gelten bis zu ihrer Ablösung durch eine andere Abmachung weiter.',
         'Der abgelaufene Tarifvertrag gilt automatisch noch genau zwölf Monate weiter und endet dann ersatzlos.',
         'Bis zum Abschluss eines neuen Tarifvertrags legt der Betriebsrat die Arbeitsbedingungen allein fest.',
-        'Die tariflichen Urlaubstage gelten nur noch für Beschäftigte, die nach dem Ablauf erneut in die Gewerkschaft eintreten.'
+        'Die tariflichen Urlaubstage gelten nur noch für Beschäftigte mit erneutem Gewerkschaftsbeitritt nach dem Ablauf.'
       ],
       loesung: 2,
       erklaerung: '§ 4 Abs. 5 TVG: Nach Ablauf des Tarifvertrags gelten seine Rechtsnormen weiter, bis sie durch eine andere Abmachung ersetzt werden (Nachwirkung). Sie wirken dann zwar unmittelbar, aber nicht mehr zwingend: Durch einen neuen Tarifvertrag oder eine einzelvertragliche Vereinbarung können sie auch zum Nachteil des Arbeitnehmers geändert werden. So entsteht nach dem Ablauf eines Tarifvertrags kein regelungsloser Zustand.'
@@ -319,7 +319,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Jede Nebentätigkeit ist Arbeitnehmern grundsätzlich verboten.',
-        'Die Tätigkeit ist erlaubt, solange er sie nur in seiner Freizeit ausübt.',
+        'Bei Ausübung nur in seiner Freizeit ist die Tätigkeit erlaubt.',
         'Ein Wettbewerbsverbot gilt nur für Auszubildende, nicht für Angestellte.',
         'Ohne Einwilligung des Arbeitgebers darf er keine Konkurrenztätigkeit ausüben.',
         'Ohne besondere Vereinbarung gilt das Wettbewerbsverbot automatisch noch zwei Jahre nach dem Ende des Arbeitsverhältnisses.'
@@ -333,10 +333,10 @@
       frage: 'Welche der folgenden Aussagen zu den Rechten von Frau Arslan nach dem Allgemeinen Gleichbehandlungsgesetz (AGG) trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Sie muss die Belästigungen hinnehmen, bis das Arbeitsgericht über ihre Beschwerde entschieden hat.',
+        'Sie muss die Belästigungen bis zu einer Entscheidung des Arbeitsgerichts über ihre Beschwerde hinnehmen.',
         'Sie darf den Kollegen selbst abmahnen.',
-        'Sie darf die Arbeit ohne Gehaltsverlust einstellen, soweit dies zu ihrem Schutz erforderlich ist.',
-        'Sie darf ihre Tätigkeit zwar einstellen, verliert für diese Zeit aber ihren Anspruch auf Arbeitsentgelt.',
+        'Sie darf die Arbeit zu ihrem Schutz im erforderlichen Umfang ohne Gehaltsverlust einstellen.',
+        'Sie darf ihre Tätigkeit nur unter Verlust ihres Arbeitsentgelts für diese Zeit einstellen.',
         'Das AGG schützt nur vor Benachteiligungen durch den Arbeitgeber, nicht durch Kollegen.'
       ],
       loesung: 3,
@@ -366,7 +366,7 @@
         'Er besteht ausschließlich aus Mitgliedern des Betriebsrats.',
         'Er tritt mindestens vierteljährlich zusammen und berät Anliegen des Arbeitsschutzes.',
         'Er muss erst in Betrieben mit mehr als 500 Beschäftigten gebildet werden.',
-        'Er verhängt Bußgelder gegen Beschäftigte, die Sicherheitsvorschriften missachten.',
+        'Er verhängt Bußgelder gegen Beschäftigte bei Verstößen gegen Sicherheitsvorschriften.',
         'Er wird von der Gewerkschaft einberufen und tagt einmal jährlich.'
       ],
       loesung: 2,
@@ -392,7 +392,7 @@
       frage: 'Welche der folgenden Aussagen beschreibt das Umlageverfahren (Generationenvertrag) zutreffend?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Jeder Versicherte spart auf ein persönliches Konto, aus dem später seine eigene Rente gezahlt wird.',
+        'Jeder Versicherte spart auf einem persönlichen Konto für seine eigene spätere Rente.',
         'Die Renten werden ausschließlich aus der Gewerbesteuer der Gemeinden bezahlt.',
         'Die Beiträge zur Rentenversicherung trägt allein der Arbeitgeber.',
         'Alle Rentnerinnen und Rentner erhalten unabhängig von ihren Beiträgen eine Rente in gleicher Höhe.',
@@ -407,8 +407,8 @@
       frage: 'Welche der folgenden Aussagen zur Wahl der Krankenkasse trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Frau Albrecht muss die Krankenkasse wählen, die ihr Arbeitgeber vorgibt.',
-        'Die zuständige Krankenkasse wird nach dem Wohnort bestimmt; eine Wahl ist nicht möglich.',
+        'Frau Albrecht muss die von ihrem Arbeitgeber vorgegebene Krankenkasse wählen.',
+        'Die zuständige Krankenkasse wird ohne Wahlmöglichkeit nach dem Wohnort bestimmt.',
         'Frau Albrecht kann ihre Krankenkasse grundsätzlich frei wählen.',
         'Ein Wechsel der Krankenkasse ist nur beim Wechsel des Arbeitgebers erlaubt.',
         'Über die Wahl der Krankenkasse entscheidet der Betriebsrat einheitlich für alle Beschäftigten.'
@@ -431,13 +431,13 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Form in das Kästchen ein.',
       optionen: [
         'Arbeitsgemeinschaft (ARGE)',
-        'Joint Venture (Gemeinschaftsunternehmen)',
+        'Joint Venture',
         'Kartell',
         'Fusion',
         'Franchising'
       ],
       loesung: 2,
-      erklaerung: 'Bei einem Joint Venture gründen zwei oder mehr selbstständig bleibende Unternehmen ein gemeinsames Unternehmen, an dem sie beteiligt sind und das sie gemeinsam führen. Eine Arbeitsgemeinschaft (ARGE) ist dagegen ein zeitlich befristeter Zusammenschluss zur gemeinsamen Durchführung eines bestimmten Auftrags, meist als Gesellschaft bürgerlichen Rechts (§ 705 BGB), die nach Abschluss des Auftrags wieder aufgelöst wird. Beim Kartell stimmen Unternehmen ihr Marktverhalten ab (grundsätzlich verboten, § 1 GWB), bei der Fusion verschmelzen sie zu einem Unternehmen (Umwandlungsgesetz).'
+      erklaerung: 'Bei einem Joint Venture (Gemeinschaftsunternehmen) gründen zwei oder mehr selbstständig bleibende Unternehmen ein gemeinsames Unternehmen, an dem sie beteiligt sind und das sie gemeinsam führen. Eine Arbeitsgemeinschaft (ARGE) ist dagegen ein zeitlich befristeter Zusammenschluss zur gemeinsamen Durchführung eines bestimmten Auftrags, meist als Gesellschaft bürgerlichen Rechts (§ 705 BGB), die nach Abschluss des Auftrags wieder aufgelöst wird. Beim Kartell stimmen Unternehmen ihr Marktverhalten ab (grundsätzlich verboten, § 1 GWB), bei der Fusion verschmelzen sie zu einem Unternehmen (Umwandlungsgesetz).'
     },
     {
       nr: 28, thema: 'datenschutz', typ: 'mehrfach',
@@ -450,7 +450,7 @@
         'Pseudonymisierung der Kundendaten in Testsystemen',
         'Unterbrechungsfreie Stromversorgung (USV) und Notstromaggregat für die Serverräume',
         'Einführung einer Clean-Desk-Richtlinie für alle Büroarbeitsplätze',
-        'Protokollierung, wer wann welche Daten geändert hat'
+        'Protokollierung aller Datenänderungen mit Person und Zeitpunkt'
       ],
       loesung: [1, 4],
       erklaerung: 'Art. 32 DSGVO verlangt technische und organisatorische Maßnahmen, die Vertraulichkeit, Integrität, Verfügbarkeit und Belastbarkeit der Systeme sicherstellen und nach einem Zwischenfall die rasche Wiederherstellung der Daten ermöglichen. Backups an einem getrennten Standort und eine abgesicherte Stromversorgung schützen vor Datenverlust und Ausfällen (Verfügbarkeit). Verschlüsselung, Pseudonymisierung und Clean-Desk-Richtlinie dienen vor allem der Vertraulichkeit, die Protokollierung von Änderungen der Integrität und Nachvollziehbarkeit.'
@@ -465,7 +465,7 @@
         'Eine einmal erteilte Einwilligung kann nicht mehr zurückgenommen werden.',
         'Ein Widerruf macht auch alle bisherigen Newsletter-Versendungen rückwirkend rechtswidrig.',
         'Die Einwilligung kann jederzeit widerrufen werden.',
-        'Das Unternehmen muss nicht nachweisen können, dass eine Einwilligung vorliegt.'
+        'Das Unternehmen muss das Vorliegen einer Einwilligung nicht nachweisen können.'
       ],
       loesung: 4,
       erklaerung: 'Art. 7 DSGVO: Der Verantwortliche muss die Einwilligung nachweisen können (Abs. 1). Die betroffene Person kann ihre Einwilligung jederzeit widerrufen; die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung bleibt unberührt, und der Widerruf muss so einfach wie die Erteilung sein (Abs. 3). Eine Einwilligung erfordert eine eindeutige bestätigende Handlung (Art. 4 Nr. 11 DSGVO); Stillschweigen oder vorangekreuzte Kästchen genügen nicht.'
@@ -477,7 +477,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Maßnahme in das Kästchen ein.',
       optionen: [
         'Nutzung der Abwärme der Server zur Beheizung benachbarter Gebäude',
-        'Kühlen der Serverräume auf 16 °C, obwohl die Hardware für deutlich höhere Zulufttemperaturen ausgelegt ist',
+        'Kühlen der Serverräume auf 16 °C trotz deutlich höherer zulässiger Zulufttemperaturen der Hardware',
         'Zusammenfassen vieler schwach ausgelasteter Server durch Virtualisierung',
         'Bezug von Strom aus erneuerbaren Energien',
         'Trennung von Kalt- und Warmgang (Einhausung) für eine effizientere Kühlung'

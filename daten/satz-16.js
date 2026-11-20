@@ -35,7 +35,7 @@
       optionen: [
         'Beide haben als Auszubildende Anspruch auf mindestens 30 Werktage Urlaub.',
         'Herr Gerlach hat Anspruch auf mindestens 25 Werktage, Frau Sander auf mindestens 24 Werktage.',
-        'Herr Gerlach hat nur Anspruch auf 24 Werktage, weil er im März 2027 volljährig wird.',
+        'Herr Gerlach hat wegen seiner Volljährigkeit ab März 2027 nur Anspruch auf 24 Werktage.',
         'Frau Sander hat als Auszubildende keinen gesetzlichen Urlaubsanspruch, sondern nur den im Ausbildungsvertrag vereinbarten.',
         'Beide erwerben ihren Urlaubsanspruch erst nach einer Wartezeit von zwölf Monaten.'
       ],
@@ -64,7 +64,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Zwischenprüfung dient der Ermittlung des Ausbildungsstandes und ist Voraussetzung für die Zulassung zur Abschlussprüfung.',
-        'Wer die Zwischenprüfung nicht besteht, wird nicht zur Abschlussprüfung zugelassen.',
+        'Ohne bestandene Zwischenprüfung ist eine Zulassung zur Abschlussprüfung ausgeschlossen.',
         'Das Ergebnis der Zwischenprüfung geht mit 20 % in das Gesamtergebnis der Abschlussprüfung ein.',
         'Die Teilnahme an der Zwischenprüfung ist freiwillig.',
         'Die Zwischenprüfung wird von der Berufsschule abgenommen und ersetzt dort das Abschlusszeugnis.'
@@ -78,10 +78,10 @@
       frage: 'Welche der folgenden Aussagen zur Wahl des Betriebsrats trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Wahl darf auf der Betriebsversammlung per Handzeichen stattfinden, wenn die Mehrheit zustimmt.',
+        'Mit Zustimmung der Mehrheit darf die Wahl auf der Betriebsversammlung per Handzeichen stattfinden.',
         'Die Teamleitungen dürfen die Stimmen ihrer Teams gesammelt abgeben.',
         'Der Betriebsrat wird in geheimer und unmittelbarer Wahl gewählt.',
-        'Die Geschäftsführung legt fest, welche Beschäftigten kandidieren dürfen.',
+        'Die Geschäftsführung entscheidet über die Zulassung der Kandidatinnen und Kandidaten.',
         'Wählen dürfen nur Mitglieder einer Gewerkschaft.'
       ],
       loesung: 3,
@@ -95,13 +95,13 @@
       optionen: [
         'Regelungen zum Schutz vor Gesundheitsgefahren an den Bildschirmarbeitsplätzen im Rahmen des Arbeitsschutzgesetzes',
         'Erhöhung der Preise für die Software-Lizenzen',
-        'Grundsätze für die Durchführung von Gruppenarbeit, bei der Entwicklungsteams eine übertragene Gesamtaufgabe weitgehend eigenverantwortlich erledigen',
+        'Grundsätze für die Durchführung von Gruppenarbeit in weitgehend eigenverantwortlichen Entwicklungsteams',
         'Kauf eines neuen Bürogebäudes in Halberstadt',
         'Auswahl der Bank für das Firmenkonto',
         'Höhe der Gewinnausschüttung an die Gesellschafter'
       ],
       loesung: [1, 3],
-      erklaerung: '§ 87 Abs. 1 BetrVG nennt die sozialen Angelegenheiten mit echtem Mitbestimmungsrecht, u. a. Regelungen über den Gesundheitsschutz im Rahmen der gesetzlichen Vorschriften (Nr. 7) und Grundsätze über die Durchführung von Gruppenarbeit (Nr. 13). Kommt keine Einigung zustande, entscheidet die Einigungsstelle (§ 87 Abs. 2 BetrVG). Preise, Investitionen, Bankwahl und Gewinnverwendung sind unternehmerische Entscheidungen ohne Mitbestimmung.'
+      erklaerung: '§ 87 Abs. 1 BetrVG nennt die sozialen Angelegenheiten mit echtem Mitbestimmungsrecht, u. a. Regelungen über den Gesundheitsschutz im Rahmen der gesetzlichen Vorschriften (Nr. 7) und Grundsätze über die Durchführung von Gruppenarbeit (Nr. 13). Gruppenarbeit liegt vor, wenn eine Gruppe eine ihr übertragene Gesamtaufgabe im Wesentlichen eigenverantwortlich erledigt. Kommt keine Einigung zustande, entscheidet die Einigungsstelle (§ 87 Abs. 2 BetrVG). Preise, Investitionen, Bankwahl und Gewinnverwendung sind unternehmerische Entscheidungen ohne Mitbestimmung.'
     },
     {
       nr: 6, thema: 'mitbestimmung', typ: 'einfach',
@@ -112,8 +112,8 @@
         'Der Betriebsrat vertritt auch die leitenden Angestellten und muss sich um das Anliegen von Herrn Kramm kümmern.',
         'Leitende Angestellte wählen den Betriebsrat mit und können in ihn gewählt werden.',
         'Leitende Angestellte werden durch die Jugend- und Auszubildendenvertretung vertreten.',
-        'Für leitende Angestellte ist allein die Gewerkschaft zuständig, ein eigenes Gremium ist gesetzlich ausgeschlossen.',
-        'Das Betriebsverfassungsgesetz gilt für leitende Angestellte grundsätzlich nicht; ein Sprecherausschuss kann erst gewählt werden, wenn in der Regel mindestens zehn leitende Angestellte beschäftigt sind.'
+        'Leitende Angestellte dürfen kein eigenes Gremium wählen und werden allein von der Gewerkschaft vertreten.',
+        'Leitende Angestellte werden nicht vom Betriebsrat vertreten, sondern bei mindestens zehn leitenden Angestellten von einem Sprecherausschuss.'
       ],
       loesung: 5,
       erklaerung: '§ 5 Abs. 3 BetrVG: Das Gesetz findet, soweit nicht ausdrücklich etwas anderes bestimmt ist, keine Anwendung auf leitende Angestellte, z. B. Angestellte mit selbstständiger Einstellungs- und Entlassungsbefugnis oder mit Prokura. Sie wählen den Betriebsrat nicht und werden von ihm nicht vertreten. Ihre Interessen vertritt ein Sprecherausschuss, der in Betrieben mit in der Regel mindestens zehn leitenden Angestellten gewählt wird (§ 1 Abs. 1 SprAuG); bei vier leitenden Angestellten ist das hier nicht möglich. Die Einstellung eines leitenden Angestellten muss der Arbeitgeber dem Betriebsrat aber rechtzeitig mitteilen (§ 105 BetrVG).'
@@ -124,8 +124,8 @@
       frage: 'Welche der folgenden Aussagen zum nachvertraglichen Wettbewerbsverbot trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Das Wettbewerbsverbot ist wirksam, weil Herr Hiller den Nachtrag freiwillig unterschreibt.',
-        'Ein nachvertragliches Wettbewerbsverbot erfordert Schriftform und eine Karenzentschädigung von mindestens 50 % der letzten Bezüge; es darf höchstens zwei Jahre dauern.',
+        'Das Wettbewerbsverbot ist durch die freiwillige Unterschrift von Herrn Hiller wirksam.',
+        'Das Verbot erfordert eine Karenzentschädigung von mindestens 50 % der letzten Bezüge und darf höchstens zwei Jahre dauern.',
         'Ein Wettbewerbsverbot nach dem Ende des Arbeitsverhältnisses gilt für alle Arbeitnehmer automatisch für drei Jahre.',
         'Die Karenzentschädigung für ein Wettbewerbsverbot zahlt die Agentur für Arbeit.',
         'Nachvertragliche Wettbewerbsverbote sind in Deutschland grundsätzlich verboten.'
@@ -140,7 +140,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Durch die dreimalige vorbehaltlose Zahlung ist eine betriebliche Übung mit vertraglichem Anspruch entstanden.',
-        'Ein Anspruch besteht nicht, weil das Weihnachtsgeld nicht im Arbeitsvertrag steht.',
+        'Ohne Regelung im Arbeitsvertrag besteht kein Anspruch auf das Weihnachtsgeld.',
         'Ein Anspruch entsteht erst nach einer zehnjährigen vorbehaltlosen Zahlung.',
         'Das Weihnachtsgeld steht nur den Gewerkschaftsmitgliedern zu.',
         'Über die Zahlung entscheidet allein der Betriebsrat.'
@@ -154,11 +154,11 @@
       frage: 'Welche der folgenden Aussagen zur Brückenteilzeit nach § 9a TzBfG trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Eine Rückkehr zur Vollzeit ist nach der Teilzeit nur möglich, wenn gerade eine Vollzeitstelle frei ist.',
-        'Brückenteilzeit gibt es nur für Beschäftigte, die Kinder betreuen oder Angehörige pflegen.',
+        'Eine Rückkehr zur Vollzeit ist nach der Teilzeit nur bei einer gerade freien Vollzeitstelle möglich.',
+        'Brückenteilzeit gibt es nur zur Betreuung von Kindern oder zur Pflege von Angehörigen.',
         'Die Verringerung darf höchstens sechs Monate dauern.',
         'Frau Pfeiffer kann die Verringerung für mindestens ein und höchstens fünf Jahre verlangen und kehrt danach zur Vollzeit zurück.',
-        'Ein Anspruch besteht nicht, weil die Harzer Bitwerk GmbH weniger als 200 Arbeitnehmer beschäftigt.'
+        'Wegen der weniger als 200 Arbeitnehmer der Harzer Bitwerk GmbH besteht kein Anspruch.'
       ],
       loesung: 4,
       erklaerung: '§ 9a TzBfG: Arbeitnehmer, deren Arbeitsverhältnis länger als sechs Monate besteht, können verlangen, dass ihre Arbeitszeit für einen im Voraus bestimmten Zeitraum von mindestens einem und höchstens fünf Jahren verringert wird; ein besonderer Grund ist nicht erforderlich. Nach Ablauf kehren sie zur ursprünglichen Arbeitszeit zurück. Der Anspruch besteht bei Arbeitgebern mit in der Regel mehr als 45 Arbeitnehmern (§ 9a Abs. 1 TzBfG); bei 46 bis 200 Arbeitnehmern darf der Arbeitgeber ablehnen, wenn bereits eine bestimmte Zahl von Beschäftigten in Brückenteilzeit ist (§ 9a Abs. 2 TzBfG). Wie bei der dauerhaften Teilzeit nach § 8 TzBfG ist die Verringerung spätestens drei Monate vor Beginn in Textform zu verlangen und kann aus betrieblichen Gründen abgelehnt werden.'
@@ -192,9 +192,9 @@
       frage: 'Welche der folgenden Aussagen zur Gefährdungsbeurteilung nach dem Mutterschutzgesetz trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Beurteilung ist erst erforderlich, wenn eine Mitarbeiterin ihre Schwangerschaft mitteilt.',
-        'Sobald eine Mitarbeiterin schwanger ist, muss sie in jedem Fall sofort von der Arbeit freigestellt werden.',
-        'Der Arbeitgeber muss für jede Tätigkeit vorab beurteilen, welche Gefährdungen für Schwangere oder Stillende bestehen könnten.',
+        'Die Beurteilung ist erst nach der Mitteilung einer Schwangerschaft erforderlich.',
+        'Eine schwangere Mitarbeiterin muss in jedem Fall sofort von der Arbeit freigestellt werden.',
+        'Der Arbeitgeber muss für jede Tätigkeit vorab die möglichen Gefährdungen für Schwangere oder Stillende beurteilen.',
         'Die Gefährdungsbeurteilung zum Mutterschutz erstellt ausschließlich die Frauenärztin der Beschäftigten.',
         'Eine Gefährdungsbeurteilung zum Mutterschutz ist nur in Produktionsbetrieben vorgeschrieben.'
       ],
@@ -223,10 +223,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Jeder Geschäftsführer einer GmbH ist nach dem Gesetz stets allein vertretungsberechtigt.',
-        'Der Vertrag wird erst wirksam, wenn die Gesellschafterversammlung ihn genehmigt hat.',
+        'Der Vertrag wird erst mit der Genehmigung durch die Gesellschafterversammlung wirksam.',
         'Verträge einer GmbH muss immer zusätzlich ein Prokurist unterschreiben.',
-        'Der Vertrag ist wirksam, wenn der Betriebsrat ihm zustimmt.',
-        'Ohne abweichende Regelung im Gesellschaftsvertrag gilt Gesamtvertretung; Frau Wedekind kann den Vertrag nicht allein abschließen.'
+        'Der Vertrag ist mit Zustimmung des Betriebsrats wirksam.',
+        'Wegen der gesetzlichen Gesamtvertretung kann Frau Wedekind den Vertrag nicht allein abschließen.'
       ],
       loesung: 5,
       erklaerung: '§ 35 Abs. 2 Satz 1 GmbHG: Sind mehrere Geschäftsführer bestellt, sind sie alle nur gemeinschaftlich zur Vertretung der Gesellschaft befugt, es sei denn, der Gesellschaftsvertrag bestimmt etwas anderes (Gesamtvertretung). Handelt ein Geschäftsführer allein, ist der Vertrag schwebend unwirksam und wird wirksam, wenn der andere Geschäftsführer ihn genehmigt (§ 177 BGB). Der Gesellschaftsvertrag kann Einzelvertretung vorsehen; sie wird dann im Handelsregister eingetragen. Prokuristen, Betriebsrat oder Gesellschafterversammlung müssen bei der Vertretung nach außen nicht mitwirken.'
@@ -262,10 +262,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Er erhält 100 % seines letzten Bruttogehalts.',
-        'Er erhält 67 % seines pauschalierten Nettoentgelts, weil er ein Kind hat; ohne Kind wären es 60 %.',
-        'Er erhält unabhängig von seinem bisherigen Verdienst einen einheitlichen Festbetrag, der für alle Arbeitslosen gleich ist.',
+        'Er erhält wegen seines Kindes 67 % seines pauschalierten Nettoentgelts statt 60 %.',
+        'Er erhält unabhängig von seinem bisherigen Verdienst einen für alle Arbeitslosen gleichen Festbetrag.',
         'Die Höhe legt die Harzer Bitwerk GmbH im Kündigungsschreiben fest.',
-        'Er erhält 80 % seines letzten Bruttogehalts, weil er verheiratet ist.'
+        'Er erhält als Verheirateter 80 % seines letzten Bruttogehalts.'
       ],
       loesung: 2,
       erklaerung: '§ 149 SGB III: Das Arbeitslosengeld beträgt 67 % (erhöhter Leistungssatz) für Arbeitslose mit mindestens einem Kind im Sinne des Einkommensteuerrechts und 60 % (allgemeiner Leistungssatz) für alle übrigen, jeweils bezogen auf das pauschalierte Nettoentgelt (Leistungsentgelt). Grundlage ist das beitragspflichtige Bruttoentgelt im Bemessungszeitraum, höchstens bis zur Beitragsbemessungsgrenze (§§ 150, 151 SGB III). Der Familienstand allein erhöht den Satz nicht. Gezahlt wird das Arbeitslosengeld von der Agentur für Arbeit.'
@@ -278,10 +278,10 @@
       einleitung: 'Der CO₂-Fußabdruck gibt …',
       optionen: [
         '… die Menge aller direkt und indirekt verursachten Treibhausgase in CO₂-Äquivalenten an.',
-        '… ausschließlich die Menge an Heizöl an, die im Bürogebäude verbraucht wird.',
-        '… die Zahl der Bäume an, die das Unternehmen gepflanzt hat.',
-        '… die Höhe der Steuern an, die das Unternehmen für Umweltschäden zahlt.',
-        '… den Anteil der Beschäftigten an, die mit dem Fahrrad zur Arbeit kommen.'
+        '… ausschließlich die Menge des im Bürogebäude verbrauchten Heizöls an.',
+        '… die Zahl der vom Unternehmen gepflanzten Bäume an.',
+        '… die Höhe der vom Unternehmen für Umweltschäden gezahlten Steuern an.',
+        '… den Anteil der mit dem Fahrrad zur Arbeit kommenden Beschäftigten an.'
       ],
       loesung: 1,
       erklaerung: 'Der CO₂-Fußabdruck fasst alle Treibhausgasemissionen zusammen, die ein Unternehmen direkt (z. B. eigene Heizung, Firmenfahrzeuge) und indirekt (z. B. eingekaufter Strom, Rechenzentren, Dienstreisen, gekaufte Geräte) verursacht. Andere Treibhausgase wie Methan werden in CO₂-Äquivalente umgerechnet. Grundlage sind internationale Standards wie das Greenhouse Gas Protocol oder DIN EN ISO 14064. Eine Ökobilanz (DIN EN ISO 14040) betrachtet darüber hinaus alle Umweltwirkungen eines Produkts über seinen gesamten Lebensweg. Erst wenn die Emissionen bekannt sind, lassen sich Maßnahmen zur Vermeidung und Verringerung gezielt planen.'
@@ -292,10 +292,10 @@
       frage: 'Welche der folgenden Aussagen zur Agenda 2030 trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Agenda 2030 ist ein Gesetz der Europäischen Union, das Unternehmen bei Verstößen mit Bußgeldern belegt.',
+        'Die Agenda 2030 ist ein Gesetz der Europäischen Union mit Bußgeldern für Unternehmen bei Verstößen.',
         'Die Agenda 2030 richtet sich ausschließlich an Entwicklungsländer.',
         'Die Agenda 2030 enthält nur Ziele zum Klimaschutz.',
-        'Die Vereinten Nationen haben 2015 mit der Agenda 2030 17 Ziele für nachhaltige Entwicklung beschlossen, die für alle Staaten gelten.',
+        'Die Agenda 2030 der Vereinten Nationen von 2015 enthält 17 für alle Staaten geltende Ziele für nachhaltige Entwicklung.',
         'Die Agenda 2030 wurde von der Bundesregierung allein für den öffentlichen Nahverkehr beschlossen.'
       ],
       loesung: 4,
@@ -307,11 +307,11 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Herr Ludwig kann die Zulage noch drei Jahre lang verlangen, weil allein die gesetzliche Verjährung gilt.',
+        'Herr Ludwig kann die Zulage nach der allein geltenden gesetzlichen Verjährung noch drei Jahre lang verlangen.',
         'Ausschlussfristen in Tarifverträgen sind unzulässig.',
         'Die Ausschlussfrist gilt nur für Ansprüche des Arbeitgebers.',
         'Der Betriebsrat kann die Frist für Herrn Ludwig nachträglich verlängern.',
-        'Der Anspruch ist verfallen, weil Herr Ludwig ihn nicht innerhalb der tariflichen Ausschlussfrist schriftlich geltend gemacht hat.'
+        'Der Anspruch ist mangels schriftlicher Geltendmachung innerhalb der tariflichen Ausschlussfrist verfallen.'
       ],
       loesung: 5,
       erklaerung: 'Tarifverträge enthalten häufig Ausschlussfristen (Verfallfristen): Ansprüche, die nicht rechtzeitig und in der vorgeschriebenen Form geltend gemacht werden, erlöschen, auch wenn sie noch nicht verjährt wären (regelmäßige Verjährung drei Jahre, § 195 BGB). Tarifliche Ausschlussfristen sind zulässig und gelten bei beiderseitiger Tarifbindung unmittelbar und zwingend (§ 4 Abs. 1 und 4 TVG); meist erfassen sie Ansprüche beider Seiten. Die Zulage für März 2026 war spätestens mit der Abrechnung für März fällig, die dreimonatige Frist lief also im Sommer 2026 ab. Nicht erfasst wird der Anspruch auf den gesetzlichen Mindestlohn (§ 3 MiLoG).'
@@ -322,11 +322,11 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Der Verein kann Tarifverträge abschließen, weil jede Vereinigung von Arbeitnehmern tariffähig ist.',
-        'Der Verein ist keine tariffähige Gewerkschaft, weil eine Gewerkschaft gegnerfrei und überbetrieblich organisiert sein muss.',
-        'Der Verein wird tariffähig, sobald er im Vereinsregister eingetragen ist.',
-        'Der Verein kann Tarifverträge abschließen, wenn der Betriebsrat zustimmt.',
-        'Gewerkschaften müssen mindestens 100.000 Mitglieder haben, um Tarifverträge abschließen zu dürfen.'
+        'Der Verein ist wie jede Vereinigung von Arbeitnehmern tariffähig.',
+        'Der Verein ist mangels Gegnerfreiheit und überbetrieblicher Organisation keine tariffähige Gewerkschaft.',
+        'Der Verein wird mit der Eintragung im Vereinsregister tariffähig.',
+        'Der Verein kann mit Zustimmung des Betriebsrats Tarifverträge abschließen.',
+        'Gewerkschaften brauchen für den Abschluss von Tarifverträgen mindestens 100.000 Mitglieder.'
       ],
       loesung: 2,
       erklaerung: 'Tarifverträge können auf Arbeitnehmerseite nur Gewerkschaften abschließen (§ 2 Abs. 1 TVG). Nach Art. 9 Abs. 3 GG und der Rechtsprechung des BAG muss eine Gewerkschaft ein freiwilliger, auf Dauer angelegter Zusammenschluss sein, der gegnerfrei und unabhängig vom Arbeitgeber, vom Staat und von Parteien ist, überbetrieblich organisiert ist, den Abschluss von Tarifverträgen anstrebt und genügend Durchsetzungskraft (soziale Mächtigkeit) besitzt. Ein vom Arbeitgeber finanzierter Verein nur für die Beschäftigten eines Unternehmens erfüllt diese Voraussetzungen nicht. Eine feste Mindestmitgliederzahl gibt es nicht.'
@@ -338,8 +338,8 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Knappe Güter wie die Rechenleistung haben einen Preis und müssen bewirtschaftet werden.',
-        'Rechenleistung ist ein freies Gut, weil sie digital bereitgestellt wird.',
-        'Luft zum Atmen ist ein wirtschaftliches Gut, weil sie lebensnotwendig ist.',
+        'Rechenleistung ist wegen ihrer digitalen Bereitstellung ein freies Gut.',
+        'Luft zum Atmen ist wegen ihrer Lebensnotwendigkeit ein wirtschaftliches Gut.',
         'Knappheit gibt es nur bei Rohstoffen, nicht bei Dienstleistungen.',
         'Freie Güter werden von Unternehmen hergestellt und am Markt verkauft.'
       ],
@@ -352,27 +352,27 @@
       frage: 'Welche der folgenden Personen gelten gegenüber der Harzer Bitwerk GmbH als Beschäftigte im Sinne des § 6 AGG?',
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Personen in die Kästchen ein.',
       optionen: [
-        'Ein Fahrgast, der die Fahrplan-App eines Verkehrsunternehmens nutzt',
-        'Eine Bewerberin, deren Bewerbung abgelehnt wurde',
-        'Der Geschäftsführer eines Lieferanten, mit dem ein Wartungsvertrag besteht',
-        'Ein Leiharbeitnehmer, den ein Personaldienstleister an die Harzer Bitwerk GmbH überlassen hat',
-        'Eine Journalistin, die über die neue App berichtet',
-        'Ein Mitarbeiter eines Verkehrsbetriebs, der in der Bedienung der Software geschult wird'
+        'Ein Fahrgast als Nutzer der Fahrplan-App eines Verkehrsunternehmens',
+        'Eine abgelehnte Bewerberin',
+        'Der Geschäftsführer eines Lieferanten mit Wartungsvertrag',
+        'Ein an die Harzer Bitwerk GmbH überlassener Leiharbeitnehmer',
+        'Eine über die neue App berichtende Journalistin',
+        'Ein in der Bedienung der Software geschulter Mitarbeiter eines Verkehrsbetriebs'
       ],
       loesung: [2, 4],
       erklaerung: '§ 6 Abs. 1 AGG: Beschäftigte sind Arbeitnehmer, die zu ihrer Berufsbildung Beschäftigten und arbeitnehmerähnliche Personen; als Beschäftigte gelten auch Bewerberinnen und Bewerber sowie Personen, deren Beschäftigungsverhältnis beendet ist. Bei der Arbeitnehmerüberlassung gilt auch der Entleiher als Arbeitgeber (§ 6 Abs. 2 Satz 2 AGG). Kunden, Nutzer, Lieferanten, Journalisten oder Beschäftigte anderer Unternehmen sind keine Beschäftigten der GmbH; für sie kann allenfalls das zivilrechtliche Benachteiligungsverbot bei Massengeschäften gelten (§ 19 AGG).'
     },
     {
       nr: 23, thema: 'organisation', typ: 'einfach',
-      text: 'Die Harzer Bitwerk GmbH führt einen kontinuierlichen Verbesserungsprozess (KVP) ein. Jedes Team soll regelmäßig seine Abläufe überprüfen und Verbesserungen umsetzen.',
+      text: 'Die Harzer Bitwerk GmbH führt einen kontinuierlichen Verbesserungsprozess (KVP) ein.',
       frage: 'Welche der folgenden Aussagen beschreibt den KVP zutreffend?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Der KVP ist eine einmalige, umfassende Umstrukturierung des Unternehmens durch externe Berater.',
         'Am KVP beteiligen sich nur die Geschäftsführung und die Bereichsleitungen.',
         'Beim KVP werden Abläufe in vielen kleinen Schritten ständig verbessert, z. B. nach dem PDCA-Zyklus.',
-        'Der KVP ist abgeschlossen, sobald das Unternehmen ein Qualitätszertifikat erhalten hat.',
-        'Der KVP wird nur eingesetzt, wenn sich Kunden beschweren.'
+        'Der KVP ist mit dem Erhalt eines Qualitätszertifikats abgeschlossen.',
+        'Der KVP wird nur bei Kundenbeschwerden eingesetzt.'
       ],
       loesung: 3,
       erklaerung: 'Der kontinuierliche Verbesserungsprozess (japanisch Kaizen) zielt auf eine ständige Verbesserung von Produkten, Abläufen und Qualität in kleinen Schritten. Alle Beschäftigten bringen ihre Erfahrungen ein; ein typisches Vorgehen ist der PDCA-Zyklus (planen, umsetzen, überprüfen, verbessern). Den Gegensatz bildet die sprunghafte, grundlegende Neugestaltung (Innovation, Business Reengineering). Der KVP ist Bestandteil von Qualitätsmanagementsystemen nach DIN EN ISO 9001; eine gesetzliche Pflicht gibt es nicht. Beim betrieblichen Vorschlagswesen hat der Betriebsrat ein Mitbestimmungsrecht (§ 87 Abs. 1 Nr. 12 BetrVG).'
@@ -398,11 +398,11 @@
       frage: 'Unter welcher Voraussetzung darf Herr Gerlach nach dem Jugendarbeitsschutzgesetz mit diesen Arbeiten beschäftigt werden?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Voraussetzung in das Kästchen ein.',
       optionen: [
-        'Überhaupt nicht, weil gefährliche Arbeiten für Jugendliche ausnahmslos verboten sind.',
-        'Wenn seine Eltern schriftlich zustimmen.',
-        'Wenn er schriftlich erklärt, dass er die Arbeiten auf eigene Gefahr ausführt.',
-        'Wenn dies zur Erreichung seines Ausbildungsziels erforderlich ist und ein Fachkundiger die Aufsicht führt.',
-        'Wenn er für diese Arbeiten eine Gefahrenzulage erhält.'
+        'Unter keiner Voraussetzung wegen des ausnahmslosen Verbots gefährlicher Arbeiten für Jugendliche',
+        'Mit schriftlicher Zustimmung seiner Eltern',
+        'Mit seiner schriftlichen Erklärung über die Ausführung der Arbeiten auf eigene Gefahr',
+        'Bei Erforderlichkeit für sein Ausbildungsziel und unter Aufsicht eines Fachkundigen',
+        'Bei Zahlung einer Gefahrenzulage für diese Arbeiten'
       ],
       loesung: 4,
       erklaerung: '§ 22 Abs. 1 Nr. 3 JArbSchG verbietet, Jugendliche mit Arbeiten zu beschäftigen, die mit Unfallgefahren verbunden sind, die sie wegen mangelnden Sicherheitsbewusstseins oder mangelnder Erfahrung nicht erkennen oder nicht abwenden können. Nach § 22 Abs. 2 JArbSchG gilt dieses Verbot nicht, soweit die Beschäftigung zur Erreichung des Ausbildungsziels erforderlich ist und der Schutz durch die Aufsicht eines Fachkundigen gewährleistet ist. Weder die Eltern noch der Jugendliche selbst können auf den Schutz verzichten. Vor Beginn ist der Jugendliche über die Unfall- und Gesundheitsgefahren zu unterweisen (§ 29 JArbSchG).'
@@ -473,11 +473,11 @@
       frage: 'Welche der folgenden Aussagen beschreibt die Situation und das richtige Verhalten zutreffend?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Es handelt sich um Social Engineering; Frau Vogt gibt keine Daten heraus und meldet den Vorfall.',
-        'Es handelt sich um einen normalen Supportanruf; Frau Vogt nennt ihr Passwort, behält den Bestätigungscode aber für sich.',
-        'Es handelt sich um einen Brute-Force-Angriff; Frau Vogt muss nichts unternehmen, weil die Zwei-Faktor-Authentisierung sie in jedem Fall schützt.',
-        'Es handelt sich um Ransomware; Frau Vogt schaltet ihren Rechner aus und zahlt das geforderte Lösegeld.',
-        'Es handelt sich um eine DDoS-Attacke; Frau Vogt nennt den Code, damit der Server schneller wieder erreichbar ist.'
+        'Frau Vogt gibt bei diesem Social-Engineering-Versuch keine Daten heraus und meldet den Vorfall.',
+        'Frau Vogt nennt bei diesem normalen Supportanruf ihr Passwort, aber nicht den Bestätigungscode.',
+        'Frau Vogt muss bei diesem Brute-Force-Angriff dank der Zwei-Faktor-Authentisierung nichts unternehmen.',
+        'Frau Vogt schaltet bei diesem Ransomware-Angriff ihren Rechner aus und zahlt das geforderte Lösegeld.',
+        'Frau Vogt nennt bei dieser DDoS-Attacke den Code für eine schnellere Erreichbarkeit des Servers.'
       ],
       loesung: 1,
       erklaerung: 'Beim Social Engineering nutzen Angreifer menschliche Eigenschaften wie Hilfsbereitschaft, Respekt vor Autorität oder Zeitdruck aus, um an vertrauliche Informationen zu gelangen. Seriöse IT-Abteilungen fragen niemals nach Passwörtern oder Bestätigungscodes. Die Zwei-Faktor-Authentisierung schützt nur, solange der zweite Faktor nicht weitergegeben wird. Richtig ist, keine Daten preiszugeben, die Identität des Anrufers über einen bekannten Kontaktweg zu prüfen und den Vorfall zu melden. Unternehmen müssen die Sicherheit der Verarbeitung durch technische und organisatorische Maßnahmen wie Schulungen gewährleisten (Art. 32 DSGVO).'

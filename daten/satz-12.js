@@ -29,7 +29,7 @@
       frage: 'Welche der folgenden Aussagen zur Anrechnung der Unterkunft trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Unterkunft darf vollständig angerechnet werden, auch wenn Herrn Wendt danach keine Vergütung mehr ausgezahlt wird.',
+        'Die Unterkunft darf bis zur vollen Höhe der Bruttovergütung angerechnet werden.',
         'Sie darf höchstens mit dem Sachbezugswert und bis zu 75 % der Bruttovergütung angerechnet werden.',
         'Sachleistungen dürfen auf die Ausbildungsvergütung grundsätzlich nicht angerechnet werden.',
         'Die Anrechnung ist nur mit Zustimmung der Industrie- und Handelskammer zulässig.',
@@ -47,7 +47,7 @@
         'Ohne Berufsausbildungsvertrag ist eine Zulassung zur Abschlussprüfung grundsätzlich ausgeschlossen.',
         'Er muss mindestens die doppelte Ausbildungsdauer, also sechs Jahre, in dem Beruf tätig gewesen sein.',
         'Über seine Zulassung entscheidet allein die Hanseklick Webdesign KG als Arbeitgeberin.',
-        'Er kann zugelassen werden, wenn er mindestens das Eineinhalbfache der Ausbildungsdauer tätig war.',
+        'Mit einer Tätigkeit von mindestens dem Eineinhalbfachen der Ausbildungsdauer kann er zugelassen werden.',
         'Er muss vor der Prüfung zunächst die Zwischenprüfung bei der Berufsschule bestehen.'
       ],
       loesung: 4,
@@ -59,11 +59,11 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Auszubildenden dürfen nur Aufgaben übertragen werden, die dem Ausbildungszweck dienen.',
-        'Herr Petersen muss alle Weisungen der Komplementärin befolgen, weil sie persönlich haftende Gesellschafterin ist.',
-        'Private Hilfstätigkeiten sind zulässig, solange sie höchstens zehn Prozent der Ausbildungszeit ausmachen.',
-        'Die Aufgaben sind zulässig, wenn Herr Petersen dafür eine zusätzliche Vergütung erhält.',
-        'Ob die Aufgaben zulässig sind, entscheidet die Berufsschule.'
+        'Auszubildenden dürfen nur dem Ausbildungszweck dienende Aufgaben übertragen werden.',
+        'Herr Petersen muss alle Weisungen der persönlich haftenden Gesellschafterin befolgen.',
+        'Private Hilfstätigkeiten sind bis zu einem Anteil von zehn Prozent der Ausbildungszeit zulässig.',
+        'Die Aufgaben sind gegen eine zusätzliche Vergütung für Herrn Petersen zulässig.',
+        'Über die Zulässigkeit der Aufgaben entscheidet die Berufsschule.'
       ],
       loesung: 1,
       erklaerung: '§ 14 Abs. 3 BBiG: Auszubildenden dürfen nur Aufgaben übertragen werden, die dem Ausbildungszweck dienen und ihren körperlichen Kräften angemessen sind. Auszubildende müssen nur Weisungen befolgen, die ihnen im Rahmen der Berufsausbildung erteilt werden (§ 13 Satz 2 Nr. 3 BBiG). Private Dienste für die Inhaberin dienen nicht der Ausbildung zum Fachinformatiker; daran ändern auch eine Zusatzvergütung oder ein geringer Zeitanteil nichts.'
@@ -74,11 +74,11 @@
       frage: 'Welche der folgenden Aussagen zur Beteiligung des Betriebsrats trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Es liegt keine Versetzung vor, weil Frau Carstens weiterhin am selben Ort arbeitet.',
+        'Wegen des unveränderten Arbeitsorts liegt keine Versetzung vor.',
         'Der Betriebsrat muss erst nach dem Wechsel informiert werden.',
-        'Es liegt eine Versetzung vor, weil ein anderer Arbeitsbereich länger als einen Monat zugewiesen wird.',
-        'Eine Versetzung liegt nur vor, wenn sich das Gehalt von Frau Carstens ändert.',
-        'Stimmt Frau Carstens dem Wechsel zu, ist die Zustimmung des Betriebsrats nicht mehr erforderlich.'
+        'Wegen der Zuweisung eines anderen Arbeitsbereichs für länger als einen Monat liegt eine Versetzung vor.',
+        'Eine Versetzung liegt nur bei einer Änderung des Gehalts von Frau Carstens vor.',
+        'Mit dem Einverständnis von Frau Carstens ist die Zustimmung des Betriebsrats nicht mehr erforderlich.'
       ],
       loesung: 3,
       erklaerung: '§ 95 Abs. 3 BetrVG: Versetzung ist die Zuweisung eines anderen Arbeitsbereichs, die voraussichtlich die Dauer von einem Monat überschreitet oder mit einer erheblichen Änderung der Umstände der Arbeit verbunden ist. In Unternehmen mit in der Regel mehr als 20 wahlberechtigten Arbeitnehmern ist der Betriebsrat vor jeder Versetzung zu unterrichten; seine Zustimmung ist einzuholen, verweigern kann er sie nur aus den Gründen des § 99 Abs. 2 BetrVG (§ 99 Abs. 1 BetrVG). Das Einverständnis der Arbeitnehmerin ersetzt die Beteiligung des Betriebsrats nicht.'
@@ -89,10 +89,10 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Die Urlaubsplanung ist allein Sache der Geschäftsleitung, der Betriebsrat hat kein Beteiligungsrecht.',
+        'Die Urlaubsplanung ist allein Sache der Geschäftsleitung ohne Beteiligungsrecht des Betriebsrats.',
         'Der Betriebsrat darf im Rahmen der Mitbestimmung die Dauer des gesetzlichen Mindesturlaubs verkürzen.',
         'Alle Beschäftigten müssen ihren Urlaub künftig beim Betriebsrat beantragen.',
-        'Der Betriebsrat hat nur ein Mitbestimmungsrecht, wenn ein Tarifvertrag dies ausdrücklich vorsieht.',
+        'Der Betriebsrat hat nur bei ausdrücklicher Regelung im Tarifvertrag ein Mitbestimmungsrecht.',
         'Allgemeine Urlaubsgrundsätze wie Betriebsferien unterliegen der Mitbestimmung des Betriebsrats.'
       ],
       loesung: 5,
@@ -104,9 +104,9 @@
       frage: 'Welche der folgenden Aussagen zur Beteiligung von Frau Ahrens an dieser Betriebsratssitzung trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Frau Ahrens darf an der Sitzung nur als Zuhörerin teilnehmen; ein Stimmrecht hat die JAV nie.',
-        'Frau Ahrens darf teilnehmen und hat Stimmrecht, weil der Beschluss überwiegend die Auszubildenden betrifft.',
-        'Frau Ahrens darf nur teilnehmen, wenn die Geschäftsleitung zustimmt.',
+        'Frau Ahrens darf an der Sitzung nur als Zuhörerin ohne Stimmrecht teilnehmen.',
+        'Frau Ahrens darf an der Sitzung teilnehmen und hat bei diesem Beschluss Stimmrecht.',
+        'Frau Ahrens darf nur mit Zustimmung der Geschäftsleitung teilnehmen.',
         'Über Regelungen für Auszubildende entscheidet die JAV allein anstelle des Betriebsrats.',
         'Frau Ahrens darf an Betriebsratssitzungen nur außerhalb ihrer Ausbildungszeit teilnehmen.'
       ],
@@ -120,11 +120,11 @@
       anweisung: 'Tragen Sie die Ziffern vor den **zwei** zutreffenden Aussagen in die Kästchen ein.',
       optionen: [
         'Ein Arbeitsvertrag kann auch mündlich wirksam abgeschlossen werden.',
-        'Eine Kündigung über einen Messenger-Dienst ist wirksam, sobald der Empfänger die Nachricht gelesen hat.',
+        'Eine Kündigung über einen Messenger-Dienst wird mit dem Lesen der Nachricht durch den Empfänger wirksam.',
         'Eine Kündigung per E-Mail mit eingescannter Unterschrift erfüllt die gesetzliche Schriftform.',
         'Die Kündigung muss schriftlich mit eigenhändiger Unterschrift erklärt werden.',
-        'Ein Arbeitsvertrag ist nur wirksam, wenn er notariell beurkundet wird.',
-        'Eine mündliche Kündigung ist wirksam, wenn dabei Zeugen anwesend sind.'
+        'Ein Arbeitsvertrag ist nur mit notarieller Beurkundung wirksam.',
+        'Eine mündliche Kündigung ist in Anwesenheit von Zeugen wirksam.'
       ],
       loesung: [1, 4],
       erklaerung: 'Der Arbeitsvertrag ist grundsätzlich formfrei und kann mündlich oder durch schlüssiges Verhalten zustande kommen. Der Arbeitgeber muss die wesentlichen Vertragsbedingungen zwar nach dem Nachweisgesetz nachweisen, das ist aber keine Voraussetzung für die Wirksamkeit. Die Kündigung bedarf dagegen zu ihrer Wirksamkeit der Schriftform; die elektronische Form ist ausgeschlossen (§ 623 BGB). Schriftform heißt eigenhändige Unterschrift auf der Urkunde (§ 126 Abs. 1 BGB). Messenger-Nachricht, E-Mail mit Scan und mündliche Kündigung sind deshalb unwirksam.'
@@ -138,7 +138,7 @@
         'Die Arbeitsverhältnisse enden mit dem Verkauf automatisch.',
         'Die Baltic Server GmbH darf die Gehälter der übernommenen Beschäftigten sofort einseitig kürzen.',
         'Die Beschäftigten müssen mit der Baltic Server GmbH neue Arbeitsverträge mit einer neuen Probezeit abschließen.',
-        'Die Käuferin tritt in die bestehenden Arbeitsverhältnisse ein, eine Kündigung wegen des Übergangs ist unwirksam.',
+        'Die Käuferin tritt in die Rechte und Pflichten aus den bestehenden Arbeitsverhältnissen ein.',
         'Die Beschäftigten können dem Übergang ihres Arbeitsverhältnisses zeitlich unbegrenzt widersprechen.'
       ],
       loesung: 4,
@@ -174,11 +174,11 @@
       frage: 'Welche der folgenden Aussagen zu Flucht- und Rettungswegen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Fluchtwege müssen ständig freigehalten werden, Notausgänge sich jederzeit ohne Hilfsmittel öffnen lassen.',
-        'Kartons dürfen im Fluchtweg stehen, wenn ein Durchgang von etwa 40 Zentimetern frei bleibt.',
-        'Der Notausgang darf tagsüber abgeschlossen bleiben, wenn bekannt ist, wer den Schlüssel hat.',
+        'Fluchtwege müssen ständig frei und Notausgänge jederzeit ohne Hilfsmittel zu öffnen sein.',
+        'Kartons dürfen bei einem freien Durchgang von etwa 40 Zentimetern im Fluchtweg stehen.',
+        'Bei bekanntem Aufbewahrungsort des Schlüssels darf der Notausgang tagsüber abgeschlossen bleiben.',
         'Fluchtwege müssen nur bei angekündigten Kontrollen der Aufsichtsbehörde frei sein.',
-        'Notausgänge müssen nicht gekennzeichnet werden, wenn alle Beschäftigten sie kennen.'
+        'Allen Beschäftigten bekannte Notausgänge müssen nicht gekennzeichnet werden.'
       ],
       loesung: 1,
       erklaerung: 'Nach § 4 Abs. 4 Arbeitsstättenverordnung (ArbStättV) sind Verkehrswege, Fluchtwege und Notausgänge ständig freizuhalten, damit sie jederzeit benutzt werden können. Die Technische Regel ASR A2.3 konkretisiert dies: Türen von Notausgängen müssen sich von innen ohne besondere Hilfsmittel jederzeit leicht öffnen lassen, solange sich Beschäftigte in der Arbeitsstätte befinden, und Fluchtwege und Notausgänge sind mit Rettungszeichen zu kennzeichnen. Lagerungen im Fluchtweg sind unzulässig, weil sie die Mindestbreite einschränken und Brandlast bilden.'
@@ -228,7 +228,7 @@
         'Für die Gründung einer eG ist ein Mindestkapital von 50.000,00 EUR vorgeschrieben.',
         'Die Mitglieder haften für die Schulden der eG stets unbeschränkt mit ihrem Privatvermögen.',
         'Die eG wird in Abteilung A des Handelsregisters eingetragen.',
-        'Zweck der eG ist die Förderung ihrer Mitglieder, jedes Mitglied hat eine Stimme.'
+        'Zweck der eG ist die Förderung ihrer Mitglieder durch gemeinschaftlichen Geschäftsbetrieb.'
       ],
       loesung: 5,
       erklaerung: '§ 1 Abs. 1 GenG: Genossenschaften bezwecken, den Erwerb oder die Wirtschaft ihrer Mitglieder durch gemeinschaftlichen Geschäftsbetrieb zu fördern. Jedes Mitglied hat grundsätzlich eine Stimme, unabhängig von seinen Geschäftsanteilen (§ 43 Abs. 3 GenG). Für die Gründung sind mindestens drei Mitglieder nötig (§ 4 GenG), ein Mindestkapital gibt es nicht. Den Gläubigern haftet nur das Vermögen der Genossenschaft (§ 2 GenG); ob Mitglieder Nachschüsse leisten müssen, regelt die Satzung. Eingetragen wird die eG im Genossenschaftsregister.'
@@ -261,7 +261,7 @@
         'Kurzarbeitergeld zahlt die Krankenkasse der Beschäftigten.',
         'Bei erheblichem Arbeitsausfall zahlt die Agentur für Arbeit Kurzarbeitergeld.',
         'Kurzarbeitergeld ersetzt den ausgefallenen Bruttolohn vollständig.',
-        'Kurzarbeitergeld wird nur gezahlt, wenn der Arbeitgeber bereits Insolvenz angemeldet hat.',
+        'Kurzarbeitergeld wird nur nach einem Insolvenzantrag des Arbeitgebers gezahlt.',
         'Die Beschäftigten müssen das Kurzarbeitergeld später an die Agentur für Arbeit zurückzahlen.'
       ],
       loesung: 2,
@@ -275,10 +275,10 @@
       optionen: [
         'Die Komplementärin Merle Jacobsen als Unternehmerin',
         'Die Auszubildenden der Hanseklick Webdesign KG während ihrer betrieblichen Ausbildung',
-        'Ein freiberuflicher Grafiker, der gelegentlich Aufträge für die KG übernimmt und sich nicht freiwillig versichert hat',
-        'Eine Bekannte der Komplementärin, die sie privat in der Agentur besucht und auf der Treppe stürzt',
+        'Ein gelegentlich für die KG tätiger freiberuflicher Grafiker ohne freiwillige Versicherung',
+        'Eine Bekannte der Komplementärin bei einem privaten Besuch in der Agentur',
         'Eine Studentin während einer Lehrveranstaltung an ihrer Hochschule',
-        'Der Kommanditist Arne Thießen, der nicht im Unternehmen mitarbeitet'
+        'Der nicht im Unternehmen mitarbeitende Kommanditist Arne Thießen'
       ],
       loesung: [2, 5],
       erklaerung: '§ 2 Abs. 1 SGB VII: Kraft Gesetzes versichert sind u. a. Beschäftigte einschließlich der Auszubildenden (Nr. 1, 2) sowie Studierende während der Aus- und Fortbildung an Hochschulen (Nr. 8 Buchst. c). Unternehmer und Selbstständige sind nur versichert, wenn die Satzung des Unfallversicherungsträgers dies vorsieht oder sie sich freiwillig versichern (§§ 3, 6 SGB VII). Ein Kommanditist, der nicht mitarbeitet, ist kein Beschäftigter. Private Besucherinnen und Besucher sind nicht gesetzlich unfallversichert.'
@@ -291,10 +291,10 @@
       einleitung: 'Das Zeichen …',
       optionen: [
         'ist das EU-Bio-Logo für Lebensmittel aus ökologischem Landbau.',
-        'bestätigt als CE-Kennzeichnung, dass ein Produkt die Sicherheitsanforderungen der EU erfüllt.',
+        'bestätigt als CE-Kennzeichnung die Einhaltung der Sicherheitsanforderungen der EU.',
         'ist das Umweltzeichen der EU („EU Ecolabel”) für besonders umweltfreundliche Produkte.',
         'zeigt die Energieeffizienzklasse eines Produkts an.',
-        'weist darauf hin, dass die Verpackung über ein duales System entsorgt wird.'
+        'weist auf die Entsorgung der Verpackung über ein duales System hin.'
       ],
       loesung: 3,
       erklaerung: 'Das EU Ecolabel („Euroblume“) ist das freiwillige Umweltzeichen der Europäischen Union nach der Verordnung (EG) Nr. 66/2010. Es wird für Produkte und Dienstleistungen vergeben, die strenge Umweltkriterien über den gesamten Lebensweg erfüllen, z. B. für Papier, Reinigungsmittel oder Farben. Das EU-Bio-Logo kennzeichnet Bio-Lebensmittel, das CE-Zeichen die Einhaltung von EU-Produktanforderungen, das EU-Energielabel die Energieeffizienz.'
@@ -302,14 +302,14 @@
     {
       nr: 18, thema: 'umweltschutz', typ: 'einfach',
       text: 'Die Hanseklick Webdesign KG will klimafreundlicher werden. Ein Mitarbeiter schlägt vor, einfach Zertifikate für Klimaschutzprojekte zu kaufen, damit sich sonst nichts ändern muss.',
-      frage: 'Welche der folgenden Vorgehensweisen entspricht dem Grundsatz „Vermeiden vor Verringern vor Kompensieren“?',
+      frage: 'Welche der folgenden Vorgehensweisen entspricht dem im Klimaschutz anerkannten Grundsatz für den Umgang mit Treibhausgasemissionen?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Vorgehensweise in das Kästchen ein.',
       optionen: [
         'Zuerst Emissionen vermeiden, dann verringern und nur den Rest kompensieren.',
-        'Zuerst kompensieren, weil der Kauf von Zertifikaten am schnellsten wirkt.',
-        'Kompensation ersetzt die Vermeidung vollständig; wer genug Zertifikate kauft, muss nichts ändern.',
-        'Nur Emissionen verringern; der Ausgleich über Klimaschutzprojekte ist in Deutschland verboten.',
-        'Klimaschutz ist ausschließlich Aufgabe des Staates; Unternehmen müssen nichts tun.'
+        'Wegen der schnellen Wirkung von Zertifikaten zuerst kompensieren.',
+        'Die Vermeidung vollständig durch den Kauf von Zertifikaten ersetzen.',
+        'Nur Emissionen verringern und auf den in Deutschland verbotenen Ausgleich verzichten.',
+        'Den Klimaschutz ausschließlich dem Staat überlassen.'
       ],
       loesung: 1,
       erklaerung: 'Nach dem Grundsatz „Vermeiden vor Verringern vor Kompensieren“ werden Treibhausgasemissionen zuerst vermieden, dann verbleibende Emissionen verringert, und erst unvermeidbare Restemissionen werden durch Klimaschutzprojekte ausgeglichen. Kompensation allein ändert am eigenen Ausstoß nichts. Das Bundes-Klimaschutzgesetz verfolgt das Ziel der Netto-Treibhausgasneutralität bis 2045 (§ 3 Abs. 2 KSG).'
@@ -321,9 +321,9 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Eine Betriebsvereinbarung darf tarifliche Entgelte jederzeit unterschreiten, auch ohne Regelung im Tarifvertrag.',
-        'Klauseln, die Abweichungen vom Tarifvertrag erlauben, sind nach dem Tarifvertragsgesetz verboten.',
+        'Klauseln zur Abweichung vom Tarifvertrag sind nach dem Tarifvertragsgesetz verboten.',
         'Die Kürzung kann nur einzeln mit jedem Beschäftigten im Arbeitsvertrag vereinbart werden.',
-        'Es handelt sich um eine Öffnungsklausel, die eine Abweichung per Betriebsvereinbarung erlaubt.',
+        'Es handelt sich um eine Öffnungsklausel für Abweichungen per Betriebsvereinbarung.',
         'Durch die Klausel darf die Geschäftsleitung die Sonderzahlung ohne Beteiligung des Betriebsrats beliebig kürzen.'
       ],
       loesung: 4,
@@ -338,8 +338,8 @@
         'An der Urabstimmung dürfen alle Beschäftigten der Branche teilnehmen, auch Nichtmitglieder.',
         'Die Urabstimmung ist im Tarifvertragsgesetz zwingend vorgeschrieben.',
         'Die Urabstimmung wird vom Arbeitgeberverband durchgeführt.',
-        'Ein unbefristeter Streik darf bereits beginnen, wenn 25 % der Mitglieder zustimmen.',
-        'Die Gewerkschaftsmitglieder entscheiden geheim, häufig ist eine Mehrheit von 75 % erforderlich.'
+        'Ein unbefristeter Streik darf bereits mit Zustimmung von 25 % der Mitglieder beginnen.',
+        'Die Gewerkschaftsmitglieder entscheiden geheim, häufig mit einer erforderlichen Mehrheit von 75 %.'
       ],
       loesung: 5,
       erklaerung: 'Die Urabstimmung ist nicht gesetzlich geregelt, sondern in den Satzungen der Gewerkschaften. Stimmberechtigt sind die Mitglieder im betroffenen Tarifgebiet. Für einen unbefristeten Streik verlangen viele Satzungen eine Zustimmung von 75 %; für die Annahme eines Verhandlungsergebnisses und damit das Ende des Streiks genügen häufig 25 %. Grundlage des Streikrechts ist die Koalitionsfreiheit (Art. 9 Abs. 3 GG).'
@@ -352,7 +352,7 @@
       optionen: [
         'Die Preise bilden sich frei durch Angebot und Nachfrage.',
         'Die Unternehmen entscheiden selbstständig über Produktion und Investitionen.',
-        'Eine zentrale staatliche Planungsbehörde legt fest, was in welcher Menge produziert wird.',
+        'Eine zentrale staatliche Planungsbehörde legt Art und Menge der Produktion fest.',
         'Es herrschen Gewerbe- und Vertragsfreiheit.',
         'Der Wettbewerb zwischen den Unternehmen steuert die Produktion.',
         'Die Produktionsmittel befinden sich überwiegend in Staats- oder Kollektiveigentum.'
@@ -367,7 +367,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Das Programm ist eine unzulässige Benachteiligung der Männer und deshalb verboten.',
-        'Das Programm ist nur zulässig, wenn alle männlichen Beschäftigten schriftlich zustimmen.',
+        'Das Programm ist nur mit schriftlicher Zustimmung aller männlichen Beschäftigten zulässig.',
         'Das Programm ist als positive Maßnahme nach § 5 AGG zulässig.',
         'Fördermaßnahmen für bestimmte Gruppen sind nur in Behörden zulässig.',
         'Das AGG verbietet ausnahmslos jede Unterscheidung nach dem Geschlecht.'
@@ -382,10 +382,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die Leitungsspanne gibt die Zahl aller Beschäftigten eines Unternehmens an.',
-        'Sie gibt an, wie viele Stellen einer Instanz direkt unterstellt sind.',
-        'Je größer die Leitungsspanne, desto mehr Hierarchieebenen hat ein Unternehmen.',
+        'Sie gibt die Zahl der einer Instanz direkt unterstellten Stellen an.',
+        'Eine größere Leitungsspanne führt zu mehr Hierarchieebenen im Unternehmen.',
         'Die Leitungsspanne ist gesetzlich auf höchstens zehn Personen begrenzt.',
-        'Die Leitungsspanne bezeichnet die Zeit, die eine Führungskraft für Leitungsaufgaben aufwendet.'
+        'Die Leitungsspanne bezeichnet den Zeitaufwand einer Führungskraft für Leitungsaufgaben.'
       ],
       loesung: 2,
       erklaerung: 'Die Leitungsspanne (Kontrollspanne) ist die Zahl der Stellen, die einer Instanz unmittelbar unterstellt sind. Ist sie zu groß, wird die Führungskraft überlastet; ist sie klein, braucht das Unternehmen bei gleicher Beschäftigtenzahl mehr Hierarchieebenen (größere Leitungstiefe) und längere Dienstwege. Mit zwei Gruppenleitungen sinkt die Leitungsspanne von Herrn Holm auf zwei, und es entsteht eine zusätzliche Ebene. Gesetzliche Vorgaben gibt es nicht; es handelt sich um ein Modell der Organisationslehre.'
@@ -396,11 +396,11 @@
       frage: 'Welche der folgenden Aussagen zur Liquidität trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Liquidität bedeutet, fällige Zahlungsverpflichtungen jederzeit erfüllen zu können.',
+        'Liquidität ist die Fähigkeit zur jederzeitigen Erfüllung fälliger Zahlungsverpflichtungen.',
         'Liquidität ist das Verhältnis des Gewinns zum Eigenkapital.',
         'Ein Unternehmen mit hohem Gewinn ist immer zahlungsfähig.',
-        'Liquidität ist ein Sachziel, weil sie die Leistungen des Unternehmens beschreibt.',
-        'Je mehr Bargeld ein Unternehmen hält, desto höher ist immer auch seine Rentabilität.'
+        'Liquidität beschreibt als Sachziel die Leistungen des Unternehmens.',
+        'Ein höherer Bargeldbestand erhöht immer auch die Rentabilität des Unternehmens.'
       ],
       loesung: 1,
       erklaerung: 'Liquidität ist die Fähigkeit, fällige Zahlungsverpflichtungen jederzeit fristgerecht zu erfüllen. Sie zählt wie Gewinn und Rentabilität zu den Formalzielen. Auch ein Unternehmen mit Gewinn kann zahlungsunfähig werden, wenn Einzahlungen zu spät eingehen. Zahlungsunfähigkeit ist ein Insolvenzgrund (§ 17 InsO). Zwischen Liquidität und Rentabilität besteht oft ein Zielkonflikt, weil hohe Geldbestände kaum Ertrag bringen. Das Verhältnis von Gewinn zu Eigenkapital ist die Eigenkapitalrentabilität.'
@@ -411,11 +411,11 @@
       frage: 'Welche der folgenden Aussagen trifft nach dem Jugendarbeitsschutzgesetz zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Er darf alle sechs Ferienwochen arbeiten, wenn seine Eltern schriftlich zustimmen.',
+        'Mit schriftlicher Zustimmung seiner Eltern darf er alle sechs Ferienwochen arbeiten.',
         'Schülerinnen und Schüler unter 18 Jahren dürfen in den Ferien grundsätzlich nicht beschäftigt werden.',
         'Für Ferienjobs gilt das Jugendarbeitsschutzgesetz nicht.',
         'Er darf in den Schulferien höchstens vier Wochen im Kalenderjahr beschäftigt werden.',
-        'Er darf unbegrenzt beschäftigt werden, solange er nicht mehr als 40 Stunden in der Woche arbeitet.'
+        'Bei höchstens 40 Wochenstunden darf er in den Ferien zeitlich unbegrenzt beschäftigt werden.'
       ],
       loesung: 4,
       erklaerung: 'Jugendliche, die der Vollzeitschulpflicht unterliegen, werden wie Kinder behandelt (§ 2 Abs. 3 JArbSchG); ihre Beschäftigung ist grundsätzlich verboten (§ 5 Abs. 1 JArbSchG). Das Verbot gilt nicht für vollzeitschulpflichtige Jugendliche, also Schülerinnen und Schüler ab 15 Jahren (§ 2 Abs. 2, 3 JArbSchG), während der Schulferien für höchstens vier Wochen im Kalenderjahr (§ 5 Abs. 4 JArbSchG). Dabei gelten die Schutzvorschriften für Jugendliche, z. B. höchstens acht Stunden täglich und 40 Stunden wöchentlich (§ 8 JArbSchG). Die Zustimmung der Eltern erweitert die Grenze nicht.'
@@ -450,11 +450,11 @@
       frage: 'Welche der folgenden Aussagen zum Ziel des außenwirtschaftlichen Gleichgewichts trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Das Ziel ist umso besser erreicht, je höher der Exportüberschuss ausfällt.',
-        'Außenwirtschaftliches Gleichgewicht bedeutet, dass Importe verboten werden.',
+        'Ein höherer Exportüberschuss bedeutet eine bessere Zielerreichung.',
+        'Außenwirtschaftliches Gleichgewicht bedeutet ein Verbot von Importen.',
         'Das Ziel betrifft ausschließlich den Wechselkurs zwischen Euro und US-Dollar.',
         'Das außenwirtschaftliche Gleichgewicht gehört nicht zu den Zielen des Stabilitäts- und Wachstumsgesetzes.',
-        'Es ist ein Ziel des Stabilitätsgesetzes, hohe Exportüberschüsse gelten als Ungleichgewicht.'
+        'Hohe Exportüberschüsse widersprechen diesem Ziel des Stabilitätsgesetzes.'
       ],
       loesung: 5,
       erklaerung: '§ 1 StabG verpflichtet Bund und Länder, gleichzeitig zur Stabilität des Preisniveaus, zu einem hohen Beschäftigungsstand und zum außenwirtschaftlichen Gleichgewicht bei stetigem und angemessenem Wirtschaftswachstum beizutragen (magisches Viereck). Außenwirtschaftliches Gleichgewicht bedeutet einen weitgehend ausgeglichenen Austausch mit dem Ausland. Dauerhafte Überschüsse machen eine Volkswirtschaft anfällig für Einbrüche der Auslandsnachfrage und führen zu Ungleichgewichten bei den Handelspartnern.'
@@ -465,14 +465,14 @@
       frage: 'Um welche Art des Zusammenschlusses handelt es sich?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Art in das Kästchen ein.',
       optionen: [
-        'Horizontaler Zusammenschluss, weil Unternehmen derselben Wirtschaftsstufe verbunden werden',
-        'Vertikaler Zusammenschluss, weil ein Unternehmen einer vorgelagerten Wirtschaftsstufe eingebunden wird',
-        'Diagonaler (konglomerater) Zusammenschluss, weil branchenfremde Unternehmen verbunden werden',
-        'Kartell, weil beide Unternehmen ihre Preise absprechen',
-        'Arbeitsgemeinschaft, weil die Zusammenarbeit auf ein einzelnes Projekt befristet ist'
+        'Horizontaler Zusammenschluss',
+        'Vertikaler Zusammenschluss',
+        'Diagonaler (konglomerater) Zusammenschluss',
+        'Kartell',
+        'Arbeitsgemeinschaft'
       ],
       loesung: 2,
-      erklaerung: 'Beim vertikalen Zusammenschluss werden Unternehmen aufeinanderfolgender Wirtschaftsstufen verbunden, hier ein Zulieferer (Fotostudio) mit seinem Abnehmer (Agentur). Horizontal verbinden sich Unternehmen derselben Stufe (z. B. zwei Webagenturen), diagonal oder konglomerat branchenfremde Unternehmen. Weil das Fotostudio rechtlich selbstständig bleibt, aber einheitlich geleitet wird, entsteht ein Konzern (§ 18 AktG). Der Erwerb einer Mehrheitsbeteiligung kann der Fusionskontrolle unterliegen (§ 37 GWB).'
+      erklaerung: 'Beim vertikalen Zusammenschluss werden Unternehmen aufeinanderfolgender Wirtschaftsstufen verbunden, hier ein Zulieferer (Fotostudio) mit seinem Abnehmer (Agentur). Horizontal verbinden sich Unternehmen derselben Stufe (z. B. zwei Webagenturen), diagonal oder konglomerat branchenfremde Unternehmen. Ein Kartell ist eine Absprache selbstständig bleibender Unternehmen, z. B. über Preise; eine Arbeitsgemeinschaft ist auf ein einzelnes Projekt befristet. Weil das Fotostudio rechtlich selbstständig bleibt, aber einheitlich geleitet wird, entsteht ein Konzern (§ 18 AktG). Der Erwerb einer Mehrheitsbeteiligung kann der Fusionskontrolle unterliegen (§ 37 GWB).'
     },
     {
       nr: 30, thema: 'entgelt', typ: 'einfach',

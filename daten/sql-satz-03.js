@@ -142,10 +142,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Er verschlüsselt die Daten in der Spalte.',
-        'Er stellt sicher, dass jeder Wert in der Spalte eindeutig ist und nicht NULL sein darf.',
+        'Er erzwingt in der Spalte eindeutige Werte und verbietet NULL.',
         'Er sortiert die Tabelle automatisch nach dieser Spalte.',
-        'Er verhindert, dass die Tabelle gelöscht werden kann.',
-        'Er legt fest, dass die Spalte nur Zahlen enthalten darf.'
+        'Er verhindert das Löschen der Tabelle.',
+        'Er lässt in der Spalte nur Zahlen zu.'
       ],
       loesung: 2,
       erklaerung: 'Ein PRIMARY KEY (Primärschlüssel) identifiziert jeden Datensatz eindeutig. Er erzwingt Eindeutigkeit (kein doppelter Wert) und verbietet NULL-Werte. Er hat nichts mit Verschlüsselung, Sortierung oder Löschschutz zu tun.'
@@ -335,7 +335,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'COUNT(*) zählt nur Zahlen, COUNT(Spalte) zählt alle Datentypen.',
-        'COUNT(*) zählt alle Zeilen, COUNT(Spalte) zählt nur die Zeilen, in denen die Spalte nicht NULL ist.',
+        'COUNT(*) zählt alle Zeilen, COUNT(Spalte) zählt nur Zeilen ohne NULL in der Spalte.',
         'COUNT(*) und COUNT(Spalte) liefern immer dasselbe Ergebnis.',
         'COUNT(*) zählt verschiedene Werte, COUNT(Spalte) zählt alle Werte.',
         'COUNT(Spalte) ist schneller als COUNT(*).'

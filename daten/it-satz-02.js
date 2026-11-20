@@ -33,11 +33,11 @@
       frage: 'Welches Verschlüsselungsverfahren wird beschrieben?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Verfahren in das Kästchen ein.',
       optionen: [
-        'Asymmetrische Verschlüsselung – es werden zwei verschiedene Schlüssel verwendet.',
-        'Symmetrische Verschlüsselung – Sender und Empfänger verwenden denselben Schlüssel.',
-        'Hashing – die Daten werden in einen Hashwert fester Länge umgewandelt.',
-        'Digitale Signatur – der Sender signiert die Nachricht mit seinem privaten Schlüssel.',
-        'Steganografie – die Daten werden in einem Bild versteckt.'
+        'Asymmetrische Verschlüsselung',
+        'Symmetrische Verschlüsselung',
+        'Hashing',
+        'Digitale Signatur',
+        'Steganografie'
       ],
       loesung: 2,
       erklaerung: 'Bei der symmetrischen Verschlüsselung verwenden Sender und Empfänger denselben geheimen Schlüssel zum Ver- und Entschlüsseln. Bekannte Verfahren: AES (Advanced Encryption Standard), DES, 3DES. Vorteil: hohe Geschwindigkeit. Nachteil: Der Schlüssel muss sicher übertragen werden (Schlüsselverteilungsproblem).'
@@ -48,11 +48,11 @@
       frage: 'Welches Verschlüsselungsverfahren verwendet ein solches Schlüsselpaar?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Verfahren in das Kästchen ein.',
       optionen: [
-        'AES (Advanced Encryption Standard)',
-        'RSA (Rivest-Shamir-Adleman)',
-        'SHA-256 (Secure Hash Algorithm)',
+        'AES',
+        'RSA',
+        'SHA-256',
         'Caesar-Chiffre',
-        'Base64-Kodierung'
+        'Base64'
       ],
       loesung: 2,
       erklaerung: 'RSA ist ein asymmetrisches Verschlüsselungsverfahren, das ein Schlüsselpaar aus öffentlichem und privatem Schlüssel verwendet. Der öffentliche Schlüssel verschlüsselt, der private entschlüsselt. AES ist symmetrisch, SHA-256 ist eine Hashfunktion (keine Verschlüsselung), Caesar ist ein historisches Verfahren, Base64 ist eine Kodierung (keine Verschlüsselung).'
@@ -84,11 +84,11 @@
       frage: 'Welches Protokoll sorgt für die verschlüsselte Übertragung?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Protokoll in das Kästchen ein.',
       optionen: [
-        'FTP – File Transfer Protocol',
-        'TLS – Transport Layer Security',
-        'DNS – Domain Name System',
-        'SMTP – Simple Mail Transfer Protocol',
-        'SNMP – Simple Network Management Protocol'
+        'FTP',
+        'TLS',
+        'DNS',
+        'SMTP',
+        'SNMP'
       ],
       loesung: 2,
       erklaerung: 'TLS (Transport Layer Security), der Nachfolger von SSL, verschlüsselt die Kommunikation zwischen Browser und Webserver. HTTPS verwendet TLS auf Port 443. TLS stellt durch Zertifikate die Identität des Servers sicher und verschlüsselt den Datenverkehr, sodass Dritte die Kommunikation nicht mitlesen können.'
@@ -130,7 +130,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Es wird ausschließlich symmetrische Verschlüsselung verwendet, aber mit zwei verschiedenen Schlüsseln.',
-        'Der symmetrische Sitzungsschlüssel wird asymmetrisch verschlüsselt übertragen; die eigentlichen Daten werden symmetrisch verschlüsselt.',
+        'Der Sitzungsschlüssel wird asymmetrisch, die eigentlichen Daten werden symmetrisch verschlüsselt.',
         'Es wird ausschließlich asymmetrische Verschlüsselung für alle Daten verwendet.',
         'Die Daten werden zuerst gehasht und dann mit dem Hash als Schlüssel verschlüsselt.',
         'Sender und Empfänger tauschen ihre privaten Schlüssel aus.'
@@ -147,10 +147,10 @@
       anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Schicht in das Kästchen ein.',
       optionenTitel: 'OSI-Schichten',
       optionen: [
-        'Schicht 1 – Bitübertragung (Physical)',
-        'Schicht 2 – Sicherung (Data Link)',
-        'Schicht 3 – Vermittlung (Network)',
-        'Schicht 4 – Transport'
+        'Schicht 1',
+        'Schicht 2',
+        'Schicht 3',
+        'Schicht 4'
       ],
       itemsTitel: 'Beschreibungen',
       items: [
@@ -159,7 +159,7 @@
         { text: 'Steuert den zuverlässigen Datenfluss zwischen zwei Endpunkten, z. B. durch Segmentierung, Flusskontrolle und Fehlerkorrektur (TCP/UDP).', loesung: 4 },
         { text: 'Regelt den Zugriff auf das Übertragungsmedium und verwendet physische Adressen (MAC-Adressen) zur Adressierung im lokalen Netz.', loesung: 2 }
       ],
-      erklaerung: 'Das OSI-Modell gliedert die Netzwerkkommunikation in 7 Schichten. Schicht 1 (Physical) definiert die physische Übertragung. Schicht 2 (Data Link) regelt den Medienzugriff über MAC-Adressen. Schicht 3 (Network) ist für IP-Adressierung und Routing zuständig. Schicht 4 (Transport) stellt mit TCP eine zuverlässige oder mit UDP eine verbindungslose Übertragung bereit.'
+      erklaerung: 'Das OSI-Modell gliedert die Netzwerkkommunikation in 7 Schichten. Schicht 1 (Bitübertragung, Physical) definiert die physische Übertragung. Schicht 2 (Sicherung, Data Link) regelt den Medienzugriff über MAC-Adressen. Schicht 3 (Vermittlung, Network) ist für IP-Adressierung und Routing zuständig. Schicht 4 (Transport) stellt mit TCP eine zuverlässige oder mit UDP eine verbindungslose Übertragung bereit.'
     },
     {
       nr: 9, thema: 'netzwerk', typ: 'einfach',
@@ -167,11 +167,11 @@
       frage: 'Welches Protokoll ist für die Namensauflösung zuständig?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Protokoll in das Kästchen ein.',
       optionen: [
-        'DHCP – Dynamic Host Configuration Protocol',
-        'DNS – Domain Name System',
-        'ARP – Address Resolution Protocol',
-        'NAT – Network Address Translation',
-        'HTTP – Hypertext Transfer Protocol'
+        'DHCP',
+        'DNS',
+        'ARP',
+        'NAT',
+        'HTTP'
       ],
       loesung: 2,
       erklaerung: 'DNS (Domain Name System) löst Domainnamen (z. B. www.beispiel.de) in IP-Adressen auf. DHCP verteilt IP-Adressen automatisch an Clients. ARP löst IP-Adressen in MAC-Adressen auf (Schicht 2/3). NAT übersetzt private in öffentliche IP-Adressen. HTTP überträgt Webseiten.'
@@ -182,29 +182,29 @@
       frage: 'Welches Protokoll vergibt die IP-Adressen automatisch?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Protokoll in das Kästchen ein.',
       optionen: [
-        'DNS – Domain Name System',
-        'FTP – File Transfer Protocol',
-        'DHCP – Dynamic Host Configuration Protocol',
-        'ICMP – Internet Control Message Protocol',
-        'SNMP – Simple Network Management Protocol'
+        'DNS',
+        'FTP',
+        'DHCP',
+        'ICMP',
+        'SNMP'
       ],
       loesung: 3,
       erklaerung: 'DHCP (Dynamic Host Configuration Protocol) verteilt automatisch IP-Adressen, Subnetzmasken, Standard-Gateway und DNS-Server an Clients (DORA-Prozess: Discover, Offer, Request, Acknowledge). Ohne DHCP müssten IP-Adressen manuell (statisch) konfiguriert werden.'
     },
     {
       nr: 11, thema: 'netzwerk', typ: 'einfach',
-      text: 'Bei der Netzwerkplanung soll zwischen TCP und UDP gewählt werden. Eine Anwendung überträgt Videodaten in Echtzeit und toleriert den Verlust einzelner Pakete.',
-      frage: 'Welches Transportprotokoll ist für diese Anwendung geeigneter?',
-      anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
+      text: 'Eine Anwendung überträgt Videodaten in Echtzeit. Der Verlust einzelner Pakete ist dabei hinnehmbar, Verzögerungen sind es nicht.',
+      frage: 'Welches Transportprotokoll eignet sich für diese Anwendung am besten?',
+      anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Protokoll in das Kästchen ein.',
       optionen: [
-        'TCP – es ist zuverlässig und stellt sicher, dass alle Pakete ankommen.',
-        'UDP – es überträgt Daten ohne Verbindungsaufbau und mit weniger Overhead, verlorene Pakete werden nicht erneut gesendet.',
-        'ICMP – es überträgt Steuernachrichten zwischen Netzwerkgeräten.',
-        'FTP – es ist speziell für Dateiübertragungen konzipiert.',
-        'HTTP – es überträgt Webinhalte zwischen Client und Server.'
+        'TCP',
+        'UDP',
+        'ICMP',
+        'FTP',
+        'HTTP'
       ],
       loesung: 2,
-      erklaerung: 'UDP (User Datagram Protocol) ist verbindungslos, hat weniger Overhead als TCP und ist für Echtzeitanwendungen (Video, VoIP, Gaming) geeignet. Verlorene Pakete werden nicht erneut gesendet, was bei Echtzeitdaten akzeptabel ist (ein fehlendes Videobild ist besser als eine Verzögerung). TCP garantiert Reihenfolge und Vollständigkeit, was bei Dateien und Webseiten wichtig ist.'
+      erklaerung: 'UDP (User Datagram Protocol) ist verbindungslos, hat weniger Overhead als TCP und ist für Echtzeitanwendungen (Video, VoIP, Gaming) geeignet. Verlorene Pakete werden nicht erneut gesendet, was bei Echtzeitdaten akzeptabel ist (ein fehlendes Videobild ist besser als eine Verzögerung). TCP garantiert Reihenfolge und Vollständigkeit, was bei Dateien und Webseiten wichtig ist. ICMP, FTP und HTTP sind keine Transportprotokolle: ICMP arbeitet auf der Vermittlungsschicht, FTP und HTTP sind Anwendungsprotokolle.'
     },
     {
       nr: 12, thema: 'netzwerk', typ: 'zahl',
@@ -303,21 +303,21 @@
     {
       nr: 20, thema: 'zahlensysteme', typ: 'zuordnung',
       text: 'Verschiedene Einheiten der Datenmenge werden in der IT verwendet.',
-      frage: 'Welche Umrechnung ist korrekt?',
-      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Umrechnung in das Kästchen ein.',
-      optionenTitel: 'Umrechnungen',
+      frage: 'Welche der folgenden Einheiten sind den nachstehenden Datenmengen zuzuordnen?',
+      anweisung: 'Tragen Sie die Ziffer vor der jeweils zutreffenden Einheit in das Kästchen ein.',
+      optionenTitel: 'Einheiten',
       optionen: [
-        '1 Byte = 8 Bit',
-        '1 KiB = 1.024 Byte',
-        '1 MiB = 1.048.576 Byte',
-        '1 GiB = 1.073.741.824 Byte'
+        '1 Byte',
+        '1 KiB',
+        '1 MiB',
+        '1 GiB'
       ],
-      itemsTitel: 'Beschreibungen',
+      itemsTitel: 'Datenmengen',
       items: [
-        { text: 'Die kleinste adressierbare Speichereinheit in den meisten Computern besteht aus 8 Bit.', loesung: 1 },
-        { text: 'Diese Einheit entspricht 2¹⁰ Byte und wird häufig für Dateigrößen auf Betriebssystemebene verwendet.', loesung: 2 },
-        { text: 'Diese Einheit entspricht 2²⁰ Byte, also 1.024 × 1.024 Byte.', loesung: 3 },
-        { text: 'Diese Einheit entspricht 2³⁰ Byte und wird für RAM-Kapazitäten verwendet.', loesung: 4 }
+        { text: '1.048.576 Byte', loesung: 3 },
+        { text: '8 Bit', loesung: 1 },
+        { text: '1.073.741.824 Byte', loesung: 4 },
+        { text: '1.024 Byte', loesung: 2 }
       ],
       erklaerung: '1 Byte = 8 Bit. Die IEC-Präfixe (KiB, MiB, GiB) verwenden Zweierpotenzen: 1 KiB = 2¹⁰ = 1.024 Byte, 1 MiB = 2²⁰ = 1.048.576 Byte, 1 GiB = 2³⁰ = 1.073.741.824 Byte. Die SI-Präfixe (KB, MB, GB) verwenden dagegen Zehnerpotenzen: 1 KB = 1.000 Byte. Festplattenhersteller verwenden oft SI-Einheiten, Betriebssysteme oft IEC-Einheiten.'
     },
@@ -329,14 +329,14 @@
       frage: 'Welches RAID-Level bietet Spiegelung in Kombination mit Striping und benötigt mindestens vier Festplatten?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden RAID-Level in das Kästchen ein.',
       optionen: [
-        'RAID 0 – Striping ohne Redundanz',
-        'RAID 1 – Spiegelung (Mirroring)',
-        'RAID 5 – Striping mit verteilter Parität',
-        'RAID 10 – Kombination aus Spiegelung und Striping',
-        'RAID 6 – Striping mit doppelter Parität'
+        'RAID 0',
+        'RAID 1',
+        'RAID 5',
+        'RAID 10',
+        'RAID 6'
       ],
       loesung: 4,
-      erklaerung: 'RAID 10 (auch RAID 1+0) kombiniert die Spiegelung (RAID 1) mit dem Striping (RAID 0). Mindestens 4 Festplatten sind erforderlich; die Nutzkapazität beträgt 50 %. RAID 10 bietet eine sehr gute Lese- und Schreibleistung sowie Ausfallsicherheit, da je ein Laufwerk pro Spiegelgruppe ausfallen darf.'
+      erklaerung: 'RAID 10 (auch RAID 1+0) kombiniert die Spiegelung (RAID 1) mit dem Striping (RAID 0). Mindestens 4 Festplatten sind erforderlich; die Nutzkapazität beträgt 50 %. RAID 10 bietet eine sehr gute Lese- und Schreibleistung sowie Ausfallsicherheit, da je ein Laufwerk pro Spiegelgruppe ausfallen darf. Zum Vergleich: RAID 0 = Striping ohne Redundanz, RAID 1 = Spiegelung, RAID 5 = Striping mit verteilter Parität, RAID 6 = Striping mit doppelter Parität.'
     },
     {
       nr: 22, thema: 'it-systeme', typ: 'zahl',
@@ -368,9 +368,9 @@
       anweisung: 'Tragen Sie die Ziffer vor dem jeweils zutreffenden Modell in das Kästchen ein.',
       optionenTitel: 'Service-Modelle',
       optionen: [
-        'IaaS – Infrastructure as a Service',
-        'PaaS – Platform as a Service',
-        'SaaS – Software as a Service'
+        'IaaS',
+        'PaaS',
+        'SaaS'
       ],
       itemsTitel: 'Beschreibungen',
       items: [
@@ -378,7 +378,7 @@
         { text: 'Der Kunde erhält virtuelle Server, Speicher und Netzwerk und installiert darauf sein eigenes Betriebssystem und seine Anwendungen, z. B. bei AWS EC2 oder Azure Virtual Machines.', loesung: 1 },
         { text: 'Der Kunde nutzt eine Entwicklungsumgebung in der Cloud und kümmert sich nur um seinen Programmcode, z. B. bei Heroku oder Google App Engine.', loesung: 2 }
       ],
-      erklaerung: 'Die drei Cloud-Service-Modelle unterscheiden sich im Grad der Verantwortung: IaaS: Kunde verwaltet OS, Middleware, Anwendungen; Anbieter stellt Infrastruktur bereit. PaaS: Kunde verwaltet nur seine Anwendung und Daten; Anbieter stellt Plattform bereit. SaaS: Alles wird vom Anbieter verwaltet; Kunde nutzt die fertige Software.'
+      erklaerung: 'Die drei Cloud-Service-Modelle unterscheiden sich im Grad der Verantwortung: IaaS (Infrastructure as a Service): Kunde verwaltet OS, Middleware, Anwendungen; Anbieter stellt Infrastruktur bereit. PaaS (Platform as a Service): Kunde verwaltet nur seine Anwendung und Daten; Anbieter stellt Plattform bereit. SaaS (Software as a Service): Alles wird vom Anbieter verwaltet; Kunde nutzt die fertige Software.'
     },
     {
       nr: 25, thema: 'it-systeme', typ: 'einfach',
@@ -386,11 +386,11 @@
       frage: 'Welcher Dienst verwendet standardmäßig den TCP-Port 443?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Dienst in das Kästchen ein.',
       optionen: [
-        'HTTP – unverschlüsselte Webseiten (Port 80)',
-        'HTTPS – verschlüsselte Webseiten (Port 443)',
-        'FTP – Dateiübertragung (Port 21)',
-        'SSH – sichere Fernwartung (Port 22)',
-        'DNS – Namensauflösung (Port 53)'
+        'HTTP',
+        'HTTPS',
+        'FTP',
+        'SSH',
+        'DNS'
       ],
       loesung: 2,
       erklaerung: 'HTTPS (HTTP Secure) verwendet standardmäßig den TCP-Port 443 und überträgt Webseiten verschlüsselt über TLS. Weitere wichtige Standardports: HTTP = 80, FTP = 20/21, SSH = 22, Telnet = 23, SMTP = 25/587, DNS = 53, DHCP = 67/68, POP3 = 110, IMAP = 143, LDAP = 389, RDP = 3389.'

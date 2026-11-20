@@ -113,10 +113,10 @@
         'Umfangreicher Ankauf von Staatsanleihen',
         'Senkung der Leitzinsen',
         'Senkung des Mindestreservesatzes',
-        'Erhöhung des Kindergeldes'
+        'Ausweitung der Kreditvergabe an Geschäftsbanken'
       ],
       loesung: 1,
-      erklaerung: 'Höhere Leitzinsen verteuern Kredite. Unternehmen und Haushalte fragen weniger nach, der Preisanstieg wird gebremst. Anleihekäufe, Zinssenkungen und ein niedrigerer Mindestreservesatz erhöhen dagegen die Geldmenge. Das Kindergeld ist keine Maßnahme der EZB, sondern staatliche Sozialpolitik.'
+      erklaerung: 'Höhere Leitzinsen verteuern Kredite. Unternehmen und Haushalte fragen weniger nach, der Preisanstieg wird gebremst. Anleihekäufe, Zinssenkungen, ein niedrigerer Mindestreservesatz und mehr Kredite der EZB an Geschäftsbanken erhöhen dagegen die Geldmenge.'
     },
     {
       nr: 6, thema: 'konjunktur', typ: 'mehrfach',
@@ -165,7 +165,7 @@
         'muss mindestens einen Monat und darf höchstens vier Monate betragen.',
         'kann nur vom Ausbildungsbetrieb, nicht von der Auszubildenden für eine Kündigung genutzt werden.',
         'erlaubt eine Kündigung nur mit einer Frist von vier Wochen.',
-        'entfällt, wenn die Auszubildende vorher ein Praktikum im Betrieb absolviert hat.'
+        'entfällt nach einem vorherigen Praktikum der Auszubildenden im Betrieb.'
       ],
       loesung: 2,
       erklaerung: '§ 20 BBiG: Die Probezeit beträgt mindestens einen und höchstens vier Monate. Während der Probezeit können beide Seiten jederzeit ohne Kündigungsfrist schriftlich kündigen (§ 22 Abs. 1 BBiG).'
@@ -224,7 +224,7 @@
         'Nach Ende der täglichen Arbeitszeit muss er eine ununterbrochene Freizeit von mindestens zehn Stunden erhalten.',
         'Bei einer täglichen Arbeitszeit von mehr als sechs Stunden stehen ihm Ruhepausen von mindestens 60 Minuten zu.',
         'Er darf an fünf Tagen in der Woche jeweils bis zu zehn Stunden beschäftigt werden.',
-        'Er darf grundsätzlich auch an Sonntagen beschäftigt werden, wenn er dafür einen freien Werktag erhält.'
+        'Mit einem freien Werktag als Ausgleich darf er grundsätzlich auch an Sonntagen beschäftigt werden.'
       ],
       loesung: 3,
       erklaerung: '§ 11 JArbSchG: Ruhepausen von 30 Minuten bei mehr als 4,5 bis 6 Stunden, von 60 Minuten bei mehr als 6 Stunden Arbeitszeit. Außerdem gilt: höchstens 8 Stunden täglich und 40 Stunden wöchentlich (§ 8), mindestens 12 Stunden Freizeit (§ 13), Sonntagsruhe (§ 17).'
@@ -252,9 +252,9 @@
       optionen: [
         'Die JAV wird für eine Amtszeit von vier Jahren gewählt.',
         'Die JAV kann ohne Beteiligung des Betriebsrats Betriebsvereinbarungen mit der Geschäftsleitung abschließen.',
-        'In die JAV können nur Auszubildende gewählt werden, die das 18. Lebensjahr vollendet haben.',
+        'In die JAV können nur Auszubildende ab 18 Jahren gewählt werden.',
         'Die JAV ersetzt für die Auszubildenden den Betriebsrat.',
-        'Eine JAV kann gewählt werden, weil ein Betriebsrat besteht und mindestens fünf Auszubildende beschäftigt sind.'
+        'Bei bestehendem Betriebsrat und mindestens fünf Auszubildenden kann eine JAV gewählt werden.'
       ],
       loesung: 5,
       erklaerung: '§ 60 Abs. 1 BetrVG: Eine JAV wird gewählt, wenn in der Regel mindestens fünf Arbeitnehmer unter 18 Jahren oder zu ihrer Berufsausbildung Beschäftigte im Betrieb sind; für Auszubildende gilt seit 2021 keine Altersgrenze mehr. Sie arbeitet über den Betriebsrat. Die Amtszeit beträgt zwei Jahre (§ 64 BetrVG). Wählbar sind Arbeitnehmer unter 25 Jahren und alle Auszubildenden (§ 61 Abs. 2 BetrVG).'
@@ -284,11 +284,11 @@
       frage: 'Welche der folgenden Aussagen trifft zu?',
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
-        'Herr Jansen erhält nur 30 Urlaubstage, weil der Tarifvertrag dem Arbeitsvertrag immer vorgeht.',
-        'Herr Jansen erhält 32 Urlaubstage, weil vom Tarifvertrag zugunsten des Arbeitnehmers abgewichen werden darf.',
-        'Herr Jansen erhält nur den gesetzlichen Mindesturlaub, weil sich Arbeitsvertrag und Tarifvertrag widersprechen.',
-        'Die Regelung im Arbeitsvertrag ist nur wirksam, wenn der Betriebsrat ihr zugestimmt hat.',
-        'Die Regelung im Arbeitsvertrag ist unwirksam, weil sie vom Tarifvertrag abweicht.'
+        'Wegen des Vorrangs des Tarifvertrags erhält Herr Jansen nur 30 Urlaubstage.',
+        'Wegen der zulässigen Abweichung zugunsten des Arbeitnehmers erhält Herr Jansen 32 Urlaubstage.',
+        'Wegen des Widerspruchs zwischen Arbeits- und Tarifvertrag erhält Herr Jansen nur den gesetzlichen Mindesturlaub.',
+        'Die Regelung im Arbeitsvertrag ist nur mit Zustimmung des Betriebsrats wirksam.',
+        'Die Regelung im Arbeitsvertrag ist wegen der Abweichung vom Tarifvertrag unwirksam.'
       ],
       loesung: 2,
       erklaerung: 'Günstigkeitsprinzip (§ 4 Abs. 3 TVG): Abweichungen vom Tarifvertrag sind zulässig, wenn sie den Arbeitnehmer besserstellen. Schlechtere Regelungen wären unwirksam.'
@@ -417,7 +417,7 @@
         'Das Handelsregister wird von der Industrie- und Handelskammer geführt.',
         'In Abteilung A werden die Kapitalgesellschaften eingetragen.',
         'Einsicht in das Handelsregister erhalten nur die Gesellschafter des Unternehmens.',
-        'Kleingewerbetreibende sind verpflichtet, sich in das Handelsregister eintragen zu lassen.',
+        'Kleingewerbetreibende müssen sich in das Handelsregister eintragen lassen.',
         'Das Handelsregister wird elektronisch vom Amtsgericht (Registergericht) geführt.'
       ],
       loesung: 5,
@@ -452,7 +452,7 @@
       anweisung: 'Tragen Sie die Ziffer vor der zutreffenden Aussage in das Kästchen ein.',
       optionen: [
         'Die DSGVO gilt nur für Behörden, nicht für private Unternehmen.',
-        'Personenbezogene Daten dürfen unbegrenzt gespeichert werden, wenn sie verschlüsselt sind.',
+        'Verschlüsselte personenbezogene Daten dürfen unbegrenzt gespeichert werden.',
         'Betroffene Personen haben kein Recht auf Auskunft über ihre gespeicherten Daten.',
         'Personenbezogene Daten dürfen nur bei Vorliegen einer Rechtsgrundlage verarbeitet werden.',
         'Ein Datenschutzbeauftragter muss erst ab 250 Beschäftigten benannt werden.'
@@ -504,14 +504,14 @@
       frage: 'Welches der folgenden Gesetze regelt die Rücknahme und umweltgerechte Entsorgung von Elektro- und Elektronikaltgeräten?',
       anweisung: 'Tragen Sie die Ziffer vor dem zutreffenden Gesetz in das Kästchen ein.',
       optionen: [
-        'Elektro- und Elektronikgerätegesetz (ElektroG)',
-        'Verpackungsgesetz (VerpackG)',
-        'Bundes-Immissionsschutzgesetz (BImSchG)',
-        'Produktsicherheitsgesetz (ProdSG)',
-        'Arbeitsschutzgesetz (ArbSchG)'
+        'ElektroG',
+        'VerpackG',
+        'BImSchG',
+        'ProdSG',
+        'ArbSchG'
       ],
       loesung: 1,
-      erklaerung: 'Das ElektroG regelt Rücknahme, Wiederverwendung und umweltgerechte Entsorgung von Elektro- und Elektronikaltgeräten. Altgeräte gehören nicht in den Hausmüll (Symbol: durchgestrichene Mülltonne).'
+      erklaerung: 'Das ElektroG (Elektro- und Elektronikgerätegesetz) regelt Rücknahme, Wiederverwendung und umweltgerechte Entsorgung von Elektro- und Elektronikaltgeräten. Altgeräte gehören nicht in den Hausmüll (Symbol: durchgestrichene Mülltonne). Die übrigen Abkürzungen stehen für Verpackungsgesetz (VerpackG), Bundes-Immissionsschutzgesetz (BImSchG), Produktsicherheitsgesetz (ProdSG) und Arbeitsschutzgesetz (ArbSchG).'
     }
   ]
 });
